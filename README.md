@@ -1,0 +1,67 @@
+# Attention Is Concentrated but Not Line-Decomposable
+
+Code and per-seed result files for the paper *"Attention Is Concentrated but Not
+Line-Decomposable: a Misleading Radon Signal and a Named-plus-Low-Rank
+Resolution"*.
+
+Everything runs end-to-end on a single consumer GPU (tested on an NVIDIA RTX
+3060, 12 GB). Models (GPT-2 small/medium, Pythia-410m/1.4b, Qwen2.5-0.5B/3B) and
+data (WikiText-2) are public and downloaded automatically from the Hugging Face
+Hub.
+
+## Setup
+
+```bash
+python -m venv .venv && .venv/Scripts/activate   # (Windows) or source .venv/bin/activate
+pip install -r requirements.txt
+python make_corpus.py        # builds wikitext2_train.txt (used by all phases)
+```
+
+## Pipeline (one script per experiment)
+
+| Script | Paper section | What it does |
+|---|---|---|
+| `phase0_radon_attention.py` | 4.1 | Radon concentration metric vs. causal controls (GPT-2) |
+| `phase05_line_decomposition.py` | 4.2 | Uniform-line matching pursuit vs. rank-k SVD |
+| `phase06_profiled_lines.py` | 4.2 | Profiled (exponential-band) dictionary variant |
+| `phase1_multimodel.py` | 4.2, Table 1 | Five-model replication (concentration + reconstruction) |
+| `phase2_downstream.py` | 4.4 | Forward-pass injection: KL of reconstructed attention |
+| `phase3_robustness.py` | 4.3 | Length robustness 128/256/512 (streaming/reservoir) |
+| `phase4_anova.py` | 7.1 | Functional-ANOVA: sink as rank-1 column effect |
+| `phase5_msclean.py` | 7.2 | MS-CLEAN structured pursuit (named fraction) |
+| `phase6_srpca.py` | 7.2 | Structured robust PCA (S named + L low-rank) |
+| `phase7_editability.py` | 7.3 | Sink editing vs. random-column control (KL) |
+| `phase8_lostmiddle.py` | 7.4 | Positional-retrieval probe + sink calibration (use `--tag`) |
+| `phase9_bigmodel.py` | 4.2/7.1 | 3B replication (Qwen2.5-3B, bf16, streaming) |
+| `phase10_baselines.py` | 7.4 | ACT-style adaptive baseline comparison |
+| `phase11_kv.py` | 7.4, Fig. 12 | Multi-distractor key-value retrieval benchmark |
+| `phase12_coherence.py` | 7 | Mutual coherence of the named dictionary |
+| `phase13_stats.py` | Table 2 | Canonical aggregator: middle window, pooled z-tests, Holm |
+| `phase14_adaptive.py` | 7.4 | Per-head adaptive beta ablation (negative result) |
+| `phase15_interaction.py` | 7.1 | Sink-column constancy (non-tautology check) |
+| `paper_figures*.py` | all figures | 300-dpi figure generation |
+
+`out/` contains the per-seed result JSONs used in the paper (files tagged
+`_s0/_s1/_s2` are the three seeds; `phase13_stats.json` is the canonical pooled
+analysis). The middle window is defined once as positions $p$ with
+$0.25L \le p \le 0.75L$; significance is two-proportion z with Holm correction
+(see `phase13_stats.py`).
+
+## Reproducing the headline numbers
+
+```bash
+# matrix-level (Table 1)
+python phase1_multimodel.py
+python phase9_bigmodel.py
+
+# intervention (Table 2), three seeds
+python phase8_lostmiddle.py --n_per_pos 400 --seed 0 --tag s0
+python phase8_lostmiddle.py --n_per_pos 400 --seed 1 --betas 1.0 0.25 --tag s1
+python phase8_lostmiddle.py --n_per_pos 400 --seed 2 --betas 1.0 0.25 --tag s2
+python phase11_kv.py --seed 0 --tag s0   # idem s1, s2
+python phase13_stats.py
+```
+
+## License
+
+MIT.

@@ -1,0 +1,22 @@
+{
+  "gpt2": {
+    "sink_col_interaction_frac_median": 0.03910434207177135,
+    "ctrl_col_interaction_frac_median": 0.6197660668915643
+  },
+  "gpt2-medium": {
+    "sink_col_interaction_frac_median": 0.030281451014225837,
+    "ctrl_col_interaction_frac_median": 0.4804024252650373
+  },
+  "EleutherAI/pythia-410m": {
+    "sink_col_interaction_frac_median": 0.022212635802005175,
+    "ctrl_col_interaction_frac_median": 0.6729005669282258
+  },
+  "EleutherAI/pythia-1.4b": {
+    "sink_col_interaction_frac_median": 0.02092122715747047,
+    "ctrl_col_interaction_frac_median": 0.691816159500228
+  },
+  "Qwen/Qwen2.5-0.5B": {
+    "sink_col_interaction_frac_median": 0.06298145451185101,
+    "ctrl_col_interaction_frac_median": 0.6573923561606252
+  }
+}

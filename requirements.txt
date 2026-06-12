@@ -1,0 +1,9 @@
+torch>=2.6
+transformers>=5.0
+numpy
+scipy
+scikit-image
+matplotlib
+pillow
+datasets   # apenas para make_corpus.py
+pikepdf    # apenas para paper/strip_pdf.py

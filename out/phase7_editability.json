@@ -1,0 +1,32 @@
+{
+  "gpt2": {
+    "identity": 0.0,
+    "anova": 1.0502393245697021,
+    "nosink": 4.407442569732666,
+    "zerocol_mid": 1.0556750297546387
+  },
+  "gpt2-medium": {
+    "identity": 0.0,
+    "anova": 1.0516124963760376,
+    "nosink": 4.507611274719238,
+    "zerocol_mid": 1.061366081237793
+  },
+  "EleutherAI/pythia-410m": {
+    "identity": 0.0,
+    "anova": 1.6160423755645752,
+    "nosink": 1.997774600982666,
+    "zerocol_mid": 1.6208895444869995
+  },
+  "EleutherAI/pythia-1.4b": {
+    "identity": 0.0,
+    "anova": 1.6018900871276855,
+    "nosink": 1.813865303993225,
+    "zerocol_mid": 1.6073466539382935
+  },
+  "Qwen/Qwen2.5-0.5B": {
+    "identity": 0.0,
+    "anova": 1.6931016445159912,
+    "nosink": 2.153644323348999,
+    "zerocol_mid": 1.7024810314178467
+  }
+}
