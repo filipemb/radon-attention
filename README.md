@@ -1,5 +1,7 @@
 # Attention Is Concentrated but Not Line-Decomposable
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20673537.svg)](https://doi.org/10.5281/zenodo.20673537)
+
 Code and per-seed result files for the paper *"Attention Is Concentrated but Not
 Line-Decomposable: a Misleading Radon Signal and a Named-plus-Low-Rank
 Resolution"*.
