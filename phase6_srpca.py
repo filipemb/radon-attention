@@ -19,6 +19,7 @@ from scipy.optimize import nnls
 
 from phase0_radon_attention import load_sequences, extract_attention
 from phase5_msclean import build_dict
+from phase_stats import summ, median_ci_bootstrap
 
 
 def srpca(A, D, r, iters=5):
@@ -83,6 +84,11 @@ def run(model_name, args, device, rng):
         "named_frac": {r: med(nf[r]) for r in rs},
         "n_active": {r: med(na[r]) for r in rs},
         "svd_matched": {r: med(svd_match[r]) for r in rs},
+        # dispersion (NN revision)
+        "err_disp": {r: summ(err[r]) for r in rs},
+        "named_frac_disp": {r: summ(nf[r]) for r in rs},
+        "svd_matched_disp": {r: summ(svd_match[r]) for r in rs},
+        "named_frac_ci": {r: median_ci_bootstrap(nf[r]) for r in rs},
     }
 
 

@@ -23,6 +23,7 @@ import torch
 
 from phase0_radon_attention import load_sequences, extract_attention
 from phase05_line_decomposition import svd_errors
+from phase_stats import summ, median_ci_bootstrap
 
 
 def anova_decomp(A):
@@ -89,6 +90,12 @@ def run(model_name, args, device, rng):
         "sink_frac_of_coleffect": med(sinks),
         "additive_only_err": med(adderrs),
         "ks": ks,
+        # dispersion (NN revision)
+        "anova_addrankk_disp": {k: summ(anova[k]) for k in ks},
+        "svd_k_disp": {k: summ(svdk[k]) for k in ks},
+        "sink_frac_of_coleffect_disp": summ(sinks),
+        "additive_only_err_disp": summ(adderrs),
+        "anova_addrankk_ci": {k: median_ci_bootstrap(anova[k]) for k in ks},
     }
 
 

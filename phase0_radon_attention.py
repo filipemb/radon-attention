@@ -27,6 +27,7 @@ import os
 import numpy as np
 import torch
 from skimage.transform import radon, iradon
+from phase_stats import summ, median_ci_bootstrap
 
 
 def get_args():
@@ -212,6 +213,9 @@ def main():
         "frac_heads_radon_sparse": frac_sparse_heads,
         "sparse_thresh": args.sparse_thresh,
         "reconstruction": recon,
+        # dispersion (NN revision)
+        "real_support_disp": summ(real_supports), "real_support_ci": median_ci_bootstrap(real_supports),
+        "random_support_disp": summ(rand_fracs),
     }
     with open(os.path.join(args.out, "phase0_results.json"), "w") as f:
         json.dump(results, f, indent=2)

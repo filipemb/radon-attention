@@ -21,6 +21,7 @@ from phase05_line_decomposition import svd_errors
 from phase06_profiled_lines import omp_profiled, precompute_band_norms
 from phase4_anova import anova_lowrank_errors
 from phase5_msclean import build_dict, msclean
+from phase_stats import summ, median_ci_bootstrap
 
 
 def main():
@@ -76,6 +77,12 @@ def main():
         "line_k8": float(np.median(line8)), "svd_k8": float(np.median(svd8)),
         "anova_addrank8": float(np.median(anova8)), "sink_frac_coleffect": float(np.median(sinkfr)),
         "named_frac_m5": float(np.median(named5)), "n_rec": len(reservoir),
+        # dispersion (NN revision)
+        "conc_real_disp": summ(conc),
+        "line_k8_disp": summ(line8), "line_k8_ci": median_ci_bootstrap(line8),
+        "svd_k8_disp": summ(svd8), "svd_k8_ci": median_ci_bootstrap(svd8),
+        "anova_addrank8_disp": summ(anova8), "sink_frac_coleffect_disp": summ(sinkfr),
+        "named_frac_m5_disp": summ(named5),
     }
     json.dump(res, open(os.path.join(args.out, "phase9_bigmodel.json"), "w"), indent=2)
     print("\n" + "=" * 56)

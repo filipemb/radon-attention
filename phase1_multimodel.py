@@ -19,6 +19,7 @@ from phase0_radon_attention import (
 )
 from phase05_line_decomposition import omp_line, svd_errors
 from phase06_profiled_lines import omp_profiled, precompute_band_norms, classify_support
+from phase_stats import summ, median_ci_bootstrap
 
 DEFAULT_MODELS = [
     "gpt2",                    # 124M, posicao absoluta aprendida
@@ -98,6 +99,13 @@ def run_model(name, args, theta, band_norms, checkpoints, rng):
         "conc_real": real_med, "conc_random": rand_med, "conc_ratio": real_med / (rand_med + 1e-12),
         "uniform_err": uni_med, "profiled_err": prof_med, "svd_err": svd_med,
         "head_types": dom,
+        # dispersion (NN revision): IQR/mean/std/n + bootstrap median CI over the sampled population
+        "conc_real_disp": summ(real), "conc_real_ci": median_ci_bootstrap(real),
+        "uniform_disp": {k: summ(uni[k]) for k in checkpoints},
+        "profiled_disp": {k: summ(prof[k]) for k in checkpoints},
+        "svd_disp": {k: summ(svd[k]) for k in checkpoints},
+        "svd_ci": {k: median_ci_bootstrap(svd[k]) for k in checkpoints},
+        "profiled_ci": {k: median_ci_bootstrap(prof[k]) for k in checkpoints},
     }
 
 

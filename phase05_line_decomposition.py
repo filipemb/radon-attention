@@ -37,6 +37,7 @@ from scipy.optimize import nnls
 
 # reusa os helpers de dados da Fase 0 (importar nao roda o main, esta guardado)
 from phase0_radon_attention import load_sequences, extract_attention
+from phase_stats import summ, median_ci_bootstrap
 
 
 def get_args():
@@ -216,6 +217,11 @@ def main():
         "checkpoints": checkpoints,
         "line_omp_median_err": line_med,
         "svd_median_err": svd_med,
+        # dispersion (NN revision): IQR/mean/std/n + bootstrap median CI per k
+        "line_omp_disp": {k: summ(line_curve[k]) for k in checkpoints},
+        "svd_disp": {k: summ(svd_curve[k]) for k in checkpoints},
+        "line_omp_ci": {k: median_ci_bootstrap(line_curve[k]) for k in checkpoints},
+        "svd_ci": {k: median_ci_bootstrap(svd_curve[k]) for k in checkpoints},
         "head_type_distribution": dom_counter,
         "gate": {"k": args.gate_k, "line_err": gate_err, "svd_err": svd_ref,
                  "threshold": args.gate_err, "go": bool(go), "near_svd": bool(near_svd)},

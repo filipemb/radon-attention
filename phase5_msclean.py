@@ -18,6 +18,7 @@ import torch
 
 from phase0_radon_attention import load_sequences, extract_attention
 from phase06_profiled_lines import atom_vector
+from phase_stats import summ, median_ci_bootstrap
 
 TAUS = [1, 2, 4, 8, 16, 32, 64]
 DIAGS = [1, 2, 4, 8, 16, 32, 64]
@@ -123,6 +124,10 @@ def run(model_name, args, device, rng):
         "svd_match": {f"{m}+{k}": med(svd_match[(m, k)]) for m in ms for k in ks},
         "named_frac": {m: med(named_frac[m]) for m in ms},
         "first_pick_counts": dict(pos1),
+        # dispersion (NN revision)
+        "named_frac_disp": {m: summ(named_frac[m]) for m in ms},
+        "named_frac_ci": {m: median_ci_bootstrap(named_frac[m]) for m in ms},
+        "err_disp": {f"{m}+{k}": summ(err[(m, k)]) for m in ms for k in ks},
     }
 
 

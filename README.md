@@ -41,6 +41,10 @@ python make_corpus.py        # builds wikitext2_train.txt (used by all phases)
 | `phase13_stats.py` | Table 2 | Canonical aggregator: middle window, pooled z-tests, Holm |
 | `phase14_adaptive.py` | 7.4 | Per-head adaptive beta ablation (negative result) |
 | `phase15_interaction.py` | 7.1 | Sink-column constancy (non-tautology check) |
+| `phase16_longcontext.py` | 7.4 | Long-context KV retrieval with U-shape diagnostic (n=512/1024, multi-token key) |
+| `phase17_efficiency.py` | 4.x | Rate-distortion: parameters vs fidelity (line dictionary / SVD / two-channel) |
+| `phase18_betacv.py` | 7.4 | Cross-validated sink-calibration beta (selected on one probe family, scored on a held-out one) |
+| `phase_stats.py` | (shared) | Dispersion helpers: IQR, mean/std, bootstrap median CI (used by all phases) |
 | `paper_figures*.py` | all figures | 300-dpi figure generation |
 
 `out/` contains the per-seed result JSONs used in the paper (files tagged
