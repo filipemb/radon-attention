@@ -1,6 +1,7 @@
 # Attention Is Concentrated but Not a Sum of Few Lines
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20673537.svg)](https://doi.org/10.5281/zenodo.20673537)
+[![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24140087.svg)](https://doi.org/10.5281/zenodo.24140087)
 
 Code and result files for the paper *"Attention Is Concentrated but Not a Sum of
 Few Lines: a Misleading Radon Signal and a Named-plus-Low-Rank Resolution"*
@@ -96,6 +97,10 @@ MIT.
 | `paper_figures_v2.py` | Figures of the revised paper |
 
 Aggregate results are in `out/*.json`. The attention archives and per-instance
-ledgers (several GB) are archived separately on Zenodo; the archives can also be
-regenerated from the manifests with `extract_attn.py`.
+ledgers (3.4 GB) are in a separate Zenodo dataset,
+[10.5281/zenodo.24140087](https://doi.org/10.5281/zenodo.24140087). Each archive is
+split into parts; rebuild with `cat attention_archives.tar.part0* > attention_archives.tar`
+and `cat result_ledgers.tar.gz.part0* > result_ledgers.tar.gz`, then extract both at
+the repository root. The attention archives can also be regenerated from the
+manifests with `extract_attn.py`.
 
