@@ -1,10 +1,17 @@
-# Attention Is Concentrated but Not Line-Decomposable
+# Attention Is Concentrated but Not a Sum of Few Lines
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20673537.svg)](https://doi.org/10.5281/zenodo.20673537)
 
-Code and per-seed result files for the paper *"Attention Is Concentrated but Not
-Line-Decomposable: a Misleading Radon Signal and a Named-plus-Low-Rank
-Resolution"*.
+Code and result files for the paper *"Attention Is Concentrated but Not a Sum of
+Few Lines: a Misleading Radon Signal and a Named-plus-Low-Rank Resolution"*
+(earlier title: "... but Not Line-Decomposable ...").
+
+Version 3.0.0 is the revision prepared after review. It replaces several earlier
+numbers: the forward-pass injection is now causal by construction (reconstructions
+restricted to the causal support and scored at the last position only), sampling
+is stratified over articles, layers and heads with frozen manifests, the named
+share is reported as an energy ratio under an explicit allocation convention, and
+sink edits are compared with mass-matched controls. See "Revision pipeline" below.
 
 Everything runs end-to-end on a single consumer GPU (tested on an NVIDIA RTX
 3060, 12 GB). Models (GPT-2 small/medium, Pythia-410m/1.4b, Qwen2.5-0.5B/3B) and
@@ -71,3 +78,24 @@ python phase13_stats.py
 ## License
 
 MIT.
+
+## Revision pipeline (v3.0.0)
+
+| Script | What it does |
+|---|---|
+| `sampling.py`, `extract_attn.py` | Frozen article manifests; stratified article x layer x head sampling; attention archives |
+| `phase24_p0_metrics.py`, `phase9_bigmodel.py`, `phase3_robustness.py` | Concentration and line vs. SVD on the stratified samples |
+| `phase2_downstream.py`, `phase7_editability.py`, `phase32_downstream_tests.py` | Causal forward-pass injection, last-position KL, paired tests |
+| `phase19_richlines.py`, `phase19b_*`, `phase19c_*` | All-orientation lines, sinogram compression, learned segments, semiseparable baseline, controls |
+| `phase20_lowrank_baselines.py` | Randomized SVD, CUR, Nystrom-type skeleton |
+| `phase21_allocation_v2.py`, `phase21_allocation_v2_forward*.py` | Two-channel allocation conventions, fixed-budget comparison, forward injection |
+| `phase22_sink_evolution.py` | Sink across Pythia training checkpoints; equalized-mass ablations |
+| `phase27_qwen7b.py`, `phase30_anova_curves.py`, `phase54_rowshuffle_control.py` | Qwen2.5-7B replication, ANOVA and reconstruction curves, row-shuffled Radon control |
+| `phase36_exempt_heads.py`, `phase50_*` | Nearly diagonal heads; semiseparable forward comparison |
+| `phase37_mass_matched.py`, `phase38_paired_items.py`, `phase45_currentcv_items.py`, `revision_v3_*` | Mass-matched sink edits, paired item tests for retrieval, beta cross-validation |
+| `paper_figures_v2.py` | Figures of the revised paper |
+
+Aggregate results are in `out/*.json`. The attention archives and per-instance
+ledgers (several GB) are archived separately on Zenodo; the archives can also be
+regenerated from the manifests with `extract_attn.py`.
+
