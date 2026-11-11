@@ -1,0 +1,13 @@
+{
+  "created_UTC": "2026-11-10T16:48:28.039844+00:00",
+  "chunk_documents": 2,
+  "unchanged_V1_batch_size": 2,
+  "unchanged_articles_per_model": 256,
+  "reason": "measured real forward cost:125 seconds for masked_K8 alone on two GPT-2 articles; releasing the shared GPU after every unchanged V1 batch avoids multi-hour lock holds",
+  "scientific_sampling_changed": false,
+  "ranks_or_head_criterion_or_sweeps_changed": false,
+  "supersedes_only_scheduling_fields_in": [
+    "out/phase50_gpu_solver.json",
+    "out/phase50_execution_plan.json"
+  ]
+}

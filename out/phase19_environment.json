@@ -1,0 +1,14 @@
+{
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "skimage": "0.26.0",
+  "torch": "2.6.0+cu124",
+  "cupy": "14.2.0",
+  "threads_per_process": 4,
+  "cpu_worker_limit": 2,
+  "gpu_worker_limit": 1,
+  "gpu_lock": "/tmp/radon-gpu.lock",
+  "subset_fixed_before_attention": "out/phase19_selection.json",
+  "note": "C2 compact transverse profile is exactly rendered in sparse CUDA; CPU finite-difference gradcheck and CUDA comparison passed. CUDA atomic sums permit small floating-point nondeterminism."
+}

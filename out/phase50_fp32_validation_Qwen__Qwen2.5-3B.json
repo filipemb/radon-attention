@@ -1,0 +1,256 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "n_unique_matrices": 32,
+  "n_fits": 128,
+  "same_indices_as_original_GPU_validation": [
+    0,
+    36,
+    72,
+    108,
+    144,
+    180,
+    217,
+    253,
+    289,
+    325,
+    361,
+    397,
+    434,
+    470,
+    506,
+    542,
+    578,
+    614,
+    651,
+    687,
+    723,
+    759,
+    795,
+    831,
+    868,
+    904,
+    940,
+    976,
+    1012,
+    1048,
+    1085,
+    1121
+  ],
+  "same_initial_factors_rounded_to_float32": true,
+  "GPU_dtype": "float32",
+  "CPU_reference_dtype": "float64",
+  "CPU_recomputations": 0,
+  "ridge_relative_to_trace": 1e-06,
+  "sweeps": 200,
+  "max_absolute_relative_error_difference": 0.14866828620833955,
+  "max_normalized_frobenius_difference": 0.16965228835850996,
+  "max_TV_difference": 0.14453475913163277,
+  "threshold_fixed_before_results": 0.002,
+  "passed": false,
+  "n_failed_fits": 110,
+  "worst": {
+    "model": "Qwen/Qwen2.5-3B",
+    "archive_index": 940,
+    "instance_id": "Qwen__Qwen2.5-3B_n128_wikitext-train-article-9318_l4_h4",
+    "document_index": 26,
+    "layer": 4,
+    "head": 4,
+    "K": 8,
+    "arm": "masked_K",
+    "CPU": {
+      "frobenius": 0.11100664916547623,
+      "TV": 0.09569776000336631,
+      "raw_causal_frobenius": 0.07897506662016458,
+      "raw_unmasked_frobenius": 11141780521933.81,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.7881393432617188e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "GPU": {
+      "frobenius": 0.2806589375239862,
+      "TV": 0.24023251913499907,
+      "raw_causal_frobenius": 0.22764335282850415,
+      "raw_unmasked_frobenius": 5624.842737146653,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "absolute_relative_error_difference": 0.14866828620833955,
+    "normalized_frobenius_difference": 0.16965228835850996,
+    "TV_difference": 0.14453475913163277,
+    "CPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float64",
+      "initial_relative": 0.5627251620594294,
+      "final_relative": 0.0789750666201592,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.5627251620594294
+        },
+        {
+          "sweep": 1,
+          "relative": 0.354227581359825
+        },
+        {
+          "sweep": 10,
+          "relative": 0.16310737375101592
+        },
+        {
+          "sweep": 25,
+          "relative": 0.13424879806376547
+        },
+        {
+          "sweep": 50,
+          "relative": 0.11430258862674214
+        },
+        {
+          "sweep": 100,
+          "relative": 0.09679507621990074
+        },
+        {
+          "sweep": 150,
+          "relative": 0.08631100169690098
+        },
+        {
+          "sweep": 180,
+          "relative": 0.08167369385049446
+        },
+        {
+          "sweep": 200,
+          "relative": 0.0789750666201592
+        }
+      ],
+      "last20_relative_objective_change": 0.06499139838878337,
+      "gradient_normalized_target": 6060.355947662427,
+      "converged": false,
+      "direct_LS_blocks": 51150,
+      "direct_sweep_retries": 0,
+      "rejected_sweeps": [],
+      "maximum_absolute_factor": 9548414.935476286,
+      "minimum_nonzero_absolute_factor": 2.2093041062761294e-11,
+      "factor_dynamic_range": 4.321910645235039e+17,
+      "unmasked_product_norm_over_target": 11141780521933.812,
+      "maximum_QR_observed_product_error": 0.001593886391820463,
+      "seconds": 0.9774132999591529
+    },
+    "GPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.5627251267433167,
+      "final_relative": 0.22764334082603455,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.5627251267433167
+        },
+        {
+          "sweep": 1,
+          "relative": 0.4085470139980316
+        },
+        {
+          "sweep": 10,
+          "relative": 0.2435353547334671
+        },
+        {
+          "sweep": 25,
+          "relative": 0.23152987658977509
+        },
+        {
+          "sweep": 50,
+          "relative": 0.22740738093852997
+        },
+        {
+          "sweep": 100,
+          "relative": 0.22732771933078766
+        },
+        {
+          "sweep": 150,
+          "relative": 0.22700369358062744
+        },
+        {
+          "sweep": 180,
+          "relative": 0.22742581367492676
+        },
+        {
+          "sweep": 200,
+          "relative": 0.22764334082603455
+        }
+      ],
+      "last20_relative_objective_change": 0.0019139086361974478,
+      "gradient_normalized_target": 0.36749616265296936,
+      "converged": false,
+      "objective_increase_sweeps": 79,
+      "maximum_absolute_factor": 111.76160430908203,
+      "minimum_nonzero_absolute_factor": 3.154646719849552e-06,
+      "factor_dynamic_range": 35427613.36978235,
+      "unmasked_product_norm_over_target": 5624.84228515625,
+      "maximum_QR_observed_product_error": 0.004025785718113184,
+      "seconds": 0.8371951999142766
+    },
+    "passed": false,
+    "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a"
+  },
+  "timings": [
+    {
+      "K": 8,
+      "arm": "masked_K",
+      "rank": 8,
+      "n_matrices": 32,
+      "cold_seconds": 0.8400800998788327,
+      "steady_seconds": 0.13076619990170002
+    },
+    {
+      "K": 8,
+      "arm": "named_plus_masked",
+      "rank": 7,
+      "n_matrices": 32,
+      "cold_seconds": 0.2881267999764532,
+      "steady_seconds": 0.12414249987341464
+    },
+    {
+      "K": 16,
+      "arm": "masked_K",
+      "rank": 16,
+      "n_matrices": 32,
+      "cold_seconds": 0.3912896001711488,
+      "steady_seconds": 0.21746600000187755
+    },
+    {
+      "K": 16,
+      "arm": "named_plus_masked",
+      "rank": 15,
+      "n_matrices": 32,
+      "cold_seconds": 0.392422900069505,
+      "steady_seconds": 0.20921589992940426
+    }
+  ],
+  "elapsed_seconds": 3.055511999875307,
+  "pairs_path": "out/pairs/phase50_fp32_validation_Qwen__Qwen2.5-3B.jsonl",
+  "pairs_sha256": "3a1c3a2dbaf2c2c522f8e8e783d0108b31a2e358ae61e17e4eb024829244ae2f",
+  "sources": {
+    "phase50_fp32_als.py": "12db461d06ccab82c40bb4d3befbb8f7dc5b85c47a998609da457db861ea39b1",
+    "phase50_fp32_graph.py": "bddc95e7fad7ff8c73132e47f09a19eae421494b1ce43a5190e40c6d4eb20d33"
+  },
+  "CPU_reference_metadata": "out/phase50_GPU_CPU_reference_Qwen__Qwen2.5-3B.json",
+  "failure_interpretation": "Uniform trace-relative ridge changes the unregularized finite-200-sweep estimator; FP32 normal equations lose small singular directions (conditioning squared). Worst CPU diagnostics and all raw per-fit errors retained. No threshold relaxation or CPU fallback."
+}

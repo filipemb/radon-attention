@@ -1,0 +1,1839 @@
+{
+  "passed": true,
+  "actual_failure_evidence_sha256": "499ada90f6c6b255d140f3c76fe39aca933e7a7094506ddcd90859d979459049",
+  "ordinary_path_bit_equal_controls": [
+    {
+      "batch": 1,
+      "rank": 7,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 1,
+      "rank": 8,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 1,
+      "rank": 15,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 1,
+      "rank": 16,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 2,
+      "rank": 7,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 2,
+      "rank": 8,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 2,
+      "rank": 15,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 2,
+      "rank": 16,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 24,
+      "rank": 7,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 24,
+      "rank": 8,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 24,
+      "rank": 15,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 24,
+      "rank": 16,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 28,
+      "rank": 7,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 28,
+      "rank": 8,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 28,
+      "rank": 15,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 28,
+      "rank": 16,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 32,
+      "rank": 7,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 32,
+      "rank": 8,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 32,
+      "rank": 15,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    },
+    {
+      "batch": 32,
+      "rank": 16,
+      "left_factors_bit_equal": true,
+      "right_factors_bit_equal": true
+    }
+  ],
+  "actual_core_reconstruction_max_relative_error": 1.94464099287717e-06,
+  "actual_core_recomputed_values": [
+    0.9999987483024597
+  ],
+  "original_failed_input200_sweeps_finite": true,
+  "original_input_invalid_singular_values_recomputed": 4,
+  "original_input_per_matrix_diagnostics": [
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.3171970844268799,
+      "final_relative": 0.03433128818869591,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.3171970844268799
+        },
+        {
+          "sweep": 1,
+          "relative": 0.10548266768455505
+        },
+        {
+          "sweep": 10,
+          "relative": 0.04732879623770714
+        },
+        {
+          "sweep": 25,
+          "relative": 0.04089611768722534
+        },
+        {
+          "sweep": 50,
+          "relative": 0.03745224326848984
+        },
+        {
+          "sweep": 100,
+          "relative": 0.03510863333940506
+        },
+        {
+          "sweep": 150,
+          "relative": 0.03457699716091156
+        },
+        {
+          "sweep": 180,
+          "relative": 0.034439731389284134
+        },
+        {
+          "sweep": 200,
+          "relative": 0.03433128818869591
+        }
+      ],
+      "last20_relative_objective_change": 0.006287690252065659,
+      "gradient_normalized_target": 0.00821950938552618,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 10.48755931854248,
+      "minimum_nonzero_absolute_factor": 4.284143415134167e-06,
+      "factor_dynamic_range": 2447994.453568973,
+      "unmasked_product_norm_over_target": 197.34732055664062,
+      "maximum_QR_observed_product_error": 5.134413731866516e-05,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.027627186849713326,
+      "final_relative": 0.007801599334925413,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.027627186849713326
+        },
+        {
+          "sweep": 1,
+          "relative": 0.015559590421617031
+        },
+        {
+          "sweep": 10,
+          "relative": 0.00885053165256977
+        },
+        {
+          "sweep": 25,
+          "relative": 0.008264722302556038
+        },
+        {
+          "sweep": 50,
+          "relative": 0.008038057014346123
+        },
+        {
+          "sweep": 100,
+          "relative": 0.007864082232117653
+        },
+        {
+          "sweep": 150,
+          "relative": 0.007817238569259644
+        },
+        {
+          "sweep": 180,
+          "relative": 0.007807265501469374
+        },
+        {
+          "sweep": 200,
+          "relative": 0.007801599334925413
+        }
+      ],
+      "last20_relative_objective_change": 0.0014509923057630658,
+      "gradient_normalized_target": 0.0001872093416750431,
+      "converged": false,
+      "objective_increase_sweeps": 18,
+      "maximum_absolute_factor": 2.3569936752319336,
+      "minimum_nonzero_absolute_factor": 4.007328016086831e-07,
+      "factor_dynamic_range": 5881708.873768576,
+      "unmasked_product_norm_over_target": 3.1769349575042725,
+      "maximum_QR_observed_product_error": 5.397452241595602e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.13121500611305237,
+      "final_relative": 0.037357378751039505,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.13121500611305237
+        },
+        {
+          "sweep": 1,
+          "relative": 0.07469054311513901
+        },
+        {
+          "sweep": 10,
+          "relative": 0.04592945799231529
+        },
+        {
+          "sweep": 25,
+          "relative": 0.04169284552335739
+        },
+        {
+          "sweep": 50,
+          "relative": 0.039500024169683456
+        },
+        {
+          "sweep": 100,
+          "relative": 0.0382889062166214
+        },
+        {
+          "sweep": 150,
+          "relative": 0.03769278898835182
+        },
+        {
+          "sweep": 180,
+          "relative": 0.03746534138917923
+        },
+        {
+          "sweep": 200,
+          "relative": 0.037357378751039505
+        }
+      ],
+      "last20_relative_objective_change": 0.005754948128014803,
+      "gradient_normalized_target": 0.0016386235365644097,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 4.920026779174805,
+      "minimum_nonzero_absolute_factor": 1.5035739124868996e-06,
+      "factor_dynamic_range": 3272221.430762335,
+      "unmasked_product_norm_over_target": 27.288637161254883,
+      "maximum_QR_observed_product_error": 7.814582204446197e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.04267691448330879,
+      "final_relative": 0.01676223613321781,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.04267691448330879
+        },
+        {
+          "sweep": 1,
+          "relative": 0.02662346139550209
+        },
+        {
+          "sweep": 10,
+          "relative": 0.019084839150309563
+        },
+        {
+          "sweep": 25,
+          "relative": 0.017874345183372498
+        },
+        {
+          "sweep": 50,
+          "relative": 0.017178930342197418
+        },
+        {
+          "sweep": 100,
+          "relative": 0.016892563551664352
+        },
+        {
+          "sweep": 150,
+          "relative": 0.016814380884170532
+        },
+        {
+          "sweep": 180,
+          "relative": 0.016781706362962723
+        },
+        {
+          "sweep": 200,
+          "relative": 0.01676223613321781
+        }
+      ],
+      "last20_relative_objective_change": 0.0023191035725176334,
+      "gradient_normalized_target": 0.00023716162831988186,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.6746997833251953,
+      "minimum_nonzero_absolute_factor": 6.893184945511166e-06,
+      "factor_dynamic_range": 533091.7148419404,
+      "unmasked_product_norm_over_target": 4.506977558135986,
+      "maximum_QR_observed_product_error": 4.458124749362469e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.1772242933511734,
+      "final_relative": 0.03037180006504059,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.1772242933511734
+        },
+        {
+          "sweep": 1,
+          "relative": 0.073299340903759
+        },
+        {
+          "sweep": 10,
+          "relative": 0.03840623423457146
+        },
+        {
+          "sweep": 25,
+          "relative": 0.03443462401628494
+        },
+        {
+          "sweep": 50,
+          "relative": 0.03229762986302376
+        },
+        {
+          "sweep": 100,
+          "relative": 0.031023481860756874
+        },
+        {
+          "sweep": 150,
+          "relative": 0.030593981966376305
+        },
+        {
+          "sweep": 180,
+          "relative": 0.030444223433732986
+        },
+        {
+          "sweep": 200,
+          "relative": 0.03037180006504059
+        }
+      ],
+      "last20_relative_objective_change": 0.004752130247652531,
+      "gradient_normalized_target": 0.0031514172442257404,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 5.412278652191162,
+      "minimum_nonzero_absolute_factor": 1.3368119198275963e-06,
+      "factor_dynamic_range": 4048646.3143515084,
+      "unmasked_product_norm_over_target": 49.31932067871094,
+      "maximum_QR_observed_product_error": 7.4175072768412065e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.15129078924655914,
+      "final_relative": 0.020722554996609688,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.15129078924655914
+        },
+        {
+          "sweep": 1,
+          "relative": 0.051807913929224014
+        },
+        {
+          "sweep": 10,
+          "relative": 0.026859819889068604
+        },
+        {
+          "sweep": 25,
+          "relative": 0.024526001885533333
+        },
+        {
+          "sweep": 50,
+          "relative": 0.023148521780967712
+        },
+        {
+          "sweep": 100,
+          "relative": 0.021899791434407234
+        },
+        {
+          "sweep": 150,
+          "relative": 0.021168159320950508
+        },
+        {
+          "sweep": 180,
+          "relative": 0.02086854726076126
+        },
+        {
+          "sweep": 200,
+          "relative": 0.020722554996609688
+        }
+      ],
+      "last20_relative_objective_change": 0.013942758552730083,
+      "gradient_normalized_target": 0.0020318508613854647,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 5.173564910888672,
+      "minimum_nonzero_absolute_factor": 1.0268413461744785e-05,
+      "factor_dynamic_range": 503832.93681764073,
+      "unmasked_product_norm_over_target": 43.42787551879883,
+      "maximum_QR_observed_product_error": 9.987672456190921e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.13661956787109375,
+      "final_relative": 0.026088451966643333,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.13661956787109375
+        },
+        {
+          "sweep": 1,
+          "relative": 0.0644441545009613
+        },
+        {
+          "sweep": 10,
+          "relative": 0.03344082459807396
+        },
+        {
+          "sweep": 25,
+          "relative": 0.029646005481481552
+        },
+        {
+          "sweep": 50,
+          "relative": 0.02776467427611351
+        },
+        {
+          "sweep": 100,
+          "relative": 0.026569556444883347
+        },
+        {
+          "sweep": 150,
+          "relative": 0.02625485137104988
+        },
+        {
+          "sweep": 180,
+          "relative": 0.02614576555788517
+        },
+        {
+          "sweep": 200,
+          "relative": 0.026088451966643333
+        }
+      ],
+      "last20_relative_objective_change": 0.004379277117550373,
+      "gradient_normalized_target": 0.0013123879907652736,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 5.153265953063965,
+      "minimum_nonzero_absolute_factor": 7.608002192682761e-07,
+      "factor_dynamic_range": 6773481.161743464,
+      "unmasked_product_norm_over_target": 28.18534278869629,
+      "maximum_QR_observed_product_error": 3.406195446586935e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 5.3880223276792094e-05,
+      "final_relative": 5.8672685554483905e-06,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 5.3880223276792094e-05
+        },
+        {
+          "sweep": 1,
+          "relative": 6.162569206935586e-06
+        },
+        {
+          "sweep": 10,
+          "relative": 5.959550435363781e-06
+        },
+        {
+          "sweep": 25,
+          "relative": 5.978919034532737e-06
+        },
+        {
+          "sweep": 50,
+          "relative": 5.848674391017994e-06
+        },
+        {
+          "sweep": 100,
+          "relative": 5.970956408418715e-06
+        },
+        {
+          "sweep": 150,
+          "relative": 5.849058652529493e-06
+        },
+        {
+          "sweep": 180,
+          "relative": 5.849173248861916e-06
+        },
+        {
+          "sweep": 200,
+          "relative": 5.8672685554483905e-06
+        }
+      ],
+      "last20_relative_objective_change": 0.006196928210556507,
+      "gradient_normalized_target": 3.586624870877131e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.363583564758301,
+      "minimum_nonzero_absolute_factor": 1.1793158463668796e-11,
+      "factor_dynamic_range": 285214819687.2363,
+      "unmasked_product_norm_over_target": 0.9999987483024597,
+      "maximum_QR_observed_product_error": 3.2874718272069003e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.00688936747610569,
+      "final_relative": 0.003282305784523487,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.00688936747610569
+        },
+        {
+          "sweep": 1,
+          "relative": 0.004291238263249397
+        },
+        {
+          "sweep": 10,
+          "relative": 0.0035030096769332886
+        },
+        {
+          "sweep": 25,
+          "relative": 0.0033650388941168785
+        },
+        {
+          "sweep": 50,
+          "relative": 0.0033161696046590805
+        },
+        {
+          "sweep": 100,
+          "relative": 0.003295806236565113
+        },
+        {
+          "sweep": 150,
+          "relative": 0.003286432707682252
+        },
+        {
+          "sweep": 180,
+          "relative": 0.003283092984929681
+        },
+        {
+          "sweep": 200,
+          "relative": 0.003282305784523487
+        }
+      ],
+      "last20_relative_objective_change": 0.0004795252170879394,
+      "gradient_normalized_target": 8.979523954621982e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.2252049446105957,
+      "minimum_nonzero_absolute_factor": 6.402456165233161e-07,
+      "factor_dynamic_range": 5037449.474662888,
+      "unmasked_product_norm_over_target": 1.0213046073913574,
+      "maximum_QR_observed_product_error": 1.3762382877757773e-05,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.0008553217048756778,
+      "final_relative": 0.00043244403786957264,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.0008553217048756778
+        },
+        {
+          "sweep": 1,
+          "relative": 0.0006807640311308205
+        },
+        {
+          "sweep": 10,
+          "relative": 0.000462316267658025
+        },
+        {
+          "sweep": 25,
+          "relative": 0.0004490574647206813
+        },
+        {
+          "sweep": 50,
+          "relative": 0.00043909173109568655
+        },
+        {
+          "sweep": 100,
+          "relative": 0.0004355889104772359
+        },
+        {
+          "sweep": 150,
+          "relative": 0.00043317655217833817
+        },
+        {
+          "sweep": 180,
+          "relative": 0.00043264630949124694
+        },
+        {
+          "sweep": 200,
+          "relative": 0.00043244403786957264
+        }
+      ],
+      "last20_relative_objective_change": 0.0009348745224997401,
+      "gradient_normalized_target": 5.922757736698259e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.351774215698242,
+      "minimum_nonzero_absolute_factor": 7.796565615336704e-10,
+      "factor_dynamic_range": 4299039322.012417,
+      "unmasked_product_norm_over_target": 1.0001033544540405,
+      "maximum_QR_observed_product_error": 4.950644324708264e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.022686319425702095,
+      "final_relative": 0.00553819490596652,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.022686319425702095
+        },
+        {
+          "sweep": 1,
+          "relative": 0.013184307143092155
+        },
+        {
+          "sweep": 10,
+          "relative": 0.007607639767229557
+        },
+        {
+          "sweep": 25,
+          "relative": 0.006138687487691641
+        },
+        {
+          "sweep": 50,
+          "relative": 0.005891077686101198
+        },
+        {
+          "sweep": 100,
+          "relative": 0.005717802327126265
+        },
+        {
+          "sweep": 150,
+          "relative": 0.005572887137532234
+        },
+        {
+          "sweep": 180,
+          "relative": 0.0055506546050310135
+        },
+        {
+          "sweep": 200,
+          "relative": 0.00553819490596652
+        }
+      ],
+      "last20_relative_objective_change": 0.004484395030885935,
+      "gradient_normalized_target": 9.843107545748353e-05,
+      "converged": false,
+      "objective_increase_sweeps": 2,
+      "maximum_absolute_factor": 2.945270299911499,
+      "minimum_nonzero_absolute_factor": 5.489434443006758e-06,
+      "factor_dynamic_range": 536534.3789948369,
+      "unmasked_product_norm_over_target": 2.413398027420044,
+      "maximum_QR_observed_product_error": 8.455948773189448e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 4.140473174629733e-05,
+      "final_relative": 1.303879889746895e-05,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 4.140473174629733e-05
+        },
+        {
+          "sweep": 1,
+          "relative": 1.5408862964250147e-05
+        },
+        {
+          "sweep": 10,
+          "relative": 1.3163215953682084e-05
+        },
+        {
+          "sweep": 25,
+          "relative": 1.3015726835874375e-05
+        },
+        {
+          "sweep": 50,
+          "relative": 1.3010434486204758e-05
+        },
+        {
+          "sweep": 100,
+          "relative": 1.3008483620069455e-05
+        },
+        {
+          "sweep": 150,
+          "relative": 1.3030280570092145e-05
+        },
+        {
+          "sweep": 180,
+          "relative": 1.2996694749745075e-05
+        },
+        {
+          "sweep": 200,
+          "relative": 1.303879889746895e-05
+        }
+      ],
+      "last20_relative_objective_change": 0.00648981099948287,
+      "gradient_normalized_target": 5.022668119636364e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.3635311126708984,
+      "minimum_nonzero_absolute_factor": 1.5667352137871404e-10,
+      "factor_dynamic_range": 21468408210.09257,
+      "unmasked_product_norm_over_target": 0.999998152256012,
+      "maximum_QR_observed_product_error": 6.745037808286725e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.02291015535593033,
+      "final_relative": 0.01200089044868946,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.02291015535593033
+        },
+        {
+          "sweep": 1,
+          "relative": 0.015652377158403397
+        },
+        {
+          "sweep": 10,
+          "relative": 0.012531142681837082
+        },
+        {
+          "sweep": 25,
+          "relative": 0.012176746502518654
+        },
+        {
+          "sweep": 50,
+          "relative": 0.012067851610481739
+        },
+        {
+          "sweep": 100,
+          "relative": 0.012022793292999268
+        },
+        {
+          "sweep": 150,
+          "relative": 0.012008031830191612
+        },
+        {
+          "sweep": 180,
+          "relative": 0.012003063224256039
+        },
+        {
+          "sweep": 200,
+          "relative": 0.01200089044868946
+        }
+      ],
+      "last20_relative_objective_change": 0.00036199617898091674,
+      "gradient_normalized_target": 3.770557668758556e-05,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.2378814220428467,
+      "minimum_nonzero_absolute_factor": 1.473759283499021e-07,
+      "factor_dynamic_range": 21970219.005884197,
+      "unmasked_product_norm_over_target": 1.4045971632003784,
+      "maximum_QR_observed_product_error": 8.556876309739891e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.006465590558946133,
+      "final_relative": 2.3289001092052786e-06,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.006465590558946133
+        },
+        {
+          "sweep": 1,
+          "relative": 2.1596158603642834e-06
+        },
+        {
+          "sweep": 10,
+          "relative": 2.1627656678901985e-06
+        },
+        {
+          "sweep": 25,
+          "relative": 2.1663195184373762e-06
+        },
+        {
+          "sweep": 50,
+          "relative": 2.2840838482807158e-06
+        },
+        {
+          "sweep": 100,
+          "relative": 2.241054289697786e-06
+        },
+        {
+          "sweep": 150,
+          "relative": 2.239789864688646e-06
+        },
+        {
+          "sweep": 180,
+          "relative": 2.3284110284294e-06
+        },
+        {
+          "sweep": 200,
+          "relative": 2.3289001092052786e-06
+        }
+      ],
+      "last20_relative_objective_change": 0.00042028227471746504,
+      "gradient_normalized_target": 3.5768439374805894e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.363583564758301,
+      "minimum_nonzero_absolute_factor": 2.787669073917444e-16,
+      "factor_dynamic_range": 1.2065935645767086e+16,
+      "unmasked_product_norm_over_target": 0.9999987483024597,
+      "maximum_QR_observed_product_error": 5.057977432443295e-07,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.2588988244533539,
+      "final_relative": 0.034233544021844864,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.2588988244533539
+        },
+        {
+          "sweep": 1,
+          "relative": 0.10770398378372192
+        },
+        {
+          "sweep": 10,
+          "relative": 0.04765959829092026
+        },
+        {
+          "sweep": 25,
+          "relative": 0.04228580370545387
+        },
+        {
+          "sweep": 50,
+          "relative": 0.03873337060213089
+        },
+        {
+          "sweep": 100,
+          "relative": 0.03596416488289833
+        },
+        {
+          "sweep": 150,
+          "relative": 0.03485259786248207
+        },
+        {
+          "sweep": 180,
+          "relative": 0.034442152827978134
+        },
+        {
+          "sweep": 200,
+          "relative": 0.034233544021844864
+        }
+      ],
+      "last20_relative_objective_change": 0.012076943181455135,
+      "gradient_normalized_target": 0.005705388728529215,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 7.541226863861084,
+      "minimum_nonzero_absolute_factor": 9.976848502901703e-08,
+      "factor_dynamic_range": 75587264.47202006,
+      "unmasked_product_norm_over_target": 112.87065124511719,
+      "maximum_QR_observed_product_error": 1.5462608644156717e-05,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.039607953280210495,
+      "final_relative": 0.02014969103038311,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.039607953280210495
+        },
+        {
+          "sweep": 1,
+          "relative": 0.030492857098579407
+        },
+        {
+          "sweep": 10,
+          "relative": 0.022501317784190178
+        },
+        {
+          "sweep": 25,
+          "relative": 0.021182892844080925
+        },
+        {
+          "sweep": 50,
+          "relative": 0.02065783180296421
+        },
+        {
+          "sweep": 100,
+          "relative": 0.02030329219996929
+        },
+        {
+          "sweep": 150,
+          "relative": 0.020196978002786636
+        },
+        {
+          "sweep": 180,
+          "relative": 0.020165076479315758
+        },
+        {
+          "sweep": 200,
+          "relative": 0.02014969103038311
+        }
+      ],
+      "last20_relative_objective_change": 0.0015253680758178234,
+      "gradient_normalized_target": 0.0003953810955863446,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.6351428031921387,
+      "minimum_nonzero_absolute_factor": 2.3382267499982845e-06,
+      "factor_dynamic_range": 1554657.948890032,
+      "unmasked_product_norm_over_target": 5.49233341217041,
+      "maximum_QR_observed_product_error": 3.6695510061690584e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.2064046859741211,
+      "final_relative": 0.06743644922971725,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.2064046859741211
+        },
+        {
+          "sweep": 1,
+          "relative": 0.1325535625219345
+        },
+        {
+          "sweep": 10,
+          "relative": 0.08022799342870712
+        },
+        {
+          "sweep": 25,
+          "relative": 0.07419906556606293
+        },
+        {
+          "sweep": 50,
+          "relative": 0.07074576616287231
+        },
+        {
+          "sweep": 100,
+          "relative": 0.0685332641005516
+        },
+        {
+          "sweep": 150,
+          "relative": 0.06778478622436523
+        },
+        {
+          "sweep": 180,
+          "relative": 0.06755349785089493
+        },
+        {
+          "sweep": 200,
+          "relative": 0.06743644922971725
+        }
+      ],
+      "last20_relative_objective_change": 0.0034623509272933006,
+      "gradient_normalized_target": 0.004893342964351177,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 12.276588439941406,
+      "minimum_nonzero_absolute_factor": 1.8289756553713232e-06,
+      "factor_dynamic_range": 6712275.477198182,
+      "unmasked_product_norm_over_target": 58.96748352050781,
+      "maximum_QR_observed_product_error": 8.904150490707252e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.06310420483350754,
+      "final_relative": 0.020777421072125435,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.06310420483350754
+        },
+        {
+          "sweep": 1,
+          "relative": 0.035545073449611664
+        },
+        {
+          "sweep": 10,
+          "relative": 0.024571897462010384
+        },
+        {
+          "sweep": 25,
+          "relative": 0.02259531058371067
+        },
+        {
+          "sweep": 50,
+          "relative": 0.02164974808692932
+        },
+        {
+          "sweep": 100,
+          "relative": 0.0210556723177433
+        },
+        {
+          "sweep": 150,
+          "relative": 0.020854050293564796
+        },
+        {
+          "sweep": 180,
+          "relative": 0.02080267108976841
+        },
+        {
+          "sweep": 200,
+          "relative": 0.020777421072125435
+        }
+      ],
+      "last20_relative_objective_change": 0.002426086226478219,
+      "gradient_normalized_target": 0.0002879296662285924,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 1.7422810792922974,
+      "minimum_nonzero_absolute_factor": 1.3622628102893941e-05,
+      "factor_dynamic_range": 127896.1053720738,
+      "unmasked_product_norm_over_target": 5.170642375946045,
+      "maximum_QR_observed_product_error": 4.075447577633895e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.16083432734012604,
+      "final_relative": 0.03322211652994156,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.16083432734012604
+        },
+        {
+          "sweep": 1,
+          "relative": 0.0762479230761528
+        },
+        {
+          "sweep": 10,
+          "relative": 0.04225132614374161
+        },
+        {
+          "sweep": 25,
+          "relative": 0.0378115177154541
+        },
+        {
+          "sweep": 50,
+          "relative": 0.03531697392463684
+        },
+        {
+          "sweep": 100,
+          "relative": 0.034004244953393936
+        },
+        {
+          "sweep": 150,
+          "relative": 0.03350840508937836
+        },
+        {
+          "sweep": 180,
+          "relative": 0.03332415595650673
+        },
+        {
+          "sweep": 200,
+          "relative": 0.03322211652994156
+        }
+      ],
+      "last20_relative_objective_change": 0.006114716175943613,
+      "gradient_normalized_target": 0.002729400061070919,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 6.360723495483398,
+      "minimum_nonzero_absolute_factor": 2.0928559933963697e-06,
+      "factor_dynamic_range": 3039255.2165813204,
+      "unmasked_product_norm_over_target": 43.08304214477539,
+      "maximum_QR_observed_product_error": 4.842895123147173e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.12939056754112244,
+      "final_relative": 0.01821349933743477,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.12939056754112244
+        },
+        {
+          "sweep": 1,
+          "relative": 0.04913086071610451
+        },
+        {
+          "sweep": 10,
+          "relative": 0.024142570793628693
+        },
+        {
+          "sweep": 25,
+          "relative": 0.021427862346172333
+        },
+        {
+          "sweep": 50,
+          "relative": 0.01984957791864872
+        },
+        {
+          "sweep": 100,
+          "relative": 0.018857331946492195
+        },
+        {
+          "sweep": 150,
+          "relative": 0.018425356596708298
+        },
+        {
+          "sweep": 180,
+          "relative": 0.018282625824213028
+        },
+        {
+          "sweep": 200,
+          "relative": 0.01821349933743477
+        }
+      ],
+      "last20_relative_objective_change": 0.007547740358859301,
+      "gradient_normalized_target": 0.0012771354522556067,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 5.104429721832275,
+      "minimum_nonzero_absolute_factor": 3.6119936339673586e-06,
+      "factor_dynamic_range": 1413189.0139090992,
+      "unmasked_product_norm_over_target": 28.478931427001953,
+      "maximum_QR_observed_product_error": 8.317205356433988e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.11815375089645386,
+      "final_relative": 0.03216276690363884,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.11815375089645386
+        },
+        {
+          "sweep": 1,
+          "relative": 0.057799018919467926
+        },
+        {
+          "sweep": 10,
+          "relative": 0.03762681409716606
+        },
+        {
+          "sweep": 25,
+          "relative": 0.03452664613723755
+        },
+        {
+          "sweep": 50,
+          "relative": 0.033319760113954544
+        },
+        {
+          "sweep": 100,
+          "relative": 0.03262059763073921
+        },
+        {
+          "sweep": 150,
+          "relative": 0.03235708177089691
+        },
+        {
+          "sweep": 180,
+          "relative": 0.03223414719104767
+        },
+        {
+          "sweep": 200,
+          "relative": 0.03216276690363884
+        }
+      ],
+      "last20_relative_objective_change": 0.004423835314810276,
+      "gradient_normalized_target": 0.000832554476801306,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.215515375137329,
+      "minimum_nonzero_absolute_factor": 2.1698229829780757e-05,
+      "factor_dynamic_range": 148192.5207891403,
+      "unmasked_product_norm_over_target": 11.795697212219238,
+      "maximum_QR_observed_product_error": 5.007767867937218e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 3.9739363273838535e-05,
+      "final_relative": 3.6704468584503047e-06,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 3.9739363273838535e-05
+        },
+        {
+          "sweep": 1,
+          "relative": 3.2629463930788916e-06
+        },
+        {
+          "sweep": 10,
+          "relative": 3.4289678296772763e-06
+        },
+        {
+          "sweep": 25,
+          "relative": 3.479859969957033e-06
+        },
+        {
+          "sweep": 50,
+          "relative": 3.454743819020223e-06
+        },
+        {
+          "sweep": 100,
+          "relative": 3.4539407351985574e-06
+        },
+        {
+          "sweep": 150,
+          "relative": 3.5350522011867724e-06
+        },
+        {
+          "sweep": 180,
+          "relative": 3.508305098876008e-06
+        },
+        {
+          "sweep": 200,
+          "relative": 3.6704468584503047e-06
+        }
+      ],
+      "last20_relative_objective_change": 0.09456919133663177,
+      "gradient_normalized_target": 4.530074420472374e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.3635826110839844,
+      "minimum_nonzero_absolute_factor": 5.011794422532393e-15,
+      "factor_dynamic_range": 671133396047081.1,
+      "unmasked_product_norm_over_target": 0.9999983310699463,
+      "maximum_QR_observed_product_error": 5.083047653897665e-07,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.024514038115739822,
+      "final_relative": 0.007359101437032223,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.024514038115739822
+        },
+        {
+          "sweep": 1,
+          "relative": 0.013450738973915577
+        },
+        {
+          "sweep": 10,
+          "relative": 0.00854505319148302
+        },
+        {
+          "sweep": 25,
+          "relative": 0.007899682968854904
+        },
+        {
+          "sweep": 50,
+          "relative": 0.0075848824344575405
+        },
+        {
+          "sweep": 100,
+          "relative": 0.0074439337477087975
+        },
+        {
+          "sweep": 150,
+          "relative": 0.007395948749035597
+        },
+        {
+          "sweep": 180,
+          "relative": 0.007373753935098648
+        },
+        {
+          "sweep": 200,
+          "relative": 0.007359101437032223
+        }
+      ],
+      "last20_relative_objective_change": 0.003970297984778881,
+      "gradient_normalized_target": 9.26388893276453e-05,
+      "converged": false,
+      "objective_increase_sweeps": 5,
+      "maximum_absolute_factor": 2.556142568588257,
+      "minimum_nonzero_absolute_factor": 7.260002803377574e-06,
+      "factor_dynamic_range": 352085.617294674,
+      "unmasked_product_norm_over_target": 1.8319824934005737,
+      "maximum_QR_observed_product_error": 6.111716629675357e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.005975412670522928,
+      "final_relative": 0.0012604959774762392,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.005975412670522928
+        },
+        {
+          "sweep": 1,
+          "relative": 0.0030888512264937162
+        },
+        {
+          "sweep": 10,
+          "relative": 0.0014365604147315025
+        },
+        {
+          "sweep": 25,
+          "relative": 0.001331740408204496
+        },
+        {
+          "sweep": 50,
+          "relative": 0.0012886581243947148
+        },
+        {
+          "sweep": 100,
+          "relative": 0.001275302842259407
+        },
+        {
+          "sweep": 150,
+          "relative": 0.0012654910096898675
+        },
+        {
+          "sweep": 180,
+          "relative": 0.001261489698663354
+        },
+        {
+          "sweep": 200,
+          "relative": 0.0012604959774762392
+        }
+      ],
+      "last20_relative_objective_change": 0.0015747568104416132,
+      "gradient_normalized_target": 9.840290658758022e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.2973577976226807,
+      "minimum_nonzero_absolute_factor": 2.624617754035108e-12,
+      "factor_dynamic_range": 1256319245937.1643,
+      "unmasked_product_norm_over_target": 1.0155653953552246,
+      "maximum_QR_observed_product_error": 5.63732055525179e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.1328439861536026,
+      "final_relative": 0.01484314538538456,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.1328439861536026
+        },
+        {
+          "sweep": 1,
+          "relative": 0.08347110450267792
+        },
+        {
+          "sweep": 10,
+          "relative": 0.020083952695131302
+        },
+        {
+          "sweep": 25,
+          "relative": 0.017603162676095963
+        },
+        {
+          "sweep": 50,
+          "relative": 0.016230707988142967
+        },
+        {
+          "sweep": 100,
+          "relative": 0.015315193682909012
+        },
+        {
+          "sweep": 150,
+          "relative": 0.01500632707029581
+        },
+        {
+          "sweep": 180,
+          "relative": 0.01489877700805664
+        },
+        {
+          "sweep": 200,
+          "relative": 0.01484314538538456
+        }
+      ],
+      "last20_relative_objective_change": 0.007453959435224533,
+      "gradient_normalized_target": 0.0006930016679689288,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 5.779234409332275,
+      "minimum_nonzero_absolute_factor": 4.2811652889440666e-08,
+      "factor_dynamic_range": 134992087.8845045,
+      "unmasked_product_norm_over_target": 15.129363059997559,
+      "maximum_QR_observed_product_error": 1.5071048437675927e-05,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.0001754862314555794,
+      "final_relative": 2.3534241336164996e-05,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.0001754862314555794
+        },
+        {
+          "sweep": 1,
+          "relative": 3.895306872436777e-05
+        },
+        {
+          "sweep": 10,
+          "relative": 2.504769690858666e-05
+        },
+        {
+          "sweep": 25,
+          "relative": 2.3550952391815372e-05
+        },
+        {
+          "sweep": 50,
+          "relative": 2.345611937926151e-05
+        },
+        {
+          "sweep": 100,
+          "relative": 2.3516557121183723e-05
+        },
+        {
+          "sweep": 150,
+          "relative": 2.3543490897282027e-05
+        },
+        {
+          "sweep": 180,
+          "relative": 2.35347051784629e-05
+        },
+        {
+          "sweep": 200,
+          "relative": 2.3534241336164996e-05
+        }
+      ],
+      "last20_relative_objective_change": 3.9487433241447434e-05,
+      "gradient_normalized_target": 3.093938858000911e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.363276243209839,
+      "minimum_nonzero_absolute_factor": 4.5448154178322035e-15,
+      "factor_dynamic_range": 740024826973954.9,
+      "unmasked_product_norm_over_target": 0.9999989867210388,
+      "maximum_QR_observed_product_error": 7.165150236687623e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.10442385077476501,
+      "final_relative": 0.016996992751955986,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.10442385077476501
+        },
+        {
+          "sweep": 1,
+          "relative": 0.03691728413105011
+        },
+        {
+          "sweep": 10,
+          "relative": 0.02068633958697319
+        },
+        {
+          "sweep": 25,
+          "relative": 0.01850033923983574
+        },
+        {
+          "sweep": 50,
+          "relative": 0.017620878294110298
+        },
+        {
+          "sweep": 100,
+          "relative": 0.017211969941854477
+        },
+        {
+          "sweep": 150,
+          "relative": 0.017061911523342133
+        },
+        {
+          "sweep": 180,
+          "relative": 0.017006490379571915
+        },
+        {
+          "sweep": 200,
+          "relative": 0.016996992751955986
+        }
+      ],
+      "last20_relative_objective_change": 0.0011165732285007834,
+      "gradient_normalized_target": 0.0005326097598299384,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 6.577802658081055,
+      "minimum_nonzero_absolute_factor": 5.00849282047966e-08,
+      "factor_dynamic_range": 131332975.68451148,
+      "unmasked_product_norm_over_target": 10.406671524047852,
+      "maximum_QR_observed_product_error": 5.654702817992074e-06,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 0,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    },
+    {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.011290114372968674,
+      "final_relative": 1.5152936612139456e-06,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.011290114372968674
+        },
+        {
+          "sweep": 1,
+          "relative": 1.0472609801581712e-06
+        },
+        {
+          "sweep": 10,
+          "relative": 1.5152871810641955e-06
+        },
+        {
+          "sweep": 25,
+          "relative": 1.5152936612139456e-06
+        },
+        {
+          "sweep": 50,
+          "relative": 1.5818255860722275e-06
+        },
+        {
+          "sweep": 100,
+          "relative": 1.5152936612139456e-06
+        },
+        {
+          "sweep": 150,
+          "relative": 1.5152936612139456e-06
+        },
+        {
+          "sweep": 180,
+          "relative": 1.5152936612139456e-06
+        },
+        {
+          "sweep": 200,
+          "relative": 1.5152936612139456e-06
+        }
+      ],
+      "last20_relative_objective_change": 0.0,
+      "gradient_normalized_target": 3.337858061058796e-06,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 3.36358380317688,
+      "minimum_nonzero_absolute_factor": 1.0370148140269146e-15,
+      "factor_dynamic_range": 3243525316784512.0,
+      "unmasked_product_norm_over_target": 0.9999988079071045,
+      "maximum_QR_observed_product_error": 8.43308640696705e-08,
+      "seconds": 0.6941048000007868,
+      "invalid_native_core_singular_values_recomputed": 4,
+      "core_SVD_numerical_correction": "Recompute invalid s_i as u_i.T @ core @ v_i in FP32; preserve every ordinary native value"
+    }
+  ],
+  "planted": [
+    {
+      "rank": 8,
+      "error": 0.003102696027630217,
+      "prior_error": 0.003102696027630217,
+      "difference": 0.0
+    },
+    {
+      "rank": 16,
+      "error": 0.003178076781499868,
+      "prior_error": 0.003178076781499868,
+      "difference": 0.0
+    }
+  ],
+  "same_method_parameters": true,
+  "dtype": "float32",
+  "ridge": 1e-06,
+  "sweeps": 200,
+  "initialization": "truncated SVD",
+  "CPU_recomputations": 0,
+  "correction": "Invalid native s_i recomputed as u_i.T @ same finite core @ v_i; all ordinary native values retained. No clamping or zero imputation.",
+  "prior_successful_results_compatibility": "An invalid native singular value made the original estimator nonfinite and fail. All successful old matrix/forward fits used the unchanged ordinary nonnegative finite path; component tests confirm bit equality.",
+  "source": "phase50_declared_core_value_recompute.py",
+  "source_sha256": "6045433e6602dd4b0cf57ada870eee7dc1be00b062874d76afe953b22a99df7d",
+  "no_behavioral_KL_NLL_scored": true
+}

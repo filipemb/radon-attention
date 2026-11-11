@@ -1,0 +1,25 @@
+{
+  "model": "gpt2",
+  "seed": 0,
+  "variant": "historical",
+  "arm": "1.0",
+  "dtype": "torch.float32",
+  "payload_sha256": "5b9d00de703d5b821c7f8c3e7b4083a261ee466d4a63b5d03b044c789121c08b",
+  "source_hashes": {
+    "phase8_lostmiddle.py": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+    "phase11_kv.py": "883104a7acdbee3bc2d6dfead734550a5c081b031a5e4f0021b53bb7bb84edac",
+    "phase16_longcontext.py": "b6814bbc69a3498013832d2229f4f0ec474055685ff2835d69d1d83916e92eaa",
+    "phase18_betacv.py": "f4d240d48706df4e9e7990326f1555628290ce4e1048a4ba44ac8fcb95cff3b2",
+    "phase2_downstream.py": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "revision_v3_probes.py": "8aab9a6b020a70af460a6d5170a14d706d3f991a844d77b1117448df814f2ec5",
+    "phase39_betacv_items.py": "adce1774c56e15e7d776a3f7182a9ba9ccfef8e0184df55a29d9456f242f57f4"
+  },
+  "pairs_path": "out\\pairs\\phase18_items_gpt2_s0_historical_b1.0_v3.jsonl",
+  "pairs_sha256": "75d1e2c607bfa1d29d2ca491761f4763d17874792a02cf8a711657006ded2ead",
+  "n_raw_records": 2400,
+  "native_identity_logits_bit_equal": true,
+  "batch": 8,
+  "n_identity_preflight_sequences": 4,
+  "n_length_buffer_warmup_sequences": 0,
+  "elapsed_seconds": 28.62710599997081
+}

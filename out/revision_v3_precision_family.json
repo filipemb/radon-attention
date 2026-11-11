@@ -1,0 +1,50 @@
+{
+  "timestamp_utc": "2026-11-10T18:15:05.160509+00:00",
+  "primary_family_7_unchanged": true,
+  "secondary_family_8": [
+    [
+      "phase8",
+      "gpt2",
+      "historical"
+    ],
+    [
+      "phase8",
+      "gpt2-medium",
+      "historical"
+    ],
+    [
+      "phase8",
+      "EleutherAI/pythia-410m",
+      "historical"
+    ],
+    [
+      "phase8",
+      "EleutherAI/pythia-1.4b",
+      "historical"
+    ],
+    [
+      "phase8",
+      "Qwen/Qwen2.5-0.5B",
+      "historical"
+    ],
+    [
+      "phase11",
+      "gpt2-medium",
+      "historical"
+    ],
+    [
+      "phase11",
+      "Qwen/Qwen2.5-3B",
+      "historical"
+    ],
+    [
+      "phase8",
+      "Qwen/Qwen2.5-0.5B",
+      "standard_bf16"
+    ]
+  ],
+  "reason": "Expose multiplicity-corrected tests for standard bf16 Qwen0.5 as well as historical fp32 reproduction, without choosing precision by outcome. All eight comparisons adjusted together.",
+  "secondary_seed_family_size": 24,
+  "declared_before_joint_statistics": true,
+  "no_new_inference_or_item_changes": true
+}

@@ -1,0 +1,24 @@
+{
+  "used_for_reported_fits": false,
+  "reason": "Synthetic all-budget 100 Adam updates plus 150 L-BFGS-B iterations took 150.9 seconds; faster validated GPU backend retained",
+  "synthetic_benchmark": "out/phase19_benchmark_numba_n256.json",
+  "validation": {
+    "forward_max_absolute": 3.5762786865234375e-07,
+    "gradient_max_scaled_absolute": [
+      1.0304115676262882e-06,
+      2.761196924438991e-07,
+      1.313066718466871e-06,
+      1.3150587108157197e-07,
+      3.544178923675645e-07
+    ],
+    "passed": true,
+    "parameters": "float32",
+    "renderer_accumulation": "float64",
+    "numba_threads": 4
+  },
+  "packages_added": {
+    "numba": "0.68.1",
+    "llvmlite": "0.50.0"
+  },
+  "numpy_unchanged": "2.4.6"
+}

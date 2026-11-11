@@ -1,0 +1,21 @@
+{
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "torch": "2.6.0+cu124",
+  "torch_compiled_cuda": "12.4",
+  "scipy": "1.17.1",
+  "skimage": "0.26.0",
+  "transformers": "5.11.0",
+  "numpy": "2.4.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+  "logical_cpus": 16,
+  "torch_cpu_threads": 4,
+  "native_threads": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "NUMEXPR_NUM_THREADS": "4"
+  },
+  "gpu_and_ram_user_specification": "RTX 3060 12 GB / 27 GB RAM",
+  "gpu_compute_commands": "flock /tmp/radon-gpu.lock .venv/Scripts/python.exe ..."
+}

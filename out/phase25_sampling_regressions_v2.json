@@ -1,0 +1,8 @@
+{
+  "models": 6,
+  "n_balanced_instances_checked": 9984,
+  "reproducible": true,
+  "head_document_layer_balance": true,
+  "invalid_inputs_detected_without_repair": true,
+  "elapsed_seconds": 0.5979516999796033
+}

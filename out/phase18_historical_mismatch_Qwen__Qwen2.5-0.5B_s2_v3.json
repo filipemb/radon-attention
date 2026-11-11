@@ -1,0 +1,70 @@
+{
+  "source_jobs": [
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b1.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.75_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.5_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.35_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.25_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.15_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.1_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.05_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_b0.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s2_historical_blegacy_beta0_v3.jsonl"
+  ],
+  "differences": [
+    {
+      "family": "B",
+      "arm": "1.0",
+      "old_n_correct": 67,
+      "replayed_n_correct": 298
+    },
+    {
+      "family": "B",
+      "arm": "0.75",
+      "old_n_correct": 69,
+      "replayed_n_correct": 302
+    },
+    {
+      "family": "B",
+      "arm": "0.5",
+      "old_n_correct": 72,
+      "replayed_n_correct": 310
+    },
+    {
+      "family": "B",
+      "arm": "0.35",
+      "old_n_correct": 83,
+      "replayed_n_correct": 315
+    },
+    {
+      "family": "B",
+      "arm": "0.25",
+      "old_n_correct": 87,
+      "replayed_n_correct": 324
+    },
+    {
+      "family": "B",
+      "arm": "0.15",
+      "old_n_correct": 97,
+      "replayed_n_correct": 325
+    },
+    {
+      "family": "B",
+      "arm": "0.1",
+      "old_n_correct": 102,
+      "replayed_n_correct": 331
+    },
+    {
+      "family": "B",
+      "arm": "0.05",
+      "old_n_correct": 96,
+      "replayed_n_correct": 334
+    },
+    {
+      "family": "B",
+      "arm": "legacy_beta0",
+      "old_n_correct": 67,
+      "replayed_n_correct": 303
+    }
+  ]
+}

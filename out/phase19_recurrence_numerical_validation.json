@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "n": 256,
+  "full_allowed_domain_random_parameters": true,
+  "parameters_float32_accumulation_float64": true,
+  "forward_max_absolute": 1.0574874309554616e-14,
+  "gradient_max_scaled_absolute": 3.085660667133366e-13,
+  "value_tolerance": 2e-10,
+  "gradient_tolerance": 2e-08,
+  "kernel_timings_four_starts_k128": {
+    "0.5": {
+      "direct_exponentials": 0.04859679999450842,
+      "exact_recurrence": 0.029551066691055894,
+      "speed_ratio": 1.6445023965655028
+    },
+    "4": {
+      "direct_exponentials": 0.17243173330401382,
+      "exact_recurrence": 0.04338180002135535,
+      "speed_ratio": 3.974748240486371
+    },
+    "32": {
+      "direct_exponentials": 0.5022563333623111,
+      "exact_recurrence": 0.14511136671838662,
+      "speed_ratio": 3.4611784364006803
+    },
+    "128": {
+      "direct_exponentials": 0.40992906666360795,
+      "exact_recurrence": 0.1469346332984666,
+      "speed_ratio": 2.789873683700723
+    }
+  },
+  "data": "synthetic, no archived attention"
+}

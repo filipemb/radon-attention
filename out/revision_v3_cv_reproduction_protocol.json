@@ -1,0 +1,53 @@
+{
+  "purpose": "Full phase18 from current available generator, same old seeds/grid and original per-position batches",
+  "original_failure": "out/phase18_count_mismatch_gpt2_s0_b1.0_v3.json",
+  "batch_diagnostic": "out/phase18_batch_diagnostic_v3.json",
+  "no_generator_parameter_or_seed_search_to_match_old_counts": true,
+  "historical_provenance": "FALTA: archived old family-B item IDs and generator source hashes; do not attribute old/new table changes solely to row-zero repair",
+  "strict_sanities": "All corrected attention checks unchanged; every positive-beta weight checked bit-for-bit against legacy on every current item/layer",
+  "counterfactual": "Legacy beta0 runs on the very same frozen items; legacy/current CV selections and held-out gains reported separately from saved old results",
+  "primary_precision": "historical fp32 including Qwen0.5; separate standard bf16 Qwen0.5 full-grid supplement",
+  "datasets": "Existing frozen phase18_items_*_v3 arrays, no resampling",
+  "new_namespace": "phase18_posbatch_items_*_v3; failed first flat-batch job retained unchanged",
+  "model_seeds": {
+    "historical": {
+      "models": [
+        "gpt2",
+        "gpt2-medium",
+        "EleutherAI/pythia-410m",
+        "EleutherAI/pythia-1.4b",
+        "Qwen/Qwen2.5-0.5B"
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "standard_bf16": {
+      "models": [
+        "Qwen/Qwen2.5-0.5B"
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "betas": [
+    "1.0",
+    "0.75",
+    "0.5",
+    "0.35",
+    "0.25",
+    "0.15",
+    "0.1",
+    "0.05",
+    "0.0",
+    "legacy_beta0"
+  ],
+  "n_gpu_jobs": 180,
+  "bootstrap": "Paired independent items within seed x position; 2000 draws, fixed seed0, conditional on selected beta",
+  "selection": "Original mean middle accuracy and original grid-order/Python-float tie rule; no tuning on held-out family"
+}

@@ -1,0 +1,30 @@
+{
+  "model": "gpt2-medium",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "identity_KL_exactly_zero": true,
+  "baseline_checks": [
+    {
+      "K": 8,
+      "n_articles": 2,
+      "max_absolute_differences": {
+        "svd_KL": 0.0,
+        "svd_NLL": 0.0,
+        "named_KL": 0.0,
+        "named_NLL": 0.0
+      },
+      "bit_exact_scalar_values": true
+    },
+    {
+      "K": 16,
+      "n_articles": 2,
+      "max_absolute_differences": {
+        "svd_KL": 0.0,
+        "svd_NLL": 0.0,
+        "named_KL": 0.0,
+        "named_NLL": 0.0
+      },
+      "bit_exact_scalar_values": true
+    }
+  ],
+  "harness_sha256": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9"
+}

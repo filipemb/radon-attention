@@ -1,0 +1,449 @@
+{
+  "passed": true,
+  "models": {
+    "gpt2": {
+      "8": {
+        "svd_K": {
+          "rows_total": 1179648,
+          "rows_completed": 0,
+          "last_query_rows_total": 9216,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 1179648,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 1179648,
+          "rows_completed": 0,
+          "last_query_rows_total": 9216,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 1179648,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      },
+      "16": {
+        "svd_K": {
+          "rows_total": 1179648,
+          "rows_completed": 0,
+          "last_query_rows_total": 9216,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 1179648,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 1179648,
+          "rows_completed": 0,
+          "last_query_rows_total": 9216,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 1179648,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      }
+    },
+    "gpt2-medium": {
+      "8": {
+        "svd_K": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      },
+      "16": {
+        "svd_K": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      }
+    },
+    "EleutherAI/pythia-410m": {
+      "8": {
+        "svd_K": {
+          "rows_total": 3145728,
+          "rows_completed": 6,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 1.9073486328125e-06,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 1.9073486328125e-06
+        },
+        "named_plus_svd": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      },
+      "16": {
+        "svd_K": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      }
+    },
+    "EleutherAI/pythia-1.4b": {
+      "8": {
+        "svd_K": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      },
+      "16": {
+        "svd_K": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        },
+        "named_plus_svd": {
+          "rows_total": 3145728,
+          "rows_completed": 0,
+          "last_query_rows_total": 24576,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 3145728,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      }
+    },
+    "Qwen/Qwen2.5-0.5B": {
+      "8": {
+        "svd_K": {
+          "rows_total": 2752512,
+          "rows_completed": 754,
+          "last_query_rows_total": 21504,
+          "last_query_rows_completed": 10,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0002739315941220238,
+          "fraction_last_query_rows_completed": 0.0004650297619047619,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 2752512,
+          "fraction_reconstructed_rows_completed": 0.0002739315941220238
+        },
+        "named_plus_svd": {
+          "rows_total": 2752512,
+          "rows_completed": 0,
+          "last_query_rows_total": 21504,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 2752512,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      },
+      "16": {
+        "svd_K": {
+          "rows_total": 2752512,
+          "rows_completed": 975,
+          "last_query_rows_total": 21504,
+          "last_query_rows_completed": 21,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.00035422188895089287,
+          "fraction_last_query_rows_completed": 0.0009765625,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 2752512,
+          "fraction_reconstructed_rows_completed": 0.00035422188895089287
+        },
+        "named_plus_svd": {
+          "rows_total": 2752512,
+          "rows_completed": 0,
+          "last_query_rows_total": 21504,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 2752512,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      }
+    },
+    "Qwen/Qwen2.5-3B": {
+      "8": {
+        "svd_K": {
+          "rows_total": 4718592,
+          "rows_completed": 7217,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 58,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.001529481675889757,
+          "fraction_last_query_rows_completed": 0.0015733506944444445,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 4718592,
+          "fraction_reconstructed_rows_completed": 0.001529481675889757
+        },
+        "named_plus_svd": {
+          "rows_total": 4718592,
+          "rows_completed": 0,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 4718592,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      },
+      "16": {
+        "svd_K": {
+          "rows_total": 4718592,
+          "rows_completed": 6639,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 52,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0014069875081380208,
+          "fraction_last_query_rows_completed": 0.0014105902777777778,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 4718592,
+          "fraction_reconstructed_rows_completed": 0.0014069875081380208
+        },
+        "named_plus_svd": {
+          "rows_total": 4718592,
+          "rows_completed": 0,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 0,
+          "exact_rows_total": 0,
+          "exact_last_query_rows_total": 0,
+          "policy": "uniform_causal",
+          "fraction_rows_completed": 0.0,
+          "fraction_last_query_rows_completed": 0.0,
+          "n_articles": 64,
+          "n_unique_batches": 32,
+          "denominator_scope": "all attention rows, including heads kept exact; exact heads contribute zero completions",
+          "aggregation": "sum integer counts across unique batch_start/batch_size keys, not twice per article record",
+          "rows_reconstructed": 4718592,
+          "fraction_reconstructed_rows_completed": 0.0
+        }
+      }
+    }
+  }
+}

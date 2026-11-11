@@ -1,0 +1,6 @@
+{
+  "family": "B",
+  "expected": 59.99999999999999,
+  "actual": 123,
+  "source": "out/phase18_items_gpt2_s0_historical_b1.0_v3.json"
+}

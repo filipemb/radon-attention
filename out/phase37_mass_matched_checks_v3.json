@@ -1,0 +1,7 @@
+{
+  "all_passed": true,
+  "n_cases": 20,
+  "max_mass_match_error": 0.0,
+  "budget_rule": "min((1-beta)*sink_sinkarm, nonsink_sinkarm, nonsink_controlarm); first absolute row q=0",
+  "elapsed_seconds": 0.024967300007119775
+}

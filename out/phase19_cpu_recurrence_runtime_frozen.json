@@ -1,0 +1,9 @@
+{
+  "fixed_before_any_recurrence_real_fit": true,
+  "threads_each": 4,
+  "max_cpu_workers": 3,
+  "OMP_WAIT_POLICY": "PASSIVE",
+  "KMP_BLOCKTIME": "0",
+  "reason": "Prevent inactive OpenMP thread pools from busy-waiting while another numerical runtime executes; mathematical operations, thread counts, seeds, starts and budgets unchanged",
+  "Windows_environment_transfer": "WSLENV=OMP_WAIT_POLICY:KMP_BLOCKTIME"
+}

@@ -1,0 +1,597 @@
+{
+  "main_jobs": [
+    {
+      "path": "out/phase8_massmatched_items_gpt2_s0_v3.json",
+      "worker_seconds": 71.73407600005157,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_gpt2_s1_v3.json",
+      "worker_seconds": 72.0864256999921,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_gpt2_s2_v3.json",
+      "worker_seconds": 72.28362130001187,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_gpt2-medium_s0_v3.json",
+      "worker_seconds": 190.0625340999104,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2-medium",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_gpt2-medium_s1_v3.json",
+      "worker_seconds": 190.18479550001211,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2-medium",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_gpt2-medium_s2_v3.json",
+      "worker_seconds": 190.16751480009407,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2-medium",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_EleutherAI__pythia-410m_s0_v3.json",
+      "worker_seconds": 182.53176250006072,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-410m",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_EleutherAI__pythia-410m_s1_v3.json",
+      "worker_seconds": 182.4364557999652,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-410m",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_EleutherAI__pythia-410m_s2_v3.json",
+      "worker_seconds": 182.45990620017983,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-410m",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_EleutherAI__pythia-1.4b_s0_v3.json",
+      "worker_seconds": 407.46361370012164,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-1.4b",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_EleutherAI__pythia-1.4b_s1_v3.json",
+      "worker_seconds": 407.1526271000039,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-1.4b",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_EleutherAI__pythia-1.4b_s2_v3.json",
+      "worker_seconds": 407.3701716000214,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-1.4b",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_Qwen__Qwen2.5-0.5B_s0_v3.json",
+      "worker_seconds": 211.86094329995103,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "Qwen/Qwen2.5-0.5B",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_Qwen__Qwen2.5-0.5B_s1_v3.json",
+      "worker_seconds": 211.88951619993895,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "Qwen/Qwen2.5-0.5B",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase8_massmatched_items_Qwen__Qwen2.5-0.5B_s2_v3.json",
+      "worker_seconds": 211.98552230000496,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase8",
+        "--model",
+        "Qwen/Qwen2.5-0.5B",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_items_gpt2-medium_s0_v3.json",
+      "worker_seconds": 168.51163640012965,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase11",
+        "--model",
+        "gpt2-medium",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_items_gpt2-medium_s1_v3.json",
+      "worker_seconds": 168.3133221999742,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase11",
+        "--model",
+        "gpt2-medium",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_items_gpt2-medium_s2_v3.json",
+      "worker_seconds": 168.3988018000964,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase11",
+        "--model",
+        "gpt2-medium",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_items_Qwen__Qwen2.5-3B_s0_v3.json",
+      "worker_seconds": 309.7186000999063,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase11",
+        "--model",
+        "Qwen/Qwen2.5-3B",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_items_Qwen__Qwen2.5-3B_s1_v3.json",
+      "worker_seconds": 309.68083460000344,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase11",
+        "--model",
+        "Qwen/Qwen2.5-3B",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_items_Qwen__Qwen2.5-3B_s2_v3.json",
+      "worker_seconds": 309.9613821001258,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase53_massmatched_retrieval.py",
+        "--task",
+        "phase11",
+        "--model",
+        "Qwen/Qwen2.5-3B",
+        "--seed",
+        "2"
+      ]
+    }
+  ],
+  "full_native_reference_jobs": [
+    {
+      "path": "out/phase11_massmatched_fullbatch_identity_Qwen__Qwen2.5-3B_s0_v3.json",
+      "worker_seconds": 112.89799310010858,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase58_massmatched_qwen_identity.py",
+        "--seed",
+        "0"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_fullbatch_identity_Qwen__Qwen2.5-3B_s1_v3.json",
+      "worker_seconds": 113.43321990012191,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase58_massmatched_qwen_identity.py",
+        "--seed",
+        "1"
+      ]
+    },
+    {
+      "path": "out/phase11_massmatched_fullbatch_identity_Qwen__Qwen2.5-3B_s2_v3.json",
+      "worker_seconds": 113.41603790014051,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase58_massmatched_qwen_identity.py",
+        "--seed",
+        "2"
+      ]
+    }
+  ],
+  "numerical_sanity_jobs": [
+    {
+      "task": "phase8",
+      "model": "gpt2",
+      "dtype": "torch.float32",
+      "n_independent_sanity_items": 240,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 16,
+      "doubled_batch": 32,
+      "n_argmax_mismatches": 0,
+      "max_logit_absolute_difference": 0.0033416748046875,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 5.560353199951351,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2"
+      ]
+    },
+    {
+      "task": "phase8",
+      "model": "gpt2-medium",
+      "dtype": "torch.float32",
+      "n_independent_sanity_items": 240,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 16,
+      "doubled_batch": 32,
+      "n_argmax_mismatches": 0,
+      "max_logit_absolute_difference": 0.0004558563232421875,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 13.707511800108477,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase8",
+        "--model",
+        "gpt2-medium"
+      ]
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-410m",
+      "dtype": "torch.float32",
+      "n_independent_sanity_items": 240,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 16,
+      "doubled_batch": 32,
+      "n_argmax_mismatches": 0,
+      "max_logit_absolute_difference": 0.00618685781955719,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 12.789063600124791,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-410m"
+      ]
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-1.4b",
+      "dtype": "torch.float32",
+      "n_independent_sanity_items": 240,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 16,
+      "doubled_batch": 32,
+      "n_argmax_mismatches": 0,
+      "max_logit_absolute_difference": 0.0013725757598876953,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 42.25113289989531,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase8",
+        "--model",
+        "EleutherAI/pythia-1.4b"
+      ]
+    },
+    {
+      "task": "phase8",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "dtype": "torch.float32",
+      "n_independent_sanity_items": 240,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 16,
+      "doubled_batch": 32,
+      "n_argmax_mismatches": 0,
+      "max_logit_absolute_difference": 0.00011360645294189453,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 17.586041999980807,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase8",
+        "--model",
+        "Qwen/Qwen2.5-0.5B"
+      ]
+    },
+    {
+      "task": "phase11",
+      "model": "gpt2-medium",
+      "dtype": "torch.float32",
+      "n_independent_sanity_items": 72,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 8,
+      "doubled_batch": 16,
+      "n_argmax_mismatches": 0,
+      "max_logit_absolute_difference": 0.000576019287109375,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 9.038590600015596,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase11",
+        "--model",
+        "gpt2-medium"
+      ]
+    },
+    {
+      "task": "phase11",
+      "model": "Qwen/Qwen2.5-3B",
+      "dtype": "torch.bfloat16",
+      "n_independent_sanity_items": 36,
+      "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+      "main_cohort_not_subsampled": true,
+      "original_batch": 4,
+      "doubled_batch": 8,
+      "n_argmax_mismatches": 1,
+      "max_logit_absolute_difference": 0.53125,
+      "all_original_batch_predictions_exact_historical": true,
+      "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+      "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+      "elapsed_seconds": 13.181064300006256,
+      "command": [
+        "flock",
+        "/tmp/radon-gpu.lock",
+        ".venv/Scripts/python.exe",
+        "-B",
+        "phase56_massmatched_batch_identity.py",
+        "--task",
+        "phase11",
+        "--model",
+        "Qwen/Qwen2.5-3B"
+      ]
+    }
+  ],
+  "sum_main_worker_seconds": 4626.254063300556,
+  "sum_native_reference_worker_seconds": 339.747250900371,
+  "time_definition": "inside worker after imports and lock acquisition; includes model setup, validation and writing; excludes lock queue; no pure-CUDA cost claim",
+  "first_cpu_coordinator_replaced_after_its_gpu_child_exited": true
+}

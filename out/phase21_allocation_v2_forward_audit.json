@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "n_model_K_combinations": 12,
+  "n_paired_articles": 3072,
+  "checks": [
+    {
+      "model": "gpt2",
+      "K": 8,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "gpt2",
+      "K": 16,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "K": 8,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "K": 16,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "K": 8,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "K": 16,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "K": 8,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "K": 16,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "K": 8,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "K": 16,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "K": 8,
+      "n_articles": 256,
+      "all_checks_passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "K": 16,
+      "n_articles": 256,
+      "all_checks_passed": true
+    }
+  ],
+  "max_native_reference_NLL_difference_from_V1": 0.0,
+  "matrix_aggregate_unchanged": true,
+  "source_V1_and_pairs_unchanged": true,
+  "describe_recomputed_on_every_arm_and_paired_difference": true,
+  "row_counters_recomputed_from_unique_batches": true,
+  "per_head_layer_storage_formula_checked_per_article": true,
+  "forward_aggregate_sha256": "8ec63e16b51e4eb24c58dd93ce7f285bd018ab56e36bf667f85ca256501b9f66"
+}

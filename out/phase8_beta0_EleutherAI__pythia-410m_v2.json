@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "model": "EleutherAI/pythia-410m",
+  "dtype": "torch.float32",
+  "revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+  "n_trials_effective_per_arm": 3200,
+  "seed": 0,
+  "sequence_length": 128,
+  "batch": 16,
+  "positions": [
+    4,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    110
+  ],
+  "n_per_position": 400,
+  "middle_positions": [
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "probe_manifest": "data/attn/beta0_probe_EleutherAI__pythia-410m_s0_v2.manifest.json",
+  "pairs_path": "out/pairs/beta0_EleutherAI__pythia-410m_v2.jsonl",
+  "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+  "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+  "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+  "arms": {
+    "baseline_beta1": {
+      "n_trials": 3200,
+      "n_correct": 1538,
+      "accuracy": 0.480625,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 948,
+      "middle_accuracy": 0.474,
+      "accuracy_by_position": {
+        "4": 0.4875,
+        "16": 0.5125,
+        "32": 0.4875,
+        "48": 0.48,
+        "64": 0.4475,
+        "80": 0.4675,
+        "96": 0.4875,
+        "110": 0.475
+      }
+    },
+    "corrected_beta0": {
+      "n_trials": 3200,
+      "n_correct": 1547,
+      "accuracy": 0.4834375,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 952,
+      "middle_accuracy": 0.476,
+      "accuracy_by_position": {
+        "4": 0.485,
+        "16": 0.5275,
+        "32": 0.4925,
+        "48": 0.475,
+        "64": 0.4525,
+        "80": 0.47,
+        "96": 0.49,
+        "110": 0.475
+      }
+    },
+    "legacy_beta0_diagnostic": {
+      "n_trials": 3200,
+      "n_correct": 1548,
+      "accuracy": 0.48375,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 953,
+      "middle_accuracy": 0.4765,
+      "accuracy_by_position": {
+        "4": 0.4825,
+        "16": 0.5275,
+        "32": 0.49,
+        "48": 0.4775,
+        "64": 0.4575,
+        "80": 0.47,
+        "96": 0.4875,
+        "110": 0.4775
+      }
+    }
+  },
+  "attention_validation": {
+    "baseline_beta1": {
+      "negative_nan_inf_upper_nonzero": 0,
+      "row_sum_violations": 0,
+      "max_row_error_after_cast": 4.76837158203125e-07,
+      "rows_checked": 157286400
+    },
+    "corrected_beta0": {
+      "sink_edit_invalid_values": 0,
+      "sink_edit_rows_total": 157286400,
+      "sink_edit_rows_preserved_no_alternative": 1228800,
+      "sink_edit_last_query_rows_preserved": 0,
+      "sink_edit_invalid_totals": 0,
+      "sink_edit_positive_mass_below_legacy_clamp": 0,
+      "sink_edit_noncausal_values": 0,
+      "sink_edit_row_sum_violations": 0,
+      "sink_edit_first_row_changes": 0,
+      "max_sink_edit_row_error": 4.76837158203125e-07,
+      "max_sink_edit_row_error_bound": 2.119209296656209e-06
+    },
+    "legacy_beta0_diagnostic": {
+      "rows_total": 157286400,
+      "zero_rows": 1228800,
+      "zero_rows_at_last_query": 0,
+      "positive_mass_below_clamp": 2284
+    }
+  },
+  "positive_beta_regression": null,
+  "native_identity_regression": {
+    "n_sequences": 2,
+    "logits_bit_equal": true,
+    "max_absolute_logit_difference": 0.0
+  },
+  "historical_s0": {
+    "1.0": {
+      "accuracy": 0.48062499999999997,
+      "middle_accuracy": 0.47400000000000003
+    },
+    "0.0": {
+      "accuracy": 0.48375,
+      "middle_accuracy": 0.4765
+    }
+  },
+  "paired_corrected_vs_baseline": {
+    "left": "corrected_beta0",
+    "right": "baseline_beta1",
+    "n_pairs": 3200,
+    "left_only_correct": 50,
+    "right_only_correct": 41,
+    "accuracy_difference_left_minus_right": 0.0028125,
+    "mcnemar_exact_pvalue": 0.4018127960698803,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "paired_corrected_vs_legacy": {
+    "left": "corrected_beta0",
+    "right": "legacy_beta0_diagnostic",
+    "n_pairs": 3200,
+    "left_only_correct": 5,
+    "right_only_correct": 6,
+    "accuracy_difference_left_minus_right": -0.0003125,
+    "mcnemar_exact_pvalue": 1.0,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "elapsed_seconds": 159.07070049992763
+}

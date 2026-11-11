@@ -1,0 +1,1227 @@
+{
+  "model": "gpt2-medium",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "n_unique_matrices": 32,
+  "n_fits": 128,
+  "same_indices_as_original_GPU_validation": [
+    0,
+    24,
+    48,
+    72,
+    96,
+    120,
+    145,
+    169,
+    193,
+    217,
+    241,
+    265,
+    290,
+    314,
+    338,
+    362,
+    386,
+    410,
+    435,
+    459,
+    483,
+    507,
+    531,
+    555,
+    576,
+    600,
+    624,
+    648,
+    672,
+    696,
+    721,
+    745
+  ],
+  "same_initial_factors_rounded_to_float32": true,
+  "GPU_dtype": "float32",
+  "CPU_reference_dtype": "float64",
+  "CPU_recomputations": 0,
+  "ridge_relative_to_trace": 1e-06,
+  "sweeps": 200,
+  "max_absolute_relative_error_difference": 0.07840313419327513,
+  "max_normalized_frobenius_difference": 0.10538632970178843,
+  "max_TV_difference": 0.0795144107216653,
+  "threshold_fixed_before_results": 0.002,
+  "passed": false,
+  "n_failed_fits": 66,
+  "worst": {
+    "model": "gpt2-medium",
+    "archive_index": 435,
+    "instance_id": "gpt2-medium_n128_wikitext-train-article-28198_l3_h11",
+    "document_index": 18,
+    "layer": 3,
+    "head": 11,
+    "K": 16,
+    "arm": "masked_K",
+    "CPU": {
+      "frobenius": 0.016223645780322503,
+      "TV": 0.013823107842982888,
+      "raw_causal_frobenius": 0.012230186700299668,
+      "raw_unmasked_frobenius": 30147297840065.25,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "GPU": {
+      "frobenius": 0.12160997548211093,
+      "TV": 0.0933375185646482,
+      "raw_causal_frobenius": 0.0906333208935748,
+      "raw_unmasked_frobenius": 306.2432093428395,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "absolute_relative_error_difference": 0.07840313419327513,
+    "normalized_frobenius_difference": 0.10538632970178843,
+    "TV_difference": 0.0795144107216653,
+    "CPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float64",
+      "initial_relative": 0.5525020711047739,
+      "final_relative": 0.012230186700487679,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.5525020711047739
+        },
+        {
+          "sweep": 1,
+          "relative": 0.05749696978234542
+        },
+        {
+          "sweep": 10,
+          "relative": 0.012230186700487679
+        },
+        {
+          "sweep": 25,
+          "relative": 0.012230186700487679
+        },
+        {
+          "sweep": 50,
+          "relative": 0.012230186700487679
+        },
+        {
+          "sweep": 100,
+          "relative": 0.012230186700487679
+        },
+        {
+          "sweep": 150,
+          "relative": 0.012230186700487679
+        },
+        {
+          "sweep": 180,
+          "relative": 0.012230186700487679
+        },
+        {
+          "sweep": 200,
+          "relative": 0.012230186700487679
+        }
+      ],
+      "last20_relative_objective_change": 0.0,
+      "gradient_normalized_target": 9227.37201515917,
+      "converged": false,
+      "direct_LS_blocks": 100827,
+      "direct_sweep_retries": 194,
+      "rejected_sweeps": [
+        {
+          "sweep": 7,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 8,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 9,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 10,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 11,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 12,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 13,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 14,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 15,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 16,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 17,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 18,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 19,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 20,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 21,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 22,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 23,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 24,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 25,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 26,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 27,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 28,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 29,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 30,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 31,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 32,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 33,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 34,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 35,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 36,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 37,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 38,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 39,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 40,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 41,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 42,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 43,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 44,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 45,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 46,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 47,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 48,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 49,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 50,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 51,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 52,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 53,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 54,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 55,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 56,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 57,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 58,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 59,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 60,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 61,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 62,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 63,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 64,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 65,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 66,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 67,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 68,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 69,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 70,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 71,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 72,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 73,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 74,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 75,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 76,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 77,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 78,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 79,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 80,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 81,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 82,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 83,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 84,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 85,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 86,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 87,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 88,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 89,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 90,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 91,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 92,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 93,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 94,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 95,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 96,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 97,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 98,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 99,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 100,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 101,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 102,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 103,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 104,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 105,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 106,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 107,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 108,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 109,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 110,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 111,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 112,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 113,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 114,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 115,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 116,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 117,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 118,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 119,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 120,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 121,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 122,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 123,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 124,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 125,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 126,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 127,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 128,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 129,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 130,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 131,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 132,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 133,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 134,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 135,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 136,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 137,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 138,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 139,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 140,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 141,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 142,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 143,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 144,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 145,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 146,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 147,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 148,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 149,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 150,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 151,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 152,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 153,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 154,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 155,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 156,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 157,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 158,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 159,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 160,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 161,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 162,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 163,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 164,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 165,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 166,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 167,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 168,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 169,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 170,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 171,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 172,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 173,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 174,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 175,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 176,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 177,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 178,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 179,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 180,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 181,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 182,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 183,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 184,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 185,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 186,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 187,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 188,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 189,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 190,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 191,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 192,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 193,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 194,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 195,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 196,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 197,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 198,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 199,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        },
+        {
+          "sweep": 200,
+          "previous_loss": 0.0001495774667287857,
+          "proposed_loss": 0.00015109686162924357
+        }
+      ],
+      "maximum_absolute_factor": 13520235.979080012,
+      "minimum_nonzero_absolute_factor": 7.131985752875568e-12,
+      "factor_dynamic_range": 1.895718310097401e+18,
+      "unmasked_product_norm_over_target": 30147297840065.254,
+      "maximum_QR_observed_product_error": 0.004286967272742854,
+      "seconds": 3.8169689998030663
+    },
+    "GPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.5525020956993103,
+      "final_relative": 0.0906333178281784,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.5525020956993103
+        },
+        {
+          "sweep": 1,
+          "relative": 0.17309319972991943
+        },
+        {
+          "sweep": 10,
+          "relative": 0.1265225112438202
+        },
+        {
+          "sweep": 25,
+          "relative": 0.11733683943748474
+        },
+        {
+          "sweep": 50,
+          "relative": 0.08902741968631744
+        },
+        {
+          "sweep": 100,
+          "relative": 0.08398035168647766
+        },
+        {
+          "sweep": 150,
+          "relative": 0.07808305323123932
+        },
+        {
+          "sweep": 180,
+          "relative": 0.0842825397849083
+        },
+        {
+          "sweep": 200,
+          "relative": 0.0906333178281784
+        }
+      ],
+      "last20_relative_objective_change": 0.15637995302677155,
+      "gradient_normalized_target": 0.13415156304836273,
+      "converged": false,
+      "objective_increase_sweeps": 96,
+      "maximum_absolute_factor": 18.92047882080078,
+      "minimum_nonzero_absolute_factor": 1.1432052815507632e-05,
+      "factor_dynamic_range": 1655037.7369788797,
+      "unmasked_product_norm_over_target": 306.24481201171875,
+      "maximum_QR_observed_product_error": 0.00027756529743783176,
+      "seconds": 0.3859679000452161
+    },
+    "passed": false,
+    "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a"
+  },
+  "timings": [
+    {
+      "K": 8,
+      "arm": "masked_K",
+      "rank": 8,
+      "n_matrices": 32,
+      "cold_seconds": 0.7958148999605328,
+      "steady_seconds": 0.1304925000295043
+    },
+    {
+      "K": 8,
+      "arm": "named_plus_masked",
+      "rank": 7,
+      "n_matrices": 32,
+      "cold_seconds": 0.2976045999675989,
+      "steady_seconds": 0.12459130003117025
+    },
+    {
+      "K": 16,
+      "arm": "masked_K",
+      "rank": 16,
+      "n_matrices": 32,
+      "cold_seconds": 0.3866970001254231,
+      "steady_seconds": 0.2153928999323398
+    },
+    {
+      "K": 16,
+      "arm": "named_plus_masked",
+      "rank": 15,
+      "n_matrices": 32,
+      "cold_seconds": 0.37804099987261,
+      "steady_seconds": 0.20657919999212027
+    }
+  ],
+  "elapsed_seconds": 3.0009227998089045,
+  "pairs_path": "out/pairs/phase50_fp32_validation_gpt2-medium.jsonl",
+  "pairs_sha256": "c6e15cf69c3d508623ce671a4023d0fb8d3c10e7425345c2dace97233b2ed402",
+  "sources": {
+    "phase50_fp32_als.py": "12db461d06ccab82c40bb4d3befbb8f7dc5b85c47a998609da457db861ea39b1",
+    "phase50_fp32_graph.py": "bddc95e7fad7ff8c73132e47f09a19eae421494b1ce43a5190e40c6d4eb20d33"
+  },
+  "CPU_reference_metadata": "out/phase50_GPU_CPU_reference_gpt2-medium.json",
+  "failure_interpretation": "Uniform trace-relative ridge changes the unregularized finite-200-sweep estimator; FP32 normal equations lose small singular directions (conditioning squared). Worst CPU diagnostics and all raw per-fit errors retained. No threshold relaxation or CPU fallback."
+}

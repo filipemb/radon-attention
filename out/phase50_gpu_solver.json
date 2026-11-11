@@ -1,0 +1,29 @@
+{
+  "created_UTC": "2026-11-10T15:30:52.810770+00:00",
+  "backend": "certified_qr",
+  "dtype": "float64",
+  "sweeps": 200,
+  "early_stop": false,
+  "initialization": "ordinary truncated float64 SVD",
+  "LS_rcond": 1e-12,
+  "solver": "causal streaming QR; full-rank triangular solves or structural full-row-rank complete QR only when1/(||R||F*||inv(R)||F)>4e-12; all remaining blocks use direct SVD with the unchanged singular-value cutoff",
+  "retry": "whole direct QR plus small-SVD sweep; then retain finite previous state and record if objective still increases beyond1e-9",
+  "block_control_path": "out/phase50_GPU_certified_block_control_0929b2eaa77b.json",
+  "block_control_sha256": "955456d275f7e410ac1d9059ba3223423cc64dc663065eb31b1a510709e20d91",
+  "primary_GPU_control_path": "out/phase50_certified_primary_GPU_control_0929b2eaa77b.json",
+  "primary_GPU_control_sha256": "0929ae1220e8224525366622c42a4884ee5bca506a3cb7132962dd7dc096a8f5",
+  "implementation_sha256": "0929b2eaa77b5fb0c2caddac18e841c1375c499718acb9ce3f05fb72106818d6",
+  "prefix_QR_sha256": "f39efcadedb3d69da7a0b4bfa4ef2df0797a8255ad6df755ee4f453413d6c1b6",
+  "chunk_documents": 16,
+  "batch_size": 2,
+  "GPU_lock_scope": "release between every16-article forward chunk and between models; reload model and recheck identity and reused first batch on each chunk",
+  "selection_uses_new_KL_outcomes": false,
+  "selection_uses": "algebra/conditioning certificate, independent LS block controls, original frozen planted controls, performance-only benchmark",
+  "full32_matrix_CPU64_validation_per_model": "required before all model forwards",
+  "experimental_backends_not_selected": [
+    "tall_design_SVD",
+    "prefix_qr_all_small_SVD",
+    "prefix_qr_graph"
+  ],
+  "earlier_layout_bug": "Raw output storage now explicitly contiguous; native SVD factor layouts and transposed-storage block controls pass; failed exploratory records preserved"
+}

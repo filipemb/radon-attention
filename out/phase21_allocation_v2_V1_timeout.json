@@ -1,0 +1,9 @@
+{
+  "status": "FALTA",
+  "observed_UTC": "2026-11-10T00:11:20.000296+00:00",
+  "missing_source": "out/phase2_downstream_v2.json",
+  "wait_started_UTC": "2026-11-09T21:11:20+00:00",
+  "deadline_UTC": "2026-11-10T00:11:20+00:00",
+  "wait_limit_hours": 3,
+  "model_injection_executed": false
+}

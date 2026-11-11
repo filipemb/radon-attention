@@ -1,0 +1,10 @@
+{
+  "model": "gpt2-medium",
+  "start_document": 0,
+  "stop_document": 2,
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "pairs_byte_length_at_chunk_completion": 30881,
+  "pairs_prefix_sha256": "2cb5e6445fc8508b6ddb4d162f60b1c12160ad5737114dd24f89d0fb8bed9dfb",
+  "elapsed_seconds": 1300.3815824999474,
+  "n_records_completed_so_far": 16
+}

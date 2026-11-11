@@ -1,0 +1,9 @@
+{
+  "model": "gpt2-medium",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "n_matrices": 32,
+  "n_fits": 128,
+  "pairs_path": "out/pairs/phase50_GPU_CPU_reference_gpt2-medium.jsonl",
+  "pairs_sha256": "bd640da5cbc177b8b95c17aa90c287d6b162980683ac9d31dd511fead3eb58a0",
+  "initial_factors_stored_exact_float64_round_trip": true
+}

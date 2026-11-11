@@ -1,89 +1,87 @@
-"""
-A1 — energia de interacao na coluna do sink (fix #2 do revisor NN).
-
-"Qualquer coluna e rank-1" — a alegacao nao-trivial e que o peso do sink e
-quase CONSTANTE ao longo das queries, i.e. o termo de interacao Theta na coluna 0
-e pequeno. Mede, por cabeca:
-
-    leak_0 = ||Theta[:,0]||^2 / ||A[:,0] - mu||^2     (fracao da energia da coluna
-             do sink NAO capturada pelo modelo aditivo r_i + c_0 - mu)
-
-e o mesmo para uma coluna de controle (mediana das outras colunas). Se
-leak_0 << leak_ctrl, o sink e genuinamente um efeito de coluna (constante em i),
-nao um artefato da decomposicao. 5 modelos, n_seq=50. GPU leve.
-"""
-import argparse, json, os
+"""P0 V4: sink constancy per actual sequence/layer/head, never on Abar."""
+from sampling import MODELS, load_sample, slug, sample_paths, sha256_file, write_json_new, progress
+import argparse
+from concurrent.futures import ProcessPoolExecutor
+import json
+from pathlib import Path
+import sys
+import time
 import numpy as np
-import torch
 
-from phase0_radon_attention import load_sequences, extract_attention
+EPSILON = 1e-12
+MIN_VALID_ROWS = 8
 
+def constancy_metrics(A):
+    a = np.asarray(A, dtype=np.float64)
+    if not np.isfinite(a).all():
+        raise ValueError("Nonfinite attention; never replace or omit it")
+    n = len(a)
+    values, energies, deviations, means = [], [], [], []
+    for j in range(n-MIN_VALID_ROWS+1):
+        column = a[j:, j]
+        energy = float(np.dot(column, column))
+        mean = float(column.mean())
+        deviation = float(np.sum((column-mean)**2))
+        values.append(deviation/(energy+EPSILON))
+        energies.append(energy); deviations.append(deviation); means.append(mean)
+    return {"sink_nonconstancy_fraction": values[0],
+            "control_column_nonconstancy_median": float(np.median(values[1:])),
+            "sink_mean_weight": means[0], "sink_column_energy": energies[0],
+            "sink_deviation_energy": deviations[0],
+            "n_control_columns": len(values)-1,
+            "zero_energy_control_columns": int(np.count_nonzero(np.asarray(energies[1:]) == 0)),
+            "control_energy_minimum": min(energies[1:])}
 
 def leaks(A):
-    """Nao-constancia relativa por coluna, SOMENTE nas linhas validas (i >= j):
-        e_j = ||A[i>=j, j] - mean||^2 / ||A[i>=j, j]||^2
-    Se o sink e ~constante ao longo das queries (a alegacao rank-1 nao-trivial),
-    e_0 << e_ctrl. Nota: em matriz row-estocastica o efeito de LINHA e constante
-    (1/n), entao a metrica via Theta e vacua; esta e a correta."""
-    n = A.shape[0]
-    out = []
-    for j in range(n):
-        col = A[j:, j]                      # linhas validas do triangulo causal
-        if col.size < 8:
-            out.append(np.nan); continue
-        tot = float(np.sum(col ** 2))
-        dev = float(np.sum((col - col.mean()) ** 2))
-        out.append(dev / (tot + 1e-12))
-    ctrl = [x for x in out[1:] if not np.isnan(x)]
-    return out[0], float(np.median(ctrl))
+    result = constancy_metrics(A)
+    return result["sink_nonconstancy_fraction"], result["control_column_nonconstancy_median"]
 
+def run_one(model, n):
+    from phase26_p0_named import summary
+    started = time.perf_counter()
+    path = Path("out")/f"phase15_{slug(model)}_n{n}_v2.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    attention, manifest = load_sample(model, n)
+    pairpath = Path("out/pairs")/f"constancy_{slug(model)}_n{n}_v2.jsonl"
+    pairpath.parent.mkdir(parents=True, exist_ok=True)
+    rows = []
+    with pairpath.open("x", encoding="utf-8") as out:
+        for i, a in enumerate(attention):
+            row = {**manifest["instances"][i], **constancy_metrics(a)}
+            rows.append(row)
+            out.write(json.dumps(row, allow_nan=False)+"\n")
+    keys = ["sink_nonconstancy_fraction", "control_column_nonconstancy_median", "sink_mean_weight"]
+    result = {"model": model, "n": n, "n_instances": len(rows),
+              "n_documents_effective": manifest["n_documents_effective"],
+              "n_layer_head_pairs": len({(r["layer"], r["head"]) for r in rows}),
+              "matrix_averaging_before_measurement": False,
+              "denominator_epsilon": EPSILON, "minimum_valid_rows_per_column": MIN_VALID_ROWS,
+              "zero_energy_control_columns_total": sum(r["zero_energy_control_columns"] for r in rows),
+              "manifest_sha256": sha256_file(sample_paths(model, n)[1]), "pairs_path": pairpath.as_posix(),
+              "metrics": {key: summary([r[key] for r in rows]) for key in keys},
+              "by_layer": {str(layer): {key: summary([r[key] for r in rows if r["layer"] == layer]) for key in keys}
+                           for layer in range(manifest["n_layers"])},
+              "elapsed_seconds": time.perf_counter()-started}
+    write_json_new(path, result)
+    progress("V4 constancy", f"{model}, n={n}; all {len(rows)} individual forward matrices", result["elapsed_seconds"],
+             ".venv/Scripts/python.exe -B phase15_interaction.py --models "+model+" --lengths "+str(n))
+    return result
 
 def main():
+    started = time.perf_counter()
     ap = argparse.ArgumentParser()
-    ap.add_argument("--models", nargs="*", default=[
-        "gpt2", "gpt2-medium", "EleutherAI/pythia-410m", "EleutherAI/pythia-1.4b", "Qwen/Qwen2.5-0.5B"])
-    ap.add_argument("--n_seq", type=int, default=50)
-    ap.add_argument("--seq_len", type=int, default=128)
-    ap.add_argument("--batch", type=int, default=8)
-    ap.add_argument("--seed", type=int, default=0)
-    ap.add_argument("--out", default="out")
+    ap.add_argument("--models", nargs="+", default=MODELS)
+    ap.add_argument("--lengths", nargs="+", type=int, default=[128, 256])
+    ap.add_argument("--workers", type=int, default=4)
     args = ap.parse_args()
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    os.makedirs(args.out, exist_ok=True)
-
-    from transformers import AutoModelForCausalLM, AutoTokenizer
-    results = {}
-    for name in args.models:
-        print(f"===== {name} =====", flush=True)
-        try:
-            tok = AutoTokenizer.from_pretrained(name)
-            model = AutoModelForCausalLM.from_pretrained(
-                name, attn_implementation="eager", dtype=torch.float32).to(device).eval()
-            ids = load_sequences(tok, args.n_seq, args.seq_len, args.seed)
-            attn = extract_attention(model, ids, args.batch, device)
-            attn = [np.nan_to_num(a) for a in attn]
-            sink_leaks, ctrl_leaks = [], []
-            for li in range(len(attn)):
-                for hi in range(attn[0].shape[1]):
-                    Abar = attn[li][:, hi].mean(axis=0).astype(np.float64)
-                    s, c = leaks(Abar)
-                    sink_leaks.append(s); ctrl_leaks.append(c)
-            del model
-            if device == "cuda":
-                torch.cuda.empty_cache()
-            results[name] = {
-                "sink_col_interaction_frac_median": float(np.median(sink_leaks)),
-                "ctrl_col_interaction_frac_median": float(np.median(ctrl_leaks)),
-            }
-            r = results[name]
-            print(f"  interacao na coluna do sink: {r['sink_col_interaction_frac_median']:.3f}  "
-                  f"| controle (mediana outras colunas): {r['ctrl_col_interaction_frac_median']:.3f}", flush=True)
-        except Exception as e:
-            import traceback; traceback.print_exc()
-            results[name] = {"error": f"{type(e).__name__}: {e}"}
-        json.dump(results, open(os.path.join(args.out, "phase15_interaction.json"), "w"), indent=2)
-    print(f"[json] {os.path.abspath(os.path.join(args.out, 'phase15_interaction.json'))}")
-
+    with ProcessPoolExecutor(max_workers=args.workers) as pool:
+        futures = [pool.submit(run_one, m, n) for m in args.models for n in args.lengths]
+        results = [f.result() for f in futures]
+    if args.models == MODELS and args.lengths == [128, 256]:
+        write_json_new("out/phase15_interaction_v2.json", {"datasets": results})
+    progress("V4 command complete", f"{len(results)} datasets", time.perf_counter()-started,
+             ".venv/Scripts/python.exe -B "+" ".join(sys.argv))
 
 if __name__ == "__main__":
     main()

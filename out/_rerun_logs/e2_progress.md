@@ -1,0 +1,838 @@
+- 2026-11-09 16:20:41 Synthetic benchmark n=128 uniform: 128 OMP steps 0.41s
+- 2026-11-09 16:20:43 Synthetic benchmark n=128 profiled: 128 OMP steps 1.67s
+- 2026-11-09 16:20:48 Synthetic benchmark n=128 Radon 200 iterations: 5.07s
+- 2026-11-09 16:23:11 Synthetic benchmark n=256 uniform: 128 OMP steps 1.61s
+- 2026-11-09 16:23:21 Synthetic benchmark n=256 profiled: 128 OMP steps 6.85s
+- 2026-11-09 16:24:41 Synthetic benchmark n=256 Radon 200 iterations: 79.08s
+- 2026-11-09 16:25:27 GPU synthetic benchmark n=256 preparation complete
+- 2026-11-09 16:25:45 GPU synthetic benchmark n=256: all k and three starts 17.80s
+- 2026-11-09 16:29:53 GPU synthetic benchmark n=256 preparation complete
+- 2026-11-09 16:30:39 GPU synthetic benchmark n=256: all k and three starts 45.92s
+- 2026-11-09 16:32:18 SELECTION FIXED before archived-attention evaluation: 64/documents x 12 datasets = 768 matrices; every method uses exactly these identities
+- 2026-11-09 16:33:28 CONTROLS digital uniform n=128 complete
+- 2026-11-09 16:33:32 CONTROLS digital profiled n=128 complete
+- 2026-11-09 16:33:38 CONTROLS CPU n=128 saved, including all parametric targets and fixed starts
+- 2026-11-09 16:35:21 GEOMETRY n=128: R shape (25025, 8256), estimated condition 60.28
+- 2026-11-09 16:36:32 CPU gpt2 n=128: 0/64 already complete
+- 2026-11-09 16:36:43 CPU gpt2 n=128: 1/64; last 11.4s
+- 2026-11-09 16:37:28 CPU gpt2 n=128: 5/64; last 12.0s
+- 2026-11-09 16:38:23 CPU gpt2 n=128: 9/64; last 13.9s
+- 2026-11-09 16:39:04 CONTROLS digital uniform n=256 complete
+- 2026-11-09 16:39:17 CPU gpt2 n=128: 13/64; last 16.3s
+- 2026-11-09 16:39:27 CONTROLS digital profiled n=256 complete
+- 2026-11-09 16:39:54 CONTROLS CPU n=256 saved, including all parametric targets and fixed starts
+- 2026-11-09 16:40:08 CPU gpt2 n=128: 17/64; last 10.9s
+- 2026-11-09 16:40:53 CPU gpt2 n=128: 21/64; last 10.7s
+- 2026-11-09 16:40:53 GEOMETRY n=256: R shape (100123, 32896), estimated condition 86.92
+- 2026-11-09 16:41:43 CPU gpt2 n=128: 25/64; last 13.0s
+- 2026-11-09 16:41:47 CPU EleutherAI__pythia-410m n=128: 0/64 already complete
+- 2026-11-09 16:41:59 CPU EleutherAI__pythia-410m n=128: 1/64; last 12.0s
+- 2026-11-09 16:42:29 CPU gpt2 n=128: 29/64; last 10.0s
+- 2026-11-09 16:42:38 CPU EleutherAI__pythia-410m n=128: 5/64; last 8.3s
+- 2026-11-09 16:43:03 CPU gpt2 n=128: 33/64; last 8.8s
+- 2026-11-09 16:43:13 CPU EleutherAI__pythia-410m n=128: 9/64; last 8.8s
+- 2026-11-09 16:43:47 CPU gpt2 n=128: 37/64; last 11.8s
+- 2026-11-09 16:44:00 CPU EleutherAI__pythia-410m n=128: 13/64; last 10.9s
+- 2026-11-09 16:44:32 CPU gpt2 n=128: 41/64; last 11.2s
+- 2026-11-09 16:44:44 CPU EleutherAI__pythia-410m n=128: 17/64; last 10.3s
+- 2026-11-09 16:44:48 CONTROLS GPU n=128: 1/64; error 2.7384e-07
+- 2026-11-09 16:45:04 CONTROLS GPU n=128: 5/64; error 1.367e-06
+- 2026-11-09 16:45:13 CPU gpt2 n=128: 45/64; last 9.3s
+- 2026-11-09 16:45:18 CONTROLS GPU n=128: 9/64; error 4.3819e-06
+- 2026-11-09 16:45:23 CPU EleutherAI__pythia-410m n=128: 21/64; last 9.2s
+- 2026-11-09 16:45:33 CONTROLS GPU n=128: 13/64; error 0.052222
+- 2026-11-09 16:45:49 CONTROLS GPU n=128: 17/64; error 1.1214e-05
+- 2026-11-09 16:45:52 CPU gpt2 n=128: 49/64; last 10.2s
+- 2026-11-09 16:46:04 CONTROLS GPU n=128: 21/64; error 1.1578e-06
+- 2026-11-09 16:46:07 CPU EleutherAI__pythia-410m n=128: 25/64; last 11.0s
+- 2026-11-09 16:46:21 CONTROLS GPU n=128: 25/64; error 9.6405e-07
+- 2026-11-09 16:46:35 CPU gpt2 n=128: 53/64; last 10.7s
+- 2026-11-09 16:46:36 CONTROLS GPU n=128: 29/64; error 0.33058
+- 2026-11-09 16:46:50 CPU EleutherAI__pythia-410m n=128: 29/64; last 11.2s
+- 2026-11-09 16:46:52 CONTROLS GPU n=128: 33/64; error 0.4553
+- 2026-11-09 16:47:08 CONTROLS GPU n=128: 37/64; error 0.2935
+- 2026-11-09 16:47:21 CPU gpt2 n=128: 57/64; last 11.6s
+- 2026-11-09 16:47:24 CONTROLS GPU n=128: 41/64; error 0.3897
+- 2026-11-09 16:47:36 CPU EleutherAI__pythia-410m n=128: 33/64; last 10.8s
+- 2026-11-09 16:47:39 CONTROLS GPU n=128: 45/64; error 0.47308
+- 2026-11-09 16:47:53 CONTROLS GPU n=128: 49/64; error 0.27921
+- 2026-11-09 16:48:05 CPU gpt2 n=128: 61/64; last 10.8s
+- 2026-11-09 16:48:08 CONTROLS GPU n=128: 53/64; error 0.43075
+- 2026-11-09 16:48:20 CPU EleutherAI__pythia-410m n=128: 37/64; last 11.0s
+- 2026-11-09 16:48:23 CONTROLS GPU n=128: 57/64; error 0.38208
+- 2026-11-09 16:48:38 CONTROLS GPU n=128: 61/64; error 0.2962
+- 2026-11-09 16:48:39 CPU gpt2 n=128: 64/64; last 11.1s
+- 2026-11-09 16:48:39 CPU gpt2-medium n=128: 0/64 already complete
+- 2026-11-09 16:48:49 CONTROLS GPU n=128: 64/64; error 0.3027
+- 2026-11-09 16:48:53 CPU gpt2-medium n=128: 1/64; last 13.3s
+- 2026-11-09 16:49:07 CPU EleutherAI__pythia-410m n=128: 41/64; last 11.7s
+- 2026-11-09 16:49:41 GPU synthetic benchmark n=256 preparation complete
+- 2026-11-09 16:49:42 CPU gpt2-medium n=128: 5/64; last 12.4s
+- 2026-11-09 16:49:51 GPU synthetic benchmark n=256: all k and three starts 10.34s
+- 2026-11-09 16:49:56 CPU EleutherAI__pythia-410m n=128: 45/64; last 11.4s
+- 2026-11-09 16:50:29 CPU gpt2-medium n=128: 9/64; last 12.8s
+- 2026-11-09 16:50:45 CPU EleutherAI__pythia-410m n=128: 49/64; last 10.6s
+- 2026-11-09 16:51:11 CPU gpt2-medium n=128: 13/64; last 10.0s
+- 2026-11-09 16:51:26 CPU EleutherAI__pythia-410m n=128: 53/64; last 10.9s
+- 2026-11-09 16:51:49 CONTROLS GPU n=128: 1/64; error 2.7384e-07
+- 2026-11-09 16:51:54 CPU gpt2-medium n=128: 17/64; last 10.5s
+- 2026-11-09 16:52:00 CONTROLS GPU n=128: 5/64; error 1.367e-06
+- 2026-11-09 16:52:09 CPU EleutherAI__pythia-410m n=128: 57/64; last 11.1s
+- 2026-11-09 16:52:11 CONTROLS GPU n=128: 9/64; error 9.0198e-07
+- 2026-11-09 16:52:24 CONTROLS GPU n=128: 13/64; error 9.1896e-05
+- 2026-11-09 16:52:37 CONTROLS GPU n=128: 17/64; error 3.8899e-07
+- 2026-11-09 16:52:42 CPU gpt2-medium n=128: 21/64; last 13.6s
+- 2026-11-09 16:52:49 CONTROLS GPU n=128: 21/64; error 1.1567e-06
+- 2026-11-09 16:52:57 CPU EleutherAI__pythia-410m n=128: 61/64; last 10.9s
+- 2026-11-09 16:53:02 CONTROLS GPU n=128: 25/64; error 9.6343e-07
+- 2026-11-09 16:53:16 CONTROLS GPU n=128: 29/64; error 1.8587e-06
+- 2026-11-09 16:53:31 CONTROLS GPU n=128: 33/64; error 1.6488e-06
+- 2026-11-09 16:53:36 CPU EleutherAI__pythia-410m n=128: 64/64; last 13.6s
+- 2026-11-09 16:53:36 CPU gpt2-medium n=128: 25/64; last 13.2s
+- 2026-11-09 16:53:37 CPU EleutherAI__pythia-1.4b n=128: 0/64 already complete
+- 2026-11-09 16:53:46 CONTROLS GPU n=128: 37/64; error 1.4675e-06
+- 2026-11-09 16:53:49 CPU EleutherAI__pythia-1.4b n=128: 1/64; last 12.2s
+- 2026-11-09 16:54:02 CONTROLS GPU n=128: 41/64; error 1.6632e-06
+- 2026-11-09 16:54:13 OPTIMIZER FROZEN before real parametric fits: four fixed starts, 450 Adam updates, up to 150 L-BFGS-B iterations; fixed original seeds and control thresholds
+- 2026-11-09 16:54:15 CONTROLS GPU n=128: 45/64; error 1.1636e-06
+- 2026-11-09 16:54:25 CPU gpt2-medium n=128: 29/64; last 11.1s
+- 2026-11-09 16:54:29 CONTROLS GPU n=128: 49/64; error 0.0059454
+- 2026-11-09 16:54:36 CPU EleutherAI__pythia-1.4b n=128: 5/64; last 11.7s
+- 2026-11-09 16:54:41 CONTROLS GPU n=128: 53/64; error 7.9874e-05
+- 2026-11-09 16:54:55 CONTROLS GPU n=128: 57/64; error 0.16859
+- 2026-11-09 16:55:09 CPU gpt2-medium n=128: 33/64; last 11.6s
+- 2026-11-09 16:55:11 CONTROLS GPU n=128: 61/64; error 0.15825
+- 2026-11-09 16:55:21 CONTROLS GPU n=128: 64/64; error 0.0099808
+- 2026-11-09 16:55:22 CPU EleutherAI__pythia-1.4b n=128: 9/64; last 11.2s
+- 2026-11-09 16:55:38 CONTROLS GPU n=256: 1/64; error 4.7864e-07
+- 2026-11-09 16:55:51 CONTROLS GPU n=256: 5/64; error 1.1342e-06
+- 2026-11-09 16:55:56 CPU gpt2-medium n=128: 37/64; last 12.6s
+- 2026-11-09 16:56:03 CONTROLS GPU n=256: 9/64; error 2.4054e-06
+- 2026-11-09 16:56:08 CPU EleutherAI__pythia-1.4b n=128: 13/64; last 11.6s
+- 2026-11-09 16:56:16 CONTROLS GPU n=256: 13/64; error 1.6109e-06
+- 2026-11-09 16:56:29 CONTROLS GPU n=256: 17/64; error 2.7859e-06
+- 2026-11-09 16:56:43 CONTROLS GPU n=256: 21/64; error 1.484e-06
+- 2026-11-09 16:56:45 CPU gpt2-medium n=128: 41/64; last 11.9s
+- 2026-11-09 16:56:56 CONTROLS GPU n=256: 25/64; error 3.0495e-07
+- 2026-11-09 16:56:57 CPU EleutherAI__pythia-1.4b n=128: 17/64; last 12.2s
+- 2026-11-09 16:57:14 CONTROLS GPU n=256: 29/64; error 6.0934e-07
+- 2026-11-09 16:57:29 CONTROLS GPU n=256: 33/64; error 1.8921e-06
+- 2026-11-09 16:57:33 CPU gpt2-medium n=128: 45/64; last 12.8s
+- 2026-11-09 16:57:43 CONTROLS GPU n=256: 37/64; error 2.1038e-06
+- 2026-11-09 16:57:45 CPU EleutherAI__pythia-1.4b n=128: 21/64; last 12.2s
+- 2026-11-09 16:57:58 CONTROLS GPU n=256: 41/64; error 3.4316e-06
+- 2026-11-09 16:58:11 CONTROLS GPU n=256: 45/64; error 2.5529e-06
+- 2026-11-09 16:58:18 CPU gpt2-medium n=128: 49/64; last 11.1s
+- 2026-11-09 16:58:25 CONTROLS GPU n=256: 49/64; error 2.4995e-06
+- 2026-11-09 16:58:27 CPU EleutherAI__pythia-1.4b n=128: 25/64; last 10.1s
+- 2026-11-09 16:58:40 CONTROLS GPU n=256: 53/64; error 2.1637e-06
+- 2026-11-09 16:58:56 CONTROLS GPU n=256: 57/64; error 2.2484e-06
+- 2026-11-09 16:59:03 CPU gpt2-medium n=128: 53/64; last 11.7s
+- 2026-11-09 16:59:12 CPU EleutherAI__pythia-1.4b n=128: 29/64; last 11.6s
+- 2026-11-09 16:59:12 CONTROLS GPU n=256: 61/64; error 4.521e-06
+- 2026-11-09 16:59:22 CONTROLS GPU n=256: 64/64; error 0.0099935
+- 2026-11-09 16:59:32 GPU gpt2 n=128: 0/64 already complete
+- 2026-11-09 16:59:48 CPU gpt2-medium n=128: 57/64; last 12.0s
+- 2026-11-09 16:59:52 GPU gpt2 n=128: 1/64; last 20.8s
+- 2026-11-09 17:00:00 CPU EleutherAI__pythia-1.4b n=128: 33/64; last 12.4s
+- 2026-11-09 17:00:41 CPU gpt2-medium n=128: 61/64; last 13.5s
+- 2026-11-09 17:00:48 CPU EleutherAI__pythia-1.4b n=128: 37/64; last 12.5s
+- 2026-11-09 17:01:17 CPU gpt2-medium n=128: 64/64; last 12.2s
+- 2026-11-09 17:01:36 CPU EleutherAI__pythia-1.4b n=128: 41/64; last 10.7s
+- 2026-11-09 17:01:49 CPU gpt2 n=256: 0/64 already complete
+- 2026-11-09 17:02:27 CPU EleutherAI__pythia-1.4b n=128: 45/64; last 14.5s
+- 2026-11-09 17:03:19 CPU EleutherAI__pythia-1.4b n=128: 49/64; last 13.0s
+- 2026-11-09 17:03:29 CPU gpt2 n=256: 1/64; last 99.2s
+- 2026-11-09 17:04:08 CPU EleutherAI__pythia-1.4b n=128: 53/64; last 11.2s
+- 2026-11-09 17:04:58 CPU EleutherAI__pythia-1.4b n=128: 57/64; last 12.9s
+- 2026-11-09 17:05:46 CPU EleutherAI__pythia-1.4b n=128: 61/64; last 12.0s
+- 2026-11-09 17:06:23 CPU EleutherAI__pythia-1.4b n=128: 64/64; last 12.7s
+- 2026-11-09 17:06:24 CPU Qwen__Qwen2.5-0.5B n=128: 0/64 already complete
+- 2026-11-09 17:06:35 CPU Qwen__Qwen2.5-0.5B n=128: 1/64; last 10.7s
+- 2026-11-09 17:07:22 CPU Qwen__Qwen2.5-0.5B n=128: 5/64; last 12.2s
+- 2026-11-09 17:08:07 CPU Qwen__Qwen2.5-0.5B n=128: 9/64; last 11.5s
+- 2026-11-09 17:08:51 CPU Qwen__Qwen2.5-0.5B n=128: 13/64; last 10.8s
+- 2026-11-09 17:09:38 CPU Qwen__Qwen2.5-0.5B n=128: 17/64; last 11.2s
+- 2026-11-09 17:09:43 CPU gpt2 n=256: 5/64; last 85.8s
+- 2026-11-09 17:10:20 CPU Qwen__Qwen2.5-0.5B n=128: 21/64; last 9.8s
+- 2026-11-09 17:11:02 CPU Qwen__Qwen2.5-0.5B n=128: 25/64; last 9.9s
+- 2026-11-09 17:11:47 CPU Qwen__Qwen2.5-0.5B n=128: 29/64; last 10.9s
+- 2026-11-09 17:12:30 CPU Qwen__Qwen2.5-0.5B n=128: 33/64; last 10.3s
+- 2026-11-09 17:12:47 STABLE OPTIMIZER FROZEN: log-domain normalization; fixed seeds, four starts, 450 Adam + 150 L-BFGS-B; every reported fit uses this implementation
+- 2026-11-09 17:12:56 CONTROLS GPU n=128: 1/64; error 2.7247e-07
+- 2026-11-09 17:13:08 CONTROLS GPU n=128: 5/64; error 1.3705e-06
+- 2026-11-09 17:13:15 CPU Qwen__Qwen2.5-0.5B n=128: 37/64; last 11.5s
+- 2026-11-09 17:13:20 CONTROLS GPU n=128: 9/64; error 1.2506e-06
+- 2026-11-09 17:13:34 CONTROLS GPU n=128: 13/64; error 0.0001427
+- 2026-11-09 17:13:47 CONTROLS GPU n=128: 17/64; error 3.8955e-07
+- 2026-11-09 17:14:00 CONTROLS GPU n=128: 21/64; error 1.1558e-06
+- 2026-11-09 17:14:04 CPU Qwen__Qwen2.5-0.5B n=128: 41/64; last 10.9s
+- 2026-11-09 17:14:13 CONTROLS GPU n=128: 25/64; error 9.6455e-07
+- 2026-11-09 17:14:27 CONTROLS GPU n=128: 29/64; error 1.8587e-06
+- 2026-11-09 17:14:41 CONTROLS GPU n=128: 33/64; error 1.3477e-06
+- 2026-11-09 17:14:46 CPU Qwen__Qwen2.5-0.5B n=128: 45/64; last 10.4s
+- 2026-11-09 17:14:58 CONTROLS GPU n=128: 37/64; error 1.4346e-06
+- 2026-11-09 17:15:14 CONTROLS GPU n=128: 41/64; error 2.273e-05
+- 2026-11-09 17:15:30 CONTROLS GPU n=128: 45/64; error 1.1055e-06
+- 2026-11-09 17:15:30 CPU Qwen__Qwen2.5-0.5B n=128: 49/64; last 10.2s
+- 2026-11-09 17:15:46 CONTROLS GPU n=128: 49/64; error 0.0064984
+- 2026-11-09 17:16:00 CONTROLS GPU n=128: 53/64; error 3.4899e-05
+- 2026-11-09 17:16:14 CPU Qwen__Qwen2.5-0.5B n=128: 53/64; last 11.0s
+- 2026-11-09 17:16:16 CPU gpt2 n=256: 9/64; last 110.0s
+- 2026-11-09 17:16:17 CONTROLS GPU n=128: 57/64; error 0.16859
+- 2026-11-09 17:16:33 CONTROLS GPU n=128: 61/64; error 0.15938
+- 2026-11-09 17:16:44 CONTROLS GPU n=128: 64/64; error 0.0099808
+- 2026-11-09 17:16:58 CPU Qwen__Qwen2.5-0.5B n=128: 57/64; last 11.2s
+- 2026-11-09 17:17:01 CONTROLS GPU n=256: 1/64; error 4.5184e-07
+- 2026-11-09 17:17:13 CONTROLS GPU n=256: 5/64; error 1.1341e-06
+- 2026-11-09 17:17:25 CONTROLS GPU n=256: 9/64; error 2.4059e-06
+- 2026-11-09 17:17:38 CONTROLS GPU n=256: 13/64; error 1.6128e-06
+- 2026-11-09 17:17:43 CPU Qwen__Qwen2.5-0.5B n=128: 61/64; last 10.8s
+- 2026-11-09 17:17:51 CONTROLS GPU n=256: 17/64; error 2.7156e-06
+- 2026-11-09 17:18:04 CONTROLS GPU n=256: 21/64; error 1.4839e-06
+- 2026-11-09 17:18:13 CPU Qwen__Qwen2.5-0.5B n=128: 64/64; last 9.9s
+- 2026-11-09 17:18:14 CPU Qwen__Qwen2.5-3B n=128: 0/64 already complete
+- 2026-11-09 17:18:17 CONTROLS GPU n=256: 25/64; error 3.0242e-07
+- 2026-11-09 17:18:26 CPU Qwen__Qwen2.5-3B n=128: 1/64; last 12.0s
+- 2026-11-09 17:18:32 CONTROLS GPU n=256: 29/64; error 6.0671e-07
+- 2026-11-09 17:18:46 CONTROLS GPU n=256: 33/64; error 1.8153e-06
+- 2026-11-09 17:19:02 CONTROLS GPU n=256: 37/64; error 2.154e-06
+- 2026-11-09 17:19:15 CPU Qwen__Qwen2.5-3B n=128: 5/64; last 12.5s
+- 2026-11-09 17:19:18 CONTROLS GPU n=256: 41/64; error 3.3538e-06
+- 2026-11-09 17:19:32 CONTROLS GPU n=256: 45/64; error 2.0802e-06
+- 2026-11-09 17:19:48 CONTROLS GPU n=256: 49/64; error 2.2127e-06
+- 2026-11-09 17:19:59 CPU Qwen__Qwen2.5-3B n=128: 9/64; last 12.0s
+- 2026-11-09 17:20:05 CONTROLS GPU n=256: 53/64; error 1.9343e-06
+- 2026-11-09 17:20:21 CONTROLS GPU n=256: 57/64; error 1.784e-06
+- 2026-11-09 17:20:37 CONTROLS GPU n=256: 61/64; error 5.5521e-06
+- 2026-11-09 17:20:44 CPU Qwen__Qwen2.5-3B n=128: 13/64; last 10.8s
+- 2026-11-09 17:20:49 CONTROLS GPU n=256: 64/64; error 0.0099935
+- 2026-11-09 17:21:28 CPU Qwen__Qwen2.5-3B n=128: 17/64; last 11.4s
+- 2026-11-09 17:21:48 GPU EleutherAI__pythia-410m n=128: 0/64 already complete
+- 2026-11-09 17:22:06 GPU EleutherAI__pythia-410m n=128: 1/64; last 18.7s
+- 2026-11-09 17:22:11 CPU Qwen__Qwen2.5-3B n=128: 21/64; last 11.0s
+- 2026-11-09 17:22:50 CPU Qwen__Qwen2.5-3B n=128: 25/64; last 9.1s
+- 2026-11-09 17:23:02 CPU gpt2 n=256: 13/64; last 114.3s
+- 2026-11-09 17:23:13 GPU EleutherAI__pythia-410m n=128: 5/64; last 16.8s
+- 2026-11-09 17:23:31 CPU Qwen__Qwen2.5-3B n=128: 29/64; last 11.3s
+- 2026-11-09 17:24:14 CPU Qwen__Qwen2.5-3B n=128: 33/64; last 10.6s
+- 2026-11-09 17:24:23 GPU EleutherAI__pythia-410m n=128: 9/64; last 16.7s
+- 2026-11-09 17:24:52 CPU Qwen__Qwen2.5-3B n=128: 37/64; last 9.0s
+- 2026-11-09 17:25:27 GPU EleutherAI__pythia-410m n=128: 13/64; last 16.4s
+- 2026-11-09 17:25:31 CPU Qwen__Qwen2.5-3B n=128: 41/64; last 11.0s
+- 2026-11-09 17:26:15 CPU Qwen__Qwen2.5-3B n=128: 45/64; last 8.9s
+- 2026-11-09 17:26:34 GPU EleutherAI__pythia-410m n=128: 17/64; last 15.5s
+- 2026-11-09 17:26:52 CPU Qwen__Qwen2.5-3B n=128: 49/64; last 8.9s
+- 2026-11-09 17:27:28 CPU Qwen__Qwen2.5-3B n=128: 53/64; last 9.4s
+- 2026-11-09 17:27:31 GPU EleutherAI__pythia-410m n=128: 21/64; last 13.3s
+- 2026-11-09 17:28:04 CPU Qwen__Qwen2.5-3B n=128: 57/64; last 9.8s
+- 2026-11-09 17:28:11 CPU gpt2 n=256: 17/64; last 69.1s
+- 2026-11-09 17:28:30 GPU EleutherAI__pythia-410m n=128: 25/64; last 15.2s
+- 2026-11-09 17:28:39 CPU Qwen__Qwen2.5-3B n=128: 61/64; last 9.1s
+- 2026-11-09 17:29:04 CPU Qwen__Qwen2.5-3B n=128: 64/64; last 8.8s
+- 2026-11-09 17:29:28 GPU EleutherAI__pythia-410m n=128: 29/64; last 13.0s
+- 2026-11-09 17:30:14 GPU EleutherAI__pythia-410m n=128: 33/64; last 11.4s
+- 2026-11-09 17:30:56 CPU EleutherAI__pythia-1.4b n=256: 0/64 already complete
+- 2026-11-09 17:31:08 GPU EleutherAI__pythia-410m n=128: 37/64; last 15.8s
+- 2026-11-09 17:32:04 CPU EleutherAI__pythia-1.4b n=256: 1/64; last 68.5s
+- 2026-11-09 17:32:10 GPU EleutherAI__pythia-410m n=128: 41/64; last 15.2s
+- 2026-11-09 17:32:26 CPU gpt2 n=256: 21/64; last 71.1s
+- 2026-11-09 17:33:12 GPU EleutherAI__pythia-410m n=128: 45/64; last 15.1s
+- 2026-11-09 17:34:07 GPU EleutherAI__pythia-410m n=128: 49/64; last 16.0s
+- 2026-11-09 17:35:07 GPU EleutherAI__pythia-410m n=128: 53/64; last 14.1s
+- 2026-11-09 17:36:10 GPU EleutherAI__pythia-410m n=128: 57/64; last 16.2s
+- 2026-11-09 17:36:56 CPU EleutherAI__pythia-1.4b n=256: 5/64; last 74.1s
+- 2026-11-09 17:37:01 GPU EleutherAI__pythia-410m n=128: 61/64; last 10.9s
+- 2026-11-09 17:37:40 CPU gpt2 n=256: 25/64; last 70.6s
+- 2026-11-09 17:37:47 GPU EleutherAI__pythia-410m n=128: 64/64; last 14.9s
+- 2026-11-09 17:37:55 GPU EleutherAI__pythia-1.4b n=128: 0/64 already complete
+- 2026-11-09 17:38:14 GPU EleutherAI__pythia-1.4b n=128: 1/64; last 18.9s
+- 2026-11-09 17:39:06 GPU EleutherAI__pythia-1.4b n=128: 5/64; last 11.9s
+- 2026-11-09 17:39:56 GPU EleutherAI__pythia-1.4b n=128: 9/64; last 11.5s
+- 2026-11-09 17:40:37 GPU EleutherAI__pythia-1.4b n=128: 13/64; last 10.3s
+- 2026-11-09 17:41:09 CPU EleutherAI__pythia-1.4b n=256: 9/64; last 49.4s
+- 2026-11-09 17:41:10 CPU scheduling expanded to the authorized three CPU workers, four threads each; one CUDA worker under flock; checkpoint identities preserved
+- 2026-11-09 17:41:12 CPU gpt2 n=256: 28/64 already complete
+- 2026-11-09 17:41:14 CPU EleutherAI__pythia-410m n=256: 0/64 already complete
+- 2026-11-09 17:41:22 GPU EleutherAI__pythia-1.4b n=128: 17/64; last 13.0s
+- 2026-11-09 17:42:10 GPU EleutherAI__pythia-1.4b n=128: 21/64; last 12.8s
+- 2026-11-09 17:42:24 CPU EleutherAI__pythia-410m n=256: 1/64; last 70.2s
+- 2026-11-09 17:42:32 CPU gpt2 n=256: 29/64; last 80.0s
+- 2026-11-09 17:43:00 GPU EleutherAI__pythia-1.4b n=128: 25/64; last 14.0s
+- 2026-11-09 17:43:53 GPU EleutherAI__pythia-1.4b n=128: 29/64; last 12.3s
+- 2026-11-09 17:44:43 GPU EleutherAI__pythia-1.4b n=128: 33/64; last 12.7s
+- 2026-11-09 17:44:59 CPU queues balanced into pairs: GPT-2/medium, Pythia-1.4B/Qwen-0.5B, Pythia-410M/Qwen-3B. Only verified own PID 36424 was stopped; all completed prefixes are retained, incomplete computation reruns, and every selected identity remains required.
+- 2026-11-09 17:45:01 CPU EleutherAI__pythia-1.4b n=256: 12/64 already complete
+- 2026-11-09 17:45:37 GPU EleutherAI__pythia-1.4b n=128: 37/64; last 12.3s
+- 2026-11-09 17:46:26 CPU EleutherAI__pythia-1.4b n=256: 13/64; last 84.2s
+- 2026-11-09 17:46:28 GPU EleutherAI__pythia-1.4b n=128: 41/64; last 11.5s
+- 2026-11-09 17:47:15 GPU EleutherAI__pythia-1.4b n=128: 45/64; last 10.8s
+- 2026-11-09 17:47:26 CPU EleutherAI__pythia-410m n=256: 5/64; last 70.0s
+- 2026-11-09 17:47:34 CPU gpt2 n=256: 33/64; last 72.1s
+- 2026-11-09 17:48:04 GPU EleutherAI__pythia-1.4b n=128: 49/64; last 12.5s
+- 2026-11-09 17:48:57 GPU EleutherAI__pythia-1.4b n=128: 53/64; last 12.7s
+- 2026-11-09 17:49:57 GPU EleutherAI__pythia-1.4b n=128: 57/64; last 13.4s
+- 2026-11-09 17:50:45 GPU EleutherAI__pythia-1.4b n=128: 61/64; last 10.3s
+- 2026-11-09 17:51:16 GPU EleutherAI__pythia-1.4b n=128: 64/64; last 10.4s
+- 2026-11-09 17:51:24 GPU Qwen__Qwen2.5-3B n=128: 0/64 already complete
+- 2026-11-09 17:51:36 GPU Qwen__Qwen2.5-3B n=128: 1/64; last 12.0s
+- 2026-11-09 17:51:41 CPU EleutherAI__pythia-1.4b n=256: 17/64; last 70.5s
+- 2026-11-09 17:52:23 GPU Qwen__Qwen2.5-3B n=128: 5/64; last 12.7s
+- 2026-11-09 17:52:37 CPU EleutherAI__pythia-410m n=256: 9/64; last 69.4s
+- 2026-11-09 17:52:40 CPU gpt2 n=256: 37/64; last 69.7s
+- 2026-11-09 17:53:05 GPU Qwen__Qwen2.5-3B n=128: 9/64; last 9.8s
+- 2026-11-09 17:53:48 GPU Qwen__Qwen2.5-3B n=128: 13/64; last 10.2s
+- 2026-11-09 17:54:31 GPU Qwen__Qwen2.5-3B n=128: 17/64; last 10.5s
+- 2026-11-09 17:55:12 GPU Qwen__Qwen2.5-3B n=128: 21/64; last 10.9s
+- 2026-11-09 17:56:00 GPU Qwen__Qwen2.5-3B n=128: 25/64; last 10.0s
+- 2026-11-09 17:56:08 CPU EleutherAI__pythia-1.4b n=256: 21/64; last 70.4s
+- 2026-11-09 17:56:41 GPU Qwen__Qwen2.5-3B n=128: 29/64; last 9.0s
+- 2026-11-09 17:56:51 CPU gpt2 n=256: 41/64; last 57.2s
+- 2026-11-09 17:56:55 CPU EleutherAI__pythia-410m n=256: 13/64; last 57.7s
+- 2026-11-09 17:57:22 GPU Qwen__Qwen2.5-3B n=128: 33/64; last 10.5s
+- 2026-11-09 17:58:03 GPU Qwen__Qwen2.5-3B n=128: 37/64; last 10.6s
+- 2026-11-09 17:58:43 GPU Qwen__Qwen2.5-3B n=128: 41/64; last 9.8s
+- 2026-11-09 17:59:25 GPU Qwen__Qwen2.5-3B n=128: 45/64; last 10.6s
+- 2026-11-09 18:00:03 CPU EleutherAI__pythia-1.4b n=256: 25/64; last 58.6s
+- 2026-11-09 18:00:06 GPU Qwen__Qwen2.5-3B n=128: 49/64; last 9.4s
+- 2026-11-09 18:00:52 GPU Qwen__Qwen2.5-3B n=128: 53/64; last 11.7s
+- 2026-11-09 18:01:00 CPU gpt2 n=256: 45/64; last 66.7s
+- 2026-11-09 18:01:05 CPU EleutherAI__pythia-410m n=256: 17/64; last 66.4s
+- 2026-11-09 18:01:38 GPU Qwen__Qwen2.5-3B n=128: 57/64; last 10.2s
+- 2026-11-09 18:02:26 GPU Qwen__Qwen2.5-3B n=128: 61/64; last 13.5s
+- 2026-11-09 18:03:05 GPU Qwen__Qwen2.5-3B n=128: 64/64; last 11.8s
+- 2026-11-09 18:03:13 GPU gpt2-medium n=128: 0/64 already complete
+- 2026-11-09 18:03:28 GPU gpt2-medium n=128: 1/64; last 14.9s
+- 2026-11-09 18:04:15 GPU gpt2-medium n=128: 5/64; last 9.3s
+- 2026-11-09 18:04:36 CPU EleutherAI__pythia-1.4b n=256: 29/64; last 70.1s
+- 2026-11-09 18:04:55 GPU gpt2-medium n=128: 9/64; last 10.0s
+- 2026-11-09 18:05:28 CPU gpt2 n=256: 49/64; last 59.9s
+- 2026-11-09 18:05:41 GPU gpt2-medium n=128: 13/64; last 10.5s
+- 2026-11-09 18:05:50 CPU EleutherAI__pythia-410m n=256: 21/64; last 68.7s
+- 2026-11-09 18:06:25 GPU gpt2-medium n=128: 17/64; last 11.7s
+- 2026-11-09 18:07:11 GPU gpt2-medium n=128: 21/64; last 11.6s
+- 2026-11-09 18:07:57 GPU gpt2-medium n=128: 25/64; last 13.0s
+- 2026-11-09 18:08:43 GPU gpt2-medium n=128: 29/64; last 10.8s
+- 2026-11-09 18:09:26 CPU EleutherAI__pythia-1.4b n=256: 33/64; last 82.9s
+- 2026-11-09 18:09:37 GPU gpt2-medium n=128: 33/64; last 12.7s
+- 2026-11-09 18:10:12 CPU gpt2 n=256: 53/64; last 91.2s
+- 2026-11-09 18:10:38 GPU gpt2-medium n=128: 37/64; last 16.6s
+- 2026-11-09 18:11:21 CPU EleutherAI__pythia-410m n=256: 25/64; last 100.6s
+- 2026-11-09 18:11:34 GPU gpt2-medium n=128: 41/64; last 12.6s
+- 2026-11-09 18:12:28 GPU gpt2-medium n=128: 45/64; last 13.8s
+- 2026-11-09 18:13:27 GPU gpt2-medium n=128: 49/64; last 15.8s
+- 2026-11-09 18:14:21 GPU gpt2-medium n=128: 53/64; last 14.8s
+- 2026-11-09 18:14:59 CPU EleutherAI__pythia-1.4b n=256: 37/64; last 79.7s
+- 2026-11-09 18:15:26 GPU gpt2-medium n=128: 57/64; last 17.0s
+- 2026-11-09 18:16:19 CPU gpt2 n=256: 57/64; last 102.8s
+- 2026-11-09 18:16:33 GPU gpt2-medium n=128: 61/64; last 15.0s
+- 2026-11-09 18:17:20 GPU gpt2-medium n=128: 64/64; last 16.0s
+- 2026-11-09 18:17:21 CPU EleutherAI__pythia-410m n=256: 29/64; last 107.0s
+- 2026-11-09 18:17:29 GPU gpt2 n=128: 0/64 already complete
+- 2026-11-09 18:17:47 GPU gpt2 n=128: 1/64; last 17.6s
+- 2026-11-09 18:18:55 GPU gpt2 n=128: 5/64; last 17.8s
+- 2026-11-09 18:20:09 GPU gpt2 n=128: 9/64; last 20.0s
+- 2026-11-09 18:21:22 GPU gpt2 n=128: 13/64; last 17.8s
+- 2026-11-09 18:22:09 CPU EleutherAI__pythia-1.4b n=256: 41/64; last 107.6s
+- 2026-11-09 18:22:32 GPU gpt2 n=128: 17/64; last 18.4s
+- 2026-11-09 18:23:37 GPU gpt2 n=128: 21/64; last 19.1s
+- 2026-11-09 18:23:40 CPU gpt2 n=256: 61/64; last 115.5s
+- 2026-11-09 18:24:53 GPU gpt2 n=128: 25/64; last 20.0s
+- 2026-11-09 18:25:19 CPU EleutherAI__pythia-410m n=256: 33/64; last 130.3s
+- 2026-11-09 18:26:05 GPU gpt2 n=128: 29/64; last 18.0s
+- 2026-11-09 18:27:15 GPU gpt2 n=128: 33/64; last 18.7s
+- 2026-11-09 18:28:20 GPU gpt2 n=128: 37/64; last 16.3s
+- 2026-11-09 18:29:20 GPU gpt2 n=128: 41/64; last 15.6s
+- 2026-11-09 18:29:34 CPU gpt2 n=256: 64/64; last 94.0s
+- 2026-11-09 18:29:37 CPU gpt2-medium n=256: 0/64 already complete
+- 2026-11-09 18:29:45 CPU EleutherAI__pythia-1.4b n=256: 45/64; last 106.8s
+- 2026-11-09 18:30:23 GPU gpt2 n=128: 45/64; last 15.7s
+- 2026-11-09 18:31:24 GPU gpt2 n=128: 49/64; last 15.2s
+- 2026-11-09 18:31:49 CPU gpt2-medium n=256: 1/64; last 132.1s
+- 2026-11-09 18:32:13 CPU EleutherAI__pythia-410m n=256: 37/64; last 98.2s
+- 2026-11-09 18:32:30 GPU gpt2 n=128: 53/64; last 17.1s
+- 2026-11-09 18:33:35 GPU gpt2 n=128: 57/64; last 16.3s
+- 2026-11-09 18:34:34 GPU gpt2 n=128: 61/64; last 15.6s
+- 2026-11-09 18:35:18 GPU gpt2 n=128: 64/64; last 15.8s
+- 2026-11-09 18:35:28 GPU Qwen__Qwen2.5-0.5B n=128: 0/64 already complete
+- 2026-11-09 18:35:46 GPU Qwen__Qwen2.5-0.5B n=128: 1/64; last 17.7s
+- 2026-11-09 18:36:41 CPU EleutherAI__pythia-1.4b n=256: 49/64; last 98.2s
+- 2026-11-09 18:36:49 GPU Qwen__Qwen2.5-0.5B n=128: 5/64; last 17.4s
+- 2026-11-09 18:37:58 GPU Qwen__Qwen2.5-0.5B n=128: 9/64; last 15.4s
+- 2026-11-09 18:38:41 CPU gpt2-medium n=256: 5/64; last 107.5s
+- 2026-11-09 18:39:06 GPU Qwen__Qwen2.5-0.5B n=128: 13/64; last 16.1s
+- 2026-11-09 18:39:21 CPU EleutherAI__pythia-410m n=256: 41/64; last 104.7s
+- 2026-11-09 18:40:24 GPU Qwen__Qwen2.5-0.5B n=128: 17/64; last 21.1s
+- 2026-11-09 18:41:45 GPU Qwen__Qwen2.5-0.5B n=128: 21/64; last 22.4s
+- 2026-11-09 18:43:07 GPU Qwen__Qwen2.5-0.5B n=128: 25/64; last 21.0s
+- 2026-11-09 18:44:19 GPU Qwen__Qwen2.5-0.5B n=128: 29/64; last 18.1s
+- 2026-11-09 18:44:28 CPU EleutherAI__pythia-1.4b n=256: 53/64; last 113.0s
+- 2026-11-09 18:45:24 GPU Qwen__Qwen2.5-0.5B n=128: 33/64; last 17.0s
+- 2026-11-09 18:46:32 GPU Qwen__Qwen2.5-0.5B n=128: 37/64; last 17.7s
+- 2026-11-09 18:46:39 CPU gpt2-medium n=256: 9/64; last 109.0s
+- 2026-11-09 18:47:39 CPU EleutherAI__pythia-410m n=256: 45/64; last 120.6s
+- 2026-11-09 18:47:40 GPU Qwen__Qwen2.5-0.5B n=128: 41/64; last 18.4s
+- 2026-11-09 18:48:53 GPU Qwen__Qwen2.5-0.5B n=128: 45/64; last 18.3s
+- 2026-11-09 18:50:03 GPU Qwen__Qwen2.5-0.5B n=128: 49/64; last 18.2s
+- 2026-11-09 18:51:15 GPU Qwen__Qwen2.5-0.5B n=128: 53/64; last 17.8s
+- 2026-11-09 18:51:40 CPU EleutherAI__pythia-1.4b n=256: 57/64; last 112.2s
+- 2026-11-09 18:52:30 GPU Qwen__Qwen2.5-0.5B n=128: 57/64; last 17.0s
+- 2026-11-09 18:53:34 GPU Qwen__Qwen2.5-0.5B n=128: 61/64; last 16.8s
+- 2026-11-09 18:53:56 CPU gpt2-medium n=256: 13/64; last 101.1s
+- 2026-11-09 18:54:27 GPU Qwen__Qwen2.5-0.5B n=128: 64/64; last 18.6s
+- 2026-11-09 18:55:38 CPU EleutherAI__pythia-410m n=256: 49/64; last 115.7s
+- 2026-11-09 18:59:31 CPU EleutherAI__pythia-1.4b n=256: 61/64; last 137.2s
+- 2026-11-09 19:03:09 CPU gpt2-medium n=256: 17/64; last 150.8s
+- 2026-11-09 19:05:03 CPU EleutherAI__pythia-410m n=256: 53/64; last 180.3s
+- 2026-11-09 19:07:08 CPU EleutherAI__pythia-1.4b n=256: 64/64; last 158.6s
+- 2026-11-09 19:07:11 CPU Qwen__Qwen2.5-0.5B n=256: 0/64 already complete
+- 2026-11-09 19:09:29 CPU Qwen__Qwen2.5-0.5B n=256: 1/64; last 137.6s
+- 2026-11-09 19:13:15 CPU gpt2-medium n=256: 21/64; last 146.5s
+- 2026-11-09 19:15:27 CPU EleutherAI__pythia-410m n=256: 57/64; last 158.3s
+- 2026-11-09 19:20:00 CPU Qwen__Qwen2.5-0.5B n=256: 5/64; last 167.4s
+- 2026-11-09 19:25:39 CPU gpt2-medium n=256: 25/64; last 152.6s
+- 2026-11-09 19:26:25 CPU EleutherAI__pythia-410m n=256: 61/64; last 125.8s
+- 2026-11-09 19:29:07 CPU Qwen__Qwen2.5-0.5B n=256: 9/64; last 101.7s
+- 2026-11-09 19:31:59 CPU EleutherAI__pythia-410m n=256: 64/64; last 115.6s
+- 2026-11-09 19:32:07 CPU Qwen__Qwen2.5-3B n=256: 0/64 already complete
+- 2026-11-09 19:32:39 CPU gpt2-medium n=256: 29/64; last 80.3s
+- 2026-11-09 19:33:17 CPU Qwen__Qwen2.5-3B n=256: 1/64; last 69.8s
+- 2026-11-09 19:34:54 CPU Qwen__Qwen2.5-0.5B n=256: 13/64; last 81.8s
+- 2026-11-09 19:37:18 CPU gpt2-medium n=256: 33/64; last 62.8s
+- 2026-11-09 19:38:23 CPU Qwen__Qwen2.5-3B n=256: 5/64; last 82.2s
+- 2026-11-09 19:39:43 CPU Qwen__Qwen2.5-0.5B n=256: 17/64; last 68.7s
+- 2026-11-09 19:42:23 CPU gpt2-medium n=256: 37/64; last 76.6s
+- 2026-11-09 19:43:15 CPU Qwen__Qwen2.5-3B n=256: 9/64; last 86.8s
+- 2026-11-09 19:45:16 CPU Qwen__Qwen2.5-0.5B n=256: 21/64; last 93.1s
+- 2026-11-09 19:48:00 GPU gpt2 n=256: 0/64 already complete
+- 2026-11-09 19:48:03 CPU gpt2-medium n=256: 41/64; last 75.1s
+- 2026-11-09 19:48:16 GPU gpt2 n=256: 1/64; last 16.7s
+- 2026-11-09 19:48:32 CPU Qwen__Qwen2.5-3B n=256: 13/64; last 74.1s
+- 2026-11-09 19:49:19 GPU gpt2 n=256: 5/64; last 14.6s
+- 2026-11-09 19:50:17 GPU gpt2 n=256: 9/64; last 14.2s
+- 2026-11-09 19:50:30 CPU Qwen__Qwen2.5-0.5B n=256: 25/64; last 80.7s
+- 2026-11-09 19:51:11 GPU gpt2 n=256: 13/64; last 11.8s
+- 2026-11-09 19:52:09 GPU gpt2 n=256: 17/64; last 14.4s
+- 2026-11-09 19:53:06 GPU gpt2 n=256: 21/64; last 12.9s
+- 2026-11-09 19:53:47 CPU gpt2-medium n=256: 45/64; last 100.0s
+- 2026-11-09 19:54:05 CPU Qwen__Qwen2.5-3B n=256: 17/64; last 82.1s
+- 2026-11-09 19:54:07 GPU gpt2 n=256: 25/64; last 14.3s
+- 2026-11-09 19:55:04 GPU gpt2 n=256: 29/64; last 13.0s
+- 2026-11-09 19:55:56 GPU gpt2 n=256: 33/64; last 12.2s
+- 2026-11-09 19:56:03 CPU Qwen__Qwen2.5-0.5B n=256: 29/64; last 75.5s
+- 2026-11-09 19:56:54 GPU gpt2 n=256: 37/64; last 16.9s
+- 2026-11-09 19:57:59 GPU gpt2 n=256: 41/64; last 17.4s
+- 2026-11-09 19:58:59 GPU gpt2 n=256: 45/64; last 15.6s
+- 2026-11-09 19:59:19 CPU gpt2-medium n=256: 49/64; last 90.2s
+- 2026-11-09 19:59:31 CPU Qwen__Qwen2.5-3B n=256: 21/64; last 86.2s
+- 2026-11-09 20:00:03 GPU gpt2 n=256: 49/64; last 15.2s
+- 2026-11-09 20:01:07 GPU gpt2 n=256: 53/64; last 15.8s
+- 2026-11-09 20:01:55 CPU Qwen__Qwen2.5-0.5B n=256: 33/64; last 84.3s
+- 2026-11-09 20:02:08 GPU gpt2 n=256: 57/64; last 15.4s
+- 2026-11-09 20:03:10 GPU gpt2 n=256: 61/64; last 13.1s
+- 2026-11-09 20:03:55 GPU gpt2 n=256: 64/64; last 15.6s
+- 2026-11-09 20:05:03 CPU gpt2-medium n=256: 53/64; last 94.8s
+- 2026-11-09 20:05:11 CPU Qwen__Qwen2.5-3B n=256: 25/64; last 97.4s
+- 2026-11-09 20:08:38 CPU Qwen__Qwen2.5-0.5B n=256: 37/64; last 109.4s
+- 2026-11-09 20:12:21 CPU gpt2-medium n=256: 57/64; last 99.9s
+- 2026-11-09 20:12:28 CPU Qwen__Qwen2.5-3B n=256: 29/64; last 99.5s
+- 2026-11-09 20:15:09 CPU Qwen__Qwen2.5-0.5B n=256: 41/64; last 107.8s
+- 2026-11-09 20:18:00 CPU Qwen__Qwen2.5-3B n=256: 33/64; last 80.4s
+- 2026-11-09 20:18:12 CPU gpt2-medium n=256: 61/64; last 83.2s
+- 2026-11-09 20:20:15 CPU Qwen__Qwen2.5-0.5B n=256: 45/64; last 77.4s
+- 2026-11-09 20:22:43 CPU gpt2-medium n=256: 64/64; last 115.3s
+- 2026-11-09 20:23:49 CPU Qwen__Qwen2.5-3B n=256: 37/64; last 82.1s
+- 2026-11-09 20:25:32 CPU Qwen__Qwen2.5-0.5B n=256: 49/64; last 54.3s
+- 2026-11-09 20:27:31 CPU Qwen__Qwen2.5-3B n=256: 41/64; last 56.9s
+- 2026-11-09 20:29:25 CPU Qwen__Qwen2.5-0.5B n=256: 53/64; last 56.6s
+- 2026-11-09 20:31:40 CPU Qwen__Qwen2.5-3B n=256: 45/64; last 74.2s
+- 2026-11-09 20:34:11 CPU Qwen__Qwen2.5-0.5B n=256: 57/64; last 64.2s
+- 2026-11-09 20:36:32 CPU Qwen__Qwen2.5-3B n=256: 49/64; last 71.6s
+- 2026-11-09 20:38:42 CPU Qwen__Qwen2.5-0.5B n=256: 61/64; last 62.1s
+- 2026-11-09 20:41:06 CPU Qwen__Qwen2.5-3B n=256: 53/64; last 71.6s
+- 2026-11-09 20:41:52 CPU Qwen__Qwen2.5-0.5B n=256: 64/64; last 58.4s
+- 2026-11-09 20:44:36 CPU Qwen__Qwen2.5-3B n=256: 57/64; last 50.9s
+- 2026-11-09 20:47:52 CPU Qwen__Qwen2.5-3B n=256: 61/64; last 47.8s
+- 2026-11-09 20:50:25 CPU Qwen__Qwen2.5-3B n=256: 64/64; last 56.8s
+- 2026-11-09 20:52:50 CPU DECODE AUDIT gpt2 n=128: all 64 instances verified
+- 2026-11-09 20:52:51 CPU DECODE AUDIT gpt2-medium n=128: all 64 instances verified
+- 2026-11-09 20:52:52 CPU DECODE AUDIT EleutherAI__pythia-410m n=128: all 64 instances verified
+- 2026-11-09 20:52:53 CPU DECODE AUDIT EleutherAI__pythia-1.4b n=128: all 64 instances verified
+- 2026-11-09 20:52:54 CPU DECODE AUDIT Qwen__Qwen2.5-0.5B n=128: all 64 instances verified
+- 2026-11-09 20:52:56 CPU DECODE AUDIT Qwen__Qwen2.5-3B n=128: all 64 instances verified
+- 2026-11-09 20:53:00 CPU DECODE AUDIT gpt2 n=256: all 64 instances verified
+- 2026-11-09 20:53:03 CPU DECODE AUDIT gpt2-medium n=256: all 64 instances verified
+- 2026-11-09 20:53:06 CPU DECODE AUDIT EleutherAI__pythia-410m n=256: all 64 instances verified
+- 2026-11-09 20:53:09 CPU DECODE AUDIT EleutherAI__pythia-1.4b n=256: all 64 instances verified
+- 2026-11-09 20:53:13 CPU DECODE AUDIT Qwen__Qwen2.5-0.5B n=256: all 64 instances verified
+- 2026-11-09 20:53:16 CPU DECODE AUDIT Qwen__Qwen2.5-3B n=256: all 64 instances verified
+- 2026-11-09 20:53:16 CPU DECODE AUDIT complete: {'instances': 768, 'discrete_decodes': 18432, 'svd_reconstructions': 4608, 'max_absolute_error_discrepancy': 7.105427357601002e-15, 'max_relative_error_discrepancy': 9.992007221626409e-16, 'max_svd_absolute_discrepancy': 2.8392659532986172e-14, 'max_active_nnls_projected_kkt': 2.89734966114752e-15, 'passed': True, 'full_inverse_max_relative': 6.416991937122228e-08, 'full_inverse_median_relative': 3.845942058240059e-08, 'full_inverse_converged_fraction': 1.0, 'error_comparison_tolerance': 1e-09, 'nnls_kkt_audit_tolerance': 1e-09}
+- 2026-11-09 20:54:28 GPU EleutherAI__pythia-1.4b n=256: 0/64 already complete
+- 2026-11-09 20:54:37 GPU EleutherAI__pythia-1.4b n=256: 1/64; last 9.1s
+- 2026-11-09 20:55:14 GPU EleutherAI__pythia-1.4b n=256: 5/64; last 9.1s
+- 2026-11-09 20:55:50 GPU EleutherAI__pythia-1.4b n=256: 9/64; last 9.1s
+- 2026-11-09 20:56:24 GPU EleutherAI__pythia-1.4b n=256: 13/64; last 8.7s
+- 2026-11-09 20:57:05 GPU EleutherAI__pythia-1.4b n=256: 17/64; last 10.5s
+- 2026-11-09 20:57:47 GPU EleutherAI__pythia-1.4b n=256: 21/64; last 10.9s
+- 2026-11-09 20:58:33 GPU EleutherAI__pythia-1.4b n=256: 25/64; last 11.5s
+- 2026-11-09 20:59:20 GPU EleutherAI__pythia-1.4b n=256: 29/64; last 12.4s
+- 2026-11-09 21:00:11 GPU EleutherAI__pythia-1.4b n=256: 33/64; last 11.8s
+- 2026-11-09 21:00:55 GPU EleutherAI__pythia-1.4b n=256: 37/64; last 10.8s
+- 2026-11-09 21:01:37 GPU EleutherAI__pythia-1.4b n=256: 41/64; last 10.2s
+- 2026-11-09 21:02:19 GPU EleutherAI__pythia-1.4b n=256: 45/64; last 10.9s
+- 2026-11-09 21:03:04 GPU EleutherAI__pythia-1.4b n=256: 49/64; last 11.4s
+- 2026-11-09 21:03:50 GPU EleutherAI__pythia-1.4b n=256: 53/64; last 10.8s
+- 2026-11-09 21:04:34 GPU EleutherAI__pythia-1.4b n=256: 57/64; last 12.7s
+- 2026-11-09 21:05:16 GPU EleutherAI__pythia-1.4b n=256: 61/64; last 10.8s
+- 2026-11-09 21:05:52 GPU EleutherAI__pythia-1.4b n=256: 64/64; last 12.8s
+- 2026-11-09 21:12:53 CPU backend synthetic preparation n=256 complete
+- 2026-11-09 21:15:24 CPU backend n=256: all budgets + four starts + refinement 150.9s
+- 2026-11-09 21:15:52 CPU alternative exact-family validation passed, but synthetic fit took 150.9s for 100 Adam + 150 L-BFGS-B; not used in reported attention fits
+- 2026-11-09 21:30:56 WAIT shared GPU lock: 512/768 stable parametric fits; CPU 768/768 and numerical audits complete; no sample or optimization changes
+- 2026-11-09 21:43:54 CPU fallback protocol frozen before any real CPU parametric fit; same optimizer, targets, seeds and budgets; controls running; explicit GPU preemption protects a single writer
+- 2026-11-09 21:44:22 CONTROLS CPU parametric n=256: 1/64; error 3.4608e-07
+- 2026-11-09 21:44:52 CONTROLS CPU parametric n=256: 5/64; error 7.3416e-07
+- 2026-11-09 21:45:16 CONTROLS CPU parametric n=256: 9/64; error 4.1202e-06
+- 2026-11-09 21:45:36 CONTROLS CPU parametric n=256: 13/64; error 1.2143e-06
+- 2026-11-09 21:45:50 CONTROLS CPU parametric n=256: 17/64; error 4.4476e-06
+- 2026-11-09 21:46:04 CONTROLS CPU parametric n=256: 21/64; error 7.0631e-07
+- 2026-11-09 21:46:27 CONTROLS CPU parametric n=256: 25/64; error 2.6039e-07
+- 2026-11-09 21:46:52 CONTROLS CPU parametric n=256: 29/64; error 1.5796e-07
+- 2026-11-09 21:47:13 CONTROLS CPU parametric n=256: 33/64; error 1.5093e-06
+- 2026-11-09 21:47:44 CONTROLS CPU parametric n=256: 37/64; error 1.57e-06
+- 2026-11-09 21:48:10 CONTROLS CPU parametric n=256: 41/64; error 2.4236e-06
+- 2026-11-09 21:48:35 CONTROLS CPU parametric n=256: 45/64; error 1.5994e-06
+- 2026-11-09 21:49:03 CONTROLS CPU parametric n=256: 49/64; error 2.1266e-06
+- 2026-11-09 21:49:39 CONTROLS CPU parametric n=256: 53/64; error 1.892e-06
+- 2026-11-09 21:50:12 CONTROLS CPU parametric n=256: 57/64; error 1.0458e-06
+- 2026-11-09 21:50:47 CONTROLS CPU parametric n=256: 61/64; error 4.2852e-06
+- 2026-11-09 21:51:12 CONTROLS CPU parametric n=256: 64/64; error 0.0099935
+- 2026-11-09 21:52:05 CPU parametric backend n256 controls COMPLETE: 64/64 pass the unchanged reconstruction thresholds; three preassigned real-data workers started, GPU handoff remains enabled
+- 2026-11-09 22:05:41 CPU parametric gpt2-medium n=256: 1/64; last 857.8s
+- 2026-11-09 22:05:42 CPU parametric EleutherAI__pythia-410m n=256: 1/64; last 856.3s
+- 2026-11-09 22:05:43 CPU parametric Qwen__Qwen2.5-0.5B n=256: 1/64; last 856.2s
+- 2026-11-09 22:15:58 CPU parametric EleutherAI__pythia-410m n=256: 2/64; last 616.7s
+- 2026-11-09 22:16:05 CPU parametric Qwen__Qwen2.5-0.5B n=256: 2/64; last 622.0s
+- 2026-11-09 22:16:19 CPU parametric gpt2-medium n=256: 2/64; last 638.5s
+- 2026-11-09 22:25:46 CPU parametric EleutherAI__pythia-410m n=256: 3/64; last 587.4s
+- 2026-11-09 22:25:46 CPU parametric Qwen__Qwen2.5-0.5B n=256: 3/64; last 581.0s
+- 2026-11-09 22:26:21 CPU parametric gpt2-medium n=256: 3/64; last 601.3s
+- 2026-11-09 22:26:52 Controller requested safe cancellation of gpt2-medium CPU worker to free one of three CPU slots for exact Gaussian recurrence benchmark; completed prefix retained; GPU-request signal reused explicitly for this engineering cancellation
+- 2026-11-09 22:26:53 CPU parametric gpt2-medium n=256: explicit GPU handoff; unfinished case cancelled, complete prefix preserved
+- 2026-11-09 22:29:33 Recurrence CPU synthetic preparation n=256 complete
+- 2026-11-09 22:31:13 Recurrence CPU n=256: 100 Adam + 150 L-BFGS-B all-budget synthetic fit 99.6s
+- 2026-11-09 22:32:10 Recurrence full-domain validation passed; maximum value difference 1.06e-14, scaled gradient 3.09e-13; kernel speed ratios [1.64, 3.97, 3.46, 2.79]
+- 2026-11-09 22:32:38 CPU parametric Qwen__Qwen2.5-0.5B n=256: 4/64; last 412.5s
+- 2026-11-09 22:32:50 CPU parametric EleutherAI__pythia-410m n=256: 4/64; last 424.6s
+- 2026-11-09 22:34:38 Exact-recurrence CPU protocol frozen before any real recurrence fit; same five-parameter family, seeds, four starts, 450 Adam + 150 L-BFGS-B; all 64 positive controls will be rerun
+- 2026-11-09 22:36:19 CONTROLS recurrence CPU n=256: 1/64; error 5.3585e-07
+- 2026-11-09 22:36:57 CONTROLS recurrence CPU n=256: 5/64; error 7.3416e-07
+- 2026-11-09 22:37:28 CONTROLS recurrence CPU n=256: 9/64; error 4.1202e-06
+- 2026-11-09 22:38:10 CONTROLS recurrence CPU n=256: 13/64; error 1.2143e-06
+- 2026-11-09 22:38:57 CONTROLS recurrence CPU n=256: 17/64; error 4.4476e-06
+- 2026-11-09 22:39:12 CPU parametric Qwen__Qwen2.5-0.5B n=256: 5/64; last 393.7s
+- 2026-11-09 22:39:21 CPU parametric EleutherAI__pythia-410m n=256: 5/64; last 390.7s
+- 2026-11-09 22:39:52 CONTROLS recurrence CPU n=256: 21/64; error 7.0631e-07
+- 2026-11-09 22:40:55 CONTROLS recurrence CPU n=256: 25/64; error 2.6039e-07
+- 2026-11-09 22:41:53 CONTROLS recurrence CPU n=256: 29/64; error 1.5796e-07
+- 2026-11-09 22:42:47 CONTROLS recurrence CPU n=256: 33/64; error 1.5093e-06
+- 2026-11-09 22:44:47 CONTROLS recurrence CPU n=256: 37/64; error 1.57e-06
+- 2026-11-09 22:46:33 CONTROLS recurrence CPU n=256: 41/64; error 2.4236e-06
+- 2026-11-09 22:46:56 CPU parametric EleutherAI__pythia-410m n=256: 6/64; last 454.6s
+- 2026-11-09 22:47:28 CPU parametric Qwen__Qwen2.5-0.5B n=256: 6/64; last 495.9s
+- 2026-11-09 22:47:32 CPU recurrence runtime fixed before real fits: four threads per worker; OMP_WAIT_POLICY=PASSIVE, KMP_BLOCKTIME=0 to avoid inactive thread-pool spinning; no numerical-method changes
+- 2026-11-09 22:48:17 CONTROLS recurrence CPU n=256: 45/64; error 1.5994e-06
+- 2026-11-09 22:49:55 CONTROLS recurrence CPU n=256: 49/64; error 2.1266e-06
+- 2026-11-09 22:51:31 CONTROLS recurrence CPU n=256: 53/64; error 1.7565e-06
+- 2026-11-09 22:53:31 CONTROLS recurrence CPU n=256: 57/64; error 1.0458e-06
+- 2026-11-09 22:55:22 CONTROLS recurrence CPU n=256: 61/64; error 4.2852e-06
+- 2026-11-09 22:56:14 Explicit controller cancellation requested for the two old direct-exponential CPU workers; completed prefixes retained; final recurrence controls must pass before new real fits
+- 2026-11-09 22:56:14 CPU parametric EleutherAI__pythia-410m n=256: explicit GPU handoff; unfinished case cancelled, complete prefix preserved
+- 2026-11-09 22:56:14 CPU parametric Qwen__Qwen2.5-0.5B n=256: explicit GPU handoff; unfinished case cancelled, complete prefix preserved
+- 2026-11-09 22:56:20 CONTROLS recurrence CPU n=256: 64/64; error 0.0099935
+- 2026-11-09 22:57:38 Recurrence controls 64/64 PASS; all frozen hashes verified; removed only controller-owned cancellation flags after old workers released leases; starting three four-thread passive-wait CPU workers, same 768 identities
+- 2026-11-09 22:59:59 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 7/64; last 125.7s
+- 2026-11-09 23:00:00 Recurrence CPU slot=0 gpt2-medium n=256: 4/64; last 126.5s
+- 2026-11-09 23:00:01 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 7/64; last 124.5s
+- 2026-11-09 23:01:27 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 8/64; last 85.1s
+- 2026-11-09 23:01:40 Recurrence CPU slot=2 gpt2-medium n=256: 5/64; last 96.9s
+- 2026-11-09 23:01:41 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 1/64; last 97.9s
+- 2026-11-09 23:03:03 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 8/64; last 93.2s
+- 2026-11-09 23:03:27 Recurrence CPU slot=1 gpt2-medium n=256: 6/64; last 103.5s
+- 2026-11-09 23:03:28 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 9/64; last 105.3s
+- 2026-11-09 23:05:06 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 2/64; last 118.9s
+- 2026-11-09 23:05:22 Recurrence CPU slot=2 gpt2-medium n=256: 7/64; last 114.7s
+- 2026-11-09 23:05:24 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 9/64; last 114.6s
+- 2026-11-09 23:06:44 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 10/64; last 98.3s
+- 2026-11-09 23:06:56 Recurrence CPU slot=1 gpt2-medium n=256: 8/64; last 92.5s
+- 2026-11-09 23:07:09 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 3/64; last 103.1s
+- 2026-11-09 23:08:16 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 10/64; last 91.9s
+- 2026-11-09 23:08:23 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 11/64; last 86.2s
+- 2026-11-09 23:08:46 Recurrence CPU slot=2 gpt2-medium n=256: 9/64; last 96.7s
+- 2026-11-09 23:09:45 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 11/64; last 82.5s
+- 2026-11-09 23:09:50 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 4/64; last 93.4s
+- 2026-11-09 23:10:26 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 12/64; last 99.8s
+- 2026-11-09 23:11:29 Recurrence CPU slot=1 gpt2-medium n=256: 10/64; last 104.1s
+- 2026-11-09 23:11:39 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 12/64; last 109.5s
+- 2026-11-09 23:12:11 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 5/64; last 105.8s
+- 2026-11-09 23:13:10 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 13/64; last 100.8s
+- 2026-11-09 23:13:24 Recurrence CPU slot=0 gpt2-medium n=256: 11/64; last 104.5s
+- 2026-11-09 23:14:01 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 13/64; last 109.6s
+- 2026-11-09 23:15:02 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 6/64; last 111.6s
+- 2026-11-09 23:15:21 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 14/64; last 117.0s
+- 2026-11-09 23:15:48 Recurrence CPU slot=2 gpt2-medium n=256: 12/64; last 107.2s
+- 2026-11-09 23:16:57 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 14/64; last 115.7s
+- 2026-11-09 23:17:19 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 7/64; last 118.1s
+- 2026-11-09 23:17:27 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 15/64; last 98.9s
+- 2026-11-09 23:18:26 Recurrence CPU slot=1 gpt2-medium n=256: 13/64; last 88.7s
+- 2026-11-09 23:18:58 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 15/64; last 98.9s
+- 2026-11-09 23:19:14 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 8/64; last 106.3s
+- 2026-11-09 23:20:07 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 16/64; last 101.3s
+- 2026-11-09 23:20:47 Recurrence CPU slot=0 gpt2-medium n=256: 14/64; last 109.4s
+- 2026-11-09 23:21:03 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 16/64; last 109.5s
+- 2026-11-09 23:21:52 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 9/64; last 104.9s
+- 2026-11-09 23:22:24 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 17/64; last 96.3s
+- 2026-11-09 23:22:51 Recurrence CPU slot=2 gpt2-medium n=256: 15/64; last 107.6s
+- 2026-11-09 23:23:13 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 17/64; last 80.4s
+- 2026-11-09 23:24:01 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 10/64; last 97.5s
+- 2026-11-09 23:24:38 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 18/64; last 106.6s
+- 2026-11-09 23:24:53 Recurrence CPU slot=1 gpt2-medium n=256: 16/64; last 99.8s
+- 2026-11-09 23:25:29 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 18/64; last 87.8s
+- 2026-11-09 23:26:18 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 11/64; last 100.6s
+- 2026-11-09 23:26:27 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 19/64; last 93.7s
+- 2026-11-09 23:27:01 Recurrence CPU slot=0 gpt2-medium n=256: 17/64; last 92.0s
+- 2026-11-09 23:28:03 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 19/64; last 105.0s
+- 2026-11-09 23:28:09 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 12/64; last 102.1s
+- 2026-11-09 23:28:53 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 20/64; last 111.0s
+- 2026-11-09 23:29:52 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 20/64; last 103.8s
+- 2026-11-09 23:29:56 Recurrence CPU slot=2 gpt2-medium n=256: 18/64; last 112.9s
+- 2026-11-09 23:30:49 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 13/64; last 116.6s
+- 2026-11-09 23:31:33 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 21/64; last 96.3s
+- 2026-11-09 23:31:40 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 21/64; last 107.4s
+- 2026-11-09 23:32:27 Recurrence CPU slot=0 gpt2-medium n=256: 19/64; last 97.6s
+- 2026-11-09 23:33:10 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 14/64; last 97.0s
+- 2026-11-09 23:33:17 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 22/64; last 97.4s
+- 2026-11-09 23:34:15 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 22/64; last 107.4s
+- 2026-11-09 23:34:54 Recurrence CPU slot=2 gpt2-medium n=256: 20/64; last 103.8s
+- 2026-11-09 23:35:05 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 15/64; last 107.1s
+- 2026-11-09 23:36:02 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 23/64; last 107.3s
+- 2026-11-09 23:36:39 Recurrence CPU slot=1 gpt2-medium n=256: 21/64; last 94.5s
+- 2026-11-09 23:36:44 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 23/64; last 109.9s
+- 2026-11-09 23:37:52 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 16/64; last 109.6s
+- 2026-11-09 23:38:15 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 24/64; last 96.1s
+- 2026-11-09 23:38:23 Recurrence CPU slot=2 gpt2-medium n=256: 22/64; last 99.8s
+- 2026-11-09 23:39:34 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 24/64; last 102.1s
+- 2026-11-09 23:39:57 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 17/64; last 101.2s
+- 2026-11-09 23:40:08 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 25/64; last 104.2s
+- 2026-11-09 23:41:19 Recurrence CPU slot=0 gpt2-medium n=256: 23/64; last 105.1s
+- 2026-11-09 23:41:34 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 25/64; last 97.7s
+- 2026-11-09 23:41:40 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 18/64; last 92.3s
+- 2026-11-09 23:43:03 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 26/64; last 103.5s
+- 2026-11-09 23:43:12 Recurrence CPU slot=1 gpt2-medium n=256: 24/64; last 97.3s
+- 2026-11-09 23:43:21 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 26/64; last 100.6s
+- 2026-11-09 23:44:40 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 19/64; last 97.5s
+- 2026-11-09 23:44:47 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 27/64; last 94.8s
+- 2026-11-09 23:45:00 Recurrence CPU slot=2 gpt2-medium n=256: 25/64; last 99.4s
+- 2026-11-09 23:46:17 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 27/64; last 96.7s
+- 2026-11-09 23:46:41 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 20/64; last 114.4s
+- 2026-11-09 23:46:51 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 28/64; last 110.2s
+- 2026-11-09 23:48:27 Recurrence CPU slot=0 gpt2-medium n=256: 26/64; last 129.7s
+- 2026-11-09 23:48:33 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 28/64; last 111.1s
+- 2026-11-09 23:48:44 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 21/64; last 112.5s
+- 2026-11-09 23:50:18 Recurrence CPU slot=1 gpt2-medium n=256: 27/64; last 105.2s
+- 2026-11-09 23:50:22 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 29/64; last 114.8s
+- 2026-11-09 23:50:32 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 29/64; last 108.2s
+- 2026-11-09 23:51:58 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 22/64; last 99.8s
+- 2026-11-09 23:52:06 Recurrence CPU slot=0 gpt2-medium n=256: 28/64; last 103.4s
+- 2026-11-09 23:52:12 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 30/64; last 100.3s
+- 2026-11-09 23:53:42 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 30/64; last 103.7s
+- 2026-11-09 23:53:58 Recurrence CPU slot=2 gpt2-medium n=256: 29/64; last 105.1s
+- 2026-11-09 23:53:59 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 23/64; last 112.6s
+- 2026-11-09 23:55:25 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 31/64; last 103.1s
+- 2026-11-09 23:55:32 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 31/64; last 94.5s
+- 2026-11-09 23:55:43 Recurrence CPU slot=0 gpt2-medium n=256: 30/64; last 104.2s
+- 2026-11-09 23:57:04 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 24/64; last 99.1s
+- 2026-11-09 23:57:13 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 32/64; last 100.6s
+- 2026-11-09 23:57:20 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 32/64; last 97.3s
+- 2026-11-09 23:58:50 Recurrence CPU slot=1 gpt2-medium n=256: 31/64; last 105.7s
+- 2026-11-09 23:59:04 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 25/64; last 110.4s
+- 2026-11-09 23:59:19 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 33/64; last 118.8s
+- 2026-11-10 00:00:45 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 33/64; last 115.4s
+- 2026-11-10 00:01:14 Recurrence CPU slot=2 gpt2-medium n=256: 32/64; last 130.0s
+- 2026-11-10 00:01:30 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 26/64; last 130.3s
+- 2026-11-10 00:02:50 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 34/64; last 123.8s
+- 2026-11-10 00:03:01 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 34/64; last 106.6s
+- 2026-11-10 00:03:33 Recurrence CPU slot=0 gpt2-medium n=256: 33/64; last 122.3s
+- 2026-11-10 00:04:47 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 35/64; last 106.3s
+- 2026-11-10 00:04:50 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 27/64; last 120.4s
+- 2026-11-10 00:05:31 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 35/64; last 117.9s
+- 2026-11-10 00:06:09 Recurrence CPU slot=2 gpt2-medium n=256: 34/64; last 80.9s
+- 2026-11-10 00:06:19 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 36/64; last 88.7s
+- 2026-11-10 00:07:16 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 28/64; last 104.7s
+- 2026-11-10 00:07:47 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 36/64; last 97.9s
+- 2026-11-10 00:08:01 Recurrence CPU slot=1 gpt2-medium n=256: 35/64; last 102.3s
+- 2026-11-10 00:09:04 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 37/64; last 108.6s
+- 2026-11-10 00:09:29 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 29/64; last 102.4s
+- 2026-11-10 00:09:38 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 37/64; last 96.8s
+- 2026-11-10 00:10:43 Recurrence CPU slot=0 gpt2-medium n=256: 36/64; last 98.3s
+- 2026-11-10 00:11:08 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 38/64; last 99.1s
+- 2026-11-10 00:11:16 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 30/64; last 97.1s
+- 2026-11-10 00:12:10 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 38/64; last 87.2s
+- 2026-11-10 00:12:48 Recurrence CPU slot=2 gpt2-medium n=256: 37/64; last 99.9s
+- 2026-11-10 00:12:54 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 39/64; last 97.8s
+- 2026-11-10 00:13:56 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 31/64; last 105.6s
+- 2026-11-10 00:14:33 Recurrence CPU slot=1 gpt2-medium n=256: 38/64; last 98.9s
+- 2026-11-10 00:14:40 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 39/64; last 110.9s
+- 2026-11-10 00:15:47 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 40/64; last 111.3s
+- 2026-11-10 00:16:23 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 32/64; last 109.8s
+- 2026-11-10 00:16:32 Recurrence CPU slot=2 gpt2-medium n=256: 39/64; last 112.1s
+- 2026-11-10 00:17:40 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 40/64; last 112.8s
+- 2026-11-10 00:18:03 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 41/64; last 99.6s
+- 2026-11-10 00:18:15 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 33/64; last 102.1s
+- 2026-11-10 00:19:25 Recurrence CPU slot=0 gpt2-medium n=256: 40/64; last 104.3s
+- 2026-11-10 00:19:43 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 41/64; last 99.8s
+- 2026-11-10 00:19:57 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 42/64; last 102.0s
+- 2026-11-10 00:21:13 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 34/64; last 108.4s
+- 2026-11-10 00:21:23 Recurrence CPU slot=1 gpt2-medium n=256: 41/64; last 100.1s
+- 2026-11-10 00:21:28 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 42/64; last 90.8s
+- 2026-11-10 00:23:02 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 35/64; last 99.2s
+- 2026-11-10 00:23:12 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 43/64; last 118.4s
+- 2026-11-10 00:23:20 Recurrence CPU slot=2 gpt2-medium n=256: 42/64; last 112.7s
+- 2026-11-10 00:24:55 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 43/64; last 111.6s
+- 2026-11-10 00:24:55 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 44/64; last 94.6s
+- 2026-11-10 00:25:02 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 36/64; last 110.3s
+- 2026-11-10 00:26:30 Recurrence CPU slot=1 gpt2-medium n=256: 43/64; last 95.3s
+- 2026-11-10 00:26:41 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 44/64; last 105.8s
+- 2026-11-10 00:26:49 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 45/64; last 106.5s
+- 2026-11-10 00:28:12 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 37/64; last 101.5s
+- 2026-11-10 00:28:27 Recurrence CPU slot=2 gpt2-medium n=256: 44/64; last 105.9s
+- 2026-11-10 00:28:50 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 45/64; last 120.4s
+- 2026-11-10 00:29:52 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 46/64; last 100.3s
+- 2026-11-10 00:30:10 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 38/64; last 102.8s
+- 2026-11-10 00:30:26 Recurrence CPU slot=0 gpt2-medium n=256: 45/64; last 96.0s
+- 2026-11-10 00:31:38 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 46/64; last 105.6s
+- 2026-11-10 00:31:49 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 47/64; last 98.4s
+- 2026-11-10 00:32:22 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 39/64; last 115.5s
+- 2026-11-10 00:33:21 Recurrence CPU slot=1 gpt2-medium n=256: 46/64; last 102.6s
+- 2026-11-10 00:33:31 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 47/64; last 101.5s
+- 2026-11-10 00:34:05 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 48/64; last 103.1s
+- 2026-11-10 00:35:00 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 40/64; last 98.8s
+- 2026-11-10 00:35:12 Recurrence CPU slot=2 gpt2-medium n=256: 47/64; last 101.3s
+- 2026-11-10 00:35:52 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 48/64; last 106.3s
+- 2026-11-10 00:36:43 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 49/64; last 102.4s
+- 2026-11-10 00:36:56 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 41/64; last 103.9s
+- 2026-11-10 00:37:48 Recurrence CPU slot=0 gpt2-medium n=256: 48/64; last 116.1s
+- 2026-11-10 00:38:23 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 49/64; last 99.9s
+- 2026-11-10 00:38:42 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 50/64; last 105.1s
+- 2026-11-10 00:39:35 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 42/64; last 106.7s
+- 2026-11-10 00:39:54 Recurrence CPU slot=1 gpt2-medium n=256: 49/64; last 90.9s
+- 2026-11-10 00:40:29 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 50/64; last 107.0s
+- 2026-11-10 00:41:22 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 51/64; last 106.4s
+- 2026-11-10 00:41:48 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 43/64; last 114.3s
+- 2026-11-10 00:42:10 Recurrence CPU slot=2 gpt2-medium n=256: 50/64; last 101.2s
+- 2026-11-10 00:43:06 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 51/64; last 104.4s
+- 2026-11-10 00:43:36 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 52/64; last 106.8s
+- 2026-11-10 00:43:53 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 44/64; last 102.3s
+- 2026-11-10 00:44:51 Recurrence CPU slot=0 gpt2-medium n=256: 51/64; last 104.0s
+- 2026-11-10 00:45:24 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 52/64; last 108.5s
+- 2026-11-10 00:45:50 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 53/64; last 116.9s
+- 2026-11-10 00:46:50 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 45/64; last 118.9s
+- 2026-11-10 00:47:05 Recurrence CPU slot=1 gpt2-medium n=256: 52/64; last 100.4s
+- 2026-11-10 00:47:41 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 53/64; last 110.3s
+- 2026-11-10 00:48:49 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 54/64; last 118.4s
+- 2026-11-10 00:48:54 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 46/64; last 109.0s
+- 2026-11-10 00:49:24 Recurrence CPU slot=2 gpt2-medium n=256: 53/64; last 102.7s
+- 2026-11-10 00:50:35 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 55/64; last 101.2s
+- 2026-11-10 00:50:46 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 54/64; last 117.5s
+- 2026-11-10 00:51:18 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 47/64; last 114.2s
+- 2026-11-10 00:52:23 Recurrence CPU slot=1 gpt2-medium n=256: 54/64; last 107.4s
+- 2026-11-10 00:52:39 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 56/64; last 112.3s
+- 2026-11-10 00:53:11 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 55/64; last 111.7s
+- 2026-11-10 00:54:06 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 48/64; last 103.0s
+- 2026-11-10 00:54:18 Recurrence CPU slot=0 gpt2-medium n=256: 55/64; last 98.8s
+- 2026-11-10 00:54:51 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 57/64; last 100.5s
+- 2026-11-10 00:55:42 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 56/64; last 95.7s
+- 2026-11-10 00:56:07 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 49/64; last 108.9s
+- 2026-11-10 00:56:34 Recurrence CPU slot=2 gpt2-medium n=256: 56/64; last 102.5s
+- 2026-11-10 00:57:25 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 58/64; last 102.6s
+- 2026-11-10 00:57:32 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 57/64; last 84.2s
+- 2026-11-10 00:58:12 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 50/64; last 97.3s
+- 2026-11-10 00:59:01 Recurrence CPU slot=1 gpt2-medium n=256: 57/64; last 96.0s
+- 2026-11-10 00:59:26 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 59/64; last 113.6s
+- 2026-11-10 00:59:49 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 58/64; last 96.9s
+- 2026-11-10 01:00:44 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 51/64; last 102.1s
+- 2026-11-10 01:01:08 Recurrence CPU slot=0 gpt2-medium n=256: 58/64; last 102.4s
+- 2026-11-10 01:01:28 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 60/64; last 98.4s
+- 2026-11-10 01:02:26 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 59/64; last 102.0s
+- 2026-11-10 01:02:50 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 52/64; last 101.7s
+- 2026-11-10 01:03:08 Recurrence CPU slot=2 gpt2-medium n=256: 59/64; last 100.5s
+- 2026-11-10 01:04:06 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 61/64; last 99.2s
+- 2026-11-10 01:04:29 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 60/64; last 98.4s
+- 2026-11-10 01:04:45 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 53/64; last 96.7s
+- 2026-11-10 01:05:42 Recurrence CPU slot=1 gpt2-medium n=256: 60/64; last 96.1s
+- 2026-11-10 01:06:05 Recurrence CPU slot=0 Qwen__Qwen2.5-0.5B n=256: 62/64; last 95.8s
+- 2026-11-10 01:06:19 Recurrence CPU slot=2 EleutherAI__pythia-410m n=256: 61/64; last 93.2s
+- 2026-11-10 01:07:23 Recurrence CPU slot=1 Qwen__Qwen2.5-3B n=256: 54/64; last 100.3s
+- 2026-11-10 01:07:44 Recurrence CPU slot=0 gpt2-medium n=256: 61/64; last 98.3s
+- 2026-11-10 01:07:57 Recurrence CPU slot=2 Qwen__Qwen2.5-0.5B n=256: 63/64; last 97.6s
+- 2026-11-10 01:08:58 Recurrence CPU slot=1 EleutherAI__pythia-410m n=256: 62/64; last 95.0s
+- 2026-11-10 01:09:23 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 55/64; last 99.2s
+- 2026-11-10 01:09:36 Recurrence CPU slot=2 gpt2-medium n=256: 62/64; last 98.6s
+- 2026-11-10 01:10:31 Recurrence CPU slot=1 Qwen__Qwen2.5-0.5B n=256: 64/64; last 93.1s
+- 2026-11-10 01:11:04 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 63/64; last 99.8s
+- 2026-11-10 01:11:20 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 56/64; last 104.4s
+- 2026-11-10 01:12:10 Recurrence CPU slot=1 gpt2-medium n=256: 63/64; last 97.8s
+- 2026-11-10 01:12:30 Recurrence CPU slot=0 EleutherAI__pythia-410m n=256: 64/64; last 85.6s
+- 2026-11-10 01:12:30 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:12:54 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 57/64; last 93.2s
+- 2026-11-10 01:13:16 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:13:44 Recurrence CPU slot=1 gpt2-medium n=256: 64/64; last 93.6s
+- 2026-11-10 01:13:45 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:14:03 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:14:24 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 58/64; last 89.6s
+- 2026-11-10 01:14:32 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:14:50 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:15:19 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:15:38 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:15:50 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 59/64; last 84.2s
+- 2026-11-10 01:16:07 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:16:26 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:16:55 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:17:14 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:17:21 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 60/64; last 90.6s
+- 2026-11-10 01:17:43 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:18:02 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:18:30 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:18:47 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:18:49 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 61/64; last 86.7s
+- 2026-11-10 01:19:15 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:19:34 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:20:03 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:20:06 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 62/64; last 76.3s
+- 2026-11-10 01:20:21 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:20:50 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:21:08 Recurrence CPU slot=0: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:21:31 Recurrence CPU slot=2 Qwen__Qwen2.5-3B n=256: 63/64; last 84.1s
+- 2026-11-10 01:21:31 Recurrence CPU slot=2: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:21:38 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:22:19 Recurrence CPU slot=2: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:22:26 Recurrence CPU slot=1: waiting for a dataset lease or GPU completion
+- 2026-11-10 01:23:02 Recurrence CPU slot=0 Qwen__Qwen2.5-3B n=256: 64/64; last 90.7s
+- 2026-11-10 01:23:03 Recurrence CPU slot=1: all four n256 datasets complete
+- 2026-11-10 01:23:03 Recurrence CPU slot=0: all four n256 datasets complete
+- 2026-11-10 01:23:07 Recurrence CPU slot=2: all four n256 datasets complete
+- 2026-11-10 01:23:20 AGGREGATED paired model=gpt2 n=128
+- 2026-11-10 01:23:22 AGGREGATED paired model=gpt2 n=256
+- 2026-11-10 01:23:23 AGGREGATED paired model=gpt2-medium n=128
+- 2026-11-10 01:23:25 AGGREGATED paired model=gpt2-medium n=256
+- 2026-11-10 01:23:26 AGGREGATED paired model=EleutherAI__pythia-410m n=128
+- 2026-11-10 01:23:29 AGGREGATED paired model=EleutherAI__pythia-410m n=256
+- 2026-11-10 01:23:30 AGGREGATED paired model=EleutherAI__pythia-1.4b n=128
+- 2026-11-10 01:23:31 AGGREGATED paired model=EleutherAI__pythia-1.4b n=256
+- 2026-11-10 01:23:33 AGGREGATED paired model=Qwen__Qwen2.5-0.5B n=128
+- 2026-11-10 01:23:34 AGGREGATED paired model=Qwen__Qwen2.5-0.5B n=256
+- 2026-11-10 01:23:36 AGGREGATED paired model=Qwen__Qwen2.5-3B n=128
+- 2026-11-10 01:23:38 AGGREGATED paired model=Qwen__Qwen2.5-3B n=256
+- 2026-11-10 01:23:38 COMPLETE out/phase19_richlines.json; all positive-control gates pass=False
+- 2026-11-10 01:23:57 All 768 fits complete; cancelled only verified waiting Linux flock PIDs 39857,39860,39861,39862 owned by this E2 run; no GPU holder or other experiment interrupted
+- 2026-11-10 01:26:08 E2 FINALIZED: 12 paired datasets, 768 instances, 512 CUDA and 256 CPU parametric fits; integrity audit PASSED; positive-control failures preserved; all own workers exited and unused GPU waiters cancelled; artifact inventory out/phase19_artifacts.json

@@ -1,0 +1,105 @@
+{
+  "validation_fixture": "first frozen article, all layers and every sampled head, each of 12 datasets",
+  "native_forward_modified": false,
+  "extraction_callback_used_by_observer": false,
+  "archive_dtype": "float16",
+  "datasets": [
+    {
+      "model": "gpt2",
+      "n": 128,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "gpt2",
+      "n": 256,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 128,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 256,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 128,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 256,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 128,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 256,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 128,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 256,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 24,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 128,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 36,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 256,
+      "document_index": 0,
+      "n_sampled_matrices_checked": 36,
+      "all_layers_checked": true,
+      "native_precast_softmax_to_archive_exact": true
+    }
+  ],
+  "elapsed_seconds": 42.92037280020304
+}

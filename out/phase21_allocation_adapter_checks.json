@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "device": "CPU",
+  "LM_forward_executed": false,
+  "behavioral_KL_computed": false,
+  "current_harness_default_policy_for_control_only": "error",
+  "actual_V1_scientific_policy_chosen_by_E4": false,
+  "float32_vs_float64_tolerance": 5e-05,
+  "cases": "exact sink; fixed gpt2 n128 instance 0; fixed final gpt2 n128 instance",
+  "imported_harness_sha256": "1572a402a9ada71938f63527ddb5e810932ec10e6f1e0f05cabdb24bf154a668",
+  "comparisons": [
+    {
+      "svd_rank_cap": 8,
+      "case": 0,
+      "residual_rank": 7,
+      "relative_difference_from_scalar_float64_reference": 8.191982369238297e-18
+    },
+    {
+      "svd_rank_cap": 8,
+      "case": 1,
+      "residual_rank": 7,
+      "relative_difference_from_scalar_float64_reference": 3.118110782907024e-07
+    },
+    {
+      "svd_rank_cap": 8,
+      "case": 2,
+      "residual_rank": 7,
+      "relative_difference_from_scalar_float64_reference": 6.821176725679834e-07
+    },
+    {
+      "svd_rank_cap": 16,
+      "case": 0,
+      "residual_rank": 15,
+      "relative_difference_from_scalar_float64_reference": 6.435300143130351e-18
+    },
+    {
+      "svd_rank_cap": 16,
+      "case": 1,
+      "residual_rank": 15,
+      "relative_difference_from_scalar_float64_reference": 6.47752131044399e-07
+    },
+    {
+      "svd_rank_cap": 16,
+      "case": 2,
+      "residual_rank": 15,
+      "relative_difference_from_scalar_float64_reference": 5.025746077080839e-07
+    }
+  ]
+}

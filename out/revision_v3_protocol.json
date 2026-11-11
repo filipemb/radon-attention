@@ -1,0 +1,59 @@
+{
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-1.4b",
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-3B"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "mass_documents_per_model": 256,
+  "mass_chunk_size": 16,
+  "mass_contexts": [
+    "identity",
+    "anova"
+  ],
+  "mass_nominal_betas": [
+    0.0,
+    0.25
+  ],
+  "mass_roles_per_context": 6,
+  "mass_budget": "min((1-beta)*sink_sinkarm, nonsink_sinkarm, nonsink_controlarm), first absolute row q=0",
+  "mass_computation": "coupled branches in one same-article forward; float64 budget construction; same row normalization",
+  "mass_randomization": "seed0 article/layer hash, same nonsink ordering across contexts/betas",
+  "primary_mass_family": "six models x two contexts x two betas =24 paired article Wilcoxon comparisons; Holm24",
+  "probe_kv_primary_precision": "historical: Qwen0.5 fp32, Qwen3 KV bf16, other models fp32",
+  "qwen05_bf16_supplement": "phase8 and full CV repeated separately at standard bf16, same frozen items",
+  "item_tests": "McNemar per seed; exact within-item label permutation stratified by seed, statistic median of seed accuracy gains",
+  "primary_item_family": "five probe task-models plus two KV task-models, middle window; Holm7; seed diagnostics Holm21",
+  "aggregation": "median and document/item bootstrap CI95, seed0, 2000 draws; binary accuracy count/n; pooled mean gains secondary",
+  "cv_grid": [
+    "1.0",
+    "0.75",
+    "0.5",
+    "0.35",
+    "0.25",
+    "0.15",
+    "0.1",
+    "0.05",
+    "0.0",
+    "legacy_beta0"
+  ],
+  "cv_selection": "original mean middle accuracy and original float/Python-max tie rule",
+  "cv_middle": "historical mid() uses last tested position; not silently replaced by phase13's sequence-length window",
+  "cv_independence": "A/B disjoint filler slices and independent RNGs; held-out bootstrap conditional on selected beta",
+  "cv_gpu_jobs": "one beta and both full families; release shared lock after each",
+  "job_counts": {
+    "mass": 96,
+    "items": 24,
+    "cv": 180
+  },
+  "all_samples_retained": true,
+  "no_existing_result_overwritten": true,
+  "old_beta0_conclusion_source": "out/phase8_beta0_v2.json"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "n_matrices": 32,
+  "n_fits": 128,
+  "pairs_path": "out/pairs/phase50_GPU_CPU_reference_Qwen__Qwen2.5-3B.jsonl",
+  "pairs_sha256": "46980240a2b92a8ec7493e9cf4e08f2ec0fa34a4e58e0cf5fe7aeec1bab5f18d",
+  "initial_factors_stored_exact_float64_round_trip": true
+}

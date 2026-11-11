@@ -1,0 +1,10 @@
+{
+  "UTC": "2026-11-10T18:11:24.569113+00:00",
+  "models": [
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-3B"
+  ],
+  "bundle_timing_immediately_after_validation_in_same_model_flock": true,
+  "reason": "avoid another queue cycle while still releasing the GPU lock between every model; same samples/ranks/sweeps/acceptance and no new KL scoring",
+  "pure_execution_change": true
+}

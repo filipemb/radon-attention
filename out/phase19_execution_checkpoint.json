@@ -1,0 +1,27 @@
+{
+  "expected_instances": 768,
+  "selected_per_model_n": 64,
+  "all_12_datasets_required": true,
+  "numerical_protocol": "out/phase19_optimizer_stable_frozen.json",
+  "cpu_n128": "all six complete",
+  "cpu_n256_queues": [
+    [
+      "gpt2",
+      "gpt2-medium"
+    ],
+    [
+      "EleutherAI__pythia-1.4b",
+      "Qwen__Qwen2.5-0.5B"
+    ],
+    [
+      "EleutherAI__pythia-410m",
+      "Qwen__Qwen2.5-3B"
+    ]
+  ],
+  "gpu_stages": "one dataset per flock; n128 jobs queued, n256 watchers launch only after CPU dataset has 64 complete records",
+  "finalizer_session": 11960,
+  "finalizer": "Already running; waits for 768 CPU and 768 gpu_stable rows, then runs aggregate and richlines_audit",
+  "next_action": "Monitor progress and error logs; do not launch duplicate workers. After report and integrity audit exist, review full results and provide six requested items in Portuguese.",
+  "unused_development_cache": "out/phase19_gpu_gpt2_n128.jsonl; never included in final pairs",
+  "scope": "No attention extraction, data modification, paper modification or git operations"
+}

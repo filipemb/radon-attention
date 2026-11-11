@@ -1,0 +1,141 @@
+{
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "planted": [
+    {
+      "n": 128,
+      "K": 8,
+      "relative_error": 0.0039203396183363865,
+      "passed": true,
+      "ALS": {
+        "sweeps": 200,
+        "dtype": "float64",
+        "initial_relative": 0.1956554704762263,
+        "final_relative": 0.003920339618336385,
+        "history": [
+          {
+            "sweep": 0,
+            "relative": 0.1956554704762263
+          },
+          {
+            "sweep": 1,
+            "relative": 0.05140020088161467
+          },
+          {
+            "sweep": 10,
+            "relative": 0.01683739445407832
+          },
+          {
+            "sweep": 25,
+            "relative": 0.013515396153236686
+          },
+          {
+            "sweep": 50,
+            "relative": 0.011283680499732496
+          },
+          {
+            "sweep": 100,
+            "relative": 0.004639738912837269
+          },
+          {
+            "sweep": 150,
+            "relative": 0.004105789741161461
+          },
+          {
+            "sweep": 180,
+            "relative": 0.00397568147239429
+          },
+          {
+            "sweep": 200,
+            "relative": 0.003920339618336385
+          }
+        ],
+        "last20_relative_objective_change": 0.027646416129777036,
+        "gradient_normalized_target": 0.00021851690800573902,
+        "converged": false,
+        "direct_LS_blocks": 3211,
+        "direct_sweep_retries": 0,
+        "rejected_sweeps": [],
+        "maximum_absolute_factor": 22.038432073637885,
+        "minimum_nonzero_absolute_factor": 2.140622984443667e-05,
+        "factor_dynamic_range": 1029533.562602829,
+        "unmasked_product_norm_over_target": 201.6831982945217,
+        "maximum_QR_observed_product_error": 4.687716170462214e-13,
+        "seconds": 7.770177000202239
+      }
+    },
+    {
+      "n": 128,
+      "K": 16,
+      "relative_error": 0.004450102601019056,
+      "passed": true,
+      "ALS": {
+        "sweeps": 200,
+        "dtype": "float64",
+        "initial_relative": 0.10928837778621933,
+        "final_relative": 0.004450102601019058,
+        "history": [
+          {
+            "sweep": 0,
+            "relative": 0.10928837778621933
+          },
+          {
+            "sweep": 1,
+            "relative": 0.02477633311968229
+          },
+          {
+            "sweep": 10,
+            "relative": 0.01132520851304178
+          },
+          {
+            "sweep": 25,
+            "relative": 0.009560075872829697
+          },
+          {
+            "sweep": 50,
+            "relative": 0.006490764437551398
+          },
+          {
+            "sweep": 100,
+            "relative": 0.004533581895898525
+          },
+          {
+            "sweep": 150,
+            "relative": 0.0044672322305314765
+          },
+          {
+            "sweep": 180,
+            "relative": 0.004455406199308539
+          },
+          {
+            "sweep": 200,
+            "relative": 0.004450102601019058
+          }
+        ],
+        "last20_relative_objective_change": 0.0023793303777271363,
+        "gradient_normalized_target": 0.0004740049882233437,
+        "converged": false,
+        "direct_LS_blocks": 7620,
+        "direct_sweep_retries": 0,
+        "rejected_sweeps": [],
+        "maximum_absolute_factor": 45.23053467265906,
+        "minimum_nonzero_absolute_factor": 6.098053213597998e-06,
+        "factor_dynamic_range": 7417208.91706879,
+        "unmasked_product_norm_over_target": 912.4291463788613,
+        "maximum_QR_observed_product_error": 1.7567648072924674e-13,
+        "seconds": 1.3364444999024272
+      }
+    }
+  ],
+  "all_passed": true,
+  "imported_offset_empty_row_control": {
+    "reconstruction_rows_total": 6,
+    "last_query_rows_total": 2,
+    "reconstruction_layer_calls": 1,
+    "empty_rows_completed": 6,
+    "empty_rows_completed_at_last_query": 2,
+    "max_row_error_before_cast": 0.0,
+    "rows_checked": 12,
+    "negative_nan_inf_upper_nonzero": 0,
+    "max_row_error_after_cast": 0.0
+  }
+}

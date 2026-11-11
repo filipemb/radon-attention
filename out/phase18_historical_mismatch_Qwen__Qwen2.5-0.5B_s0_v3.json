@@ -1,0 +1,70 @@
+{
+  "source_jobs": [
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b1.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.75_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.5_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.35_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.25_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.15_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.1_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.05_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b0.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_blegacy_beta0_v3.jsonl"
+  ],
+  "differences": [
+    {
+      "family": "B",
+      "arm": "1.0",
+      "old_n_correct": 59,
+      "replayed_n_correct": 283
+    },
+    {
+      "family": "B",
+      "arm": "0.75",
+      "old_n_correct": 60,
+      "replayed_n_correct": 286
+    },
+    {
+      "family": "B",
+      "arm": "0.5",
+      "old_n_correct": 65,
+      "replayed_n_correct": 288
+    },
+    {
+      "family": "B",
+      "arm": "0.35",
+      "old_n_correct": 68,
+      "replayed_n_correct": 290
+    },
+    {
+      "family": "B",
+      "arm": "0.25",
+      "old_n_correct": 73,
+      "replayed_n_correct": 286
+    },
+    {
+      "family": "B",
+      "arm": "0.15",
+      "old_n_correct": 85,
+      "replayed_n_correct": 289
+    },
+    {
+      "family": "B",
+      "arm": "0.1",
+      "old_n_correct": 88,
+      "replayed_n_correct": 295
+    },
+    {
+      "family": "B",
+      "arm": "0.05",
+      "old_n_correct": 81,
+      "replayed_n_correct": 306
+    },
+    {
+      "family": "B",
+      "arm": "legacy_beta0",
+      "old_n_correct": 63,
+      "replayed_n_correct": 282
+    }
+  ]
+}

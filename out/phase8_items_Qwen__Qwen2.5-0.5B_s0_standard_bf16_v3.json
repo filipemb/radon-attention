@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "task": "phase8",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "seed": 0,
+  "variant": "standard_bf16",
+  "dtype": "torch.bfloat16",
+  "batch": 16,
+  "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "source_hashes": {
+    "phase8_lostmiddle.py": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+    "phase11_kv.py": "883104a7acdbee3bc2d6dfead734550a5c081b031a5e4f0021b53bb7bb84edac",
+    "phase16_longcontext.py": "b6814bbc69a3498013832d2229f4f0ec474055685ff2835d69d1d83916e92eaa",
+    "phase18_betacv.py": "f4d240d48706df4e9e7990326f1555628290ce4e1048a4ba44ac8fcb95cff3b2",
+    "phase2_downstream.py": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "revision_v3_probes.py": "8aab9a6b020a70af460a6d5170a14d706d3f991a844d77b1117448df814f2ec5"
+  },
+  "payload_sha256": "fe29d235e767769209d67ef948ba06dd531c069a9f5e00a972ba13e7ce0ed1fa",
+  "manifest_path": "data/attn/phase8_items_Qwen__Qwen2.5-0.5B_s0_v3.manifest.json",
+  "pairs_path": "out/pairs/phase8_items_Qwen__Qwen2.5-0.5B_s0_standard_bf16_v3.jsonl",
+  "pairs_sha256": "ccc00c6b2471b70abe703667987ee609de97c38d2f95201ccbf0ed49600657b5",
+  "n_raw_records": 6400,
+  "native_identity_logits_bit_equal": true,
+  "lm_head": "full historical output; evaluate last query token; no KV reuse between items",
+  "elapsed_seconds": 64.96108849998564
+}

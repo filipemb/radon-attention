@@ -1,0 +1,386 @@
+- 2026-11-09T19:22:42+00:00 | CHECKS PASSED, 6 fixed real instances plus sink overlap controls; 5.37s
+- 2026-11-09T19:22:59+00:00 | FROZEN run: T=5, ranks=(0, 1, 2, 4, 8, 16), seed=0, bootstrap=2000, every manifest instance; workers=3, threads=4
+- 2026-11-09T19:23:07+00:00 | START gpt2-medium n=128, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:23:07+00:00 | START gpt2 n=128, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:23:09+00:00 | START EleutherAI/pythia-410m n=128, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:23:36+00:00 | MATRICES gpt2-medium n=128: 64/1536, seconds=30.7
+- 2026-11-09T19:23:36+00:00 | MATRICES gpt2 n=128: 64/1536, seconds=30.8
+- 2026-11-09T19:23:37+00:00 | MATRICES EleutherAI/pythia-410m n=128: 64/1536, seconds=32.0
+- 2026-11-09T19:23:56+00:00 | MATRICES gpt2-medium n=128: 128/1536, seconds=50.7
+- 2026-11-09T19:23:56+00:00 | MATRICES gpt2 n=128: 128/1536, seconds=50.9
+- 2026-11-09T19:23:57+00:00 | MATRICES EleutherAI/pythia-410m n=128: 128/1536, seconds=52.0
+- 2026-11-09T19:24:16+00:00 | MATRICES gpt2-medium n=128: 192/1536, seconds=71.1
+- 2026-11-09T19:24:16+00:00 | MATRICES gpt2 n=128: 192/1536, seconds=71.3
+- 2026-11-09T19:24:17+00:00 | MATRICES EleutherAI/pythia-410m n=128: 192/1536, seconds=72.5
+- 2026-11-09T19:24:37+00:00 | MATRICES gpt2-medium n=128: 256/1536, seconds=91.9
+- 2026-11-09T19:24:37+00:00 | MATRICES gpt2 n=128: 256/1536, seconds=92.1
+- 2026-11-09T19:24:38+00:00 | MATRICES EleutherAI/pythia-410m n=128: 256/1536, seconds=92.9
+- 2026-11-09T19:24:53+00:00 | MATRICES gpt2-medium n=128: 320/1536, seconds=108.1
+- 2026-11-09T19:24:53+00:00 | MATRICES gpt2 n=128: 320/1536, seconds=108.2
+- 2026-11-09T19:24:54+00:00 | MATRICES EleutherAI/pythia-410m n=128: 320/1536, seconds=109.0
+- 2026-11-09T19:25:10+00:00 | MATRICES gpt2-medium n=128: 384/1536, seconds=125.3
+- 2026-11-09T19:25:10+00:00 | MATRICES gpt2 n=128: 384/1536, seconds=125.5
+- 2026-11-09T19:25:11+00:00 | MATRICES EleutherAI/pythia-410m n=128: 384/1536, seconds=126.3
+- 2026-11-09T19:25:27+00:00 | MATRICES gpt2-medium n=128: 448/1536, seconds=142.3
+- 2026-11-09T19:25:27+00:00 | MATRICES gpt2 n=128: 448/1536, seconds=142.5
+- 2026-11-09T19:25:28+00:00 | MATRICES EleutherAI/pythia-410m n=128: 448/1536, seconds=143.2
+- 2026-11-09T19:25:43+00:00 | MATRICES gpt2-medium n=128: 512/1536, seconds=158.5
+- 2026-11-09T19:25:44+00:00 | MATRICES gpt2 n=128: 512/1536, seconds=158.7
+- 2026-11-09T19:25:44+00:00 | MATRICES EleutherAI/pythia-410m n=128: 512/1536, seconds=159.3
+- 2026-11-09T19:26:00+00:00 | MATRICES gpt2-medium n=128: 576/1536, seconds=174.6
+- 2026-11-09T19:26:00+00:00 | MATRICES gpt2 n=128: 576/1536, seconds=174.8
+- 2026-11-09T19:26:00+00:00 | MATRICES EleutherAI/pythia-410m n=128: 576/1536, seconds=175.5
+- 2026-11-09T19:26:15+00:00 | MATRICES gpt2-medium n=128: 640/1536, seconds=190.6
+- 2026-11-09T19:26:16+00:00 | MATRICES gpt2 n=128: 640/1536, seconds=190.7
+- 2026-11-09T19:26:16+00:00 | MATRICES EleutherAI/pythia-410m n=128: 640/1536, seconds=191.3
+- 2026-11-09T19:26:32+00:00 | MATRICES gpt2-medium n=128: 704/1536, seconds=206.9
+- 2026-11-09T19:26:32+00:00 | MATRICES gpt2 n=128: 704/1536, seconds=207.1
+- 2026-11-09T19:26:33+00:00 | MATRICES EleutherAI/pythia-410m n=128: 704/1536, seconds=207.8
+- 2026-11-09T19:26:51+00:00 | MATRICES gpt2-medium n=128: 768/1536, seconds=226.5
+- 2026-11-09T19:26:52+00:00 | MATRICES gpt2 n=128: 768/1536, seconds=226.7
+- 2026-11-09T19:26:52+00:00 | MATRICES EleutherAI/pythia-410m n=128: 768/1536, seconds=227.3
+- 2026-11-09T19:27:11+00:00 | MATRICES gpt2-medium n=128: 832/1536, seconds=246.0
+- 2026-11-09T19:27:11+00:00 | MATRICES gpt2 n=128: 832/1536, seconds=246.2
+- 2026-11-09T19:27:12+00:00 | MATRICES EleutherAI/pythia-410m n=128: 832/1536, seconds=246.8
+- 2026-11-09T19:27:28+00:00 | MATRICES gpt2-medium n=128: 896/1536, seconds=262.8
+- 2026-11-09T19:27:28+00:00 | MATRICES gpt2 n=128: 896/1536, seconds=263.0
+- 2026-11-09T19:27:28+00:00 | MATRICES EleutherAI/pythia-410m n=128: 896/1536, seconds=263.5
+- 2026-11-09T19:27:44+00:00 | MATRICES gpt2-medium n=128: 960/1536, seconds=278.9
+- 2026-11-09T19:27:44+00:00 | MATRICES gpt2 n=128: 960/1536, seconds=279.1
+- 2026-11-09T19:27:45+00:00 | MATRICES EleutherAI/pythia-410m n=128: 960/1536, seconds=279.7
+- 2026-11-09T19:28:00+00:00 | MATRICES gpt2-medium n=128: 1024/1536, seconds=295.0
+- 2026-11-09T19:28:00+00:00 | MATRICES gpt2 n=128: 1024/1536, seconds=295.2
+- 2026-11-09T19:28:01+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1024/1536, seconds=295.8
+- 2026-11-09T19:28:17+00:00 | MATRICES gpt2-medium n=128: 1088/1536, seconds=311.7
+- 2026-11-09T19:28:17+00:00 | MATRICES gpt2 n=128: 1088/1536, seconds=311.9
+- 2026-11-09T19:28:17+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1088/1536, seconds=312.4
+- 2026-11-09T19:28:33+00:00 | MATRICES gpt2-medium n=128: 1152/1536, seconds=327.9
+- 2026-11-09T19:28:33+00:00 | MATRICES gpt2 n=128: 1152/1536, seconds=328.2
+- 2026-11-09T19:28:34+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1152/1536, seconds=328.7
+- Decisao congelada: reutilizar literalmente phase5_msclean.build_dict: 17 atomos (3 verticais, 7 bandas, 7 diagonais), divergencia com os 15 citados no enunciado registrada e consulta enviada; nenhum atomo alterado.
+- Estatistica: media de todas as instancias de cada documento, mediana/IQR entre documentos e IC percentil 95%, 2000 bootstrap de documentos com semente 0. Distribuicoes de instancias separadas.
+- Forward: importar o harness V1 corrigido somente depois de out/phase2_downstream_v2.json existir; reutilizar integralmente seus 256 pares SVD por modelo e orcamento, com referencia eager novamente conferida.
+- 2026-11-09T19:28:48+00:00 | MATRICES gpt2-medium n=128: 1216/1536, seconds=343.2
+- 2026-11-09T19:28:48+00:00 | MATRICES gpt2 n=128: 1216/1536, seconds=343.5
+- 2026-11-09T19:28:49+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1216/1536, seconds=343.9
+- 2026-11-09T19:29:04+00:00 | MATRICES gpt2-medium n=128: 1280/1536, seconds=358.8
+- 2026-11-09T19:29:04+00:00 | MATRICES gpt2 n=128: 1280/1536, seconds=359.1
+- 2026-11-09T19:29:04+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1280/1536, seconds=359.5
+- 2026-11-09T19:29:20+00:00 | MATRICES gpt2-medium n=128: 1344/1536, seconds=375.1
+- 2026-11-09T19:29:20+00:00 | MATRICES gpt2 n=128: 1344/1536, seconds=375.4
+- 2026-11-09T19:29:21+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1344/1536, seconds=375.9
+- 2026-11-09T19:29:37+00:00 | MATRICES gpt2-medium n=128: 1408/1536, seconds=392.1
+- 2026-11-09T19:29:37+00:00 | MATRICES gpt2 n=128: 1408/1536, seconds=392.5
+- 2026-11-09T19:29:38+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1408/1536, seconds=392.9
+- 2026-11-09T19:29:53+00:00 | MATRICES gpt2-medium n=128: 1472/1536, seconds=408.6
+- 2026-11-09T19:29:54+00:00 | MATRICES gpt2 n=128: 1472/1536, seconds=408.9
+- 2026-11-09T19:29:54+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1472/1536, seconds=409.3
+- 2026-11-09T19:30:11+00:00 | MATRICES gpt2-medium n=128: 1536/1536, seconds=426.0
+- 2026-11-09T19:30:11+00:00 | MATRICES gpt2 n=128: 1536/1536, seconds=426.3
+- 2026-11-09T19:30:12+00:00 | MATRICES EleutherAI/pythia-410m n=128: 1536/1536, seconds=426.7
+- 2026-11-09T19:30:22+00:00 | aggregated gpt2-medium n=128 convention=named_first
+- 2026-11-09T19:30:23+00:00 | aggregated gpt2 n=128 convention=named_first
+- 2026-11-09T19:30:23+00:00 | aggregated EleutherAI/pythia-410m n=128 convention=named_first
+- 2026-11-09T19:30:33+00:00 | aggregated gpt2-medium n=128 convention=lowrank_first
+- 2026-11-09T19:30:34+00:00 | aggregated gpt2 n=128 convention=lowrank_first
+- 2026-11-09T19:30:35+00:00 | aggregated EleutherAI/pythia-410m n=128 convention=lowrank_first
+- 2026-11-09T19:30:44+00:00 | aggregated gpt2-medium n=128 convention=alternating
+- 2026-11-09T19:30:45+00:00 | DONE gpt2-medium n=128, seconds=459.8, pairs_bytes=173750597
+- 2026-11-09T19:30:45+00:00 | aggregated gpt2 n=128 convention=alternating
+- 2026-11-09T19:30:46+00:00 | aggregated EleutherAI/pythia-410m n=128 convention=alternating
+- 2026-11-09T19:30:46+00:00 | DONE gpt2 n=128, seconds=460.7, pairs_bytes=173192330
+- 2026-11-09T19:30:46+00:00 | DONE EleutherAI/pythia-410m n=128, seconds=460.9, pairs_bytes=173241070
+- 2026-11-09T19:30:46+00:00 | START EleutherAI/pythia-1.4b n=128, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:30:47+00:00 | START Qwen/Qwen2.5-0.5B n=128, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:30:48+00:00 | START Qwen/Qwen2.5-3B n=128, 2304 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:31:02+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 64/1536, seconds=16.3
+- 2026-11-09T19:31:03+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 64/1536, seconds=16.4
+- 2026-11-09T19:31:03+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 64/2304, seconds=16.8
+- 2026-11-09T19:31:17+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 128/1536, seconds=31.8
+- 2026-11-09T19:31:18+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 128/1536, seconds=31.8
+- 2026-11-09T19:31:19+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 128/2304, seconds=32.2
+- 2026-11-09T19:31:33+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 192/1536, seconds=47.3
+- 2026-11-09T19:31:34+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 192/1536, seconds=47.3
+- 2026-11-09T19:31:34+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 192/2304, seconds=47.7
+- 2026-11-09T19:31:49+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 256/1536, seconds=63.1
+- 2026-11-09T19:31:49+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 256/1536, seconds=63.0
+- 2026-11-09T19:31:50+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 256/2304, seconds=63.4
+- 2026-11-09T19:32:04+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 320/1536, seconds=79.0
+- 2026-11-09T19:32:05+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 320/1536, seconds=78.8
+- 2026-11-09T19:32:06+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 320/2304, seconds=79.2
+- 2026-11-09T19:32:21+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 384/1536, seconds=95.3
+- 2026-11-09T19:32:21+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 384/1536, seconds=95.2
+- 2026-11-09T19:32:22+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 384/2304, seconds=95.5
+- 2026-11-09T19:32:38+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 448/1536, seconds=112.3
+- 2026-11-09T19:32:38+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 448/1536, seconds=112.2
+- 2026-11-09T19:32:39+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 448/2304, seconds=112.4
+- 2026-11-09T19:32:54+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 512/1536, seconds=128.8
+- 2026-11-09T19:32:55+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 512/1536, seconds=128.6
+- 2026-11-09T19:32:55+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 512/2304, seconds=128.9
+- 2026-11-09T19:33:11+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 576/1536, seconds=145.1
+- 2026-11-09T19:33:11+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 576/1536, seconds=144.9
+- 2026-11-09T19:33:12+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 576/2304, seconds=145.1
+- 2026-11-09T19:33:28+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 640/1536, seconds=162.1
+- 2026-11-09T19:33:28+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 640/1536, seconds=162.2
+- 2026-11-09T19:33:29+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 640/2304, seconds=162.6
+- 2026-11-09T19:33:45+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 704/1536, seconds=179.8
+- 2026-11-09T19:33:46+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 704/1536, seconds=179.8
+- 2026-11-09T19:33:47+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 704/2304, seconds=180.1
+- 2026-11-09T19:34:02+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 768/1536, seconds=196.3
+- 2026-11-09T19:34:02+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 768/1536, seconds=196.3
+- 2026-11-09T19:34:03+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 768/2304, seconds=196.5
+- 2026-11-09T19:34:19+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 832/1536, seconds=213.5
+- 2026-11-09T19:34:20+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 832/1536, seconds=213.3
+- 2026-11-09T19:34:20+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 832/2304, seconds=213.6
+- 2026-11-09T19:34:35+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 896/1536, seconds=229.2
+- 2026-11-09T19:34:35+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 896/1536, seconds=229.1
+- 2026-11-09T19:34:36+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 896/2304, seconds=229.3
+- 2026-11-09T19:34:50+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 960/1536, seconds=244.7
+- 2026-11-09T19:34:51+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 960/1536, seconds=244.5
+- 2026-11-09T19:34:51+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 960/2304, seconds=244.7
+- 2026-11-09T19:35:07+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1024/1536, seconds=261.3
+- 2026-11-09T19:35:07+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1024/1536, seconds=261.1
+- 2026-11-09T19:35:08+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1024/2304, seconds=261.4
+- 2026-11-09T19:35:24+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1088/1536, seconds=278.4
+- 2026-11-09T19:35:24+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1088/1536, seconds=278.1
+- 2026-11-09T19:35:25+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1088/2304, seconds=278.3
+- 2026-11-09T19:35:39+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1152/1536, seconds=293.7
+- 2026-11-09T19:35:40+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1152/1536, seconds=293.4
+- 2026-11-09T19:35:40+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1152/2304, seconds=293.6
+- 2026-11-09T19:35:55+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1216/1536, seconds=309.1
+- 2026-11-09T19:35:55+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1216/1536, seconds=308.8
+- 2026-11-09T19:35:55+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1216/2304, seconds=308.9
+- 2026-11-09T19:36:10+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1280/1536, seconds=325.0
+- 2026-11-09T19:36:11+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1280/1536, seconds=324.7
+- 2026-11-09T19:36:11+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1280/2304, seconds=324.9
+- 2026-11-09T19:36:26+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1344/1536, seconds=340.9
+- 2026-11-09T19:36:27+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1344/1536, seconds=340.5
+- 2026-11-09T19:36:27+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1344/2304, seconds=340.8
+- 2026-11-09T19:36:46+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1408/1536, seconds=360.4
+- 2026-11-09T19:36:46+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1408/1536, seconds=359.8
+- 2026-11-09T19:36:47+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1408/2304, seconds=360.2
+- 2026-11-09T19:37:07+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1472/1536, seconds=381.2
+- 2026-11-09T19:37:07+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1472/1536, seconds=380.6
+- 2026-11-09T19:37:08+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1472/2304, seconds=381.0
+- 2026-11-09T19:37:28+00:00 | MATRICES EleutherAI/pythia-1.4b n=128: 1536/1536, seconds=403.0
+- 2026-11-09T19:37:29+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=128: 1536/1536, seconds=402.4
+- 2026-11-09T19:37:29+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1536/2304, seconds=402.6
+- 2026-11-09T19:37:45+00:00 | aggregated EleutherAI/pythia-1.4b n=128 convention=named_first
+- 2026-11-09T19:37:45+00:00 | aggregated Qwen/Qwen2.5-0.5B n=128 convention=named_first
+- 2026-11-09T19:37:50+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1600/2304, seconds=423.4
+- 2026-11-09T19:37:59+00:00 | aggregated EleutherAI/pythia-1.4b n=128 convention=lowrank_first
+- 2026-11-09T19:37:59+00:00 | aggregated Qwen/Qwen2.5-0.5B n=128 convention=lowrank_first
+- 2026-11-09T19:38:11+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1664/2304, seconds=444.2
+- 2026-11-09T19:38:12+00:00 | aggregated EleutherAI/pythia-1.4b n=128 convention=alternating
+- 2026-11-09T19:38:13+00:00 | aggregated Qwen/Qwen2.5-0.5B n=128 convention=alternating
+- 2026-11-09T19:38:13+00:00 | DONE EleutherAI/pythia-1.4b n=128, seconds=447.2, pairs_bytes=173147990
+- 2026-11-09T19:38:14+00:00 | DONE Qwen/Qwen2.5-0.5B n=128, seconds=446.9, pairs_bytes=173182466
+- 2026-11-09T19:38:18+00:00 | START gpt2 n=256, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:38:18+00:00 | START gpt2-medium n=256, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:38:32+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1728/2304, seconds=465.4
+- 2026-11-09T19:38:54+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1792/2304, seconds=487.1
+- 2026-11-09T19:39:17+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1856/2304, seconds=510.3
+- 2026-11-09T19:39:31+00:00 | MATRICES gpt2 n=256: 64/1536, seconds=78.1
+- 2026-11-09T19:39:32+00:00 | MATRICES gpt2-medium n=256: 64/1536, seconds=78.3
+- 2026-11-09T19:39:40+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1920/2304, seconds=533.2
+- 2026-11-09T19:40:03+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 1984/2304, seconds=556.4
+- 2026-11-09T19:40:25+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 2048/2304, seconds=578.2
+- 2026-11-09T19:40:41+00:00 | MATRICES gpt2 n=256: 128/1536, seconds=147.6
+- 2026-11-09T19:40:42+00:00 | MATRICES gpt2-medium n=256: 128/1536, seconds=147.6
+- 2026-11-09T19:40:46+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 2112/2304, seconds=599.8
+- 2026-11-09T19:41:07+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 2176/2304, seconds=620.6
+- 2026-11-09T19:41:35+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 2240/2304, seconds=648.2
+- 2026-11-09T19:41:56+00:00 | MATRICES gpt2 n=256: 192/1536, seconds=222.5
+- 2026-11-09T19:41:56+00:00 | MATRICES gpt2-medium n=256: 192/1536, seconds=222.1
+- 2026-11-09T19:41:57+00:00 | MATRICES Qwen/Qwen2.5-3B n=128: 2304/2304, seconds=670.7
+- 2026-11-09T19:42:12+00:00 | aggregated Qwen/Qwen2.5-3B n=128 convention=named_first
+- 2026-11-09T19:42:24+00:00 | aggregated Qwen/Qwen2.5-3B n=128 convention=lowrank_first
+- 2026-11-09T19:42:36+00:00 | aggregated Qwen/Qwen2.5-3B n=128 convention=alternating
+- 2026-11-09T19:42:37+00:00 | DONE Qwen/Qwen2.5-3B n=128, seconds=709.7, pairs_bytes=259512609
+- 2026-11-09T19:42:40+00:00 | START EleutherAI/pythia-410m n=256, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T19:42:49+00:00 | MATRICES gpt2 n=256: 256/1536, seconds=276.0
+- 2026-11-09T19:42:50+00:00 | MATRICES gpt2-medium n=256: 256/1536, seconds=275.5
+- 2026-11-09T19:43:38+00:00 | MATRICES EleutherAI/pythia-410m n=256: 64/1536, seconds=61.2
+- 2026-11-09T19:43:51+00:00 | MATRICES gpt2 n=256: 320/1536, seconds=337.3
+- 2026-11-09T19:43:51+00:00 | MATRICES gpt2-medium n=256: 320/1536, seconds=336.9
+- 2026-11-09T19:44:43+00:00 | MATRICES EleutherAI/pythia-410m n=256: 128/1536, seconds=125.7
+- 2026-11-09T19:44:54+00:00 | MATRICES gpt2 n=256: 384/1536, seconds=400.3
+- 2026-11-09T19:44:54+00:00 | MATRICES gpt2-medium n=256: 384/1536, seconds=399.7
+- 2026-11-09T19:45:40+00:00 | MATRICES EleutherAI/pythia-410m n=256: 192/1536, seconds=182.9
+- 2026-11-09T19:45:51+00:00 | MATRICES gpt2 n=256: 448/1536, seconds=457.6
+- 2026-11-09T19:45:51+00:00 | MATRICES gpt2-medium n=256: 448/1536, seconds=456.9
+- 2026-11-09T19:46:43+00:00 | MATRICES EleutherAI/pythia-410m n=256: 256/1536, seconds=245.7
+- 2026-11-09T19:46:58+00:00 | MATRICES gpt2-medium n=256: 512/1536, seconds=524.0
+- 2026-11-09T19:46:59+00:00 | MATRICES gpt2 n=256: 512/1536, seconds=525.4
+- 2026-11-09T19:48:07+00:00 | MATRICES EleutherAI/pythia-410m n=256: 320/1536, seconds=330.4
+- 2026-11-09T19:48:28+00:00 | MATRICES gpt2-medium n=256: 576/1536, seconds=613.5
+- 2026-11-09T19:48:29+00:00 | MATRICES gpt2 n=256: 576/1536, seconds=615.5
+- 2026-11-09T19:49:43+00:00 | MATRICES EleutherAI/pythia-410m n=256: 384/1536, seconds=425.8
+- 2026-11-09T19:49:54+00:00 | MATRICES gpt2-medium n=256: 640/1536, seconds=700.3
+- 2026-11-09T19:49:56+00:00 | MATRICES gpt2 n=256: 640/1536, seconds=702.5
+- 2026-11-09T19:51:03+00:00 | MATRICES EleutherAI/pythia-410m n=256: 448/1536, seconds=505.5
+- 2026-11-09T19:51:14+00:00 | MATRICES gpt2-medium n=256: 704/1536, seconds=780.1
+- 2026-11-09T19:51:16+00:00 | MATRICES gpt2 n=256: 704/1536, seconds=782.8
+- 2026-11-09T19:52:09+00:00 | MATRICES EleutherAI/pythia-410m n=256: 512/1536, seconds=572.4
+- 2026-11-09T19:52:34+00:00 | MATRICES gpt2-medium n=256: 768/1536, seconds=860.3
+- 2026-11-09T19:52:48+00:00 | MATRICES gpt2 n=256: 768/1536, seconds=874.1
+- 2026-11-09T19:54:47+00:00 | MATRICES EleutherAI/pythia-410m n=256: 576/1536, seconds=729.7
+- 2026-11-09T19:55:07+00:00 | MATRICES gpt2-medium n=256: 832/1536, seconds=1013.4
+- 2026-11-09T19:55:13+00:00 | MATRICES gpt2 n=256: 832/1536, seconds=1019.2
+- 2026-11-09T19:56:44+00:00 | MATRICES EleutherAI/pythia-410m n=256: 640/1536, seconds=847.2
+- 2026-11-09T19:57:16+00:00 | MATRICES gpt2-medium n=256: 896/1536, seconds=1142.2
+- 2026-11-09T19:57:24+00:00 | MATRICES gpt2 n=256: 896/1536, seconds=1150.6
+- 2026-11-09T19:58:28+00:00 | MATRICES EleutherAI/pythia-410m n=256: 704/1536, seconds=951.2
+- 2026-11-09T19:58:44+00:00 | MATRICES gpt2-medium n=256: 960/1536, seconds=1229.7
+- 2026-11-09T19:58:48+00:00 | MATRICES gpt2 n=256: 960/1536, seconds=1234.6
+- 2026-11-09T20:00:02+00:00 | MATRICES EleutherAI/pythia-410m n=256: 768/1536, seconds=1044.8
+- 2026-11-09T20:00:39+00:00 | MATRICES gpt2-medium n=256: 1024/1536, seconds=1344.9
+- 2026-11-09T20:00:51+00:00 | MATRICES gpt2 n=256: 1024/1536, seconds=1357.8
+- 2026-11-09T20:02:21+00:00 | MATRICES EleutherAI/pythia-410m n=256: 832/1536, seconds=1184.0
+- 2026-11-09T20:02:49+00:00 | MATRICES gpt2-medium n=256: 1088/1536, seconds=1474.9
+- 2026-11-09T20:02:56+00:00 | MATRICES gpt2 n=256: 1088/1536, seconds=1482.5
+- 2026-11-09T20:04:28+00:00 | MATRICES EleutherAI/pythia-410m n=256: 896/1536, seconds=1310.8
+- 2026-11-09T20:04:50+00:00 | MATRICES gpt2-medium n=256: 1152/1536, seconds=1595.5
+- 2026-11-09T20:04:57+00:00 | MATRICES gpt2 n=256: 1152/1536, seconds=1603.5
+- 2026-11-09T20:06:25+00:00 | MATRICES EleutherAI/pythia-410m n=256: 960/1536, seconds=1427.6
+- 2026-11-09T20:06:37+00:00 | n128 completo: 9984 matrizes, seis modelos, todas as tres convencoes e seis ranks. Em r8, CIs bootstrap das diferencas pareadas named_first menos SVD sob teto comum sao negativos nos seis modelos.
+- 2026-11-09T20:06:37+00:00 | r8 n128: nenhum empate no corte final named_first/alternating; lowrank_first tem 9 empates exatos (8 em zero; 1 positivo no Qwen2.5-3B). Unicidade nao e afirmada sem a condicao de gap.
+- 2026-11-09T20:06:37+00:00 | r8 n128: so 17/9984 instancias alternating atingem o criterio diagnostico ate T5; T permanece 5 e nao se afirma convergencia/otimo global.
+- 2026-11-09T20:06:37+00:00 | V1 ainda pendente. Adaptador E4 passa explicitamente a politica empty_row_policy registrada no JSON V1 para a funcao normalize_reconstruction importada, sem escolher regra propria.
+- 2026-11-09T20:06:38+00:00 | MATRICES gpt2-medium n=256: 1216/1536, seconds=1704.0
+- 2026-11-09T20:06:47+00:00 | MATRICES gpt2 n=256: 1216/1536, seconds=1713.3
+- 2026-11-09T20:08:07+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1024/1536, seconds=1530.2
+- 2026-11-09T20:08:21+00:00 | MATRICES gpt2-medium n=256: 1280/1536, seconds=1807.1
+- 2026-11-09T20:08:27+00:00 | MATRICES gpt2 n=256: 1280/1536, seconds=1814.0
+- 2026-11-09T20:09:26+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1088/1536, seconds=1608.8
+- 2026-11-09T20:09:38+00:00 | MATRICES gpt2-medium n=256: 1344/1536, seconds=1883.4
+- 2026-11-09T20:09:45+00:00 | MATRICES gpt2 n=256: 1344/1536, seconds=1891.7
+- 2026-11-09T20:10:26+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1152/1536, seconds=1669.1
+- 2026-11-09T20:10:39+00:00 | MATRICES gpt2-medium n=256: 1408/1536, seconds=1945.3
+- 2026-11-09T20:10:47+00:00 | MATRICES gpt2 n=256: 1408/1536, seconds=1953.8
+- 2026-11-09T20:11:28+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1216/1536, seconds=1731.1
+- 2026-11-09T20:11:38+00:00 | MATRICES gpt2-medium n=256: 1472/1536, seconds=2004.0
+- 2026-11-09T20:11:45+00:00 | MATRICES gpt2 n=256: 1472/1536, seconds=2011.1
+- 2026-11-09T20:12:24+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1280/1536, seconds=1787.4
+- 2026-11-09T20:12:35+00:00 | MATRICES gpt2-medium n=256: 1536/1536, seconds=2061.2
+- 2026-11-09T20:12:42+00:00 | MATRICES gpt2 n=256: 1536/1536, seconds=2068.1
+- 2026-11-09T20:12:59+00:00 | aggregated gpt2-medium n=256 convention=named_first
+- 2026-11-09T20:13:06+00:00 | aggregated gpt2 n=256 convention=named_first
+- 2026-11-09T20:13:23+00:00 | aggregated gpt2-medium n=256 convention=lowrank_first
+- 2026-11-09T20:13:30+00:00 | aggregated gpt2 n=256 convention=lowrank_first
+- 2026-11-09T20:13:30+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1344/1536, seconds=1852.9
+- 2026-11-09T20:13:49+00:00 | aggregated gpt2-medium n=256 convention=alternating
+- 2026-11-09T20:13:51+00:00 | DONE gpt2-medium n=256, seconds=2135.6, pairs_bytes=255873823
+- 2026-11-09T20:13:54+00:00 | aggregated gpt2 n=256 convention=alternating
+- 2026-11-09T20:13:56+00:00 | START EleutherAI/pythia-1.4b n=256, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T20:13:56+00:00 | DONE gpt2 n=256, seconds=2141.4, pairs_bytes=254812491
+- 2026-11-09T20:14:01+00:00 | START Qwen/Qwen2.5-0.5B n=256, 1536 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T20:14:40+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1408/1536, seconds=1923.4
+- 2026-11-09T20:14:59+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 64/1536, seconds=68.0
+- 2026-11-09T20:15:06+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 64/1536, seconds=69.3
+- 2026-11-09T20:15:45+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1472/1536, seconds=1987.7
+- 2026-11-09T20:16:03+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 128/1536, seconds=131.7
+- 2026-11-09T20:16:08+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 128/1536, seconds=131.9
+- 2026-11-09T20:16:48+00:00 | MATRICES EleutherAI/pythia-410m n=256: 1536/1536, seconds=2050.9
+- 2026-11-09T20:17:07+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 192/1536, seconds=195.2
+- 2026-11-09T20:17:09+00:00 | aggregated EleutherAI/pythia-410m n=256 convention=named_first
+- 2026-11-09T20:17:11+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 192/1536, seconds=194.4
+- 2026-11-09T20:17:29+00:00 | aggregated EleutherAI/pythia-410m n=256 convention=lowrank_first
+- 2026-11-09T20:17:49+00:00 | aggregated EleutherAI/pythia-410m n=256 convention=alternating
+- 2026-11-09T20:17:51+00:00 | DONE EleutherAI/pythia-410m n=256, seconds=2112.5, pairs_bytes=254876436
+- 2026-11-09T20:17:57+00:00 | START Qwen/Qwen2.5-3B n=256, 2304 instances, 64 document blocks, resume=0, T=5, atoms=17
+- 2026-11-09T20:18:12+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 256/1536, seconds=260.1
+- 2026-11-09T20:18:16+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 256/1536, seconds=259.2
+- 2026-11-09T20:19:30+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 64/2304, seconds=99.1
+- 2026-11-09T20:19:54+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 320/1536, seconds=362.5
+- 2026-11-09T20:19:59+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 320/1536, seconds=362.5
+- 2026-11-09T20:20:57+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 128/2304, seconds=186.1
+- 2026-11-09T20:21:13+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 384/1536, seconds=441.2
+- 2026-11-09T20:21:17+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 384/1536, seconds=441.1
+- 2026-11-09T20:22:06+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 192/2304, seconds=255.2
+- 2026-11-09T20:22:21+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 448/1536, seconds=509.3
+- 2026-11-09T20:22:25+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 448/1536, seconds=508.3
+- 2026-11-09T20:23:07+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 256/2304, seconds=315.5
+- 2026-11-09T20:23:19+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 512/1536, seconds=568.1
+- 2026-11-09T20:23:24+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 512/1536, seconds=567.2
+- 2026-11-09T20:24:17+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 320/2304, seconds=385.8
+- 2026-11-09T20:24:30+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 576/1536, seconds=638.5
+- 2026-11-09T20:24:34+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 576/1536, seconds=637.3
+- 2026-11-09T20:25:11+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 384/2304, seconds=440.4
+- 2026-11-09T20:25:26+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 640/1536, seconds=694.4
+- 2026-11-09T20:25:32+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 640/1536, seconds=695.6
+- 2026-11-09T20:26:19+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 448/2304, seconds=507.5
+- 2026-11-09T20:26:32+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 704/1536, seconds=761.0
+- 2026-11-09T20:26:37+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 704/1536, seconds=760.5
+- 2026-11-09T20:27:10+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 512/2304, seconds=558.9
+- 2026-11-09T20:27:24+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 768/1536, seconds=812.4
+- 2026-11-09T20:27:28+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 768/1536, seconds=811.7
+- 2026-11-09T20:28:00+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 576/2304, seconds=608.8
+- 2026-11-09T20:28:14+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 832/1536, seconds=862.2
+- 2026-11-09T20:28:18+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 832/1536, seconds=861.5
+- 2026-11-09T20:28:49+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 640/2304, seconds=658.1
+- 2026-11-09T20:29:03+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 896/1536, seconds=911.4
+- 2026-11-09T20:29:07+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 896/1536, seconds=910.7
+- 2026-11-09T20:29:35+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 704/2304, seconds=704.1
+- 2026-11-09T20:29:47+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 960/1536, seconds=955.8
+- 2026-11-09T20:29:51+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 960/1536, seconds=954.8
+- 2026-11-09T20:30:19+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 768/2304, seconds=748.0
+- 2026-11-09T20:30:31+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1024/1536, seconds=1000.0
+- 2026-11-09T20:30:36+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1024/1536, seconds=999.3
+- 2026-11-09T20:31:05+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 832/2304, seconds=793.5
+- 2026-11-09T20:31:19+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1088/1536, seconds=1047.3
+- 2026-11-09T20:31:23+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1088/1536, seconds=1046.8
+- 2026-11-09T20:31:56+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 896/2304, seconds=845.1
+- 2026-11-09T20:32:10+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1152/1536, seconds=1098.8
+- 2026-11-09T20:32:15+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1152/1536, seconds=1098.4
+- 2026-11-09T20:32:47+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 960/2304, seconds=896.1
+- 2026-11-09T20:33:02+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1216/1536, seconds=1150.2
+- 2026-11-09T20:33:06+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1216/1536, seconds=1150.1
+- 2026-11-09T20:33:40+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1024/2304, seconds=948.4
+- 2026-11-09T20:33:54+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1280/1536, seconds=1202.5
+- 2026-11-09T20:33:59+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1280/1536, seconds=1202.3
+- 2026-11-09T20:34:31+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1088/2304, seconds=1000.3
+- 2026-11-09T20:34:47+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1344/1536, seconds=1255.3
+- 2026-11-09T20:34:51+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1344/1536, seconds=1254.4
+- 2026-11-09T20:35:24+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1152/2304, seconds=1052.8
+- 2026-11-09T20:35:39+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1408/1536, seconds=1307.2
+- 2026-11-09T20:35:43+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1408/1536, seconds=1306.3
+- 2026-11-09T20:36:17+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1216/2304, seconds=1105.9
+- 2026-11-09T20:36:31+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1472/1536, seconds=1359.7
+- 2026-11-09T20:36:35+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1472/1536, seconds=1358.3
+- 2026-11-09T20:37:05+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1280/2304, seconds=1154.0
+- 2026-11-09T20:37:21+00:00 | MATRICES EleutherAI/pythia-1.4b n=256: 1536/1536, seconds=1409.4
+- 2026-11-09T20:37:25+00:00 | MATRICES Qwen/Qwen2.5-0.5B n=256: 1536/1536, seconds=1408.2
+- 2026-11-09T20:37:40+00:00 | aggregated EleutherAI/pythia-1.4b n=256 convention=named_first
+- 2026-11-09T20:37:43+00:00 | aggregated Qwen/Qwen2.5-0.5B n=256 convention=named_first
+- 2026-11-09T20:37:57+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1344/2304, seconds=1206.1
+- 2026-11-09T20:37:59+00:00 | aggregated EleutherAI/pythia-1.4b n=256 convention=lowrank_first
+- 2026-11-09T20:38:01+00:00 | aggregated Qwen/Qwen2.5-0.5B n=256 convention=lowrank_first
+- 2026-11-09T20:38:19+00:00 | aggregated EleutherAI/pythia-1.4b n=256 convention=alternating
+- 2026-11-09T20:38:20+00:00 | aggregated Qwen/Qwen2.5-0.5B n=256 convention=alternating
+- 2026-11-09T20:38:20+00:00 | DONE EleutherAI/pythia-1.4b n=256, seconds=1468.1, pairs_bytes=254838055
+- 2026-11-09T20:38:21+00:00 | DONE Qwen/Qwen2.5-0.5B n=256, seconds=1463.9, pairs_bytes=254816979
+- 2026-11-09T20:38:49+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1408/2304, seconds=1258.1
+- 2026-11-09T20:39:35+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1472/2304, seconds=1304.1
+- 2026-11-09T20:40:15+00:00 | CPU ADAPTER CHECKS PASSED: batched float32 estimator vs scalar float64 reference; no model forward/KL; V1 dependency unchanged
+- 2026-11-09T20:40:18+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1536/2304, seconds=1346.5
+- 2026-11-09T20:40:57+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1600/2304, seconds=1385.8
+- 2026-11-09T20:41:42+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1664/2304, seconds=1430.4
+- 2026-11-09T20:42:27+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1728/2304, seconds=1476.3
+- 2026-11-09T20:43:16+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1792/2304, seconds=1525.3
+- 2026-11-09T20:44:07+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1856/2304, seconds=1575.7
+- 2026-11-09T20:44:58+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1920/2304, seconds=1626.7
+- 2026-11-09T20:45:52+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 1984/2304, seconds=1680.8
+- 2026-11-09T20:46:47+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 2048/2304, seconds=1735.9
+- 2026-11-09T20:47:33+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 2112/2304, seconds=1781.8
+- 2026-11-09T20:48:23+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 2176/2304, seconds=1831.6
+- 2026-11-09T20:49:23+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 2240/2304, seconds=1891.8
+- 2026-11-09T20:50:22+00:00 | MATRICES Qwen/Qwen2.5-3B n=256: 2304/2304, seconds=1951.0
+- 2026-11-09T20:50:40+00:00 | aggregated Qwen/Qwen2.5-3B n=256 convention=named_first
+- 2026-11-09T20:50:59+00:00 | aggregated Qwen/Qwen2.5-3B n=256 convention=lowrank_first
+- 2026-11-09T20:51:17+00:00 | aggregated Qwen/Qwen2.5-3B n=256 convention=alternating
+- 2026-11-09T20:51:19+00:00 | DONE Qwen/Qwen2.5-3B n=256, seconds=2006.9, pairs_bytes=381810474
+- 2026-11-09T20:51:46+00:00 | MATRICES COMPLETE out\phase21_allocation.json; FALTA: external out/phase2_downstream_v2.json and last-token KL; all 12 populations retained
+- 2026-11-09T20:54:56+00:00 | Entrega matricial auditada: 12 populacoes, 19968 matrizes, 359424 combinacoes convencao/rank, 0 matrizes invalidas; hashes do dicionario iguais entre modelos e iguais a fonte em cada n. Cortes finais: 52 empates exatos, 61 numericos, 15 numericos positivos.
+- 2026-11-09T20:54:56+00:00 | Verificacoes: execucao CPU completa exit 0; consolidacao exit 0 e JSON relido com sucesso. Adaptador CPU vs referencia escalar float64: diferenca relativa maxima 6.821176725679834e-7.
+- 2026-11-09T20:54:56+00:00 | FALTA: V1 agregado ausente=True; nenhuma injecao LM ou KL do ultimo token executada. Estado explicito no consolidado; comandos para retomar com lock e gerar novo consolidado completo preservando os resultados atuais estao em forward.resume_after_V1_exists.

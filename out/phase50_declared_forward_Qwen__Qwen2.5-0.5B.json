@@ -1,0 +1,43 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "n_articles": 64,
+  "K": [
+    8,
+    16
+  ],
+  "arms_evaluated": [
+    "masked_K",
+    "named_plus_masked",
+    "masked_K_diag_exact"
+  ],
+  "aliases": {},
+  "e_empty_counter_replay": true,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251",
+  "sample_sha256": "dcd06a205aafdb63a6d687aa6b55982837590a21f113f8853e457c66caf9ba54",
+  "CPU_float64_equivalence_passed": false,
+  "equivalence_is_behavioral_gate": false,
+  "pairs_path": "out/pairs/phase50_declared_forward_Qwen__Qwen2.5-0.5B.jsonl",
+  "pairs_sha256": "31b1a4995294f701c74ddc85c0e97a541144cc3716320bb5a3b4cdddbd33f818",
+  "n_records": 512,
+  "chunks": [
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_000_016.json",
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_016_032.json",
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_032_048.json",
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_048_064.json"
+  ],
+  "chunk_sha256": {
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_000_016.json": "cda0038707dccb1e4d1f41509f47370d99a60e94caac27f3b6b909f57786c54b",
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_016_032.json": "0a03e371eb4405f4fb40d5b075d8486755b54e3f2f66c2270bcd8668d999e7a2",
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_032_048.json": "5b539321fefc2129cf538cb915504eb578ed0d064672fe113a2b5c98d7323f17",
+    "out/phase50_declared_chunk_Qwen__Qwen2.5-0.5B_048_064.json": "2e048599586d28ba6af61b95d18f3bee2f06873a70fad9279e0fe3e67bc93b0a"
+  },
+  "elapsed_chunk_seconds": 1349.8761061998084,
+  "GPU_lock_released_between_models_and_chunks": true,
+  "estimator_sources": {
+    "phase50_fp32_als.py": "12db461d06ccab82c40bb4d3befbb8f7dc5b85c47a998609da457db861ea39b1",
+    "phase50_fp32_graph.py": "bddc95e7fad7ff8c73132e47f09a19eae421494b1ce43a5190e40c6d4eb20d33"
+  },
+  "implementation_fix_path": "out/phase50_declared_implementation_fix.json",
+  "implementation_fix_sha256": "ba57c42a1110d571d2867729d05e12b5d5cd7c349fac4d181071e1046253e623",
+  "n_records_with_controlled_implementation_fix": 468
+}

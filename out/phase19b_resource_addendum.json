@@ -1,0 +1,9 @@
+{
+  "selection_or_numeric_changes": false,
+  "maximum_active_calculation_processes": 3,
+  "cpu_threads_each": 4,
+  "gpu_launcher": "phase19b_gpu_launcher.py",
+  "cpu_slot2_native_pid": 18084,
+  "cpu_slot2_created": 1794286705.6360457,
+  "policy": "After acquiring the GPU flock, suspend the verified native own CPU slot2 process, run GPU fitting, then resume slot2 in finally. Two CPU plus GPU while GPU is active; otherwise three CPU. No process is killed by name; only the verified old waiting own flock PID68141 was cancelled to replace its launcher."
+}

@@ -1,0 +1,12 @@
+{
+  "model": "EleutherAI/pythia-1.4b",
+  "start_document": 16,
+  "stop_document": 32,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251",
+  "pairs_byte_length": 322478,
+  "pairs_prefix_sha256": "343eabd1f3662a0b17659a896526ec1ed4d2e36e4ddb6c7fec62384d678ee051",
+  "elapsed_seconds": 259.8776955998037,
+  "load_and_native_control_seconds": 17.52117779990658,
+  "n_records_completed_so_far": 128,
+  "e_replay_KL_NLL_verified": false
+}

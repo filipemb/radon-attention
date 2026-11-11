@@ -1,0 +1,5 @@
+{
+  "explicit_preemption_before_renderer": true,
+  "second_writer_excluded": true,
+  "passed": true
+}

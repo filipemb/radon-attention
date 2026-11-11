@@ -1,0 +1,23 @@
+{
+  "n": 256,
+  "model": "gpt2",
+  "fixed_instance_index": 0,
+  "passed": true,
+  "reference_type": "dense NNLS final subproblem of full-dictionary OMP; same kernel/default limit; literal sequence still running",
+  "reference_error": 0.3091042982543027,
+  "unmodified_full_OMP_error": null,
+  "direct_endpoint_error": 0.3091042982543027,
+  "absolute_difference": 0.0,
+  "predeclared_tolerance": 1e-11,
+  "reference_seconds": 24.52395060006529,
+  "literal_OMP_seconds": null,
+  "endpoint_setup_seconds": 5.665079400176182,
+  "endpoint_projection_seconds": 0.12546680006198585,
+  "n_atoms": 519,
+  "KKT": 5.178227555290424e-16,
+  "benchmark_sha256": "88c46a9dd9941e9e9c35b3bef9154c9aed74711b544dc7f072888556c820e7c4",
+  "source_OMP_sha256": "88c46a9dd9941e9e9c35b3bef9154c9aed74711b544dc7f072888556c820e7c4",
+  "normalization": "Inherited unmodified OMP denominator ||A||+1e-12, applied identically to its exact endpoint",
+  "equivalence": "After all 2n+7 candidates have been selected, imported OMP solves NNLS on a permutation of the same full dictionary. A finitely generated cone has a unique matrix projection; coefficient nonuniqueness does not change the error.",
+  "production_substitution_authorized": false
+}

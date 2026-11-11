@@ -1,0 +1,192 @@
+{
+  "all_passed": true,
+  "synthetic": {
+    "bit_equal_tensor_and_counter_cases": [
+      "torch.float32:identity:q16:k16",
+      "torch.float32:svd:q16:k16",
+      "torch.float32:uniform:q16:k16",
+      "torch.float32:diagonal:q16:k16",
+      "torch.float32:sink:q16:k16",
+      "torch.float32:anova:q16:k16",
+      "torch.float32:nosink:q16:k16",
+      "torch.float32:zerocol_mid:q16:k16",
+      "torch.float32:identity:q4:k16",
+      "torch.float32:svd:q4:k16",
+      "torch.float32:uniform:q4:k16",
+      "torch.float32:diagonal:q4:k16",
+      "torch.float32:sink:q4:k16",
+      "torch.float32:anova:q4:k16",
+      "torch.float32:nosink:q4:k16",
+      "torch.float32:zerocol_mid:q4:k16",
+      "torch.float32:identity:q1:k16",
+      "torch.float32:svd:q1:k16",
+      "torch.float32:uniform:q1:k16",
+      "torch.float32:diagonal:q1:k16",
+      "torch.float32:sink:q1:k16",
+      "torch.float32:anova:q1:k16",
+      "torch.float32:nosink:q1:k16",
+      "torch.float32:zerocol_mid:q1:k16",
+      "torch.bfloat16:identity:q16:k16",
+      "torch.bfloat16:svd:q16:k16",
+      "torch.bfloat16:uniform:q16:k16",
+      "torch.bfloat16:diagonal:q16:k16",
+      "torch.bfloat16:sink:q16:k16",
+      "torch.bfloat16:anova:q16:k16",
+      "torch.bfloat16:nosink:q16:k16",
+      "torch.bfloat16:zerocol_mid:q16:k16",
+      "torch.bfloat16:identity:q4:k16",
+      "torch.bfloat16:svd:q4:k16",
+      "torch.bfloat16:uniform:q4:k16",
+      "torch.bfloat16:diagonal:q4:k16",
+      "torch.bfloat16:sink:q4:k16",
+      "torch.bfloat16:anova:q4:k16",
+      "torch.bfloat16:nosink:q4:k16",
+      "torch.bfloat16:zerocol_mid:q4:k16",
+      "torch.bfloat16:identity:q1:k16",
+      "torch.bfloat16:svd:q1:k16",
+      "torch.bfloat16:uniform:q1:k16",
+      "torch.bfloat16:diagonal:q1:k16",
+      "torch.bfloat16:sink:q1:k16",
+      "torch.bfloat16:anova:q1:k16",
+      "torch.bfloat16:nosink:q1:k16",
+      "torch.bfloat16:zerocol_mid:q1:k16",
+      "interleaved_reconstruction:empty=False",
+      "interleaved_reconstruction:empty=True",
+      "sink:torch.float32:beta0.0",
+      "sink:torch.float32:beta0.05",
+      "sink:torch.float32:beta0.25",
+      "sink:torch.float32:beta1.0",
+      "sink:torch.bfloat16:beta0.0",
+      "sink:torch.bfloat16:beta0.05",
+      "sink:torch.bfloat16:beta0.25",
+      "sink:torch.bfloat16:beta1.0"
+    ],
+    "invalid_inputs_rejected_by_both": [
+      "negative",
+      "above_diagonal",
+      "nan",
+      "inf",
+      "wrong_row_sum",
+      "nonfinite_reconstruction:nan",
+      "nonfinite_reconstruction:inf",
+      "nonfinite_reconstruction:-inf"
+    ],
+    "fixed_tolerance_boundary_cases": [
+      {
+        "delta": 1.9e-06,
+        "accepted_by_both": true
+      },
+      {
+        "delta": 2.1e-06,
+        "accepted_by_both": false
+      }
+    ],
+    "row_atol_unchanged": 2e-06
+  },
+  "pretrained": {
+    "model": "pretrained gpt2",
+    "device": "cpu",
+    "n_documents": 2,
+    "prefix_length": 128,
+    "arms": [
+      {
+        "arm": "phase2:identity",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:svd:1",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:svd:2",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:svd:4",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:svd:8",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:svd:16",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:svd:32",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:geom",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:uniform",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:diagonal",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase2:sink",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase7:identity:8",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase7:anova:8",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase7:nosink:8",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "arm": "phase7:zerocol_mid:8",
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      }
+    ],
+    "sink_betas": [
+      {
+        "beta": 0.0,
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "beta": 0.25,
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      },
+      {
+        "beta": 1.0,
+        "logits_bit_equal": true,
+        "maximum_difference": 0.0
+      }
+    ]
+  },
+  "elapsed_seconds": 53.2853745999746,
+  "source_sha256": {
+    "phase2_downstream.py": "b3c5e4bef998f3d709433ae68f0978affae675a14588f2a7fdbfc3862bcdabe1",
+    "phase7_editability.py": "0a986410e7bcc9ebd98ab7e4fa8f2d43d71ff05e1d9c213d39f291f7afb02733",
+    "phase8_lostmiddle.py": "817f14ad1b47d828b30e8c4a8d30e89c7427e735fd81f0db24fefe3764405acf"
+  }
+}

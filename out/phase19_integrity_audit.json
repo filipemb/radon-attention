@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "report_sha256": "a65e13454dcfd131d89c17d254acfb657e61b9cb115fb4190e9e4e184ee83a8a",
+  "datasets": 12,
+  "instances": 768,
+  "all_methods_same_instances": true,
+  "finite_nonnegative_errors": true,
+  "storage_budgets_verified": true,
+  "absolute_relative_max_discrepancy": 2.7755575615628914e-15,
+  "median_max_discrepancy": 0.0,
+  "document_block_bootstrap_reproduced": true,
+  "numerical_sources_match_frozen_hashes": true,
+  "selection_matches_frozen_hash": true,
+  "parametric_backend_counts": {
+    "cuda": 512,
+    "cpu": 256
+  },
+  "positive_control_gates_pass": false,
+  "note": "Integrity checks and positive-control recovery gates are separate; failed controls remain in the report."
+}

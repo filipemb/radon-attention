@@ -1,0 +1,70 @@
+{
+  "source_jobs": [
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b1.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.75_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.5_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.35_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.25_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.15_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.1_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.05_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_b0.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_EleutherAI__pythia-410m_s1_historical_blegacy_beta0_v3.jsonl"
+  ],
+  "differences": [
+    {
+      "family": "B",
+      "arm": "1.0",
+      "old_n_correct": 48,
+      "replayed_n_correct": 178
+    },
+    {
+      "family": "B",
+      "arm": "0.75",
+      "old_n_correct": 51,
+      "replayed_n_correct": 180
+    },
+    {
+      "family": "B",
+      "arm": "0.5",
+      "old_n_correct": 54,
+      "replayed_n_correct": 190
+    },
+    {
+      "family": "B",
+      "arm": "0.35",
+      "old_n_correct": 60,
+      "replayed_n_correct": 192
+    },
+    {
+      "family": "B",
+      "arm": "0.25",
+      "old_n_correct": 65,
+      "replayed_n_correct": 191
+    },
+    {
+      "family": "B",
+      "arm": "0.15",
+      "old_n_correct": 70,
+      "replayed_n_correct": 199
+    },
+    {
+      "family": "B",
+      "arm": "0.1",
+      "old_n_correct": 76,
+      "replayed_n_correct": 200
+    },
+    {
+      "family": "B",
+      "arm": "0.05",
+      "old_n_correct": 70,
+      "replayed_n_correct": 192
+    },
+    {
+      "family": "B",
+      "arm": "legacy_beta0",
+      "old_n_correct": 49,
+      "replayed_n_correct": 180
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "freeze_before_any_reported_parametric_fit": true,
+  "seed": 19027,
+  "adam_steps": 450,
+  "lbfgsb_max_iterations": 150,
+  "lbfgsb_gtol": 1e-07,
+  "lbfgsb_ftol": 1e-12,
+  "initializations": [
+    "uniform_omp",
+    "profiled_omp",
+    "random_importance",
+    "multiscale_sinogram_proposal_nnls"
+  ],
+  "multiscale_width_grid": [
+    0.5,
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "multiscale_max_proposals": 32,
+  "selection_sha256": "116063d760ac7619b8d5909613ad75e72fd93f61c0512f5cfd8ec618704ea54e",
+  "source_sha256": {
+    "richlines_core.py": "5a4fee5dcf661b8f5b833bec753b70564b59dd2db324c3ec7f2fb02c92496a62",
+    "richlines_parametric.py": "a367bf04ae7fe9502ee6b5643ec6f33d98009a47a5e73610927f783a99d86f19",
+    "richlines_initialization.py": "f3ed763e0177556e0b156a10368a365adeaa299512e6739854db15d156843157",
+    "richlines_cuda.py": "8f5d0f40d30247d0a6921939e1c6dc3ce65c077dab25682fec2bcea19259ac3c"
+  },
+  "normalization": "log-domain including transverse taper, avoiding norm-square underflow",
+  "normalized_amplitude_bounds": [
+    0,
+    1
+  ],
+  "amplitude_bound_reason": "For nonnegative unit-norm atoms and a unit-norm target, every coordinatewise nonnegative optimum has amplitude <=1",
+  "control_policy": "Same fixed targets, seeds and acceptance thresholds; preserve and report all failed controls",
+  "max_cpu_workers": 2,
+  "cpu_threads_each": 4,
+  "max_gpu_workers": 1,
+  "gpu_lock": "/tmp/radon-gpu.lock"
+}

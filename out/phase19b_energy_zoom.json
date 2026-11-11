@@ -1,0 +1,16 @@
+{
+  "source_sha256": "e59a265443db5a5d2dc423f586294a848bdd089fb4999c6c824c7647edb2d605",
+  "report_sha256": "064a66cd27bc9539b5cbe127634ea8793bad3a5651e09daa7c510a53864531ce",
+  "no_statistical_or_fit_changes": true,
+  "scale": "percent, vertical limits per n from largest95percentCI",
+  "artifacts": [
+    {
+      "path": "out/phase19b_broad_energy_zoom.png",
+      "sha256": "163f64d1059378fbce1f562b345f309bbf42f68691b43b44aef378143963a8b3"
+    },
+    {
+      "path": "out/phase19b_broad_energy_zoom.svg",
+      "sha256": "a4c50474ba06c5548cd4c680c3c4a5be6426778c5db759912a7c65a270b22b20"
+    }
+  ]
+}

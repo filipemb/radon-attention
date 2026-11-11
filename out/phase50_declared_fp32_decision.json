@@ -1,0 +1,210 @@
+{
+  "UTC": "2026-11-10T19:26:47.861207+00:00",
+  "authority": "explicit user decision in this conversation",
+  "user_decision_verbatim": "Decisão minha, tomada antes de ver qualquer KL de b/c/f: o portão de equivalência com a referência float64 servia para provar que GPU e CPU eram o mesmo estimador. Não são (o ridge e a trajetória mudam a solução, e o próprio problema mascarado é mal posto: fatores enormes, sem convergência). Então o método do braço mascarado passa a ser declarado como o seu estimador float32: SVD truncada como início, 200 varreduras de ALS com ridge 1e-6*tr(G), Grams cumulativas, Cholesky em lote, rebalanceamento QR+SVD do núcleo. Ele passou na recuperação plantada e nos controles locais, e seu desempenho matricial já está medido (b: 0,046 a 0,082 em K=8), que é o número que o artigo vai citar para ele, ao lado do float64 como referência e da discordância entre os dois (registre ambos).",
+  "decision_before_first_behavioral_KL_b_c_f_for_declared_FP32_method": true,
+  "method": {
+    "name": "masked FP32 cumulative-Gram trace-ridge ALS",
+    "dtype": "float32",
+    "initialization": "truncated SVD with singular-value square roots",
+    "sweeps": 200,
+    "early_stop": false,
+    "ridge_relative_to_trace": 1e-06,
+    "ridge_absolute_floor_on_normalized_target": 1e-30,
+    "updates": "prefix/suffix cumulative Grams and masked-target matrix multiplication RHS; batched Cholesky",
+    "rebalance_every_sweep": "QR of both factors plus SVD of KxK core, splitting square-root singular values",
+    "backend": "CUDA Graph, previously controlled implementation, TF32 disabled",
+    "CPU_recomputations": false,
+    "objective_increase_policy": "record all, no monotonic rejection, same existing FP32 estimator"
+  },
+  "CPU_float64_reference_equivalence": {
+    "passed": false,
+    "threshold_kept_for_historical_test": 0.002,
+    "is_behavioral_execution_gate": false,
+    "reason": "Ridge and optimization trajectory define a different finite200-sweep estimator. Original masked completion is ill-conditioned, factors can be huge and convergence is not established. The user declares the tested FP32 estimator as the method, not a replica of CPU float64.",
+    "reference_results_and_all_disagreements_preserved": true,
+    "legacy_float64_forward_probes_excluded": true
+  },
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-1.4b",
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-3B"
+  ],
+  "K": [
+    8,
+    16
+  ],
+  "n": 128,
+  "document_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "sample_sha256": "dcd06a205aafdb63a6d687aa6b55982837590a21f113f8853e457c66caf9ba54",
+  "FP32_protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "parent_protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "estimator_sources": {
+    "phase50_fp32_als.py": "12db461d06ccab82c40bb4d3befbb8f7dc5b85c47a998609da457db861ea39b1",
+    "phase50_fp32_graph.py": "bddc95e7fad7ff8c73132e47f09a19eae421494b1ce43a5190e40c6d4eb20d33"
+  },
+  "harness_sha256": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+  "corpus_manifest_sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+  "heads_exact_zero_based": {
+    "gpt2": [
+      [
+        4,
+        11
+      ]
+    ],
+    "gpt2-medium": [
+      [
+        4,
+        13
+      ],
+      [
+        5,
+        11
+      ]
+    ],
+    "EleutherAI/pythia-410m": [],
+    "EleutherAI/pythia-1.4b": [],
+    "Qwen/Qwen2.5-0.5B": [
+      [
+        0,
+        1
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        23,
+        1
+      ]
+    ],
+    "Qwen/Qwen2.5-3B": [
+      [
+        0,
+        12
+      ],
+      [
+        27,
+        8
+      ]
+    ]
+  },
+  "arms_run": [
+    "masked_K",
+    "named_plus_masked",
+    "masked_K_diag_exact"
+  ],
+  "exact_alias_when_no_exempt_heads": {
+    "masked_K_diag_exact": "masked_K"
+  },
+  "a_d_e_behavioral_results_reused_unchanged": true,
+  "empty_row_measurement": "Count the actual harness empty mask. All-head/all-layer row denominator; exact heads contribute zero completions. Replay e to remove completion counts for discarded SVD candidates on exact heads; verify KL/NLL against existing e records.",
+  "e_replay_is_counter_instrumentation_not_new_arm_or_sample": true,
+  "execution": {
+    "chunk_articles": 16,
+    "round_robin_models_each_chunk": true,
+    "release_GPU_lock_between_every_model_and_chunk": true,
+    "CPU_threads": 4
+  },
+  "statistics": {
+    "comparisons": [
+      [
+        "masked_K",
+        "named_plus_svd"
+      ],
+      [
+        "named_plus_masked",
+        "named_plus_svd"
+      ],
+      [
+        "named_plus_masked",
+        "masked_K"
+      ],
+      [
+        "masked_K_diag_exact",
+        "masked_K"
+      ],
+      [
+        "svd_K_diag_exact",
+        "svd_K"
+      ]
+    ],
+    "Wilcoxon": "two-sided by article, wilcox zeros, asymptotic p",
+    "rank_biserial_positive_favors": "right arm",
+    "Holm_family_size": 60,
+    "CI": "phase24.describe,2000 whole-article bootstrap resamples,seed0",
+    "report_by_model_K_arm_and_pooled_K_empty_fractions": true
+  },
+  "predecessor_report_snapshot": "out/phase50_report_before_declared_fp32_forward.json",
+  "predecessor_report_sha256": "b016ffe3548963643fbea72a3d11660c8ce38098f98b8f35573cc629ec2e4f71",
+  "report_update": "User explicitly requests completion of out/phase50_report.json. Preserve predecessor bytes and atomically replace only that report after all64 observations/arm/model/K and60 tests are audited.",
+  "no_other_existing_scientific_files_overwritten": true
+}

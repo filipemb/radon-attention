@@ -1,0 +1,20 @@
+{
+  "model": "gpt2",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "beta": 0.25,
+  "n_sequences": 2,
+  "native_identity_logits_bit_equal": true,
+  "positive_beta_logits_bit_equal": true,
+  "max_absolute_logit_difference": 0.0,
+  "probe_payload_sha256": "7d8712bb747ad4ad98c2d93eb29e633ca18bf9ee4941ceff4ed50d1c4d3dbe3a",
+  "attention_checks": {
+    "sink_edit_rows_total": 36864,
+    "sink_edit_rows_preserved_no_alternative": 0,
+    "sink_edit_last_query_rows_preserved": 0,
+    "sink_edit_positive_mass_below_legacy_clamp": 0,
+    "max_sink_edit_row_error": 3.5762786865234375e-07,
+    "max_sink_edit_row_error_bound": 2.119209296656209e-06
+  },
+  "elapsed_seconds": 4.50426679989323
+}

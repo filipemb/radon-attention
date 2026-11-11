@@ -1,0 +1,9 @@
+{
+  "decision": "retain torch default full exact float32 SVD in every scientific run",
+  "driver_switch_executed": false,
+  "alternate_driver_benchmark_executed": false,
+  "reason": "Equal optimal Frobenius error does not guarantee identical rank-truncated projection at tied singular values. Changing solver convention therefore has medium certainty for downstream behavior and is deferred to the user.",
+  "scientific_population_ranks_and_row_tolerances_changed": false,
+  "queue_parallelism_keeps_gpu_execution_serial": true,
+  "archive_of_original_gpt2_code": "out/phase2_execution_gpt2_v2.json"
+}

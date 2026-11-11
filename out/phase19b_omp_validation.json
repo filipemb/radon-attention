@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "max_relative_error_discrepancy": 0.0,
+  "resume": {
+    "seconds": 0.006900399923324585,
+    "extended_steps": 8,
+    "initial_selected_atoms": 8,
+    "initial_nnls_kkt": 5.551115123125783e-17,
+    "rule": "same 180-angle dictionaries and nonnegative OMP; exact selected-index prefix, NNLS refit, then greedy continuation; parent snapshots retained verbatim"
+  }
+}

@@ -14,13 +14,89 @@ a acuracia no MEIO melhora -> editabilidade vira ganho de tarefa, nao so KL.
 
 Injecao via implementacao de atencao "recon" (mascara causal pura, como phase7).
 """
+from sampling import MODELS  # datasets before torch; native thread caps.
 import argparse, json, os
 import numpy as np
 import torch
 import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer, AttentionInterface
 
-RECON = {"beta": 1.0}
+torch.set_num_threads(4)
+RECON = {"beta": 1.0, "stats": {}}
+
+def finish_sink_edit(before, edited, stats=None):
+    """Preserve the pre-edit distribution only when an edit removes all mass.
+
+    This is an editing rule, not reconstruction completion. For positive beta
+    with nonempty rows, the arithmetic is exactly the historical division.
+    """
+    if stats is None:
+        stats = {}
+    if getattr(stats, "defer_validation", False):
+        return _finish_sink_edit_deferred(before, edited, stats)
+    if not bool(torch.isfinite(edited).all()) or bool((edited < 0).any()):
+        raise RuntimeError("Nonfinite or negative edited attention")
+    sums = edited.sum(-1, keepdim=True)
+    empty = sums <= 0
+    count = int(empty.sum())
+    stats["sink_edit_rows_total"] = stats.get("sink_edit_rows_total", 0) + edited.numel() // edited.shape[-1]
+    stats["sink_edit_rows_preserved_no_alternative"] = stats.get("sink_edit_rows_preserved_no_alternative", 0) + count
+    stats["sink_edit_last_query_rows_preserved"] = stats.get("sink_edit_last_query_rows_preserved", 0) + int(empty[..., -1, :].sum())
+    if count:
+        edited = torch.where(empty, before, edited)
+    totals = edited.sum(-1, keepdim=True)
+    if bool((totals <= 0).any()):
+        raise RuntimeError("An edit still has an empty row after preservation")
+    stats["sink_edit_positive_mass_below_legacy_clamp"] = stats.get("sink_edit_positive_mass_below_legacy_clamp", 0) + int((totals < 1e-9).sum())
+    # With beta>0 in the existing grid, the old 1e-9 clamp is inactive, so
+    # division is bit-identical. With beta=0, positive tiny alternative mass
+    # must be normalized rather than suppressed by a denominator floor.
+    result = edited / totals
+    q, k = result.shape[-2:]
+    support = torch.ones(q, k, device=result.device, dtype=torch.bool).tril(k-q)
+    if bool((result.masked_select(~support) != 0).any()):
+        raise RuntimeError("Sink edit introduced noncausal mass")
+    row_error = float((result.float().sum(-1)-1).abs().max())
+    # A same-dtype reduction followed by same-dtype division has two rounding
+    # steps: |sum-1| <= 2u/(1-u), u=eps/2. Fixed before the rerun; not tuned.
+    u = torch.finfo(result.dtype).eps/2
+    bound = max(2e-6, 2*u/(1-u) + 2e-6)
+    if not bool(torch.isfinite(result).all()) or row_error > bound:
+        raise RuntimeError(f"Invalid edited row sum: {row_error}, fixed arithmetic bound {bound}")
+    if q == k and not torch.equal(result[..., 0, :], before[..., 0, :]):
+        raise RuntimeError("Sink edit changed the unique causal first-row distribution")
+    stats["max_sink_edit_row_error"] = max(stats.get("max_sink_edit_row_error", 0), row_error)
+    stats["max_sink_edit_row_error_bound"] = bound
+    return result
+
+
+def _finish_sink_edit_deferred(before, edited, stats):
+    """Identical row arithmetic, all checks retained on device until batch end."""
+    stats.add_scalar("sink_edit_invalid_values", ((~torch.isfinite(edited)) | (edited < 0)).sum())
+    sums = edited.sum(-1, keepdim=True)
+    empty = sums <= 0
+    stats.add_scalar("sink_edit_rows_total", edited.numel()//edited.shape[-1])
+    stats.add_scalar("sink_edit_rows_preserved_no_alternative", empty.sum())
+    stats.add_scalar("sink_edit_last_query_rows_preserved", empty[..., -1, :].sum())
+    if edited.is_contiguous() or bool(empty.any()):
+        edited = torch.where(empty, before, edited)
+    totals = edited.sum(-1, keepdim=True)
+    stats.add_scalar("sink_edit_invalid_totals", ((totals <= 0) | ~torch.isfinite(totals)).sum())
+    stats.add_scalar("sink_edit_positive_mass_below_legacy_clamp", (totals < 1e-9).sum())
+    result = edited/totals
+    q,k = result.shape[-2:]
+    support = torch.ones(q,k,device=result.device,dtype=torch.bool).tril(k-q)
+    stats.add_scalar("sink_edit_noncausal_values", ((result != 0) & ~support).sum())
+    stats.add_scalar("sink_edit_invalid_values", ((~torch.isfinite(result)) | (result < 0)).sum())
+    errors = (result.float().sum(-1)-1).abs()
+    u = torch.finfo(result.dtype).eps/2
+    bound = max(2e-6,2*u/(1-u)+2e-6)
+    stats.add_scalar("sink_edit_row_sum_violations", ((~torch.isfinite(errors)) | (errors.double() > bound)).sum())
+    if q==k:
+        stats.add_scalar("sink_edit_first_row_changes", (result[...,0,:] != before[...,0,:]).sum())
+    stats.max_scalar("max_sink_edit_row_error", errors.max())
+    stats["max_sink_edit_row_error_bound"] = bound
+    return result
 
 
 def _repeat_kv(x, nrep):
@@ -43,9 +119,12 @@ def recon_attention_forward(module, query, key, value, attention_mask, scaling=N
     aw = F.softmax(aw, dim=-1).type(value.dtype)
     beta = RECON["beta"]
     if beta != 1.0:                      # calibra o sink = coluna 0
+        before = aw
         aw = aw.clone()
         aw[..., 0] = aw[..., 0] * beta
-        aw = aw / aw.sum(-1, keepdim=True).clamp_min(1e-9)
+        aw = finish_sink_edit(before, aw, RECON.setdefault("stats", {}))
+    elif getattr(RECON.get("stats"), "defer_validation", False):
+        RECON["stats"].check_attention(aw)
     out = torch.matmul(aw, value).transpose(1, 2)
     return out, aw
 

@@ -1,0 +1,32 @@
+{
+  "cases": [
+    "svd:q16:k16",
+    "uniform:q16:k16",
+    "diagonal:q16:k16",
+    "sink:q16:k16",
+    "anova:q16:k16",
+    "nosink:q16:k16",
+    "zerocol_mid:q16:k16",
+    "svd:q1:k16",
+    "uniform:q1:k16",
+    "diagonal:q1:k16",
+    "sink:q1:k16",
+    "anova:q1:k16",
+    "nosink:q1:k16",
+    "zerocol_mid:q1:k16",
+    "svd:q4:k16",
+    "uniform:q4:k16",
+    "diagonal:q4:k16",
+    "sink:q4:k16",
+    "anova:q4:k16",
+    "nosink:q4:k16",
+    "zerocol_mid:q4:k16"
+  ],
+  "prefix_crop_before_model": true,
+  "empty_rows_rejected": true,
+  "row_atol": 2e-06,
+  "first_row_and_cached_offsets": "passed",
+  "completion_rule": "uniform causal; original tensor used for dtype only",
+  "default_policy": "uniform",
+  "elapsed_seconds": 5.968252599937841
+}

@@ -1,0 +1,104 @@
+{
+ "source": "out/phase2_downstream_v2.json",
+ "unit": "article (last-token KL)",
+ "test": "two-sided Wilcoxon signed-rank on per-article KL difference a-b",
+ "effect_size": "matched-pairs rank-biserial; negative favors a",
+ "results": {
+  "gpt2": {
+   "phase2:svd:16 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -0.17092635180047533,
+    "wilcoxon_p": 0.00013166078939307272,
+    "rank_biserial": -0.27565661478599224,
+    "share_a_lower": 0.58203125
+   },
+   "phase2:svd:8 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": 0.2604251372221188,
+    "wilcoxon_p": 5.2106635559962115e-06,
+    "rank_biserial": 0.3284897859922179,
+    "share_a_lower": 0.37109375
+   }
+  },
+  "gpt2-medium": {
+   "phase2:svd:16 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -1.4668712118681415,
+    "wilcoxon_p": 1.963761526143407e-35,
+    "rank_biserial": -0.895671206225681,
+    "share_a_lower": 0.89453125
+   },
+   "phase2:svd:8 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -0.73174643161416,
+    "wilcoxon_p": 2.2107895630511078e-23,
+    "rank_biserial": -0.7183244163424124,
+    "share_a_lower": 0.80859375
+   }
+  },
+  "EleutherAI/pythia-410m": {
+   "phase2:svd:16 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -2.0442282639424416,
+    "wilcoxon_p": 3.708588361728433e-43,
+    "rank_biserial": -0.9930082684824902,
+    "share_a_lower": 0.984375
+   },
+   "phase2:svd:8 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -0.9394435144889665,
+    "wilcoxon_p": 6.178836473507405e-31,
+    "rank_biserial": -0.8338399805447471,
+    "share_a_lower": 0.85546875
+   }
+  },
+  "EleutherAI/pythia-1.4b": {
+   "phase2:svd:16 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -2.0446031212474285,
+    "wilcoxon_p": 1.7337721315349854e-43,
+    "rank_biserial": -0.9969601167315175,
+    "share_a_lower": 0.984375
+   },
+   "phase2:svd:8 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -0.8364205888334704,
+    "wilcoxon_p": 1.2341438414780214e-31,
+    "rank_biserial": -0.84375,
+    "share_a_lower": 0.83984375
+   }
+  },
+  "Qwen/Qwen2.5-0.5B": {
+   "phase2:svd:16 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -2.931813310082661,
+    "wilcoxon_p": 1.022398179995832e-43,
+    "rank_biserial": -0.9996960116731517,
+    "share_a_lower": 0.9921875
+   },
+   "phase2:svd:8 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": -1.8293400666580606,
+    "wilcoxon_p": 5.505200145650775e-41,
+    "rank_biserial": -0.9666220817120622,
+    "share_a_lower": 0.94140625
+   }
+  },
+  "Qwen/Qwen2.5-3B": {
+   "phase2:svd:16 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": 1.8934049758992182,
+    "wilcoxon_p": 2.4044307695823784e-30,
+    "rank_biserial": 0.8253891050583657,
+    "share_a_lower": 0.16796875
+   },
+   "phase2:svd:8 - phase2:geom": {
+    "n_articles": 256,
+    "median_difference": 2.3179612443946738,
+    "wilcoxon_p": 8.937234185774939e-38,
+    "rank_biserial": 0.9262524319066148,
+    "share_a_lower": 0.08203125
+   }
+  }
+ }
+}

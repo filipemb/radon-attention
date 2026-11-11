@@ -1,0 +1,68 @@
+{
+  "n": 128,
+  "uniform": {
+    "n": 128,
+    "normal_angles": 180,
+    "angle_step_degrees": 1.0,
+    "angle_interval": "[0, pi)",
+    "offset_step_pixels": 1,
+    "strip_rule": "floor(j*cos(theta)+i*sin(theta)+0.5)==rho",
+    "causal_pixels": 8256,
+    "n_atoms": 25025,
+    "nonzeros": 1486080,
+    "decay_rates_per_n_pixels": [
+      0.0
+    ],
+    "normalization": "unit Frobenius norm after causal restriction"
+  },
+  "profiled": {
+    "n": 128,
+    "normal_angles": 180,
+    "angle_step_degrees": 1.0,
+    "angle_interval": "[0, pi)",
+    "offset_step_pixels": 1,
+    "strip_rule": "floor(j*cos(theta)+i*sin(theta)+0.5)==rho",
+    "causal_pixels": 8256,
+    "n_atoms": 125125,
+    "nonzeros": 7430400,
+    "decay_rates_per_n_pixels": [
+      0.0,
+      1.0,
+      -1.0,
+      4.0,
+      -4.0
+    ],
+    "normalization": "unit Frobenius norm after causal restriction"
+  },
+  "radon": {
+    "n": 128,
+    "normal_angles": 180,
+    "angle_step_degrees": 1.0,
+    "angle_interval": "[0, pi)",
+    "offset_step_pixels": 1,
+    "strip_rule": "floor(j*cos(theta)+i*sin(theta)+0.5)==rho",
+    "causal_pixels": 8256,
+    "n_atoms": 25025,
+    "nonzeros": 1486080,
+    "decay_rates_per_n_pixels": [
+      0.0
+    ],
+    "normalization": "unit Frobenius norm after causal restriction",
+    "shape": [
+      25025,
+      8256
+    ],
+    "unknowns": 8256,
+    "overdetermination_ratio": 3.0311288759689923,
+    "lambda_max_RtR": 15211.129127564742,
+    "lambda_min_RtR_estimate": 4.186171007603653,
+    "condition_2_estimate": 60.279861217229545,
+    "rank_evidence": "positive smallest Ritz value; numerical estimate, not exact rank proof",
+    "eigensolver_tolerances": {
+      "largest": 0.0001,
+      "smallest": 0.001
+    }
+  },
+  "lipschitz_safe_row_sum_bound": 17867.0,
+  "seconds": 21.257117399945855
+}

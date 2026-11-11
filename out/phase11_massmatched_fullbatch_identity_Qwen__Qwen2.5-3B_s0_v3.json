@@ -1,0 +1,3029 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "seed": 0,
+  "dtype": "torch.bfloat16",
+  "original_batch": 4,
+  "matched_batch": 8,
+  "n_independent_items": 600,
+  "native_same_batch_identity_exact": true,
+  "source_sha256": "895c3a8dedb165246e98e13ff4cd1dad8269cb06a3e55b8c388b0cbcae6077ce",
+  "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+  "payload_sha256": "750ef561c220e6292507d8cd210895b1c3e2a4654a96da599f579c08d6b603a5",
+  "historical": {
+    "job_path": "out/phase11_items_Qwen__Qwen2.5-3B_s0_historical_v3.json",
+    "job_sha256": "e5c716b0fabc29b7557adb27c5cc10cf1396666514979b4f4709afeaca80da55",
+    "pairs_path": "out/pairs/phase11_items_Qwen__Qwen2.5-3B_s0_historical_v3.jsonl",
+    "pairs_sha256": "db05c9a80d694e4108e54f30ab9e8642d7ced80edb216d44ba0312ffc531754a"
+  },
+  "pairs_path": "out/pairs/phase11_massmatched_fullbatch_identity_Qwen__Qwen2.5-3B_s0_v3.jsonl",
+  "pairs_sha256": "dc793bb8b0638a9711327466ee20e1a2a068facd52f36cf61c4375204728b089",
+  "n_original_correct": 96,
+  "n_copy1_correct": 95,
+  "n_copy2_correct": 95,
+  "n_argmax_changed_original_copy1": 18,
+  "n_correctness_changed_original_copy1": 5,
+  "n_correctness_changed_between_copies": 0,
+  "batch_checks": [
+    {
+      "indices": [
+        400,
+        401,
+        402,
+        403
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003321409225463867,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        404,
+        405,
+        406,
+        407
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003125905990600586,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        408,
+        409,
+        410,
+        411
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00308990478515625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        412,
+        413,
+        414,
+        415
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003378629684448242,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        416,
+        417,
+        418,
+        419
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030670166015625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        420,
+        421,
+        422,
+        423
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003258347511291504,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        424,
+        425,
+        426,
+        427
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031119585037231445,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        428,
+        429,
+        430,
+        431
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003055572509765625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        432,
+        433,
+        434,
+        435
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00317537784576416,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        436,
+        437,
+        438,
+        439
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032275915145874023,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        440,
+        441,
+        442,
+        443
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003139495849609375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        444,
+        445,
+        446,
+        447
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003169536590576172,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        448,
+        449,
+        450,
+        451
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032567977905273438,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        452,
+        453,
+        454,
+        455
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032958984375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        456,
+        457,
+        458,
+        459
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031630992889404297,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        460,
+        461,
+        462,
+        463
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00323486328125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        464,
+        465,
+        466,
+        467
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031664371490478516,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        468,
+        469,
+        470,
+        471
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003173828125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        472,
+        473,
+        474,
+        475
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003173828125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        476,
+        477,
+        478,
+        479
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003173828125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        480,
+        481,
+        482,
+        483
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003335237503051758,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        484,
+        485,
+        486,
+        487
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031518936157226562,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        488,
+        489,
+        490,
+        491
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030530691146850586,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        492,
+        493,
+        494,
+        495
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00341796875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        496,
+        497,
+        498,
+        499
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00319516658782959,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        500,
+        501,
+        502,
+        503
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003150343894958496,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        504,
+        505,
+        506,
+        507
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030826330184936523,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        508,
+        509,
+        510,
+        511
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003203094005584717,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        512,
+        513,
+        514,
+        515
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031548738479614258,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        516,
+        517,
+        518,
+        519
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032958984375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        520,
+        521,
+        522,
+        523
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030460357666015625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        524,
+        525,
+        526,
+        527
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031700730323791504,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        528,
+        529,
+        530,
+        531
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030564069747924805,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        532,
+        533,
+        534,
+        535
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031391382217407227,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        536,
+        537,
+        538,
+        539
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003058910369873047,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        540,
+        541,
+        542,
+        543
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003066122531890869,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        544,
+        545,
+        546,
+        547
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032958984375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        548,
+        549,
+        550,
+        551
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031067728996276855,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        552,
+        553,
+        554,
+        555
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003090381622314453,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        556,
+        557,
+        558,
+        559
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032235383987426758,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        560,
+        561,
+        562,
+        563
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032711029052734375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        564,
+        565,
+        566,
+        567
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032039880752563477,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        568,
+        569,
+        570,
+        571
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033092498779296875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        572,
+        573,
+        574,
+        575
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033860206604003906,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        576,
+        577,
+        578,
+        579
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0034461617469787598,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        580,
+        581,
+        582,
+        583
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003204345703125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        584,
+        585,
+        586,
+        587
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030602216720581055,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        588,
+        589,
+        590,
+        591
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033499598503112793,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        592,
+        593,
+        594,
+        595
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033926963806152344,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        596,
+        597,
+        598,
+        599
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003252744674682617,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        600,
+        601,
+        602,
+        603
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003173828125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        604,
+        605,
+        606,
+        607
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003143310546875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        608,
+        609,
+        610,
+        611
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033006668090820312,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        612,
+        613,
+        614,
+        615
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003200531005859375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        616,
+        617,
+        618,
+        619
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003269195556640625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        620,
+        621,
+        622,
+        623
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003078460693359375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        624,
+        625,
+        626,
+        627
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003170490264892578,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        628,
+        629,
+        630,
+        631
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031435489654541016,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        632,
+        633,
+        634,
+        635
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032235383987426758,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        636,
+        637,
+        638,
+        639
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031478404998779297,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        640,
+        641,
+        642,
+        643
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032451748847961426,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        644,
+        645,
+        646,
+        647
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00323486328125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        648,
+        649,
+        650,
+        651
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031534433364868164,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        652,
+        653,
+        654,
+        655
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031557083129882812,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        656,
+        657,
+        658,
+        659
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031375885009765625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        660,
+        661,
+        662,
+        663
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00311279296875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        664,
+        665,
+        666,
+        667
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00330352783203125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        668,
+        669,
+        670,
+        671
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003278970718383789,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        672,
+        673,
+        674,
+        675
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003204345703125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        676,
+        677,
+        678,
+        679
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033582448959350586,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        680,
+        681,
+        682,
+        683
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003329038619995117,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        684,
+        685,
+        686,
+        687
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032194852828979492,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        688,
+        689,
+        690,
+        691
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031032562255859375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        692,
+        693,
+        694,
+        695
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030546188354492188,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        696,
+        697,
+        698,
+        699
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031790733337402344,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        700,
+        701,
+        702,
+        703
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032210350036621094,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        704,
+        705,
+        706,
+        707
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003102540969848633,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        708,
+        709,
+        710,
+        711
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003084540367126465,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        712,
+        713,
+        714,
+        715
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003437519073486328,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        716,
+        717,
+        718,
+        719
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031982064247131348,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        720,
+        721,
+        722,
+        723
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003115534782409668,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        724,
+        725,
+        726,
+        727
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00341796875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        728,
+        729,
+        730,
+        731
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003172457218170166,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        732,
+        733,
+        734,
+        735
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003128647804260254,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        736,
+        737,
+        738,
+        739
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032335519790649414,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        740,
+        741,
+        742,
+        743
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003150343894958496,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        744,
+        745,
+        746,
+        747
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032221078872680664,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        748,
+        749,
+        750,
+        751
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031276345252990723,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        752,
+        753,
+        754,
+        755
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032958984375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        756,
+        757,
+        758,
+        759
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032451748847961426,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        760,
+        761,
+        762,
+        763
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00313568115234375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        764,
+        765,
+        766,
+        767
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00311279296875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        768,
+        769,
+        770,
+        771
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00341796875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        772,
+        773,
+        774,
+        775
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003322422504425049,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        776,
+        777,
+        778,
+        779
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032029151916503906,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        780,
+        781,
+        782,
+        783
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00345611572265625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        784,
+        785,
+        786,
+        787
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032501220703125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        788,
+        789,
+        790,
+        791
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031729936599731445,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        792,
+        793,
+        794,
+        795
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003161311149597168,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        796,
+        797,
+        798,
+        799
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032902956008911133,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        800,
+        801,
+        802,
+        803
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033037662506103516,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        804,
+        805,
+        806,
+        807
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030537843704223633,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        808,
+        809,
+        810,
+        811
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003197968006134033,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        812,
+        813,
+        814,
+        815
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032958984375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        816,
+        817,
+        818,
+        819
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003173828125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        820,
+        821,
+        822,
+        823
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031385421752929688,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        824,
+        825,
+        826,
+        827
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033457279205322266,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        828,
+        829,
+        830,
+        831
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00311279296875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        832,
+        833,
+        834,
+        835
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003372669219970703,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        836,
+        837,
+        838,
+        839
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003325939178466797,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        840,
+        841,
+        842,
+        843
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032749176025390625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        844,
+        845,
+        846,
+        847
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031632184982299805,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        848,
+        849,
+        850,
+        851
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003194093704223633,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        852,
+        853,
+        854,
+        855
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031890869140625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        856,
+        857,
+        858,
+        859
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00315093994140625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        860,
+        861,
+        862,
+        863
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003240346908569336,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        864,
+        865,
+        866,
+        867
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003170013427734375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        868,
+        869,
+        870,
+        871
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032297372817993164,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        872,
+        873,
+        874,
+        875
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003570556640625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        876,
+        877,
+        878,
+        879
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003666400909423828,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        880,
+        881,
+        882,
+        883
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030614137649536133,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        884,
+        885,
+        886,
+        887
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033223628997802734,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        888,
+        889,
+        890,
+        891
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00330352783203125,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        892,
+        893,
+        894,
+        895
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032958984375,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        896,
+        897,
+        898,
+        899
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003076314926147461,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        900,
+        901,
+        902,
+        903
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032196044921875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        904,
+        905,
+        906,
+        907
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0033631324768066406,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        908,
+        909,
+        910,
+        911
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003069162368774414,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        912,
+        913,
+        914,
+        915
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0030684471130371094,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        916,
+        917,
+        918,
+        919
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003209829330444336,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        920,
+        921,
+        922,
+        923
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003326714038848877,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        924,
+        925,
+        926,
+        927
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003025054931640625,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        928,
+        929,
+        930,
+        931
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003148794174194336,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        932,
+        933,
+        934,
+        935
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003100275993347168,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        936,
+        937,
+        938,
+        939
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003058791160583496,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        940,
+        941,
+        942,
+        943
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00341796875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        944,
+        945,
+        946,
+        947
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032024383544921875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        948,
+        949,
+        950,
+        951
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003306865692138672,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        952,
+        953,
+        954,
+        955
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032404661178588867,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        956,
+        957,
+        958,
+        959
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032085180282592773,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        960,
+        961,
+        962,
+        963
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003077387809753418,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        964,
+        965,
+        966,
+        967
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003215789794921875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        968,
+        969,
+        970,
+        971
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032967329025268555,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        972,
+        973,
+        974,
+        975
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032227039337158203,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        976,
+        977,
+        978,
+        979
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0032874345779418945,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        980,
+        981,
+        982,
+        983
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0031943321228027344,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        984,
+        985,
+        986,
+        987
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00311279296875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        988,
+        989,
+        990,
+        991
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.00341796875,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        992,
+        993,
+        994,
+        995
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.0034803152084350586,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    },
+    {
+      "indices": [
+        996,
+        997,
+        998,
+        999
+      ],
+      "validation": {
+        "base": {
+          "negative_nan_inf_upper_nonzero": 0,
+          "row_sum_violations": 0,
+          "max_row_error_after_cast": 0.003113269805908203,
+          "rows_checked": 1179648
+        },
+        "sink": {},
+        "control": {},
+        "mass": {}
+      },
+      "two_native_copies_logits_bit_equal": true
+    }
+  ],
+  "elapsed_seconds": 112.89799310010858
+}

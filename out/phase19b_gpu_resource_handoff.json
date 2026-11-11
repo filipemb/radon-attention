@@ -1,0 +1,19 @@
+{
+  "cpu_pid": 18084,
+  "cpu_created": 1794286705.6360457,
+  "cpu_arguments": [
+    "python.exe",
+    "-B",
+    "-u",
+    "phase19b_runner.py",
+    "cpu",
+    "--slot",
+    "2"
+  ],
+  "pause_time_unix": 1794291205.7918124,
+  "cpu_worker_slot": 2,
+  "gpu_worker_slot": 3,
+  "maximum_active_calculation_processes": 3,
+  "threads_each": 4,
+  "policy": "Two CPU workers plus GPU while lock is held; otherwise three CPU workers"
+}

@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-11-10T17:59:31.513133+00:00",
+  "original_Linux_coordinator_and_descendants_absent": true,
+  "original_Windows_PIDs_absent": [
+    31288,
+    50504,
+    64804,
+    40364,
+    65824
+  ],
+  "observed_windows_process_check": "Get-CimInstance exact ProcessId filter; empty results",
+  "no_other_experiment_process_signalled": true,
+  "old_outputs_preserved": true
+}

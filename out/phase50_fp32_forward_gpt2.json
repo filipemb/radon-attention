@@ -1,0 +1,19 @@
+{
+  "model": "gpt2",
+  "n_articles": 64,
+  "arms_run": [
+    "svd_K_diag_exact"
+  ],
+  "ALS_validation_passed": false,
+  "unavailable_arms": [
+    "masked_K",
+    "named_plus_masked",
+    "masked_K_diag_exact"
+  ],
+  "aliases": {},
+  "pairs_path": "out/pairs/phase50_fp32_forward_gpt2.jsonl",
+  "pairs_sha256": "725359e0a042220a0c3af4f3749a44a34680d2d5f4b9d233684ed08a1ea8e9d4",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "sample_sha256": "dcd06a205aafdb63a6d687aa6b55982837590a21f113f8853e457c66caf9ba54",
+  "elapsed_seconds": 74.30918310000561
+}

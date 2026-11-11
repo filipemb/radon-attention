@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "seed": 0,
+  "variant": "historical",
+  "arm": "1.0",
+  "dtype": "torch.float32",
+  "payload_sha256": "5fee12a1f997c498d4f8a233fcee33769f5882a04f75121233c89222735b08ea",
+  "source_hashes": {
+    "phase8_lostmiddle.py": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+    "phase11_kv.py": "883104a7acdbee3bc2d6dfead734550a5c081b031a5e4f0021b53bb7bb84edac",
+    "phase16_longcontext.py": "b6814bbc69a3498013832d2229f4f0ec474055685ff2835d69d1d83916e92eaa",
+    "phase18_betacv.py": "f4d240d48706df4e9e7990326f1555628290ce4e1048a4ba44ac8fcb95cff3b2",
+    "phase2_downstream.py": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "revision_v3_probes.py": "8aab9a6b020a70af460a6d5170a14d706d3f991a844d77b1117448df814f2ec5",
+    "phase45_currentcv_items.py": "8f61cd2e7623412175284ebbc8f1e0242ac3a4fe786c9f10c42163b73a2ccf7f",
+    "phase28_beta0_retest.py": "b506f44df8759763b9a2543833cfbff9b27f349db56139e3df5e42505587628d",
+    "revision_v3_stats.py": "fa53651d82018d93faaffa755d00c2d8b05a1166f6ef63cb5c3dfcc04e19f979"
+  },
+  "pairs_path": "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s0_historical_b1.0_v3.jsonl",
+  "pairs_sha256": "f14aad87946d454c450fa4d927fd775523a32fe94b07b3a9e2ba6487b010cf29",
+  "n_raw_records": 2400,
+  "native_identity_logits_bit_equal": true,
+  "batch": 8,
+  "n_identity_preflight_sequences": 4,
+  "n_length_buffer_warmup_sequences": 0,
+  "reset_batch_at_each_position": true,
+  "positive_beta_legacy_weights_compared_every_item_and_layer": true,
+  "all_attention_and_equality_sanities_passed": true,
+  "legacy_attention_intentionally_invalid": false,
+  "elapsed_seconds": 105.66264909994788
+}

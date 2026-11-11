@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "paired_not_marginal": true,
+  "document_weighting": true,
+  "undefined_codec_not_imputed_or_conditioned": true,
+  "Holm_uses_full_planned_family_with_missing_codecs": true,
+  "all_ties_explicit": true
+}

@@ -1,0 +1,144 @@
+{
+  "created_UTC": "2026-11-10T17:44:16.400905+00:00",
+  "experiment": "E9 FP32 revision requested by user",
+  "parent_protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "old_outputs_preserved": true,
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-1.4b",
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-3B"
+  ],
+  "K": [
+    8,
+    16
+  ],
+  "n": 128,
+  "ALS": {
+    "dtype": "float32",
+    "sweeps": 200,
+    "early_stop": false,
+    "initialization": "truncated SVD, singular-value square roots; same stored double initialization rounded to FP32 for CPU/GPU validation",
+    "normal_equations": "prefix/suffix cumulative outer products; target@factor RHS; batched KxK Cholesky solves",
+    "ridge_relative_to_trace": 1e-06,
+    "ridge_absolute_floor_on_normalized_target": 1e-30,
+    "ridge_rationale": "each causal prefix/suffix with fewer than K observations has singular Gram; FP32 normal equations also square conditioning",
+    "ridge_uniform_across_all_models_and_b_c_f": true,
+    "TF32": false,
+    "balance": "QR of both factors; SVD of Ru Rv^T; split sqrt(singular values) after EACH sweep",
+    "CPU_recomputation": false,
+    "objective_increases": "record all; do not stop or reject regularized block updates",
+    "GPU_graph_allowed": "same FP32 algebra only; component/product controls before estimator validation"
+  },
+  "validation": {
+    "same_32_archive_indices_as_previous": true,
+    "both_K_and_b_c": true,
+    "n_fits_per_model": 128,
+    "reference": "independent archived CPU float64 estimator, 200 sweeps, unregularized same initial factors",
+    "max_absolute_raw_relative_frobenius_error_difference_tolerance": 0.002,
+    "report_also_normalized_frobenius_and_TV": true,
+    "no_CPU_correction": true,
+    "on_failure": "preserve all diagnostics; continue validation in remaining models; no qualified behavioral claim for failed FP32 estimator; never relax threshold"
+  },
+  "timing_and_sample": {
+    "GPU_limit_seconds_for_256_articles_all_models_b_c_e_f_both_K": 28800,
+    "timing_batch_size": 2,
+    "performance_probe_articles": [
+      0,
+      1
+    ],
+    "no_KL_outcome_selected_sample": true,
+    "estimate": "per-model actual first two-article batch (all required arms/both K); subtract one-time controls/load/graph compilation for steady estimate, include measured native/SVD controls and reload overhead per model; extrapolate128 batches and conservatively multiply by1.2",
+    "if_estimate_le_28800": "all256 documents in corpus order",
+    "otherwise": "first64 documents0..63 of original corpus, the same documents as frozen matrix sample, all arms and models",
+    "release_GPU_lock": "between every model; also between timing/validation stages",
+    "sample_freeze": "write out/phase50_fp32_sample.json after timing and before any scientific forward scoring",
+    "if_validation_fails": "time estimator anyway; report the failure; forward only numerically qualified masked models; e independent of ALS remains eligible"
+  },
+  "unchanged": {
+    "harness_sha256": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "corpus_manifest_sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+    "heads": {
+      "gpt2": [
+        [
+          4,
+          11
+        ]
+      ],
+      "gpt2-medium": [
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "EleutherAI/pythia-410m": [],
+      "EleutherAI/pythia-1.4b": [],
+      "Qwen/Qwen2.5-0.5B": [
+        [
+          0,
+          1
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "Qwen/Qwen2.5-3B": [
+        [
+          0,
+          12
+        ],
+        [
+          27,
+          8
+        ]
+      ]
+    },
+    "storage": {
+      "cap": "K*(2n+1)",
+      "a_d": "SVD cost K*(2n+1); named S cost 2*active_atoms plus (K-1)*(2n+1)",
+      "b_c": "masked cost 2*n*K; named S cost 2*active_atoms plus 2*n*(K-1)",
+      "e_f": "same rank cap on reconstructed heads; identical heads kept exact in both ablations (extra exact-head storage, not a globally fixed-cap compression claim)"
+    },
+    "matrix_sample": "same384/model,64 documents,6 layer strata; prior CPU float64 matrix results remain explicitly a distinct estimator"
+  },
+  "statistics": {
+    "describe": "import phase24.describe;2000 whole-article bootstrap samples,seed0",
+    "paired_comparisons": [
+      [
+        "masked_K",
+        "named_plus_svd"
+      ],
+      [
+        "named_plus_masked",
+        "named_plus_svd"
+      ],
+      [
+        "named_plus_masked",
+        "masked_K"
+      ],
+      [
+        "svd_K_diag_exact",
+        "svd_K"
+      ],
+      [
+        "masked_K_diag_exact",
+        "masked_K"
+      ]
+    ],
+    "tests": "two-sided Wilcoxon per article, wilcox zeros, asymptotic p; rank-biserial positive favors right",
+    "Holm_family_size": 60,
+    "missing_comparisons": "unavailable, no fabricated p; missing hypotheses treated as p=1 for planned family60 correction"
+  },
+  "fixed_before_new_FP32_results": true
+}

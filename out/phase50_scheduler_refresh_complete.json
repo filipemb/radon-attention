@@ -1,0 +1,10 @@
+{
+  "completed_UTC": "2026-11-10T16:55:03.691587+00:00",
+  "old_coordinator_pid": 37158,
+  "completed_probe_flock_pid": 70487,
+  "probe_exit_code": 0,
+  "probe_records": 16,
+  "old_coordinator_action": "TERM and CONT after its own child completed successfully; no fit was interrupted",
+  "new_scheduler_chunk_documents": 2,
+  "new_scheduler_log": "out/phase50_coordinator_v5_execution.log"
+}

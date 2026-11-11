@@ -1,0 +1,6 @@
+{
+  "created_UTC": "2026-11-10T16:00:23.075820+00:00",
+  "reason": "the original coordinator and supervisor stopped on the preserved GPU validation failure; the corrected estimator will start in a detached coordinator directly, so an exit75 handoff is unnecessary",
+  "original_GPU_failure_kept": "out/phase50_GPU_validation_gpt2.json",
+  "CPU_reference_policy": "out/phase50_numerical_fallback.json"
+}

@@ -1,0 +1,972 @@
+{
+  "schema_version": 2,
+  "created_UTC": "2026-11-10T00:14:24.271893+00:00",
+  "files": [
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_after_v1.log",
+      "bytes": 93,
+      "sha256": "93523e85909564af75c03ef8319ed36e644728a26ddd9d8bb13e423cbba2a914"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_budget_conventions.log",
+      "bytes": 10895,
+      "sha256": "cc58aa7368a6b5abe1ae3319e309660ea2edd72a30f1a2d874a2682cc7ceb915"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_checks.log",
+      "bytes": 149,
+      "sha256": "baa373880a83ed4bdeee884060da07c9222965407cd8d1a500ab27a4a6944249"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_core.log",
+      "bytes": 5518,
+      "sha256": "7148134b07dd90c4a2f27d0f699964fab4d2bb1940b5761da90509be11aa2c34"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_endpoint_check_n256.log",
+      "bytes": 242,
+      "sha256": "14b1c1339c977a9989923e202ea9465541b78230846a5934f340d3f47d7dad92"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_endpoint_preview.log",
+      "bytes": 20333,
+      "sha256": "3ea55b66cb02ec6f2f0d6687d832b689668a0b050702c3d66c00dfe1f1858d4a"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_finalize.log",
+      "bytes": 116,
+      "sha256": "e8ccef3198b7abc086213853455c6bf59a5b0918665e1159a38463f0a8e9424a"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_integrity_checks.log",
+      "bytes": 466,
+      "sha256": "52307ce759ebc24bff1181bf874099f0ce8fc1349aa272273c9901f0828ec837"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_matrix_review.log",
+      "bytes": 147,
+      "sha256": "da8578e48b0e5d6bb0b91029206472d727de791a9c0cc069f63f51bc5f97cd66"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_matrix_review_tables.md",
+      "bytes": 17954,
+      "sha256": "9b6938fd778aed612ba1b6f4369e4a73c3f9027658cca1db712f0cd4bb266280"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_omp_benchmark.log",
+      "bytes": 353,
+      "sha256": "b0ab3f0e93ad975cfb90b4cc12408e70f16641cc0a9cf05c5e285ca04fe462c3"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_progress.md",
+      "bytes": 72410,
+      "sha256": "946d9d365e639fb66d243d1a2d67f62c2d35eef79c6fb2b1ca0bc625526c85b0"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_publish_endpoints.log",
+      "bytes": 1934,
+      "sha256": "56bd665fc472b6a2eb80a0c302d268ad57b69536b8d33d318350af5a4b8808b3"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_rank_comparison.log",
+      "bytes": 2404,
+      "sha256": "45476adbf5818fb5cdac8c337a1d05cb9815d009cbcfe80865136868cb3c9392"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_residuals.log",
+      "bytes": 9406,
+      "sha256": "f1261e76b710b4fc12c37b8a3e002bed9db61e6567c7fffc549fcf16e86381d9"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_results.md",
+      "bytes": 19988,
+      "sha256": "da94f0e751de50b7172ae51d21e3893abb99b32c9329f7d98c76ac759bd9be86"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_review.log",
+      "bytes": 140,
+      "sha256": "f82ff7c6c5e3c2d33009aab377298b9067348d4471d4edc9c383b2a2c3a9d68c"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_review_tables.md",
+      "bytes": 13807,
+      "sha256": "fea119b52f3355e42c67ad1cdb6e1e628492d9045465ba51fdd87935b3b7ff49"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_shared_SVD_adapter_checks.log",
+      "bytes": 149,
+      "sha256": "baa373880a83ed4bdeee884060da07c9222965407cd8d1a500ab27a4a6944249"
+    },
+    {
+      "path": "out/_rerun_logs/phase21_allocation_v2_V1_wait.log",
+      "bytes": 9957,
+      "sha256": "0ca86cbd5ad0e0d7874ed097252458da499568252e487ca27563d1ec8a6992af"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 5166297,
+      "sha256": "8101732c5d42b337b408428cfc1ddf94e5e381206ef0c3e6fb00ed6a7c4bc9f5"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 5168253,
+      "sha256": "d7f3638093053d88423c3005f7c4156bb517be9f3b7fd774445301aa04448699"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 5181992,
+      "sha256": "e900c5474ae5b302829aec623c6045598d84b2dd5aa8aad0eba1567e4f812bfd"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 5178155,
+      "sha256": "554f34b6f974cd0ab2dfa836eaece24e0d98e7e837844f6ab9bb150989a9fae3"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_gpt2-medium_n128_v2.jsonl",
+      "bytes": 5166896,
+      "sha256": "3ab7e910888f4ec4aae192548ed8aa7b2e7cdee90bb4167e6cbb36d0b878105a"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_gpt2-medium_n256_v2.jsonl",
+      "bytes": 5162255,
+      "sha256": "e1765312fa1321ea8dd6311c9c8afb38f977518548773809c73cde85ff7fa109"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_gpt2_n128_v2.jsonl",
+      "bytes": 5123304,
+      "sha256": "7ea9361331e2e87f6188289f712134b86f1a88d9f2384eadbf26871604901000"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_gpt2_n256_v2.jsonl",
+      "bytes": 5110822,
+      "sha256": "76c671e2620b3d62cc337e131575417e64afcb1c247f8ddfa8b4f373bc12aeed"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 5165231,
+      "sha256": "8a041e3ea7ba4123646538aff597cba05c4fa17d3da344cbe1ca2d94a23645e7"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 5161556,
+      "sha256": "207a82a6f805b7310187d3110c5383fdb8ea6195c031b7bfc0875a031a97f84e"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 7750587,
+      "sha256": "9d59674d95820f27b24aa8c07257bc7ebfe84ecc8fbd13ec5467307605ffc601"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_budget8_conventions_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 7761920,
+      "sha256": "1806bd8e7eb089f3ad341804ab7ba26df20631271d99843d90189dccbcd9bd41"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 45556121,
+      "sha256": "d4d933373173cc7efe3a4e55152f214cef8385b3fa383c96ebe29e24b398028f"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 53578900,
+      "sha256": "9d12793529efdf664330753b100b9f3ee31a5c7c28d6e743fdbe2ffce956f234"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 45662365,
+      "sha256": "ef0ad51c864a72e3525908cb8df03d9adff1a197ed254d431db83cb7128d8948"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 53661857,
+      "sha256": "1f6672a0ae9c0ee1e63d79620257a526e4dd9156eb522f103f3109e565c423ab"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_gpt2-medium_n128_v2.jsonl",
+      "bytes": 45732881,
+      "sha256": "92c3a3b856b7737c9542ca85ca7c409ba8f20ca84d6b443a8be4cf749c90d636"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_gpt2-medium_n256_v2.jsonl",
+      "bytes": 53793482,
+      "sha256": "7812a8e10f0fc237a9c312b88efb1960deefc152b9c7017b7fe2d0282fe6b33a"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_gpt2_n128_v2.jsonl",
+      "bytes": 45547173,
+      "sha256": "b549e9b130a29633dd09fdd822f47e5b9bd443d626a652e76146feb9bc83738a"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_gpt2_n256_v2.jsonl",
+      "bytes": 53500051,
+      "sha256": "e507149b57052497231c9ee0d35107951abad1cb86c2bf575e37170357a349e1"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 45638892,
+      "sha256": "9811cb04616d154ac262745d77381f79bd2b3a62284f2d309d5a935c6d21b8e7"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 53650496,
+      "sha256": "e7d6f1fe176283d3bfbfc70c302bc18cfea9a2149490378376f795833134ac92"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 68476276,
+      "sha256": "2227c8a97740bfe489842fb8ac0c52e08b8e841b14096b9bac7be548c4fd65e2"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_core_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 80601931,
+      "sha256": "702018c70cedd2fc68a9754abfc09054831034dfba617722926c0b06b610a95a"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 49956757,
+      "sha256": "a6d93134973431ed158148e3eb7fdcea5097e482f5ed4a28c8ab7d1a0577bcc4"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 61773408,
+      "sha256": "c63c89c042f6df9dd91cf51f7e77c75de8969dcfef61eeac92fb433960f54f35"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 50124803,
+      "sha256": "23e706cdff4a272fb3c391e047fde332d3e67b323440cca982c5fe5ea6e9ddf7"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 61904767,
+      "sha256": "865c1d06add4d6c1675e2f5d88160b8d707712dc903f9e6d3a08acb284b05ed7"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 49947541,
+      "sha256": "8078241ddf3f356d76232ac1d47e1b41ca65ca6c732e69969b21962de0507209"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 61764192,
+      "sha256": "d86c84e8e7f6c54227c608c27c3c4ac8618063647b38de2d61bf0b9490710787"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 50115587,
+      "sha256": "1968f2532c5b8f07ce6154589051f85d06cf6169149e19824352a022a3a41302"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 61895551,
+      "sha256": "bb7300f136a9211eecfe3c25bc8b551461efdbff31ac08bc577813a8356a5327"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_gpt2-medium_n128_v2.jsonl",
+      "bytes": 50565436,
+      "sha256": "6a50872e3c54f1cd77fbd52d0df934f7a05ff2b1c356cd4defbdbfef91848f5b"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_gpt2-medium_n256_v2.jsonl",
+      "bytes": 63010189,
+      "sha256": "a091cca8eb3518502f601b74fa268d0a7c141edaba6968e48d1d668bd041b432"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_gpt2_n128_v2.jsonl",
+      "bytes": 50342254,
+      "sha256": "3c3a23ac04718a9ab45e374e2d6ac76a2a6e701f595eb4079c1bd1189539db8b"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_gpt2_n256_v2.jsonl",
+      "bytes": 62606420,
+      "sha256": "d9234c350254edde62bfd3f7b39a01e3ff52577aae6c072ab12b49f8cd740adb"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 50317998,
+      "sha256": "806d7dbbdd2c89d158dd05fdf0b7bae6c8b4562874acb03936702addec90dee2"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 62545555,
+      "sha256": "f428ea867ea961c728f8e7014c81fbd8624c7d43bd4574fa791e9ca922037ee8"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 75611808,
+      "sha256": "c32cae0934cc6acec3796d98eb13dcaa9bc7949b9600d8f4be832d3f1ace1cd9"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 94216392,
+      "sha256": "3e7cdea5f8f86232588893df9e6dfdc4c08df31476d8f64b17efa4d1c410a199"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_gpt2-medium_n128_v2.jsonl",
+      "bytes": 50574652,
+      "sha256": "a57871e3ef3281346b5b31529ed5106a10ae3993ae9b3dadd7ce2b61d8714aee"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_gpt2-medium_n256_v2.jsonl",
+      "bytes": 63019405,
+      "sha256": "ea57b1233f6c2d106df05129e1963ae9b942de5062098e02e3024df498457626"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_gpt2_n128_v2.jsonl",
+      "bytes": 50351470,
+      "sha256": "cecc3a7f5548aa0f96605e461e3e3977db251318b26dc2b29c79ab5b3995da87"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_gpt2_n256_v2.jsonl",
+      "bytes": 62615636,
+      "sha256": "00c7dd9a1c20ac0b7bce0f573038f8cbef126ae8cb4ce838efc7347c0ad3fa60"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 50327214,
+      "sha256": "dadac8e886f6ec18a8b556cc78dfb52ab4be72a40b55850ad4e0f5a96e73deb2"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 62554771,
+      "sha256": "d9fb61767ebc5c805532994de2c66330a02c2344fd7a53c97d48a91d3279918d"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 75625632,
+      "sha256": "305133d4a5121dd793d4c63a96a88302095b23655e9ea2729eb9b62a26ed6120"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 94230216,
+      "sha256": "f41e4da33b39a87fabf3494fea55008692d87a3acc5524ff3de87e4a4f0b3a03"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 10133317,
+      "sha256": "9becfd8ecc13bd664c4995bf6d0aa777ffcc28008aa35094a63a49a15b345edc"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 10139077,
+      "sha256": "dccc34e67e380930738ea3a5ad9588169ce85b7d7cb361e483d94ca17f73d201"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 10133254,
+      "sha256": "00aa52dda81765d63d9c37459b4d55935828a32b6f686b50514de9fddd73c217"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 10137941,
+      "sha256": "8f57c1898ab5b47cab9e8a6028a4ae044e585dd65f6d7b3d8f74dbf81f6a73fc"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_gpt2-medium_n128_v2.jsonl",
+      "bytes": 10109006,
+      "sha256": "3865376c825d027556f767355f7722d1d9b1e47c2f66f21a0f2ef527d1489fa0"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_gpt2-medium_n256_v2.jsonl",
+      "bytes": 10115604,
+      "sha256": "f8fc9dd2a9d3e4da33ee6071f859675a4626cc412981888bd0143fb980526890"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_gpt2_n128_v2.jsonl",
+      "bytes": 10072258,
+      "sha256": "32818d8bd25a3c3c50ed2085ccd36f08275e4bb3a2b0986b69c385850072721b"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_gpt2_n256_v2.jsonl",
+      "bytes": 10079143,
+      "sha256": "95a4fe023aa46443f5fd4737587a41d2102ea97b2f2a4c08563e73c2b6c9e244"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 10112385,
+      "sha256": "ab309d459d7cad1a1aad27129181908b6e1c49e0421192caa71e0946bbee8ee8"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 10120198,
+      "sha256": "3fb2dd3794d3022bb233d93e9ca0859d5dfa5882c4497ce6386d85f6627bdc37"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 15158691,
+      "sha256": "09edf8f611f4d1d5b5c1a1e689cfc8a8fdad014a85d81babd84f54d980bc1cbf"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_rank_comparison_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 15175755,
+      "sha256": "e376e92df7b9478c7e278b993111cecd0cf4e77ed622fe13e85c9b6cf4873198"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 7582842,
+      "sha256": "88592ff37a667fccae6e85691103617a33abaf49a5ac1e87b344c033fd6aa799"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 11679007,
+      "sha256": "cbd7b6efa373905aa1e900041e51590f70e5632b1a1f0d2f5e8a0224fd4763f2"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 7581933,
+      "sha256": "0964860a991617670008153c22ca85a20478a23e90d92a5192d8ba0ece23fd0e"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 11678554,
+      "sha256": "8b00c9d4af0d8bd7c7e100cebdaf8edc40d4e2b5477cc5ac2a887458c48a34a1"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_gpt2-medium_n128_v2.jsonl",
+      "bytes": 7575069,
+      "sha256": "cf49651e84c4f7d628eba65bb5bd3529fc26f80ae93108dec6c27a4cd94fff66"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_gpt2-medium_n256_v2.jsonl",
+      "bytes": 11698788,
+      "sha256": "f336342136f912ec925f2e8e0b86acca5fce3fa4a31e68e527f80eb4e658ace4"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_gpt2_n128_v2.jsonl",
+      "bytes": 7537057,
+      "sha256": "31b32d7ed26ea87caac93d4ed0b80ed54d7ad24383c93a579388d9146ef4ae0c"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_gpt2_n256_v2.jsonl",
+      "bytes": 11640690,
+      "sha256": "0be90eebf7586f1db01d0fb815312f1d7666b8a4217dd4f903d74ffb8d661687"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 7571212,
+      "sha256": "b5378ad778ea9920913069a13be32ec00f09392529d95ff7d46f332d9a6932cb"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 11672581,
+      "sha256": "91cef1d71ad966da2993aea4632c5bf782224f9211ea4b13d594e3f33a83bdf8"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 11331515,
+      "sha256": "336a28c9065e0f25090cfc5946b3a2c3458e54e25d33a8fa6ab9c04eb75867c4"
+    },
+    {
+      "path": "out/pairs/phase21_allocation_residuals_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 17468848,
+      "sha256": "ed1df8bda196d63789ddb3a98a998fd4e6eefde5f121424f9e95bbb90d71282c"
+    },
+    {
+      "path": "out/phase21_allocation_v2.json",
+      "bytes": 25637955,
+      "sha256": "490e8d07b89662582b0cb2d0b7d27f4275f180bd7e4005044e98816595a4af40"
+    },
+    {
+      "path": "out/phase21_allocation_v2_adapter_checks.json",
+      "bytes": 18939,
+      "sha256": "ccd173b0dadaef7503f7a563a3b5f11b608e1c92264ae717e7e4149ce5f92812"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_EleutherAI__pythia-1.4b_n128.json",
+      "bytes": 66012,
+      "sha256": "a9db01dcda5c25ab5a5131565a92cdb16eddf25e3739933e9b5dc97999b0c90c"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_EleutherAI__pythia-1.4b_n256.json",
+      "bytes": 65976,
+      "sha256": "0b07501d946d4132edbf02989895a786e549ee6a948321637e4792c4daa4a3c0"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_EleutherAI__pythia-410m_n128.json",
+      "bytes": 65738,
+      "sha256": "ad02e7fe36b8df7843e7c073a471a9b28eec76fb1ec2cea1b11c0ba20c49d2ed"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_EleutherAI__pythia-410m_n256.json",
+      "bytes": 65750,
+      "sha256": "d3dc158175333ae3908794a07d9bde44aa2a0d0b9e17deebd27b62cec2697b4b"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_gpt2-medium_n128.json",
+      "bytes": 65924,
+      "sha256": "c8eebfc3a815b80fa64051fccc52ad8f18eec588968db5629c49c77d0482c6ce"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_gpt2-medium_n256.json",
+      "bytes": 65951,
+      "sha256": "bec2b171cc3404ddb8393be57dc4565df6f73a5438ca0e67310c1f184032706f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_gpt2_n128.json",
+      "bytes": 65826,
+      "sha256": "acc156304c503b174338d025aa515ba3dd69d94d12246de41df82854c7a36960"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_gpt2_n256.json",
+      "bytes": 65674,
+      "sha256": "7b11144fd8380aff9dd4b037906c05d14350d9080882fcfe67f48d01d04a039f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_Qwen__Qwen2.5-0.5B_n128.json",
+      "bytes": 65887,
+      "sha256": "bebe2663f758e48f4046973c0a10ead1c4a86eb34218d5850bdf9ae41b1c916f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_Qwen__Qwen2.5-0.5B_n256.json",
+      "bytes": 65927,
+      "sha256": "128cc4fddf47aa9fcb0ef404a870d2aa2164290034cf9f0a84eeb861533d8edc"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_Qwen__Qwen2.5-3B_n128.json",
+      "bytes": 66142,
+      "sha256": "a48e52506e7bc74c3245c49f8442f9fc6148cfa067d041fbb04e32bce3088c4f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_budget8_conventions_Qwen__Qwen2.5-3B_n256.json",
+      "bytes": 66093,
+      "sha256": "a3545d97759c7853654bb18f2a44be887d230beb38591ae95299832ab9c86086"
+    },
+    {
+      "path": "out/phase21_allocation_v2_complete_OMP_endpoint_controls.json",
+      "bytes": 1683,
+      "sha256": "174a6a6a783a12cc29efa8db8c86bd9d57d62f353416f8bae892943957078aad"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_EleutherAI__pythia-1.4b_n128.json",
+      "bytes": 317909,
+      "sha256": "3f7f05546e32622da03d768a61e040088535488ffdf18f5ff3f889c2b47974ba"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_EleutherAI__pythia-1.4b_n256.json",
+      "bytes": 318464,
+      "sha256": "7145baf5f1d646a34f5a2d35e9519f0800b927bd14990b111c6c5a986f2e0c27"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_EleutherAI__pythia-410m_n128.json",
+      "bytes": 317918,
+      "sha256": "d53efc52d76e697085effc03d09fedbd24178a42684e1d96c1645b54f7cf1e42"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_EleutherAI__pythia-410m_n256.json",
+      "bytes": 316921,
+      "sha256": "d492c9f70a9c6ba858629740ca44bc849465ed36964635a688f80237a83062ef"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_gpt2-medium_n128.json",
+      "bytes": 318051,
+      "sha256": "a09b37f368f4b33ae5561c7d26483c5da1efe782a4352ad549635a6ed1285a2f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_gpt2-medium_n256.json",
+      "bytes": 318731,
+      "sha256": "65c739312ccbf0b6ceda449d157afcd94a0104666741e8b0d23f76176f6de2ac"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_gpt2_n128.json",
+      "bytes": 318083,
+      "sha256": "cc1980d3e82618d25b7ffb5a2f11064bb80cf5987ac7e22e9b6dad5678c11ac3"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_gpt2_n256.json",
+      "bytes": 318803,
+      "sha256": "5517a647f31826ddd5e1611e4afc9643b320605d5e54b9c29ea73ecf105f1235"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_Qwen__Qwen2.5-0.5B_n128.json",
+      "bytes": 318675,
+      "sha256": "7c14ef4194f3be0f09ecd416d8c4fdddc9d37ecde422df28c7eaa86796e96f58"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_Qwen__Qwen2.5-0.5B_n256.json",
+      "bytes": 319516,
+      "sha256": "6c461a1bf0df3bc10aca992451f6d94ef0668e2d5d43d45d4d86b4d0235541fe"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_Qwen__Qwen2.5-3B_n128.json",
+      "bytes": 319829,
+      "sha256": "f23c30d31c997c2b270c73c7377be9b3973907db79a7bc16e6b21068e7b0cd56"
+    },
+    {
+      "path": "out/phase21_allocation_v2_core_Qwen__Qwen2.5-3B_n256.json",
+      "bytes": 319649,
+      "sha256": "abac9cad67b5f46e809276f8e1fc9bf58285f8482453b1de9a2248c76156b576"
+    },
+    {
+      "path": "out/phase21_allocation_v2_decisions.json",
+      "bytes": 1657,
+      "sha256": "4685beb02eabf52702d7e618821085d703fcdb74d3fa0310c3c5c634124df1ab"
+    },
+    {
+      "path": "out/phase21_allocation_v2_EleutherAI__pythia-1.4b_n128.json",
+      "bytes": 358399,
+      "sha256": "6fe89002ab4b9d5d212269c43325d91adccddc0f14bb76b3fa2673571c4d7cfb"
+    },
+    {
+      "path": "out/phase21_allocation_v2_EleutherAI__pythia-1.4b_n256.json",
+      "bytes": 359210,
+      "sha256": "f02265af8e40e9f1e51e36a8f6de9cd80093172742bd0b073cc7f3dd690379e3"
+    },
+    {
+      "path": "out/phase21_allocation_v2_EleutherAI__pythia-410m_n128.json",
+      "bytes": 358563,
+      "sha256": "398930121c61e64c478b48f1fdfa1ba3f0cbdb8c578e5fb7f063d07c36b1fc93"
+    },
+    {
+      "path": "out/phase21_allocation_v2_EleutherAI__pythia-410m_n256.json",
+      "bytes": 358058,
+      "sha256": "3c5f0d69311a1db43fe7de7b9e01585cbd9fa7482090c963928c42b6e6952b39"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_EleutherAI__pythia-1.4b_n128.json",
+      "bytes": 357779,
+      "sha256": "7ba90e7ea3ded614ae9068bc8e97c80f8810d304f93507d3c7437d5b9173a4e6"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_EleutherAI__pythia-1.4b_n256.json",
+      "bytes": 358590,
+      "sha256": "04da1265e1c39443f0a4db78bf769a7f5730d6595c8d88fb784cdbed790accac"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_EleutherAI__pythia-410m_n128.json",
+      "bytes": 357943,
+      "sha256": "c276079799b6e186263264825a70a3123b6df16cb80858e33cf6bd889efb9f34"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_EleutherAI__pythia-410m_n256.json",
+      "bytes": 357438,
+      "sha256": "22b60de5fc8003ffba76938371c07df540ccef33c8b70e52536dc7067092d983"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_gpt2-medium_n128.json",
+      "bytes": 357599,
+      "sha256": "ce3b4617c604652511a6e5aa4da9ba1422ba82032b69b6d3c234a543df232d89"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_gpt2-medium_n256.json",
+      "bytes": 358469,
+      "sha256": "77d0cf6d8e40aaa9d1b4db2f91b4bb05d39a1d3aae6afeb0729001212e6edc41"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_gpt2_n128.json",
+      "bytes": 357965,
+      "sha256": "1df567569607149786fe7a116ba5e0af5c1b6234af2dc438c45b061835ea6d55"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_gpt2_n256.json",
+      "bytes": 358765,
+      "sha256": "31fe3b3b39ac2b0880d06b8d112e63f9efb642c3699438a56ec40008653a71ad"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_Qwen__Qwen2.5-0.5B_n128.json",
+      "bytes": 358365,
+      "sha256": "0a06bc22b383e4cd3ce56bf1a1a75a8d73c4f60b51f3fac57e19627c31386a0f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_Qwen__Qwen2.5-0.5B_n256.json",
+      "bytes": 359224,
+      "sha256": "d3436729ed3bede35d3c192e9139fb3a3b5318328a308a04a818b4bd960bebbe"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_Qwen__Qwen2.5-3B_n128.json",
+      "bytes": 359348,
+      "sha256": "2492d9324a4db5b3fcb7850c176bf4b3293d2b58ea1b0181bfdeaaa2e600b48e"
+    },
+    {
+      "path": "out/phase21_allocation_v2_endpoint_preview_Qwen__Qwen2.5-3B_n256.json",
+      "bytes": 359504,
+      "sha256": "6618df393b8ee4172c56488852bdfa1624e426c8fd3cec2f50586e322329a28e"
+    },
+    {
+      "path": "out/phase21_allocation_v2_gpt2-medium_n128.json",
+      "bytes": 358207,
+      "sha256": "1a07789ec726f19ed44dbe48e2ee2f46d1422838ee876e4496809c47f095b6b1"
+    },
+    {
+      "path": "out/phase21_allocation_v2_gpt2-medium_n256.json",
+      "bytes": 359077,
+      "sha256": "d5f645410353b859f7626403265142a5e164c9660adf9a5bd3145c7ed5e79acb"
+    },
+    {
+      "path": "out/phase21_allocation_v2_gpt2_n128.json",
+      "bytes": 358566,
+      "sha256": "0af96431dff25a0adcfa61e37919858c21d516bfa7303f49a52cf57b49473a38"
+    },
+    {
+      "path": "out/phase21_allocation_v2_gpt2_n256.json",
+      "bytes": 359366,
+      "sha256": "2dc7d1c412fd5cebc1b61f1885693de6f157860fdc09f79dad79c6e745f31c73"
+    },
+    {
+      "path": "out/phase21_allocation_v2_integrity_checks.json",
+      "bytes": 7946,
+      "sha256": "f05a63aee1c864f31f5bb384e781f144aba2af65a0ae107a495412b84b23c8fe"
+    },
+    {
+      "path": "out/phase21_allocation_v2_line_endpoint_check_n128.json",
+      "bytes": 1043,
+      "sha256": "b154ceb16380419542b576f0042a33ec88676c53d16404146c8ea8240c611c12"
+    },
+    {
+      "path": "out/phase21_allocation_v2_line_endpoint_check_n256.json",
+      "bytes": 1240,
+      "sha256": "20e51fe19d79acb371bbc8b1cebe75c781dd80dcd011a7edcf51863e20aaa691"
+    },
+    {
+      "path": "out/phase21_allocation_v2_matrix_review.json",
+      "bytes": 25627897,
+      "sha256": "e1ea40609b00e4273f723abdd1d07d9c4f7cebbde6a95791403b6593519a1a89"
+    },
+    {
+      "path": "out/phase21_allocation_v2_omp_benchmark.json",
+      "bytes": 63450,
+      "sha256": "0d374133fdff606d954bf7dac03c0b530753ab3f8f25be368c10ef58d4f7afaf"
+    },
+    {
+      "path": "out/phase21_allocation_v2_Qwen__Qwen2.5-0.5B_n128.json",
+      "bytes": 358980,
+      "sha256": "3c676afb909f02d8fac24ad6ee43b9fd4c8cee85340df5eb69509a3a445a514d"
+    },
+    {
+      "path": "out/phase21_allocation_v2_Qwen__Qwen2.5-0.5B_n256.json",
+      "bytes": 359839,
+      "sha256": "3516df2bfce1c6ec8074fff9b426624c47d5baa723655adc4afc9589de86303a"
+    },
+    {
+      "path": "out/phase21_allocation_v2_Qwen__Qwen2.5-3B_n128.json",
+      "bytes": 359961,
+      "sha256": "bfcd78a0343e620a563b6c84c887e327a9be4f97b628b97605a6397cca100ac8"
+    },
+    {
+      "path": "out/phase21_allocation_v2_Qwen__Qwen2.5-3B_n256.json",
+      "bytes": 360117,
+      "sha256": "78779e797ddda306bfcd929a2725177026568721936d4ee5537a493180b8aa25"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_EleutherAI__pythia-1.4b_n128.json",
+      "bytes": 453733,
+      "sha256": "7c7dd62316d6bcfdae4bf7f7e0281be17146e8520b011fa5787ea0028417ac16"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_EleutherAI__pythia-1.4b_n256.json",
+      "bytes": 453714,
+      "sha256": "0f4324b6d9f9340c0b4b9b017ac9c64609239b7fafe0b63c2c38fc47dd6d663d"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_EleutherAI__pythia-410m_n128.json",
+      "bytes": 453642,
+      "sha256": "2399affcc5b61673040b286f7d1aebfeb8ec2de5f9a0ee8a7ac228ac0a4c3bb3"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_EleutherAI__pythia-410m_n256.json",
+      "bytes": 452880,
+      "sha256": "45f88fdf6a881cabe88dbfb845e9fcd1c8d9918de80488c142cc76cc52b3b110"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_gpt2-medium_n128.json",
+      "bytes": 453810,
+      "sha256": "1b7d7ec5e9076df509267d4371f28bc1269d97af7f73a9a6e55d130fbbe1b4c7"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_gpt2-medium_n256.json",
+      "bytes": 453782,
+      "sha256": "15b4128669c1d7afd354808a8d115c877189c77b9db7eb43cc9ff04345abe355"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_gpt2_n128.json",
+      "bytes": 453317,
+      "sha256": "fecab786bd63bae322469a0cda8942ecc478ce6a2fe7caf22480a02707d9c429"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_gpt2_n256.json",
+      "bytes": 453941,
+      "sha256": "a9418ee8e7fdb2537898474254a12d39055b734dae7e9b860b92f92e8cec897f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_Qwen__Qwen2.5-0.5B_n128.json",
+      "bytes": 453538,
+      "sha256": "b0375d92a4fb724ae193953428819e9d8c6c2152c63fa1965b20da5894876791"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_Qwen__Qwen2.5-0.5B_n256.json",
+      "bytes": 454049,
+      "sha256": "0a9b291dafcc640b3e6dcfb6d051f8fc11ed11228f930d9ce7a76ff66e708590"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_Qwen__Qwen2.5-3B_n128.json",
+      "bytes": 454912,
+      "sha256": "5c8bb1723cbabc7706dd5498891cbc12d06c490621cc5246ac7b86715a28f921"
+    },
+    {
+      "path": "out/phase21_allocation_v2_rank_comparison_Qwen__Qwen2.5-3B_n256.json",
+      "bytes": 454293,
+      "sha256": "6ce6eac5b63e4722c6216bbe0e3b43fcedd183708adb2e3d73dcaec0c9795c21"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_EleutherAI__pythia-1.4b_n128.json",
+      "bytes": 584291,
+      "sha256": "b6f27324aeeb6b6728d72bb8aa6ffee309572e45a7d04273e80738dae2951e3f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_EleutherAI__pythia-1.4b_n256.json",
+      "bytes": 1105116,
+      "sha256": "6d1670a55495ba70907c4e6ed00d8d36997b19708b89af5141653299cea97bf6"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_EleutherAI__pythia-410m_n128.json",
+      "bytes": 584170,
+      "sha256": "3b472ba18876534758a8fb9c3318603c51e42b6d6011c4c5e507040ac2605409"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_EleutherAI__pythia-410m_n256.json",
+      "bytes": 1104621,
+      "sha256": "9ff09267040988a35fb18658e16ea47369fe19922427c4f0e5cec092cd1e45a7"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_gpt2-medium_n128.json",
+      "bytes": 585378,
+      "sha256": "89cd449e1d22aef59233e0d17f56a169d27c7ee03e333704876529c7d2346d4f"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_gpt2-medium_n256.json",
+      "bytes": 1107288,
+      "sha256": "4ea8d0dbd6093bc767fe753b13293e46a5ee8de956d0f36cc0dd558f63e55e9d"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_gpt2_n128.json",
+      "bytes": 584485,
+      "sha256": "b22c84e871f0390f4158f3f6a43a2af8a1eb9cde0df920ef72b69cbb4f05a04e"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_gpt2_n256.json",
+      "bytes": 1105507,
+      "sha256": "d3e5525311f4f059df7a22810cc088b9f71bb65067a0f30922f57870a9b46051"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_Qwen__Qwen2.5-0.5B_n128.json",
+      "bytes": 583712,
+      "sha256": "9fd6a74c158c2464792e33900909764580f2f1c2841d2c4e4c2b89091f400ef8"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_Qwen__Qwen2.5-0.5B_n256.json",
+      "bytes": 1104103,
+      "sha256": "507fb4a333d7da37813bd545dde91c254865dce08e193398cdf54d00013ba6c4"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_Qwen__Qwen2.5-3B_n128.json",
+      "bytes": 583948,
+      "sha256": "bd066093d185bae7719ff453613128520eade6d43d8b2d2ef8e314dda8d7995b"
+    },
+    {
+      "path": "out/phase21_allocation_v2_residuals_Qwen__Qwen2.5-3B_n256.json",
+      "bytes": 1104325,
+      "sha256": "c999c576d3747fdcd99d2dac19b07af4f41fa2991d6a2c774681346e956b1574"
+    },
+    {
+      "path": "out/phase21_allocation_v2_review.json",
+      "bytes": 17087209,
+      "sha256": "6bf98d7af51938f023a58a741a7d6340ef81110989fa657c1e04c2d00faa1de2"
+    },
+    {
+      "path": "out/phase21_allocation_v2_run.json",
+      "bytes": 2995,
+      "sha256": "b6522d464ec4e9894c2bb1dabb4cc1e0aa01fe2f9cbf2722e3129f8bcce6d23d"
+    },
+    {
+      "path": "out/phase21_allocation_v2_shared_SVD_adapter_checks.json",
+      "bytes": 18939,
+      "sha256": "ccd173b0dadaef7503f7a563a3b5f11b608e1c92264ae717e7e4149ce5f92812"
+    },
+    {
+      "path": "out/phase21_allocation_v2_statistics_checks.json",
+      "bytes": 7503,
+      "sha256": "1ff1eb3644f5fb71d005f23c168b7b2b44b4a0f08c91a0d8395811833cc09ac9"
+    },
+    {
+      "path": "out/phase21_allocation_v2_V1_timeout.json",
+      "bytes": 298,
+      "sha256": "dc36759a9764cd670a794214c60743986ab9b49a7e8b46f156ce59f01da72975"
+    },
+    {
+      "path": "phase21_allocation_v2.py",
+      "bytes": 17707,
+      "sha256": "35e7c3e3c7e148f9c578fb0f87e7b4fff81d479bdeab23f2d67aec2c6eac161f"
+    },
+    {
+      "path": "phase21_allocation_v2_after_v1.sh",
+      "bytes": 822,
+      "sha256": "5ce0c87548337ca2b875c1703a800a6e8b01b26b9594ceca88a97121501dea2d"
+    },
+    {
+      "path": "phase21_allocation_v2_audit.py",
+      "bytes": 8217,
+      "sha256": "a74ed899dfd794e7d4cd09eca26a5f61db4960a9be50063786263290f8a00c55"
+    },
+    {
+      "path": "phase21_allocation_v2_benchmark.py",
+      "bytes": 1520,
+      "sha256": "4bb5c70543af6daefed94950f1aa19eaf190440fa4a85dbf6d08809e34702910"
+    },
+    {
+      "path": "phase21_allocation_v2_budget_conventions.py",
+      "bytes": 6237,
+      "sha256": "734ce77a2e6553a9dfd49d0fbf992bc93fb3c8149596ebb4957344a687f6083a"
+    },
+    {
+      "path": "phase21_allocation_v2_checks.py",
+      "bytes": 5895,
+      "sha256": "56a62112ad06a336bdee954a68ac0179b3d085411b4897f58ed8726cc5e6e6a2"
+    },
+    {
+      "path": "phase21_allocation_v2_finalize.py",
+      "bytes": 14783,
+      "sha256": "55a010b642ba3e7d92e450087a6f48f4a7b13ed7eced93f140567e5f85aaf76b"
+    },
+    {
+      "path": "phase21_allocation_v2_forward.py",
+      "bytes": 21166,
+      "sha256": "da02cd054f88dcbad5c02345d8af3be262961a2667eb27a7a958f476780a658f"
+    },
+    {
+      "path": "phase21_allocation_v2_inventory.py",
+      "bytes": 1786,
+      "sha256": "c9e7a1814801fa96edcb8466e6ec7daa949d37d03dd2184a545a7703ef2d3cfa"
+    },
+    {
+      "path": "phase21_allocation_v2_lines.py",
+      "bytes": 20189,
+      "sha256": "dc491c763d5d3ab9599a76699122365d8215b7c3692f5ae85573eef70910edef"
+    },
+    {
+      "path": "phase21_allocation_v2_rank_comparison.py",
+      "bytes": 4909,
+      "sha256": "af7ed457a5539612133b143e3e221b8ce1f94f65d1b4b96d52028319ba96cc69"
+    },
+    {
+      "path": "phase21_allocation_v2_report.py",
+      "bytes": 13370,
+      "sha256": "8a6c3d8452b3a5c57234411b4ad78ac39a0a673ad035d8bc66b4f3132ff70703"
+    },
+    {
+      "path": "phase21_allocation_v2_residuals.py",
+      "bytes": 5094,
+      "sha256": "ff9c7cd52a1554c26475ae74e68191cce2965962978a772e9a423ac6a23f637a"
+    },
+    {
+      "path": "phase21_allocation_v2_wait_v1.py",
+      "bytes": 1712,
+      "sha256": "e36da08ba37bafbbefc31764ea043cba2b83cbf9a6f00da91999f45595a36e7f"
+    }
+  ],
+  "n_files_excluding_this_inventory": 192,
+  "total_bytes_excluding_this_inventory": 2532594030,
+  "this_inventory": "out/phase21_allocation_v2_files.json",
+  "self_hash_excluded": true,
+  "primary_result_path": "out/phase21_allocation_v2.json",
+  "old_v1_files_included_or_overwritten": false
+}

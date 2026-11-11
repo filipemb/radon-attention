@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "waiting_for_V1_started_UTC": "2026-11-09T21:11:20+00:00",
+  "waiting_for_V1_deadline_UTC": "2026-11-10T00:11:20+00:00",
+  "wait_limit_hours": 3,
+  "seed": 0,
+  "n_bootstrap": 2000,
+  "allocation_residual_ranks": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "capacity_budget_ranks_K": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "allocation_convention_labels": {
+    "named_first": "named_first",
+    "lowrank_first": "lowrank_first",
+    "algorithm_1_5_iterations": "5 iterações do Algoritmo 1"
+  },
+  "allocation_index_note": "r remains the residual rank for the audited allocation sweep, including the 17/9984 Alg1 diagnostic at r=8. Capacity uses the separate budget index K and residual rank K-1.",
+  "capacity": {
+    "common_cap": "B=K*(2n+1)",
+    "named_first_rank": "q=K-1 (fixed, not tuned)",
+    "named_first_cost": "2*count(c>0)+(K-1)*(2n+1)",
+    "feasibility": "Require cost<=B on every instance; otherwise stop, never condition the median on feasible instances. With 17 atoms and n>=128, 2*m<=34<2n+1, hence every instance fits.",
+    "slack": "B-actual_cost, reported per instance and in aggregates",
+    "svd_cost": "K*(2n+1)",
+    "line_atom_cost": 2,
+    "line_dictionary_size": "2n+7: n causal columns, n offset diagonals, seven profiled bands",
+    "line_steps_allowed": "min(floor(B/2),2n+7), finite-dictionary limit and unused cap explicit",
+    "no_SVD_rank_0_comparison": true
+  },
+  "statistics": {
+    "primary": "Imported phase24_p0_metrics.describe: median across all instances; percentile 95% CI from 2000 resampled whole-document blocks",
+    "primary_source_sha256": "dbfe79311a132dba1910c993dddb80db5a23edec0609ba8ee396dd19cd59806f",
+    "secondary": "Mean of document means, plus median/IQR of document means and their bootstrap intervals, all explicitly secondary",
+    "paired_test": "Compute per-instance error difference; reduce each document to its median difference; two-sided Wilcoxon signed-rank across all 64 documents (zero_method=wilcox, asymptotic p)",
+    "effect": "rank-biserial=(W_positive-W_negative)/(W_positive+W_negative); positive method-minus-SVD difference favors SVD",
+    "paired_median_CI": "Same imported describe on all paired instance differences, resampling whole documents",
+    "fraction_SVD_wins": "Strict error_SVD<error_method on all head-document instances; also distinct (layer,head) fraction after within-head document median; exact ties and sensitivity at 1e-12 separately"
+  },
+  "ALT": {
+    "label": "5 iterações do Algoritmo 1",
+    "T": 5,
+    "L_initial": 0,
+    "early_stopping": false,
+    "recorded_diagnostic_n128_r8": {
+      "criterion_met": 17,
+      "n_instances": 9984
+    },
+    "claim": "Five fixed iterations; no claim of convergence/global optimum"
+  },
+  "immutable_v1_source": "out/pairs/phase21_allocation_{model}_n{n}.jsonl; independently audited values reused exactly",
+  "new_files_only": true
+}

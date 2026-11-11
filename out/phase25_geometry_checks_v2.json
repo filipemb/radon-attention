@@ -1,0 +1,13 @@
+{
+  "dictionary_atoms": 15,
+  "dense_vs_cached_relative_projection_error": 7.413027560687624e-06,
+  "projection_atol": 1e-05,
+  "normalized_row_atol": 2e-06,
+  "attention_validation": {
+    "max_row_error_before_cast": 1.1920928955078125e-07,
+    "rows_checked": 512,
+    "negative_nan_inf_upper_nonzero": 0,
+    "max_row_error_after_cast": 1.1920928955078125e-07
+  },
+  "elapsed_seconds": 10.2079020999372
+}

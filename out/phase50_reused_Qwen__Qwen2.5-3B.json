@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "pairs_path": "out/pairs/phase50_reused_Qwen__Qwen2.5-3B.jsonl",
+  "pairs_sha256": "b814940770354ff86a1312453339f576dc99a99b8cf6691cea496f1652ae45e0",
+  "n_records": 1024,
+  "all_V1_E4_reused_SVD_equal_exact": true,
+  "V1_identity_KL_exactly_zero": true
+}

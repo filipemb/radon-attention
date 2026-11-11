@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "cases": 128,
+  "arms": [
+    "free",
+    "thin"
+  ],
+  "thresholds": {
+    "clean": 0.001,
+    "noise_0.01": 0.02,
+    "minimum_group_success_rate": 0.9
+  },
+  "successes": {
+    "free": 122,
+    "thin": 119
+  },
+  "policy": "All failures retained; no threshold, seed or optimizer change"
+}

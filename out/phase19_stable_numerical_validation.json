@@ -1,0 +1,32 @@
+{
+  "cuda": {
+    "forward_max_absolute": 2.682209014892578e-07,
+    "gradient_max_scaled_absolute": [
+      1.0763511681943783e-06,
+      2.1389645610270236e-07,
+      3.9010782870718685e-07,
+      1.5255412222359155e-07,
+      2.5022265504048846e-07
+    ],
+    "forward_tolerance": 2e-05,
+    "gradient_tolerance": 0.0002,
+    "n": 31,
+    "passed": true,
+    "near_empty_footprint_norm_ratio": 1.0,
+    "near_empty_footprint_gradients_finite": true
+  },
+  "finite_differences": {
+    "gradcheck": true,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "n": 7
+  },
+  "independent_solvers": {
+    "incremental_nnls_max_coefficient_difference": 1.1102230246251565e-16,
+    "radon_nnls_objective": 103.57883081317776,
+    "scipy_lsq_linear_objective": 103.57883081317776,
+    "radon_projected_kkt": 1.4229999430228313e-08,
+    "whole_matrix_svd_absolute_difference": 2.220446049250313e-16,
+    "passed": true
+  }
+}

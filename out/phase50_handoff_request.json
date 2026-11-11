@@ -1,0 +1,10 @@
+{
+  "current_coordinator_pid": 2957,
+  "probe_model": "gpt2",
+  "probe_stop_document": 2,
+  "created_UTC": "2026-11-10T15:44:54.139718+00:00",
+  "reason": "long-running experiment; detached execution after all six32-matrix CPU/GPU validations and one complete V1 batch across all new arms",
+  "fixed_scientific_corpus_still256_articles": true,
+  "fixed_GPU_chunk_documents_after_probe": 16,
+  "return_code75_is_process_handoff_not_scientific_failure": true
+}

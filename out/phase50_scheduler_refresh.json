@@ -1,0 +1,7 @@
+{
+  "coordinator_pid": 37158,
+  "active_probe_flock_pid": 70487,
+  "UTC": "2026-11-10T16:48:27.938211+00:00",
+  "action": "stop only the own coordinator while its existing probe child finishes normally; no fitting process is stopped or killed",
+  "purpose": "restart scheduler with two-article GPU lock chunks after this complete probe"
+}

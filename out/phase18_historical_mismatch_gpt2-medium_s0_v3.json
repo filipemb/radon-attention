@@ -1,0 +1,70 @@
+{
+  "source_jobs": [
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b1.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.75_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.5_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.35_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.25_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.15_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.1_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.05_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_b0.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2-medium_s0_historical_blegacy_beta0_v3.jsonl"
+  ],
+  "differences": [
+    {
+      "family": "B",
+      "arm": "1.0",
+      "old_n_correct": 99,
+      "replayed_n_correct": 165
+    },
+    {
+      "family": "B",
+      "arm": "0.75",
+      "old_n_correct": 109,
+      "replayed_n_correct": 166
+    },
+    {
+      "family": "B",
+      "arm": "0.5",
+      "old_n_correct": 119,
+      "replayed_n_correct": 174
+    },
+    {
+      "family": "B",
+      "arm": "0.35",
+      "old_n_correct": 123,
+      "replayed_n_correct": 174
+    },
+    {
+      "family": "B",
+      "arm": "0.25",
+      "old_n_correct": 133,
+      "replayed_n_correct": 148
+    },
+    {
+      "family": "B",
+      "arm": "0.15",
+      "old_n_correct": 147,
+      "replayed_n_correct": 100
+    },
+    {
+      "family": "B",
+      "arm": "0.1",
+      "old_n_correct": 151,
+      "replayed_n_correct": 75
+    },
+    {
+      "family": "B",
+      "arm": "0.05",
+      "old_n_correct": 140,
+      "replayed_n_correct": 29
+    },
+    {
+      "family": "B",
+      "arm": "legacy_beta0",
+      "old_n_correct": 39,
+      "replayed_n_correct": 12
+    }
+  ]
+}

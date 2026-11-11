@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "task": "phase8",
+  "model": "gpt2-medium",
+  "seed": 2,
+  "variant": "historical",
+  "dtype": "torch.float32",
+  "batch": 16,
+  "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "source_hashes": {
+    "phase8_lostmiddle.py": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+    "phase11_kv.py": "883104a7acdbee3bc2d6dfead734550a5c081b031a5e4f0021b53bb7bb84edac",
+    "phase16_longcontext.py": "b6814bbc69a3498013832d2229f4f0ec474055685ff2835d69d1d83916e92eaa",
+    "phase18_betacv.py": "f4d240d48706df4e9e7990326f1555628290ce4e1048a4ba44ac8fcb95cff3b2",
+    "phase2_downstream.py": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "revision_v3_probes.py": "8aab9a6b020a70af460a6d5170a14d706d3f991a844d77b1117448df814f2ec5"
+  },
+  "payload_sha256": "599ca1db86ae98fc9c84c22ea6ef0d5558dcd14c23f3d7b90886d5b49d963a82",
+  "manifest_path": "data/attn/phase8_items_gpt2-medium_s2_v3.manifest.json",
+  "pairs_path": "out/pairs/phase8_items_gpt2-medium_s2_historical_v3.jsonl",
+  "pairs_sha256": "0914fb3f4799b6d670d3c3affc177610f43c5e047be9ed095ff32dda4e65b312",
+  "n_raw_records": 6400,
+  "native_identity_logits_bit_equal": true,
+  "lm_head": "full historical output; evaluate last query token; no KV reuse between items",
+  "elapsed_seconds": 128.11934550013393
+}

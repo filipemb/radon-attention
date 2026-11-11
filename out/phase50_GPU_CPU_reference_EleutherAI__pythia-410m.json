@@ -1,0 +1,9 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "n_matrices": 32,
+  "n_fits": 128,
+  "pairs_path": "out/pairs/phase50_GPU_CPU_reference_EleutherAI__pythia-410m.jsonl",
+  "pairs_sha256": "a9971a4d75f9ecc07ab76fda3fbbef4a3b046334d34195c356b4c6bf17f6542a",
+  "initial_factors_stored_exact_float64_round_trip": true
+}

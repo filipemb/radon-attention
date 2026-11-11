@@ -1,0 +1,9 @@
+{
+  "status": "complete_declared_FP32_method_not_equivalent_to_CPU_float64",
+  "report_path": "out/phase50_report.json",
+  "report_sha256": "603428eb058d2a1905f8515b33d3166a509742bb0085f7f13c8af88b94a40eb0",
+  "declared_FP32_comparison_complete": true,
+  "CPU_float64_equivalence_passed": false,
+  "n_paired_tests": 60,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251"
+}

@@ -1,0 +1,103 @@
+{
+  "all_passed": true,
+  "cases": [
+    {
+      "dtype": "torch.float32",
+      "q": 16,
+      "k": 16,
+      "beta": 0.0,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "q": 16,
+      "k": 16,
+      "beta": 0.25,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "q": 4,
+      "k": 16,
+      "beta": 0.0,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "q": 4,
+      "k": 16,
+      "beta": 0.25,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "q": 1,
+      "k": 16,
+      "beta": 0.0,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "q": 1,
+      "k": 16,
+      "beta": 0.25,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "q": 16,
+      "k": 16,
+      "beta": 0.0,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "q": 16,
+      "k": 16,
+      "beta": 0.25,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "q": 4,
+      "k": 16,
+      "beta": 0.0,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "q": 4,
+      "k": 16,
+      "beta": 0.25,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "q": 1,
+      "k": 16,
+      "beta": 0.0,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "q": 1,
+      "k": 16,
+      "beta": 0.25,
+      "output_and_attention_bit_equal": true,
+      "counters_exact": true
+    }
+  ],
+  "legacy_zero_rows_explicitly_counted_without_rejecting_diagnostic": true,
+  "elapsed_seconds": 0.01861510006710887
+}

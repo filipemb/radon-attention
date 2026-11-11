@@ -1,0 +1,85 @@
+{
+  "created_UTC": "2026-11-10T17:27:57.432116+00:00",
+  "scope": "completed numerical checks only; full forward statistics are still pending",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "models": {
+    "gpt2": {
+      "source": "out/phase50_estimator_validation_gpt2.json",
+      "n_unique_matrices": 32,
+      "n_fits": 128,
+      "uncorrected_GPU_max_error_difference": 0.0465579532044012,
+      "uncorrected_GPU_passed": false,
+      "final_estimator_max_error_difference": 1.9973199552603127e-09,
+      "final_normalized_Frobenius_max_difference": 2.558770952065803e-09,
+      "final_TV_max_difference": 8.29769869481467e-09,
+      "CPU_reference_recomputed_fits": 33,
+      "final_estimator_passed": true
+    },
+    "gpt2-medium": {
+      "source": "out/phase50_estimator_validation_gpt2-medium.json",
+      "n_unique_matrices": 32,
+      "n_fits": 128,
+      "uncorrected_GPU_max_error_difference": 0.05070177163610557,
+      "uncorrected_GPU_passed": false,
+      "final_estimator_max_error_difference": 2.5034587325042934e-07,
+      "final_normalized_Frobenius_max_difference": 3.670304831761284e-07,
+      "final_TV_max_difference": 8.480729072786464e-07,
+      "CPU_reference_recomputed_fits": 15,
+      "final_estimator_passed": true
+    },
+    "EleutherAI/pythia-410m": {
+      "source": "out/phase50_estimator_validation_EleutherAI__pythia-410m.json",
+      "n_unique_matrices": 32,
+      "n_fits": 128,
+      "uncorrected_GPU_max_error_difference": 0.0006582789759355806,
+      "uncorrected_GPU_passed": true,
+      "final_estimator_max_error_difference": 0.0006582789759355806,
+      "final_normalized_Frobenius_max_difference": 0.0011737339645180728,
+      "final_TV_max_difference": 0.0007617270831445783,
+      "CPU_reference_recomputed_fits": 19,
+      "final_estimator_passed": true
+    },
+    "EleutherAI/pythia-1.4b": {
+      "source": "out/phase50_estimator_validation_EleutherAI__pythia-1.4b.json",
+      "n_unique_matrices": 32,
+      "n_fits": 128,
+      "uncorrected_GPU_max_error_difference": 0.004374639868221397,
+      "uncorrected_GPU_passed": true,
+      "final_estimator_max_error_difference": 1.0352466028873408e-07,
+      "final_normalized_Frobenius_max_difference": 1.4350040153654486e-06,
+      "final_TV_max_difference": 3.879058432576521e-06,
+      "CPU_reference_recomputed_fits": 28,
+      "final_estimator_passed": true
+    },
+    "Qwen/Qwen2.5-0.5B": {
+      "source": "out/phase50_estimator_validation_Qwen__Qwen2.5-0.5B.json",
+      "n_unique_matrices": 32,
+      "n_fits": 128,
+      "uncorrected_GPU_max_error_difference": 0.006765976297135622,
+      "uncorrected_GPU_passed": true,
+      "final_estimator_max_error_difference": 8.803423639652808e-07,
+      "final_normalized_Frobenius_max_difference": 1.0884612751116407e-06,
+      "final_TV_max_difference": 3.1684822549005176e-07,
+      "CPU_reference_recomputed_fits": 45,
+      "final_estimator_passed": true
+    },
+    "Qwen/Qwen2.5-3B": {
+      "source": "out/phase50_estimator_validation_Qwen__Qwen2.5-3B.json",
+      "n_unique_matrices": 32,
+      "n_fits": 128,
+      "uncorrected_GPU_max_error_difference": 0.01231384750786721,
+      "uncorrected_GPU_passed": false,
+      "final_estimator_max_error_difference": 7.000986481063565e-07,
+      "final_normalized_Frobenius_max_difference": 7.410400553881091e-07,
+      "final_TV_max_difference": 6.697550842607591e-07,
+      "CPU_reference_recomputed_fits": 33,
+      "final_estimator_passed": true
+    }
+  },
+  "CPU_reference_recomputed_fits_total": 173,
+  "n_fits_total": 768,
+  "unchanged_absolute_error_agreement_tolerance": 0.01,
+  "correction_policy": "out/phase50_numerical_fallback.json",
+  "all_final_estimator_checks_passed": true,
+  "uncorrected_GPU_did_not_pass_in_every_model": true
+}

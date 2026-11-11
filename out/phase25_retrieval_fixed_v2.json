@@ -1,0 +1,27 @@
+{
+  "source_sha256": {
+    "phase8_lostmiddle.py": "b9bdd6f30082245f065ff6899cbec88e9743739202c0cffa06a8a75724bc91f4",
+    "phase10_baselines.py": "da8d420daa96dc88ab18bf0765ce6977ac3de1e7d42fced62c0a9ae53a014c01",
+    "phase11_kv.py": "883104a7acdbee3bc2d6dfead734550a5c081b031a5e4f0021b53bb7bb84edac",
+    "phase14_adaptive.py": "46333449d15b3cff16cecd8fe939a869cbce956af663ddd5482c32324c192b90",
+    "phase16_longcontext.py": "b6814bbc69a3498013832d2229f4f0ec474055685ff2835d69d1d83916e92eaa",
+    "phase18_betacv.py": "f4d240d48706df4e9e7990326f1555628290ce4e1048a4ba44ac8fcb95cff3b2"
+  },
+  "phase8_phase11_phase16_last_logit_dynamic_checks": "passed; early logit deliberately predicts the wrong target",
+  "phase10_phase14_use_phase8_last_token_evaluator": true,
+  "phase18_reuses_verified_last_token_evaluators": true,
+  "target_structure": "one held-out output token; multi-token structure is the known query key, not a teacher-forced target continuation",
+  "global_statistics": "phase10/14 alter earlier rows using observed-prefix statistics, but their measured final prediction has no future output tokens in the input",
+  "target_leakage_found": false,
+  "retrieval_scripts_edited": [
+    "phase8_lostmiddle.py",
+    "phase10_baselines.py",
+    "phase14_adaptive.py"
+  ],
+  "beta0_editing_repair": {
+    "phase8_empty_rows_after_fix_in_four_row_example": 0,
+    "first_row_unchanged": true,
+    "authorization": "User explicitly authorized preserving all rows with no alternative after sink editing; phase11/16/18 inherit the shared callback."
+  },
+  "elapsed_seconds": 9.467673799954355
+}

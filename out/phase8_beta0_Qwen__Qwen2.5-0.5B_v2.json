@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "dtype": "torch.bfloat16",
+  "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "n_trials_effective_per_arm": 3200,
+  "seed": 0,
+  "sequence_length": 128,
+  "batch": 16,
+  "positions": [
+    4,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    110
+  ],
+  "n_per_position": 400,
+  "middle_positions": [
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "probe_manifest": "data/attn/beta0_probe_Qwen__Qwen2.5-0.5B_s0_v2.manifest.json",
+  "pairs_path": "out/pairs/beta0_Qwen__Qwen2.5-0.5B_v2.jsonl",
+  "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+  "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+  "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+  "arms": {
+    "baseline_beta1": {
+      "n_trials": 3200,
+      "n_correct": 1667,
+      "accuracy": 0.5209375,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 1045,
+      "middle_accuracy": 0.5225,
+      "accuracy_by_position": {
+        "4": 0.5375,
+        "16": 0.51,
+        "32": 0.505,
+        "48": 0.5325,
+        "64": 0.5125,
+        "80": 0.545,
+        "96": 0.5175,
+        "110": 0.5075
+      }
+    },
+    "corrected_beta0": {
+      "n_trials": 3200,
+      "n_correct": 1681,
+      "accuracy": 0.5253125,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 1050,
+      "middle_accuracy": 0.525,
+      "accuracy_by_position": {
+        "4": 0.5575,
+        "16": 0.5125,
+        "32": 0.505,
+        "48": 0.5275,
+        "64": 0.5175,
+        "80": 0.555,
+        "96": 0.52,
+        "110": 0.5075
+      }
+    },
+    "legacy_beta0_diagnostic": {
+      "n_trials": 3200,
+      "n_correct": 1701,
+      "accuracy": 0.5315625,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 1067,
+      "middle_accuracy": 0.5335,
+      "accuracy_by_position": {
+        "4": 0.56,
+        "16": 0.5175,
+        "32": 0.5225,
+        "48": 0.525,
+        "64": 0.5375,
+        "80": 0.565,
+        "96": 0.5175,
+        "110": 0.5075
+      }
+    }
+  },
+  "attention_validation": {
+    "baseline_beta1": {
+      "negative_nan_inf_upper_nonzero": 0,
+      "row_sum_violations": 0,
+      "max_row_error_after_cast": 0.003814697265625,
+      "rows_checked": 137625600
+    },
+    "corrected_beta0": {
+      "sink_edit_invalid_values": 0,
+      "sink_edit_rows_total": 137625600,
+      "sink_edit_rows_preserved_no_alternative": 1075200,
+      "sink_edit_last_query_rows_preserved": 0,
+      "sink_edit_invalid_totals": 0,
+      "sink_edit_positive_mass_below_legacy_clamp": 45,
+      "sink_edit_noncausal_values": 0,
+      "sink_edit_row_sum_violations": 0,
+      "sink_edit_first_row_changes": 0,
+      "max_sink_edit_row_error": 0.00652313232421875,
+      "max_sink_edit_row_error_bound": 0.007845137254901961
+    },
+    "legacy_beta0_diagnostic": {
+      "rows_total": 137625600,
+      "zero_rows": 1075200,
+      "zero_rows_at_last_query": 0,
+      "positive_mass_below_clamp": 251
+    }
+  },
+  "positive_beta_regression": null,
+  "native_identity_regression": {
+    "n_sequences": 2,
+    "logits_bit_equal": true,
+    "max_absolute_logit_difference": 0.0
+  },
+  "historical_s0": {
+    "1.0": {
+      "accuracy": 0.526875,
+      "middle_accuracy": 0.5305000000000001
+    },
+    "0.0": {
+      "accuracy": 0.5396875,
+      "middle_accuracy": 0.5429999999999999
+    }
+  },
+  "paired_corrected_vs_baseline": {
+    "left": "corrected_beta0",
+    "right": "baseline_beta1",
+    "n_pairs": 3200,
+    "left_only_correct": 76,
+    "right_only_correct": 62,
+    "accuracy_difference_left_minus_right": 0.004375,
+    "mcnemar_exact_pvalue": 0.26838997200887366,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "paired_corrected_vs_legacy": {
+    "left": "corrected_beta0",
+    "right": "legacy_beta0_diagnostic",
+    "n_pairs": 3200,
+    "left_only_correct": 26,
+    "right_only_correct": 46,
+    "accuracy_difference_left_minus_right": -0.00625,
+    "mcnemar_exact_pvalue": 0.02446090732832437,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "elapsed_seconds": 85.8029225000646
+}

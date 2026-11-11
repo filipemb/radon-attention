@@ -1,0 +1,99 @@
+{
+  "model": "gpt2-medium",
+  "archive_index": 435,
+  "K": 16,
+  "arm": "masked_K",
+  "layer": 3,
+  "head": 11,
+  "exploratory_after_validation_not_preregistered": true,
+  "does_not_change_acceptance_or_forward_estimator": true,
+  "CPU_double_original_unregularized": {
+    "frobenius": 0.016223645780322503,
+    "TV": 0.013823107842982888,
+    "raw_causal_frobenius": 0.012230186700299668,
+    "raw_unmasked_frobenius": 30147297840065.25,
+    "normalization_validation": {
+      "reconstruction_rows_total": 128,
+      "last_query_rows_total": 1,
+      "reconstruction_layer_calls": 1,
+      "empty_rows_completed": 0,
+      "empty_rows_completed_at_last_query": 0,
+      "max_row_error_before_cast": 1.1920928955078125e-07,
+      "rows_checked": 128,
+      "negative_nan_inf_upper_nonzero": 0
+    }
+  },
+  "GPU_FP32_ridge": {
+    "frobenius": 0.12160997548211093,
+    "TV": 0.0933375185646482,
+    "raw_causal_frobenius": 0.0906333208935748,
+    "raw_unmasked_frobenius": 306.2432093428395,
+    "normalization_validation": {
+      "reconstruction_rows_total": 128,
+      "last_query_rows_total": 1,
+      "reconstruction_layer_calls": 1,
+      "empty_rows_completed": 0,
+      "empty_rows_completed_at_last_query": 0,
+      "max_row_error_before_cast": 1.1920928955078125e-07,
+      "rows_checked": 128,
+      "negative_nan_inf_upper_nonzero": 0
+    }
+  },
+  "CPU_double_same_trace_ridge_update": {
+    "frobenius": 0.08774100765077354,
+    "TV": 0.06778470908135892,
+    "raw_causal_frobenius": 0.06828512378822514,
+    "raw_unmasked_frobenius": 797.278840493161,
+    "normalization_validation": {
+      "reconstruction_rows_total": 128,
+      "last_query_rows_total": 1,
+      "reconstruction_layer_calls": 1,
+      "empty_rows_completed": 0,
+      "empty_rows_completed_at_last_query": 0,
+      "max_row_error_before_cast": 1.1920928955078125e-07,
+      "rows_checked": 128,
+      "negative_nan_inf_upper_nonzero": 0
+    }
+  },
+  "CPU_double_ridge_history": [
+    {
+      "sweep": 1,
+      "relative": 0.17308978785093296
+    },
+    {
+      "sweep": 10,
+      "relative": 0.12650704917316322
+    },
+    {
+      "sweep": 25,
+      "relative": 0.11770245817365013
+    },
+    {
+      "sweep": 50,
+      "relative": 0.0921301927010029
+    },
+    {
+      "sweep": 100,
+      "relative": 0.08238535448357462
+    },
+    {
+      "sweep": 150,
+      "relative": 0.07514238283393618
+    },
+    {
+      "sweep": 180,
+      "relative": 0.06933527330902807
+    },
+    {
+      "sweep": 200,
+      "relative": 0.06828512378822515
+    }
+  ],
+  "absolute_raw_error_difference_double_ridge_vs_original_double": 0.05605493708792547,
+  "absolute_raw_error_difference_float32_ridge_vs_double_ridge": 0.02234819710534966,
+  "CPU_original_maximum_factor": 13520235.979080012,
+  "CPU_original_rejected_sweeps": 194,
+  "CPU_ridge_maximum_factor": 26.009321353983378,
+  "elapsed_seconds": 0.3025096000637859,
+  "interpretation": "Compares the prescribed uniform trace-ridge closed-form200-sweep update at two precisions. Original reference additionally has direct LS and a monotonic retry/rejection policy; these are not equivalent optimization trajectories. This diagnostic does not prove a unique cause or global convergence."
+}

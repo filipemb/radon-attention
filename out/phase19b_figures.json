@@ -1,0 +1,31 @@
+{
+  "report_sha256": "064a66cd27bc9539b5cbe127634ea8793bad3a5651e09daa7c510a53864531ce",
+  "source_sha256": "daf172d3ac67a7ddfc80661ae161ddeba8a590647caef8ee58baf7245cbd99a8",
+  "artifacts": [
+    {
+      "path": "out/phase19b_errors.svg",
+      "sha256": "f916875e5798472277babd1b750356f20ac1114d7996532c855e34b79ef2d60f"
+    },
+    {
+      "path": "out/phase19b_errors.png",
+      "sha256": "db591df79082e1f16a4781077cedb52b28bf395cedba577e7a41be995832eb8e"
+    },
+    {
+      "path": "out/phase19b_parameters.svg",
+      "sha256": "4467f9f3d977efdb2954efafebe8e0d877d44e035b0a0d0fb4de583c5ba6e122"
+    },
+    {
+      "path": "out/phase19b_parameters.png",
+      "sha256": "0664d1aef6f8087fe1fb6f29f1bf5b8e82e852c6b825c45c57faf00872b038cc"
+    },
+    {
+      "path": "out/phase19b_broad_energy.svg",
+      "sha256": "994fe43deea5074b64dfcdd5378851d9607b5407e10d2154a8f1c54e46a7f99a"
+    },
+    {
+      "path": "out/phase19b_broad_energy.png",
+      "sha256": "84ceb48f9bc72ffb673a9288d76dfd4f733e416921cdf006c994d544c899fb98"
+    }
+  ],
+  "selection_or_fit_changes": false
+}

@@ -1,0 +1,9 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "pairs_path": "out/pairs/phase50_reused_EleutherAI__pythia-410m.jsonl",
+  "pairs_sha256": "4f66bc7b88ecda7d9b4c42a4b2e208ca2dd5a0c36470c07824f0da541fa39b37",
+  "n_records": 1024,
+  "all_V1_E4_reused_SVD_equal_exact": true,
+  "V1_identity_KL_exactly_zero": true
+}

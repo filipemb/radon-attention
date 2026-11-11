@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "exact_signed_rank_p": 3.0517578125e-05,
+  "all_zero_case_p": 1.0,
+  "unequal_document_block_bootstrap_ci": [
+    2.0,
+    2.0
+  ]
+}

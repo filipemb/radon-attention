@@ -1,0 +1,656 @@
+{
+  "gpt2": {
+    "model": "gpt2",
+    "n": 128,
+    "n_instances": 1536,
+    "n_documents": 64,
+    "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+    "pairs_path": "out/pairs/legacy_mass_gpt2_v2.jsonl",
+    "by_rank": {
+      "1": {
+        "median": 0.1314753196514229,
+        "p25": 0.08998069910863102,
+        "p75": 0.19343448550012518,
+        "mean": 0.15047299792140187,
+        "std": 0.08931505775185485,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.12906842385874712,
+          0.13469125872534948
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "2": {
+        "median": 0.1458994990590402,
+        "p25": 0.09061673025925328,
+        "p75": 0.21623733069083192,
+        "mean": 0.16147938110684448,
+        "std": 0.09413257669784024,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.14112249596739002,
+          0.14958794290268906
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "4": {
+        "median": 0.12820629613252696,
+        "p25": 0.07890569678251858,
+        "p75": 0.19743820680884588,
+        "mean": 0.1488159332027041,
+        "std": 0.08995838573707028,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.12426943698803357,
+          0.1318728264006446
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "8": {
+        "median": 0.10362095837543799,
+        "p25": 0.06283470522698019,
+        "p75": 0.16611616304882143,
+        "mean": 0.12653318448374765,
+        "std": 0.08448347268978706,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.1003872323681648,
+          0.10815217665030397
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "16": {
+        "median": 0.07366294233609172,
+        "p25": 0.0420029564004279,
+        "p75": 0.11910043688228959,
+        "mean": 0.09614759349062729,
+        "std": 0.07478841441021679,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.070277382950671,
+          0.07744613598107894
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "32": {
+        "median": 0.04414615906847844,
+        "p25": 0.024203090879704348,
+        "p75": 0.0705763602393679,
+        "mean": 0.06079062925659351,
+        "std": 0.05593577634663842,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.0421991939063734,
+          0.045809232998105735
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      }
+    },
+    "old_zero_rows_by_rank": {
+      "1": 18,
+      "2": 18,
+      "4": 18,
+      "8": 11,
+      "16": 5,
+      "32": 5
+    },
+    "elapsed_seconds": 13.741776400012895
+  },
+  "gpt2-medium": {
+    "model": "gpt2-medium",
+    "n": 128,
+    "n_instances": 1536,
+    "n_documents": 64,
+    "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+    "pairs_path": "out/pairs/legacy_mass_gpt2-medium_v2.jsonl",
+    "by_rank": {
+      "1": {
+        "median": 0.11134422725128479,
+        "p25": 0.0735828616363918,
+        "p75": 0.15473720170411898,
+        "mean": 0.12193544061955076,
+        "std": 0.06445993365867099,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.10764432517233213,
+          0.11494270780592541
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "2": {
+        "median": 0.11207405236668623,
+        "p25": 0.07128690566708071,
+        "p75": 0.17540329422808823,
+        "mean": 0.12977534492645607,
+        "std": 0.07620121944295176,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.10819880256815846,
+          0.1145645420045689
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "4": {
+        "median": 0.09821379845026391,
+        "p25": 0.06257715603708605,
+        "p75": 0.1615793984755633,
+        "mean": 0.11918411500603958,
+        "std": 0.07628340356477481,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.09495829558308784,
+          0.10353989716982076
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "8": {
+        "median": 0.0780028040245275,
+        "p25": 0.045974661777173645,
+        "p75": 0.1266800511004594,
+        "mean": 0.09853982787978022,
+        "std": 0.0721530397772488,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.07413198540562461,
+          0.08097504137401783
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "16": {
+        "median": 0.05184881186994103,
+        "p25": 0.030637134033015493,
+        "p75": 0.08982263187087765,
+        "mean": 0.07150751673039964,
+        "std": 0.05957133309612845,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.049946771282970724,
+          0.05418279112393952
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "32": {
+        "median": 0.03022351034632953,
+        "p25": 0.017680727392713893,
+        "p75": 0.052594074147991665,
+        "mean": 0.04284103040729156,
+        "std": 0.039902801971087684,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.028769243992457436,
+          0.03184411810306529
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      }
+    },
+    "old_zero_rows_by_rank": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "elapsed_seconds": 12.868647599825636
+  },
+  "EleutherAI/pythia-410m": {
+    "model": "EleutherAI/pythia-410m",
+    "n": 128,
+    "n_instances": 1536,
+    "n_documents": 64,
+    "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+    "pairs_path": "out/pairs/legacy_mass_EleutherAI__pythia-410m_v2.jsonl",
+    "by_rank": {
+      "1": {
+        "median": 0.12605393876001142,
+        "p25": 0.07923860805818098,
+        "p75": 0.1931030455081998,
+        "mean": 0.14694849811686347,
+        "std": 0.10192034641263374,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.11942482427253662,
+          0.13187647317925436
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "2": {
+        "median": 0.11212266111080949,
+        "p25": 0.05066676451262181,
+        "p75": 0.19831291945565588,
+        "mean": 0.13062386098860754,
+        "std": 0.09556665905374939,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.1050242093846191,
+          0.11738339852758738
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "4": {
+        "median": 0.10028116351706157,
+        "p25": 0.04365817953197927,
+        "p75": 0.18300274603869773,
+        "mean": 0.11953213549716861,
+        "std": 0.08863654080773695,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.09371598537092496,
+          0.10909748871960062
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "8": {
+        "median": 0.07974645889840769,
+        "p25": 0.034263732556950574,
+        "p75": 0.15068988520637672,
+        "mean": 0.10091964665485444,
+        "std": 0.08039533516324954,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.07575585093464839,
+          0.08633103672318351
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "16": {
+        "median": 0.055580900940162936,
+        "p25": 0.022417959249319053,
+        "p75": 0.11201050353707008,
+        "mean": 0.07540841269943066,
+        "std": 0.06700400751161806,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.051561724354643054,
+          0.05952231280076202
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "32": {
+        "median": 0.0316450832147133,
+        "p25": 0.012193860384511968,
+        "p75": 0.0662102351987378,
+        "mean": 0.04676237855883713,
+        "std": 0.046676266441518295,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.029370782923205618,
+          0.03375493712412154
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      }
+    },
+    "old_zero_rows_by_rank": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "elapsed_seconds": 14.429366199998185
+  },
+  "EleutherAI/pythia-1.4b": {
+    "model": "EleutherAI/pythia-1.4b",
+    "n": 128,
+    "n_instances": 1536,
+    "n_documents": 64,
+    "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+    "pairs_path": "out/pairs/legacy_mass_EleutherAI__pythia-1.4b_v2.jsonl",
+    "by_rank": {
+      "1": {
+        "median": 0.13701071757618946,
+        "p25": 0.09732973049537369,
+        "p75": 0.1799861708792156,
+        "mean": 0.14478683789625466,
+        "std": 0.07889899835278436,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.1307281524646909,
+          0.14217058273053135
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "2": {
+        "median": 0.10121624968664558,
+        "p25": 0.04816219290861615,
+        "p75": 0.17371439275283268,
+        "mean": 0.11800972503121628,
+        "std": 0.0855432261261922,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.09551264893033938,
+          0.10490521099842817
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "4": {
+        "median": 0.09597877481636304,
+        "p25": 0.04420645453523055,
+        "p75": 0.16479365297114576,
+        "mean": 0.11212764345021342,
+        "std": 0.08371427074162915,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.08958622432398906,
+          0.10040206940683176
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "8": {
+        "median": 0.07564316519655176,
+        "p25": 0.03335245165603508,
+        "p75": 0.14098971335925026,
+        "mean": 0.0953246674623257,
+        "std": 0.07652658663537497,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.07255463566913571,
+          0.08000678022573839
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "16": {
+        "median": 0.05290849134849003,
+        "p25": 0.02226349223878772,
+        "p75": 0.1053650475016926,
+        "mean": 0.07180277446585064,
+        "std": 0.06403783993863939,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.04939210507662511,
+          0.05605363316725183
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "32": {
+        "median": 0.0288592603897021,
+        "p25": 0.011733150186522932,
+        "p75": 0.0634350544799913,
+        "mean": 0.04501091755842029,
+        "std": 0.045924645805440645,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.02660320319044928,
+          0.03162261190720934
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      }
+    },
+    "old_zero_rows_by_rank": {
+      "1": 1,
+      "2": 1,
+      "4": 1,
+      "8": 1,
+      "16": 1,
+      "32": 0
+    },
+    "elapsed_seconds": 14.231374599970877
+  },
+  "Qwen/Qwen2.5-0.5B": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "n": 128,
+    "n_instances": 1536,
+    "n_documents": 64,
+    "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+    "pairs_path": "out/pairs/legacy_mass_Qwen__Qwen2.5-0.5B_v2.jsonl",
+    "by_rank": {
+      "1": {
+        "median": 0.15670139233727315,
+        "p25": 0.08854245227993876,
+        "p75": 0.20946977128401428,
+        "mean": 0.1593315683855265,
+        "std": 0.10202616736283539,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.15042299952235938,
+          0.1613843560993939
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "2": {
+        "median": 0.15735739127781334,
+        "p25": 0.09108287866192435,
+        "p75": 0.2107069054940815,
+        "mean": 0.16074635602257062,
+        "std": 0.09601218922331371,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.15330476267441026,
+          0.16167080194278022
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "4": {
+        "median": 0.13625213599001296,
+        "p25": 0.077163213088349,
+        "p75": 0.19909189923155804,
+        "mean": 0.14681297757830236,
+        "std": 0.09103431198884245,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.13312250581090623,
+          0.14111429745833873
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "8": {
+        "median": 0.10650120317906411,
+        "p25": 0.05777949694502097,
+        "p75": 0.16846144391377804,
+        "mean": 0.12530273421469015,
+        "std": 0.08983507541747522,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.10282783564491951,
+          0.11001993784381608
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "16": {
+        "median": 0.07291707315799911,
+        "p25": 0.037070263000529735,
+        "p75": 0.12603299348250863,
+        "mean": 0.09520906273462933,
+        "std": 0.08006303182795294,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.06851513276145493,
+          0.07642139111919719
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "32": {
+        "median": 0.040492889130081755,
+        "p25": 0.021512159901071082,
+        "p75": 0.0753316263405705,
+        "mean": 0.06193304282393044,
+        "std": 0.06649005581399449,
+        "n_instances": 1536,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.0384798632894635,
+          0.04281217291919787
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      }
+    },
+    "old_zero_rows_by_rank": {
+      "1": 54,
+      "2": 44,
+      "4": 41,
+      "8": 31,
+      "16": 17,
+      "32": 12
+    },
+    "elapsed_seconds": 13.43563470011577
+  },
+  "Qwen/Qwen2.5-3B": {
+    "model": "Qwen/Qwen2.5-3B",
+    "n": 128,
+    "n_instances": 2304,
+    "n_documents": 64,
+    "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+    "pairs_path": "out/pairs/legacy_mass_Qwen__Qwen2.5-3B_v2.jsonl",
+    "by_rank": {
+      "1": {
+        "median": 0.1510651566223553,
+        "p25": 0.10354149687927522,
+        "p75": 0.19941488725481665,
+        "mean": 0.15816849273005176,
+        "std": 0.08375523968947338,
+        "n_instances": 2304,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.14722912735274563,
+          0.15415538863840336
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "2": {
+        "median": 0.14431622317545134,
+        "p25": 0.09666432060926294,
+        "p75": 0.19396230755791985,
+        "mean": 0.1518468986828166,
+        "std": 0.07827461413607902,
+        "n_instances": 2304,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.14111436245641473,
+          0.14797764104234856
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "4": {
+        "median": 0.12429220168825257,
+        "p25": 0.08174696131313126,
+        "p75": 0.1810336122429569,
+        "mean": 0.13942263590523563,
+        "std": 0.07872452798661797,
+        "n_instances": 2304,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.1212021044411781,
+          0.12768982029788747
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "8": {
+        "median": 0.09733109923203165,
+        "p25": 0.06253682180366185,
+        "p75": 0.15373533496950884,
+        "mean": 0.11864434529915492,
+        "std": 0.07855222274135072,
+        "n_instances": 2304,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.09417093147115736,
+          0.10005671842048347
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "16": {
+        "median": 0.06652428496279622,
+        "p25": 0.041015835938468824,
+        "p75": 0.11531737626864155,
+        "mean": 0.0908713066738314,
+        "std": 0.07355444671984349,
+        "n_instances": 2304,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.06440268510798682,
+          0.06891214833524642
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      },
+      "32": {
+        "median": 0.03827147040450033,
+        "p25": 0.02213477981018503,
+        "p75": 0.07069701904801773,
+        "mean": 0.06004376779450311,
+        "std": 0.06155186946819831,
+        "n_instances": 2304,
+        "n_documents": 64,
+        "median_ci_document_bootstrap": [
+          0.036880773849573646,
+          0.039522681424710576
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000
+      }
+    },
+    "old_zero_rows_by_rank": {
+      "1": 503,
+      "2": 494,
+      "4": 464,
+      "8": 431,
+      "16": 377,
+      "32": 307
+    },
+    "elapsed_seconds": 19.957426100037992
+  }
+}

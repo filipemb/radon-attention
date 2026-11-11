@@ -1,0 +1,172 @@
+{
+  "schema_version": 2,
+  "model": "gpt2",
+  "dtype": "torch.float32",
+  "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "n_trials_effective_per_arm": 3200,
+  "seed": 0,
+  "sequence_length": 128,
+  "batch": 16,
+  "positions": [
+    4,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    110
+  ],
+  "n_per_position": 400,
+  "middle_positions": [
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "probe_manifest": "data/attn/beta0_probe_gpt2_s0_v2.manifest.json",
+  "pairs_path": "out/pairs/beta0_gpt2_v2.jsonl",
+  "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+  "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+  "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+  "arms": {
+    "baseline_beta1": {
+      "n_trials": 3200,
+      "n_correct": 1150,
+      "accuracy": 0.359375,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 694,
+      "middle_accuracy": 0.347,
+      "accuracy_by_position": {
+        "4": 0.345,
+        "16": 0.3825,
+        "32": 0.3625,
+        "48": 0.3175,
+        "64": 0.3575,
+        "80": 0.3375,
+        "96": 0.36,
+        "110": 0.4125
+      }
+    },
+    "corrected_beta0": {
+      "n_trials": 3200,
+      "n_correct": 1431,
+      "accuracy": 0.4471875,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 1052,
+      "middle_accuracy": 0.526,
+      "accuracy_by_position": {
+        "4": 0.07,
+        "16": 0.22,
+        "32": 0.43,
+        "48": 0.455,
+        "64": 0.5475,
+        "80": 0.6125,
+        "96": 0.585,
+        "110": 0.6575
+      }
+    },
+    "legacy_beta0_diagnostic": {
+      "n_trials": 3200,
+      "n_correct": 1431,
+      "accuracy": 0.4471875,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 1052,
+      "middle_accuracy": 0.526,
+      "accuracy_by_position": {
+        "4": 0.07,
+        "16": 0.22,
+        "32": 0.43,
+        "48": 0.455,
+        "64": 0.5475,
+        "80": 0.6125,
+        "96": 0.585,
+        "110": 0.6575
+      }
+    }
+  },
+  "attention_validation": {
+    "baseline_beta1": {
+      "negative_nan_inf_upper_nonzero": 0,
+      "row_sum_violations": 0,
+      "max_row_error_after_cast": 4.76837158203125e-07,
+      "rows_checked": 58982400
+    },
+    "corrected_beta0": {
+      "sink_edit_invalid_values": 0,
+      "sink_edit_rows_total": 58982400,
+      "sink_edit_rows_preserved_no_alternative": 460800,
+      "sink_edit_last_query_rows_preserved": 0,
+      "sink_edit_invalid_totals": 0,
+      "sink_edit_positive_mass_below_legacy_clamp": 60,
+      "sink_edit_noncausal_values": 0,
+      "sink_edit_row_sum_violations": 0,
+      "sink_edit_first_row_changes": 0,
+      "max_sink_edit_row_error": 3.5762786865234375e-07,
+      "max_sink_edit_row_error_bound": 2.119209296656209e-06
+    },
+    "legacy_beta0_diagnostic": {
+      "rows_total": 58982400,
+      "zero_rows": 460800,
+      "zero_rows_at_last_query": 0,
+      "positive_mass_below_clamp": 60
+    }
+  },
+  "positive_beta_regression": {
+    "model": "gpt2",
+    "beta": 0.25,
+    "n_sequences": 2,
+    "logits_bit_equal": true,
+    "max_absolute_logit_difference": 0.0,
+    "new_attention_checks": {
+      "sink_edit_invalid_values": 0,
+      "sink_edit_rows_total": 36864,
+      "sink_edit_rows_preserved_no_alternative": 0,
+      "sink_edit_last_query_rows_preserved": 0,
+      "sink_edit_invalid_totals": 0,
+      "sink_edit_positive_mass_below_legacy_clamp": 0,
+      "sink_edit_noncausal_values": 0,
+      "sink_edit_row_sum_violations": 0,
+      "sink_edit_first_row_changes": 0,
+      "max_sink_edit_row_error": 2.384185791015625e-07,
+      "max_sink_edit_row_error_bound": 2.119209296656209e-06
+    }
+  },
+  "native_identity_regression": {
+    "n_sequences": 2,
+    "logits_bit_equal": true,
+    "max_absolute_logit_difference": 0.0
+  },
+  "historical_s0": {
+    "1.0": {
+      "accuracy": 0.359375,
+      "middle_accuracy": 0.347
+    },
+    "0.0": {
+      "accuracy": 0.44718749999999996,
+      "middle_accuracy": 0.526
+    }
+  },
+  "paired_corrected_vs_baseline": {
+    "left": "corrected_beta0",
+    "right": "baseline_beta1",
+    "n_pairs": 3200,
+    "left_only_correct": 759,
+    "right_only_correct": 478,
+    "accuracy_difference_left_minus_right": 0.0878125,
+    "mcnemar_exact_pvalue": 1.2937340336381578e-15,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "paired_corrected_vs_legacy": {
+    "left": "corrected_beta0",
+    "right": "legacy_beta0_diagnostic",
+    "n_pairs": 3200,
+    "left_only_correct": 0,
+    "right_only_correct": 0,
+    "accuracy_difference_left_minus_right": 0.0,
+    "mcnemar_exact_pvalue": 1.0,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "elapsed_seconds": 60.28865009988658
+}

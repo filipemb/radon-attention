@@ -1,0 +1,8 @@
+{
+  "balanced_matches_phase24_exactly": true,
+  "ragged_whole_block_bootstrap_matches": true,
+  "ragged_empty_draws": 17,
+  "exact_stratified_permutation_bruteforce_value": 0.08593750000000003,
+  "all_passed": true,
+  "elapsed_seconds": 0.17300490010529757
+}

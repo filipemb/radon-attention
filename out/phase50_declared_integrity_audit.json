@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "scope": "all six arms, bothK,64 articles/model for declared FP32 method",
+  "complete_scientific_E9_forward_comparison_for_declared_FP32": true,
+  "CPU_float64_equivalence_passed": false,
+  "CPU_float64_equivalence_is_behavioral_gate": false,
+  "decision_before_first_b_c_f_KL": true,
+  "n_articles_per_arm_model_K": 64,
+  "n_paired_tests": 60,
+  "Holm_family_size": 60,
+  "no_missing_tests": true,
+  "harness_unchanged": true,
+  "estimator_sources_unchanged": true,
+  "estimator_sources_unchanged_scope": "Imported base source files remain byte-identical; the explicit controlled numerical wrapper is separately recorded and hashed",
+  "controlled_core_SVD_fix_passed": true,
+  "all_report_numbers_finite": true,
+  "empty_row_counters_control_passed": true,
+  "per_model": [
+    {
+      "model": "gpt2",
+      "all_six_arms_all64_articles_both_K": true,
+      "new_pairs_sha256": "dfa9a9a388dab73751631905451271fd91f222dc42442adc4823cb4d8ef8ed91",
+      "all_per_batch_identity_KL_zero": true,
+      "all_empty_row_denominators_exact": true,
+      "source_a_d_e_unchanged": true,
+      "max_e_KL_replay_discrepancy": 0.0,
+      "max_e_NLL_replay_discrepancy": 0.0
+    },
+    {
+      "model": "gpt2-medium",
+      "all_six_arms_all64_articles_both_K": true,
+      "new_pairs_sha256": "640dd416a4bb7f233cf8319ddcd57fad82e892bcf81e78893d8614457eb30076",
+      "all_per_batch_identity_KL_zero": true,
+      "all_empty_row_denominators_exact": true,
+      "source_a_d_e_unchanged": true,
+      "max_e_KL_replay_discrepancy": 0.0,
+      "max_e_NLL_replay_discrepancy": 0.0
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "all_six_arms_all64_articles_both_K": true,
+      "new_pairs_sha256": "2632a763b1431ef24487b95771d39a8f78dbe0c760b6c90b303571a48c05fa6b",
+      "all_per_batch_identity_KL_zero": true,
+      "all_empty_row_denominators_exact": true,
+      "source_a_d_e_unchanged": true,
+      "max_e_KL_replay_discrepancy": 0.0,
+      "max_e_NLL_replay_discrepancy": 0.0
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "all_six_arms_all64_articles_both_K": true,
+      "new_pairs_sha256": "93aff897adf122b9216a10934bacb6f2fc2db8da4167b2f3a19ef8ab48cf487c",
+      "all_per_batch_identity_KL_zero": true,
+      "all_empty_row_denominators_exact": true,
+      "source_a_d_e_unchanged": true,
+      "max_e_KL_replay_discrepancy": 0.0,
+      "max_e_NLL_replay_discrepancy": 0.0
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "all_six_arms_all64_articles_both_K": true,
+      "new_pairs_sha256": "31b1a4995294f701c74ddc85c0e97a541144cc3716320bb5a3b4cdddbd33f818",
+      "all_per_batch_identity_KL_zero": true,
+      "all_empty_row_denominators_exact": true,
+      "source_a_d_e_unchanged": true,
+      "max_e_KL_replay_discrepancy": 0.0,
+      "max_e_NLL_replay_discrepancy": 0.0
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "all_six_arms_all64_articles_both_K": true,
+      "new_pairs_sha256": "47c06e6554f2eaa40f01fb8c4f3ba6e161570daf045e171c33e1152bef32bf84",
+      "all_per_batch_identity_KL_zero": true,
+      "all_empty_row_denominators_exact": true,
+      "source_a_d_e_unchanged": true,
+      "max_e_KL_replay_discrepancy": 0.0,
+      "max_e_NLL_replay_discrepancy": 0.0
+    }
+  ],
+  "internal_self_audit_not_independent": true,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251",
+  "execution_log_committed_prefix": {
+    "path": "out/pairs/phase50_declared_events.jsonl",
+    "byte_length": 20503,
+    "sha256": "25d08df51640eecb289d01a961e2e28c5a97d678ce1f09ec3a4a735de6f8b1dd",
+    "scope": "Committed execution history through report start; coordinator can append the report end event after publication"
+  }
+}

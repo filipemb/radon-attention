@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "passed": true,
+  "controls": [
+    {
+      "n": 128,
+      "model": "gpt2",
+      "fixed_instance_index": 0,
+      "reference": "complete unmodified omp_profiled execution",
+      "unmodified_OMP_error": 0.24634081066657781,
+      "endpoint_error": 0.24634081066657781,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-11,
+      "literal_OMP_seconds": 230.1413434999995,
+      "benchmark_sha256": "0d374133fdff606d954bf7dac03c0b530753ab3f8f25be368c10ef58d4f7afaf",
+      "prior_endpoint_control_path": "out/phase21_allocation_v2_line_endpoint_check_n128.json",
+      "prior_endpoint_control_sha256": "b154ceb16380419542b576f0042a33ec88676c53d16404146c8ea8240c611c12"
+    },
+    {
+      "n": 256,
+      "model": "gpt2",
+      "fixed_instance_index": 0,
+      "reference": "complete unmodified omp_profiled execution",
+      "unmodified_OMP_error": 0.3091042982543027,
+      "endpoint_error": 0.3091042982543027,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-11,
+      "literal_OMP_seconds": 4414.5400370999705,
+      "benchmark_sha256": "0d374133fdff606d954bf7dac03c0b530753ab3f8f25be368c10ef58d4f7afaf",
+      "prior_endpoint_control_path": "out/phase21_allocation_v2_line_endpoint_check_n256.json",
+      "prior_endpoint_control_sha256": "20e51fe19d79acb371bbc8b1cebe75c781dd80dcd011a7edcf51863e20aaa691"
+    }
+  ],
+  "scope": "Two fixed pilot instances. General endpoint equivalence follows from the identical full finite cone, not from two empirical controls.",
+  "source_OMP_sha256": "88c46a9dd9941e9e9c35b3bef9154c9aed74711b544dc7f072888556c820e7c4",
+  "partial_OMP_equivalence_claimed": false
+}

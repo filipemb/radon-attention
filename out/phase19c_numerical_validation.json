@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "dense_renderer_checks": [
+    {
+      "n": 128,
+      "parameter_bits": 64,
+      "max_absolute": 1.8735013540549517e-15
+    },
+    {
+      "n": 128,
+      "parameter_bits": 16,
+      "max_absolute": 7.882583474838611e-15
+    },
+    {
+      "n": 256,
+      "parameter_bits": 64,
+      "max_absolute": 4.135580766728708e-15
+    },
+    {
+      "n": 256,
+      "parameter_bits": 16,
+      "max_absolute": 5.856426454897701e-15
+    }
+  ],
+  "IEEE_binary16_direct_rounding": true,
+  "overflow_is_explicit_failure": true,
+  "quantized_svd_matches_manual_decode": true
+}

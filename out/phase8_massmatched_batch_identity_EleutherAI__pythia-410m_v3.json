@@ -1,0 +1,2178 @@
+{
+  "task": "phase8",
+  "model": "EleutherAI/pythia-410m",
+  "dtype": "torch.float32",
+  "n_independent_sanity_items": 240,
+  "sanity_subset_rule": "first original batch in each seed x middle-position cell; fixed before this diagnostic",
+  "main_cohort_not_subsampled": true,
+  "original_batch": 16,
+  "doubled_batch": 32,
+  "n_argmax_mismatches": 0,
+  "max_logit_absolute_difference": 0.00618685781955719,
+  "all_original_batch_predictions_exact_historical": true,
+  "rows": [
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 800,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 801,
+      "original_batch_prediction": 281,
+      "doubled_copy1_prediction": 281,
+      "doubled_copy2_prediction": 281,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 802,
+      "original_batch_prediction": 15964,
+      "doubled_copy1_prediction": 15964,
+      "doubled_copy2_prediction": 15964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 803,
+      "original_batch_prediction": 38509,
+      "doubled_copy1_prediction": 38509,
+      "doubled_copy2_prediction": 38509,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 804,
+      "original_batch_prediction": 285,
+      "doubled_copy1_prediction": 285,
+      "doubled_copy2_prediction": 285,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 805,
+      "original_batch_prediction": 2954,
+      "doubled_copy1_prediction": 2954,
+      "doubled_copy2_prediction": 2954,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 806,
+      "original_batch_prediction": 4695,
+      "doubled_copy1_prediction": 4695,
+      "doubled_copy2_prediction": 4695,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 807,
+      "original_batch_prediction": 611,
+      "doubled_copy1_prediction": 611,
+      "doubled_copy2_prediction": 611,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 808,
+      "original_batch_prediction": 21078,
+      "doubled_copy1_prediction": 21078,
+      "doubled_copy2_prediction": 21078,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 809,
+      "original_batch_prediction": 1215,
+      "doubled_copy1_prediction": 1215,
+      "doubled_copy2_prediction": 1215,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 810,
+      "original_batch_prediction": 32921,
+      "doubled_copy1_prediction": 32921,
+      "doubled_copy2_prediction": 32921,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 811,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 812,
+      "original_batch_prediction": 318,
+      "doubled_copy1_prediction": 318,
+      "doubled_copy2_prediction": 318,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 813,
+      "original_batch_prediction": 2387,
+      "doubled_copy1_prediction": 2387,
+      "doubled_copy2_prediction": 2387,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 814,
+      "original_batch_prediction": 33,
+      "doubled_copy1_prediction": 33,
+      "doubled_copy2_prediction": 33,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 32,
+      "trial_id": 815,
+      "original_batch_prediction": 2159,
+      "doubled_copy1_prediction": 2159,
+      "doubled_copy2_prediction": 2159,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1200,
+      "original_batch_prediction": 1214,
+      "doubled_copy1_prediction": 1214,
+      "doubled_copy2_prediction": 1214,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1201,
+      "original_batch_prediction": 84,
+      "doubled_copy1_prediction": 84,
+      "doubled_copy2_prediction": 84,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1202,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1203,
+      "original_batch_prediction": 15277,
+      "doubled_copy1_prediction": 15277,
+      "doubled_copy2_prediction": 15277,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1204,
+      "original_batch_prediction": 1240,
+      "doubled_copy1_prediction": 1240,
+      "doubled_copy2_prediction": 1240,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1205,
+      "original_batch_prediction": 281,
+      "doubled_copy1_prediction": 281,
+      "doubled_copy2_prediction": 281,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1206,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1207,
+      "original_batch_prediction": 844,
+      "doubled_copy1_prediction": 844,
+      "doubled_copy2_prediction": 844,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1208,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1209,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1210,
+      "original_batch_prediction": 2387,
+      "doubled_copy1_prediction": 2387,
+      "doubled_copy2_prediction": 2387,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1211,
+      "original_batch_prediction": 272,
+      "doubled_copy1_prediction": 272,
+      "doubled_copy2_prediction": 272,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1212,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1213,
+      "original_batch_prediction": 13,
+      "doubled_copy1_prediction": 13,
+      "doubled_copy2_prediction": 13,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1214,
+      "original_batch_prediction": 285,
+      "doubled_copy1_prediction": 285,
+      "doubled_copy2_prediction": 285,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 48,
+      "trial_id": 1215,
+      "original_batch_prediction": 71,
+      "doubled_copy1_prediction": 71,
+      "doubled_copy2_prediction": 71,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1600,
+      "original_batch_prediction": 4096,
+      "doubled_copy1_prediction": 4096,
+      "doubled_copy2_prediction": 4096,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1601,
+      "original_batch_prediction": 75,
+      "doubled_copy1_prediction": 75,
+      "doubled_copy2_prediction": 75,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1602,
+      "original_batch_prediction": 281,
+      "doubled_copy1_prediction": 281,
+      "doubled_copy2_prediction": 281,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1603,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1604,
+      "original_batch_prediction": 522,
+      "doubled_copy1_prediction": 522,
+      "doubled_copy2_prediction": 522,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1605,
+      "original_batch_prediction": 34074,
+      "doubled_copy1_prediction": 34074,
+      "doubled_copy2_prediction": 34074,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1606,
+      "original_batch_prediction": 38520,
+      "doubled_copy1_prediction": 38520,
+      "doubled_copy2_prediction": 38520,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1607,
+      "original_batch_prediction": 6026,
+      "doubled_copy1_prediction": 6026,
+      "doubled_copy2_prediction": 6026,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1608,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1609,
+      "original_batch_prediction": 7641,
+      "doubled_copy1_prediction": 7641,
+      "doubled_copy2_prediction": 7641,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1610,
+      "original_batch_prediction": 326,
+      "doubled_copy1_prediction": 326,
+      "doubled_copy2_prediction": 326,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1611,
+      "original_batch_prediction": 2846,
+      "doubled_copy1_prediction": 2846,
+      "doubled_copy2_prediction": 2846,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1612,
+      "original_batch_prediction": 1669,
+      "doubled_copy1_prediction": 1669,
+      "doubled_copy2_prediction": 1669,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1613,
+      "original_batch_prediction": 565,
+      "doubled_copy1_prediction": 565,
+      "doubled_copy2_prediction": 565,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1614,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 64,
+      "trial_id": 1615,
+      "original_batch_prediction": 307,
+      "doubled_copy1_prediction": 307,
+      "doubled_copy2_prediction": 307,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2000,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2001,
+      "original_batch_prediction": 3377,
+      "doubled_copy1_prediction": 3377,
+      "doubled_copy2_prediction": 3377,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2002,
+      "original_batch_prediction": 9575,
+      "doubled_copy1_prediction": 9575,
+      "doubled_copy2_prediction": 9575,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2003,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2004,
+      "original_batch_prediction": 383,
+      "doubled_copy1_prediction": 383,
+      "doubled_copy2_prediction": 383,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2005,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2006,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2007,
+      "original_batch_prediction": 671,
+      "doubled_copy1_prediction": 671,
+      "doubled_copy2_prediction": 671,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2008,
+      "original_batch_prediction": 320,
+      "doubled_copy1_prediction": 320,
+      "doubled_copy2_prediction": 320,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2009,
+      "original_batch_prediction": 11612,
+      "doubled_copy1_prediction": 11612,
+      "doubled_copy2_prediction": 11612,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2010,
+      "original_batch_prediction": 32098,
+      "doubled_copy1_prediction": 32098,
+      "doubled_copy2_prediction": 32098,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2011,
+      "original_batch_prediction": 2387,
+      "doubled_copy1_prediction": 2387,
+      "doubled_copy2_prediction": 2387,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2012,
+      "original_batch_prediction": 346,
+      "doubled_copy1_prediction": 346,
+      "doubled_copy2_prediction": 346,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2013,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2014,
+      "original_batch_prediction": 4214,
+      "doubled_copy1_prediction": 4214,
+      "doubled_copy2_prediction": 4214,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 80,
+      "trial_id": 2015,
+      "original_batch_prediction": 11275,
+      "doubled_copy1_prediction": 11275,
+      "doubled_copy2_prediction": 11275,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2400,
+      "original_batch_prediction": 6778,
+      "doubled_copy1_prediction": 6778,
+      "doubled_copy2_prediction": 6778,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2401,
+      "original_batch_prediction": 9891,
+      "doubled_copy1_prediction": 9891,
+      "doubled_copy2_prediction": 9891,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2402,
+      "original_batch_prediction": 347,
+      "doubled_copy1_prediction": 347,
+      "doubled_copy2_prediction": 347,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2403,
+      "original_batch_prediction": 37583,
+      "doubled_copy1_prediction": 37583,
+      "doubled_copy2_prediction": 37583,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2404,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2405,
+      "original_batch_prediction": 38576,
+      "doubled_copy1_prediction": 38576,
+      "doubled_copy2_prediction": 38576,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2406,
+      "original_batch_prediction": 4514,
+      "doubled_copy1_prediction": 4514,
+      "doubled_copy2_prediction": 4514,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2407,
+      "original_batch_prediction": 352,
+      "doubled_copy1_prediction": 352,
+      "doubled_copy2_prediction": 352,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2408,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2409,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2410,
+      "original_batch_prediction": 597,
+      "doubled_copy1_prediction": 597,
+      "doubled_copy2_prediction": 597,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2411,
+      "original_batch_prediction": 8741,
+      "doubled_copy1_prediction": 8741,
+      "doubled_copy2_prediction": 8741,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2412,
+      "original_batch_prediction": 1159,
+      "doubled_copy1_prediction": 1159,
+      "doubled_copy2_prediction": 1159,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2413,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2414,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 0,
+      "position": 96,
+      "trial_id": 2415,
+      "original_batch_prediction": 264,
+      "doubled_copy1_prediction": 264,
+      "doubled_copy2_prediction": 264,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 800,
+      "original_batch_prediction": 481,
+      "doubled_copy1_prediction": 481,
+      "doubled_copy2_prediction": 481,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 801,
+      "original_batch_prediction": 3729,
+      "doubled_copy1_prediction": 3729,
+      "doubled_copy2_prediction": 3729,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 802,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 803,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 804,
+      "original_batch_prediction": 5329,
+      "doubled_copy1_prediction": 5329,
+      "doubled_copy2_prediction": 5329,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 805,
+      "original_batch_prediction": 16685,
+      "doubled_copy1_prediction": 16685,
+      "doubled_copy2_prediction": 16685,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 806,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 807,
+      "original_batch_prediction": 5450,
+      "doubled_copy1_prediction": 5450,
+      "doubled_copy2_prediction": 5450,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 808,
+      "original_batch_prediction": 1503,
+      "doubled_copy1_prediction": 1503,
+      "doubled_copy2_prediction": 1503,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 809,
+      "original_batch_prediction": 1402,
+      "doubled_copy1_prediction": 1402,
+      "doubled_copy2_prediction": 1402,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 810,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 811,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 812,
+      "original_batch_prediction": 1214,
+      "doubled_copy1_prediction": 1214,
+      "doubled_copy2_prediction": 1214,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 813,
+      "original_batch_prediction": 3440,
+      "doubled_copy1_prediction": 3440,
+      "doubled_copy2_prediction": 3440,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 814,
+      "original_batch_prediction": 35457,
+      "doubled_copy1_prediction": 35457,
+      "doubled_copy2_prediction": 35457,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 32,
+      "trial_id": 815,
+      "original_batch_prediction": 34028,
+      "doubled_copy1_prediction": 34028,
+      "doubled_copy2_prediction": 34028,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1200,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1201,
+      "original_batch_prediction": 11198,
+      "doubled_copy1_prediction": 11198,
+      "doubled_copy2_prediction": 11198,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1202,
+      "original_batch_prediction": 285,
+      "doubled_copy1_prediction": 285,
+      "doubled_copy2_prediction": 285,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1203,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1204,
+      "original_batch_prediction": 2892,
+      "doubled_copy1_prediction": 2892,
+      "doubled_copy2_prediction": 2892,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1205,
+      "original_batch_prediction": 33,
+      "doubled_copy1_prediction": 33,
+      "doubled_copy2_prediction": 33,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1206,
+      "original_batch_prediction": 686,
+      "doubled_copy1_prediction": 686,
+      "doubled_copy2_prediction": 686,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1207,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1208,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1209,
+      "original_batch_prediction": 20303,
+      "doubled_copy1_prediction": 20303,
+      "doubled_copy2_prediction": 20303,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1210,
+      "original_batch_prediction": 507,
+      "doubled_copy1_prediction": 507,
+      "doubled_copy2_prediction": 507,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1211,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1212,
+      "original_batch_prediction": 2069,
+      "doubled_copy1_prediction": 2069,
+      "doubled_copy2_prediction": 2069,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1213,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1214,
+      "original_batch_prediction": 3518,
+      "doubled_copy1_prediction": 3518,
+      "doubled_copy2_prediction": 3518,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 48,
+      "trial_id": 1215,
+      "original_batch_prediction": 1390,
+      "doubled_copy1_prediction": 1390,
+      "doubled_copy2_prediction": 1390,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1600,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1601,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1602,
+      "original_batch_prediction": 33,
+      "doubled_copy1_prediction": 33,
+      "doubled_copy2_prediction": 33,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1603,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1604,
+      "original_batch_prediction": 24718,
+      "doubled_copy1_prediction": 24718,
+      "doubled_copy2_prediction": 24718,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1605,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1606,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1607,
+      "original_batch_prediction": 281,
+      "doubled_copy1_prediction": 281,
+      "doubled_copy2_prediction": 281,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1608,
+      "original_batch_prediction": 3606,
+      "doubled_copy1_prediction": 3606,
+      "doubled_copy2_prediction": 3606,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1609,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1610,
+      "original_batch_prediction": 13,
+      "doubled_copy1_prediction": 13,
+      "doubled_copy2_prediction": 13,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1611,
+      "original_batch_prediction": 1911,
+      "doubled_copy1_prediction": 1911,
+      "doubled_copy2_prediction": 1911,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1612,
+      "original_batch_prediction": 1612,
+      "doubled_copy1_prediction": 1612,
+      "doubled_copy2_prediction": 1612,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1613,
+      "original_batch_prediction": 407,
+      "doubled_copy1_prediction": 407,
+      "doubled_copy2_prediction": 407,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1614,
+      "original_batch_prediction": 3298,
+      "doubled_copy1_prediction": 3298,
+      "doubled_copy2_prediction": 3298,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 64,
+      "trial_id": 1615,
+      "original_batch_prediction": 1596,
+      "doubled_copy1_prediction": 1596,
+      "doubled_copy2_prediction": 1596,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2000,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2001,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2002,
+      "original_batch_prediction": 4439,
+      "doubled_copy1_prediction": 4439,
+      "doubled_copy2_prediction": 4439,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2003,
+      "original_batch_prediction": 1876,
+      "doubled_copy1_prediction": 1876,
+      "doubled_copy2_prediction": 1876,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2004,
+      "original_batch_prediction": 745,
+      "doubled_copy1_prediction": 745,
+      "doubled_copy2_prediction": 745,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2005,
+      "original_batch_prediction": 15315,
+      "doubled_copy1_prediction": 15315,
+      "doubled_copy2_prediction": 15315,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2006,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2007,
+      "original_batch_prediction": 11240,
+      "doubled_copy1_prediction": 11240,
+      "doubled_copy2_prediction": 11240,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2008,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2009,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2010,
+      "original_batch_prediction": 1037,
+      "doubled_copy1_prediction": 1037,
+      "doubled_copy2_prediction": 1037,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2011,
+      "original_batch_prediction": 13161,
+      "doubled_copy1_prediction": 13161,
+      "doubled_copy2_prediction": 13161,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2012,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2013,
+      "original_batch_prediction": 5886,
+      "doubled_copy1_prediction": 5886,
+      "doubled_copy2_prediction": 5886,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2014,
+      "original_batch_prediction": 368,
+      "doubled_copy1_prediction": 368,
+      "doubled_copy2_prediction": 368,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 80,
+      "trial_id": 2015,
+      "original_batch_prediction": 281,
+      "doubled_copy1_prediction": 281,
+      "doubled_copy2_prediction": 281,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2400,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2401,
+      "original_batch_prediction": 1386,
+      "doubled_copy1_prediction": 1386,
+      "doubled_copy2_prediction": 1386,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2402,
+      "original_batch_prediction": 4098,
+      "doubled_copy1_prediction": 4098,
+      "doubled_copy2_prediction": 4098,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2403,
+      "original_batch_prediction": 346,
+      "doubled_copy1_prediction": 346,
+      "doubled_copy2_prediction": 346,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2404,
+      "original_batch_prediction": 37100,
+      "doubled_copy1_prediction": 37100,
+      "doubled_copy2_prediction": 37100,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2405,
+      "original_batch_prediction": 3378,
+      "doubled_copy1_prediction": 3378,
+      "doubled_copy2_prediction": 3378,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2406,
+      "original_batch_prediction": 352,
+      "doubled_copy1_prediction": 352,
+      "doubled_copy2_prediction": 352,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2407,
+      "original_batch_prediction": 281,
+      "doubled_copy1_prediction": 281,
+      "doubled_copy2_prediction": 281,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2408,
+      "original_batch_prediction": 16176,
+      "doubled_copy1_prediction": 16176,
+      "doubled_copy2_prediction": 16176,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2409,
+      "original_batch_prediction": 310,
+      "doubled_copy1_prediction": 310,
+      "doubled_copy2_prediction": 310,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2410,
+      "original_batch_prediction": 534,
+      "doubled_copy1_prediction": 534,
+      "doubled_copy2_prediction": 534,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2411,
+      "original_batch_prediction": 44867,
+      "doubled_copy1_prediction": 44867,
+      "doubled_copy2_prediction": 44867,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2412,
+      "original_batch_prediction": 275,
+      "doubled_copy1_prediction": 275,
+      "doubled_copy2_prediction": 275,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2413,
+      "original_batch_prediction": 28299,
+      "doubled_copy1_prediction": 28299,
+      "doubled_copy2_prediction": 28299,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2414,
+      "original_batch_prediction": 79,
+      "doubled_copy1_prediction": 79,
+      "doubled_copy2_prediction": 79,
+      "prediction_changed": false
+    },
+    {
+      "seed": 1,
+      "position": 96,
+      "trial_id": 2415,
+      "original_batch_prediction": 15889,
+      "doubled_copy1_prediction": 15889,
+      "doubled_copy2_prediction": 15889,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 800,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 801,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 802,
+      "original_batch_prediction": 686,
+      "doubled_copy1_prediction": 686,
+      "doubled_copy2_prediction": 686,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 803,
+      "original_batch_prediction": 27386,
+      "doubled_copy1_prediction": 27386,
+      "doubled_copy2_prediction": 27386,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 804,
+      "original_batch_prediction": 75,
+      "doubled_copy1_prediction": 75,
+      "doubled_copy2_prediction": 75,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 805,
+      "original_batch_prediction": 1659,
+      "doubled_copy1_prediction": 1659,
+      "doubled_copy2_prediction": 1659,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 806,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 807,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 808,
+      "original_batch_prediction": 3684,
+      "doubled_copy1_prediction": 3684,
+      "doubled_copy2_prediction": 3684,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 809,
+      "original_batch_prediction": 20344,
+      "doubled_copy1_prediction": 20344,
+      "doubled_copy2_prediction": 20344,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 810,
+      "original_batch_prediction": 4072,
+      "doubled_copy1_prediction": 4072,
+      "doubled_copy2_prediction": 4072,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 811,
+      "original_batch_prediction": 248,
+      "doubled_copy1_prediction": 248,
+      "doubled_copy2_prediction": 248,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 812,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 813,
+      "original_batch_prediction": 1873,
+      "doubled_copy1_prediction": 1873,
+      "doubled_copy2_prediction": 1873,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 814,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 32,
+      "trial_id": 815,
+      "original_batch_prediction": 264,
+      "doubled_copy1_prediction": 264,
+      "doubled_copy2_prediction": 264,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1200,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1201,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1202,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1203,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1204,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1205,
+      "original_batch_prediction": 369,
+      "doubled_copy1_prediction": 369,
+      "doubled_copy2_prediction": 369,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1206,
+      "original_batch_prediction": 779,
+      "doubled_copy1_prediction": 779,
+      "doubled_copy2_prediction": 779,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1207,
+      "original_batch_prediction": 2387,
+      "doubled_copy1_prediction": 2387,
+      "doubled_copy2_prediction": 2387,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1208,
+      "original_batch_prediction": 682,
+      "doubled_copy1_prediction": 682,
+      "doubled_copy2_prediction": 682,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1209,
+      "original_batch_prediction": 2586,
+      "doubled_copy1_prediction": 2586,
+      "doubled_copy2_prediction": 2586,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1210,
+      "original_batch_prediction": 13,
+      "doubled_copy1_prediction": 13,
+      "doubled_copy2_prediction": 13,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1211,
+      "original_batch_prediction": 686,
+      "doubled_copy1_prediction": 686,
+      "doubled_copy2_prediction": 686,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1212,
+      "original_batch_prediction": 1977,
+      "doubled_copy1_prediction": 1977,
+      "doubled_copy2_prediction": 1977,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1213,
+      "original_batch_prediction": 84,
+      "doubled_copy1_prediction": 84,
+      "doubled_copy2_prediction": 84,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1214,
+      "original_batch_prediction": 66,
+      "doubled_copy1_prediction": 66,
+      "doubled_copy2_prediction": 66,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 48,
+      "trial_id": 1215,
+      "original_batch_prediction": 9384,
+      "doubled_copy1_prediction": 9384,
+      "doubled_copy2_prediction": 9384,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1600,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1601,
+      "original_batch_prediction": 4620,
+      "doubled_copy1_prediction": 4620,
+      "doubled_copy2_prediction": 4620,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1602,
+      "original_batch_prediction": 457,
+      "doubled_copy1_prediction": 457,
+      "doubled_copy2_prediction": 457,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1603,
+      "original_batch_prediction": 36258,
+      "doubled_copy1_prediction": 36258,
+      "doubled_copy2_prediction": 36258,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1604,
+      "original_batch_prediction": 3513,
+      "doubled_copy1_prediction": 3513,
+      "doubled_copy2_prediction": 3513,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1605,
+      "original_batch_prediction": 21632,
+      "doubled_copy1_prediction": 21632,
+      "doubled_copy2_prediction": 21632,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1606,
+      "original_batch_prediction": 990,
+      "doubled_copy1_prediction": 990,
+      "doubled_copy2_prediction": 990,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1607,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1608,
+      "original_batch_prediction": 4638,
+      "doubled_copy1_prediction": 4638,
+      "doubled_copy2_prediction": 4638,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1609,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1610,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1611,
+      "original_batch_prediction": 264,
+      "doubled_copy1_prediction": 264,
+      "doubled_copy2_prediction": 264,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1612,
+      "original_batch_prediction": 14,
+      "doubled_copy1_prediction": 14,
+      "doubled_copy2_prediction": 14,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1613,
+      "original_batch_prediction": 8105,
+      "doubled_copy1_prediction": 8105,
+      "doubled_copy2_prediction": 8105,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1614,
+      "original_batch_prediction": 427,
+      "doubled_copy1_prediction": 427,
+      "doubled_copy2_prediction": 427,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 64,
+      "trial_id": 1615,
+      "original_batch_prediction": 686,
+      "doubled_copy1_prediction": 686,
+      "doubled_copy2_prediction": 686,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2000,
+      "original_batch_prediction": 275,
+      "doubled_copy1_prediction": 275,
+      "doubled_copy2_prediction": 275,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2001,
+      "original_batch_prediction": 1912,
+      "doubled_copy1_prediction": 1912,
+      "doubled_copy2_prediction": 1912,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2002,
+      "original_batch_prediction": 2456,
+      "doubled_copy1_prediction": 2456,
+      "doubled_copy2_prediction": 2456,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2003,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2004,
+      "original_batch_prediction": 685,
+      "doubled_copy1_prediction": 685,
+      "doubled_copy2_prediction": 685,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2005,
+      "original_batch_prediction": 273,
+      "doubled_copy1_prediction": 273,
+      "doubled_copy2_prediction": 273,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2006,
+      "original_batch_prediction": 1050,
+      "doubled_copy1_prediction": 1050,
+      "doubled_copy2_prediction": 1050,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2007,
+      "original_batch_prediction": 686,
+      "doubled_copy1_prediction": 686,
+      "doubled_copy2_prediction": 686,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2008,
+      "original_batch_prediction": 1342,
+      "doubled_copy1_prediction": 1342,
+      "doubled_copy2_prediction": 1342,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2009,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2010,
+      "original_batch_prediction": 731,
+      "doubled_copy1_prediction": 731,
+      "doubled_copy2_prediction": 731,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2011,
+      "original_batch_prediction": 1005,
+      "doubled_copy1_prediction": 1005,
+      "doubled_copy2_prediction": 1005,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2012,
+      "original_batch_prediction": 651,
+      "doubled_copy1_prediction": 651,
+      "doubled_copy2_prediction": 651,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2013,
+      "original_batch_prediction": 1157,
+      "doubled_copy1_prediction": 1157,
+      "doubled_copy2_prediction": 1157,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2014,
+      "original_batch_prediction": 964,
+      "doubled_copy1_prediction": 964,
+      "doubled_copy2_prediction": 964,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 80,
+      "trial_id": 2015,
+      "original_batch_prediction": 606,
+      "doubled_copy1_prediction": 606,
+      "doubled_copy2_prediction": 606,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2400,
+      "original_batch_prediction": 247,
+      "doubled_copy1_prediction": 247,
+      "doubled_copy2_prediction": 247,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2401,
+      "original_batch_prediction": 7679,
+      "doubled_copy1_prediction": 7679,
+      "doubled_copy2_prediction": 7679,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2402,
+      "original_batch_prediction": 497,
+      "doubled_copy1_prediction": 497,
+      "doubled_copy2_prediction": 497,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2403,
+      "original_batch_prediction": 407,
+      "doubled_copy1_prediction": 407,
+      "doubled_copy2_prediction": 407,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2404,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2405,
+      "original_batch_prediction": 47621,
+      "doubled_copy1_prediction": 47621,
+      "doubled_copy2_prediction": 47621,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2406,
+      "original_batch_prediction": 644,
+      "doubled_copy1_prediction": 644,
+      "doubled_copy2_prediction": 644,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2407,
+      "original_batch_prediction": 253,
+      "doubled_copy1_prediction": 253,
+      "doubled_copy2_prediction": 253,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2408,
+      "original_batch_prediction": 388,
+      "doubled_copy1_prediction": 388,
+      "doubled_copy2_prediction": 388,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2409,
+      "original_batch_prediction": 673,
+      "doubled_copy1_prediction": 673,
+      "doubled_copy2_prediction": 673,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2410,
+      "original_batch_prediction": 346,
+      "doubled_copy1_prediction": 346,
+      "doubled_copy2_prediction": 346,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2411,
+      "original_batch_prediction": 5400,
+      "doubled_copy1_prediction": 5400,
+      "doubled_copy2_prediction": 5400,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2412,
+      "original_batch_prediction": 346,
+      "doubled_copy1_prediction": 346,
+      "doubled_copy2_prediction": 346,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2413,
+      "original_batch_prediction": 4803,
+      "doubled_copy1_prediction": 4803,
+      "doubled_copy2_prediction": 4803,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2414,
+      "original_batch_prediction": 495,
+      "doubled_copy1_prediction": 495,
+      "doubled_copy2_prediction": 495,
+      "prediction_changed": false
+    },
+    {
+      "seed": 2,
+      "position": 96,
+      "trial_id": 2415,
+      "original_batch_prediction": 667,
+      "doubled_copy1_prediction": 667,
+      "doubled_copy2_prediction": 667,
+      "prediction_changed": false
+    }
+  ],
+  "source_sha256": "c575653cb799acf4383b01c7c206a40d9809adc0d6394715c0b5a8ff74b729b0",
+  "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+  "elapsed_seconds": 12.789063600124791
+}

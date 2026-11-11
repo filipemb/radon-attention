@@ -1,0 +1,70 @@
+{
+  "source_jobs": [
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b1.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.75_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.5_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.35_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.25_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.15_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.1_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.05_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_b0.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_gpt2_s1_historical_blegacy_beta0_v3.jsonl"
+  ],
+  "differences": [
+    {
+      "family": "B",
+      "arm": "1.0",
+      "old_n_correct": 55,
+      "replayed_n_correct": 129
+    },
+    {
+      "family": "B",
+      "arm": "0.75",
+      "old_n_correct": 59,
+      "replayed_n_correct": 136
+    },
+    {
+      "family": "B",
+      "arm": "0.5",
+      "old_n_correct": 68,
+      "replayed_n_correct": 148
+    },
+    {
+      "family": "B",
+      "arm": "0.35",
+      "old_n_correct": 65,
+      "replayed_n_correct": 147
+    },
+    {
+      "family": "B",
+      "arm": "0.25",
+      "old_n_correct": 71,
+      "replayed_n_correct": 138
+    },
+    {
+      "family": "B",
+      "arm": "0.15",
+      "old_n_correct": 77,
+      "replayed_n_correct": 139
+    },
+    {
+      "family": "B",
+      "arm": "0.1",
+      "old_n_correct": 79,
+      "replayed_n_correct": 124
+    },
+    {
+      "family": "B",
+      "arm": "0.05",
+      "old_n_correct": 83,
+      "replayed_n_correct": 107
+    },
+    {
+      "family": "B",
+      "arm": "legacy_beta0",
+      "old_n_correct": 71,
+      "replayed_n_correct": 78
+    }
+  ]
+}

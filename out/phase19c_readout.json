@@ -1,0 +1,106 @@
+{
+  "report_sha256": "0568d3dda10b93ad950a3ff598453506e23939bbeecfee1b1463b8c9fea7f89c",
+  "source_sha256": "0f4a2107c331ebed2ec72be2865673e4f2d0e516d9ed334c5b930d3ac9845e03",
+  "tables": [
+    "out/phase19c_table1_3_paired_768.csv",
+    "out/phase19c_table1_3_paired_192.csv",
+    "out/phase19c_table5_precision_768.csv",
+    "out/phase19c_table5_precision_192.csv",
+    "out/phase19c_table2_negative.csv",
+    "out/phase19c_table4_planted.csv"
+  ],
+  "precision_summary": [
+    {
+      "cohort": 768,
+      "arm": "svd",
+      "codec_failures": 0,
+      "n_codes": 2304,
+      "undefined_budget_points": 0,
+      "range_of_document_paired_median_deltas": [
+        5.608566572279372e-08,
+        1.8888757237489617e-07
+      ],
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 768,
+      "arm": "masked",
+      "codec_failures": 1238,
+      "n_codes": 2304,
+      "undefined_budget_points": 36,
+      "range_of_document_paired_median_deltas": null,
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 768,
+      "arm": "free",
+      "codec_failures": 0,
+      "n_codes": 2304,
+      "undefined_budget_points": 0,
+      "range_of_document_paired_median_deltas": [
+        0.002279927956223532,
+        0.012588862537718876
+      ],
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 768,
+      "arm": "thin",
+      "codec_failures": 0,
+      "n_codes": 2304,
+      "undefined_budget_points": 0,
+      "range_of_document_paired_median_deltas": [
+        0.002187214425260972,
+        0.013694503572784927
+      ],
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 192,
+      "arm": "svd",
+      "codec_failures": 0,
+      "n_codes": 960,
+      "undefined_budget_points": 0,
+      "range_of_document_paired_median_deltas": [
+        6.121670656500378e-08,
+        6.234607704685979e-07
+      ],
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 192,
+      "arm": "masked",
+      "codec_failures": 559,
+      "n_codes": 960,
+      "undefined_budget_points": 60,
+      "range_of_document_paired_median_deltas": null,
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 192,
+      "arm": "free",
+      "codec_failures": 0,
+      "n_codes": 960,
+      "undefined_budget_points": 0,
+      "range_of_document_paired_median_deltas": [
+        0.0017723855986100517,
+        0.01667149022984668
+      ],
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    },
+    {
+      "cohort": 192,
+      "arm": "thin",
+      "codec_failures": 0,
+      "n_codes": 960,
+      "undefined_budget_points": 0,
+      "range_of_document_paired_median_deltas": [
+        0.0021358177171130893,
+        0.01779441719534161
+      ],
+      "range_definition": "Range across all model x n x budget cells, not a conditional or pooled median"
+    }
+  ],
+  "all_controls_and_undefined_points_retained": true,
+  "no_fit_or_inference_changes": true
+}

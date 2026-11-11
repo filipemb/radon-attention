@@ -1,0 +1,6 @@
+{
+  "status": "numerical_acceptance_failed_masked_forward_not_qualified",
+  "complete_scientific_E9_forward_comparison": false,
+  "report_path": "out/phase50_report.json",
+  "report_sha256": "b016ffe3548963643fbea72a3d11660c8ce38098f98b8f35573cc629ec2e4f71"
+}

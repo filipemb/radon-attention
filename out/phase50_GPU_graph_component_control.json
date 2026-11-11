@@ -1,0 +1,40 @@
+{
+  "passed": false,
+  "component_checks": [
+    {
+      "rank": 7,
+      "QR_relative_product_error": 4.3619196017820995e-17,
+      "Q_orthogonality_error": 1.3333203166475945e-15,
+      "SVD_relative_product_error": 1.5483024171194236e-15,
+      "passed": true
+    },
+    {
+      "rank": 8,
+      "QR_relative_product_error": 4.8518775045793896e-17,
+      "Q_orthogonality_error": 1.3368211994154551e-15,
+      "SVD_relative_product_error": 2.2405269829890124e-15,
+      "passed": true
+    },
+    {
+      "rank": 15,
+      "QR_relative_product_error": 4.853512140725921e-17,
+      "Q_orthogonality_error": 1.7998911978192555e-15,
+      "SVD_relative_product_error": 6.2580351512668226e-15,
+      "passed": true
+    },
+    {
+      "rank": 16,
+      "QR_relative_product_error": 4.696204506115537e-17,
+      "Q_orthogonality_error": 1.8264316887617314e-15,
+      "SVD_relative_product_error": 2.9876521664002797e-15,
+      "passed": true
+    }
+  ],
+  "two_repeated_200_sweep_fits_bit_equal": true,
+  "planted_relative_errors": [
+    0.010325161911301567,
+    0.008913421098281272
+  ],
+  "planted_tolerance": 0.01,
+  "direct_retry_deduplication": "same deterministic all-direct per-head LS/QR/SVD input reproduces the same candidate; no alternative solver or convergence criterion selected"
+}

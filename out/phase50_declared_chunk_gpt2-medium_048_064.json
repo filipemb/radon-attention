@@ -1,0 +1,12 @@
+{
+  "model": "gpt2-medium",
+  "start_document": 48,
+  "stop_document": 64,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251",
+  "pairs_byte_length": 1286035,
+  "pairs_prefix_sha256": "640dd416a4bb7f233cf8319ddcd57fad82e892bcf81e78893d8614457eb30076",
+  "elapsed_seconds": 412.83042520005256,
+  "load_and_native_control_seconds": 13.71909170015715,
+  "n_records_completed_so_far": 512,
+  "e_replay_KL_NLL_verified": true
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "model": "gpt2-medium",
+  "dtype": "torch.float32",
+  "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+  "n_trials_effective_per_arm": 3200,
+  "seed": 0,
+  "sequence_length": 128,
+  "batch": 16,
+  "positions": [
+    4,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    110
+  ],
+  "n_per_position": 400,
+  "middle_positions": [
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "probe_manifest": "data/attn/beta0_probe_gpt2-medium_s0_v2.manifest.json",
+  "pairs_path": "out/pairs/beta0_gpt2-medium_v2.jsonl",
+  "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+  "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+  "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+  "arms": {
+    "baseline_beta1": {
+      "n_trials": 3200,
+      "n_correct": 1399,
+      "accuracy": 0.4371875,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 868,
+      "middle_accuracy": 0.434,
+      "accuracy_by_position": {
+        "4": 0.4875,
+        "16": 0.4325,
+        "32": 0.425,
+        "48": 0.4275,
+        "64": 0.405,
+        "80": 0.4475,
+        "96": 0.465,
+        "110": 0.4075
+      }
+    },
+    "corrected_beta0": {
+      "n_trials": 3200,
+      "n_correct": 310,
+      "accuracy": 0.096875,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 235,
+      "middle_accuracy": 0.1175,
+      "accuracy_by_position": {
+        "4": 0.0025,
+        "16": 0.01,
+        "32": 0.0775,
+        "48": 0.15,
+        "64": 0.0975,
+        "80": 0.14,
+        "96": 0.1225,
+        "110": 0.175
+      }
+    },
+    "legacy_beta0_diagnostic": {
+      "n_trials": 3200,
+      "n_correct": 308,
+      "accuracy": 0.09625,
+      "middle_n_trials": 2000,
+      "middle_n_correct": 234,
+      "middle_accuracy": 0.117,
+      "accuracy_by_position": {
+        "4": 0.0025,
+        "16": 0.01,
+        "32": 0.0775,
+        "48": 0.15,
+        "64": 0.0975,
+        "80": 0.1375,
+        "96": 0.1225,
+        "110": 0.1725
+      }
+    }
+  },
+  "attention_validation": {
+    "baseline_beta1": {
+      "negative_nan_inf_upper_nonzero": 0,
+      "row_sum_violations": 0,
+      "max_row_error_after_cast": 4.76837158203125e-07,
+      "rows_checked": 157286400
+    },
+    "corrected_beta0": {
+      "sink_edit_invalid_values": 0,
+      "sink_edit_rows_total": 157286400,
+      "sink_edit_rows_preserved_no_alternative": 1228800,
+      "sink_edit_last_query_rows_preserved": 0,
+      "sink_edit_invalid_totals": 0,
+      "sink_edit_positive_mass_below_legacy_clamp": 52414,
+      "sink_edit_noncausal_values": 0,
+      "sink_edit_row_sum_violations": 0,
+      "sink_edit_first_row_changes": 0,
+      "max_sink_edit_row_error": 4.172325134277344e-07,
+      "max_sink_edit_row_error_bound": 2.119209296656209e-06
+    },
+    "legacy_beta0_diagnostic": {
+      "rows_total": 157286400,
+      "zero_rows": 1228800,
+      "zero_rows_at_last_query": 0,
+      "positive_mass_below_clamp": 52112
+    }
+  },
+  "positive_beta_regression": null,
+  "native_identity_regression": {
+    "n_sequences": 2,
+    "logits_bit_equal": true,
+    "max_absolute_logit_difference": 0.0
+  },
+  "historical_s0": {
+    "1.0": {
+      "accuracy": 0.4371875,
+      "middle_accuracy": 0.434
+    },
+    "0.0": {
+      "accuracy": 0.09625,
+      "middle_accuracy": 0.11699999999999999
+    }
+  },
+  "paired_corrected_vs_baseline": {
+    "left": "corrected_beta0",
+    "right": "baseline_beta1",
+    "n_pairs": 3200,
+    "left_only_correct": 132,
+    "right_only_correct": 1221,
+    "accuracy_difference_left_minus_right": -0.3403125,
+    "mcnemar_exact_pvalue": 2.951267573399222e-221,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "paired_corrected_vs_legacy": {
+    "left": "corrected_beta0",
+    "right": "legacy_beta0_diagnostic",
+    "n_pairs": 3200,
+    "left_only_correct": 2,
+    "right_only_correct": 0,
+    "accuracy_difference_left_minus_right": 0.000625,
+    "mcnemar_exact_pvalue": 0.5,
+    "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+  },
+  "elapsed_seconds": 172.76141080004163
+}

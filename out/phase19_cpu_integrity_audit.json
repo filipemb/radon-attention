@@ -1,0 +1,15 @@
+{
+  "instances": 768,
+  "discrete_decodes": 18432,
+  "svd_reconstructions": 4608,
+  "max_absolute_error_discrepancy": 7.105427357601002e-15,
+  "max_relative_error_discrepancy": 9.992007221626409e-16,
+  "max_svd_absolute_discrepancy": 2.8392659532986172e-14,
+  "max_active_nnls_projected_kkt": 2.89734966114752e-15,
+  "passed": true,
+  "full_inverse_max_relative": 6.416991937122228e-08,
+  "full_inverse_median_relative": 3.845942058240059e-08,
+  "full_inverse_converged_fraction": 1.0,
+  "error_comparison_tolerance": 1e-09,
+  "nnls_kkt_audit_tolerance": 1e-09
+}

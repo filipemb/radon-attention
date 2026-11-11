@@ -11,15 +11,17 @@ Se 'oursink' (1 coluna, principiado) iguala/bate 'act' (heuristico, varias colun
 o argumento e que a decomposicao da o mesmo controle de forma mais simples e
 interpretavel.
 """
+from sampling import MODELS  # datasets before torch; native thread caps.
 import argparse, json, os
 import numpy as np
 import torch
 import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer, AttentionInterface
 
-from phase8_lostmiddle import filler_pool, build_probe, accuracy_by_pos, midmean
+from phase8_lostmiddle import filler_pool, build_probe, accuracy_by_pos, midmean, finish_sink_edit
 
 RECON = {"mode": "identity", "beta": 0.25}
+torch.set_num_threads(4)
 
 
 def _repeat_kv(x, nrep):
@@ -33,6 +35,7 @@ def reconstruct(aw):
     mode, beta = RECON["mode"], RECON["beta"]
     if mode == "identity":
         return aw
+    before = aw
     aw = aw.clone()
     if mode == "oursink":
         aw[..., 0] = aw[..., 0] * beta
@@ -41,7 +44,7 @@ def reconstruct(aw):
         thr = c.mean(dim=-1, keepdim=True) + 3 * c.std(dim=-1, keepdim=True)
         mask = (c > thr).unsqueeze(-2).expand_as(aw)
         aw = torch.where(mask, aw * beta, aw)
-    aw = aw / aw.sum(-1, keepdim=True).clamp_min(1e-9)
+    aw = finish_sink_edit(before, aw, RECON.setdefault("stats", {}))
     return aw
 
 

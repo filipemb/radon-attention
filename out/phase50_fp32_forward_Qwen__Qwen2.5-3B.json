@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "n_articles": 64,
+  "arms_run": [
+    "svd_K_diag_exact"
+  ],
+  "ALS_validation_passed": false,
+  "unavailable_arms": [
+    "masked_K",
+    "named_plus_masked",
+    "masked_K_diag_exact"
+  ],
+  "aliases": {},
+  "pairs_path": "out/pairs/phase50_fp32_forward_Qwen__Qwen2.5-3B.jsonl",
+  "pairs_sha256": "3596624b8003b5885affc55479cea447ee72597f73a9bc020c348a17619bb61b",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "sample_sha256": "dcd06a205aafdb63a6d687aa6b55982837590a21f113f8853e457c66caf9ba54",
+  "elapsed_seconds": 289.20073939999565
+}

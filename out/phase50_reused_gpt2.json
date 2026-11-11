@@ -1,0 +1,9 @@
+{
+  "model": "gpt2",
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "pairs_path": "out/pairs/phase50_reused_gpt2.jsonl",
+  "pairs_sha256": "7ea2a2f0ce856ef2748fc44a6d5e4e8f4adfb3e510d9d506229a74c04f844fb6",
+  "n_records": 1024,
+  "all_V1_E4_reused_SVD_equal_exact": true,
+  "V1_identity_KL_exactly_zero": true
+}

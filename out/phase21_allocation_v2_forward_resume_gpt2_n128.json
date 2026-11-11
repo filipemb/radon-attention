@@ -1,0 +1,3194 @@
+{
+  "schema_version": 2,
+  "model": "gpt2",
+  "n": 128,
+  "n_documents": 256,
+  "last_token_only": true,
+  "batch": 2,
+  "dtype": "torch.float32",
+  "empty_row_policy": "uniform_causal",
+  "budget_rule": "common cap B=K(2n+1); named first uses fixed q=K-1 and 2*count(c>0)+q(2n+1)",
+  "imported_harness_sha256": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+  "corpus_manifest_sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+  "identity_exact_in_every_batch": true,
+  "suffix_invariance": {
+    "8": {
+      "passed_exact": true,
+      "max_logit_difference": 0.0
+    },
+    "16": {
+      "passed_exact": true,
+      "max_logit_difference": 0.0
+    }
+  },
+  "svd_driver": null,
+  "max_nnls_kkt_relative_violation": 3.3105656578566524e-15,
+  "pairs_path": "out/pairs/phase21_allocation_forward_gpt2_n128_v2.jsonl",
+  "pairs_sha256": "1fb3644102fa6a995047368cce8959e18b4d79a1e3d1ad7c011f2d349d5a4501",
+  "SVD_source": "Completed V1 raw per-document SVD records",
+  "budgets": {
+    "8": {
+      "common_parameters_per_head_layer": 2056,
+      "named_residual_rank": 7,
+      "named_first_KL": {
+        "median": 0.2714939921316921,
+        "p25": 0.15884390030649442,
+        "p75": 0.5088121018071874,
+        "mean": 0.402494052066358,
+        "std": 0.392584642953088,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          0.24200324329357864,
+          0.3339302685287545
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 0.34996820150069297,
+        "secondary_document_means": {
+          "mean": 0.402494052066358,
+          "median": 0.2714939921316921,
+          "p25": 0.15884390030649442,
+          "p75": 0.5088121018071874,
+          "mean_ci95_document_bootstrap": [
+            0.3589102835501741,
+            0.4534326876149347
+          ],
+          "median_ci95_document_bootstrap": [
+            0.24200324329357864,
+            0.3339302685287545
+          ]
+        }
+      },
+      "SVD_KL": {
+        "median": 2.0267241925247985,
+        "p25": 1.2576493574562229,
+        "p75": 2.9205344896343153,
+        "mean": 2.4347352598791367,
+        "std": 1.6853597397613036,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          1.8063293954930644,
+          2.177057057422272
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 1.6628851321780924,
+        "secondary_document_means": {
+          "mean": 2.4347352598791367,
+          "median": 2.0267241925247985,
+          "p25": 1.2576493574562229,
+          "p75": 2.9205344896343153,
+          "mean_ci95_document_bootstrap": [
+            2.241748569778091,
+            2.6401074096474986
+          ],
+          "median_ci95_document_bootstrap": [
+            1.8063293954930644,
+            2.177057057422272
+          ]
+        }
+      },
+      "paired_KL_named_minus_SVD": {
+        "median": -1.5535797430575489,
+        "p25": -2.3872136330346008,
+        "p75": -0.9644389159567655,
+        "mean": -2.032241207812779,
+        "std": 1.6437093374055345,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          -1.749295676229825,
+          -1.4324448849093736
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 1.4227747170778353,
+        "secondary_document_means": {
+          "mean": -2.032241207812779,
+          "median": -1.5535797430575489,
+          "p25": -2.3872136330346008,
+          "p75": -0.9644389159567655,
+          "mean_ci95_document_bootstrap": [
+            -2.235443355391579,
+            -1.838394081531803
+          ],
+          "median_ci95_document_bootstrap": [
+            -1.749295676229825,
+            -1.4324448849093736
+          ]
+        },
+        "wilcoxon": {
+          "n_articles": 256,
+          "n_zero_differences": 0,
+          "statistic": 0.0,
+          "p_two_sided": 9.640418513895798e-44,
+          "W_positive": 0.0,
+          "W_negative": 32896.0,
+          "rank_biserial": -1.0,
+          "positive_difference_favors": "SVD",
+          "method": "scipy.stats.wilcoxon; two-sided; zero_method=wilcox; method=asymptotic; p unadjusted",
+          "fraction_articles_SVD_has_lower_KL": 0.0
+        }
+      },
+      "named_first_NLL": {
+        "median": 3.619523672754215,
+        "p25": 1.9814990096686682,
+        "p75": 5.756254252737399,
+        "mean": 4.148197662593361,
+        "std": 2.965956764891828,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          3.120073087008944,
+          4.167415953995125
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 3.7747552430687312,
+        "secondary_document_means": {
+          "mean": 4.148197662593361,
+          "median": 3.619523672754215,
+          "p25": 1.9814990096686682,
+          "p75": 5.756254252737399,
+          "mean_ci95_document_bootstrap": [
+            3.793465114172005,
+            4.501533390627674
+          ],
+          "median_ci95_document_bootstrap": [
+            3.120073087008944,
+            4.167415953995125
+          ]
+        }
+      },
+      "SVD_NLL": {
+        "median": 5.842512168719102,
+        "p25": 3.923852700293496,
+        "p75": 8.564522135801877,
+        "mean": 6.249040849321135,
+        "std": 2.914998794509233,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          5.423734371804779,
+          6.40980931878193
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 4.64066943550838,
+        "secondary_document_means": {
+          "mean": 6.249040849321135,
+          "median": 5.842512168719102,
+          "p25": 3.923852700293496,
+          "p75": 8.564522135801877,
+          "mean_ci95_document_bootstrap": [
+            5.89694559167597,
+            6.596343133916535
+          ],
+          "median_ci95_document_bootstrap": [
+            5.423734371804779,
+            6.40980931878193
+          ]
+        }
+      },
+      "uniform_causal_completion_by_mode": {
+        "named": {
+          "policy": "uniform_causal",
+          "rows_total": 4718592,
+          "rows_completed": 0,
+          "fraction_rows_completed": 0.0,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 0,
+          "fraction_last_query_rows_completed": 0.0
+        },
+        "svd": {
+          "policy": "uniform_causal",
+          "rows_total": 4718592,
+          "rows_completed": 0,
+          "fraction_rows_completed": 0.0,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 0,
+          "fraction_last_query_rows_completed": 0.0
+        }
+      },
+      "attention_validation_by_mode": {
+        "named": {
+          "reconstruction_rows_total": 4718592,
+          "last_query_rows_total": 36864,
+          "reconstruction_layer_calls": 1536,
+          "empty_rows_completed": 0,
+          "empty_rows_completed_at_last_query": 0,
+          "max_row_error_before_cast": 3.5762786865234375e-07,
+          "rows_checked": 9437184,
+          "negative_nan_inf_upper_nonzero": 0,
+          "max_row_error_after_cast": 3.5762786865234375e-07
+        },
+        "svd": {
+          "reconstruction_rows_total": 4718592,
+          "last_query_rows_total": 36864,
+          "reconstruction_layer_calls": 1536,
+          "empty_rows_completed": 0,
+          "empty_rows_completed_at_last_query": 0,
+          "max_row_error_before_cast": 3.5762786865234375e-07,
+          "rows_checked": 9437184,
+          "negative_nan_inf_upper_nonzero": 0,
+          "max_row_error_after_cast": 3.5762786865234375e-07
+        }
+      },
+      "budget_accounting": {
+        "actual_parameters_total": 66944050,
+        "common_cap_total": 75792384,
+        "unused_parameters_total": 8848334
+      },
+      "V1_reference_NLL_check_applicable": true,
+      "max_reference_NLL_difference_from_V1": 0.0,
+      "paired_differences_by_article": [
+        {
+          "document_index": 0,
+          "doc_id": "wikitext-train-article-10125",
+          "difference_KL_named_minus_SVD": -2.2160983283359648
+        },
+        {
+          "document_index": 1,
+          "doc_id": "wikitext-train-article-19105",
+          "difference_KL_named_minus_SVD": -0.44061631866065637
+        },
+        {
+          "document_index": 2,
+          "doc_id": "wikitext-train-article-3259",
+          "difference_KL_named_minus_SVD": -2.037744920112828
+        },
+        {
+          "document_index": 3,
+          "doc_id": "wikitext-train-article-25335",
+          "difference_KL_named_minus_SVD": -1.4450772916711192
+        },
+        {
+          "document_index": 4,
+          "doc_id": "wikitext-train-article-133",
+          "difference_KL_named_minus_SVD": -1.7738082360215086
+        },
+        {
+          "document_index": 5,
+          "doc_id": "wikitext-train-article-19783",
+          "difference_KL_named_minus_SVD": -0.6058332778012412
+        },
+        {
+          "document_index": 6,
+          "doc_id": "wikitext-train-article-28850",
+          "difference_KL_named_minus_SVD": -3.115100972545598
+        },
+        {
+          "document_index": 7,
+          "doc_id": "wikitext-train-article-22764",
+          "difference_KL_named_minus_SVD": -0.40902222218804796
+        },
+        {
+          "document_index": 8,
+          "doc_id": "wikitext-train-article-18510",
+          "difference_KL_named_minus_SVD": -1.8595329892543513
+        },
+        {
+          "document_index": 9,
+          "doc_id": "wikitext-train-article-13125",
+          "difference_KL_named_minus_SVD": -1.0991148733703837
+        },
+        {
+          "document_index": 10,
+          "doc_id": "wikitext-train-article-8446",
+          "difference_KL_named_minus_SVD": -0.989060307368854
+        },
+        {
+          "document_index": 11,
+          "doc_id": "wikitext-train-article-21867",
+          "difference_KL_named_minus_SVD": -4.493399074522179
+        },
+        {
+          "document_index": 12,
+          "doc_id": "wikitext-train-article-27087",
+          "difference_KL_named_minus_SVD": -1.30226744479371
+        },
+        {
+          "document_index": 13,
+          "doc_id": "wikitext-train-article-18254",
+          "difference_KL_named_minus_SVD": -3.045876111859723
+        },
+        {
+          "document_index": 14,
+          "doc_id": "wikitext-train-article-2187",
+          "difference_KL_named_minus_SVD": -4.034151332598181
+        },
+        {
+          "document_index": 15,
+          "doc_id": "wikitext-train-article-26784",
+          "difference_KL_named_minus_SVD": -2.015400029545764
+        },
+        {
+          "document_index": 16,
+          "doc_id": "wikitext-train-article-1274",
+          "difference_KL_named_minus_SVD": -2.1041267896321054
+        },
+        {
+          "document_index": 17,
+          "doc_id": "wikitext-train-article-30937",
+          "difference_KL_named_minus_SVD": -0.536552288713594
+        },
+        {
+          "document_index": 18,
+          "doc_id": "wikitext-train-article-28198",
+          "difference_KL_named_minus_SVD": -0.7153598425369062
+        },
+        {
+          "document_index": 19,
+          "doc_id": "wikitext-train-article-13191",
+          "difference_KL_named_minus_SVD": -1.7511140506204137
+        },
+        {
+          "document_index": 20,
+          "doc_id": "wikitext-train-article-35240",
+          "difference_KL_named_minus_SVD": -1.3851153022475922
+        },
+        {
+          "document_index": 21,
+          "doc_id": "wikitext-train-article-13930",
+          "difference_KL_named_minus_SVD": -0.24925103252956715
+        },
+        {
+          "document_index": 22,
+          "doc_id": "wikitext-train-article-23808",
+          "difference_KL_named_minus_SVD": -1.4831880798001502
+        },
+        {
+          "document_index": 23,
+          "doc_id": "wikitext-train-article-21174",
+          "difference_KL_named_minus_SVD": -1.3823738153500582
+        },
+        {
+          "document_index": 24,
+          "doc_id": "wikitext-train-article-11220",
+          "difference_KL_named_minus_SVD": -2.3454046912061233
+        },
+        {
+          "document_index": 25,
+          "doc_id": "wikitext-train-article-21587",
+          "difference_KL_named_minus_SVD": -0.9090721165380451
+        },
+        {
+          "document_index": 26,
+          "doc_id": "wikitext-train-article-9318",
+          "difference_KL_named_minus_SVD": -3.9324625982882706
+        },
+        {
+          "document_index": 27,
+          "doc_id": "wikitext-train-article-14451",
+          "difference_KL_named_minus_SVD": -0.5196025723791375
+        },
+        {
+          "document_index": 28,
+          "doc_id": "wikitext-train-article-17245",
+          "difference_KL_named_minus_SVD": -1.1064562770344497
+        },
+        {
+          "document_index": 29,
+          "doc_id": "wikitext-train-article-15273",
+          "difference_KL_named_minus_SVD": -1.160880808983102
+        },
+        {
+          "document_index": 30,
+          "doc_id": "wikitext-train-article-9666",
+          "difference_KL_named_minus_SVD": -0.317355233670791
+        },
+        {
+          "document_index": 31,
+          "doc_id": "wikitext-train-article-29998",
+          "difference_KL_named_minus_SVD": -0.7276577815108365
+        },
+        {
+          "document_index": 32,
+          "doc_id": "wikitext-train-article-25556",
+          "difference_KL_named_minus_SVD": -5.456357277575618
+        },
+        {
+          "document_index": 33,
+          "doc_id": "wikitext-train-article-15041",
+          "difference_KL_named_minus_SVD": -1.3574117807100976
+        },
+        {
+          "document_index": 34,
+          "doc_id": "wikitext-train-article-12128",
+          "difference_KL_named_minus_SVD": -3.457312875580253
+        },
+        {
+          "document_index": 35,
+          "doc_id": "wikitext-train-article-35449",
+          "difference_KL_named_minus_SVD": -1.6859714229131195
+        },
+        {
+          "document_index": 36,
+          "doc_id": "wikitext-train-article-31360",
+          "difference_KL_named_minus_SVD": -0.8256019052328825
+        },
+        {
+          "document_index": 37,
+          "doc_id": "wikitext-train-article-557",
+          "difference_KL_named_minus_SVD": -1.4391993696251142
+        },
+        {
+          "document_index": 38,
+          "doc_id": "wikitext-train-article-6882",
+          "difference_KL_named_minus_SVD": -1.5096177238167938
+        },
+        {
+          "document_index": 39,
+          "doc_id": "wikitext-train-article-16096",
+          "difference_KL_named_minus_SVD": -1.0121007035651448
+        },
+        {
+          "document_index": 40,
+          "doc_id": "wikitext-train-article-23619",
+          "difference_KL_named_minus_SVD": -1.0874709187766862
+        },
+        {
+          "document_index": 41,
+          "doc_id": "wikitext-train-article-16516",
+          "difference_KL_named_minus_SVD": -0.5301018245556581
+        },
+        {
+          "document_index": 42,
+          "doc_id": "wikitext-train-article-5912",
+          "difference_KL_named_minus_SVD": -1.3165641380027426
+        },
+        {
+          "document_index": 43,
+          "doc_id": "wikitext-train-article-24064",
+          "difference_KL_named_minus_SVD": -4.3426725377724855
+        },
+        {
+          "document_index": 44,
+          "doc_id": "wikitext-train-article-18675",
+          "difference_KL_named_minus_SVD": -1.3754986314441382
+        },
+        {
+          "document_index": 45,
+          "doc_id": "wikitext-train-article-8342",
+          "difference_KL_named_minus_SVD": -4.40826284087683
+        },
+        {
+          "document_index": 46,
+          "doc_id": "wikitext-train-article-14859",
+          "difference_KL_named_minus_SVD": -1.5371127849154989
+        },
+        {
+          "document_index": 47,
+          "doc_id": "wikitext-train-article-35655",
+          "difference_KL_named_minus_SVD": -2.132976651164947
+        },
+        {
+          "document_index": 48,
+          "doc_id": "wikitext-train-article-10258",
+          "difference_KL_named_minus_SVD": -3.51165218001739
+        },
+        {
+          "document_index": 49,
+          "doc_id": "wikitext-train-article-31747",
+          "difference_KL_named_minus_SVD": -0.6539767280621346
+        },
+        {
+          "document_index": 50,
+          "doc_id": "wikitext-train-article-28584",
+          "difference_KL_named_minus_SVD": -3.1136790333430486
+        },
+        {
+          "document_index": 51,
+          "doc_id": "wikitext-train-article-21754",
+          "difference_KL_named_minus_SVD": -0.5895209390358055
+        },
+        {
+          "document_index": 52,
+          "doc_id": "wikitext-train-article-20902",
+          "difference_KL_named_minus_SVD": -2.4106012525912686
+        },
+        {
+          "document_index": 53,
+          "doc_id": "wikitext-train-article-5227",
+          "difference_KL_named_minus_SVD": -1.502985739632242
+        },
+        {
+          "document_index": 54,
+          "doc_id": "wikitext-train-article-7149",
+          "difference_KL_named_minus_SVD": -1.1905840777287835
+        },
+        {
+          "document_index": 55,
+          "doc_id": "wikitext-train-article-20824",
+          "difference_KL_named_minus_SVD": -1.371486803960719
+        },
+        {
+          "document_index": 56,
+          "doc_id": "wikitext-train-article-25181",
+          "difference_KL_named_minus_SVD": -2.4518868264523626
+        },
+        {
+          "document_index": 57,
+          "doc_id": "wikitext-train-article-14198",
+          "difference_KL_named_minus_SVD": -2.040329384131194
+        },
+        {
+          "document_index": 58,
+          "doc_id": "wikitext-train-article-406",
+          "difference_KL_named_minus_SVD": -0.5002382319285815
+        },
+        {
+          "document_index": 59,
+          "doc_id": "wikitext-train-article-22150",
+          "difference_KL_named_minus_SVD": -2.379861582688857
+        },
+        {
+          "document_index": 60,
+          "doc_id": "wikitext-train-article-2378",
+          "difference_KL_named_minus_SVD": -1.0467595987999665
+        },
+        {
+          "document_index": 61,
+          "doc_id": "wikitext-train-article-480",
+          "difference_KL_named_minus_SVD": -1.4150610817854608
+        },
+        {
+          "document_index": 62,
+          "doc_id": "wikitext-train-article-18442",
+          "difference_KL_named_minus_SVD": -2.392223066952901
+        },
+        {
+          "document_index": 63,
+          "doc_id": "wikitext-train-article-13301",
+          "difference_KL_named_minus_SVD": -0.6842663133773519
+        },
+        {
+          "document_index": 64,
+          "doc_id": "wikitext-train-article-30156",
+          "difference_KL_named_minus_SVD": -1.8220254735080101
+        },
+        {
+          "document_index": 65,
+          "doc_id": "wikitext-train-article-18226",
+          "difference_KL_named_minus_SVD": -1.5914210162865856
+        },
+        {
+          "document_index": 66,
+          "doc_id": "wikitext-train-article-11710",
+          "difference_KL_named_minus_SVD": -3.513966959032488
+        },
+        {
+          "document_index": 67,
+          "doc_id": "wikitext-train-article-9935",
+          "difference_KL_named_minus_SVD": -5.335927539617321
+        },
+        {
+          "document_index": 68,
+          "doc_id": "wikitext-train-article-12425",
+          "difference_KL_named_minus_SVD": -0.9276348796601857
+        },
+        {
+          "document_index": 69,
+          "doc_id": "wikitext-train-article-17858",
+          "difference_KL_named_minus_SVD": -0.7401649359860833
+        },
+        {
+          "document_index": 70,
+          "doc_id": "wikitext-train-article-27637",
+          "difference_KL_named_minus_SVD": -0.998649812557217
+        },
+        {
+          "document_index": 71,
+          "doc_id": "wikitext-train-article-33539",
+          "difference_KL_named_minus_SVD": -1.5607318631673774
+        },
+        {
+          "document_index": 72,
+          "doc_id": "wikitext-train-article-9888",
+          "difference_KL_named_minus_SVD": -4.123011936716365
+        },
+        {
+          "document_index": 73,
+          "doc_id": "wikitext-train-article-27461",
+          "difference_KL_named_minus_SVD": -0.7844430756812859
+        },
+        {
+          "document_index": 74,
+          "doc_id": "wikitext-train-article-6781",
+          "difference_KL_named_minus_SVD": -2.079034437202523
+        },
+        {
+          "document_index": 75,
+          "doc_id": "wikitext-train-article-15577",
+          "difference_KL_named_minus_SVD": -1.8478950152357851
+        },
+        {
+          "document_index": 76,
+          "doc_id": "wikitext-train-article-29852",
+          "difference_KL_named_minus_SVD": -3.468786530019114
+        },
+        {
+          "document_index": 77,
+          "doc_id": "wikitext-train-article-12618",
+          "difference_KL_named_minus_SVD": -1.435765462999958
+        },
+        {
+          "document_index": 78,
+          "doc_id": "wikitext-train-article-26292",
+          "difference_KL_named_minus_SVD": -1.4271472320489875
+        },
+        {
+          "document_index": 79,
+          "doc_id": "wikitext-train-article-27113",
+          "difference_KL_named_minus_SVD": -10.555169197853283
+        },
+        {
+          "document_index": 80,
+          "doc_id": "wikitext-train-article-31923",
+          "difference_KL_named_minus_SVD": -1.9153275750674073
+        },
+        {
+          "document_index": 81,
+          "doc_id": "wikitext-train-article-12719",
+          "difference_KL_named_minus_SVD": -0.887822758779595
+        },
+        {
+          "document_index": 82,
+          "doc_id": "wikitext-train-article-799",
+          "difference_KL_named_minus_SVD": -3.9390578791799804
+        },
+        {
+          "document_index": 83,
+          "doc_id": "wikitext-train-article-34124",
+          "difference_KL_named_minus_SVD": -0.7924502211061073
+        },
+        {
+          "document_index": 84,
+          "doc_id": "wikitext-train-article-9841",
+          "difference_KL_named_minus_SVD": -0.95789802936635
+        },
+        {
+          "document_index": 85,
+          "doc_id": "wikitext-train-article-11189",
+          "difference_KL_named_minus_SVD": -1.4945495868081515
+        },
+        {
+          "document_index": 86,
+          "doc_id": "wikitext-train-article-464",
+          "difference_KL_named_minus_SVD": -0.6076182937457304
+        },
+        {
+          "document_index": 87,
+          "doc_id": "wikitext-train-article-2555",
+          "difference_KL_named_minus_SVD": -1.4425118345231849
+        },
+        {
+          "document_index": 88,
+          "doc_id": "wikitext-train-article-433",
+          "difference_KL_named_minus_SVD": -1.9861055351367547
+        },
+        {
+          "document_index": 89,
+          "doc_id": "wikitext-train-article-27037",
+          "difference_KL_named_minus_SVD": -0.3451369191882905
+        },
+        {
+          "document_index": 90,
+          "doc_id": "wikitext-train-article-5122",
+          "difference_KL_named_minus_SVD": -1.3017682048670456
+        },
+        {
+          "document_index": 91,
+          "doc_id": "wikitext-train-article-16409",
+          "difference_KL_named_minus_SVD": -2.0194274314576104
+        },
+        {
+          "document_index": 92,
+          "doc_id": "wikitext-train-article-27839",
+          "difference_KL_named_minus_SVD": -3.530011212987866
+        },
+        {
+          "document_index": 93,
+          "doc_id": "wikitext-train-article-7562",
+          "difference_KL_named_minus_SVD": -1.887064619529872
+        },
+        {
+          "document_index": 94,
+          "doc_id": "wikitext-train-article-15214",
+          "difference_KL_named_minus_SVD": -2.296709262101442
+        },
+        {
+          "document_index": 95,
+          "doc_id": "wikitext-train-article-33830",
+          "difference_KL_named_minus_SVD": -1.6456649522300992
+        },
+        {
+          "document_index": 96,
+          "doc_id": "wikitext-train-article-21618",
+          "difference_KL_named_minus_SVD": -0.9642995032616571
+        },
+        {
+          "document_index": 97,
+          "doc_id": "wikitext-train-article-3820",
+          "difference_KL_named_minus_SVD": -2.303953214562088
+        },
+        {
+          "document_index": 98,
+          "doc_id": "wikitext-train-article-29413",
+          "difference_KL_named_minus_SVD": -1.4291243068187889
+        },
+        {
+          "document_index": 99,
+          "doc_id": "wikitext-train-article-32118",
+          "difference_KL_named_minus_SVD": -1.9100536419479908
+        },
+        {
+          "document_index": 100,
+          "doc_id": "wikitext-train-article-12807",
+          "difference_KL_named_minus_SVD": -4.149640349439383
+        },
+        {
+          "document_index": 101,
+          "doc_id": "wikitext-train-article-6256",
+          "difference_KL_named_minus_SVD": -1.5432576652657475
+        },
+        {
+          "document_index": 102,
+          "doc_id": "wikitext-train-article-12877",
+          "difference_KL_named_minus_SVD": -1.097597523275522
+        },
+        {
+          "document_index": 103,
+          "doc_id": "wikitext-train-article-24840",
+          "difference_KL_named_minus_SVD": -1.1886158264982347
+        },
+        {
+          "document_index": 104,
+          "doc_id": "wikitext-train-article-4228",
+          "difference_KL_named_minus_SVD": -1.5453109551921211
+        },
+        {
+          "document_index": 105,
+          "doc_id": "wikitext-train-article-16710",
+          "difference_KL_named_minus_SVD": -1.3824084408199262
+        },
+        {
+          "document_index": 106,
+          "doc_id": "wikitext-train-article-8251",
+          "difference_KL_named_minus_SVD": -1.604046729919613
+        },
+        {
+          "document_index": 107,
+          "doc_id": "wikitext-train-article-10340",
+          "difference_KL_named_minus_SVD": -0.05468816559421878
+        },
+        {
+          "document_index": 108,
+          "doc_id": "wikitext-train-article-13978",
+          "difference_KL_named_minus_SVD": -5.075362671643705
+        },
+        {
+          "document_index": 109,
+          "doc_id": "wikitext-train-article-25973",
+          "difference_KL_named_minus_SVD": -2.5545355125319427
+        },
+        {
+          "document_index": 110,
+          "doc_id": "wikitext-train-article-22925",
+          "difference_KL_named_minus_SVD": -2.6667955666819365
+        },
+        {
+          "document_index": 111,
+          "doc_id": "wikitext-train-article-18301",
+          "difference_KL_named_minus_SVD": -1.0474134557055095
+        },
+        {
+          "document_index": 112,
+          "doc_id": "wikitext-train-article-35957",
+          "difference_KL_named_minus_SVD": -1.9761919590243888
+        },
+        {
+          "document_index": 113,
+          "doc_id": "wikitext-train-article-24322",
+          "difference_KL_named_minus_SVD": -1.7064958364595062
+        },
+        {
+          "document_index": 114,
+          "doc_id": "wikitext-train-article-29174",
+          "difference_KL_named_minus_SVD": -1.677580720624977
+        },
+        {
+          "document_index": 115,
+          "doc_id": "wikitext-train-article-31128",
+          "difference_KL_named_minus_SVD": -1.1480051805563563
+        },
+        {
+          "document_index": 116,
+          "doc_id": "wikitext-train-article-23014",
+          "difference_KL_named_minus_SVD": -1.655659465280277
+        },
+        {
+          "document_index": 117,
+          "doc_id": "wikitext-train-article-21220",
+          "difference_KL_named_minus_SVD": -2.1839569624978026
+        },
+        {
+          "document_index": 118,
+          "doc_id": "wikitext-train-article-17843",
+          "difference_KL_named_minus_SVD": -0.4873798587445546
+        },
+        {
+          "document_index": 119,
+          "doc_id": "wikitext-train-article-26710",
+          "difference_KL_named_minus_SVD": -2.0264316036100958
+        },
+        {
+          "document_index": 120,
+          "doc_id": "wikitext-train-article-24863",
+          "difference_KL_named_minus_SVD": -1.6277333053664536
+        },
+        {
+          "document_index": 121,
+          "doc_id": "wikitext-train-article-6821",
+          "difference_KL_named_minus_SVD": -0.6796847862099891
+        },
+        {
+          "document_index": 122,
+          "doc_id": "wikitext-train-article-15704",
+          "difference_KL_named_minus_SVD": -1.5776820264840974
+        },
+        {
+          "document_index": 123,
+          "doc_id": "wikitext-train-article-3443",
+          "difference_KL_named_minus_SVD": -1.2586632746616047
+        },
+        {
+          "document_index": 124,
+          "doc_id": "wikitext-train-article-34562",
+          "difference_KL_named_minus_SVD": -0.8030273175710618
+        },
+        {
+          "document_index": 125,
+          "doc_id": "wikitext-train-article-11438",
+          "difference_KL_named_minus_SVD": -0.3267966322119711
+        },
+        {
+          "document_index": 126,
+          "doc_id": "wikitext-train-article-14301",
+          "difference_KL_named_minus_SVD": -0.7948065624774971
+        },
+        {
+          "document_index": 127,
+          "doc_id": "wikitext-train-article-1107",
+          "difference_KL_named_minus_SVD": -4.85397384484785
+        },
+        {
+          "document_index": 128,
+          "doc_id": "wikitext-train-article-17966",
+          "difference_KL_named_minus_SVD": -10.959014300879367
+        },
+        {
+          "document_index": 129,
+          "doc_id": "wikitext-train-article-20880",
+          "difference_KL_named_minus_SVD": -0.656679552342917
+        },
+        {
+          "document_index": 130,
+          "doc_id": "wikitext-train-article-18866",
+          "difference_KL_named_minus_SVD": -1.8903402818154116
+        },
+        {
+          "document_index": 131,
+          "doc_id": "wikitext-train-article-10553",
+          "difference_KL_named_minus_SVD": -5.492730388834967
+        },
+        {
+          "document_index": 132,
+          "doc_id": "wikitext-train-article-32315",
+          "difference_KL_named_minus_SVD": -2.490079248379086
+        },
+        {
+          "document_index": 133,
+          "doc_id": "wikitext-train-article-3128",
+          "difference_KL_named_minus_SVD": -1.860531694719218
+        },
+        {
+          "document_index": 134,
+          "doc_id": "wikitext-train-article-22318",
+          "difference_KL_named_minus_SVD": -3.2274912321206912
+        },
+        {
+          "document_index": 135,
+          "doc_id": "wikitext-train-article-13552",
+          "difference_KL_named_minus_SVD": -0.6358927186085299
+        },
+        {
+          "document_index": 136,
+          "doc_id": "wikitext-train-article-26812",
+          "difference_KL_named_minus_SVD": -6.370185058270799
+        },
+        {
+          "document_index": 137,
+          "doc_id": "wikitext-train-article-2156",
+          "difference_KL_named_minus_SVD": -0.8204151592037511
+        },
+        {
+          "document_index": 138,
+          "doc_id": "wikitext-train-article-19180",
+          "difference_KL_named_minus_SVD": -0.8364506883738784
+        },
+        {
+          "document_index": 139,
+          "doc_id": "wikitext-train-article-12981",
+          "difference_KL_named_minus_SVD": -1.7005572650582077
+        },
+        {
+          "document_index": 140,
+          "doc_id": "wikitext-train-article-51",
+          "difference_KL_named_minus_SVD": -1.643500152830608
+        },
+        {
+          "document_index": 141,
+          "doc_id": "wikitext-train-article-27616",
+          "difference_KL_named_minus_SVD": -7.604753491579591
+        },
+        {
+          "document_index": 142,
+          "doc_id": "wikitext-train-article-8961",
+          "difference_KL_named_minus_SVD": -0.8129878313364065
+        },
+        {
+          "document_index": 143,
+          "doc_id": "wikitext-train-article-1401",
+          "difference_KL_named_minus_SVD": -0.6277533936141758
+        },
+        {
+          "document_index": 144,
+          "doc_id": "wikitext-train-article-13079",
+          "difference_KL_named_minus_SVD": -0.7788504110629626
+        },
+        {
+          "document_index": 145,
+          "doc_id": "wikitext-train-article-34509",
+          "difference_KL_named_minus_SVD": -7.112416156795434
+        },
+        {
+          "document_index": 146,
+          "doc_id": "wikitext-train-article-6409",
+          "difference_KL_named_minus_SVD": -0.9987590019408619
+        },
+        {
+          "document_index": 147,
+          "doc_id": "wikitext-train-article-30020",
+          "difference_KL_named_minus_SVD": -0.9644853868551349
+        },
+        {
+          "document_index": 148,
+          "doc_id": "wikitext-train-article-1648",
+          "difference_KL_named_minus_SVD": -1.3709912499133767
+        },
+        {
+          "document_index": 149,
+          "doc_id": "wikitext-train-article-34991",
+          "difference_KL_named_minus_SVD": -1.4157885232280916
+        },
+        {
+          "document_index": 150,
+          "doc_id": "wikitext-train-article-1157",
+          "difference_KL_named_minus_SVD": -2.553745723819797
+        },
+        {
+          "document_index": 151,
+          "doc_id": "wikitext-train-article-16451",
+          "difference_KL_named_minus_SVD": -0.7067858771744142
+        },
+        {
+          "document_index": 152,
+          "doc_id": "wikitext-train-article-24759",
+          "difference_KL_named_minus_SVD": -1.290281083230578
+        },
+        {
+          "document_index": 153,
+          "doc_id": "wikitext-train-article-17380",
+          "difference_KL_named_minus_SVD": -7.101559916015828
+        },
+        {
+          "document_index": 154,
+          "doc_id": "wikitext-train-article-30341",
+          "difference_KL_named_minus_SVD": -5.286988310777113
+        },
+        {
+          "document_index": 155,
+          "doc_id": "wikitext-train-article-23324",
+          "difference_KL_named_minus_SVD": -1.4852530026290602
+        },
+        {
+          "document_index": 156,
+          "doc_id": "wikitext-train-article-29722",
+          "difference_KL_named_minus_SVD": -1.206744730882408
+        },
+        {
+          "document_index": 157,
+          "doc_id": "wikitext-train-article-8771",
+          "difference_KL_named_minus_SVD": -1.9416682827013698
+        },
+        {
+          "document_index": 158,
+          "doc_id": "wikitext-train-article-8173",
+          "difference_KL_named_minus_SVD": -1.3905210904122922
+        },
+        {
+          "document_index": 159,
+          "doc_id": "wikitext-train-article-30319",
+          "difference_KL_named_minus_SVD": -4.139045085817256
+        },
+        {
+          "document_index": 160,
+          "doc_id": "wikitext-train-article-25844",
+          "difference_KL_named_minus_SVD": -1.1829254949688095
+        },
+        {
+          "document_index": 161,
+          "doc_id": "wikitext-train-article-2733",
+          "difference_KL_named_minus_SVD": -1.2884715201077968
+        },
+        {
+          "document_index": 162,
+          "doc_id": "wikitext-train-article-29338",
+          "difference_KL_named_minus_SVD": -2.403769678171464
+        },
+        {
+          "document_index": 163,
+          "doc_id": "wikitext-train-article-271",
+          "difference_KL_named_minus_SVD": -1.3773218052158958
+        },
+        {
+          "document_index": 164,
+          "doc_id": "wikitext-train-article-18987",
+          "difference_KL_named_minus_SVD": -1.4735374032532988
+        },
+        {
+          "document_index": 165,
+          "doc_id": "wikitext-train-article-13853",
+          "difference_KL_named_minus_SVD": -0.7754111253290337
+        },
+        {
+          "document_index": 166,
+          "doc_id": "wikitext-train-article-11377",
+          "difference_KL_named_minus_SVD": -4.749812305986601
+        },
+        {
+          "document_index": 167,
+          "doc_id": "wikitext-train-article-5885",
+          "difference_KL_named_minus_SVD": -1.6052818784345442
+        },
+        {
+          "document_index": 168,
+          "doc_id": "wikitext-train-article-16676",
+          "difference_KL_named_minus_SVD": -1.99791618374321
+        },
+        {
+          "document_index": 169,
+          "doc_id": "wikitext-train-article-2134",
+          "difference_KL_named_minus_SVD": -1.3167143904436411
+        },
+        {
+          "document_index": 170,
+          "doc_id": "wikitext-train-article-23047",
+          "difference_KL_named_minus_SVD": -2.6527983336923646
+        },
+        {
+          "document_index": 171,
+          "doc_id": "wikitext-train-article-12457",
+          "difference_KL_named_minus_SVD": -1.917692953304762
+        },
+        {
+          "document_index": 172,
+          "doc_id": "wikitext-train-article-19937",
+          "difference_KL_named_minus_SVD": -1.1007485748527912
+        },
+        {
+          "document_index": 173,
+          "doc_id": "wikitext-train-article-17190",
+          "difference_KL_named_minus_SVD": -0.9059429866870808
+        },
+        {
+          "document_index": 174,
+          "doc_id": "wikitext-train-article-11011",
+          "difference_KL_named_minus_SVD": -0.7722317765448727
+        },
+        {
+          "document_index": 175,
+          "doc_id": "wikitext-train-article-27304",
+          "difference_KL_named_minus_SVD": -2.5476868053266313
+        },
+        {
+          "document_index": 176,
+          "doc_id": "wikitext-train-article-29794",
+          "difference_KL_named_minus_SVD": -3.0260398689133505
+        },
+        {
+          "document_index": 177,
+          "doc_id": "wikitext-train-article-17106",
+          "difference_KL_named_minus_SVD": -4.148313971401476
+        },
+        {
+          "document_index": 178,
+          "doc_id": "wikitext-train-article-23660",
+          "difference_KL_named_minus_SVD": -1.0438906084873305
+        },
+        {
+          "document_index": 179,
+          "doc_id": "wikitext-train-article-3733",
+          "difference_KL_named_minus_SVD": -0.4112334288252209
+        },
+        {
+          "document_index": 180,
+          "doc_id": "wikitext-train-article-9133",
+          "difference_KL_named_minus_SVD": -1.9172274344472866
+        },
+        {
+          "document_index": 181,
+          "doc_id": "wikitext-train-article-13371",
+          "difference_KL_named_minus_SVD": -1.207363988198098
+        },
+        {
+          "document_index": 182,
+          "doc_id": "wikitext-train-article-8125",
+          "difference_KL_named_minus_SVD": -2.107759107127536
+        },
+        {
+          "document_index": 183,
+          "doc_id": "wikitext-train-article-5440",
+          "difference_KL_named_minus_SVD": -3.1315381993907585
+        },
+        {
+          "document_index": 184,
+          "doc_id": "wikitext-train-article-30528",
+          "difference_KL_named_minus_SVD": -3.2504213113038087
+        },
+        {
+          "document_index": 185,
+          "doc_id": "wikitext-train-article-3926",
+          "difference_KL_named_minus_SVD": -0.7830966072145719
+        },
+        {
+          "document_index": 186,
+          "doc_id": "wikitext-train-article-6542",
+          "difference_KL_named_minus_SVD": -0.7371481452983992
+        },
+        {
+          "document_index": 187,
+          "doc_id": "wikitext-train-article-24291",
+          "difference_KL_named_minus_SVD": -4.495178024443513
+        },
+        {
+          "document_index": 188,
+          "doc_id": "wikitext-train-article-20051",
+          "difference_KL_named_minus_SVD": -1.7773086000193898
+        },
+        {
+          "document_index": 189,
+          "doc_id": "wikitext-train-article-14599",
+          "difference_KL_named_minus_SVD": -3.0960863671773535
+        },
+        {
+          "document_index": 190,
+          "doc_id": "wikitext-train-article-36392",
+          "difference_KL_named_minus_SVD": -3.9172514114940906
+        },
+        {
+          "document_index": 191,
+          "doc_id": "wikitext-train-article-23450",
+          "difference_KL_named_minus_SVD": -0.6260253932834723
+        },
+        {
+          "document_index": 192,
+          "doc_id": "wikitext-train-article-19630",
+          "difference_KL_named_minus_SVD": -0.907665751547249
+        },
+        {
+          "document_index": 193,
+          "doc_id": "wikitext-train-article-25496",
+          "difference_KL_named_minus_SVD": -2.3742981922361714
+        },
+        {
+          "document_index": 194,
+          "doc_id": "wikitext-train-article-2270",
+          "difference_KL_named_minus_SVD": -1.749295676229825
+        },
+        {
+          "document_index": 195,
+          "doc_id": "wikitext-train-article-316",
+          "difference_KL_named_minus_SVD": -1.073966149543443
+        },
+        {
+          "document_index": 196,
+          "doc_id": "wikitext-train-article-33420",
+          "difference_KL_named_minus_SVD": -5.919539687826197
+        },
+        {
+          "document_index": 197,
+          "doc_id": "wikitext-train-article-29965",
+          "difference_KL_named_minus_SVD": -8.049334174234994
+        },
+        {
+          "document_index": 198,
+          "doc_id": "wikitext-train-article-27526",
+          "difference_KL_named_minus_SVD": -3.2908846747510445
+        },
+        {
+          "document_index": 199,
+          "doc_id": "wikitext-train-article-17808",
+          "difference_KL_named_minus_SVD": -3.200227263012592
+        },
+        {
+          "document_index": 200,
+          "doc_id": "wikitext-train-article-18417",
+          "difference_KL_named_minus_SVD": -7.765717492669541
+        },
+        {
+          "document_index": 201,
+          "doc_id": "wikitext-train-article-30798",
+          "difference_KL_named_minus_SVD": -2.3855438217285005
+        },
+        {
+          "document_index": 202,
+          "doc_id": "wikitext-train-article-24039",
+          "difference_KL_named_minus_SVD": -0.8400742474201228
+        },
+        {
+          "document_index": 203,
+          "doc_id": "wikitext-train-article-1988",
+          "difference_KL_named_minus_SVD": -0.583541718401422
+        },
+        {
+          "document_index": 204,
+          "doc_id": "wikitext-train-article-5981",
+          "difference_KL_named_minus_SVD": -1.0774808799926947
+        },
+        {
+          "document_index": 205,
+          "doc_id": "wikitext-train-article-26171",
+          "difference_KL_named_minus_SVD": -0.8297898603684074
+        },
+        {
+          "document_index": 206,
+          "doc_id": "wikitext-train-article-13630",
+          "difference_KL_named_minus_SVD": -2.364152693692526
+        },
+        {
+          "document_index": 207,
+          "doc_id": "wikitext-train-article-14802",
+          "difference_KL_named_minus_SVD": -0.9881328801785161
+        },
+        {
+          "document_index": 208,
+          "doc_id": "wikitext-train-article-25279",
+          "difference_KL_named_minus_SVD": -0.46007021895295674
+        },
+        {
+          "document_index": 209,
+          "doc_id": "wikitext-train-article-18153",
+          "difference_KL_named_minus_SVD": -0.8891514325657073
+        },
+        {
+          "document_index": 210,
+          "doc_id": "wikitext-train-article-11166",
+          "difference_KL_named_minus_SVD": -0.804991047319525
+        },
+        {
+          "document_index": 211,
+          "doc_id": "wikitext-train-article-9228",
+          "difference_KL_named_minus_SVD": -2.0405148417579855
+        },
+        {
+          "document_index": 212,
+          "doc_id": "wikitext-train-article-31323",
+          "difference_KL_named_minus_SVD": -0.2680941388367453
+        },
+        {
+          "document_index": 213,
+          "doc_id": "wikitext-train-article-32049",
+          "difference_KL_named_minus_SVD": -0.6162379212828161
+        },
+        {
+          "document_index": 214,
+          "doc_id": "wikitext-train-article-10767",
+          "difference_KL_named_minus_SVD": -2.2651667759207426
+        },
+        {
+          "document_index": 215,
+          "doc_id": "wikitext-train-article-9183",
+          "difference_KL_named_minus_SVD": -1.9361972224418258
+        },
+        {
+          "document_index": 216,
+          "doc_id": "wikitext-train-article-4439",
+          "difference_KL_named_minus_SVD": -2.510640046410987
+        },
+        {
+          "document_index": 217,
+          "doc_id": "wikitext-train-article-28275",
+          "difference_KL_named_minus_SVD": -0.8869576044665773
+        },
+        {
+          "document_index": 218,
+          "doc_id": "wikitext-train-article-20734",
+          "difference_KL_named_minus_SVD": -0.9215236789308476
+        },
+        {
+          "document_index": 219,
+          "doc_id": "wikitext-train-article-33192",
+          "difference_KL_named_minus_SVD": -0.7127225321178333
+        },
+        {
+          "document_index": 220,
+          "doc_id": "wikitext-train-article-15596",
+          "difference_KL_named_minus_SVD": -5.862643694425722
+        },
+        {
+          "document_index": 221,
+          "doc_id": "wikitext-train-article-17453",
+          "difference_KL_named_minus_SVD": -2.089715602496707
+        },
+        {
+          "document_index": 222,
+          "doc_id": "wikitext-train-article-9103",
+          "difference_KL_named_minus_SVD": -1.5464276229477203
+        },
+        {
+          "document_index": 223,
+          "doc_id": "wikitext-train-article-30729",
+          "difference_KL_named_minus_SVD": -2.2961692802701217
+        },
+        {
+          "document_index": 224,
+          "doc_id": "wikitext-train-article-8645",
+          "difference_KL_named_minus_SVD": -5.598574021843203
+        },
+        {
+          "document_index": 225,
+          "doc_id": "wikitext-train-article-33562",
+          "difference_KL_named_minus_SVD": -2.1755445272032476
+        },
+        {
+          "document_index": 226,
+          "doc_id": "wikitext-train-article-12023",
+          "difference_KL_named_minus_SVD": -0.9376898877189748
+        },
+        {
+          "document_index": 227,
+          "doc_id": "wikitext-train-article-628",
+          "difference_KL_named_minus_SVD": -0.5841726944874286
+        },
+        {
+          "document_index": 228,
+          "doc_id": "wikitext-train-article-1244",
+          "difference_KL_named_minus_SVD": -1.704996522396241
+        },
+        {
+          "document_index": 229,
+          "doc_id": "wikitext-train-article-23892",
+          "difference_KL_named_minus_SVD": -0.8706175183639977
+        },
+        {
+          "document_index": 230,
+          "doc_id": "wikitext-train-article-28168",
+          "difference_KL_named_minus_SVD": -0.5818897787954049
+        },
+        {
+          "document_index": 231,
+          "doc_id": "wikitext-train-article-20571",
+          "difference_KL_named_minus_SVD": -2.167578580115784
+        },
+        {
+          "document_index": 232,
+          "doc_id": "wikitext-train-article-25943",
+          "difference_KL_named_minus_SVD": -2.0342010719800654
+        },
+        {
+          "document_index": 233,
+          "doc_id": "wikitext-train-article-29688",
+          "difference_KL_named_minus_SVD": -2.3845253161943467
+        },
+        {
+          "document_index": 234,
+          "doc_id": "wikitext-train-article-24694",
+          "difference_KL_named_minus_SVD": -1.3335877568916277
+        },
+        {
+          "document_index": 235,
+          "doc_id": "wikitext-train-article-24201",
+          "difference_KL_named_minus_SVD": -2.4585203728432417
+        },
+        {
+          "document_index": 236,
+          "doc_id": "wikitext-train-article-6059",
+          "difference_KL_named_minus_SVD": -3.292260614597122
+        },
+        {
+          "document_index": 237,
+          "doc_id": "wikitext-train-article-12311",
+          "difference_KL_named_minus_SVD": -0.8167079325024659
+        },
+        {
+          "document_index": 238,
+          "doc_id": "wikitext-train-article-32622",
+          "difference_KL_named_minus_SVD": -2.420946849030722
+        },
+        {
+          "document_index": 239,
+          "doc_id": "wikitext-train-article-21131",
+          "difference_KL_named_minus_SVD": -1.225289610251906
+        },
+        {
+          "document_index": 240,
+          "doc_id": "wikitext-train-article-22063",
+          "difference_KL_named_minus_SVD": -2.213908452742232
+        },
+        {
+          "document_index": 241,
+          "doc_id": "wikitext-train-article-9703",
+          "difference_KL_named_minus_SVD": -4.465404599929654
+        },
+        {
+          "document_index": 242,
+          "doc_id": "wikitext-train-article-24912",
+          "difference_KL_named_minus_SVD": -2.534325083296848
+        },
+        {
+          "document_index": 243,
+          "doc_id": "wikitext-train-article-27204",
+          "difference_KL_named_minus_SVD": -2.196076803919393
+        },
+        {
+          "document_index": 244,
+          "doc_id": "wikitext-train-article-36042",
+          "difference_KL_named_minus_SVD": -2.5405199888719343
+        },
+        {
+          "document_index": 245,
+          "doc_id": "wikitext-train-article-15642",
+          "difference_KL_named_minus_SVD": -1.506640233647413
+        },
+        {
+          "document_index": 246,
+          "doc_id": "wikitext-train-article-26949",
+          "difference_KL_named_minus_SVD": -0.5575161006844668
+        },
+        {
+          "document_index": 247,
+          "doc_id": "wikitext-train-article-31559",
+          "difference_KL_named_minus_SVD": -1.917870047432765
+        },
+        {
+          "document_index": 248,
+          "doc_id": "wikitext-train-article-11106",
+          "difference_KL_named_minus_SVD": -1.6456628162281421
+        },
+        {
+          "document_index": 249,
+          "doc_id": "wikitext-train-article-5295",
+          "difference_KL_named_minus_SVD": -1.0336769124245242
+        },
+        {
+          "document_index": 250,
+          "doc_id": "wikitext-train-article-27981",
+          "difference_KL_named_minus_SVD": -2.6886012242192447
+        },
+        {
+          "document_index": 251,
+          "doc_id": "wikitext-train-article-32912",
+          "difference_KL_named_minus_SVD": -1.4708518713578702
+        },
+        {
+          "document_index": 252,
+          "doc_id": "wikitext-train-article-11131",
+          "difference_KL_named_minus_SVD": -2.00166798160301
+        },
+        {
+          "document_index": 253,
+          "doc_id": "wikitext-train-article-29108",
+          "difference_KL_named_minus_SVD": -3.1409900043670422
+        },
+        {
+          "document_index": 254,
+          "doc_id": "wikitext-train-article-4150",
+          "difference_KL_named_minus_SVD": -1.263281695013269
+        },
+        {
+          "document_index": 255,
+          "doc_id": "wikitext-train-article-1856",
+          "difference_KL_named_minus_SVD": -1.0658957416854853
+        }
+      ]
+    },
+    "16": {
+      "common_parameters_per_head_layer": 4112,
+      "named_residual_rank": 15,
+      "named_first_KL": {
+        "median": 0.08381882616414467,
+        "p25": 0.05362459790724972,
+        "p75": 0.1681307772484941,
+        "mean": 0.13220246398070423,
+        "std": 0.13497581318371224,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          0.0761357553355804,
+          0.10124372561146
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 0.11450617934124438,
+        "secondary_document_means": {
+          "mean": 0.13220246398070423,
+          "median": 0.08381882616414467,
+          "p25": 0.05362459790724972,
+          "p75": 0.1681307772484941,
+          "mean_ci95_document_bootstrap": [
+            0.11670250848393013,
+            0.1484729710277745
+          ],
+          "median_ci95_document_bootstrap": [
+            0.0761357553355804,
+            0.10124372561146
+          ]
+        }
+      },
+      "SVD_KL": {
+        "median": 1.3737553658561228,
+        "p25": 0.9442383449466335,
+        "p75": 2.2349374038755574,
+        "mean": 1.8431592195774402,
+        "std": 1.5889551432936786,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          1.2677164421295508,
+          1.5612572244618053
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 1.290699058928924,
+        "secondary_document_means": {
+          "mean": 1.8431592195774402,
+          "median": 1.3737553658561228,
+          "p25": 0.9442383449466335,
+          "p75": 2.2349374038755574,
+          "mean_ci95_document_bootstrap": [
+            1.6516296049795094,
+            2.0441322165576152
+          ],
+          "median_ci95_document_bootstrap": [
+            1.2677164421295508,
+            1.5612572244618053
+          ]
+        }
+      },
+      "paired_KL_named_minus_SVD": {
+        "median": -1.2487698963168161,
+        "p25": -2.0704069653799775,
+        "p75": -0.8159870742988189,
+        "mean": -1.7109567555967362,
+        "std": 1.585351601731345,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          -1.392618307818596,
+          -1.1302432048543671
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 1.2544198910811586,
+        "secondary_document_means": {
+          "mean": -1.7109567555967362,
+          "median": -1.2487698963168161,
+          "p25": -2.0704069653799775,
+          "p75": -0.8159870742988189,
+          "mean_ci95_document_bootstrap": [
+            -1.911883593671406,
+            -1.521941956717755
+          ],
+          "median_ci95_document_bootstrap": [
+            -1.392618307818596,
+            -1.1302432048543671
+          ]
+        },
+        "wilcoxon": {
+          "n_articles": 256,
+          "n_zero_differences": 0,
+          "statistic": 0.0,
+          "p_two_sided": 9.640418513895798e-44,
+          "W_positive": 0.0,
+          "W_negative": 32896.0,
+          "rank_biserial": -1.0,
+          "positive_difference_favors": "SVD",
+          "method": "scipy.stats.wilcoxon; two-sided; zero_method=wilcox; method=asymptotic; p unadjusted",
+          "fraction_articles_SVD_has_lower_KL": 0.0
+        }
+      },
+      "named_first_NLL": {
+        "median": 3.20640148476817,
+        "p25": 1.4852457697281296,
+        "p75": 5.466959069764324,
+        "mean": 3.7938453542455157,
+        "std": 2.984195106983597,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          2.5589484156052387,
+          3.7363445843783545
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 3.9817133000361946,
+        "secondary_document_means": {
+          "mean": 3.7938453542455157,
+          "median": 3.20640148476817,
+          "p25": 1.4852457697281296,
+          "p75": 5.466959069764324,
+          "mean_ci95_document_bootstrap": [
+            3.4342773760294767,
+            4.144670373892108
+          ],
+          "median_ci95_document_bootstrap": [
+            2.5589484156052387,
+            3.7363445843783545
+          ]
+        }
+      },
+      "SVD_NLL": {
+        "median": 5.092883279390361,
+        "p25": 3.354723090505631,
+        "p75": 7.640722347363944,
+        "mean": 5.577400042284653,
+        "std": 2.90237622882804,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          4.657501938739211,
+          5.521691442519424
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 4.285999256858313,
+        "secondary_document_means": {
+          "mean": 5.577400042284653,
+          "median": 5.092883279390361,
+          "p25": 3.354723090505631,
+          "p75": 7.640722347363944,
+          "mean_ci95_document_bootstrap": [
+            5.229197539701739,
+            5.922831514335334
+          ],
+          "median_ci95_document_bootstrap": [
+            4.657501938739211,
+            5.521691442519424
+          ]
+        }
+      },
+      "uniform_causal_completion_by_mode": {
+        "named": {
+          "policy": "uniform_causal",
+          "rows_total": 4718592,
+          "rows_completed": 0,
+          "fraction_rows_completed": 0.0,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 0,
+          "fraction_last_query_rows_completed": 0.0
+        },
+        "svd": {
+          "policy": "uniform_causal",
+          "rows_total": 4718592,
+          "rows_completed": 0,
+          "fraction_rows_completed": 0.0,
+          "last_query_rows_total": 36864,
+          "last_query_rows_completed": 0,
+          "fraction_last_query_rows_completed": 0.0
+        }
+      },
+      "attention_validation_by_mode": {
+        "named": {
+          "reconstruction_rows_total": 4718592,
+          "last_query_rows_total": 36864,
+          "reconstruction_layer_calls": 1536,
+          "empty_rows_completed": 0,
+          "empty_rows_completed_at_last_query": 0,
+          "max_row_error_before_cast": 3.5762786865234375e-07,
+          "rows_checked": 9437184,
+          "negative_nan_inf_upper_nonzero": 0,
+          "max_row_error_after_cast": 3.5762786865234375e-07
+        },
+        "svd": {
+          "reconstruction_rows_total": 4718592,
+          "last_query_rows_total": 36864,
+          "reconstruction_layer_calls": 1536,
+          "empty_rows_completed": 0,
+          "empty_rows_completed_at_last_query": 0,
+          "max_row_error_before_cast": 3.5762786865234375e-07,
+          "rows_checked": 9437184,
+          "negative_nan_inf_upper_nonzero": 0,
+          "max_row_error_after_cast": 3.5762786865234375e-07
+        }
+      },
+      "budget_accounting": {
+        "actual_parameters_total": 142738988,
+        "common_cap_total": 151584768,
+        "unused_parameters_total": 8845780
+      },
+      "V1_reference_NLL_check_applicable": true,
+      "max_reference_NLL_difference_from_V1": 0.0,
+      "paired_differences_by_article": [
+        {
+          "document_index": 0,
+          "doc_id": "wikitext-train-article-10125",
+          "difference_KL_named_minus_SVD": -1.6489620102623685
+        },
+        {
+          "document_index": 1,
+          "doc_id": "wikitext-train-article-19105",
+          "difference_KL_named_minus_SVD": -0.3814369075376533
+        },
+        {
+          "document_index": 2,
+          "doc_id": "wikitext-train-article-3259",
+          "difference_KL_named_minus_SVD": -1.311756409314644
+        },
+        {
+          "document_index": 3,
+          "doc_id": "wikitext-train-article-25335",
+          "difference_KL_named_minus_SVD": -1.09518596772481
+        },
+        {
+          "document_index": 4,
+          "doc_id": "wikitext-train-article-133",
+          "difference_KL_named_minus_SVD": -1.0550060711045735
+        },
+        {
+          "document_index": 5,
+          "doc_id": "wikitext-train-article-19783",
+          "difference_KL_named_minus_SVD": -0.5814408429385971
+        },
+        {
+          "document_index": 6,
+          "doc_id": "wikitext-train-article-28850",
+          "difference_KL_named_minus_SVD": -2.2325679215477554
+        },
+        {
+          "document_index": 7,
+          "doc_id": "wikitext-train-article-22764",
+          "difference_KL_named_minus_SVD": -0.17262309351352856
+        },
+        {
+          "document_index": 8,
+          "doc_id": "wikitext-train-article-18510",
+          "difference_KL_named_minus_SVD": -1.933262796643856
+        },
+        {
+          "document_index": 9,
+          "doc_id": "wikitext-train-article-13125",
+          "difference_KL_named_minus_SVD": -2.4392359713894805
+        },
+        {
+          "document_index": 10,
+          "doc_id": "wikitext-train-article-8446",
+          "difference_KL_named_minus_SVD": -1.7514162418260018
+        },
+        {
+          "document_index": 11,
+          "doc_id": "wikitext-train-article-21867",
+          "difference_KL_named_minus_SVD": -3.653456778011561
+        },
+        {
+          "document_index": 12,
+          "doc_id": "wikitext-train-article-27087",
+          "difference_KL_named_minus_SVD": -1.1581118684337466
+        },
+        {
+          "document_index": 13,
+          "doc_id": "wikitext-train-article-18254",
+          "difference_KL_named_minus_SVD": -2.365178612818771
+        },
+        {
+          "document_index": 14,
+          "doc_id": "wikitext-train-article-2187",
+          "difference_KL_named_minus_SVD": -4.633883431471423
+        },
+        {
+          "document_index": 15,
+          "doc_id": "wikitext-train-article-26784",
+          "difference_KL_named_minus_SVD": -3.6095818935428796
+        },
+        {
+          "document_index": 16,
+          "doc_id": "wikitext-train-article-1274",
+          "difference_KL_named_minus_SVD": -1.185864682595342
+        },
+        {
+          "document_index": 17,
+          "doc_id": "wikitext-train-article-30937",
+          "difference_KL_named_minus_SVD": -1.560996244325281
+        },
+        {
+          "document_index": 18,
+          "doc_id": "wikitext-train-article-28198",
+          "difference_KL_named_minus_SVD": -0.9142335499721835
+        },
+        {
+          "document_index": 19,
+          "doc_id": "wikitext-train-article-13191",
+          "difference_KL_named_minus_SVD": -1.9577771533831445
+        },
+        {
+          "document_index": 20,
+          "doc_id": "wikitext-train-article-35240",
+          "difference_KL_named_minus_SVD": -1.6085103545836437
+        },
+        {
+          "document_index": 21,
+          "doc_id": "wikitext-train-article-13930",
+          "difference_KL_named_minus_SVD": -0.4210906127431897
+        },
+        {
+          "document_index": 22,
+          "doc_id": "wikitext-train-article-23808",
+          "difference_KL_named_minus_SVD": -2.1571393481774392
+        },
+        {
+          "document_index": 23,
+          "doc_id": "wikitext-train-article-21174",
+          "difference_KL_named_minus_SVD": -0.9139601166894324
+        },
+        {
+          "document_index": 24,
+          "doc_id": "wikitext-train-article-11220",
+          "difference_KL_named_minus_SVD": -1.234437523085324
+        },
+        {
+          "document_index": 25,
+          "doc_id": "wikitext-train-article-21587",
+          "difference_KL_named_minus_SVD": -2.0690679739259243
+        },
+        {
+          "document_index": 26,
+          "doc_id": "wikitext-train-article-9318",
+          "difference_KL_named_minus_SVD": -3.1232680044108365
+        },
+        {
+          "document_index": 27,
+          "doc_id": "wikitext-train-article-14451",
+          "difference_KL_named_minus_SVD": -0.4947501867850092
+        },
+        {
+          "document_index": 28,
+          "doc_id": "wikitext-train-article-17245",
+          "difference_KL_named_minus_SVD": -1.2736718042087571
+        },
+        {
+          "document_index": 29,
+          "doc_id": "wikitext-train-article-15273",
+          "difference_KL_named_minus_SVD": -0.9322765664286137
+        },
+        {
+          "document_index": 30,
+          "doc_id": "wikitext-train-article-9666",
+          "difference_KL_named_minus_SVD": -0.42204661093586904
+        },
+        {
+          "document_index": 31,
+          "doc_id": "wikitext-train-article-29998",
+          "difference_KL_named_minus_SVD": -0.9749553516640539
+        },
+        {
+          "document_index": 32,
+          "doc_id": "wikitext-train-article-25556",
+          "difference_KL_named_minus_SVD": -5.992625518463733
+        },
+        {
+          "document_index": 33,
+          "doc_id": "wikitext-train-article-15041",
+          "difference_KL_named_minus_SVD": -0.8118116619337825
+        },
+        {
+          "document_index": 34,
+          "doc_id": "wikitext-train-article-12128",
+          "difference_KL_named_minus_SVD": -3.0047101164132397
+        },
+        {
+          "document_index": 35,
+          "doc_id": "wikitext-train-article-35449",
+          "difference_KL_named_minus_SVD": -1.4182925384965044
+        },
+        {
+          "document_index": 36,
+          "doc_id": "wikitext-train-article-31360",
+          "difference_KL_named_minus_SVD": -0.9137199188040542
+        },
+        {
+          "document_index": 37,
+          "doc_id": "wikitext-train-article-557",
+          "difference_KL_named_minus_SVD": -1.1463733186599654
+        },
+        {
+          "document_index": 38,
+          "doc_id": "wikitext-train-article-6882",
+          "difference_KL_named_minus_SVD": -1.6020837906636336
+        },
+        {
+          "document_index": 39,
+          "doc_id": "wikitext-train-article-16096",
+          "difference_KL_named_minus_SVD": -0.9769358475015171
+        },
+        {
+          "document_index": 40,
+          "doc_id": "wikitext-train-article-23619",
+          "difference_KL_named_minus_SVD": -0.6812351108302148
+        },
+        {
+          "document_index": 41,
+          "doc_id": "wikitext-train-article-16516",
+          "difference_KL_named_minus_SVD": -2.9076556045756035
+        },
+        {
+          "document_index": 42,
+          "doc_id": "wikitext-train-article-5912",
+          "difference_KL_named_minus_SVD": -0.9656603258170344
+        },
+        {
+          "document_index": 43,
+          "doc_id": "wikitext-train-article-24064",
+          "difference_KL_named_minus_SVD": -2.4544544796298475
+        },
+        {
+          "document_index": 44,
+          "doc_id": "wikitext-train-article-18675",
+          "difference_KL_named_minus_SVD": -0.8753317721956662
+        },
+        {
+          "document_index": 45,
+          "doc_id": "wikitext-train-article-8342",
+          "difference_KL_named_minus_SVD": -4.122463531788683
+        },
+        {
+          "document_index": 46,
+          "doc_id": "wikitext-train-article-14859",
+          "difference_KL_named_minus_SVD": -1.8846803229415139
+        },
+        {
+          "document_index": 47,
+          "doc_id": "wikitext-train-article-35655",
+          "difference_KL_named_minus_SVD": -1.592296942507589
+        },
+        {
+          "document_index": 48,
+          "doc_id": "wikitext-train-article-10258",
+          "difference_KL_named_minus_SVD": -3.1576049190448567
+        },
+        {
+          "document_index": 49,
+          "doc_id": "wikitext-train-article-31747",
+          "difference_KL_named_minus_SVD": -0.9846941620625275
+        },
+        {
+          "document_index": 50,
+          "doc_id": "wikitext-train-article-28584",
+          "difference_KL_named_minus_SVD": -3.3503417600213496
+        },
+        {
+          "document_index": 51,
+          "doc_id": "wikitext-train-article-21754",
+          "difference_KL_named_minus_SVD": -0.47051964919232875
+        },
+        {
+          "document_index": 52,
+          "doc_id": "wikitext-train-article-20902",
+          "difference_KL_named_minus_SVD": -0.9899053628158321
+        },
+        {
+          "document_index": 53,
+          "doc_id": "wikitext-train-article-5227",
+          "difference_KL_named_minus_SVD": -1.3410035561850133
+        },
+        {
+          "document_index": 54,
+          "doc_id": "wikitext-train-article-7149",
+          "difference_KL_named_minus_SVD": -0.9641456341368596
+        },
+        {
+          "document_index": 55,
+          "doc_id": "wikitext-train-article-20824",
+          "difference_KL_named_minus_SVD": -1.2653342088839024
+        },
+        {
+          "document_index": 56,
+          "doc_id": "wikitext-train-article-25181",
+          "difference_KL_named_minus_SVD": -1.7313919801799253
+        },
+        {
+          "document_index": 57,
+          "doc_id": "wikitext-train-article-14198",
+          "difference_KL_named_minus_SVD": -2.375265594727039
+        },
+        {
+          "document_index": 58,
+          "doc_id": "wikitext-train-article-406",
+          "difference_KL_named_minus_SVD": -0.4459351647512758
+        },
+        {
+          "document_index": 59,
+          "doc_id": "wikitext-train-article-22150",
+          "difference_KL_named_minus_SVD": -2.348158273384349
+        },
+        {
+          "document_index": 60,
+          "doc_id": "wikitext-train-article-2378",
+          "difference_KL_named_minus_SVD": -0.4034098121364456
+        },
+        {
+          "document_index": 61,
+          "doc_id": "wikitext-train-article-480",
+          "difference_KL_named_minus_SVD": -0.480199889612137
+        },
+        {
+          "document_index": 62,
+          "doc_id": "wikitext-train-article-18442",
+          "difference_KL_named_minus_SVD": -0.8046983788051447
+        },
+        {
+          "document_index": 63,
+          "doc_id": "wikitext-train-article-13301",
+          "difference_KL_named_minus_SVD": -0.5891305010903707
+        },
+        {
+          "document_index": 64,
+          "doc_id": "wikitext-train-article-30156",
+          "difference_KL_named_minus_SVD": -0.9540477711512898
+        },
+        {
+          "document_index": 65,
+          "doc_id": "wikitext-train-article-18226",
+          "difference_KL_named_minus_SVD": -1.1707133733955113
+        },
+        {
+          "document_index": 66,
+          "doc_id": "wikitext-train-article-11710",
+          "difference_KL_named_minus_SVD": -3.8565357721965636
+        },
+        {
+          "document_index": 67,
+          "doc_id": "wikitext-train-article-9935",
+          "difference_KL_named_minus_SVD": -0.09141598227321093
+        },
+        {
+          "document_index": 68,
+          "doc_id": "wikitext-train-article-12425",
+          "difference_KL_named_minus_SVD": -0.917699137357868
+        },
+        {
+          "document_index": 69,
+          "doc_id": "wikitext-train-article-17858",
+          "difference_KL_named_minus_SVD": -0.7428420326756038
+        },
+        {
+          "document_index": 70,
+          "doc_id": "wikitext-train-article-27637",
+          "difference_KL_named_minus_SVD": -1.5638766594768676
+        },
+        {
+          "document_index": 71,
+          "doc_id": "wikitext-train-article-33539",
+          "difference_KL_named_minus_SVD": -1.165693789386651
+        },
+        {
+          "document_index": 72,
+          "doc_id": "wikitext-train-article-9888",
+          "difference_KL_named_minus_SVD": -5.767212756434044
+        },
+        {
+          "document_index": 73,
+          "doc_id": "wikitext-train-article-27461",
+          "difference_KL_named_minus_SVD": -0.9896219230175206
+        },
+        {
+          "document_index": 74,
+          "doc_id": "wikitext-train-article-6781",
+          "difference_KL_named_minus_SVD": -1.6523568307680847
+        },
+        {
+          "document_index": 75,
+          "doc_id": "wikitext-train-article-15577",
+          "difference_KL_named_minus_SVD": -0.5369183718507666
+        },
+        {
+          "document_index": 76,
+          "doc_id": "wikitext-train-article-29852",
+          "difference_KL_named_minus_SVD": -3.0565149406773187
+        },
+        {
+          "document_index": 77,
+          "doc_id": "wikitext-train-article-12618",
+          "difference_KL_named_minus_SVD": -1.3760837447900176
+        },
+        {
+          "document_index": 78,
+          "doc_id": "wikitext-train-article-26292",
+          "difference_KL_named_minus_SVD": -1.6052401839811137
+        },
+        {
+          "document_index": 79,
+          "doc_id": "wikitext-train-article-27113",
+          "difference_KL_named_minus_SVD": -8.379857738670529
+        },
+        {
+          "document_index": 80,
+          "doc_id": "wikitext-train-article-31923",
+          "difference_KL_named_minus_SVD": -3.135001243971429
+        },
+        {
+          "document_index": 81,
+          "doc_id": "wikitext-train-article-12719",
+          "difference_KL_named_minus_SVD": -0.6287402479833218
+        },
+        {
+          "document_index": 82,
+          "doc_id": "wikitext-train-article-799",
+          "difference_KL_named_minus_SVD": -0.8409016228553563
+        },
+        {
+          "document_index": 83,
+          "doc_id": "wikitext-train-article-34124",
+          "difference_KL_named_minus_SVD": -0.6718475038859826
+        },
+        {
+          "document_index": 84,
+          "doc_id": "wikitext-train-article-9841",
+          "difference_KL_named_minus_SVD": -0.9949345129366524
+        },
+        {
+          "document_index": 85,
+          "doc_id": "wikitext-train-article-11189",
+          "difference_KL_named_minus_SVD": -1.9207734353784356
+        },
+        {
+          "document_index": 86,
+          "doc_id": "wikitext-train-article-464",
+          "difference_KL_named_minus_SVD": -0.28532183852255977
+        },
+        {
+          "document_index": 87,
+          "doc_id": "wikitext-train-article-2555",
+          "difference_KL_named_minus_SVD": -1.5095115709933482
+        },
+        {
+          "document_index": 88,
+          "doc_id": "wikitext-train-article-433",
+          "difference_KL_named_minus_SVD": -1.606811529453171
+        },
+        {
+          "document_index": 89,
+          "doc_id": "wikitext-train-article-27037",
+          "difference_KL_named_minus_SVD": -0.5520067306622929
+        },
+        {
+          "document_index": 90,
+          "doc_id": "wikitext-train-article-5122",
+          "difference_KL_named_minus_SVD": -0.9232611564609844
+        },
+        {
+          "document_index": 91,
+          "doc_id": "wikitext-train-article-16409",
+          "difference_KL_named_minus_SVD": -1.9655333599555114
+        },
+        {
+          "document_index": 92,
+          "doc_id": "wikitext-train-article-27839",
+          "difference_KL_named_minus_SVD": -1.5219328200350606
+        },
+        {
+          "document_index": 93,
+          "doc_id": "wikitext-train-article-7562",
+          "difference_KL_named_minus_SVD": -1.0576300023206284
+        },
+        {
+          "document_index": 94,
+          "doc_id": "wikitext-train-article-15214",
+          "difference_KL_named_minus_SVD": -2.254913829952027
+        },
+        {
+          "document_index": 95,
+          "doc_id": "wikitext-train-article-33830",
+          "difference_KL_named_minus_SVD": -0.8276486498162364
+        },
+        {
+          "document_index": 96,
+          "doc_id": "wikitext-train-article-21618",
+          "difference_KL_named_minus_SVD": -0.6761346001127759
+        },
+        {
+          "document_index": 97,
+          "doc_id": "wikitext-train-article-3820",
+          "difference_KL_named_minus_SVD": -1.74832574563857
+        },
+        {
+          "document_index": 98,
+          "doc_id": "wikitext-train-article-29413",
+          "difference_KL_named_minus_SVD": -1.6747751977060292
+        },
+        {
+          "document_index": 99,
+          "doc_id": "wikitext-train-article-32118",
+          "difference_KL_named_minus_SVD": -0.7132117878184203
+        },
+        {
+          "document_index": 100,
+          "doc_id": "wikitext-train-article-12807",
+          "difference_KL_named_minus_SVD": -2.8189036710558666
+        },
+        {
+          "document_index": 101,
+          "doc_id": "wikitext-train-article-6256",
+          "difference_KL_named_minus_SVD": -1.6509421328448899
+        },
+        {
+          "document_index": 102,
+          "doc_id": "wikitext-train-article-12877",
+          "difference_KL_named_minus_SVD": -1.3564259128825045
+        },
+        {
+          "document_index": 103,
+          "doc_id": "wikitext-train-article-24840",
+          "difference_KL_named_minus_SVD": -1.129426232068731
+        },
+        {
+          "document_index": 104,
+          "doc_id": "wikitext-train-article-4228",
+          "difference_KL_named_minus_SVD": -1.5527617042650004
+        },
+        {
+          "document_index": 105,
+          "doc_id": "wikitext-train-article-16710",
+          "difference_KL_named_minus_SVD": -1.0352756034787802
+        },
+        {
+          "document_index": 106,
+          "doc_id": "wikitext-train-article-8251",
+          "difference_KL_named_minus_SVD": -0.19828538284384717
+        },
+        {
+          "document_index": 107,
+          "doc_id": "wikitext-train-article-10340",
+          "difference_KL_named_minus_SVD": -0.011619580386629184
+        },
+        {
+          "document_index": 108,
+          "doc_id": "wikitext-train-article-13978",
+          "difference_KL_named_minus_SVD": -3.88862665185287
+        },
+        {
+          "document_index": 109,
+          "doc_id": "wikitext-train-article-25973",
+          "difference_KL_named_minus_SVD": -2.6480884024555893
+        },
+        {
+          "document_index": 110,
+          "doc_id": "wikitext-train-article-22925",
+          "difference_KL_named_minus_SVD": -2.2937764821214173
+        },
+        {
+          "document_index": 111,
+          "doc_id": "wikitext-train-article-18301",
+          "difference_KL_named_minus_SVD": -0.5873303980425995
+        },
+        {
+          "document_index": 112,
+          "doc_id": "wikitext-train-article-35957",
+          "difference_KL_named_minus_SVD": -1.5164480524996282
+        },
+        {
+          "document_index": 113,
+          "doc_id": "wikitext-train-article-24322",
+          "difference_KL_named_minus_SVD": -3.0487970189782674
+        },
+        {
+          "document_index": 114,
+          "doc_id": "wikitext-train-article-29174",
+          "difference_KL_named_minus_SVD": -1.3312000657153558
+        },
+        {
+          "document_index": 115,
+          "doc_id": "wikitext-train-article-31128",
+          "difference_KL_named_minus_SVD": -0.8150159051059402
+        },
+        {
+          "document_index": 116,
+          "doc_id": "wikitext-train-article-23014",
+          "difference_KL_named_minus_SVD": -1.1704636819483023
+        },
+        {
+          "document_index": 117,
+          "doc_id": "wikitext-train-article-21220",
+          "difference_KL_named_minus_SVD": -3.406055293707886
+        },
+        {
+          "document_index": 118,
+          "doc_id": "wikitext-train-article-17843",
+          "difference_KL_named_minus_SVD": -0.5959232801127277
+        },
+        {
+          "document_index": 119,
+          "doc_id": "wikitext-train-article-26710",
+          "difference_KL_named_minus_SVD": -1.8166778282799634
+        },
+        {
+          "document_index": 120,
+          "doc_id": "wikitext-train-article-24863",
+          "difference_KL_named_minus_SVD": -0.9887925975772036
+        },
+        {
+          "document_index": 121,
+          "doc_id": "wikitext-train-article-6821",
+          "difference_KL_named_minus_SVD": -0.4333687735418253
+        },
+        {
+          "document_index": 122,
+          "doc_id": "wikitext-train-article-15704",
+          "difference_KL_named_minus_SVD": -0.7740741170784907
+        },
+        {
+          "document_index": 123,
+          "doc_id": "wikitext-train-article-3443",
+          "difference_KL_named_minus_SVD": -0.8580999607213132
+        },
+        {
+          "document_index": 124,
+          "doc_id": "wikitext-train-article-34562",
+          "difference_KL_named_minus_SVD": -1.4830446432856284
+        },
+        {
+          "document_index": 125,
+          "doc_id": "wikitext-train-article-11438",
+          "difference_KL_named_minus_SVD": -0.21465541665547783
+        },
+        {
+          "document_index": 126,
+          "doc_id": "wikitext-train-article-14301",
+          "difference_KL_named_minus_SVD": -0.37939005615703675
+        },
+        {
+          "document_index": 127,
+          "doc_id": "wikitext-train-article-1107",
+          "difference_KL_named_minus_SVD": -3.0112895277405527
+        },
+        {
+          "document_index": 128,
+          "doc_id": "wikitext-train-article-17966",
+          "difference_KL_named_minus_SVD": -13.849967816302156
+        },
+        {
+          "document_index": 129,
+          "doc_id": "wikitext-train-article-20880",
+          "difference_KL_named_minus_SVD": -0.3252856995851824
+        },
+        {
+          "document_index": 130,
+          "doc_id": "wikitext-train-article-18866",
+          "difference_KL_named_minus_SVD": -1.3195277583282654
+        },
+        {
+          "document_index": 131,
+          "doc_id": "wikitext-train-article-10553",
+          "difference_KL_named_minus_SVD": -2.536904939440765
+        },
+        {
+          "document_index": 132,
+          "doc_id": "wikitext-train-article-32315",
+          "difference_KL_named_minus_SVD": -1.8989602442968034
+        },
+        {
+          "document_index": 133,
+          "doc_id": "wikitext-train-article-3128",
+          "difference_KL_named_minus_SVD": -1.7616753310999944
+        },
+        {
+          "document_index": 134,
+          "doc_id": "wikitext-train-article-22318",
+          "difference_KL_named_minus_SVD": -1.7146956927467332
+        },
+        {
+          "document_index": 135,
+          "doc_id": "wikitext-train-article-13552",
+          "difference_KL_named_minus_SVD": -1.2894474528194684
+        },
+        {
+          "document_index": 136,
+          "doc_id": "wikitext-train-article-26812",
+          "difference_KL_named_minus_SVD": -4.071878903780603
+        },
+        {
+          "document_index": 137,
+          "doc_id": "wikitext-train-article-2156",
+          "difference_KL_named_minus_SVD": -0.20829913055490612
+        },
+        {
+          "document_index": 138,
+          "doc_id": "wikitext-train-article-19180",
+          "difference_KL_named_minus_SVD": -1.072257350311467
+        },
+        {
+          "document_index": 139,
+          "doc_id": "wikitext-train-article-12981",
+          "difference_KL_named_minus_SVD": -1.6020757632441203
+        },
+        {
+          "document_index": 140,
+          "doc_id": "wikitext-train-article-51",
+          "difference_KL_named_minus_SVD": -1.3207098365680623
+        },
+        {
+          "document_index": 141,
+          "doc_id": "wikitext-train-article-27616",
+          "difference_KL_named_minus_SVD": -3.879411405693093
+        },
+        {
+          "document_index": 142,
+          "doc_id": "wikitext-train-article-8961",
+          "difference_KL_named_minus_SVD": -1.045833672449707
+        },
+        {
+          "document_index": 143,
+          "doc_id": "wikitext-train-article-1401",
+          "difference_KL_named_minus_SVD": -0.5298473321950233
+        },
+        {
+          "document_index": 144,
+          "doc_id": "wikitext-train-article-13079",
+          "difference_KL_named_minus_SVD": -0.6758215974219973
+        },
+        {
+          "document_index": 145,
+          "doc_id": "wikitext-train-article-34509",
+          "difference_KL_named_minus_SVD": -10.185294303174697
+        },
+        {
+          "document_index": 146,
+          "doc_id": "wikitext-train-article-6409",
+          "difference_KL_named_minus_SVD": -0.6470263639718863
+        },
+        {
+          "document_index": 147,
+          "doc_id": "wikitext-train-article-30020",
+          "difference_KL_named_minus_SVD": -1.1185262317266733
+        },
+        {
+          "document_index": 148,
+          "doc_id": "wikitext-train-article-1648",
+          "difference_KL_named_minus_SVD": -1.2353854999106149
+        },
+        {
+          "document_index": 149,
+          "doc_id": "wikitext-train-article-34991",
+          "difference_KL_named_minus_SVD": -0.8163107973631119
+        },
+        {
+          "document_index": 150,
+          "doc_id": "wikitext-train-article-1157",
+          "difference_KL_named_minus_SVD": -1.0653877480126468
+        },
+        {
+          "document_index": 151,
+          "doc_id": "wikitext-train-article-16451",
+          "difference_KL_named_minus_SVD": -0.828030715487851
+        },
+        {
+          "document_index": 152,
+          "doc_id": "wikitext-train-article-24759",
+          "difference_KL_named_minus_SVD": -1.4438521616076496
+        },
+        {
+          "document_index": 153,
+          "doc_id": "wikitext-train-article-17380",
+          "difference_KL_named_minus_SVD": -4.927181619773702
+        },
+        {
+          "document_index": 154,
+          "doc_id": "wikitext-train-article-30341",
+          "difference_KL_named_minus_SVD": -2.3336188332609966
+        },
+        {
+          "document_index": 155,
+          "doc_id": "wikitext-train-article-23324",
+          "difference_KL_named_minus_SVD": -0.8013155894398141
+        },
+        {
+          "document_index": 156,
+          "doc_id": "wikitext-train-article-29722",
+          "difference_KL_named_minus_SVD": -1.1994283770382994
+        },
+        {
+          "document_index": 157,
+          "doc_id": "wikitext-train-article-8771",
+          "difference_KL_named_minus_SVD": -1.8212634321698264
+        },
+        {
+          "document_index": 158,
+          "doc_id": "wikitext-train-article-8173",
+          "difference_KL_named_minus_SVD": -0.998700778507766
+        },
+        {
+          "document_index": 159,
+          "doc_id": "wikitext-train-article-30319",
+          "difference_KL_named_minus_SVD": -4.518129433346128
+        },
+        {
+          "document_index": 160,
+          "doc_id": "wikitext-train-article-25844",
+          "difference_KL_named_minus_SVD": -1.3924230192946743
+        },
+        {
+          "document_index": 161,
+          "doc_id": "wikitext-train-article-2733",
+          "difference_KL_named_minus_SVD": -1.418632310375449
+        },
+        {
+          "document_index": 162,
+          "doc_id": "wikitext-train-article-29338",
+          "difference_KL_named_minus_SVD": -2.6229097968793518
+        },
+        {
+          "document_index": 163,
+          "doc_id": "wikitext-train-article-271",
+          "difference_KL_named_minus_SVD": -0.8275595430140987
+        },
+        {
+          "document_index": 164,
+          "doc_id": "wikitext-train-article-18987",
+          "difference_KL_named_minus_SVD": -0.866175887424615
+        },
+        {
+          "document_index": 165,
+          "doc_id": "wikitext-train-article-13853",
+          "difference_KL_named_minus_SVD": -0.7781165899601266
+        },
+        {
+          "document_index": 166,
+          "doc_id": "wikitext-train-article-11377",
+          "difference_KL_named_minus_SVD": -2.546019472042563
+        },
+        {
+          "document_index": 167,
+          "doc_id": "wikitext-train-article-5885",
+          "difference_KL_named_minus_SVD": -1.1302432048543671
+        },
+        {
+          "document_index": 168,
+          "doc_id": "wikitext-train-article-16676",
+          "difference_KL_named_minus_SVD": -1.6645710648694998
+        },
+        {
+          "document_index": 169,
+          "doc_id": "wikitext-train-article-2134",
+          "difference_KL_named_minus_SVD": -0.7946232853430273
+        },
+        {
+          "document_index": 170,
+          "doc_id": "wikitext-train-article-23047",
+          "difference_KL_named_minus_SVD": -2.793798971341456
+        },
+        {
+          "document_index": 171,
+          "doc_id": "wikitext-train-article-12457",
+          "difference_KL_named_minus_SVD": -1.8771957275100537
+        },
+        {
+          "document_index": 172,
+          "doc_id": "wikitext-train-article-19937",
+          "difference_KL_named_minus_SVD": -0.8820081463897324
+        },
+        {
+          "document_index": 173,
+          "doc_id": "wikitext-train-article-17190",
+          "difference_KL_named_minus_SVD": -0.6296325028416601
+        },
+        {
+          "document_index": 174,
+          "doc_id": "wikitext-train-article-11011",
+          "difference_KL_named_minus_SVD": -0.7239736353081737
+        },
+        {
+          "document_index": 175,
+          "doc_id": "wikitext-train-article-27304",
+          "difference_KL_named_minus_SVD": -0.6012957604532211
+        },
+        {
+          "document_index": 176,
+          "doc_id": "wikitext-train-article-29794",
+          "difference_KL_named_minus_SVD": -2.6685152221585797
+        },
+        {
+          "document_index": 177,
+          "doc_id": "wikitext-train-article-17106",
+          "difference_KL_named_minus_SVD": -0.4832471225718557
+        },
+        {
+          "document_index": 178,
+          "doc_id": "wikitext-train-article-23660",
+          "difference_KL_named_minus_SVD": -0.5819230023605311
+        },
+        {
+          "document_index": 179,
+          "doc_id": "wikitext-train-article-3733",
+          "difference_KL_named_minus_SVD": -0.3010339836805697
+        },
+        {
+          "document_index": 180,
+          "doc_id": "wikitext-train-article-9133",
+          "difference_KL_named_minus_SVD": -1.0295808397761614
+        },
+        {
+          "document_index": 181,
+          "doc_id": "wikitext-train-article-13371",
+          "difference_KL_named_minus_SVD": -1.0204387816683553
+        },
+        {
+          "document_index": 182,
+          "doc_id": "wikitext-train-article-8125",
+          "difference_KL_named_minus_SVD": -2.027297195749039
+        },
+        {
+          "document_index": 183,
+          "doc_id": "wikitext-train-article-5440",
+          "difference_KL_named_minus_SVD": -2.1220290106959574
+        },
+        {
+          "document_index": 184,
+          "doc_id": "wikitext-train-article-30528",
+          "difference_KL_named_minus_SVD": -3.0498739259829097
+        },
+        {
+          "document_index": 185,
+          "doc_id": "wikitext-train-article-3926",
+          "difference_KL_named_minus_SVD": -0.8656456526678818
+        },
+        {
+          "document_index": 186,
+          "doc_id": "wikitext-train-article-6542",
+          "difference_KL_named_minus_SVD": -1.5787870023694903
+        },
+        {
+          "document_index": 187,
+          "doc_id": "wikitext-train-article-24291",
+          "difference_KL_named_minus_SVD": -4.112514479729277
+        },
+        {
+          "document_index": 188,
+          "doc_id": "wikitext-train-article-20051",
+          "difference_KL_named_minus_SVD": -1.197477426389244
+        },
+        {
+          "document_index": 189,
+          "doc_id": "wikitext-train-article-14599",
+          "difference_KL_named_minus_SVD": -3.0817679119938344
+        },
+        {
+          "document_index": 190,
+          "doc_id": "wikitext-train-article-36392",
+          "difference_KL_named_minus_SVD": -5.793843701485762
+        },
+        {
+          "document_index": 191,
+          "doc_id": "wikitext-train-article-23450",
+          "difference_KL_named_minus_SVD": -0.2837089477603426
+        },
+        {
+          "document_index": 192,
+          "doc_id": "wikitext-train-article-19630",
+          "difference_KL_named_minus_SVD": -1.9209263647049348
+        },
+        {
+          "document_index": 193,
+          "doc_id": "wikitext-train-article-25496",
+          "difference_KL_named_minus_SVD": -0.9234754207506448
+        },
+        {
+          "document_index": 194,
+          "doc_id": "wikitext-train-article-2270",
+          "difference_KL_named_minus_SVD": -1.9564527679086063
+        },
+        {
+          "document_index": 195,
+          "doc_id": "wikitext-train-article-316",
+          "difference_KL_named_minus_SVD": -2.228610183889979
+        },
+        {
+          "document_index": 196,
+          "doc_id": "wikitext-train-article-33420",
+          "difference_KL_named_minus_SVD": -6.326272241283799
+        },
+        {
+          "document_index": 197,
+          "doc_id": "wikitext-train-article-29965",
+          "difference_KL_named_minus_SVD": -8.605533263105917
+        },
+        {
+          "document_index": 198,
+          "doc_id": "wikitext-train-article-27526",
+          "difference_KL_named_minus_SVD": -2.8929165570522275
+        },
+        {
+          "document_index": 199,
+          "doc_id": "wikitext-train-article-17808",
+          "difference_KL_named_minus_SVD": -3.1841554691562353
+        },
+        {
+          "document_index": 200,
+          "doc_id": "wikitext-train-article-18417",
+          "difference_KL_named_minus_SVD": -5.096055114384947
+        },
+        {
+          "document_index": 201,
+          "doc_id": "wikitext-train-article-30798",
+          "difference_KL_named_minus_SVD": -2.168947959694334
+        },
+        {
+          "document_index": 202,
+          "doc_id": "wikitext-train-article-24039",
+          "difference_KL_named_minus_SVD": -0.584831201509585
+        },
+        {
+          "document_index": 203,
+          "doc_id": "wikitext-train-article-1988",
+          "difference_KL_named_minus_SVD": -0.2974369662038647
+        },
+        {
+          "document_index": 204,
+          "doc_id": "wikitext-train-article-5981",
+          "difference_KL_named_minus_SVD": -0.7698010957814799
+        },
+        {
+          "document_index": 205,
+          "doc_id": "wikitext-train-article-26171",
+          "difference_KL_named_minus_SVD": -0.35136221734230505
+        },
+        {
+          "document_index": 206,
+          "doc_id": "wikitext-train-article-13630",
+          "difference_KL_named_minus_SVD": -2.3991975959112173
+        },
+        {
+          "document_index": 207,
+          "doc_id": "wikitext-train-article-14802",
+          "difference_KL_named_minus_SVD": -1.3759138422282389
+        },
+        {
+          "document_index": 208,
+          "doc_id": "wikitext-train-article-25279",
+          "difference_KL_named_minus_SVD": -0.7565400717744978
+        },
+        {
+          "document_index": 209,
+          "doc_id": "wikitext-train-article-18153",
+          "difference_KL_named_minus_SVD": -0.793973358632883
+        },
+        {
+          "document_index": 210,
+          "doc_id": "wikitext-train-article-11166",
+          "difference_KL_named_minus_SVD": -0.6822000049044423
+        },
+        {
+          "document_index": 211,
+          "doc_id": "wikitext-train-article-9228",
+          "difference_KL_named_minus_SVD": -1.548196867925267
+        },
+        {
+          "document_index": 212,
+          "doc_id": "wikitext-train-article-31323",
+          "difference_KL_named_minus_SVD": -0.41672855169648987
+        },
+        {
+          "document_index": 213,
+          "doc_id": "wikitext-train-article-32049",
+          "difference_KL_named_minus_SVD": -0.4687363401778846
+        },
+        {
+          "document_index": 214,
+          "doc_id": "wikitext-train-article-10767",
+          "difference_KL_named_minus_SVD": -0.6084990146725359
+        },
+        {
+          "document_index": 215,
+          "doc_id": "wikitext-train-article-9183",
+          "difference_KL_named_minus_SVD": -2.4462298499351074
+        },
+        {
+          "document_index": 216,
+          "doc_id": "wikitext-train-article-4439",
+          "difference_KL_named_minus_SVD": -3.203987674269475
+        },
+        {
+          "document_index": 217,
+          "doc_id": "wikitext-train-article-28275",
+          "difference_KL_named_minus_SVD": -0.7543074427333637
+        },
+        {
+          "document_index": 218,
+          "doc_id": "wikitext-train-article-20734",
+          "difference_KL_named_minus_SVD": -0.5172972151678212
+        },
+        {
+          "document_index": 219,
+          "doc_id": "wikitext-train-article-33192",
+          "difference_KL_named_minus_SVD": -1.1455388489670604
+        },
+        {
+          "document_index": 220,
+          "doc_id": "wikitext-train-article-15596",
+          "difference_KL_named_minus_SVD": -3.0447038430567384
+        },
+        {
+          "document_index": 221,
+          "doc_id": "wikitext-train-article-17453",
+          "difference_KL_named_minus_SVD": -2.438318038385924
+        },
+        {
+          "document_index": 222,
+          "doc_id": "wikitext-train-article-9103",
+          "difference_KL_named_minus_SVD": -1.2550888953526989
+        },
+        {
+          "document_index": 223,
+          "doc_id": "wikitext-train-article-30729",
+          "difference_KL_named_minus_SVD": -0.9372972577305603
+        },
+        {
+          "document_index": 224,
+          "doc_id": "wikitext-train-article-8645",
+          "difference_KL_named_minus_SVD": -1.382176582006581
+        },
+        {
+          "document_index": 225,
+          "doc_id": "wikitext-train-article-33562",
+          "difference_KL_named_minus_SVD": -1.4280371952331194
+        },
+        {
+          "document_index": 226,
+          "doc_id": "wikitext-train-article-12023",
+          "difference_KL_named_minus_SVD": -0.7797167616925298
+        },
+        {
+          "document_index": 227,
+          "doc_id": "wikitext-train-article-628",
+          "difference_KL_named_minus_SVD": -0.48961932792328994
+        },
+        {
+          "document_index": 228,
+          "doc_id": "wikitext-train-article-1244",
+          "difference_KL_named_minus_SVD": -1.3420416326954536
+        },
+        {
+          "document_index": 229,
+          "doc_id": "wikitext-train-article-23892",
+          "difference_KL_named_minus_SVD": -0.9213782161387016
+        },
+        {
+          "document_index": 230,
+          "doc_id": "wikitext-train-article-28168",
+          "difference_KL_named_minus_SVD": -0.49716141110595957
+        },
+        {
+          "document_index": 231,
+          "doc_id": "wikitext-train-article-20571",
+          "difference_KL_named_minus_SVD": -1.2424508972809336
+        },
+        {
+          "document_index": 232,
+          "doc_id": "wikitext-train-article-25943",
+          "difference_KL_named_minus_SVD": -1.7078567661904172
+        },
+        {
+          "document_index": 233,
+          "doc_id": "wikitext-train-article-29688",
+          "difference_KL_named_minus_SVD": -1.9050101088443578
+        },
+        {
+          "document_index": 234,
+          "doc_id": "wikitext-train-article-24694",
+          "difference_KL_named_minus_SVD": -0.9226204341473169
+        },
+        {
+          "document_index": 235,
+          "doc_id": "wikitext-train-article-24201",
+          "difference_KL_named_minus_SVD": -1.9588761769066731
+        },
+        {
+          "document_index": 236,
+          "doc_id": "wikitext-train-article-6059",
+          "difference_KL_named_minus_SVD": -1.2967588928894225
+        },
+        {
+          "document_index": 237,
+          "doc_id": "wikitext-train-article-12311",
+          "difference_KL_named_minus_SVD": -0.8065569699830694
+        },
+        {
+          "document_index": 238,
+          "doc_id": "wikitext-train-article-32622",
+          "difference_KL_named_minus_SVD": -2.177127465195334
+        },
+        {
+          "document_index": 239,
+          "doc_id": "wikitext-train-article-21131",
+          "difference_KL_named_minus_SVD": -0.8722190888948165
+        },
+        {
+          "document_index": 240,
+          "doc_id": "wikitext-train-article-22063",
+          "difference_KL_named_minus_SVD": -1.1645802708801745
+        },
+        {
+          "document_index": 241,
+          "doc_id": "wikitext-train-article-9703",
+          "difference_KL_named_minus_SVD": -4.112447010451129
+        },
+        {
+          "document_index": 242,
+          "doc_id": "wikitext-train-article-24912",
+          "difference_KL_named_minus_SVD": -1.5564611087952087
+        },
+        {
+          "document_index": 243,
+          "doc_id": "wikitext-train-article-27204",
+          "difference_KL_named_minus_SVD": -1.7236622231272585
+        },
+        {
+          "document_index": 244,
+          "doc_id": "wikitext-train-article-36042",
+          "difference_KL_named_minus_SVD": -1.736243916213468
+        },
+        {
+          "document_index": 245,
+          "doc_id": "wikitext-train-article-15642",
+          "difference_KL_named_minus_SVD": -1.2348096193231903
+        },
+        {
+          "document_index": 246,
+          "doc_id": "wikitext-train-article-26949",
+          "difference_KL_named_minus_SVD": -0.5672231504833984
+        },
+        {
+          "document_index": 247,
+          "doc_id": "wikitext-train-article-31559",
+          "difference_KL_named_minus_SVD": -1.0815986180435573
+        },
+        {
+          "document_index": 248,
+          "doc_id": "wikitext-train-article-11106",
+          "difference_KL_named_minus_SVD": -1.1726669449029383
+        },
+        {
+          "document_index": 249,
+          "doc_id": "wikitext-train-article-5295",
+          "difference_KL_named_minus_SVD": -0.8999542470801657
+        },
+        {
+          "document_index": 250,
+          "doc_id": "wikitext-train-article-27981",
+          "difference_KL_named_minus_SVD": -2.0744239397421365
+        },
+        {
+          "document_index": 251,
+          "doc_id": "wikitext-train-article-32912",
+          "difference_KL_named_minus_SVD": -1.063226336239168
+        },
+        {
+          "document_index": 252,
+          "doc_id": "wikitext-train-article-11131",
+          "difference_KL_named_minus_SVD": -3.260131364471248
+        },
+        {
+          "document_index": 253,
+          "doc_id": "wikitext-train-article-29108",
+          "difference_KL_named_minus_SVD": -3.1091474120111973
+        },
+        {
+          "document_index": 254,
+          "doc_id": "wikitext-train-article-4150",
+          "difference_KL_named_minus_SVD": -1.062365843234852
+        },
+        {
+          "document_index": 255,
+          "doc_id": "wikitext-train-article-1856",
+          "difference_KL_named_minus_SVD": -0.8981037095607396
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 291.8244261001237,
+  "V1_scale_references": {
+    "uniform": {
+      "KL": {
+        "median": 5.425275336741759,
+        "p25": 3.806777348508111,
+        "p75": 7.478020674321499,
+        "mean": 6.140919775898666,
+        "std": 3.292816204847381,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          5.022731183352935,
+          6.042008335724101
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 3.671243325813388,
+        "secondary_document_means": {
+          "mean": 6.140919775898666,
+          "median": 5.425275336741759,
+          "p25": 3.806777348508111,
+          "p75": 7.478020674321499,
+          "mean_ci95_document_bootstrap": [
+            5.740162554153545,
+            6.554872066385471
+          ],
+          "median_ci95_document_bootstrap": [
+            5.022731183352935,
+            6.042008335724101
+          ]
+        }
+      },
+      "uniform_causal_completion": {
+        "policy": "uniform_causal",
+        "rows_total": 4718592,
+        "rows_completed": 0,
+        "fraction_rows_completed": 0.0,
+        "last_query_rows_total": 36864,
+        "last_query_rows_completed": 0,
+        "fraction_last_query_rows_completed": 0.0
+      },
+      "attention_validation": {
+        "reconstruction_rows_total": 4718592,
+        "last_query_rows_total": 36864,
+        "reconstruction_layer_calls": 1536,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 9437184,
+        "negative_nan_inf_upper_nonzero": 0,
+        "max_row_error_after_cast": 1.1920928955078125e-07
+      }
+    },
+    "diagonal": {
+      "KL": {
+        "median": 10.479396139162603,
+        "p25": 7.709510737637773,
+        "p75": 13.648690786138403,
+        "mean": 11.314382610981275,
+        "std": 5.217167628371119,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          9.580476276926376,
+          11.007943347700005
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 5.93918004850063,
+        "secondary_document_means": {
+          "mean": 11.314382610981275,
+          "median": 10.479396139162603,
+          "p25": 7.709510737637773,
+          "p75": 13.648690786138403,
+          "mean_ci95_document_bootstrap": [
+            10.690208972219201,
+            11.957253675971296
+          ],
+          "median_ci95_document_bootstrap": [
+            9.580476276926376,
+            11.007943347700005
+          ]
+        }
+      },
+      "uniform_causal_completion": {
+        "policy": "uniform_causal",
+        "rows_total": 4718592,
+        "rows_completed": 0,
+        "fraction_rows_completed": 0.0,
+        "last_query_rows_total": 36864,
+        "last_query_rows_completed": 0,
+        "fraction_last_query_rows_completed": 0.0
+      },
+      "attention_validation": {
+        "reconstruction_rows_total": 4718592,
+        "last_query_rows_total": 36864,
+        "reconstruction_layer_calls": 1536,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 0,
+        "rows_checked": 9437184,
+        "negative_nan_inf_upper_nonzero": 0,
+        "max_row_error_after_cast": 0
+      }
+    },
+    "sink": {
+      "KL": {
+        "median": 2.9202722308498243,
+        "p25": 2.080175032545262,
+        "p75": 4.289627524420945,
+        "mean": 3.4781653849111405,
+        "std": 2.0596666809976028,
+        "n_instances": 256,
+        "n_documents": 256,
+        "median_ci_document_bootstrap": [
+          2.6831785046130316,
+          3.1095748377934638
+        ],
+        "bootstrap_seed": 0,
+        "n_bootstrap": 2000,
+        "iqr": 2.209452491875683,
+        "secondary_document_means": {
+          "mean": 3.4781653849111405,
+          "median": 2.9202722308498243,
+          "p25": 2.080175032545262,
+          "p75": 4.289627524420945,
+          "mean_ci95_document_bootstrap": [
+            3.23666965251382,
+            3.751385482919997
+          ],
+          "median_ci95_document_bootstrap": [
+            2.6831785046130316,
+            3.1095748377934638
+          ]
+        }
+      },
+      "uniform_causal_completion": {
+        "policy": "uniform_causal",
+        "rows_total": 4718592,
+        "rows_completed": 0,
+        "fraction_rows_completed": 0.0,
+        "last_query_rows_total": 36864,
+        "last_query_rows_completed": 0,
+        "fraction_last_query_rows_completed": 0.0
+      },
+      "attention_validation": {
+        "reconstruction_rows_total": 4718592,
+        "last_query_rows_total": 36864,
+        "reconstruction_layer_calls": 1536,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 0,
+        "rows_checked": 9437184,
+        "negative_nan_inf_upper_nonzero": 0,
+        "max_row_error_after_cast": 0
+      }
+    }
+  },
+  "source_forward_summary_path": "out/phase21_allocation_v2_forward_gpt2_n128.json",
+  "source_forward_summary_sha256": "284052817140c2bac849fed771de946172ceffdc39f3cd611ea17e641bbda7b0",
+  "continuation_run_path": "out/phase21_allocation_v2_forward_run.json",
+  "SVD_and_reference_arms_recomputed": false,
+  "n_articles_for_signed_rank": 256,
+  "summary_device": "CPU outside GPU lock"
+}

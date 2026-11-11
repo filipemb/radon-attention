@@ -1,0 +1,256 @@
+{
+  "model": "EleutherAI/pythia-1.4b",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "n_unique_matrices": 32,
+  "n_fits": 128,
+  "same_indices_as_original_GPU_validation": [
+    0,
+    24,
+    48,
+    72,
+    96,
+    120,
+    145,
+    169,
+    193,
+    217,
+    241,
+    265,
+    290,
+    314,
+    338,
+    362,
+    386,
+    410,
+    435,
+    459,
+    483,
+    507,
+    531,
+    555,
+    576,
+    600,
+    624,
+    648,
+    672,
+    696,
+    721,
+    745
+  ],
+  "same_initial_factors_rounded_to_float32": true,
+  "GPU_dtype": "float32",
+  "CPU_reference_dtype": "float64",
+  "CPU_recomputations": 0,
+  "ridge_relative_to_trace": 1e-06,
+  "sweeps": 200,
+  "max_absolute_relative_error_difference": 0.07634127949952062,
+  "max_normalized_frobenius_difference": 0.09503672371518117,
+  "max_TV_difference": 0.07059433665380589,
+  "threshold_fixed_before_results": 0.002,
+  "passed": false,
+  "n_failed_fits": 125,
+  "worst": {
+    "model": "EleutherAI/pythia-1.4b",
+    "archive_index": 265,
+    "instance_id": "EleutherAI__pythia-1.4b_n128_wikitext-train-article-21867_l1_h13",
+    "document_index": 11,
+    "layer": 1,
+    "head": 13,
+    "K": 8,
+    "arm": "masked_K",
+    "CPU": {
+      "frobenius": 0.09150966425709804,
+      "TV": 0.080803154441112,
+      "raw_causal_frobenius": 0.0784544222903177,
+      "raw_unmasked_frobenius": 861479969819.3849,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "GPU": {
+      "frobenius": 0.1865463879722792,
+      "TV": 0.1428867168578137,
+      "raw_causal_frobenius": 0.1547957017898383,
+      "raw_unmasked_frobenius": 4020.839587887854,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "absolute_relative_error_difference": 0.07634127949952062,
+    "normalized_frobenius_difference": 0.09503672371518117,
+    "TV_difference": 0.06208356241670171,
+    "CPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float64",
+      "initial_relative": 0.6327586531258742,
+      "final_relative": 0.07845442229031765,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.6327586531258742
+        },
+        {
+          "sweep": 1,
+          "relative": 0.32199338317029486
+        },
+        {
+          "sweep": 10,
+          "relative": 0.1424469229168175
+        },
+        {
+          "sweep": 25,
+          "relative": 0.11808190594419377
+        },
+        {
+          "sweep": 50,
+          "relative": 0.10314167680053637
+        },
+        {
+          "sweep": 100,
+          "relative": 0.09022895603056459
+        },
+        {
+          "sweep": 150,
+          "relative": 0.08310864023562986
+        },
+        {
+          "sweep": 180,
+          "relative": 0.08003985586725185
+        },
+        {
+          "sweep": 200,
+          "relative": 0.07845442229031765
+        }
+      ],
+      "last20_relative_objective_change": 0.039223743847494066,
+      "gradient_normalized_target": 158.29803483226843,
+      "converged": false,
+      "direct_LS_blocks": 34221,
+      "direct_sweep_retries": 0,
+      "rejected_sweeps": [],
+      "maximum_absolute_factor": 2206794.127314854,
+      "minimum_nonzero_absolute_factor": 2.16903701735828e-11,
+      "factor_dynamic_range": 1.0174073146997552e+17,
+      "unmasked_product_norm_over_target": 861479969819.3851,
+      "maximum_QR_observed_product_error": 0.00011208460286851788,
+      "seconds": 0.888243000023067
+    },
+    "GPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.6327586770057678,
+      "final_relative": 0.15479569137096405,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.6327586770057678
+        },
+        {
+          "sweep": 1,
+          "relative": 0.3371991515159607
+        },
+        {
+          "sweep": 10,
+          "relative": 0.2019967883825302
+        },
+        {
+          "sweep": 25,
+          "relative": 0.20881281793117523
+        },
+        {
+          "sweep": 50,
+          "relative": 0.1912558376789093
+        },
+        {
+          "sweep": 100,
+          "relative": 0.16143912076950073
+        },
+        {
+          "sweep": 150,
+          "relative": 0.1554831862449646
+        },
+        {
+          "sweep": 180,
+          "relative": 0.15474987030029297
+        },
+        {
+          "sweep": 200,
+          "relative": 0.15479569137096405
+        }
+      ],
+      "last20_relative_objective_change": 0.0005922968266531825,
+      "gradient_normalized_target": 0.15146097540855408,
+      "converged": false,
+      "objective_increase_sweeps": 24,
+      "maximum_absolute_factor": 83.34992980957031,
+      "minimum_nonzero_absolute_factor": 6.6658208197623026e-06,
+      "factor_dynamic_range": 12504075.951525876,
+      "unmasked_product_norm_over_target": 4020.83984375,
+      "maximum_QR_observed_product_error": 9.561737533658743e-05,
+      "seconds": 0.7918380000628531
+    },
+    "passed": false,
+    "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a"
+  },
+  "timings": [
+    {
+      "K": 8,
+      "arm": "masked_K",
+      "rank": 8,
+      "n_matrices": 32,
+      "cold_seconds": 0.7949714998248965,
+      "steady_seconds": 0.13059949991293252
+    },
+    {
+      "K": 8,
+      "arm": "named_plus_masked",
+      "rank": 7,
+      "n_matrices": 32,
+      "cold_seconds": 0.2954461998306215,
+      "steady_seconds": 0.12337610009126365
+    },
+    {
+      "K": 16,
+      "arm": "masked_K",
+      "rank": 16,
+      "n_matrices": 32,
+      "cold_seconds": 0.3763753999955952,
+      "steady_seconds": 0.21369780017994344
+    },
+    {
+      "K": 16,
+      "arm": "named_plus_masked",
+      "rank": 15,
+      "n_matrices": 32,
+      "cold_seconds": 0.3694438999518752,
+      "steady_seconds": 0.20569730014540255
+    }
+  ],
+  "elapsed_seconds": 2.95330880000256,
+  "pairs_path": "out/pairs/phase50_fp32_validation_EleutherAI__pythia-1.4b.jsonl",
+  "pairs_sha256": "8fb07ec4fa3a216ca5d92e119d038e6cece17b75dd8b6820bc69e35b67175852",
+  "sources": {
+    "phase50_fp32_als.py": "12db461d06ccab82c40bb4d3befbb8f7dc5b85c47a998609da457db861ea39b1",
+    "phase50_fp32_graph.py": "bddc95e7fad7ff8c73132e47f09a19eae421494b1ce43a5190e40c6d4eb20d33"
+  },
+  "CPU_reference_metadata": "out/phase50_GPU_CPU_reference_EleutherAI__pythia-1.4b.json",
+  "failure_interpretation": "Uniform trace-relative ridge changes the unregularized finite-200-sweep estimator; FP32 normal equations lose small singular directions (conditioning squared). Worst CPU diagnostics and all raw per-fit errors retained. No threshold relaxation or CPU fallback."
+}

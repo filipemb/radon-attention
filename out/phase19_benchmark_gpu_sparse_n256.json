@@ -1,0 +1,811 @@
+{
+  "n": 256,
+  "data": "synthetic lognormal; no archived attention used",
+  "gradcheck": {
+    "gradcheck": true,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "n": 7
+  },
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "parametric": {
+    "seconds": 45.92362709995359,
+    "optimizer": "Adam with projected box constraints",
+    "iterations": 100,
+    "starts": [
+      "uniform_omp",
+      "profiled_omp",
+      "random_importance"
+    ],
+    "seed": 19027,
+    "device": "cuda",
+    "dtype": "float32",
+    "n_parameters_per_line": 5,
+    "learning_rates": {
+      "angle": 0.0013671875,
+      "offset": 0.35,
+      "log_width": 0.04,
+      "decay": 0.06,
+      "amplitude": 0.025
+    }
+  },
+  "omp_uniform": {
+    "seconds": 4.7377921000588685,
+    "refit_iterations": 410,
+    "cone_stationary": false,
+    "nnls_tolerance": 1e-10
+  },
+  "omp_profiled": {
+    "seconds": 18.765473700128496,
+    "refit_iterations": 410,
+    "cone_stationary": false,
+    "nnls_tolerance": 1e-10
+  },
+  "errors": {
+    "1": {
+      "relative": 0.7968148589134216,
+      "absolute": 390.80851301693014,
+      "best_start": "random_importance",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.799979567527771,
+        0.799979567527771,
+        0.7968148589134216
+      ],
+      "start_absolute_errors": [
+        392.3606872558594,
+        392.3606872558594,
+        390.8085021972656
+      ],
+      "start_error_std": 0.0014918579254299402,
+      "start_error_range": [
+        0.7968148589134216,
+        0.799979567527771
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.02806963585317135,
+        0.02806963585317135,
+        0.01509064994752407
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9967936277389526,
+            0.9967936277389526,
+            1.1807054281234741
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9916409254074097,
+            0.9916409254074097,
+            0.862348735332489
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.975318431854248,
+            0.975318431854248,
+            0.8111196160316467
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.9067588448524475,
+            0.9067588448524475,
+            0.7988037467002869
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.799979567527771,
+            0.799979567527771,
+            0.7968148589134216
+          ]
+        }
+      ]
+    },
+    "2": {
+      "relative": 0.7966914772987366,
+      "absolute": 390.7479988525301,
+      "best_start": "random_importance",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7994644641876221,
+        0.7993319034576416,
+        0.7966914772987366
+      ],
+      "start_absolute_errors": [
+        392.1080322265625,
+        392.04302978515625,
+        390.74798583984375
+      ],
+      "start_error_std": 0.001277100876905024,
+      "start_error_range": [
+        0.7966914772987366,
+        0.7994644641876221
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.026800697669386864,
+        0.02557257190346718,
+        0.019791528582572937
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9928433895111084,
+            0.9933362007141113,
+            1.194715976715088
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9829763770103455,
+            0.9828202128410339,
+            0.8850390911102295
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.952546238899231,
+            0.9486472606658936,
+            0.8170611262321472
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8902670741081238,
+            0.8881362676620483,
+            0.7998542785644531
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7994644641876221,
+            0.7993319034576416,
+            0.7966914772987366
+          ]
+        }
+      ]
+    },
+    "4": {
+      "relative": 0.7952184677124023,
+      "absolute": 390.02554158450175,
+      "best_start": "random_importance",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7957674264907837,
+        0.7954536080360413,
+        0.7952184677124023
+      ],
+      "start_absolute_errors": [
+        390.2947692871094,
+        390.140869140625,
+        390.0255432128906
+      ],
+      "start_error_std": 0.00022487742535304278,
+      "start_error_range": [
+        0.7952184677124023,
+        0.7957674264907837
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.0060896798968315125,
+        0.008606551215052605,
+        0.011907577514648438
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9862028956413269,
+            0.9872690439224243,
+            1.3097069263458252
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9702033996582031,
+            0.9692134857177734,
+            0.9151394963264465
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.923352837562561,
+            0.9272519946098328,
+            0.8036847710609436
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8304862976074219,
+            0.8463870286941528,
+            0.7955796718597412
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7957674264907837,
+            0.7954536080360413,
+            0.7952184677124023
+          ]
+        }
+      ]
+    },
+    "8": {
+      "relative": 0.7952730655670166,
+      "absolute": 390.0523198330962,
+      "best_start": "uniform_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7952730655670166,
+        0.7953754663467407,
+        0.796421468257904
+      ],
+      "start_absolute_errors": [
+        390.05230712890625,
+        390.1025390625,
+        390.6155700683594
+      ],
+      "start_error_std": 0.0005189127987250686,
+      "start_error_range": [
+        0.7952730655670166,
+        0.796421468257904
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.009220198728144169,
+        0.00977769959717989,
+        0.017336683347821236
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.974784255027771,
+            0.9752193093299866,
+            1.2715822458267212
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9449127316474915,
+            0.9456650018692017,
+            0.9279522895812988
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.8928031325340271,
+            0.9056992530822754,
+            0.8393136858940125
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8187676668167114,
+            0.8242139220237732,
+            0.8009025454521179
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7952730655670166,
+            0.7953754663467407,
+            0.796421468257904
+          ]
+        }
+      ]
+    },
+    "16": {
+      "relative": 0.7947900295257568,
+      "absolute": 389.81540834116475,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7948454022407532,
+        0.7947900295257568,
+        0.7948545217514038
+      ],
+      "start_absolute_errors": [
+        389.8425598144531,
+        389.8153991699219,
+        389.8470458984375
+      ],
+      "start_error_std": 2.8496713639469817e-05,
+      "start_error_range": [
+        0.7947900295257568,
+        0.7948545217514038
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.011565688997507095,
+        0.013662641867995262,
+        0.017494995146989822
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.954982340335846,
+            0.9541747570037842,
+            1.2622129917144775
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9109024405479431,
+            0.9085818529129028,
+            0.8326219916343689
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.857488214969635,
+            0.8640438318252563,
+            0.7992126941680908
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8077460527420044,
+            0.8075586557388306,
+            0.7954806089401245
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7948454022407532,
+            0.7947900295257568,
+            0.7948545217514038
+          ]
+        }
+      ]
+    },
+    "32": {
+      "relative": 0.7931452393531799,
+      "absolute": 389.0086989853099,
+      "best_start": "uniform_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7931452393531799,
+        0.7933533787727356,
+        0.7942987680435181
+      ],
+      "start_absolute_errors": [
+        389.0086975097656,
+        389.11077880859375,
+        389.574462890625
+      ],
+      "start_error_std": 0.0005019640666432679,
+      "start_error_range": [
+        0.7931452393531799,
+        0.7942987680435181
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.011419986374676228,
+        0.010561921633780003,
+        0.01690506935119629
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9213902354240417,
+            0.9199010729789734,
+            1.3984744548797607
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.8637253642082214,
+            0.8580546379089355,
+            0.8374043703079224
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.8264216780662537,
+            0.8241541385650635,
+            0.7962509989738464
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7998089790344238,
+            0.7996891736984253,
+            0.7945115566253662
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7931452393531799,
+            0.7933533787727356,
+            0.7942987680435181
+          ]
+        }
+      ]
+    },
+    "102": {
+      "relative": 0.7853233814239502,
+      "absolute": 385.1723640674088,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7856625914573669,
+        0.7853233814239502,
+        0.7907302379608154
+      ],
+      "start_absolute_errors": [
+        385.3387145996094,
+        385.17236328125,
+        387.82421875
+      ],
+      "start_error_std": 0.002472745021805167,
+      "start_error_range": [
+        0.7853233814239502,
+        0.7907302379608154
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.14300742745399475,
+        0.11366309970617294,
+        0.06904564052820206
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.838433563709259,
+            0.833134651184082,
+            2.0780937671661377
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.8023090362548828,
+            0.8024737238883972,
+            0.8110142350196838
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.7908551692962646,
+            0.7912522554397583,
+            0.801124095916748
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.787363588809967,
+            0.786748468875885,
+            0.7932138442993164
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7856625914573669,
+            0.7853233814239502,
+            0.7907302379608154
+          ]
+        }
+      ]
+    },
+    "205": {
+      "relative": 0.7576268315315247,
+      "absolute": 371.58822045101306,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7612306475639343,
+        0.7576268315315247,
+        0.7873379588127136
+      ],
+      "start_absolute_errors": [
+        373.3557434082031,
+        371.5882263183594,
+        386.1604309082031
+      ],
+      "start_error_std": 0.01323853898793459,
+      "start_error_range": [
+        0.7576268315315247,
+        0.7873379588127136
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        99,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.2892240881919861,
+        0.17849993705749512,
+        0.03183649480342865
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.7953921556472778,
+            0.7893776297569275,
+            2.645686149597168
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.7753848433494568,
+            0.7724401950836182,
+            0.8188157081604004
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.7665688991546631,
+            0.7637524008750916,
+            0.7927497029304504
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7632765173912048,
+            0.7597799897193909,
+            0.7887585163116455
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7612306475639343,
+            0.757632851600647,
+            0.7873379588127136
+          ]
+        }
+      ]
+    },
+    "410": {
+      "relative": 0.7125847339630127,
+      "absolute": 349.49672080463625,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7169229388237,
+        0.7125847339630127,
+        0.7808297276496887
+      ],
+      "start_absolute_errors": [
+        351.62445068359375,
+        349.4967041015625,
+        382.9683837890625
+      ],
+      "start_error_std": 0.031198782846331596,
+      "start_error_range": [
+        0.7125847339630127,
+        0.7808297276496887
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        100,
+        100,
+        100
+      ],
+      "gradient_l2_at_best": [
+        0.17266736924648285,
+        0.3366362154483795,
+        0.14475932717323303
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.7684231400489807,
+            0.7602460980415344,
+            3.7750508785247803
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.7487247586250305,
+            0.7441185116767883,
+            0.7931637167930603
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.7267575263977051,
+            0.722913384437561,
+            0.7867756485939026
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7195123434066772,
+            0.7156159281730652,
+            0.7832499146461487
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7169229388237,
+            0.7125847339630127,
+            0.7808297276496887
+          ]
+        }
+      ]
+    }
+  }
+}

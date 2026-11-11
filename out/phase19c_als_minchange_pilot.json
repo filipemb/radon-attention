@@ -1,0 +1,2354 @@
+{
+  "block_solves_passed": true,
+  "block_checks": [
+    {
+      "n": 12,
+      "r": 1,
+      "reverse": false,
+      "max_absolute": 2.7755575615628914e-16
+    },
+    {
+      "n": 12,
+      "r": 1,
+      "reverse": true,
+      "max_absolute": 3.3306690738754696e-16
+    },
+    {
+      "n": 12,
+      "r": 4,
+      "reverse": false,
+      "max_absolute": 8.547829111194005e-12
+    },
+    {
+      "n": 12,
+      "r": 4,
+      "reverse": true,
+      "max_absolute": 1.2434497875801753e-14
+    },
+    {
+      "n": 31,
+      "r": 8,
+      "reverse": false,
+      "max_absolute": 9.2192919964873e-13
+    },
+    {
+      "n": 31,
+      "r": 8,
+      "reverse": true,
+      "max_absolute": 6.705747068735946e-14
+    }
+  ],
+  "positive_controls": [
+    {
+      "n": 128,
+      "r": 1,
+      "relative": 1.700462754992844e-13,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 0,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.6150626230830158
+          },
+          {
+            "sweep": 10,
+            "relative": 0.02340758041328049
+          },
+          {
+            "sweep": 20,
+            "relative": 0.011047873478967612
+          },
+          {
+            "sweep": 30,
+            "relative": 0.005914843523915381
+          },
+          {
+            "sweep": 40,
+            "relative": 0.0033341138703629927
+          },
+          {
+            "sweep": 50,
+            "relative": 0.001929076937290294
+          },
+          {
+            "sweep": 60,
+            "relative": 0.0011321603201994365
+          },
+          {
+            "sweep": 70,
+            "relative": 0.0006698564250446071
+          },
+          {
+            "sweep": 80,
+            "relative": 0.00039819542262308774
+          },
+          {
+            "sweep": 90,
+            "relative": 0.0002373615724790309
+          },
+          {
+            "sweep": 100,
+            "relative": 0.00014172122924606105
+          },
+          {
+            "sweep": 110,
+            "relative": 8.469969966797531e-05
+          },
+          {
+            "sweep": 120,
+            "relative": 5.0650148120454864e-05
+          },
+          {
+            "sweep": 130,
+            "relative": 3.0299118017199294e-05
+          },
+          {
+            "sweep": 140,
+            "relative": 1.8128804207354983e-05
+          },
+          {
+            "sweep": 150,
+            "relative": 1.0848310224008554e-05
+          },
+          {
+            "sweep": 160,
+            "relative": 6.49212984318988e-06
+          },
+          {
+            "sweep": 170,
+            "relative": 3.885362490031081e-06
+          },
+          {
+            "sweep": 180,
+            "relative": 2.325345047339385e-06
+          },
+          {
+            "sweep": 190,
+            "relative": 1.3917145216550858e-06
+          },
+          {
+            "sweep": 200,
+            "relative": 8.329463655289341e-07
+          },
+          {
+            "sweep": 210,
+            "relative": 4.985243587172827e-07
+          },
+          {
+            "sweep": 220,
+            "relative": 2.9837141062714586e-07
+          },
+          {
+            "sweep": 230,
+            "relative": 1.7857839356982018e-07
+          },
+          {
+            "sweep": 240,
+            "relative": 1.0688115903063406e-07
+          },
+          {
+            "sweep": 250,
+            "relative": 6.396961064170267e-08
+          },
+          {
+            "sweep": 260,
+            "relative": 3.828656828034052e-08
+          },
+          {
+            "sweep": 270,
+            "relative": 2.291497053100643e-08
+          },
+          {
+            "sweep": 280,
+            "relative": 1.3714885875735953e-08
+          },
+          {
+            "sweep": 290,
+            "relative": 8.208524845053218e-09
+          },
+          {
+            "sweep": 300,
+            "relative": 4.912902321168721e-09
+          },
+          {
+            "sweep": 310,
+            "relative": 2.940433042888025e-09
+          },
+          {
+            "sweep": 320,
+            "relative": 1.7598857171675112e-09
+          },
+          {
+            "sweep": 330,
+            "relative": 1.0533128259789133e-09
+          },
+          {
+            "sweep": 340,
+            "relative": 6.304210005891259e-10
+          },
+          {
+            "sweep": 350,
+            "relative": 3.773149247935346e-10
+          },
+          {
+            "sweep": 360,
+            "relative": 2.2582754867796573e-10
+          },
+          {
+            "sweep": 370,
+            "relative": 1.3516176114041683e-10
+          },
+          {
+            "sweep": 380,
+            "relative": 8.089525945280317e-11
+          },
+          {
+            "sweep": 390,
+            "relative": 4.841752988307993e-11
+          },
+          {
+            "sweep": 400,
+            "relative": 2.8978865544921336e-11
+          },
+          {
+            "sweep": 410,
+            "relative": 1.7344139281066127e-11
+          },
+          {
+            "sweep": 420,
+            "relative": 1.0380846159976118e-11
+          },
+          {
+            "sweep": 430,
+            "relative": 6.212818661816931e-12
+          },
+          {
+            "sweep": 440,
+            "relative": 3.7185890290522504e-12
+          },
+          {
+            "sweep": 450,
+            "relative": 2.2254041305828214e-12
+          },
+          {
+            "sweep": 460,
+            "relative": 1.3321785077847793e-12
+          },
+          {
+            "sweep": 470,
+            "relative": 7.987103711262183e-13
+          },
+          {
+            "sweep": 480,
+            "relative": 4.774106813148259e-13
+          },
+          {
+            "sweep": 490,
+            "relative": 2.862764408714024e-13
+          },
+          {
+            "sweep": 500,
+            "relative": 1.700492819910962e-13
+          }
+        ],
+        "initial_relative": 0.6150626230830158,
+        "last20_relative_objective_change": 0.19900420032779895,
+        "gradient_L2_normalized_target": 5.998614861810562e-14,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 0.16421389998868108
+      }
+    },
+    {
+      "n": 128,
+      "r": 2,
+      "relative": 8.763295594120515e-16,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 1000,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.40483402972041227
+          },
+          {
+            "sweep": 10,
+            "relative": 0.01756125703228841
+          },
+          {
+            "sweep": 20,
+            "relative": 0.006055344258524315
+          },
+          {
+            "sweep": 30,
+            "relative": 0.0014771410889182295
+          },
+          {
+            "sweep": 40,
+            "relative": 0.00033353512859793854
+          },
+          {
+            "sweep": 50,
+            "relative": 7.381416304070512e-05
+          },
+          {
+            "sweep": 60,
+            "relative": 1.6256387455514997e-05
+          },
+          {
+            "sweep": 70,
+            "relative": 3.5762826754250364e-06
+          },
+          {
+            "sweep": 80,
+            "relative": 7.865642499237313e-07
+          },
+          {
+            "sweep": 90,
+            "relative": 1.7298695208669906e-07
+          },
+          {
+            "sweep": 100,
+            "relative": 3.804410579408366e-08
+          },
+          {
+            "sweep": 110,
+            "relative": 8.366817434114993e-09
+          },
+          {
+            "sweep": 120,
+            "relative": 1.8400640498557478e-09
+          },
+          {
+            "sweep": 130,
+            "relative": 4.046743063723708e-10
+          },
+          {
+            "sweep": 140,
+            "relative": 8.899778120561731e-11
+          },
+          {
+            "sweep": 150,
+            "relative": 1.9572630278861402e-11
+          },
+          {
+            "sweep": 160,
+            "relative": 4.304455192776637e-12
+          },
+          {
+            "sweep": 170,
+            "relative": 9.465190669796602e-13
+          },
+          {
+            "sweep": 180,
+            "relative": 2.0813747392449763e-13
+          },
+          {
+            "sweep": 190,
+            "relative": 4.5669685092717885e-14
+          },
+          {
+            "sweep": 200,
+            "relative": 1.0113309846364433e-14
+          },
+          {
+            "sweep": 210,
+            "relative": 2.3079309780281998e-15
+          },
+          {
+            "sweep": 220,
+            "relative": 9.35453053961255e-16
+          },
+          {
+            "sweep": 230,
+            "relative": 2.2899589526975375e-15
+          },
+          {
+            "sweep": 240,
+            "relative": 2.1612066051407337e-15
+          },
+          {
+            "sweep": 250,
+            "relative": 2.359500943778346e-15
+          },
+          {
+            "sweep": 260,
+            "relative": 1.0597100533957314e-15
+          },
+          {
+            "sweep": 270,
+            "relative": 1.0184761837889311e-15
+          },
+          {
+            "sweep": 280,
+            "relative": 1.5691598187536578e-15
+          },
+          {
+            "sweep": 290,
+            "relative": 1.2600584588190909e-15
+          },
+          {
+            "sweep": 300,
+            "relative": 8.585020903108785e-16
+          },
+          {
+            "sweep": 310,
+            "relative": 1.3578066757275478e-15
+          },
+          {
+            "sweep": 320,
+            "relative": 1.0352421895083044e-15
+          },
+          {
+            "sweep": 330,
+            "relative": 7.710862696078156e-16
+          },
+          {
+            "sweep": 340,
+            "relative": 1.3989951971646384e-15
+          },
+          {
+            "sweep": 350,
+            "relative": 9.609286545977258e-16
+          },
+          {
+            "sweep": 360,
+            "relative": 1.1903871145026217e-15
+          },
+          {
+            "sweep": 370,
+            "relative": 1.3764908193726233e-15
+          },
+          {
+            "sweep": 380,
+            "relative": 7.262372786643172e-16
+          },
+          {
+            "sweep": 390,
+            "relative": 1.882897202081497e-15
+          },
+          {
+            "sweep": 400,
+            "relative": 1.309914650639601e-15
+          },
+          {
+            "sweep": 410,
+            "relative": 2.295680896527563e-15
+          },
+          {
+            "sweep": 420,
+            "relative": 1.6341916232495931e-15
+          },
+          {
+            "sweep": 430,
+            "relative": 2.3348382827587056e-15
+          },
+          {
+            "sweep": 440,
+            "relative": 1.5507788030020332e-15
+          },
+          {
+            "sweep": 450,
+            "relative": 3.565736988566387e-15
+          },
+          {
+            "sweep": 460,
+            "relative": 1.5823685562178683e-15
+          },
+          {
+            "sweep": 470,
+            "relative": 7.846367751467299e-16
+          },
+          {
+            "sweep": 480,
+            "relative": 7.1256568167443305e-16
+          },
+          {
+            "sweep": 490,
+            "relative": 1.0799920262324112e-15
+          },
+          {
+            "sweep": 500,
+            "relative": 8.810395383000785e-16
+          }
+        ],
+        "initial_relative": 0.40483402972041227,
+        "last20_relative_objective_change": 2.684808173478661e-07,
+        "gradient_L2_normalized_target": 2.654249893392427e-15,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 1.0276837744027161e-29,
+        "seconds": 0.2833664999343455
+      }
+    },
+    {
+      "n": 128,
+      "r": 4,
+      "relative": 0.012616574586689652,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 3381,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.29735207677930736
+          },
+          {
+            "sweep": 10,
+            "relative": 0.015189067063698323
+          },
+          {
+            "sweep": 20,
+            "relative": 0.014013582151457317
+          },
+          {
+            "sweep": 30,
+            "relative": 0.013214767682314636
+          },
+          {
+            "sweep": 40,
+            "relative": 0.012881998271004634
+          },
+          {
+            "sweep": 50,
+            "relative": 0.012739028472620845
+          },
+          {
+            "sweep": 60,
+            "relative": 0.012676859674876072
+          },
+          {
+            "sweep": 70,
+            "relative": 0.012649172285577666
+          },
+          {
+            "sweep": 80,
+            "relative": 0.012636360436732455
+          },
+          {
+            "sweep": 90,
+            "relative": 0.012630083629683247
+          },
+          {
+            "sweep": 100,
+            "relative": 0.01262675301283226
+          },
+          {
+            "sweep": 110,
+            "relative": 0.01262480097767744
+          },
+          {
+            "sweep": 120,
+            "relative": 0.012623529358020507
+          },
+          {
+            "sweep": 130,
+            "relative": 0.012622618768257867
+          },
+          {
+            "sweep": 140,
+            "relative": 0.012621917401493137
+          },
+          {
+            "sweep": 150,
+            "relative": 0.012621349125047176
+          },
+          {
+            "sweep": 160,
+            "relative": 0.012620872982600607
+          },
+          {
+            "sweep": 170,
+            "relative": 0.012620465055703602
+          },
+          {
+            "sweep": 180,
+            "relative": 0.012620110152697022
+          },
+          {
+            "sweep": 190,
+            "relative": 0.0126197978748092
+          },
+          {
+            "sweep": 200,
+            "relative": 0.0126195206681008
+          },
+          {
+            "sweep": 210,
+            "relative": 0.01261927280039073
+          },
+          {
+            "sweep": 220,
+            "relative": 0.01261904978528573
+          },
+          {
+            "sweep": 230,
+            "relative": 0.012618848033335168
+          },
+          {
+            "sweep": 240,
+            "relative": 0.01261866462585342
+          },
+          {
+            "sweep": 250,
+            "relative": 0.01261849715969158
+          },
+          {
+            "sweep": 260,
+            "relative": 0.012618343635901105
+          },
+          {
+            "sweep": 270,
+            "relative": 0.012618202377259436
+          },
+          {
+            "sweep": 280,
+            "relative": 0.012618071965694417
+          },
+          {
+            "sweep": 290,
+            "relative": 0.012617951193975675
+          },
+          {
+            "sweep": 300,
+            "relative": 0.012617839027889523
+          },
+          {
+            "sweep": 310,
+            "relative": 0.012617734576300733
+          },
+          {
+            "sweep": 320,
+            "relative": 0.012617637067230035
+          },
+          {
+            "sweep": 330,
+            "relative": 0.012617545828565207
+          },
+          {
+            "sweep": 340,
+            "relative": 0.012617460272414678
+          },
+          {
+            "sweep": 350,
+            "relative": 0.01261737988229811
+          },
+          {
+            "sweep": 360,
+            "relative": 0.012617304202615535
+          },
+          {
+            "sweep": 370,
+            "relative": 0.012617232829921275
+          },
+          {
+            "sweep": 380,
+            "relative": 0.012617165405658525
+          },
+          {
+            "sweep": 390,
+            "relative": 0.012617101610077446
+          },
+          {
+            "sweep": 400,
+            "relative": 0.012617041157112855
+          },
+          {
+            "sweep": 410,
+            "relative": 0.01261698379006435
+          },
+          {
+            "sweep": 420,
+            "relative": 0.012616929277904709
+          },
+          {
+            "sweep": 430,
+            "relative": 0.012616877412155975
+          },
+          {
+            "sweep": 440,
+            "relative": 0.012616828004190108
+          },
+          {
+            "sweep": 450,
+            "relative": 0.012616780882923721
+          },
+          {
+            "sweep": 460,
+            "relative": 0.012616735892821139
+          },
+          {
+            "sweep": 470,
+            "relative": 0.012616692892162893
+          },
+          {
+            "sweep": 480,
+            "relative": 0.012616651751546165
+          },
+          {
+            "sweep": 490,
+            "relative": 0.012616612352570188
+          },
+          {
+            "sweep": 500,
+            "relative": 0.012616574586689657
+          }
+        ],
+        "initial_relative": 0.29735207677930736,
+        "last20_relative_objective_change": 1.223218680411572e-05,
+        "gradient_L2_normalized_target": 9.558479988520016e-05,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 0.5228957000654191
+      }
+    },
+    {
+      "n": 128,
+      "r": 8,
+      "relative": 0.01156238645886555,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 7000,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.19914744475208523
+          },
+          {
+            "sweep": 10,
+            "relative": 0.020378735935700623
+          },
+          {
+            "sweep": 20,
+            "relative": 0.016157324586372476
+          },
+          {
+            "sweep": 30,
+            "relative": 0.014969642041177528
+          },
+          {
+            "sweep": 40,
+            "relative": 0.014471047450563924
+          },
+          {
+            "sweep": 50,
+            "relative": 0.014208559363056053
+          },
+          {
+            "sweep": 60,
+            "relative": 0.01404029230230863
+          },
+          {
+            "sweep": 70,
+            "relative": 0.013915446806798055
+          },
+          {
+            "sweep": 80,
+            "relative": 0.01381151878286327
+          },
+          {
+            "sweep": 90,
+            "relative": 0.013716321305912813
+          },
+          {
+            "sweep": 100,
+            "relative": 0.013623048501800553
+          },
+          {
+            "sweep": 110,
+            "relative": 0.01352924895661463
+          },
+          {
+            "sweep": 120,
+            "relative": 0.013435622269178289
+          },
+          {
+            "sweep": 130,
+            "relative": 0.013298451006051136
+          },
+          {
+            "sweep": 140,
+            "relative": 0.012403113370252346
+          },
+          {
+            "sweep": 150,
+            "relative": 0.011956581751916174
+          },
+          {
+            "sweep": 160,
+            "relative": 0.011805253537290453
+          },
+          {
+            "sweep": 170,
+            "relative": 0.011743752368399522
+          },
+          {
+            "sweep": 180,
+            "relative": 0.011714523168593897
+          },
+          {
+            "sweep": 190,
+            "relative": 0.011697793747985347
+          },
+          {
+            "sweep": 200,
+            "relative": 0.011686369800070899
+          },
+          {
+            "sweep": 210,
+            "relative": 0.011677496199123212
+          },
+          {
+            "sweep": 220,
+            "relative": 0.011670034131826391
+          },
+          {
+            "sweep": 230,
+            "relative": 0.011663463333645076
+          },
+          {
+            "sweep": 240,
+            "relative": 0.011657517618962235
+          },
+          {
+            "sweep": 250,
+            "relative": 0.011652044269792106
+          },
+          {
+            "sweep": 260,
+            "relative": 0.011646946011676037
+          },
+          {
+            "sweep": 270,
+            "relative": 0.011642155267017935
+          },
+          {
+            "sweep": 280,
+            "relative": 0.011637621847455941
+          },
+          {
+            "sweep": 290,
+            "relative": 0.011633306613050983
+          },
+          {
+            "sweep": 300,
+            "relative": 0.011629177954642439
+          },
+          {
+            "sweep": 310,
+            "relative": 0.011625209698224405
+          },
+          {
+            "sweep": 320,
+            "relative": 0.0116213797715375
+          },
+          {
+            "sweep": 330,
+            "relative": 0.01161766930410402
+          },
+          {
+            "sweep": 340,
+            "relative": 0.011614061988841802
+          },
+          {
+            "sweep": 350,
+            "relative": 0.011610543610272587
+          },
+          {
+            "sweep": 360,
+            "relative": 0.011607101684091105
+          },
+          {
+            "sweep": 370,
+            "relative": 0.011603725174858422
+          },
+          {
+            "sweep": 380,
+            "relative": 0.011600404270163246
+          },
+          {
+            "sweep": 390,
+            "relative": 0.011597130197353967
+          },
+          {
+            "sweep": 400,
+            "relative": 0.01159389507280214
+          },
+          {
+            "sweep": 410,
+            "relative": 0.011590691776823125
+          },
+          {
+            "sweep": 420,
+            "relative": 0.011587513848873843
+          },
+          {
+            "sweep": 430,
+            "relative": 0.011584355399257902
+          },
+          {
+            "sweep": 440,
+            "relative": 0.011581211033972886
+          },
+          {
+            "sweep": 450,
+            "relative": 0.011578075790612475
+          },
+          {
+            "sweep": 460,
+            "relative": 0.011574945082698991
+          },
+          {
+            "sweep": 470,
+            "relative": 0.011571814651304564
+          },
+          {
+            "sweep": 480,
+            "relative": 0.011568680521803048
+          },
+          {
+            "sweep": 490,
+            "relative": 0.011565538964741839
+          },
+          {
+            "sweep": 500,
+            "relative": 0.01156238645886555
+          }
+        ],
+        "initial_relative": 0.19914744475208523,
+        "last20_relative_objective_change": 0.0010878251413200147,
+        "gradient_L2_normalized_target": 0.0003512603823343671,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 1.1439788998104632
+      }
+    },
+    {
+      "n": 128,
+      "r": 16,
+      "relative": 0.0015691361426837679,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 15435,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.11354334486179109
+          },
+          {
+            "sweep": 10,
+            "relative": 0.011393638806016064
+          },
+          {
+            "sweep": 20,
+            "relative": 0.008933123997970227
+          },
+          {
+            "sweep": 30,
+            "relative": 0.007688548070068779
+          },
+          {
+            "sweep": 40,
+            "relative": 0.006271029303236406
+          },
+          {
+            "sweep": 50,
+            "relative": 0.005381823538600087
+          },
+          {
+            "sweep": 60,
+            "relative": 0.004860024390516924
+          },
+          {
+            "sweep": 70,
+            "relative": 0.004413971054365167
+          },
+          {
+            "sweep": 80,
+            "relative": 0.003800431801430794
+          },
+          {
+            "sweep": 90,
+            "relative": 0.0030828824197778803
+          },
+          {
+            "sweep": 100,
+            "relative": 0.0024703792861583552
+          },
+          {
+            "sweep": 110,
+            "relative": 0.0021277975460180414
+          },
+          {
+            "sweep": 120,
+            "relative": 0.0019715962581275106
+          },
+          {
+            "sweep": 130,
+            "relative": 0.0018992249272985191
+          },
+          {
+            "sweep": 140,
+            "relative": 0.0018589284658278719
+          },
+          {
+            "sweep": 150,
+            "relative": 0.0018318939956960116
+          },
+          {
+            "sweep": 160,
+            "relative": 0.001811890969898381
+          },
+          {
+            "sweep": 170,
+            "relative": 0.0017960578658033851
+          },
+          {
+            "sweep": 180,
+            "relative": 0.0017829808046977357
+          },
+          {
+            "sweep": 190,
+            "relative": 0.0017718859284618148
+          },
+          {
+            "sweep": 200,
+            "relative": 0.001762297107724082
+          },
+          {
+            "sweep": 210,
+            "relative": 0.0017538950823710161
+          },
+          {
+            "sweep": 220,
+            "relative": 0.001746452735407949
+          },
+          {
+            "sweep": 230,
+            "relative": 0.001739801491774221
+          },
+          {
+            "sweep": 240,
+            "relative": 0.0017338121249375331
+          },
+          {
+            "sweep": 250,
+            "relative": 0.001728383003434466
+          },
+          {
+            "sweep": 260,
+            "relative": 0.0017234325097239083
+          },
+          {
+            "sweep": 270,
+            "relative": 0.0017188939455381673
+          },
+          {
+            "sweep": 280,
+            "relative": 0.0017147119884352283
+          },
+          {
+            "sweep": 290,
+            "relative": 0.0017108401502254843
+          },
+          {
+            "sweep": 300,
+            "relative": 0.001707238898359958
+          },
+          {
+            "sweep": 310,
+            "relative": 0.0017038742200424998
+          },
+          {
+            "sweep": 320,
+            "relative": 0.0017007164746269655
+          },
+          {
+            "sweep": 330,
+            "relative": 0.0016977394085647243
+          },
+          {
+            "sweep": 340,
+            "relative": 0.00169491919557711
+          },
+          {
+            "sweep": 350,
+            "relative": 0.0016922332731071359
+          },
+          {
+            "sweep": 360,
+            "relative": 0.0016896584051066571
+          },
+          {
+            "sweep": 370,
+            "relative": 0.0016871660130627164
+          },
+          {
+            "sweep": 380,
+            "relative": 0.0016846977943124712
+          },
+          {
+            "sweep": 390,
+            "relative": 0.0016819958644272229
+          },
+          {
+            "sweep": 400,
+            "relative": 0.001661448661832119
+          },
+          {
+            "sweep": 410,
+            "relative": 0.0016513495525163646
+          },
+          {
+            "sweep": 420,
+            "relative": 0.001643218063316339
+          },
+          {
+            "sweep": 430,
+            "relative": 0.0016350658629707903
+          },
+          {
+            "sweep": 440,
+            "relative": 0.001626667184711175
+          },
+          {
+            "sweep": 450,
+            "relative": 0.0016179553523160842
+          },
+          {
+            "sweep": 460,
+            "relative": 0.0016089016153109277
+          },
+          {
+            "sweep": 470,
+            "relative": 0.0015994924910908551
+          },
+          {
+            "sweep": 480,
+            "relative": 0.0015897242631618218
+          },
+          {
+            "sweep": 490,
+            "relative": 0.0015796014227764494
+          },
+          {
+            "sweep": 500,
+            "relative": 0.0015691361426837702
+          }
+        ],
+        "initial_relative": 0.11354334486179109,
+        "last20_relative_objective_change": 0.02573377680397617,
+        "gradient_L2_normalized_target": 0.0001798483645905067,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 3.286147000035271
+      }
+    },
+    {
+      "n": 256,
+      "r": 1,
+      "relative": 8.420242104269413e-16,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 0,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.5368377494736264
+          },
+          {
+            "sweep": 10,
+            "relative": 0.0037922796860185826
+          },
+          {
+            "sweep": 20,
+            "relative": 0.00011410975589602145
+          },
+          {
+            "sweep": 30,
+            "relative": 3.486625999885193e-06
+          },
+          {
+            "sweep": 40,
+            "relative": 1.0658331863224997e-07
+          },
+          {
+            "sweep": 50,
+            "relative": 3.258211617720008e-09
+          },
+          {
+            "sweep": 60,
+            "relative": 9.960227116927642e-11
+          },
+          {
+            "sweep": 70,
+            "relative": 3.0448630450777912e-12
+          },
+          {
+            "sweep": 80,
+            "relative": 9.302511683059683e-14
+          },
+          {
+            "sweep": 90,
+            "relative": 2.7086816804811556e-15
+          },
+          {
+            "sweep": 100,
+            "relative": 4.1224114306154305e-16
+          },
+          {
+            "sweep": 110,
+            "relative": 3.9117304235488933e-16
+          },
+          {
+            "sweep": 120,
+            "relative": 3.850309336301115e-16
+          },
+          {
+            "sweep": 130,
+            "relative": 5.12326281773203e-16
+          },
+          {
+            "sweep": 140,
+            "relative": 4.1545742055417934e-16
+          },
+          {
+            "sweep": 150,
+            "relative": 6.067767393852223e-16
+          },
+          {
+            "sweep": 160,
+            "relative": 4.3140382644707217e-16
+          },
+          {
+            "sweep": 170,
+            "relative": 4.074486640656857e-16
+          },
+          {
+            "sweep": 180,
+            "relative": 3.676870472487338e-16
+          },
+          {
+            "sweep": 190,
+            "relative": 3.908617197696848e-16
+          },
+          {
+            "sweep": 200,
+            "relative": 3.9224283059104977e-16
+          },
+          {
+            "sweep": 210,
+            "relative": 4.474769761254097e-16
+          },
+          {
+            "sweep": 220,
+            "relative": 4.386785047830189e-16
+          },
+          {
+            "sweep": 230,
+            "relative": 4.495202184911626e-16
+          },
+          {
+            "sweep": 240,
+            "relative": 4.2242393245935325e-16
+          },
+          {
+            "sweep": 250,
+            "relative": 8.00150457936536e-16
+          },
+          {
+            "sweep": 260,
+            "relative": 5.684378740021587e-16
+          },
+          {
+            "sweep": 270,
+            "relative": 3.650604790225302e-16
+          },
+          {
+            "sweep": 280,
+            "relative": 6.002555770992977e-16
+          },
+          {
+            "sweep": 290,
+            "relative": 4.1099608071886462e-16
+          },
+          {
+            "sweep": 300,
+            "relative": 4.252918313635893e-16
+          },
+          {
+            "sweep": 310,
+            "relative": 3.4844776327876687e-16
+          },
+          {
+            "sweep": 320,
+            "relative": 4.0527117636121525e-16
+          },
+          {
+            "sweep": 330,
+            "relative": 3.77974100666552e-16
+          },
+          {
+            "sweep": 340,
+            "relative": 8.358450254529959e-16
+          },
+          {
+            "sweep": 350,
+            "relative": 4.057754028619483e-16
+          },
+          {
+            "sweep": 360,
+            "relative": 6.973975819659448e-16
+          },
+          {
+            "sweep": 370,
+            "relative": 3.867909829226112e-16
+          },
+          {
+            "sweep": 380,
+            "relative": 3.8674674755974647e-16
+          },
+          {
+            "sweep": 390,
+            "relative": 6.063391041075743e-16
+          },
+          {
+            "sweep": 400,
+            "relative": 7.353615475513004e-16
+          },
+          {
+            "sweep": 410,
+            "relative": 7.244728741794441e-16
+          },
+          {
+            "sweep": 420,
+            "relative": 4.3711305520230955e-16
+          },
+          {
+            "sweep": 430,
+            "relative": 3.670938837829766e-16
+          },
+          {
+            "sweep": 440,
+            "relative": 4.3212472922547945e-16
+          },
+          {
+            "sweep": 450,
+            "relative": 4.085519074177741e-16
+          },
+          {
+            "sweep": 460,
+            "relative": 4.1730715500829565e-16
+          },
+          {
+            "sweep": 470,
+            "relative": 4.0813192403335207e-16
+          },
+          {
+            "sweep": 480,
+            "relative": 6.127395435799082e-16
+          },
+          {
+            "sweep": 490,
+            "relative": 3.538282143995339e-16
+          },
+          {
+            "sweep": 500,
+            "relative": 8.236914069565802e-16
+          }
+        ],
+        "initial_relative": 0.5368377494736264,
+        "last20_relative_objective_change": 3.030177856275964e-07,
+        "gradient_L2_normalized_target": 2.943513234261948e-15,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 6.8459970147858265e-31,
+        "seconds": 0.340495300013572
+      }
+    },
+    {
+      "n": 256,
+      "r": 2,
+      "relative": 2.124241132675284e-15,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 1000,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.5063539190650597
+          },
+          {
+            "sweep": 10,
+            "relative": 0.02463988540207821
+          },
+          {
+            "sweep": 20,
+            "relative": 0.007457173677969522
+          },
+          {
+            "sweep": 30,
+            "relative": 0.0032739681591833197
+          },
+          {
+            "sweep": 40,
+            "relative": 0.0016121506463596278
+          },
+          {
+            "sweep": 50,
+            "relative": 0.0008188946915987735
+          },
+          {
+            "sweep": 60,
+            "relative": 0.0004209060009453762
+          },
+          {
+            "sweep": 70,
+            "relative": 0.00021766801940004019
+          },
+          {
+            "sweep": 80,
+            "relative": 0.00011295056069742644
+          },
+          {
+            "sweep": 90,
+            "relative": 5.872229120724163e-05
+          },
+          {
+            "sweep": 100,
+            "relative": 3.056055537954207e-05
+          },
+          {
+            "sweep": 110,
+            "relative": 1.5913122526550614e-05
+          },
+          {
+            "sweep": 120,
+            "relative": 8.288459798530184e-06
+          },
+          {
+            "sweep": 130,
+            "relative": 4.317748888067361e-06
+          },
+          {
+            "sweep": 140,
+            "relative": 2.2494428097193387e-06
+          },
+          {
+            "sweep": 150,
+            "relative": 1.1719532529271796e-06
+          },
+          {
+            "sweep": 160,
+            "relative": 6.105973025608555e-07
+          },
+          {
+            "sweep": 170,
+            "relative": 3.181297621224799e-07
+          },
+          {
+            "sweep": 180,
+            "relative": 1.6575102956004324e-07
+          },
+          {
+            "sweep": 190,
+            "relative": 8.635937311754848e-08
+          },
+          {
+            "sweep": 200,
+            "relative": 4.499491248061262e-08
+          },
+          {
+            "sweep": 210,
+            "relative": 2.3443243468033946e-08
+          },
+          {
+            "sweep": 220,
+            "relative": 1.2214400833407083e-08
+          },
+          {
+            "sweep": 230,
+            "relative": 6.363949248088444e-09
+          },
+          {
+            "sweep": 240,
+            "relative": 3.315746697377463e-09
+          },
+          {
+            "sweep": 250,
+            "relative": 1.7275712405240026e-09
+          },
+          {
+            "sweep": 260,
+            "relative": 9.000998625771463e-10
+          },
+          {
+            "sweep": 270,
+            "relative": 4.689705411684721e-10
+          },
+          {
+            "sweep": 280,
+            "relative": 2.4434287020549216e-10
+          },
+          {
+            "sweep": 290,
+            "relative": 1.2730681888264117e-10
+          },
+          {
+            "sweep": 300,
+            "relative": 6.632965537618156e-11
+          },
+          {
+            "sweep": 310,
+            "relative": 3.4559412494606506e-11
+          },
+          {
+            "sweep": 320,
+            "relative": 1.8006425435368733e-11
+          },
+          {
+            "sweep": 330,
+            "relative": 9.381394787604015e-12
+          },
+          {
+            "sweep": 340,
+            "relative": 4.888252083420394e-12
+          },
+          {
+            "sweep": 350,
+            "relative": 2.5467005554357915e-12
+          },
+          {
+            "sweep": 360,
+            "relative": 1.3267378713684536e-12
+          },
+          {
+            "sweep": 370,
+            "relative": 6.912181806449376e-13
+          },
+          {
+            "sweep": 380,
+            "relative": 3.601757454953994e-13
+          },
+          {
+            "sweep": 390,
+            "relative": 1.8758313686517908e-13
+          },
+          {
+            "sweep": 400,
+            "relative": 9.73286243133764e-14
+          },
+          {
+            "sweep": 410,
+            "relative": 5.060587056630465e-14
+          },
+          {
+            "sweep": 420,
+            "relative": 2.623459547134419e-14
+          },
+          {
+            "sweep": 430,
+            "relative": 1.4013427108039736e-14
+          },
+          {
+            "sweep": 440,
+            "relative": 7.046305628177371e-15
+          },
+          {
+            "sweep": 450,
+            "relative": 3.8845618122388526e-15
+          },
+          {
+            "sweep": 460,
+            "relative": 2.3422207044779077e-15
+          },
+          {
+            "sweep": 470,
+            "relative": 1.7113580906132672e-15
+          },
+          {
+            "sweep": 480,
+            "relative": 1.953203945256845e-15
+          },
+          {
+            "sweep": 490,
+            "relative": 2.0134550982431e-15
+          },
+          {
+            "sweep": 500,
+            "relative": 2.1271938901333718e-15
+          }
+        ],
+        "initial_relative": 0.5063539190650597,
+        "last20_relative_objective_change": 7.099481944538419e-07,
+        "gradient_L2_normalized_target": 4.848727353577523e-15,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 7.046942510415599e-30,
+        "seconds": 0.5329657001420856
+      }
+    },
+    {
+      "n": 256,
+      "r": 4,
+      "relative": 0.00016486998393666746,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 3000,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.3471960141997325
+          },
+          {
+            "sweep": 10,
+            "relative": 0.015663731931042802
+          },
+          {
+            "sweep": 20,
+            "relative": 0.008900628329755723
+          },
+          {
+            "sweep": 30,
+            "relative": 0.005515030261164533
+          },
+          {
+            "sweep": 40,
+            "relative": 0.003837782802125365
+          },
+          {
+            "sweep": 50,
+            "relative": 0.003028149458901703
+          },
+          {
+            "sweep": 60,
+            "relative": 0.0025746802132016523
+          },
+          {
+            "sweep": 70,
+            "relative": 0.002252702189066933
+          },
+          {
+            "sweep": 80,
+            "relative": 0.001988141199237041
+          },
+          {
+            "sweep": 90,
+            "relative": 0.0017602716175493546
+          },
+          {
+            "sweep": 100,
+            "relative": 0.001563480117367007
+          },
+          {
+            "sweep": 110,
+            "relative": 0.0013953152947378308
+          },
+          {
+            "sweep": 120,
+            "relative": 0.0012532959277091376
+          },
+          {
+            "sweep": 130,
+            "relative": 0.0011343680641964
+          },
+          {
+            "sweep": 140,
+            "relative": 0.001035106038830722
+          },
+          {
+            "sweep": 150,
+            "relative": 0.000952056963688763
+          },
+          {
+            "sweep": 160,
+            "relative": 0.0008820291617410722
+          },
+          {
+            "sweep": 170,
+            "relative": 0.0008222665603263142
+          },
+          {
+            "sweep": 180,
+            "relative": 0.0007705126327083353
+          },
+          {
+            "sweep": 190,
+            "relative": 0.0007249938599546299
+          },
+          {
+            "sweep": 200,
+            "relative": 0.0006843577862141813
+          },
+          {
+            "sweep": 210,
+            "relative": 0.00064759417282508
+          },
+          {
+            "sweep": 220,
+            "relative": 0.0006139574893518127
+          },
+          {
+            "sweep": 230,
+            "relative": 0.0005828998661279866
+          },
+          {
+            "sweep": 240,
+            "relative": 0.0005540174245899873
+          },
+          {
+            "sweep": 250,
+            "relative": 0.0005270094652479288
+          },
+          {
+            "sweep": 260,
+            "relative": 0.0005016485107907791
+          },
+          {
+            "sweep": 270,
+            "relative": 0.0004777588530322304
+          },
+          {
+            "sweep": 280,
+            "relative": 0.0004552014493775438
+          },
+          {
+            "sweep": 290,
+            "relative": 0.00043386340842493996
+          },
+          {
+            "sweep": 300,
+            "relative": 0.0004136507180075548
+          },
+          {
+            "sweep": 310,
+            "relative": 0.00039448322798677973
+          },
+          {
+            "sweep": 320,
+            "relative": 0.00037629118382519536
+          },
+          {
+            "sweep": 330,
+            "relative": 0.00035901281911054146
+          },
+          {
+            "sweep": 340,
+            "relative": 0.00034259266828195144
+          },
+          {
+            "sweep": 350,
+            "relative": 0.00032698036857181585
+          },
+          {
+            "sweep": 360,
+            "relative": 0.0003121297947616192
+          },
+          {
+            "sweep": 370,
+            "relative": 0.0002979984213129936
+          },
+          {
+            "sweep": 380,
+            "relative": 0.00028454684096046494
+          },
+          {
+            "sweep": 390,
+            "relative": 0.0002717383920835984
+          },
+          {
+            "sweep": 400,
+            "relative": 0.0002595388627392353
+          },
+          {
+            "sweep": 410,
+            "relative": 0.00024791624964486797
+          },
+          {
+            "sweep": 420,
+            "relative": 0.00023684055733903543
+          },
+          {
+            "sweep": 430,
+            "relative": 0.00022628362739065178
+          },
+          {
+            "sweep": 440,
+            "relative": 0.0002162189906239192
+          },
+          {
+            "sweep": 450,
+            "relative": 0.00020662173741657408
+          },
+          {
+            "sweep": 460,
+            "relative": 0.00019746840253093376
+          },
+          {
+            "sweep": 470,
+            "relative": 0.00018873686189556076
+          },
+          {
+            "sweep": 480,
+            "relative": 0.0001804062394110415
+          },
+          {
+            "sweep": 490,
+            "relative": 0.00017245682231174428
+          },
+          {
+            "sweep": 500,
+            "relative": 0.00016486998393666586
+          }
+        ],
+        "initial_relative": 0.3471960141997325,
+        "last20_relative_objective_change": 0.16482000362974805,
+        "gradient_L2_normalized_target": 3.288747963249877e-05,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 0.9314717000816017
+      }
+    },
+    {
+      "n": 256,
+      "r": 8,
+      "relative": 0.0014017394262750833,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 7002,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.20875094173204062
+          },
+          {
+            "sweep": 10,
+            "relative": 0.026034573369003288
+          },
+          {
+            "sweep": 20,
+            "relative": 0.01892920802741348
+          },
+          {
+            "sweep": 30,
+            "relative": 0.015188319450177734
+          },
+          {
+            "sweep": 40,
+            "relative": 0.01403948594229704
+          },
+          {
+            "sweep": 50,
+            "relative": 0.012873335024199553
+          },
+          {
+            "sweep": 60,
+            "relative": 0.012157722639658253
+          },
+          {
+            "sweep": 70,
+            "relative": 0.011607932446437114
+          },
+          {
+            "sweep": 80,
+            "relative": 0.011133927288057111
+          },
+          {
+            "sweep": 90,
+            "relative": 0.010725161240194812
+          },
+          {
+            "sweep": 100,
+            "relative": 0.010384596437658353
+          },
+          {
+            "sweep": 110,
+            "relative": 0.010089568525068263
+          },
+          {
+            "sweep": 120,
+            "relative": 0.009566938407237454
+          },
+          {
+            "sweep": 130,
+            "relative": 0.007538031685161621
+          },
+          {
+            "sweep": 140,
+            "relative": 0.006683661784354193
+          },
+          {
+            "sweep": 150,
+            "relative": 0.0057686016465311515
+          },
+          {
+            "sweep": 160,
+            "relative": 0.005051677704221833
+          },
+          {
+            "sweep": 170,
+            "relative": 0.0045185532955307976
+          },
+          {
+            "sweep": 180,
+            "relative": 0.004052913332991974
+          },
+          {
+            "sweep": 190,
+            "relative": 0.003651789167557884
+          },
+          {
+            "sweep": 200,
+            "relative": 0.0033196506886260797
+          },
+          {
+            "sweep": 210,
+            "relative": 0.0030523670923882497
+          },
+          {
+            "sweep": 220,
+            "relative": 0.002838479656831515
+          },
+          {
+            "sweep": 230,
+            "relative": 0.00266453764497549
+          },
+          {
+            "sweep": 240,
+            "relative": 0.002518965932858805
+          },
+          {
+            "sweep": 250,
+            "relative": 0.0023933852579092387
+          },
+          {
+            "sweep": 260,
+            "relative": 0.002282346755291869
+          },
+          {
+            "sweep": 270,
+            "relative": 0.0021825398963661643
+          },
+          {
+            "sweep": 280,
+            "relative": 0.002092028949934302
+          },
+          {
+            "sweep": 290,
+            "relative": 0.00200968765473786
+          },
+          {
+            "sweep": 300,
+            "relative": 0.0019348297296977143
+          },
+          {
+            "sweep": 310,
+            "relative": 0.0018669851011048017
+          },
+          {
+            "sweep": 320,
+            "relative": 0.0018057724525395028
+          },
+          {
+            "sweep": 330,
+            "relative": 0.0017508316612224355
+          },
+          {
+            "sweep": 340,
+            "relative": 0.0017017921423035168
+          },
+          {
+            "sweep": 350,
+            "relative": 0.0016582621076465707
+          },
+          {
+            "sweep": 360,
+            "relative": 0.0016198295102603992
+          },
+          {
+            "sweep": 370,
+            "relative": 0.0015860689675002045
+          },
+          {
+            "sweep": 380,
+            "relative": 0.0015565511100834848
+          },
+          {
+            "sweep": 390,
+            "relative": 0.0015308521715501774
+          },
+          {
+            "sweep": 400,
+            "relative": 0.0015085625437362296
+          },
+          {
+            "sweep": 410,
+            "relative": 0.0014892936484778275
+          },
+          {
+            "sweep": 420,
+            "relative": 0.0014726829017236171
+          },
+          {
+            "sweep": 430,
+            "relative": 0.001458396822458814
+          },
+          {
+            "sweep": 440,
+            "relative": 0.0014461325017312968
+          },
+          {
+            "sweep": 450,
+            "relative": 0.0014356177252215542
+          },
+          {
+            "sweep": 460,
+            "relative": 0.0014266100611365388
+          },
+          {
+            "sweep": 470,
+            "relative": 0.0014188952056825238
+          },
+          {
+            "sweep": 480,
+            "relative": 0.0014122848372991215
+          },
+          {
+            "sweep": 490,
+            "relative": 0.0014066141804031655
+          },
+          {
+            "sweep": 500,
+            "relative": 0.0014017394262750818
+          }
+        ],
+        "initial_relative": 0.20875094173204062,
+        "last20_relative_objective_change": 0.01487807544482439,
+        "gradient_L2_normalized_target": 0.00011252376293477875,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 1.9774245000444353
+      }
+    },
+    {
+      "n": 256,
+      "r": 16,
+      "relative": 0.0009344203636335876,
+      "diagnostics": {
+        "sweeps": 500,
+        "fixed_sweeps_no_early_stop": true,
+        "initialization": "ordinary truncated SVD, balanced sqrt singular values",
+        "objective": "||tril(A-U V^T)||_F^2; decoder tril(U V^T)",
+        "nonnegativity_constraint": false,
+        "regularization": 0.0,
+        "LS_rcond": 1e-12,
+        "Gram_min_eigenvalue_ratio_for_fast_solve": 1e-09,
+        "fallback": "direct design-matrix SVD least squares, minimum change from previous block when underidentified; no ridge",
+        "gauge": "balanced QR and small SVD every sweep, preserving U V^T",
+        "direct_LS_block_fallbacks": 16147,
+        "history_every10": [
+          {
+            "sweep": 0,
+            "relative": 0.13018266511406723
+          },
+          {
+            "sweep": 10,
+            "relative": 0.015662350384413416
+          },
+          {
+            "sweep": 20,
+            "relative": 0.013333834163847189
+          },
+          {
+            "sweep": 30,
+            "relative": 0.012067455007377872
+          },
+          {
+            "sweep": 40,
+            "relative": 0.010963486211961191
+          },
+          {
+            "sweep": 50,
+            "relative": 0.00954296527843767
+          },
+          {
+            "sweep": 60,
+            "relative": 0.008307820003022211
+          },
+          {
+            "sweep": 70,
+            "relative": 0.006624363575007147
+          },
+          {
+            "sweep": 80,
+            "relative": 0.00580629537197715
+          },
+          {
+            "sweep": 90,
+            "relative": 0.005462859605919416
+          },
+          {
+            "sweep": 100,
+            "relative": 0.005200950778378764
+          },
+          {
+            "sweep": 110,
+            "relative": 0.004940069498139252
+          },
+          {
+            "sweep": 120,
+            "relative": 0.004537134549341279
+          },
+          {
+            "sweep": 130,
+            "relative": 0.0036329338175218715
+          },
+          {
+            "sweep": 140,
+            "relative": 0.002554651955087715
+          },
+          {
+            "sweep": 150,
+            "relative": 0.0021269435252094927
+          },
+          {
+            "sweep": 160,
+            "relative": 0.0019064897386272244
+          },
+          {
+            "sweep": 170,
+            "relative": 0.0017570593016541848
+          },
+          {
+            "sweep": 180,
+            "relative": 0.0016467579042530984
+          },
+          {
+            "sweep": 190,
+            "relative": 0.001561277891180228
+          },
+          {
+            "sweep": 200,
+            "relative": 0.001492600490162832
+          },
+          {
+            "sweep": 210,
+            "relative": 0.0014358073872695785
+          },
+          {
+            "sweep": 220,
+            "relative": 0.001387727486697742
+          },
+          {
+            "sweep": 230,
+            "relative": 0.0013462437176952318
+          },
+          {
+            "sweep": 240,
+            "relative": 0.001309900365310913
+          },
+          {
+            "sweep": 250,
+            "relative": 0.0012776680640949332
+          },
+          {
+            "sweep": 260,
+            "relative": 0.0012487984546054613
+          },
+          {
+            "sweep": 270,
+            "relative": 0.00122273217114601
+          },
+          {
+            "sweep": 280,
+            "relative": 0.0011990395194824057
+          },
+          {
+            "sweep": 290,
+            "relative": 0.0011773816813693745
+          },
+          {
+            "sweep": 300,
+            "relative": 0.0011574850516524813
+          },
+          {
+            "sweep": 310,
+            "relative": 0.001139124081664945
+          },
+          {
+            "sweep": 320,
+            "relative": 0.0011221096690626823
+          },
+          {
+            "sweep": 330,
+            "relative": 0.0011062811743956617
+          },
+          {
+            "sweep": 340,
+            "relative": 0.0010915008121551424
+          },
+          {
+            "sweep": 350,
+            "relative": 0.0010776495992072695
+          },
+          {
+            "sweep": 360,
+            "relative": 0.0010646243296421178
+          },
+          {
+            "sweep": 370,
+            "relative": 0.0010523352331247272
+          },
+          {
+            "sweep": 380,
+            "relative": 0.001040704097098815
+          },
+          {
+            "sweep": 390,
+            "relative": 0.001029662713305913
+          },
+          {
+            "sweep": 400,
+            "relative": 0.0010191515605429346
+          },
+          {
+            "sweep": 410,
+            "relative": 0.001009118668270197
+          },
+          {
+            "sweep": 420,
+            "relative": 0.0009995186259713522
+          },
+          {
+            "sweep": 430,
+            "relative": 0.0009903117155502738
+          },
+          {
+            "sweep": 440,
+            "relative": 0.0009814631512914563
+          },
+          {
+            "sweep": 450,
+            "relative": 0.0009729424158582216
+          },
+          {
+            "sweep": 460,
+            "relative": 0.0009647226829455594
+          },
+          {
+            "sweep": 470,
+            "relative": 0.0009567803179577816
+          },
+          {
+            "sweep": 480,
+            "relative": 0.0009490944484678568
+          },
+          {
+            "sweep": 490,
+            "relative": 0.0009416465963438696
+          },
+          {
+            "sweep": 500,
+            "relative": 0.0009344203636335898
+          }
+        ],
+        "initial_relative": 0.13018266511406723,
+        "last20_relative_objective_change": 0.030683238737629674,
+        "gradient_L2_normalized_target": 4.666542040420463e-05,
+        "converged": false,
+        "convergence_definition": "last20 relative objective change <=1e-7 AND gradient L2 <=1e-6; no early stop",
+        "maximum_objective_increase": 0.0,
+        "seconds": 6.269760800059885
+      }
+    }
+  ],
+  "fixed_before_attention_fits": true
+}

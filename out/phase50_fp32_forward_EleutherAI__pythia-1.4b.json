@@ -1,0 +1,20 @@
+{
+  "model": "EleutherAI/pythia-1.4b",
+  "n_articles": 64,
+  "arms_run": [],
+  "ALS_validation_passed": false,
+  "unavailable_arms": [
+    "masked_K",
+    "named_plus_masked",
+    "masked_K_diag_exact"
+  ],
+  "aliases": {
+    "svd_K_diag_exact": "svd_K"
+  },
+  "pairs_path": "out/pairs/phase50_fp32_forward_EleutherAI__pythia-1.4b.jsonl",
+  "pairs_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "sample_sha256": "dcd06a205aafdb63a6d687aa6b55982837590a21f113f8853e457c66caf9ba54",
+  "elapsed_seconds": 0.0,
+  "metadata_only_CPU_no_GPU_allocation": true
+}

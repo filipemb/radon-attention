@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "created_UTC": "2026-11-09T23:57:55.923653+00:00",
+  "decision_source": "assistant implementation choice: verified exact evaluation of the same requested terminal error; no user approval inferred",
+  "user_response_received": false,
+  "user_approval_claimed": false,
+  "accept_exact_full_dictionary_endpoint": true,
+  "capacity_budget_ranks_K": [
+    4,
+    8,
+    16
+  ],
+  "all_original_named_vs_SVD_budgets_retained": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "partial_OMP_low_budget_scope_waived": false,
+  "partial_OMP_low_budget_status": "FALTA: unmodified partial trajectories at K1 and K2 not computed",
+  "reason": "When min(floor(B/2),2n+7)=2n+7, every candidate is selected. The final unmodified OMP NNLS is a permutation of the identical full dictionary; the matrix cone projection and terminal error are unique. Direct QR NNLS evaluates that same endpoint without changing atoms, budget, seed or the requested error.",
+  "evidence": [
+    "out/phase21_allocation_v2_complete_OMP_endpoint_controls.json",
+    "out/phase21_allocation_v2_integrity_checks.json"
+  ],
+  "control_scope": "Complete original OMP trajectories on two fixed pilots only; direct endpoint with KKT on all 19968 instances. No claim that every OMP trajectory was executed.",
+  "certainty": "alta for exact endpoint equivalence; no equivalence asserted for partial trajectories",
+  "correction_to_previous_gate": "An assistant-imposed confirmation gate for equivalent full endpoints was unnecessary; removed after exact terminal and full-population certification. No answer to the pending user questions is assumed."
+}

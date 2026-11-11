@@ -1,0 +1,23 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "start": 176,
+  "stop": 192,
+  "n_documents": 16,
+  "n_raw_records": 192,
+  "dtype": "torch.float32",
+  "source_hashes": {
+    "phase37_mass_matched.py": "d4e0f302bc3dc0d21a446cf1eb581f679375972ede67a606555c084b1920dee5",
+    "revision_v3_stats.py": "fa53651d82018d93faaffa755d00c2d8b05a1166f6ef63cb5c3dfcc04e19f979",
+    "phase2_downstream.py": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "phase7_editability.py": "e9b800d7628556f69dcbc0bf6ad08f847ebf630e7084ed91f09957648660a44f",
+    "phase8_lostmiddle.py": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+    "phase34_parallel_svd.py": "46cbf1fb1876265c9682192a3e0739a85fd8a8183efc4be84045477dd96ed27e",
+    "sampling.py": "fbe06260b4b1811e6287052a45d120817f2f259bed55e0189ad95015f13a6ce6"
+  },
+  "corpus_sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+  "pairs_path": "out/pairs/phase7_massmatched_EleutherAI__pythia-410m_d176_192_v3.jsonl",
+  "pairs_sha256": "b983430d107137497ee8d94899a734a2ef04b17ec255edb137e9509159483c6a",
+  "pilot_path": "out/phase7_massmatched_pilot_EleutherAI__pythia-410m_v3.json",
+  "six_copies_are_not_independent_items": true,
+  "elapsed_seconds": 136.13390469993465
+}

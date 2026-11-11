@@ -1,0 +1,136 @@
+{
+  "checks": [
+    {
+      "n": 128,
+      "instance_index": 0,
+      "QR_vs_full_NNLS_relative_difference": 8.270630469384628e-16,
+      "full_three_conventions_seconds": 0.40258340002037585,
+      "nnls_kkt_violation": 6.564081519591407e-16,
+      "nnls_complementarity": 5.919417631699956e-16
+    },
+    {
+      "n": 128,
+      "instance_index": 768,
+      "QR_vs_full_NNLS_relative_difference": 1.2679160928971599e-14,
+      "full_three_conventions_seconds": 0.32825849996879697,
+      "nnls_kkt_violation": 5.011476805065233e-16,
+      "nnls_complementarity": 2.169107917683503e-16
+    },
+    {
+      "n": 128,
+      "instance_index": 1535,
+      "QR_vs_full_NNLS_relative_difference": 1.5475797759341138e-16,
+      "full_three_conventions_seconds": 0.3435207000002265,
+      "nnls_kkt_violation": 9.676153449885789e-17,
+      "nnls_complementarity": 2.2901422728754057e-17
+    },
+    {
+      "n": 256,
+      "instance_index": 0,
+      "QR_vs_full_NNLS_relative_difference": 9.79136429965422e-16,
+      "full_three_conventions_seconds": 1.0787623999640346,
+      "nnls_kkt_violation": 5.459283722431929e-15,
+      "nnls_complementarity": 4.831065862144755e-15
+    },
+    {
+      "n": 256,
+      "instance_index": 768,
+      "QR_vs_full_NNLS_relative_difference": 2.6738903155941153e-14,
+      "full_three_conventions_seconds": 0.9986268999055028,
+      "nnls_kkt_violation": 7.656066476102848e-16,
+      "nnls_complementarity": 8.809845699102444e-17
+    },
+    {
+      "n": 256,
+      "instance_index": 1535,
+      "QR_vs_full_NNLS_relative_difference": 5.354677565783116e-16,
+      "full_three_conventions_seconds": 0.9296701999846846,
+      "nnls_kkt_violation": 1.2944996351848147e-16,
+      "nnls_complementarity": 9.635999920727369e-17
+    }
+  ],
+  "sink_shared_between_channels_control_passed": true,
+  "settings": {
+    "schema_version": 1,
+    "ranks": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "conventions": [
+      "named_first",
+      "lowrank_first",
+      "alternating"
+    ],
+    "alternating": {
+      "initial_L": 0,
+      "fixed_T": 5,
+      "early_stopping": false,
+      "diagnostic_relative_objective_change": 1e-07,
+      "criterion": "abs(previous_error_squared-current_error_squared)/max(previous_error_squared, float64_tiny) <= tolerance; diagnostic only; always run T"
+    },
+    "nnls": {
+      "solver": "scipy.optimize.nnls on economic QR of the unchanged dictionary",
+      "equivalence": "||Dc-b||^2 = ||Rc-Q.T b||^2 + ||(I-QQ.T)b||^2",
+      "maxiter": "100 * number_of_atoms",
+      "dtype": "float64",
+      "active_definition_for_budget": "coefficient > 0, including every positive small coefficient; no pruning",
+      "kkt_relative_tolerance": 1e-08
+    },
+    "svd": {
+      "solver": "scipy.linalg.svd, gesdd, full_matrices=False, float64",
+      "boundary_tie_numerical_tolerance": "64 * float64_eps * n * sigma_1",
+      "exact_and_numerical_ties_reported_separately": true
+    },
+    "uniqueness": {
+      "S_named_first": "Unique Euclidean projection onto a finitely generated closed convex cone. Coefficients need not be unique in general.",
+      "L": "Rank-r truncation unique at a positive cutoff if sigma_r > sigma_(r+1). L=0 for r=0; an already rank<=r residual is reconstructed uniquely. No joint identifiability or alternating global optimum claimed.",
+      "allocation": "Operational convention, not intrinsic separation: vertical atoms are rank one and overlap with the low-rank family."
+    },
+    "budget": {
+      "S_plus_L": "2 * all_strictly_positive_coefficients + r * (2n+1)",
+      "svd_rank_at_same_cap": "min(n, floor(S_plus_L_parameters/(2n+1)))",
+      "unused_budget": "Reported explicitly; no fractional singular vectors or conditional subsets",
+      "legacy_rank_comparison": "SVD r and SVD (r + number_of_active_atoms), separately; this is not parameter matching or an actual rank bound for full-rank band atoms"
+    },
+    "aggregation": {
+      "primary_unit": "document mean across every sampled layer/head in that document",
+      "primary_statistics": "median, p25, p75, IQR across document means; percentile 95% CI of this median",
+      "bootstrap": "resample document IDs with replacement, preserving all instances per block",
+      "n_bootstrap": 2000,
+      "seed": 0,
+      "secondary_statistics": "Pooled instance median, p25, p75, IQR; descriptive only",
+      "paired_differences": "Per-instance differences first, then document means, then the same statistics"
+    },
+    "residual": {
+      "distance_bins": [
+        "future_d<0",
+        "d=0",
+        "d=1",
+        "d=2..3",
+        "d=4..7",
+        "d=8..15",
+        "d=16..31",
+        "d=32..63",
+        "d=64..127",
+        "d>=128"
+      ],
+      "energy": "sum of squared entries, signed residuals retained",
+      "spectrum": "all n singular values; final spectrum equals R spectrum with first r removed for named_first/alternating",
+      "effective_rank": "exp(-sum p_i log p_i), p_i=sigma_i^2/sum sigma^2; exactly zero residual: entropy=0, effective_rank=0",
+      "normalization": "both fraction of residual energy and energy/||A||^2; first four columns also individually",
+      "future_entries": "Included in final residual diagnostics, since low-rank truncation need not be causal. No matrix remasking in this in-sample experiment."
+    },
+    "software": {
+      "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "torch": "2.6.0+cu124"
+    },
+    "scope": "Only newly created phase21_/allocation_ artifacts and the requested e4_progress.md; inputs unchanged"
+  },
+  "elapsed_seconds": 5.365866200067103
+}

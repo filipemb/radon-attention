@@ -1,0 +1,6 @@
+{
+  "paired_completed_cases_checked": 79,
+  "raw_initializations_identical_across_free_gpu_and_thin_cpu": true,
+  "svd_maximum_delta_from_parent": 0.0,
+  "incomplete_checkpoint_only": true
+}

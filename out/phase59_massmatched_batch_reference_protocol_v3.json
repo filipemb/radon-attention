@@ -1,0 +1,12 @@
+{
+  "reason": "BF16 Qwen3B sanity detected batch-size argmax drift; use full zero-edit reference in the same batch as the two edited trajectories",
+  "main_protocol_sha256": "8259d3aff345a32e638a11fbf35c77507e94c95a45a23407a232a95d7f609e0c",
+  "main_interventions_unchanged": true,
+  "scope": "all 1800 Qwen3B KV items, same seeds and positions; both zero-edit copies retained",
+  "historical_identity": "retained as secondary; all six other configurations retain historical identity, numerical sanity had zero prediction mismatches",
+  "source_sha256": {
+    "phase59_massmatched_finish.py": "73fc698e1440b1d197cdea974f8007225934572404bbd87697f540e7b4c83be2",
+    "phase58_massmatched_qwen_identity.py": "895c3a8dedb165246e98e13ff4cd1dad8269cb06a3e55b8c388b0cbcae6077ce"
+  },
+  "created_utc": "2026-11-11T05:53:12.957321+00:00"
+}

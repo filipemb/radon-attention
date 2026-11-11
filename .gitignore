@@ -3,3 +3,13 @@ paper/
 wikitext2_train.txt
 *.log
 __pycache__/
+data/
+out/pairs/
+out_backup_pre_nn/
+citacoes/
+exemplos_orientador/
+reviews/
+submission_tmlr/
+HANDOVER.md
+EXPERIMENTS_NN.md
+REVISION_TMLR.md

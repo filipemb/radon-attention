@@ -1,0 +1,8 @@
+{
+  "max_cpu_workers": 3,
+  "cpu_threads_each": 4,
+  "gpu_workers": 1,
+  "gpu_lock": "/tmp/radon-gpu.lock",
+  "checkpoint_reassignment": "Stopped only verified Windows PID 40416 and its child to remove Pythia-410M from that future queue; resumed GPT-2 prefix unchanged and assigned Pythia-410M to the third CPU worker. No model or instance dropped.",
+  "numerical_protocol_unchanged": true
+}

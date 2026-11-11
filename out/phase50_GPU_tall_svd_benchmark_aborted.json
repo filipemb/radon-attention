@@ -1,0 +1,8 @@
+{
+  "own_process_pid": 67840,
+  "action": "terminate exact own benchmark PID after command-line verification",
+  "reason": "tall-design SVD serializes CUDA solves; replace by mathematically equivalent QR plus small SVD",
+  "completed_first_batch_seconds": 169.546,
+  "science_forward_run": false,
+  "preserved_log": "out/phase50_GPU_benchmark_execution.log"
+}

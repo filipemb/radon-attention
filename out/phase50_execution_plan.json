@@ -1,0 +1,19 @@
+{
+  "created_UTC": "2026-11-10T16:00:23.077316+00:00",
+  "full_corpus_per_model": 256,
+  "V1_batch_size": 2,
+  "first_actual_batch_per_model": 2,
+  "first_batches_are_included_in_final256": true,
+  "full_forward_chunks_after_first_batches": 16,
+  "GPU_released_between_each_chunk_and_model": true,
+  "all_six_estimator_validations_must_pass_before_any_forward": true,
+  "statistical_aggregation_only_after_all256_articles_in_every_arm": true,
+  "background_coordinator_is_detached": true,
+  "automatic_final_outputs": [
+    "out/phase50_forward_summary.json",
+    "out/phase50_report.json",
+    "out/phase50_integrity_audit.json",
+    "out/phase50_complete.json"
+  ],
+  "failed_checks_stop_the_coordinator": true
+}

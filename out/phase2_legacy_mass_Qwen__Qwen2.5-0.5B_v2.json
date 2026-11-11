@@ -1,0 +1,109 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "n": 128,
+  "n_instances": 1536,
+  "n_documents": 64,
+  "definition": "Exact legacy SVD -> clamp -> normalize on original frozen V2 attention; not the entire contaminated legacy trajectory",
+  "pairs_path": "out/pairs/legacy_mass_Qwen__Qwen2.5-0.5B_v2.jsonl",
+  "by_rank": {
+    "1": {
+      "median": 0.15670139233727315,
+      "p25": 0.08854245227993876,
+      "p75": 0.20946977128401428,
+      "mean": 0.1593315683855265,
+      "std": 0.10202616736283539,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "median_ci_document_bootstrap": [
+        0.15042299952235938,
+        0.1613843560993939
+      ],
+      "bootstrap_seed": 0,
+      "n_bootstrap": 2000
+    },
+    "2": {
+      "median": 0.15735739127781334,
+      "p25": 0.09108287866192435,
+      "p75": 0.2107069054940815,
+      "mean": 0.16074635602257062,
+      "std": 0.09601218922331371,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "median_ci_document_bootstrap": [
+        0.15330476267441026,
+        0.16167080194278022
+      ],
+      "bootstrap_seed": 0,
+      "n_bootstrap": 2000
+    },
+    "4": {
+      "median": 0.13625213599001296,
+      "p25": 0.077163213088349,
+      "p75": 0.19909189923155804,
+      "mean": 0.14681297757830236,
+      "std": 0.09103431198884245,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "median_ci_document_bootstrap": [
+        0.13312250581090623,
+        0.14111429745833873
+      ],
+      "bootstrap_seed": 0,
+      "n_bootstrap": 2000
+    },
+    "8": {
+      "median": 0.10650120317906411,
+      "p25": 0.05777949694502097,
+      "p75": 0.16846144391377804,
+      "mean": 0.12530273421469015,
+      "std": 0.08983507541747522,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "median_ci_document_bootstrap": [
+        0.10282783564491951,
+        0.11001993784381608
+      ],
+      "bootstrap_seed": 0,
+      "n_bootstrap": 2000
+    },
+    "16": {
+      "median": 0.07291707315799911,
+      "p25": 0.037070263000529735,
+      "p75": 0.12603299348250863,
+      "mean": 0.09520906273462933,
+      "std": 0.08006303182795294,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "median_ci_document_bootstrap": [
+        0.06851513276145493,
+        0.07642139111919719
+      ],
+      "bootstrap_seed": 0,
+      "n_bootstrap": 2000
+    },
+    "32": {
+      "median": 0.040492889130081755,
+      "p25": 0.021512159901071082,
+      "p75": 0.0753316263405705,
+      "mean": 0.06193304282393044,
+      "std": 0.06649005581399449,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "median_ci_document_bootstrap": [
+        0.0384798632894635,
+        0.04281217291919787
+      ],
+      "bootstrap_seed": 0,
+      "n_bootstrap": 2000
+    }
+  },
+  "old_zero_rows_by_rank": {
+    "1": 54,
+    "2": 44,
+    "4": 41,
+    "8": 31,
+    "16": 17,
+    "32": 12
+  },
+  "elapsed_seconds": 13.43563470011577
+}

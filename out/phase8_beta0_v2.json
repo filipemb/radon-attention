@@ -1,0 +1,828 @@
+{
+  "_meta": {
+    "schema_version": 2,
+    "historical_reference": "out/phase8_lostmiddle_s0.json",
+    "seed": 0,
+    "n_models": 5,
+    "n_trials_per_model_per_arm": 3200,
+    "n_trials_total_unique": 16000,
+    "conditions": [
+      "baseline_beta1",
+      "corrected_beta0",
+      "legacy_beta0_diagnostic"
+    ],
+    "no_other_beta_grid_rerun": true,
+    "legacy_condition_is_invalid_attention_diagnostic": true,
+    "all_evaluations_at_last_token": true,
+    "all_trials_retained": true,
+    "positive_beta_regression": {
+      "model": "gpt2",
+      "beta": 0.25,
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0,
+      "new_attention_checks": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 36864,
+        "sink_edit_rows_preserved_no_alternative": 0,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 0,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 2.384185791015625e-07,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      }
+    }
+  },
+  "gpt2": {
+    "schema_version": 2,
+    "model": "gpt2",
+    "dtype": "torch.float32",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "n_trials_effective_per_arm": 3200,
+    "seed": 0,
+    "sequence_length": 128,
+    "batch": 16,
+    "positions": [
+      4,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      110
+    ],
+    "n_per_position": 400,
+    "middle_positions": [
+      32,
+      48,
+      64,
+      80,
+      96
+    ],
+    "probe_manifest": "data/attn/beta0_probe_gpt2_s0_v2.manifest.json",
+    "pairs_path": "out/pairs/beta0_gpt2_v2.jsonl",
+    "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+    "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+    "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+    "arms": {
+      "baseline_beta1": {
+        "n_trials": 3200,
+        "n_correct": 1150,
+        "accuracy": 0.359375,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 694,
+        "middle_accuracy": 0.347,
+        "accuracy_by_position": {
+          "4": 0.345,
+          "16": 0.3825,
+          "32": 0.3625,
+          "48": 0.3175,
+          "64": 0.3575,
+          "80": 0.3375,
+          "96": 0.36,
+          "110": 0.4125
+        }
+      },
+      "corrected_beta0": {
+        "n_trials": 3200,
+        "n_correct": 1431,
+        "accuracy": 0.4471875,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 1052,
+        "middle_accuracy": 0.526,
+        "accuracy_by_position": {
+          "4": 0.07,
+          "16": 0.22,
+          "32": 0.43,
+          "48": 0.455,
+          "64": 0.5475,
+          "80": 0.6125,
+          "96": 0.585,
+          "110": 0.6575
+        }
+      },
+      "legacy_beta0_diagnostic": {
+        "n_trials": 3200,
+        "n_correct": 1431,
+        "accuracy": 0.4471875,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 1052,
+        "middle_accuracy": 0.526,
+        "accuracy_by_position": {
+          "4": 0.07,
+          "16": 0.22,
+          "32": 0.43,
+          "48": 0.455,
+          "64": 0.5475,
+          "80": 0.6125,
+          "96": 0.585,
+          "110": 0.6575
+        }
+      }
+    },
+    "attention_validation": {
+      "baseline_beta1": {
+        "negative_nan_inf_upper_nonzero": 0,
+        "row_sum_violations": 0,
+        "max_row_error_after_cast": 4.76837158203125e-07,
+        "rows_checked": 58982400
+      },
+      "corrected_beta0": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 58982400,
+        "sink_edit_rows_preserved_no_alternative": 460800,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 60,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 3.5762786865234375e-07,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      },
+      "legacy_beta0_diagnostic": {
+        "rows_total": 58982400,
+        "zero_rows": 460800,
+        "zero_rows_at_last_query": 0,
+        "positive_mass_below_clamp": 60
+      }
+    },
+    "positive_beta_regression": {
+      "model": "gpt2",
+      "beta": 0.25,
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0,
+      "new_attention_checks": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 36864,
+        "sink_edit_rows_preserved_no_alternative": 0,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 0,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 2.384185791015625e-07,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      }
+    },
+    "native_identity_regression": {
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0
+    },
+    "historical_s0": {
+      "1.0": {
+        "accuracy": 0.359375,
+        "middle_accuracy": 0.347
+      },
+      "0.0": {
+        "accuracy": 0.44718749999999996,
+        "middle_accuracy": 0.526
+      }
+    },
+    "paired_corrected_vs_baseline": {
+      "left": "corrected_beta0",
+      "right": "baseline_beta1",
+      "n_pairs": 3200,
+      "left_only_correct": 759,
+      "right_only_correct": 478,
+      "accuracy_difference_left_minus_right": 0.0878125,
+      "mcnemar_exact_pvalue": 1.2937340336381578e-15,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents",
+      "holm_pvalue_five_models": 5.174936134552631e-15
+    },
+    "paired_corrected_vs_legacy": {
+      "left": "corrected_beta0",
+      "right": "legacy_beta0_diagnostic",
+      "n_pairs": 3200,
+      "left_only_correct": 0,
+      "right_only_correct": 0,
+      "accuracy_difference_left_minus_right": 0.0,
+      "mcnemar_exact_pvalue": 1.0,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+    },
+    "elapsed_seconds": 60.28865009988658
+  },
+  "gpt2-medium": {
+    "schema_version": 2,
+    "model": "gpt2-medium",
+    "dtype": "torch.float32",
+    "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+    "n_trials_effective_per_arm": 3200,
+    "seed": 0,
+    "sequence_length": 128,
+    "batch": 16,
+    "positions": [
+      4,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      110
+    ],
+    "n_per_position": 400,
+    "middle_positions": [
+      32,
+      48,
+      64,
+      80,
+      96
+    ],
+    "probe_manifest": "data/attn/beta0_probe_gpt2-medium_s0_v2.manifest.json",
+    "pairs_path": "out/pairs/beta0_gpt2-medium_v2.jsonl",
+    "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+    "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+    "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+    "arms": {
+      "baseline_beta1": {
+        "n_trials": 3200,
+        "n_correct": 1399,
+        "accuracy": 0.4371875,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 868,
+        "middle_accuracy": 0.434,
+        "accuracy_by_position": {
+          "4": 0.4875,
+          "16": 0.4325,
+          "32": 0.425,
+          "48": 0.4275,
+          "64": 0.405,
+          "80": 0.4475,
+          "96": 0.465,
+          "110": 0.4075
+        }
+      },
+      "corrected_beta0": {
+        "n_trials": 3200,
+        "n_correct": 310,
+        "accuracy": 0.096875,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 235,
+        "middle_accuracy": 0.1175,
+        "accuracy_by_position": {
+          "4": 0.0025,
+          "16": 0.01,
+          "32": 0.0775,
+          "48": 0.15,
+          "64": 0.0975,
+          "80": 0.14,
+          "96": 0.1225,
+          "110": 0.175
+        }
+      },
+      "legacy_beta0_diagnostic": {
+        "n_trials": 3200,
+        "n_correct": 308,
+        "accuracy": 0.09625,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 234,
+        "middle_accuracy": 0.117,
+        "accuracy_by_position": {
+          "4": 0.0025,
+          "16": 0.01,
+          "32": 0.0775,
+          "48": 0.15,
+          "64": 0.0975,
+          "80": 0.1375,
+          "96": 0.1225,
+          "110": 0.1725
+        }
+      }
+    },
+    "attention_validation": {
+      "baseline_beta1": {
+        "negative_nan_inf_upper_nonzero": 0,
+        "row_sum_violations": 0,
+        "max_row_error_after_cast": 4.76837158203125e-07,
+        "rows_checked": 157286400
+      },
+      "corrected_beta0": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 157286400,
+        "sink_edit_rows_preserved_no_alternative": 1228800,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 52414,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 4.172325134277344e-07,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      },
+      "legacy_beta0_diagnostic": {
+        "rows_total": 157286400,
+        "zero_rows": 1228800,
+        "zero_rows_at_last_query": 0,
+        "positive_mass_below_clamp": 52112
+      }
+    },
+    "positive_beta_regression": null,
+    "native_identity_regression": {
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0
+    },
+    "historical_s0": {
+      "1.0": {
+        "accuracy": 0.4371875,
+        "middle_accuracy": 0.434
+      },
+      "0.0": {
+        "accuracy": 0.09625,
+        "middle_accuracy": 0.11699999999999999
+      }
+    },
+    "paired_corrected_vs_baseline": {
+      "left": "corrected_beta0",
+      "right": "baseline_beta1",
+      "n_pairs": 3200,
+      "left_only_correct": 132,
+      "right_only_correct": 1221,
+      "accuracy_difference_left_minus_right": -0.3403125,
+      "mcnemar_exact_pvalue": 2.951267573399222e-221,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents",
+      "holm_pvalue_five_models": 1.475633786699611e-220
+    },
+    "paired_corrected_vs_legacy": {
+      "left": "corrected_beta0",
+      "right": "legacy_beta0_diagnostic",
+      "n_pairs": 3200,
+      "left_only_correct": 2,
+      "right_only_correct": 0,
+      "accuracy_difference_left_minus_right": 0.000625,
+      "mcnemar_exact_pvalue": 0.5,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+    },
+    "elapsed_seconds": 172.76141080004163
+  },
+  "EleutherAI/pythia-410m": {
+    "schema_version": 2,
+    "model": "EleutherAI/pythia-410m",
+    "dtype": "torch.float32",
+    "revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+    "n_trials_effective_per_arm": 3200,
+    "seed": 0,
+    "sequence_length": 128,
+    "batch": 16,
+    "positions": [
+      4,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      110
+    ],
+    "n_per_position": 400,
+    "middle_positions": [
+      32,
+      48,
+      64,
+      80,
+      96
+    ],
+    "probe_manifest": "data/attn/beta0_probe_EleutherAI__pythia-410m_s0_v2.manifest.json",
+    "pairs_path": "out/pairs/beta0_EleutherAI__pythia-410m_v2.jsonl",
+    "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+    "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+    "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+    "arms": {
+      "baseline_beta1": {
+        "n_trials": 3200,
+        "n_correct": 1538,
+        "accuracy": 0.480625,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 948,
+        "middle_accuracy": 0.474,
+        "accuracy_by_position": {
+          "4": 0.4875,
+          "16": 0.5125,
+          "32": 0.4875,
+          "48": 0.48,
+          "64": 0.4475,
+          "80": 0.4675,
+          "96": 0.4875,
+          "110": 0.475
+        }
+      },
+      "corrected_beta0": {
+        "n_trials": 3200,
+        "n_correct": 1547,
+        "accuracy": 0.4834375,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 952,
+        "middle_accuracy": 0.476,
+        "accuracy_by_position": {
+          "4": 0.485,
+          "16": 0.5275,
+          "32": 0.4925,
+          "48": 0.475,
+          "64": 0.4525,
+          "80": 0.47,
+          "96": 0.49,
+          "110": 0.475
+        }
+      },
+      "legacy_beta0_diagnostic": {
+        "n_trials": 3200,
+        "n_correct": 1548,
+        "accuracy": 0.48375,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 953,
+        "middle_accuracy": 0.4765,
+        "accuracy_by_position": {
+          "4": 0.4825,
+          "16": 0.5275,
+          "32": 0.49,
+          "48": 0.4775,
+          "64": 0.4575,
+          "80": 0.47,
+          "96": 0.4875,
+          "110": 0.4775
+        }
+      }
+    },
+    "attention_validation": {
+      "baseline_beta1": {
+        "negative_nan_inf_upper_nonzero": 0,
+        "row_sum_violations": 0,
+        "max_row_error_after_cast": 4.76837158203125e-07,
+        "rows_checked": 157286400
+      },
+      "corrected_beta0": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 157286400,
+        "sink_edit_rows_preserved_no_alternative": 1228800,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 0,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 4.76837158203125e-07,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      },
+      "legacy_beta0_diagnostic": {
+        "rows_total": 157286400,
+        "zero_rows": 1228800,
+        "zero_rows_at_last_query": 0,
+        "positive_mass_below_clamp": 2284
+      }
+    },
+    "positive_beta_regression": null,
+    "native_identity_regression": {
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0
+    },
+    "historical_s0": {
+      "1.0": {
+        "accuracy": 0.48062499999999997,
+        "middle_accuracy": 0.47400000000000003
+      },
+      "0.0": {
+        "accuracy": 0.48375,
+        "middle_accuracy": 0.4765
+      }
+    },
+    "paired_corrected_vs_baseline": {
+      "left": "corrected_beta0",
+      "right": "baseline_beta1",
+      "n_pairs": 3200,
+      "left_only_correct": 50,
+      "right_only_correct": 41,
+      "accuracy_difference_left_minus_right": 0.0028125,
+      "mcnemar_exact_pvalue": 0.4018127960698803,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents",
+      "holm_pvalue_five_models": 0.5367799440177473
+    },
+    "paired_corrected_vs_legacy": {
+      "left": "corrected_beta0",
+      "right": "legacy_beta0_diagnostic",
+      "n_pairs": 3200,
+      "left_only_correct": 5,
+      "right_only_correct": 6,
+      "accuracy_difference_left_minus_right": -0.0003125,
+      "mcnemar_exact_pvalue": 1.0,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+    },
+    "elapsed_seconds": 159.07070049992763
+  },
+  "EleutherAI/pythia-1.4b": {
+    "schema_version": 2,
+    "model": "EleutherAI/pythia-1.4b",
+    "dtype": "torch.float32",
+    "revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+    "n_trials_effective_per_arm": 3200,
+    "seed": 0,
+    "sequence_length": 128,
+    "batch": 16,
+    "positions": [
+      4,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      110
+    ],
+    "n_per_position": 400,
+    "middle_positions": [
+      32,
+      48,
+      64,
+      80,
+      96
+    ],
+    "probe_manifest": "data/attn/beta0_probe_EleutherAI__pythia-1.4b_s0_v2.manifest.json",
+    "pairs_path": "out/pairs/beta0_EleutherAI__pythia-1.4b_v2.jsonl",
+    "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+    "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+    "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+    "arms": {
+      "baseline_beta1": {
+        "n_trials": 3200,
+        "n_correct": 1553,
+        "accuracy": 0.4853125,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 974,
+        "middle_accuracy": 0.487,
+        "accuracy_by_position": {
+          "4": 0.43,
+          "16": 0.4625,
+          "32": 0.5025,
+          "48": 0.4725,
+          "64": 0.5275,
+          "80": 0.435,
+          "96": 0.4975,
+          "110": 0.555
+        }
+      },
+      "corrected_beta0": {
+        "n_trials": 3200,
+        "n_correct": 1571,
+        "accuracy": 0.4909375,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 982,
+        "middle_accuracy": 0.491,
+        "accuracy_by_position": {
+          "4": 0.4475,
+          "16": 0.4625,
+          "32": 0.5,
+          "48": 0.4725,
+          "64": 0.5325,
+          "80": 0.4425,
+          "96": 0.5075,
+          "110": 0.5625
+        }
+      },
+      "legacy_beta0_diagnostic": {
+        "n_trials": 3200,
+        "n_correct": 1565,
+        "accuracy": 0.4890625,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 983,
+        "middle_accuracy": 0.4915,
+        "accuracy_by_position": {
+          "4": 0.445,
+          "16": 0.4525,
+          "32": 0.5025,
+          "48": 0.4725,
+          "64": 0.535,
+          "80": 0.44,
+          "96": 0.5075,
+          "110": 0.5575
+        }
+      }
+    },
+    "attention_validation": {
+      "baseline_beta1": {
+        "negative_nan_inf_upper_nonzero": 0,
+        "row_sum_violations": 0,
+        "max_row_error_after_cast": 4.76837158203125e-07,
+        "rows_checked": 157286400
+      },
+      "corrected_beta0": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 157286400,
+        "sink_edit_rows_preserved_no_alternative": 1228800,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 1,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 4.76837158203125e-07,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      },
+      "legacy_beta0_diagnostic": {
+        "rows_total": 157286400,
+        "zero_rows": 1396753,
+        "zero_rows_at_last_query": 1078,
+        "positive_mass_below_clamp": 2866573
+      }
+    },
+    "positive_beta_regression": null,
+    "native_identity_regression": {
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0
+    },
+    "historical_s0": {
+      "1.0": {
+        "accuracy": 0.4853124999999999,
+        "middle_accuracy": 0.487
+      },
+      "0.0": {
+        "accuracy": 0.48906249999999996,
+        "middle_accuracy": 0.49149999999999994
+      }
+    },
+    "paired_corrected_vs_baseline": {
+      "left": "corrected_beta0",
+      "right": "baseline_beta1",
+      "n_pairs": 3200,
+      "left_only_correct": 57,
+      "right_only_correct": 39,
+      "accuracy_difference_left_minus_right": 0.005625,
+      "mcnemar_exact_pvalue": 0.08219306855694346,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents",
+      "holm_pvalue_five_models": 0.24657920567083036
+    },
+    "paired_corrected_vs_legacy": {
+      "left": "corrected_beta0",
+      "right": "legacy_beta0_diagnostic",
+      "n_pairs": 3200,
+      "left_only_correct": 18,
+      "right_only_correct": 12,
+      "accuracy_difference_left_minus_right": 0.001875,
+      "mcnemar_exact_pvalue": 0.36159460805356514,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+    },
+    "elapsed_seconds": 502.24506019987166
+  },
+  "Qwen/Qwen2.5-0.5B": {
+    "schema_version": 2,
+    "model": "Qwen/Qwen2.5-0.5B",
+    "dtype": "torch.bfloat16",
+    "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "n_trials_effective_per_arm": 3200,
+    "seed": 0,
+    "sequence_length": 128,
+    "batch": 16,
+    "positions": [
+      4,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      110
+    ],
+    "n_per_position": 400,
+    "middle_positions": [
+      32,
+      48,
+      64,
+      80,
+      96
+    ],
+    "probe_manifest": "data/attn/beta0_probe_Qwen__Qwen2.5-0.5B_s0_v2.manifest.json",
+    "pairs_path": "out/pairs/beta0_Qwen__Qwen2.5-0.5B_v2.jsonl",
+    "completion_rule": "preserve pre-edit row iff the edit leaves exactly zero alternative mass",
+    "positive_tiny_mass": "normalize by its positive total; historical denominator floor is not used",
+    "validation_schedule": "All row checks on device; synchronize and validate every forward before writing paired trials",
+    "arms": {
+      "baseline_beta1": {
+        "n_trials": 3200,
+        "n_correct": 1667,
+        "accuracy": 0.5209375,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 1045,
+        "middle_accuracy": 0.5225,
+        "accuracy_by_position": {
+          "4": 0.5375,
+          "16": 0.51,
+          "32": 0.505,
+          "48": 0.5325,
+          "64": 0.5125,
+          "80": 0.545,
+          "96": 0.5175,
+          "110": 0.5075
+        }
+      },
+      "corrected_beta0": {
+        "n_trials": 3200,
+        "n_correct": 1681,
+        "accuracy": 0.5253125,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 1050,
+        "middle_accuracy": 0.525,
+        "accuracy_by_position": {
+          "4": 0.5575,
+          "16": 0.5125,
+          "32": 0.505,
+          "48": 0.5275,
+          "64": 0.5175,
+          "80": 0.555,
+          "96": 0.52,
+          "110": 0.5075
+        }
+      },
+      "legacy_beta0_diagnostic": {
+        "n_trials": 3200,
+        "n_correct": 1701,
+        "accuracy": 0.5315625,
+        "middle_n_trials": 2000,
+        "middle_n_correct": 1067,
+        "middle_accuracy": 0.5335,
+        "accuracy_by_position": {
+          "4": 0.56,
+          "16": 0.5175,
+          "32": 0.5225,
+          "48": 0.525,
+          "64": 0.5375,
+          "80": 0.565,
+          "96": 0.5175,
+          "110": 0.5075
+        }
+      }
+    },
+    "attention_validation": {
+      "baseline_beta1": {
+        "negative_nan_inf_upper_nonzero": 0,
+        "row_sum_violations": 0,
+        "max_row_error_after_cast": 0.003814697265625,
+        "rows_checked": 137625600
+      },
+      "corrected_beta0": {
+        "sink_edit_invalid_values": 0,
+        "sink_edit_rows_total": 137625600,
+        "sink_edit_rows_preserved_no_alternative": 1075200,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_invalid_totals": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 45,
+        "sink_edit_noncausal_values": 0,
+        "sink_edit_row_sum_violations": 0,
+        "sink_edit_first_row_changes": 0,
+        "max_sink_edit_row_error": 0.00652313232421875,
+        "max_sink_edit_row_error_bound": 0.007845137254901961
+      },
+      "legacy_beta0_diagnostic": {
+        "rows_total": 137625600,
+        "zero_rows": 1075200,
+        "zero_rows_at_last_query": 0,
+        "positive_mass_below_clamp": 251
+      }
+    },
+    "positive_beta_regression": null,
+    "native_identity_regression": {
+      "n_sequences": 2,
+      "logits_bit_equal": true,
+      "max_absolute_logit_difference": 0.0
+    },
+    "historical_s0": {
+      "1.0": {
+        "accuracy": 0.526875,
+        "middle_accuracy": 0.5305000000000001
+      },
+      "0.0": {
+        "accuracy": 0.5396875,
+        "middle_accuracy": 0.5429999999999999
+      }
+    },
+    "paired_corrected_vs_baseline": {
+      "left": "corrected_beta0",
+      "right": "baseline_beta1",
+      "n_pairs": 3200,
+      "left_only_correct": 76,
+      "right_only_correct": 62,
+      "accuracy_difference_left_minus_right": 0.004375,
+      "mcnemar_exact_pvalue": 0.26838997200887366,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents",
+      "holm_pvalue_five_models": 0.5367799440177473
+    },
+    "paired_corrected_vs_legacy": {
+      "left": "corrected_beta0",
+      "right": "legacy_beta0_diagnostic",
+      "n_pairs": 3200,
+      "left_only_correct": 26,
+      "right_only_correct": 46,
+      "accuracy_difference_left_minus_right": -0.00625,
+      "mcnemar_exact_pvalue": 0.02446090732832437,
+      "inference_scope": "conditional on this seed's synthetic probes; overlapping filler is not independent documents"
+    },
+    "elapsed_seconds": 85.8029225000646
+  }
+}

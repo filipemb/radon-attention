@@ -1,0 +1,56 @@
+[
+  {
+    "question": "Use all768 or a fixed subset for the enlarged paired refits?",
+    "decision": "Use192,16per model x n, chosen before fitting with four equal layer-depth strata and distinct documents; retain768 for original-budget parameter diagnostics.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "What does width <=2pixels mean for this renderer?",
+    "decision": "Constrain sigma to[0.2,2], retaining the phase19 primitive. Declare FWHM=2.1775229093*sigma, so sigma2has FWHM4.355pixels.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "How to attribute energy to broad overlapping atoms?",
+    "decision": "Primary additive share is <wide,total>/||total||^2. Also report wide self energy and energy reduction on deletion; all include explicit definitions.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "Can missing historical parameter snapshots be recovered exactly?",
+    "decision": "No. Keep241original snapshots and replay527 with original seeds, starts, optimizer and old checkpoint grid; label provenance and publish error deltas. A replay is not an original snapshot.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "How to use the same starts under different width caps?",
+    "decision": "Hash identical raw initializations for each arm, then project only width into its feasible interval. Keep all other coordinates, optimizer, seeds and budget grid fixed.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "What to do when thin synthetic controls fail?",
+    "decision": "Retain every failure and unchanged thresholds/optimizer. Report that high fitted thin error cannot establish that no thin representation exists.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "How to compare the three arms with document dependence?",
+    "decision": "Use the same192identities at every budget,2000document-block bootstrap resamples for median95percent CIs and paired document-level two-sided Wilcoxon tests, with raw and Holm180 adjusted p values.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "Does lower error establish an attention compressor?",
+    "decision": "Treat it as evidence about fitting at a stored-number budget; quantization, actual bits, encoding/decoding speed and downstream quality remain untested.",
+    "certainty": "high",
+    "executed": true
+  },
+  {
+    "question": "Can the free fit perform worse than the thin fit?",
+    "decision": "Preserve such results as nonconvex optimization diagnostics. Do not substitute the thin fit for the free fit or apply a monotone budget envelope.",
+    "certainty": "high",
+    "executed": true
+  }
+]

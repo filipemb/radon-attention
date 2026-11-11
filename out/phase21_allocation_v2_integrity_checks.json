@@ -1,0 +1,269 @@
+{
+  "passed": true,
+  "scope": "Independent population, algebraic and budget certificates on every candidate raw record; line protocol choice remains pending",
+  "n_instances": 19968,
+  "records": [
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 128,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "candidate_pairs_sha256": "8078241ddf3f356d76232ac1d47e1b41ca65ca6c732e69969b21962de0507209",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 256,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "candidate_pairs_sha256": "d86c84e8e7f6c54227c608c27c3c4ac8618063647b38de2d61bf0b9490710787",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 128,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "candidate_pairs_sha256": "1968f2532c5b8f07ce6154589051f85d06cf6169149e19824352a022a3a41302",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 256,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "candidate_pairs_sha256": "bb7300f136a9211eecfe3c25bc8b551461efdbff31ac08bc577813a8356a5327",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 128,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_gpt2-medium_n128_v2.jsonl",
+      "candidate_pairs_sha256": "6a50872e3c54f1cd77fbd52d0df934f7a05ff2b1c356cd4defbdbfef91848f5b",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 256,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_gpt2-medium_n256_v2.jsonl",
+      "candidate_pairs_sha256": "a091cca8eb3518502f601b74fa268d0a7c141edaba6968e48d1d668bd041b432",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "gpt2",
+      "n": 128,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_gpt2_n128_v2.jsonl",
+      "candidate_pairs_sha256": "3c3a23ac04718a9ab45e374e2d6ac76a2a6e701f595eb4079c1bd1189539db8b",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "gpt2",
+      "n": 256,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_gpt2_n256_v2.jsonl",
+      "candidate_pairs_sha256": "d9234c350254edde62bfd3f7b39a01e3ff52577aae6c072ab12b49f8cd740adb",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 128,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "candidate_pairs_sha256": "806d7dbbdd2c89d158dd05fdf0b7bae6c8b4562874acb03936702addec90dee2",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 256,
+      "n_instances": 1536,
+      "n_documents": 64,
+      "balanced_instances_per_document": 24,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "candidate_pairs_sha256": "f428ea867ea961c728f8e7014c81fbd8624c7d43bd4574fa791e9ca922037ee8",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 128,
+      "n_instances": 2304,
+      "n_documents": 64,
+      "balanced_instances_per_document": 36,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "candidate_pairs_sha256": "c32cae0934cc6acec3796d98eb13dcaa9bc7949b9600d8f4be832d3f1ace1cd9",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 256,
+      "n_instances": 2304,
+      "n_documents": 64,
+      "balanced_instances_per_document": 36,
+      "candidate_pairs_path": "out/pairs/phase21_allocation_endpoint_preview_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "candidate_pairs_sha256": "3e7cdea5f8f86232588893df9e6dfdc4c08df31476d8f64b17efa4d1c410a199",
+      "core_positive_capacity_budgets": [
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "line_candidate_capacity_budgets": [
+        "4",
+        "8",
+        "16"
+      ]
+    }
+  ],
+  "maximum_discrepancies": {
+    "projection_energy_identity": 1.176836406102666e-14,
+    "named_norm_squared_identity": 2.220446049250313e-16,
+    "full_lines_above_named_only_error": 4.535178133230779e-18,
+    "full_lines_KKT": 6.2453852742035325e-15
+  },
+  "algorithm_1_n128_residual_r8_criterion_met": 17,
+  "algorithm_1_n128_residual_r8_n_instances": 9984,
+  "source_primary_statistics_sha256": "dbfe79311a132dba1910c993dddb80db5a23edec0609ba8ee396dd19cd59806f",
+  "unmodified_OMP_sha256": "88c46a9dd9941e9e9c35b3bef9154c9aed74711b544dc7f072888556c820e7c4"
+}

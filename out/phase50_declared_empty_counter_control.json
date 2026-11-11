@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "normalization_output_bit_equal": true,
+  "hook_restored": true,
+  "completion": {
+    "policy": "uniform_causal",
+    "rows_total": 768,
+    "rows_completed": 256,
+    "fraction_rows_completed": 0.3333333333333333,
+    "last_query_rows_total": 6,
+    "last_query_rows_completed": 2,
+    "fraction_last_query_rows_completed": 0.3333333333333333,
+    "candidate_rows_completed_before_exact_overwrite": 512,
+    "candidate_last_query_rows_completed_before_exact_overwrite": 4,
+    "discarded_exact_head_candidate_empty_rows": 256,
+    "discarded_exact_head_candidate_empty_last_rows": 2,
+    "exact_rows_total": 256,
+    "exact_last_query_rows_total": 2,
+    "scope": "actual injected e; empty candidates on exact heads were discarded and do not count"
+  },
+  "mask_computed_by_imported_phase2_normalizer": true,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251"
+}

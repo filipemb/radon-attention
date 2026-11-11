@@ -1,0 +1,8 @@
+{
+  "coordinator_pid": 49223,
+  "child_flock_pid": 35349,
+  "coordinator_start_ticks": "120780063",
+  "child_start_ticks": "121151627",
+  "reason": "Prevent automatic publication until full Qwen3B matched-batch identity is measured; GPU child continues unchanged.",
+  "created_utc": "2026-11-11T05:48:52.386133+00:00"
+}

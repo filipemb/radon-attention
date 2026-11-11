@@ -1,0 +1,142 @@
+{
+  "historical_grids_audited": 15,
+  "direct_legacy_beta0_selections": [
+    {
+      "historical_file": "out/phase18_betacv_s0.json",
+      "model": "EleutherAI/pythia-1.4b",
+      "beta_selected_on_A": 1.0,
+      "beta_selected_on_B": 0.0,
+      "directly_evaluates_legacy_beta0": true
+    },
+    {
+      "historical_file": "out/phase18_betacv_s1.json",
+      "model": "EleutherAI/pythia-1.4b",
+      "beta_selected_on_A": 0.25,
+      "beta_selected_on_B": 0.0,
+      "directly_evaluates_legacy_beta0": true
+    },
+    {
+      "historical_file": "out/phase18_betacv_s2.json",
+      "model": "EleutherAI/pythia-1.4b",
+      "beta_selected_on_A": 0.15,
+      "beta_selected_on_B": 0.0,
+      "directly_evaluates_legacy_beta0": true
+    }
+  ],
+  "records": [
+    {
+      "historical_file": "out/phase18_betacv_s0.json",
+      "model": "gpt2",
+      "beta_selected_on_A": 0.05,
+      "beta_selected_on_B": 0.05,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s0.json",
+      "model": "gpt2-medium",
+      "beta_selected_on_A": 0.15,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s0.json",
+      "model": "EleutherAI/pythia-410m",
+      "beta_selected_on_A": 0.05,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s0.json",
+      "model": "EleutherAI/pythia-1.4b",
+      "beta_selected_on_A": 1.0,
+      "beta_selected_on_B": 0.0,
+      "directly_evaluates_legacy_beta0": true
+    },
+    {
+      "historical_file": "out/phase18_betacv_s0.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "beta_selected_on_A": 0.1,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s1.json",
+      "model": "gpt2",
+      "beta_selected_on_A": 0.05,
+      "beta_selected_on_B": 0.05,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s1.json",
+      "model": "gpt2-medium",
+      "beta_selected_on_A": 0.15,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s1.json",
+      "model": "EleutherAI/pythia-410m",
+      "beta_selected_on_A": 0.1,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s1.json",
+      "model": "EleutherAI/pythia-1.4b",
+      "beta_selected_on_A": 0.25,
+      "beta_selected_on_B": 0.0,
+      "directly_evaluates_legacy_beta0": true
+    },
+    {
+      "historical_file": "out/phase18_betacv_s1.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "beta_selected_on_A": 0.05,
+      "beta_selected_on_B": 0.25,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s2.json",
+      "model": "gpt2",
+      "beta_selected_on_A": 0.05,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s2.json",
+      "model": "gpt2-medium",
+      "beta_selected_on_A": 0.15,
+      "beta_selected_on_B": 0.05,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s2.json",
+      "model": "EleutherAI/pythia-410m",
+      "beta_selected_on_A": 0.1,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    },
+    {
+      "historical_file": "out/phase18_betacv_s2.json",
+      "model": "EleutherAI/pythia-1.4b",
+      "beta_selected_on_A": 0.15,
+      "beta_selected_on_B": 0.0,
+      "directly_evaluates_legacy_beta0": true
+    },
+    {
+      "historical_file": "out/phase18_betacv_s2.json",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "beta_selected_on_A": 0.05,
+      "beta_selected_on_B": 0.1,
+      "directly_evaluates_legacy_beta0": false
+    }
+  ],
+  "source_sha256": {
+    "out/phase18_betacv_s0.json": "ff8dd1e243fb947469003f8492cf0aa93f096fb9414d15d35e78d642ea1eb4ec",
+    "out/phase18_betacv_s1.json": "df2a8af1e8ca9a97daab601170f2650c8888e3af93bf2d7aaca45a9038a1020b",
+    "out/phase18_betacv_s2.json": "a267b9b1941f6792b939bcbdf59c91f28d3179b28bba554fd2854bbb02d54e00"
+  },
+  "numerical_rerun_performed": false,
+  "reason": "User explicitly restricted the new scientific rerun to beta=0 supporting the collapse phrase in phase8. Phase18 inherits the corrected callback, but its saved CV selections are historical.",
+  "limitation": "All grids contain beta=0, so even positive selections may change when the contender changes. Phase28 uses a different probe cohort and must not be substituted into phase18 CV.",
+  "elapsed_seconds": 0.22373145399615169
+}

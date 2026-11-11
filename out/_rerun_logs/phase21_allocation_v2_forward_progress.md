@@ -1,0 +1,129 @@
+- 2026-11-10T08:26:57+00:00 | V2 CONTROLS PASSED: q=K-1, n128/256 fp32/bf16, shared uniform completion and counters, document-median signed-rank direction; no LM forward/KL
+- 2026-11-10T08:27:00+00:00 | FORWARD PREFLIGHT PASSED: completed V1 six models; all 256 articles per arm; imported current harness; CPU estimator/counters and 256-article signed-rank controls; historical matrix file unchanged
+- 2026-11-10T08:29:26+00:00 | GPU MODEL START gpt2: n128, batch=2, dtype=torch.float32; per-model flock process
+- 2026-11-10T08:29:30+00:00 | FORWARD START gpt2 n=128; 256 docs; K=8,16 q=7,15; uniform causal; shared V1 harness
+- 2026-11-10T08:29:48+00:00 | FORWARD gpt2 n=128: 16/256 docs; seconds=20.8
+- 2026-11-10T08:30:06+00:00 | FORWARD gpt2 n=128: 32/256 docs; seconds=39.0
+- 2026-11-10T08:30:24+00:00 | FORWARD gpt2 n=128: 48/256 docs; seconds=57.1
+- 2026-11-10T08:30:42+00:00 | FORWARD gpt2 n=128: 64/256 docs; seconds=75.0
+- 2026-11-10T08:31:00+00:00 | FORWARD gpt2 n=128: 80/256 docs; seconds=93.0
+- 2026-11-10T08:31:18+00:00 | FORWARD gpt2 n=128: 96/256 docs; seconds=111.1
+- 2026-11-10T08:31:36+00:00 | FORWARD gpt2 n=128: 112/256 docs; seconds=129.0
+- 2026-11-10T08:31:54+00:00 | FORWARD gpt2 n=128: 128/256 docs; seconds=146.9
+- 2026-11-10T08:32:12+00:00 | FORWARD gpt2 n=128: 144/256 docs; seconds=165.2
+- 2026-11-10T08:32:30+00:00 | FORWARD gpt2 n=128: 160/256 docs; seconds=183.5
+- 2026-11-10T08:32:48+00:00 | FORWARD gpt2 n=128: 176/256 docs; seconds=201.5
+- 2026-11-10T08:33:06+00:00 | FORWARD gpt2 n=128: 192/256 docs; seconds=219.5
+- 2026-11-10T08:33:24+00:00 | FORWARD gpt2 n=128: 208/256 docs; seconds=237.6
+- 2026-11-10T08:33:43+00:00 | FORWARD gpt2 n=128: 224/256 docs; seconds=255.9
+- 2026-11-10T08:34:01+00:00 | FORWARD gpt2 n=128: 240/256 docs; seconds=273.8
+- 2026-11-10T08:34:19+00:00 | FORWARD gpt2 n=128: 256/256 docs; seconds=291.8
+- 2026-11-10T08:34:19+00:00 | FORWARD DONE gpt2 n=128: all 256 docs at K8/16; counters by mode saved
+- 2026-11-10T08:34:20+00:00 | GPU MODEL FINISHED gpt2; model deleted, CUDA cache cleared; process exits and releases flock
+- 2026-11-10T08:34:26+00:00 | CPU FORWARD SUMMARY COMPLETE gpt2: 256 paired articles, K8/16, Wilcoxon/rank-biserial and V1 reference medians/CIs
+- 2026-11-10T08:34:33+00:00 | GPU MODEL START gpt2-medium: n128, batch=2, dtype=torch.float32; per-model flock process
+- 2026-11-10T08:34:40+00:00 | FORWARD START gpt2-medium n=128; 256 docs; K=8,16 q=7,15; uniform causal; shared V1 harness
+- 2026-11-10T08:35:28+00:00 | FORWARD gpt2-medium n=128: 16/256 docs; seconds=53.8
+- 2026-11-10T08:36:15+00:00 | FORWARD gpt2-medium n=128: 32/256 docs; seconds=101.3
+- 2026-11-10T08:37:02+00:00 | FORWARD gpt2-medium n=128: 48/256 docs; seconds=148.5
+- 2026-11-10T08:37:51+00:00 | FORWARD gpt2-medium n=128: 64/256 docs; seconds=197.6
+- 2026-11-10T08:38:41+00:00 | FORWARD gpt2-medium n=128: 80/256 docs; seconds=247.3
+- 2026-11-10T08:39:30+00:00 | FORWARD gpt2-medium n=128: 96/256 docs; seconds=296.6
+- 2026-11-10T08:40:20+00:00 | FORWARD gpt2-medium n=128: 112/256 docs; seconds=345.7
+- 2026-11-10T08:41:07+00:00 | FORWARD gpt2-medium n=128: 128/256 docs; seconds=393.2
+- 2026-11-10T08:41:55+00:00 | FORWARD gpt2-medium n=128: 144/256 docs; seconds=440.9
+- 2026-11-10T08:42:43+00:00 | FORWARD gpt2-medium n=128: 160/256 docs; seconds=488.8
+- 2026-11-10T08:43:30+00:00 | FORWARD gpt2-medium n=128: 176/256 docs; seconds=536.6
+- 2026-11-10T08:44:18+00:00 | FORWARD gpt2-medium n=128: 192/256 docs; seconds=584.5
+- 2026-11-10T08:45:07+00:00 | FORWARD gpt2-medium n=128: 208/256 docs; seconds=633.6
+- 2026-11-10T08:45:56+00:00 | FORWARD gpt2-medium n=128: 224/256 docs; seconds=682.6
+- 2026-11-10T08:46:48+00:00 | FORWARD gpt2-medium n=128: 240/256 docs; seconds=733.7
+- 2026-11-10T08:47:38+00:00 | FORWARD gpt2-medium n=128: 256/256 docs; seconds=784.3
+- 2026-11-10T08:47:39+00:00 | FORWARD DONE gpt2-medium n=128: all 256 docs at K8/16; counters by mode saved
+- 2026-11-10T08:47:40+00:00 | GPU MODEL FINISHED gpt2-medium; model deleted, CUDA cache cleared; process exits and releases flock
+- 2026-11-10T08:47:47+00:00 | CPU FORWARD SUMMARY COMPLETE gpt2-medium: 256 paired articles, K8/16, Wilcoxon/rank-biserial and V1 reference medians/CIs
+- 2026-11-10T08:47:55+00:00 | GPU MODEL START EleutherAI/pythia-410m: n128, batch=2, dtype=torch.float32; per-model flock process
+- 2026-11-10T08:48:03+00:00 | FORWARD START EleutherAI/pythia-410m n=128; 256 docs; K=8,16 q=7,15; uniform causal; shared V1 harness
+- 2026-11-10T08:48:52+00:00 | FORWARD EleutherAI/pythia-410m n=128: 16/256 docs; seconds=55.1
+- 2026-11-10T08:49:39+00:00 | FORWARD EleutherAI/pythia-410m n=128: 32/256 docs; seconds=102.4
+- 2026-11-10T08:50:28+00:00 | FORWARD EleutherAI/pythia-410m n=128: 48/256 docs; seconds=151.6
+- 2026-11-10T08:51:16+00:00 | FORWARD EleutherAI/pythia-410m n=128: 64/256 docs; seconds=200.0
+- 2026-11-10T08:52:05+00:00 | FORWARD EleutherAI/pythia-410m n=128: 80/256 docs; seconds=248.5
+- 2026-11-10T08:52:55+00:00 | FORWARD EleutherAI/pythia-410m n=128: 96/256 docs; seconds=298.1
+- 2026-11-10T08:53:44+00:00 | FORWARD EleutherAI/pythia-410m n=128: 112/256 docs; seconds=347.9
+- 2026-11-10T08:54:34+00:00 | FORWARD EleutherAI/pythia-410m n=128: 128/256 docs; seconds=398.0
+- 2026-11-10T08:55:24+00:00 | FORWARD EleutherAI/pythia-410m n=128: 144/256 docs; seconds=447.3
+- 2026-11-10T08:56:12+00:00 | FORWARD EleutherAI/pythia-410m n=128: 160/256 docs; seconds=495.7
+- 2026-11-10T08:57:00+00:00 | FORWARD EleutherAI/pythia-410m n=128: 176/256 docs; seconds=543.9
+- 2026-11-10T08:57:48+00:00 | FORWARD EleutherAI/pythia-410m n=128: 192/256 docs; seconds=591.9
+- 2026-11-10T08:58:36+00:00 | FORWARD EleutherAI/pythia-410m n=128: 208/256 docs; seconds=639.8
+- 2026-11-10T08:59:24+00:00 | FORWARD EleutherAI/pythia-410m n=128: 224/256 docs; seconds=687.8
+- 2026-11-10T09:00:11+00:00 | FORWARD EleutherAI/pythia-410m n=128: 240/256 docs; seconds=735.0
+- 2026-11-10T09:00:59+00:00 | FORWARD EleutherAI/pythia-410m n=128: 256/256 docs; seconds=782.4
+- 2026-11-10T09:01:00+00:00 | FORWARD DONE EleutherAI/pythia-410m n=128: all 256 docs at K8/16; counters by mode saved
+- 2026-11-10T09:01:00+00:00 | GPU MODEL FINISHED EleutherAI/pythia-410m; model deleted, CUDA cache cleared; process exits and releases flock
+- 2026-11-10T09:01:07+00:00 | CPU FORWARD SUMMARY COMPLETE EleutherAI/pythia-410m: 256 paired articles, K8/16, Wilcoxon/rank-biserial and V1 reference medians/CIs
+- 2026-11-10T09:01:14+00:00 | GPU MODEL START EleutherAI/pythia-1.4b: n128, batch=2, dtype=torch.float32; per-model flock process
+- 2026-11-10T09:01:24+00:00 | FORWARD START EleutherAI/pythia-1.4b n=128; 256 docs; K=8,16 q=7,15; uniform causal; shared V1 harness
+- 2026-11-10T09:02:15+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 16/256 docs; seconds=57.7
+- 2026-11-10T09:03:07+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 32/256 docs; seconds=109.7
+- 2026-11-10T09:03:59+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 48/256 docs; seconds=162.3
+- 2026-11-10T09:04:51+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 64/256 docs; seconds=213.8
+- 2026-11-10T09:05:43+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 80/256 docs; seconds=265.5
+- 2026-11-10T09:06:34+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 96/256 docs; seconds=316.8
+- 2026-11-10T09:07:27+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 112/256 docs; seconds=369.4
+- 2026-11-10T09:08:19+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 128/256 docs; seconds=421.5
+- 2026-11-10T09:09:11+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 144/256 docs; seconds=474.0
+- 2026-11-10T09:10:06+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 160/256 docs; seconds=529.3
+- 2026-11-10T09:11:00+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 176/256 docs; seconds=583.0
+- 2026-11-10T09:11:51+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 192/256 docs; seconds=634.2
+- 2026-11-10T09:12:44+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 208/256 docs; seconds=687.3
+- 2026-11-10T09:13:37+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 224/256 docs; seconds=740.0
+- 2026-11-10T09:14:29+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 240/256 docs; seconds=792.3
+- 2026-11-10T09:15:23+00:00 | FORWARD EleutherAI/pythia-1.4b n=128: 256/256 docs; seconds=846.1
+- 2026-11-10T09:15:24+00:00 | FORWARD DONE EleutherAI/pythia-1.4b n=128: all 256 docs at K8/16; counters by mode saved
+- 2026-11-10T09:15:25+00:00 | GPU MODEL FINISHED EleutherAI/pythia-1.4b; model deleted, CUDA cache cleared; process exits and releases flock
+- 2026-11-10T09:15:35+00:00 | CPU FORWARD SUMMARY COMPLETE EleutherAI/pythia-1.4b: 256 paired articles, K8/16, Wilcoxon/rank-biserial and V1 reference medians/CIs
+- 2026-11-10T13:23:35+00:00 | GPU MODEL START Qwen/Qwen2.5-0.5B: n128, batch=2, dtype=torch.bfloat16; per-model flock process
+- 2026-11-10T13:23:43+00:00 | FORWARD START Qwen/Qwen2.5-0.5B n=128; 256 docs; K=8,16 q=7,15; uniform causal; shared V1 harness
+- 2026-11-10T13:24:26+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 16/256 docs; seconds=49.3
+- 2026-11-10T13:25:08+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 32/256 docs; seconds=91.8
+- 2026-11-10T13:25:51+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 48/256 docs; seconds=134.4
+- 2026-11-10T13:26:33+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 64/256 docs; seconds=176.9
+- 2026-11-10T13:27:16+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 80/256 docs; seconds=219.8
+- 2026-11-10T13:27:59+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 96/256 docs; seconds=262.4
+- 2026-11-10T13:28:42+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 112/256 docs; seconds=305.5
+- 2026-11-10T13:29:25+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 128/256 docs; seconds=348.6
+- 2026-11-10T13:30:08+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 144/256 docs; seconds=391.7
+- 2026-11-10T13:30:51+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 160/256 docs; seconds=434.6
+- 2026-11-10T13:31:33+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 176/256 docs; seconds=477.2
+- 2026-11-10T13:32:16+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 192/256 docs; seconds=519.5
+- 2026-11-10T13:32:59+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 208/256 docs; seconds=562.3
+- 2026-11-10T13:33:41+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 224/256 docs; seconds=604.8
+- 2026-11-10T13:34:23+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 240/256 docs; seconds=647.1
+- 2026-11-10T13:35:06+00:00 | FORWARD Qwen/Qwen2.5-0.5B n=128: 256/256 docs; seconds=689.6
+- 2026-11-10T13:35:07+00:00 | FORWARD DONE Qwen/Qwen2.5-0.5B n=128: all 256 docs at K8/16; counters by mode saved
+- 2026-11-10T13:35:07+00:00 | GPU MODEL FINISHED Qwen/Qwen2.5-0.5B; model deleted, CUDA cache cleared; process exits and releases flock
+- 2026-11-10T13:35:13+00:00 | CPU FORWARD SUMMARY COMPLETE Qwen/Qwen2.5-0.5B: 256 paired articles, K8/16, Wilcoxon/rank-biserial and V1 reference medians/CIs
+- 2026-11-10T13:38:06+00:00 | GPU MODEL START Qwen/Qwen2.5-3B: n128, batch=2, dtype=torch.bfloat16; per-model flock process
+- 2026-11-10T13:38:20+00:00 | FORWARD START Qwen/Qwen2.5-3B n=128; 256 docs; K=8,16 q=7,15; uniform causal; shared V1 harness
+- 2026-11-10T13:39:33+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 16/256 docs; seconds=82.7
+- 2026-11-10T13:40:45+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 32/256 docs; seconds=155.2
+- 2026-11-10T13:41:58+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 48/256 docs; seconds=227.9
+- 2026-11-10T13:43:11+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 64/256 docs; seconds=300.6
+- 2026-11-10T13:44:24+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 80/256 docs; seconds=373.5
+- 2026-11-10T13:45:36+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 96/256 docs; seconds=445.6
+- 2026-11-10T13:46:48+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 112/256 docs; seconds=517.9
+- 2026-11-10T13:48:01+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 128/256 docs; seconds=590.4
+- 2026-11-10T13:49:14+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 144/256 docs; seconds=663.5
+- 2026-11-10T13:50:27+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 160/256 docs; seconds=736.3
+- 2026-11-10T13:51:39+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 176/256 docs; seconds=808.8
+- 2026-11-10T13:52:51+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 192/256 docs; seconds=880.9
+- 2026-11-10T13:54:04+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 208/256 docs; seconds=953.7
+- 2026-11-10T13:55:17+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 224/256 docs; seconds=1026.8
+- 2026-11-10T13:56:29+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 240/256 docs; seconds=1099.0
+- 2026-11-10T13:57:41+00:00 | FORWARD Qwen/Qwen2.5-3B n=128: 256/256 docs; seconds=1171.2
+- 2026-11-10T13:57:42+00:00 | FORWARD DONE Qwen/Qwen2.5-3B n=128: all 256 docs at K8/16; counters by mode saved
+- 2026-11-10T13:57:43+00:00 | GPU MODEL FINISHED Qwen/Qwen2.5-3B; model deleted, CUDA cache cleared; process exits and releases flock
+- 2026-11-10T13:57:49+00:00 | CPU FORWARD SUMMARY COMPLETE Qwen/Qwen2.5-3B: 256 paired articles, K8/16, Wilcoxon/rank-biserial and V1 reference medians/CIs
+- 2026-11-10T13:57:57+00:00 | FORWARD COMPLETE out\phase21_allocation_v2_forward.json: all six models, both K, 256 matched articles, complete row counters; matrix aggregate unchanged

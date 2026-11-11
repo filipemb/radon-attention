@@ -1,0 +1,141 @@
+{
+  "protocol_sha256": "14cdabf5e45e37d8611a6769a7e46882cd5abe351be9686c0bc0df5afb66a4ca",
+  "seed": 5001,
+  "sweeps": 200,
+  "checks": [
+    {
+      "K": 8,
+      "GPU_relative_error": 0.003920339618344024,
+      "CPU_relative_error": 0.0039203396183363865,
+      "meets_frozen_1pct_bound": true,
+      "absolute_error_difference": 7.637120102987893e-15,
+      "GPU_ALS": {
+        "sweeps": 200,
+        "dtype": "float64",
+        "GPU_solver": "certified_qr",
+        "initial_relative": 0.19565547047622076,
+        "final_relative": 0.0039203396183440245,
+        "history": [
+          {
+            "sweep": 0,
+            "relative": 0.19565547047622076
+          },
+          {
+            "sweep": 1,
+            "relative": 0.05140020088161433
+          },
+          {
+            "sweep": 10,
+            "relative": 0.016837394454080314
+          },
+          {
+            "sweep": 25,
+            "relative": 0.013515396153234134
+          },
+          {
+            "sweep": 50,
+            "relative": 0.011283680499731987
+          },
+          {
+            "sweep": 100,
+            "relative": 0.004639738912838693
+          },
+          {
+            "sweep": 150,
+            "relative": 0.004105789741167062
+          },
+          {
+            "sweep": 180,
+            "relative": 0.0039756814724012345
+          },
+          {
+            "sweep": 200,
+            "relative": 0.0039203396183440245
+          }
+        ],
+        "last20_relative_objective_change": 0.027646416129384004,
+        "gradient_normalized_target": 0.00021851690794176255,
+        "converged": false,
+        "direct_LS_blocks": 0,
+        "direct_sweep_retries": 0,
+        "counter_scope": "whole batch for LS blocks and retries",
+        "rejected_sweeps": [],
+        "maximum_absolute_factor": 22.038432064871987,
+        "minimum_nonzero_absolute_factor": 2.1406229491341974e-05,
+        "factor_dynamic_range": 1029533.5791754319,
+        "unmasked_product_norm_over_target": 201.68319813458916,
+        "maximum_QR_observed_product_error": 3.377058005713518e-14,
+        "seconds": 1.490676100132987
+      }
+    },
+    {
+      "K": 16,
+      "GPU_relative_error": 0.004450102601019003,
+      "CPU_relative_error": 0.004450102601019056,
+      "meets_frozen_1pct_bound": true,
+      "absolute_error_difference": 5.2909066017292616e-17,
+      "GPU_ALS": {
+        "sweeps": 200,
+        "dtype": "float64",
+        "GPU_solver": "certified_qr",
+        "initial_relative": 0.10928837778621538,
+        "final_relative": 0.004450102601019003,
+        "history": [
+          {
+            "sweep": 0,
+            "relative": 0.10928837778621538
+          },
+          {
+            "sweep": 1,
+            "relative": 0.024776333119682498
+          },
+          {
+            "sweep": 10,
+            "relative": 0.011325208513041234
+          },
+          {
+            "sweep": 25,
+            "relative": 0.009560075872830462
+          },
+          {
+            "sweep": 50,
+            "relative": 0.0064907644375636
+          },
+          {
+            "sweep": 100,
+            "relative": 0.00453358189589969
+          },
+          {
+            "sweep": 150,
+            "relative": 0.00446723223053145
+          },
+          {
+            "sweep": 180,
+            "relative": 0.004455406199308483
+          },
+          {
+            "sweep": 200,
+            "relative": 0.004450102601019003
+          }
+        ],
+        "last20_relative_objective_change": 0.002379330377727025,
+        "gradient_normalized_target": 0.00047400498821024284,
+        "converged": false,
+        "direct_LS_blocks": 0,
+        "direct_sweep_retries": 0,
+        "counter_scope": "whole batch for LS blocks and retries",
+        "rejected_sweeps": [],
+        "maximum_absolute_factor": 45.23053467127103,
+        "minimum_nonzero_absolute_factor": 6.098053114288596e-06,
+        "factor_dynamic_range": 7417209.0376335895,
+        "unmasked_product_norm_over_target": 912.4291463236376,
+        "maximum_QR_observed_product_error": 1.0879233951338395e-13,
+        "seconds": 1.7347866999916732
+      }
+    }
+  ],
+  "GPU_solver": "certified_qr",
+  "implementation_source": "phase50_certified_qr_cuda.py",
+  "implementation_sha256": "0929b2eaa77b5fb0c2caddac18e841c1375c499718acb9ce3f05fb72106818d6",
+  "all_frozen_primary_controls_passed": true
+}

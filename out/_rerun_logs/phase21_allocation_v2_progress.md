@@ -1,0 +1,806 @@
+- 2026-11-09T21:22:12+00:00 | FROZEN v2; primary=instance median, block bootstrap=2000 docs; deadline V1=2026-11-10T00:11:20+00:00; K=(1, 2, 4, 8, 16); q=K-1
+- 2026-11-09T21:22:20+00:00 | CORE START gpt2 n=128: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:22:20+00:00 | CORE START gpt2-medium n=128: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:22:41+00:00 | CORE aggregate gpt2-medium n=128 named_first
+- 2026-11-09T21:22:41+00:00 | CORE aggregate gpt2 n=128 named_first
+- 2026-11-09T21:22:53+00:00 | CORE aggregate gpt2 n=128 lowrank_first
+- 2026-11-09T21:22:53+00:00 | CORE aggregate gpt2-medium n=128 lowrank_first
+- 2026-11-09T21:23:04+00:00 | CORE aggregate gpt2 n=128 5 iterações do Algoritmo 1
+- 2026-11-09T21:23:05+00:00 | CORE aggregate gpt2-medium n=128 5 iterações do Algoritmo 1
+- 2026-11-09T21:23:12+00:00 | CORE DONE gpt2 n=128; 1536 instances, 64 documents, 51.3s
+- 2026-11-09T21:23:12+00:00 | CORE START EleutherAI/pythia-410m n=128: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:23:13+00:00 | CORE DONE gpt2-medium n=128; 1536 instances, 64 documents, 52.5s
+- 2026-11-09T21:23:14+00:00 | CORE START EleutherAI/pythia-1.4b n=128: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:23:35+00:00 | CORE aggregate EleutherAI/pythia-410m n=128 named_first
+- 2026-11-09T21:23:36+00:00 | CORE aggregate EleutherAI/pythia-1.4b n=128 named_first
+- 2026-11-09T21:23:48+00:00 | CORE aggregate EleutherAI/pythia-410m n=128 lowrank_first
+- 2026-11-09T21:23:49+00:00 | CORE aggregate EleutherAI/pythia-1.4b n=128 lowrank_first
+- 2026-11-09T21:24:01+00:00 | CORE aggregate EleutherAI/pythia-410m n=128 5 iterações do Algoritmo 1
+- 2026-11-09T21:24:02+00:00 | CORE aggregate EleutherAI/pythia-1.4b n=128 5 iterações do Algoritmo 1
+- 2026-11-09T21:24:09+00:00 | CORE DONE EleutherAI/pythia-410m n=128; 1536 instances, 64 documents, 56.5s
+- 2026-11-09T21:24:10+00:00 | CORE START Qwen/Qwen2.5-0.5B n=128: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:24:10+00:00 | CORE DONE EleutherAI/pythia-1.4b n=128; 1536 instances, 64 documents, 56.4s
+- 2026-11-09T21:24:11+00:00 | CORE START Qwen/Qwen2.5-3B n=128: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:24:31+00:00 | CORE aggregate Qwen/Qwen2.5-0.5B n=128 named_first
+- 2026-11-09T21:24:39+00:00 | CORE aggregate Qwen/Qwen2.5-3B n=128 named_first
+- 2026-11-09T21:24:45+00:00 | CORE aggregate Qwen/Qwen2.5-0.5B n=128 lowrank_first
+- 2026-11-09T21:24:55+00:00 | CORE aggregate Qwen/Qwen2.5-3B n=128 lowrank_first
+- 2026-11-09T21:24:59+00:00 | CORE aggregate Qwen/Qwen2.5-0.5B n=128 5 iterações do Algoritmo 1
+- 2026-11-09T21:25:07+00:00 | CORE DONE Qwen/Qwen2.5-0.5B n=128; 1536 instances, 64 documents, 57.7s
+- 2026-11-09T21:25:08+00:00 | CORE START gpt2 n=256: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:25:10+00:00 | CORE aggregate Qwen/Qwen2.5-3B n=128 5 iterações do Algoritmo 1
+- 2026-11-09T21:25:21+00:00 | CORE DONE Qwen/Qwen2.5-3B n=128; 2304 instances, 64 documents, 70.6s
+- 2026-11-09T21:25:22+00:00 | CORE START gpt2-medium n=256: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:25:32+00:00 | CORE aggregate gpt2 n=256 named_first
+- 2026-11-09T21:25:44+00:00 | CORE aggregate gpt2 n=256 lowrank_first
+- 2026-11-09T21:25:47+00:00 | CORE aggregate gpt2-medium n=256 named_first
+- 2026-11-09T21:25:56+00:00 | CORE aggregate gpt2 n=256 5 iterações do Algoritmo 1
+- 2026-11-09T21:25:58+00:00 | CORE aggregate gpt2-medium n=256 lowrank_first
+- 2026-11-09T21:26:03+00:00 | CORE DONE gpt2 n=256; 1536 instances, 64 documents, 54.8s
+- 2026-11-09T21:26:04+00:00 | CORE START EleutherAI/pythia-410m n=256: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:26:11+00:00 | CORE aggregate gpt2-medium n=256 5 iterações do Algoritmo 1
+- 2026-11-09T21:26:19+00:00 | CORE DONE gpt2-medium n=256; 1536 instances, 64 documents, 56.9s
+- 2026-11-09T21:26:20+00:00 | CORE START EleutherAI/pythia-1.4b n=256: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:26:28+00:00 | CORE aggregate EleutherAI/pythia-410m n=256 named_first
+- 2026-11-09T21:26:41+00:00 | CORE aggregate EleutherAI/pythia-410m n=256 lowrank_first
+- 2026-11-09T21:26:45+00:00 | CORE aggregate EleutherAI/pythia-1.4b n=256 named_first
+- 2026-11-09T21:26:53+00:00 | CORE aggregate EleutherAI/pythia-410m n=256 5 iterações do Algoritmo 1
+- 2026-11-09T21:26:57+00:00 | CORE aggregate EleutherAI/pythia-1.4b n=256 lowrank_first
+- 2026-11-09T21:27:00+00:00 | CORE DONE EleutherAI/pythia-410m n=256; 1536 instances, 64 documents, 56.2s
+- 2026-11-09T21:27:01+00:00 | CORE START Qwen/Qwen2.5-0.5B n=256: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:27:09+00:00 | CORE aggregate EleutherAI/pythia-1.4b n=256 5 iterações do Algoritmo 1
+- 2026-11-09T21:27:16+00:00 | CORE DONE EleutherAI/pythia-1.4b n=256; 1536 instances, 64 documents, 55.6s
+- 2026-11-09T21:27:17+00:00 | CORE START Qwen/Qwen2.5-3B n=256: exact audited allocation reused; instance medians/block bootstrap and symmetric q=K-1
+- 2026-11-09T21:27:24+00:00 | CORE aggregate Qwen/Qwen2.5-0.5B n=256 named_first
+- 2026-11-09T21:27:34+00:00 | CORE aggregate Qwen/Qwen2.5-0.5B n=256 lowrank_first
+- 2026-11-09T21:27:44+00:00 | CORE aggregate Qwen/Qwen2.5-0.5B n=256 5 iterações do Algoritmo 1
+- 2026-11-09T21:27:46+00:00 | CORE aggregate Qwen/Qwen2.5-3B n=256 named_first
+- 2026-11-09T21:27:51+00:00 | CORE DONE Qwen/Qwen2.5-0.5B n=256; 1536 instances, 64 documents, 49.2s
+- 2026-11-09T21:27:57+00:00 | CORE aggregate Qwen/Qwen2.5-3B n=256 lowrank_first
+- 2026-11-09T21:28:09+00:00 | CORE aggregate Qwen/Qwen2.5-3B n=256 5 iterações do Algoritmo 1
+- 2026-11-09T21:28:17+00:00 | CORE DONE Qwen/Qwen2.5-3B n=256; 2304 instances, 64 documents, 60.2s
+- 2026-11-09T21:37:04+00:00 | LINE ENDPOINT CONTROL n=128: imported full OMP=0.2463408106665778, direct=0.2463408106665778, diff=0; literal=230.1s, direct=0.025s
+- 2026-11-09T21:40:05+00:00 | RESIDUAL START gpt2 n=128: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:40:07+00:00 | RESIDUAL gpt2 n=128: 128/1536
+- 2026-11-09T21:40:09+00:00 | RESIDUAL gpt2 n=128: 256/1536
+- 2026-11-09T21:40:10+00:00 | RESIDUAL gpt2 n=128: 384/1536
+- 2026-11-09T21:40:12+00:00 | RESIDUAL gpt2 n=128: 512/1536
+- 2026-11-09T21:40:14+00:00 | RESIDUAL gpt2 n=128: 640/1536
+- 2026-11-09T21:40:16+00:00 | RESIDUAL gpt2 n=128: 768/1536
+- 2026-11-09T21:40:18+00:00 | RESIDUAL gpt2 n=128: 896/1536
+- 2026-11-09T21:40:19+00:00 | RESIDUAL gpt2 n=128: 1024/1536
+- 2026-11-09T21:40:21+00:00 | RESIDUAL gpt2 n=128: 1152/1536
+- 2026-11-09T21:40:22+00:00 | RESIDUAL gpt2 n=128: 1280/1536
+- 2026-11-09T21:40:25+00:00 | RESIDUAL gpt2 n=128: 1408/1536
+- 2026-11-09T21:40:26+00:00 | RESIDUAL gpt2 n=128: 1536/1536
+- 2026-11-09T21:41:23+00:00 | RESIDUAL DONE gpt2 n=128; 78.4s
+- 2026-11-09T21:41:24+00:00 | RESIDUAL START gpt2-medium n=128: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:41:25+00:00 | RESIDUAL gpt2-medium n=128: 128/1536
+- 2026-11-09T21:41:27+00:00 | RESIDUAL gpt2-medium n=128: 256/1536
+- 2026-11-09T21:41:29+00:00 | RESIDUAL gpt2-medium n=128: 384/1536
+- 2026-11-09T21:41:31+00:00 | RESIDUAL gpt2-medium n=128: 512/1536
+- 2026-11-09T21:41:32+00:00 | RESIDUAL gpt2-medium n=128: 640/1536
+- 2026-11-09T21:41:34+00:00 | RESIDUAL gpt2-medium n=128: 768/1536
+- 2026-11-09T21:41:35+00:00 | RESIDUAL gpt2-medium n=128: 896/1536
+- 2026-11-09T21:41:37+00:00 | RESIDUAL gpt2-medium n=128: 1024/1536
+- 2026-11-09T21:41:39+00:00 | RESIDUAL gpt2-medium n=128: 1152/1536
+- 2026-11-09T21:41:41+00:00 | RESIDUAL gpt2-medium n=128: 1280/1536
+- 2026-11-09T21:41:43+00:00 | RESIDUAL gpt2-medium n=128: 1408/1536
+- 2026-11-09T21:41:44+00:00 | RESIDUAL gpt2-medium n=128: 1536/1536
+- 2026-11-09T21:42:39+00:00 | RESIDUAL DONE gpt2-medium n=128; 75.3s
+- 2026-11-09T21:42:39+00:00 | RESIDUAL START EleutherAI/pythia-410m n=128: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:42:41+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 128/1536
+- 2026-11-09T21:42:43+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 256/1536
+- 2026-11-09T21:42:44+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 384/1536
+- 2026-11-09T21:42:46+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 512/1536
+- 2026-11-09T21:42:48+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 640/1536
+- 2026-11-09T21:42:50+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 768/1536
+- 2026-11-09T21:42:52+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 896/1536
+- 2026-11-09T21:42:53+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 1024/1536
+- 2026-11-09T21:42:55+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 1152/1536
+- 2026-11-09T21:42:57+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 1280/1536
+- 2026-11-09T21:42:59+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 1408/1536
+- 2026-11-09T21:43:01+00:00 | RESIDUAL EleutherAI/pythia-410m n=128: 1536/1536
+- 2026-11-09T21:43:54+00:00 | RESIDUAL DONE EleutherAI/pythia-410m n=128; 75.2s
+- 2026-11-09T21:43:54+00:00 | RESIDUAL START EleutherAI/pythia-1.4b n=128: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:43:56+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 128/1536
+- 2026-11-09T21:43:58+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 256/1536
+- 2026-11-09T21:43:59+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 384/1536
+- 2026-11-09T21:44:01+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 512/1536
+- 2026-11-09T21:44:03+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 640/1536
+- 2026-11-09T21:44:04+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 768/1536
+- 2026-11-09T21:44:06+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 896/1536
+- 2026-11-09T21:44:07+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 1024/1536
+- 2026-11-09T21:44:09+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 1152/1536
+- 2026-11-09T21:44:10+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 1280/1536
+- 2026-11-09T21:44:12+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 1408/1536
+- 2026-11-09T21:44:13+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=128: 1536/1536
+- 2026-11-09T21:44:56+00:00 | RESIDUAL DONE EleutherAI/pythia-1.4b n=128; 62.3s
+- 2026-11-09T21:44:57+00:00 | RESIDUAL START Qwen/Qwen2.5-0.5B n=128: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:44:58+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 128/1536
+- 2026-11-09T21:44:59+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 256/1536
+- 2026-11-09T21:45:01+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 384/1536
+- 2026-11-09T21:45:02+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 512/1536
+- 2026-11-09T21:45:03+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 640/1536
+- 2026-11-09T21:45:05+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 768/1536
+- 2026-11-09T21:45:06+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 896/1536
+- 2026-11-09T21:45:08+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 1024/1536
+- 2026-11-09T21:45:09+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 1152/1536
+- 2026-11-09T21:45:10+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 1280/1536
+- 2026-11-09T21:45:12+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 1408/1536
+- 2026-11-09T21:45:13+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=128: 1536/1536
+- 2026-11-09T21:46:00+00:00 | RESIDUAL DONE Qwen/Qwen2.5-0.5B n=128; 63.5s
+- 2026-11-09T21:46:00+00:00 | RESIDUAL START Qwen/Qwen2.5-3B n=128: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:46:02+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 128/2304
+- 2026-11-09T21:46:04+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 256/2304
+- 2026-11-09T21:46:05+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 384/2304
+- 2026-11-09T21:46:07+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 512/2304
+- 2026-11-09T21:46:08+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 640/2304
+- 2026-11-09T21:46:10+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 768/2304
+- 2026-11-09T21:46:11+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 896/2304
+- 2026-11-09T21:46:13+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1024/2304
+- 2026-11-09T21:46:14+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1152/2304
+- 2026-11-09T21:46:16+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1280/2304
+- 2026-11-09T21:46:17+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1408/2304
+- 2026-11-09T21:46:19+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1536/2304
+- 2026-11-09T21:46:20+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1664/2304
+- 2026-11-09T21:46:22+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1792/2304
+- 2026-11-09T21:46:23+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 1920/2304
+- 2026-11-09T21:46:24+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 2048/2304
+- 2026-11-09T21:46:26+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 2176/2304
+- 2026-11-09T21:46:27+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=128: 2304/2304
+- 2026-11-09T21:47:25+00:00 | RESIDUAL DONE Qwen/Qwen2.5-3B n=128; 85.0s
+- 2026-11-09T21:47:26+00:00 | RESIDUAL START gpt2 n=256: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:47:31+00:00 | RESIDUAL gpt2 n=256: 128/1536
+- 2026-11-09T21:47:35+00:00 | RESIDUAL gpt2 n=256: 256/1536
+- 2026-11-09T21:47:39+00:00 | RESIDUAL gpt2 n=256: 384/1536
+- 2026-11-09T21:47:44+00:00 | RESIDUAL gpt2 n=256: 512/1536
+- 2026-11-09T21:47:48+00:00 | RESIDUAL gpt2 n=256: 640/1536
+- 2026-11-09T21:47:52+00:00 | RESIDUAL gpt2 n=256: 768/1536
+- 2026-11-09T21:47:55+00:00 | RESIDUAL gpt2 n=256: 896/1536
+- 2026-11-09T21:48:00+00:00 | RESIDUAL gpt2 n=256: 1024/1536
+- 2026-11-09T21:48:04+00:00 | RESIDUAL gpt2 n=256: 1152/1536
+- 2026-11-09T21:48:08+00:00 | RESIDUAL gpt2 n=256: 1280/1536
+- 2026-11-09T21:48:12+00:00 | RESIDUAL gpt2 n=256: 1408/1536
+- 2026-11-09T21:48:16+00:00 | RESIDUAL gpt2 n=256: 1536/1536
+- 2026-11-09T21:49:43+00:00 | RESIDUAL DONE gpt2 n=256; 137.6s
+- 2026-11-09T21:49:44+00:00 | RESIDUAL START gpt2-medium n=256: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:49:48+00:00 | RESIDUAL gpt2-medium n=256: 128/1536
+- 2026-11-09T21:49:53+00:00 | RESIDUAL gpt2-medium n=256: 256/1536
+- 2026-11-09T21:49:59+00:00 | RESIDUAL gpt2-medium n=256: 384/1536
+- 2026-11-09T21:50:04+00:00 | RESIDUAL gpt2-medium n=256: 512/1536
+- 2026-11-09T21:50:08+00:00 | RESIDUAL gpt2-medium n=256: 640/1536
+- 2026-11-09T21:50:12+00:00 | RESIDUAL gpt2-medium n=256: 768/1536
+- 2026-11-09T21:50:15+00:00 | RESIDUAL gpt2-medium n=256: 896/1536
+- 2026-11-09T21:50:19+00:00 | RESIDUAL gpt2-medium n=256: 1024/1536
+- 2026-11-09T21:50:23+00:00 | RESIDUAL gpt2-medium n=256: 1152/1536
+- 2026-11-09T21:50:26+00:00 | RESIDUAL gpt2-medium n=256: 1280/1536
+- 2026-11-09T21:50:30+00:00 | RESIDUAL gpt2-medium n=256: 1408/1536
+- 2026-11-09T21:50:35+00:00 | RESIDUAL gpt2-medium n=256: 1536/1536
+- 2026-11-09T21:51:54+00:00 | LINE ENDPOINT CONTROL n=256: reference=0.3091042982543027, direct=0.3091042982543027, diff=0; reference=24.5s, direct=0.125s; dense NNLS final subproblem of full-dictionary OMP; same kernel/default limit; literal sequence still running
+- 2026-11-09T21:52:02+00:00 | RESIDUAL DONE gpt2-medium n=256; 138.9s
+- 2026-11-09T21:52:03+00:00 | RESIDUAL START EleutherAI/pythia-410m n=256: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:52:07+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 128/1536
+- 2026-11-09T21:52:11+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 256/1536
+- 2026-11-09T21:52:14+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 384/1536
+- 2026-11-09T21:52:18+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 512/1536
+- 2026-11-09T21:52:22+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 640/1536
+- 2026-11-09T21:52:25+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 768/1536
+- 2026-11-09T21:52:29+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 896/1536
+- 2026-11-09T21:52:33+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 1024/1536
+- 2026-11-09T21:52:37+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 1152/1536
+- 2026-11-09T21:52:41+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 1280/1536
+- 2026-11-09T21:52:44+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 1408/1536
+- 2026-11-09T21:52:47+00:00 | RESIDUAL EleutherAI/pythia-410m n=256: 1536/1536
+- 2026-11-09T21:54:08+00:00 | RESIDUAL DONE EleutherAI/pythia-410m n=256; 126.3s
+- 2026-11-09T21:54:10+00:00 | RESIDUAL START EleutherAI/pythia-1.4b n=256: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:54:13+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 128/1536
+- 2026-11-09T21:54:17+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 256/1536
+- 2026-11-09T21:54:20+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 384/1536
+- 2026-11-09T21:54:24+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 512/1536
+- 2026-11-09T21:54:28+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 640/1536
+- 2026-11-09T21:54:31+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 768/1536
+- 2026-11-09T21:54:35+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 896/1536
+- 2026-11-09T21:54:39+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 1024/1536
+- 2026-11-09T21:54:42+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 1152/1536
+- 2026-11-09T21:54:45+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 1280/1536
+- 2026-11-09T21:54:49+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 1408/1536
+- 2026-11-09T21:54:53+00:00 | RESIDUAL EleutherAI/pythia-1.4b n=256: 1536/1536
+- 2026-11-09T21:56:20+00:00 | RESIDUAL DONE EleutherAI/pythia-1.4b n=256; 131.6s
+- 2026-11-09T21:56:22+00:00 | RESIDUAL START Qwen/Qwen2.5-0.5B n=256: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:56:25+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 128/1536
+- 2026-11-09T21:56:29+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 256/1536
+- 2026-11-09T21:56:33+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 384/1536
+- 2026-11-09T21:56:38+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 512/1536
+- 2026-11-09T21:56:43+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 640/1536
+- 2026-11-09T21:56:48+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 768/1536
+- 2026-11-09T21:56:52+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 896/1536
+- 2026-11-09T21:56:55+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 1024/1536
+- 2026-11-09T21:56:59+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 1152/1536
+- 2026-11-09T21:57:04+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 1280/1536
+- 2026-11-09T21:57:06+00:00 | LINES START gpt2 n=128: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T21:57:07+00:00 | LINES gpt2 n=128: 64/1536 seconds=1.4
+- 2026-11-09T21:57:09+00:00 | LINES gpt2 n=128: 128/1536 seconds=2.8
+- 2026-11-09T21:57:10+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 1408/1536
+- 2026-11-09T21:57:10+00:00 | LINES gpt2 n=128: 192/1536 seconds=4.3
+- 2026-11-09T21:57:12+00:00 | LINES gpt2 n=128: 256/1536 seconds=5.9
+- 2026-11-09T21:57:13+00:00 | LINES gpt2 n=128: 320/1536 seconds=7.5
+- 2026-11-09T21:57:15+00:00 | LINES gpt2 n=128: 384/1536 seconds=9.0
+- 2026-11-09T21:57:16+00:00 | LINES gpt2 n=128: 448/1536 seconds=10.5
+- 2026-11-09T21:57:18+00:00 | LINES gpt2 n=128: 512/1536 seconds=12.0
+- 2026-11-09T21:57:19+00:00 | RESIDUAL Qwen/Qwen2.5-0.5B n=256: 1536/1536
+- 2026-11-09T21:57:19+00:00 | LINES gpt2 n=128: 576/1536 seconds=13.5
+- 2026-11-09T21:57:21+00:00 | LINES gpt2 n=128: 640/1536 seconds=14.9
+- 2026-11-09T21:57:22+00:00 | LINES gpt2 n=128: 704/1536 seconds=16.3
+- 2026-11-09T21:57:24+00:00 | LINES gpt2 n=128: 768/1536 seconds=18.0
+- 2026-11-09T21:57:25+00:00 | LINES gpt2 n=128: 832/1536 seconds=19.7
+- 2026-11-09T21:57:27+00:00 | LINES gpt2 n=128: 896/1536 seconds=21.2
+- 2026-11-09T21:57:28+00:00 | LINES gpt2 n=128: 960/1536 seconds=22.7
+- 2026-11-09T21:57:30+00:00 | LINES gpt2 n=128: 1024/1536 seconds=24.1
+- 2026-11-09T21:57:31+00:00 | LINES gpt2 n=128: 1088/1536 seconds=25.6
+- 2026-11-09T21:57:33+00:00 | LINES gpt2 n=128: 1152/1536 seconds=27.0
+- 2026-11-09T21:57:34+00:00 | LINES gpt2 n=128: 1216/1536 seconds=28.5
+- 2026-11-09T21:57:36+00:00 | LINES gpt2 n=128: 1280/1536 seconds=30.1
+- 2026-11-09T21:57:37+00:00 | LINES gpt2 n=128: 1344/1536 seconds=31.6
+- 2026-11-09T21:57:39+00:00 | LINES gpt2 n=128: 1408/1536 seconds=33.2
+- 2026-11-09T21:57:40+00:00 | LINES gpt2 n=128: 1472/1536 seconds=34.7
+- 2026-11-09T21:57:42+00:00 | LINES gpt2 n=128: 1536/1536 seconds=36.3
+- 2026-11-09T21:57:48+00:00 | LINES DONE gpt2 n=128; all 1536 matched instances; seconds=42.5
+- 2026-11-09T21:57:49+00:00 | LINES START gpt2-medium n=128: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T21:57:50+00:00 | LINES gpt2-medium n=128: 64/1536 seconds=1.4
+- 2026-11-09T21:57:52+00:00 | LINES gpt2-medium n=128: 128/1536 seconds=2.8
+- 2026-11-09T21:57:53+00:00 | LINES gpt2-medium n=128: 192/1536 seconds=4.3
+- 2026-11-09T21:57:55+00:00 | LINES gpt2-medium n=128: 256/1536 seconds=6.0
+- 2026-11-09T21:57:56+00:00 | LINES gpt2-medium n=128: 320/1536 seconds=7.4
+- 2026-11-09T21:57:58+00:00 | LINES gpt2-medium n=128: 384/1536 seconds=8.8
+- 2026-11-09T21:57:59+00:00 | LINES gpt2-medium n=128: 448/1536 seconds=10.2
+- 2026-11-09T21:58:00+00:00 | LINES gpt2-medium n=128: 512/1536 seconds=11.6
+- 2026-11-09T21:58:02+00:00 | LINES gpt2-medium n=128: 576/1536 seconds=13.3
+- 2026-11-09T21:58:04+00:00 | LINES gpt2-medium n=128: 640/1536 seconds=14.8
+- 2026-11-09T21:58:05+00:00 | LINES gpt2-medium n=128: 704/1536 seconds=16.2
+- 2026-11-09T21:58:06+00:00 | LINES gpt2-medium n=128: 768/1536 seconds=17.6
+- 2026-11-09T21:58:08+00:00 | LINES gpt2-medium n=128: 832/1536 seconds=19.1
+- 2026-11-09T21:58:09+00:00 | LINES gpt2-medium n=128: 896/1536 seconds=20.6
+- 2026-11-09T21:58:11+00:00 | LINES gpt2-medium n=128: 960/1536 seconds=22.2
+- 2026-11-09T21:58:12+00:00 | LINES gpt2-medium n=128: 1024/1536 seconds=23.7
+- 2026-11-09T21:58:14+00:00 | LINES gpt2-medium n=128: 1088/1536 seconds=25.2
+- 2026-11-09T21:58:15+00:00 | LINES gpt2-medium n=128: 1152/1536 seconds=26.7
+- 2026-11-09T21:58:17+00:00 | LINES gpt2-medium n=128: 1216/1536 seconds=28.4
+- 2026-11-09T21:58:19+00:00 | LINES gpt2-medium n=128: 1280/1536 seconds=30.0
+- 2026-11-09T21:58:20+00:00 | LINES gpt2-medium n=128: 1344/1536 seconds=31.6
+- 2026-11-09T21:58:22+00:00 | LINES gpt2-medium n=128: 1408/1536 seconds=33.2
+- 2026-11-09T21:58:23+00:00 | LINES gpt2-medium n=128: 1472/1536 seconds=34.6
+- 2026-11-09T21:58:25+00:00 | LINES gpt2-medium n=128: 1536/1536 seconds=36.1
+- 2026-11-09T21:58:33+00:00 | LINES DONE gpt2-medium n=128; all 1536 matched instances; seconds=44.0
+- 2026-11-09T21:58:33+00:00 | LINES START EleutherAI/pythia-410m n=128: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T21:58:35+00:00 | LINES EleutherAI/pythia-410m n=128: 64/1536 seconds=1.5
+- 2026-11-09T21:58:37+00:00 | LINES EleutherAI/pythia-410m n=128: 128/1536 seconds=3.1
+- 2026-11-09T21:58:38+00:00 | LINES EleutherAI/pythia-410m n=128: 192/1536 seconds=4.9
+- 2026-11-09T21:58:40+00:00 | LINES EleutherAI/pythia-410m n=128: 256/1536 seconds=6.3
+- 2026-11-09T21:58:41+00:00 | LINES EleutherAI/pythia-410m n=128: 320/1536 seconds=7.6
+- 2026-11-09T21:58:42+00:00 | LINES EleutherAI/pythia-410m n=128: 384/1536 seconds=8.9
+- 2026-11-09T21:58:44+00:00 | LINES EleutherAI/pythia-410m n=128: 448/1536 seconds=10.2
+- 2026-11-09T21:58:45+00:00 | LINES EleutherAI/pythia-410m n=128: 512/1536 seconds=11.6
+- 2026-11-09T21:58:46+00:00 | LINES EleutherAI/pythia-410m n=128: 576/1536 seconds=12.9
+- 2026-11-09T21:58:48+00:00 | LINES EleutherAI/pythia-410m n=128: 640/1536 seconds=14.2
+- 2026-11-09T21:58:49+00:00 | LINES EleutherAI/pythia-410m n=128: 704/1536 seconds=15.5
+- 2026-11-09T21:58:50+00:00 | LINES EleutherAI/pythia-410m n=128: 768/1536 seconds=16.9
+- 2026-11-09T21:58:52+00:00 | LINES EleutherAI/pythia-410m n=128: 832/1536 seconds=18.2
+- 2026-11-09T21:58:53+00:00 | LINES EleutherAI/pythia-410m n=128: 896/1536 seconds=19.5
+- 2026-11-09T21:58:54+00:00 | LINES EleutherAI/pythia-410m n=128: 960/1536 seconds=20.8
+- 2026-11-09T21:58:56+00:00 | LINES EleutherAI/pythia-410m n=128: 1024/1536 seconds=22.2
+- 2026-11-09T21:58:57+00:00 | LINES EleutherAI/pythia-410m n=128: 1088/1536 seconds=23.6
+- 2026-11-09T21:58:58+00:00 | LINES EleutherAI/pythia-410m n=128: 1152/1536 seconds=24.9
+- 2026-11-09T21:59:00+00:00 | LINES EleutherAI/pythia-410m n=128: 1216/1536 seconds=26.2
+- 2026-11-09T21:59:01+00:00 | LINES EleutherAI/pythia-410m n=128: 1280/1536 seconds=27.5
+- 2026-11-09T21:59:02+00:00 | LINES EleutherAI/pythia-410m n=128: 1344/1536 seconds=28.9
+- 2026-11-09T21:59:04+00:00 | LINES EleutherAI/pythia-410m n=128: 1408/1536 seconds=30.4
+- 2026-11-09T21:59:05+00:00 | LINES EleutherAI/pythia-410m n=128: 1472/1536 seconds=31.8
+- 2026-11-09T21:59:07+00:00 | LINES EleutherAI/pythia-410m n=128: 1536/1536 seconds=33.2
+- 2026-11-09T21:59:09+00:00 | RESIDUAL DONE Qwen/Qwen2.5-0.5B n=256; 168.4s
+- 2026-11-09T21:59:11+00:00 | RESIDUAL START Qwen/Qwen2.5-3B n=256: symmetric K8/q7; all spectra/spatial energy; primary imported describe
+- 2026-11-09T21:59:15+00:00 | LINES DONE EleutherAI/pythia-410m n=128; all 1536 matched instances; seconds=41.2
+- 2026-11-09T21:59:15+00:00 | LINES START EleutherAI/pythia-1.4b n=128: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T21:59:16+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 128/2304
+- 2026-11-09T21:59:17+00:00 | LINES EleutherAI/pythia-1.4b n=128: 64/1536 seconds=1.4
+- 2026-11-09T21:59:18+00:00 | LINES EleutherAI/pythia-1.4b n=128: 128/1536 seconds=2.7
+- 2026-11-09T21:59:20+00:00 | LINES EleutherAI/pythia-1.4b n=128: 192/1536 seconds=4.2
+- 2026-11-09T21:59:21+00:00 | LINES EleutherAI/pythia-1.4b n=128: 256/1536 seconds=5.6
+- 2026-11-09T21:59:22+00:00 | LINES EleutherAI/pythia-1.4b n=128: 320/1536 seconds=7.0
+- 2026-11-09T21:59:23+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 256/2304
+- 2026-11-09T21:59:24+00:00 | LINES EleutherAI/pythia-1.4b n=128: 384/1536 seconds=8.3
+- 2026-11-09T21:59:25+00:00 | LINES EleutherAI/pythia-1.4b n=128: 448/1536 seconds=9.7
+- 2026-11-09T21:59:26+00:00 | LINES EleutherAI/pythia-1.4b n=128: 512/1536 seconds=11.0
+- 2026-11-09T21:59:28+00:00 | LINES EleutherAI/pythia-1.4b n=128: 576/1536 seconds=12.4
+- 2026-11-09T21:59:28+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 384/2304
+- 2026-11-09T21:59:29+00:00 | LINES EleutherAI/pythia-1.4b n=128: 640/1536 seconds=13.7
+- 2026-11-09T21:59:30+00:00 | LINES EleutherAI/pythia-1.4b n=128: 704/1536 seconds=15.1
+- 2026-11-09T21:59:32+00:00 | LINES EleutherAI/pythia-1.4b n=128: 768/1536 seconds=16.4
+- 2026-11-09T21:59:33+00:00 | LINES EleutherAI/pythia-1.4b n=128: 832/1536 seconds=17.8
+- 2026-11-09T21:59:34+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 512/2304
+- 2026-11-09T21:59:35+00:00 | LINES EleutherAI/pythia-1.4b n=128: 896/1536 seconds=19.3
+- 2026-11-09T21:59:36+00:00 | LINES EleutherAI/pythia-1.4b n=128: 960/1536 seconds=20.5
+- 2026-11-09T21:59:37+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1024/1536 seconds=22.0
+- 2026-11-09T21:59:39+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1088/1536 seconds=23.4
+- 2026-11-09T21:59:41+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1152/1536 seconds=25.2
+- 2026-11-09T21:59:41+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 640/2304
+- 2026-11-09T21:59:42+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1216/1536 seconds=26.6
+- 2026-11-09T21:59:43+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1280/1536 seconds=27.9
+- 2026-11-09T21:59:45+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1344/1536 seconds=29.2
+- 2026-11-09T21:59:46+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1408/1536 seconds=30.6
+- 2026-11-09T21:59:46+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 768/2304
+- 2026-11-09T21:59:47+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1472/1536 seconds=31.9
+- 2026-11-09T21:59:49+00:00 | LINES EleutherAI/pythia-1.4b n=128: 1536/1536 seconds=33.3
+- 2026-11-09T21:59:52+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 896/2304
+- 2026-11-09T21:59:56+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1024/2304
+- 2026-11-09T21:59:57+00:00 | LINES DONE EleutherAI/pythia-1.4b n=128; all 1536 matched instances; seconds=41.4
+- 2026-11-09T21:59:57+00:00 | LINES START Qwen/Qwen2.5-0.5B n=128: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T21:59:59+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 64/1536 seconds=1.6
+- 2026-11-09T22:00:01+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 128/1536 seconds=3.1
+- 2026-11-09T22:00:02+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 192/1536 seconds=4.6
+- 2026-11-09T22:00:04+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 256/1536 seconds=6.1
+- 2026-11-09T22:00:05+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1152/2304
+- 2026-11-09T22:00:05+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 320/1536 seconds=7.7
+- 2026-11-09T22:00:07+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 384/1536 seconds=9.4
+- 2026-11-09T22:00:08+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 448/1536 seconds=10.9
+- 2026-11-09T22:00:10+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 512/1536 seconds=12.5
+- 2026-11-09T22:00:11+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 576/1536 seconds=14.0
+- 2026-11-09T22:00:13+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 640/1536 seconds=15.6
+- 2026-11-09T22:00:15+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 704/1536 seconds=17.1
+- 2026-11-09T22:00:16+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 768/1536 seconds=18.5
+- 2026-11-09T22:00:17+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1280/2304
+- 2026-11-09T22:00:17+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 832/1536 seconds=19.9
+- 2026-11-09T22:00:19+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 896/1536 seconds=21.2
+- 2026-11-09T22:00:20+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 960/1536 seconds=22.6
+- 2026-11-09T22:00:21+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1024/1536 seconds=24.0
+- 2026-11-09T22:00:22+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1408/2304
+- 2026-11-09T22:00:23+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1088/1536 seconds=25.4
+- 2026-11-09T22:00:24+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1152/1536 seconds=26.7
+- 2026-11-09T22:00:26+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1216/1536 seconds=28.1
+- 2026-11-09T22:00:27+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1280/1536 seconds=29.5
+- 2026-11-09T22:00:28+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1536/2304
+- 2026-11-09T22:00:28+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1344/1536 seconds=30.8
+- 2026-11-09T22:00:30+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1408/1536 seconds=32.2
+- 2026-11-09T22:00:31+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1472/1536 seconds=33.6
+- 2026-11-09T22:00:33+00:00 | LINES Qwen/Qwen2.5-0.5B n=128: 1536/1536 seconds=35.1
+- 2026-11-09T22:00:33+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1664/2304
+- 2026-11-09T22:00:38+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1792/2304
+- 2026-11-09T22:00:39+00:00 | LINES DONE Qwen/Qwen2.5-0.5B n=128; all 1536 matched instances; seconds=41.9
+- 2026-11-09T22:00:40+00:00 | LINES START Qwen/Qwen2.5-3B n=128: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 2304 instances
+- 2026-11-09T22:00:42+00:00 | LINES Qwen/Qwen2.5-3B n=128: 64/2304 seconds=1.4
+- 2026-11-09T22:00:43+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 1920/2304
+- 2026-11-09T22:00:43+00:00 | LINES Qwen/Qwen2.5-3B n=128: 128/2304 seconds=2.8
+- 2026-11-09T22:00:44+00:00 | LINES Qwen/Qwen2.5-3B n=128: 192/2304 seconds=4.2
+- 2026-11-09T22:00:46+00:00 | LINES Qwen/Qwen2.5-3B n=128: 256/2304 seconds=5.6
+- 2026-11-09T22:00:47+00:00 | LINES Qwen/Qwen2.5-3B n=128: 320/2304 seconds=7.0
+- 2026-11-09T22:00:48+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 2048/2304
+- 2026-11-09T22:00:49+00:00 | LINES Qwen/Qwen2.5-3B n=128: 384/2304 seconds=8.4
+- 2026-11-09T22:00:50+00:00 | LINES Qwen/Qwen2.5-3B n=128: 448/2304 seconds=9.7
+- 2026-11-09T22:00:51+00:00 | LINES Qwen/Qwen2.5-3B n=128: 512/2304 seconds=11.1
+- 2026-11-09T22:00:53+00:00 | LINES Qwen/Qwen2.5-3B n=128: 576/2304 seconds=12.8
+- 2026-11-09T22:00:53+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 2176/2304
+- 2026-11-09T22:00:54+00:00 | LINES Qwen/Qwen2.5-3B n=128: 640/2304 seconds=14.2
+- 2026-11-09T22:00:56+00:00 | LINES Qwen/Qwen2.5-3B n=128: 704/2304 seconds=15.6
+- 2026-11-09T22:00:57+00:00 | LINES Qwen/Qwen2.5-3B n=128: 768/2304 seconds=17.1
+- 2026-11-09T22:00:59+00:00 | LINES Qwen/Qwen2.5-3B n=128: 832/2304 seconds=18.5
+- 2026-11-09T22:01:00+00:00 | LINES Qwen/Qwen2.5-3B n=128: 896/2304 seconds=19.9
+- 2026-11-09T22:01:00+00:00 | RESIDUAL Qwen/Qwen2.5-3B n=256: 2304/2304
+- 2026-11-09T22:01:01+00:00 | LINES Qwen/Qwen2.5-3B n=128: 960/2304 seconds=21.3
+- 2026-11-09T22:01:03+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1024/2304 seconds=22.7
+- 2026-11-09T22:01:04+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1088/2304 seconds=24.2
+- 2026-11-09T22:01:06+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1152/2304 seconds=25.7
+- 2026-11-09T22:01:07+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1216/2304 seconds=27.3
+- 2026-11-09T22:01:09+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1280/2304 seconds=28.8
+- 2026-11-09T22:01:10+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1344/2304 seconds=30.2
+- 2026-11-09T22:01:12+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1408/2304 seconds=31.6
+- 2026-11-09T22:01:13+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1472/2304 seconds=33.0
+- 2026-11-09T22:01:14+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1536/2304 seconds=34.3
+- 2026-11-09T22:01:16+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1600/2304 seconds=35.6
+- 2026-11-09T22:01:17+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1664/2304 seconds=37.0
+- 2026-11-09T22:01:19+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1728/2304 seconds=38.4
+- 2026-11-09T22:01:20+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1792/2304 seconds=40.0
+- 2026-11-09T22:01:22+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1856/2304 seconds=41.7
+- 2026-11-09T22:01:23+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1920/2304 seconds=43.3
+- 2026-11-09T22:01:25+00:00 | LINES Qwen/Qwen2.5-3B n=128: 1984/2304 seconds=44.8
+- 2026-11-09T22:01:27+00:00 | LINES Qwen/Qwen2.5-3B n=128: 2048/2304 seconds=46.4
+- 2026-11-09T22:01:28+00:00 | LINES Qwen/Qwen2.5-3B n=128: 2112/2304 seconds=48.0
+- 2026-11-09T22:01:30+00:00 | LINES Qwen/Qwen2.5-3B n=128: 2176/2304 seconds=49.5
+- 2026-11-09T22:01:31+00:00 | LINES Qwen/Qwen2.5-3B n=128: 2240/2304 seconds=51.1
+- 2026-11-09T22:01:33+00:00 | LINES Qwen/Qwen2.5-3B n=128: 2304/2304 seconds=52.6
+- 2026-11-09T22:01:47+00:00 | LINES DONE Qwen/Qwen2.5-3B n=128; all 2304 matched instances; seconds=66.7
+- 2026-11-09T22:01:55+00:00 | LINES START gpt2 n=256: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T22:02:03+00:00 | LINES gpt2 n=256: 64/1536 seconds=8.4
+- 2026-11-09T22:02:12+00:00 | LINES gpt2 n=256: 128/1536 seconds=17.0
+- 2026-11-09T22:02:21+00:00 | LINES gpt2 n=256: 192/1536 seconds=25.8
+- 2026-11-09T22:02:29+00:00 | LINES gpt2 n=256: 256/1536 seconds=34.5
+- 2026-11-09T22:02:38+00:00 | LINES gpt2 n=256: 320/1536 seconds=43.4
+- 2026-11-09T22:02:47+00:00 | LINES gpt2 n=256: 384/1536 seconds=51.8
+- 2026-11-09T22:02:55+00:00 | LINES gpt2 n=256: 448/1536 seconds=60.1
+- 2026-11-09T22:03:05+00:00 | LINES gpt2 n=256: 512/1536 seconds=69.8
+- 2026-11-09T22:03:11+00:00 | RESIDUAL DONE Qwen/Qwen2.5-3B n=256; 242.2s
+- 2026-11-09T22:03:14+00:00 | LINES gpt2 n=256: 576/1536 seconds=79.5
+- 2026-11-09T22:03:24+00:00 | LINES gpt2 n=256: 640/1536 seconds=88.7
+- 2026-11-09T22:03:33+00:00 | LINES gpt2 n=256: 704/1536 seconds=98.1
+- 2026-11-09T22:03:43+00:00 | LINES gpt2 n=256: 768/1536 seconds=108.0
+- 2026-11-09T22:03:52+00:00 | LINES gpt2 n=256: 832/1536 seconds=117.0
+- 2026-11-09T22:04:00+00:00 | LINES gpt2 n=256: 896/1536 seconds=124.7
+- 2026-11-09T22:04:08+00:00 | LINES gpt2 n=256: 960/1536 seconds=132.7
+- 2026-11-09T22:04:16+00:00 | LINES gpt2 n=256: 1024/1536 seconds=140.9
+- 2026-11-09T22:04:23+00:00 | LINES gpt2 n=256: 1088/1536 seconds=148.6
+- 2026-11-09T22:04:31+00:00 | LINES gpt2 n=256: 1152/1536 seconds=156.1
+- 2026-11-09T22:04:39+00:00 | LINES gpt2 n=256: 1216/1536 seconds=164.1
+- 2026-11-09T22:04:47+00:00 | LINES gpt2 n=256: 1280/1536 seconds=172.5
+- 2026-11-09T22:04:56+00:00 | LINES gpt2 n=256: 1344/1536 seconds=180.7
+- 2026-11-09T22:05:03+00:00 | LINES gpt2 n=256: 1408/1536 seconds=188.6
+- 2026-11-09T22:05:12+00:00 | LINES gpt2 n=256: 1472/1536 seconds=196.8
+- 2026-11-09T22:05:20+00:00 | LINES gpt2 n=256: 1536/1536 seconds=204.9
+- 2026-11-09T22:05:25+00:00 | LINES DONE gpt2 n=256; all 1536 matched instances; seconds=210.5
+- 2026-11-09T22:05:27+00:00 | LINES START gpt2-medium n=256: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T22:05:35+00:00 | LINES gpt2-medium n=256: 64/1536 seconds=8.1
+- 2026-11-09T22:05:43+00:00 | LINES gpt2-medium n=256: 128/1536 seconds=16.2
+- 2026-11-09T22:05:51+00:00 | LINES gpt2-medium n=256: 192/1536 seconds=24.0
+- 2026-11-09T22:05:59+00:00 | LINES gpt2-medium n=256: 256/1536 seconds=32.3
+- 2026-11-09T22:06:09+00:00 | LINES gpt2-medium n=256: 320/1536 seconds=41.8
+- 2026-11-09T22:06:18+00:00 | LINES gpt2-medium n=256: 384/1536 seconds=51.1
+- 2026-11-09T22:06:27+00:00 | LINES gpt2-medium n=256: 448/1536 seconds=60.1
+- 2026-11-09T22:06:36+00:00 | LINES gpt2-medium n=256: 512/1536 seconds=69.3
+- 2026-11-09T22:06:45+00:00 | LINES gpt2-medium n=256: 576/1536 seconds=78.6
+- 2026-11-09T22:06:54+00:00 | LINES gpt2-medium n=256: 640/1536 seconds=87.7
+- 2026-11-09T22:07:02+00:00 | LINES gpt2-medium n=256: 704/1536 seconds=95.7
+- 2026-11-09T22:07:10+00:00 | LINES gpt2-medium n=256: 768/1536 seconds=103.5
+- 2026-11-09T22:07:18+00:00 | LINES gpt2-medium n=256: 832/1536 seconds=111.4
+- 2026-11-09T22:07:25+00:00 | LINES gpt2-medium n=256: 896/1536 seconds=118.8
+- 2026-11-09T22:07:33+00:00 | LINES gpt2-medium n=256: 960/1536 seconds=126.4
+- 2026-11-09T22:07:41+00:00 | LINES gpt2-medium n=256: 1024/1536 seconds=134.2
+- 2026-11-09T22:07:49+00:00 | LINES gpt2-medium n=256: 1088/1536 seconds=141.8
+- 2026-11-09T22:07:57+00:00 | LINES gpt2-medium n=256: 1152/1536 seconds=150.3
+- 2026-11-09T22:08:05+00:00 | LINES gpt2-medium n=256: 1216/1536 seconds=158.3
+- 2026-11-09T22:08:13+00:00 | LINES gpt2-medium n=256: 1280/1536 seconds=166.5
+- 2026-11-09T22:08:21+00:00 | LINES gpt2-medium n=256: 1344/1536 seconds=174.0
+- 2026-11-09T22:08:28+00:00 | LINES gpt2-medium n=256: 1408/1536 seconds=181.5
+- 2026-11-09T22:08:36+00:00 | LINES gpt2-medium n=256: 1472/1536 seconds=189.4
+- 2026-11-09T22:08:44+00:00 | LINES gpt2-medium n=256: 1536/1536 seconds=197.3
+- 2026-11-09T22:08:51+00:00 | LINES DONE gpt2-medium n=256; all 1536 matched instances; seconds=204.2
+- 2026-11-09T22:08:52+00:00 | LINES START EleutherAI/pythia-410m n=256: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T22:09:00+00:00 | LINES EleutherAI/pythia-410m n=256: 64/1536 seconds=7.5
+- 2026-11-09T22:09:07+00:00 | LINES EleutherAI/pythia-410m n=256: 128/1536 seconds=15.0
+- 2026-11-09T22:09:15+00:00 | LINES EleutherAI/pythia-410m n=256: 192/1536 seconds=23.1
+- 2026-11-09T22:09:23+00:00 | LINES EleutherAI/pythia-410m n=256: 256/1536 seconds=30.6
+- 2026-11-09T22:09:30+00:00 | LINES EleutherAI/pythia-410m n=256: 320/1536 seconds=37.5
+- 2026-11-09T22:09:37+00:00 | LINES EleutherAI/pythia-410m n=256: 384/1536 seconds=45.0
+- 2026-11-09T22:09:45+00:00 | LINES EleutherAI/pythia-410m n=256: 448/1536 seconds=52.3
+- 2026-11-09T22:09:52+00:00 | LINES EleutherAI/pythia-410m n=256: 512/1536 seconds=59.4
+- 2026-11-09T22:09:59+00:00 | LINES EleutherAI/pythia-410m n=256: 576/1536 seconds=66.4
+- 2026-11-09T22:10:06+00:00 | LINES EleutherAI/pythia-410m n=256: 640/1536 seconds=73.5
+- 2026-11-09T22:10:13+00:00 | LINES EleutherAI/pythia-410m n=256: 704/1536 seconds=80.9
+- 2026-11-09T22:10:21+00:00 | LINES EleutherAI/pythia-410m n=256: 768/1536 seconds=88.4
+- 2026-11-09T22:10:28+00:00 | LINES EleutherAI/pythia-410m n=256: 832/1536 seconds=95.7
+- 2026-11-09T22:10:35+00:00 | LINES EleutherAI/pythia-410m n=256: 896/1536 seconds=103.0
+- 2026-11-09T22:10:43+00:00 | LINES EleutherAI/pythia-410m n=256: 960/1536 seconds=110.5
+- 2026-11-09T22:10:50+00:00 | LINES EleutherAI/pythia-410m n=256: 1024/1536 seconds=117.4
+- 2026-11-09T22:10:57+00:00 | LINES EleutherAI/pythia-410m n=256: 1088/1536 seconds=124.6
+- 2026-11-09T22:11:04+00:00 | LINES EleutherAI/pythia-410m n=256: 1152/1536 seconds=131.9
+- 2026-11-09T22:11:12+00:00 | LINES EleutherAI/pythia-410m n=256: 1216/1536 seconds=139.5
+- 2026-11-09T22:11:19+00:00 | LINES EleutherAI/pythia-410m n=256: 1280/1536 seconds=146.8
+- 2026-11-09T22:11:27+00:00 | LINES EleutherAI/pythia-410m n=256: 1344/1536 seconds=154.3
+- 2026-11-09T22:11:34+00:00 | LINES EleutherAI/pythia-410m n=256: 1408/1536 seconds=161.9
+- 2026-11-09T22:11:42+00:00 | LINES EleutherAI/pythia-410m n=256: 1472/1536 seconds=169.5
+- 2026-11-09T22:11:49+00:00 | LINES EleutherAI/pythia-410m n=256: 1536/1536 seconds=177.1
+- 2026-11-09T22:11:55+00:00 | LINES DONE EleutherAI/pythia-410m n=256; all 1536 matched instances; seconds=182.8
+- 2026-11-09T22:11:57+00:00 | LINES START EleutherAI/pythia-1.4b n=256: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T22:12:04+00:00 | LINES EleutherAI/pythia-1.4b n=256: 64/1536 seconds=7.3
+- 2026-11-09T22:12:11+00:00 | LINES EleutherAI/pythia-1.4b n=256: 128/1536 seconds=14.5
+- 2026-11-09T22:12:18+00:00 | LINES EleutherAI/pythia-1.4b n=256: 192/1536 seconds=21.9
+- 2026-11-09T22:12:26+00:00 | LINES EleutherAI/pythia-1.4b n=256: 256/1536 seconds=29.3
+- 2026-11-09T22:12:33+00:00 | LINES EleutherAI/pythia-1.4b n=256: 320/1536 seconds=36.9
+- 2026-11-09T22:12:41+00:00 | LINES EleutherAI/pythia-1.4b n=256: 384/1536 seconds=44.5
+- 2026-11-09T22:12:48+00:00 | LINES EleutherAI/pythia-1.4b n=256: 448/1536 seconds=51.9
+- 2026-11-09T22:12:56+00:00 | LINES EleutherAI/pythia-1.4b n=256: 512/1536 seconds=59.0
+- 2026-11-09T22:13:03+00:00 | LINES EleutherAI/pythia-1.4b n=256: 576/1536 seconds=66.4
+- 2026-11-09T22:13:10+00:00 | LINES EleutherAI/pythia-1.4b n=256: 640/1536 seconds=73.9
+- 2026-11-09T22:13:18+00:00 | LINES EleutherAI/pythia-1.4b n=256: 704/1536 seconds=81.1
+- 2026-11-09T22:13:25+00:00 | LINES EleutherAI/pythia-1.4b n=256: 768/1536 seconds=88.6
+- 2026-11-09T22:13:33+00:00 | LINES EleutherAI/pythia-1.4b n=256: 832/1536 seconds=96.3
+- 2026-11-09T22:13:41+00:00 | LINES EleutherAI/pythia-1.4b n=256: 896/1536 seconds=104.1
+- 2026-11-09T22:13:48+00:00 | LINES EleutherAI/pythia-1.4b n=256: 960/1536 seconds=111.5
+- 2026-11-09T22:13:56+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1024/1536 seconds=119.0
+- 2026-11-09T22:14:03+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1088/1536 seconds=126.9
+- 2026-11-09T22:14:12+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1152/1536 seconds=135.9
+- 2026-11-09T22:14:21+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1216/1536 seconds=144.8
+- 2026-11-09T22:14:30+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1280/1536 seconds=153.7
+- 2026-11-09T22:14:39+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1344/1536 seconds=162.6
+- 2026-11-09T22:14:48+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1408/1536 seconds=171.0
+- 2026-11-09T22:14:56+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1472/1536 seconds=179.7
+- 2026-11-09T22:15:05+00:00 | LINES EleutherAI/pythia-1.4b n=256: 1536/1536 seconds=188.4
+- 2026-11-09T22:15:13+00:00 | LINES DONE EleutherAI/pythia-1.4b n=256; all 1536 matched instances; seconds=196.4
+- 2026-11-09T22:15:15+00:00 | LINES START Qwen/Qwen2.5-0.5B n=256: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 1536 instances
+- 2026-11-09T22:15:24+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 64/1536 seconds=9.0
+- 2026-11-09T22:15:32+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 128/1536 seconds=17.6
+- 2026-11-09T22:15:42+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 192/1536 seconds=26.8
+- 2026-11-09T22:15:51+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 256/1536 seconds=35.9
+- 2026-11-09T22:15:59+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 320/1536 seconds=44.5
+- 2026-11-09T22:16:08+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 384/1536 seconds=53.6
+- 2026-11-09T22:16:17+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 448/1536 seconds=62.7
+- 2026-11-09T22:16:27+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 512/1536 seconds=72.3
+- 2026-11-09T22:16:37+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 576/1536 seconds=81.8
+- 2026-11-09T22:16:46+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 640/1536 seconds=91.6
+- 2026-11-09T22:16:50+00:00 | V2 CONTROLS PASSED: q=K-1, n128/256 fp32/bf16, shared uniform completion and counters, document-median signed-rank direction; no LM forward/KL
+- 2026-11-09T22:16:56+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 704/1536 seconds=101.7
+- 2026-11-09T22:17:06+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 768/1536 seconds=111.4
+- 2026-11-09T22:17:15+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 832/1536 seconds=120.4
+- 2026-11-09T22:17:24+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 896/1536 seconds=129.6
+- 2026-11-09T22:17:33+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 960/1536 seconds=138.8
+- 2026-11-09T22:17:43+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1024/1536 seconds=148.2
+- 2026-11-09T22:17:53+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1088/1536 seconds=158.4
+- 2026-11-09T22:18:03+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1152/1536 seconds=168.3
+- 2026-11-09T22:18:05+00:00 | STATISTICS CONTROL PASSED: document medians negative despite positive document means; signed-rank has n64/rb=-1; instance median and secondary mean remain distinct
+- 2026-11-09T22:18:12+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1216/1536 seconds=177.6
+- 2026-11-09T22:18:22+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1280/1536 seconds=187.7
+- 2026-11-09T22:18:32+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1344/1536 seconds=197.5
+- 2026-11-09T22:18:41+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1408/1536 seconds=206.5
+- 2026-11-09T22:18:50+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1472/1536 seconds=215.7
+- 2026-11-09T22:18:59+00:00 | LINES Qwen/Qwen2.5-0.5B n=256: 1536/1536 seconds=224.5
+- 2026-11-09T22:19:07+00:00 | LINES DONE Qwen/Qwen2.5-0.5B n=256; all 1536 matched instances; seconds=232.4
+- 2026-11-09T22:19:10+00:00 | LINES START Qwen/Qwen2.5-3B n=256: budgets=(4, 8, 16), endpoint=True, partial_steps=[]; all 2304 instances
+- 2026-11-09T22:19:19+00:00 | LINES Qwen/Qwen2.5-3B n=256: 64/2304 seconds=9.4
+- 2026-11-09T22:19:28+00:00 | LINES Qwen/Qwen2.5-3B n=256: 128/2304 seconds=18.7
+- 2026-11-09T22:19:38+00:00 | LINES Qwen/Qwen2.5-3B n=256: 192/2304 seconds=28.0
+- 2026-11-09T22:19:47+00:00 | LINES Qwen/Qwen2.5-3B n=256: 256/2304 seconds=37.2
+- 2026-11-09T22:19:56+00:00 | LINES Qwen/Qwen2.5-3B n=256: 320/2304 seconds=46.1
+- 2026-11-09T22:20:04+00:00 | LINES Qwen/Qwen2.5-3B n=256: 384/2304 seconds=54.7
+- 2026-11-09T22:20:13+00:00 | LINES Qwen/Qwen2.5-3B n=256: 448/2304 seconds=63.4
+- 2026-11-09T22:20:22+00:00 | LINES Qwen/Qwen2.5-3B n=256: 512/2304 seconds=72.7
+- 2026-11-09T22:20:32+00:00 | LINES Qwen/Qwen2.5-3B n=256: 576/2304 seconds=81.8
+- 2026-11-09T22:20:40+00:00 | LINES Qwen/Qwen2.5-3B n=256: 640/2304 seconds=90.6
+- 2026-11-09T22:20:49+00:00 | LINES Qwen/Qwen2.5-3B n=256: 704/2304 seconds=99.4
+- 2026-11-09T22:20:58+00:00 | LINES Qwen/Qwen2.5-3B n=256: 768/2304 seconds=108.3
+- 2026-11-09T22:21:07+00:00 | LINES Qwen/Qwen2.5-3B n=256: 832/2304 seconds=117.1
+- 2026-11-09T22:21:16+00:00 | LINES Qwen/Qwen2.5-3B n=256: 896/2304 seconds=126.2
+- 2026-11-09T22:21:25+00:00 | LINES Qwen/Qwen2.5-3B n=256: 960/2304 seconds=135.0
+- 2026-11-09T22:21:33+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1024/2304 seconds=143.6
+- 2026-11-09T22:21:43+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1088/2304 seconds=152.8
+- 2026-11-09T22:21:52+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1152/2304 seconds=162.0
+- 2026-11-09T22:22:00+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1216/2304 seconds=170.7
+- 2026-11-09T22:22:09+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1280/2304 seconds=179.6
+- 2026-11-09T22:22:19+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1344/2304 seconds=188.8
+- 2026-11-09T22:22:28+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1408/2304 seconds=197.9
+- 2026-11-09T22:22:37+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1472/2304 seconds=207.1
+- 2026-11-09T22:22:46+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1536/2304 seconds=216.0
+- 2026-11-09T22:22:55+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1600/2304 seconds=224.8
+- 2026-11-09T22:23:04+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1664/2304 seconds=233.9
+- 2026-11-09T22:23:12+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1728/2304 seconds=242.7
+- 2026-11-09T22:23:22+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1792/2304 seconds=251.8
+- 2026-11-09T22:23:31+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1856/2304 seconds=261.2
+- 2026-11-09T22:23:40+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1920/2304 seconds=270.1
+- 2026-11-09T22:23:49+00:00 | LINES Qwen/Qwen2.5-3B n=256: 1984/2304 seconds=278.9
+- 2026-11-09T22:23:58+00:00 | LINES Qwen/Qwen2.5-3B n=256: 2048/2304 seconds=288.0
+- 2026-11-09T22:24:07+00:00 | LINES Qwen/Qwen2.5-3B n=256: 2112/2304 seconds=297.0
+- 2026-11-09T22:24:16+00:00 | LINES Qwen/Qwen2.5-3B n=256: 2176/2304 seconds=306.6
+- 2026-11-09T22:24:26+00:00 | LINES Qwen/Qwen2.5-3B n=256: 2240/2304 seconds=316.4
+- 2026-11-09T22:24:35+00:00 | LINES Qwen/Qwen2.5-3B n=256: 2304/2304 seconds=325.4
+- 2026-11-09T22:24:52+00:00 | LINES DONE Qwen/Qwen2.5-3B n=256; all 2304 matched instances; seconds=341.9
+- 2026-11-09T22:31:54+00:00 | ASSEMBLED out\phase21_allocation_v2_review.json; review=True; 19968 matrices; Alg1 diagnostic17/9984; forward=waiting_for_required_V1
+- 2026-11-09T22:46:09+00:00 | BUDGET CONVENTIONS START gpt2 n=128: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:46:15+00:00 | BUDGET CONVENTIONS gpt2 n=128: 128/1536
+- 2026-11-09T22:46:21+00:00 | BUDGET CONVENTIONS gpt2 n=128: 256/1536
+- 2026-11-09T22:46:27+00:00 | BUDGET CONVENTIONS gpt2 n=128: 384/1536
+- 2026-11-09T22:46:33+00:00 | BUDGET CONVENTIONS gpt2 n=128: 512/1536
+- 2026-11-09T22:46:39+00:00 | BUDGET CONVENTIONS gpt2 n=128: 640/1536
+- 2026-11-09T22:46:45+00:00 | BUDGET CONVENTIONS gpt2 n=128: 768/1536
+- 2026-11-09T22:46:51+00:00 | BUDGET CONVENTIONS gpt2 n=128: 896/1536
+- 2026-11-09T22:46:57+00:00 | BUDGET CONVENTIONS gpt2 n=128: 1024/1536
+- 2026-11-09T22:47:03+00:00 | BUDGET CONVENTIONS gpt2 n=128: 1152/1536
+- 2026-11-09T22:47:09+00:00 | BUDGET CONVENTIONS gpt2 n=128: 1280/1536
+- 2026-11-09T22:47:15+00:00 | BUDGET CONVENTIONS gpt2 n=128: 1408/1536
+- 2026-11-09T22:47:21+00:00 | BUDGET CONVENTIONS gpt2 n=128: 1536/1536
+- 2026-11-09T22:47:25+00:00 | BUDGET CONVENTIONS DONE gpt2 n=128; seconds=76.6
+- 2026-11-09T22:47:26+00:00 | BUDGET CONVENTIONS START gpt2-medium n=128: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:47:32+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 128/1536
+- 2026-11-09T22:47:38+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 256/1536
+- 2026-11-09T22:47:44+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 384/1536
+- 2026-11-09T22:47:49+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 512/1536
+- 2026-11-09T22:47:56+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 640/1536
+- 2026-11-09T22:48:02+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 768/1536
+- 2026-11-09T22:48:08+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 896/1536
+- 2026-11-09T22:48:15+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 1024/1536
+- 2026-11-09T22:48:22+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 1152/1536
+- 2026-11-09T22:48:29+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 1280/1536
+- 2026-11-09T22:48:37+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 1408/1536
+- 2026-11-09T22:48:44+00:00 | BUDGET CONVENTIONS gpt2-medium n=128: 1536/1536
+- 2026-11-09T22:48:50+00:00 | BUDGET CONVENTIONS DONE gpt2-medium n=128; seconds=83.9
+- 2026-11-09T22:48:50+00:00 | BUDGET CONVENTIONS START EleutherAI/pythia-410m n=128: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:48:58+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 128/1536
+- 2026-11-09T22:49:07+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 256/1536
+- 2026-11-09T22:49:16+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 384/1536
+- 2026-11-09T22:49:24+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 512/1536
+- 2026-11-09T22:49:31+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 640/1536
+- 2026-11-09T22:49:37+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 768/1536
+- 2026-11-09T22:49:43+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 896/1536
+- 2026-11-09T22:49:50+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 1024/1536
+- 2026-11-09T22:49:57+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 1152/1536
+- 2026-11-09T22:50:04+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 1280/1536
+- 2026-11-09T22:50:10+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 1408/1536
+- 2026-11-09T22:50:17+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=128: 1536/1536
+- 2026-11-09T22:50:20+00:00 | COMPLETE OMP CONTROLS n128 and n256: both exact endpoint error differences zero; original source unchanged
+- 2026-11-09T22:50:22+00:00 | BUDGET CONVENTIONS DONE EleutherAI/pythia-410m n=128; seconds=91.9
+- 2026-11-09T22:50:22+00:00 | BUDGET CONVENTIONS START EleutherAI/pythia-1.4b n=128: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:50:28+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 128/1536
+- 2026-11-09T22:50:34+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 256/1536
+- 2026-11-09T22:50:41+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 384/1536
+- 2026-11-09T22:50:47+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 512/1536
+- 2026-11-09T22:50:53+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 640/1536
+- 2026-11-09T22:50:59+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 768/1536
+- 2026-11-09T22:51:05+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 896/1536
+- 2026-11-09T22:51:11+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 1024/1536
+- 2026-11-09T22:51:18+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 1152/1536
+- 2026-11-09T22:51:24+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 1280/1536
+- 2026-11-09T22:51:30+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 1408/1536
+- 2026-11-09T22:51:36+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=128: 1536/1536
+- 2026-11-09T22:51:42+00:00 | BUDGET CONVENTIONS DONE EleutherAI/pythia-1.4b n=128; seconds=80.2
+- 2026-11-09T22:51:43+00:00 | BUDGET CONVENTIONS START Qwen/Qwen2.5-0.5B n=128: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:51:50+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 128/1536
+- 2026-11-09T22:51:56+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 256/1536
+- 2026-11-09T22:52:02+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 384/1536
+- 2026-11-09T22:52:08+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 512/1536
+- 2026-11-09T22:52:15+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 640/1536
+- 2026-11-09T22:52:22+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 768/1536
+- 2026-11-09T22:52:29+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 896/1536
+- 2026-11-09T22:52:36+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 1024/1536
+- 2026-11-09T22:52:42+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 1152/1536
+- 2026-11-09T22:52:48+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 1280/1536
+- 2026-11-09T22:52:55+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 1408/1536
+- 2026-11-09T22:53:01+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=128: 1536/1536
+- 2026-11-09T22:53:07+00:00 | BUDGET CONVENTIONS DONE Qwen/Qwen2.5-0.5B n=128; seconds=84.4
+- 2026-11-09T22:53:07+00:00 | BUDGET CONVENTIONS START Qwen/Qwen2.5-3B n=128: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:53:13+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 128/2304
+- 2026-11-09T22:53:21+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 256/2304
+- 2026-11-09T22:53:29+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 384/2304
+- 2026-11-09T22:53:39+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 512/2304
+- 2026-11-09T22:53:46+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 640/2304
+- 2026-11-09T22:53:52+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 768/2304
+- 2026-11-09T22:53:58+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 896/2304
+- 2026-11-09T22:54:05+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1024/2304
+- 2026-11-09T22:54:12+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1152/2304
+- 2026-11-09T22:54:18+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1280/2304
+- 2026-11-09T22:54:24+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1408/2304
+- 2026-11-09T22:54:31+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1536/2304
+- 2026-11-09T22:54:37+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1664/2304
+- 2026-11-09T22:54:44+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1792/2304
+- 2026-11-09T22:54:50+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 1920/2304
+- 2026-11-09T22:54:56+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 2048/2304
+- 2026-11-09T22:55:03+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 2176/2304
+- 2026-11-09T22:55:11+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=128: 2304/2304
+- 2026-11-09T22:55:17+00:00 | BUDGET CONVENTIONS DONE Qwen/Qwen2.5-3B n=128; seconds=129.8
+- 2026-11-09T22:55:18+00:00 | BUDGET CONVENTIONS START gpt2 n=256: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:55:35+00:00 | BUDGET CONVENTIONS gpt2 n=256: 128/1536
+- 2026-11-09T22:55:52+00:00 | BUDGET CONVENTIONS gpt2 n=256: 256/1536
+- 2026-11-09T22:56:09+00:00 | BUDGET CONVENTIONS gpt2 n=256: 384/1536
+- 2026-11-09T22:56:27+00:00 | BUDGET CONVENTIONS gpt2 n=256: 512/1536
+- 2026-11-09T22:56:50+00:00 | BUDGET CONVENTIONS gpt2 n=256: 640/1536
+- 2026-11-09T22:57:09+00:00 | BUDGET CONVENTIONS gpt2 n=256: 768/1536
+- 2026-11-09T22:57:30+00:00 | BUDGET CONVENTIONS gpt2 n=256: 896/1536
+- 2026-11-09T22:58:03+00:00 | BUDGET CONVENTIONS gpt2 n=256: 1024/1536
+- 2026-11-09T22:58:21+00:00 | BUDGET CONVENTIONS gpt2 n=256: 1152/1536
+- 2026-11-09T22:58:40+00:00 | BUDGET CONVENTIONS gpt2 n=256: 1280/1536
+- 2026-11-09T22:58:58+00:00 | BUDGET CONVENTIONS gpt2 n=256: 1408/1536
+- 2026-11-09T22:59:15+00:00 | V2 CONTROLS PASSED: q=K-1, n128/256 fp32/bf16, shared uniform completion and counters, document-median signed-rank direction; no LM forward/KL
+- 2026-11-09T22:59:29+00:00 | BUDGET CONVENTIONS gpt2 n=256: 1536/1536
+- 2026-11-09T22:59:35+00:00 | BUDGET CONVENTIONS DONE gpt2 n=256; seconds=256.8
+- 2026-11-09T22:59:36+00:00 | BUDGET CONVENTIONS START gpt2-medium n=256: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T22:59:57+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 128/1536
+- 2026-11-09T23:00:15+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 256/1536
+- 2026-11-09T23:00:33+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 384/1536
+- 2026-11-09T23:00:55+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 512/1536
+- 2026-11-09T23:01:13+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 640/1536
+- 2026-11-09T23:01:31+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 768/1536
+- 2026-11-09T23:01:51+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 896/1536
+- 2026-11-09T23:02:10+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 1024/1536
+- 2026-11-09T23:02:29+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 1152/1536
+- 2026-11-09T23:02:52+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 1280/1536
+- 2026-11-09T23:03:12+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 1408/1536
+- 2026-11-09T23:03:31+00:00 | BUDGET CONVENTIONS gpt2-medium n=256: 1536/1536
+- 2026-11-09T23:03:36+00:00 | BUDGET CONVENTIONS DONE gpt2-medium n=256; seconds=240.1
+- 2026-11-09T23:03:37+00:00 | BUDGET CONVENTIONS START EleutherAI/pythia-410m n=256: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T23:03:57+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 128/1536
+- 2026-11-09T23:04:19+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 256/1536
+- 2026-11-09T23:04:31+00:00 | SECONDARY RANK COMPARISON START gpt2 n=128; positive ranks only, storage differences explicit
+- 2026-11-09T23:04:49+00:00 | INDEPENDENT INTEGRITY AUDIT PASSED: all 19968 candidate ledger rows, balanced 64-document populations, cone projection identities, named-only error identities, parameter ceilings/slack, no SVD0, fixed T5 and legacy17/9984. Max energy discrepancy 1.176836406102666e-14
+- 2026-11-09T23:04:55+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 384/1536
+- 2026-11-09T23:05:00+00:00 | SECONDARY RANK COMPARISON DONE gpt2 n=128; 1536 instances; seconds=29.0
+- 2026-11-09T23:05:00+00:00 | SECONDARY RANK COMPARISON START gpt2-medium n=128; positive ranks only, storage differences explicit
+- 2026-11-09T23:05:31+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 512/1536
+- 2026-11-09T23:05:34+00:00 | SECONDARY RANK COMPARISON DONE gpt2-medium n=128; 1536 instances; seconds=34.2
+- 2026-11-09T23:05:34+00:00 | SECONDARY RANK COMPARISON START EleutherAI/pythia-410m n=128; positive ranks only, storage differences explicit
+- 2026-11-09T23:06:10+00:00 | SECONDARY RANK COMPARISON DONE EleutherAI/pythia-410m n=128; 1536 instances; seconds=35.2
+- 2026-11-09T23:06:10+00:00 | SECONDARY RANK COMPARISON START EleutherAI/pythia-1.4b n=128; positive ranks only, storage differences explicit
+- 2026-11-09T23:06:10+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 640/1536
+- 2026-11-09T23:06:45+00:00 | SECONDARY RANK COMPARISON DONE EleutherAI/pythia-1.4b n=128; 1536 instances; seconds=34.9
+- 2026-11-09T23:06:45+00:00 | SECONDARY RANK COMPARISON START Qwen/Qwen2.5-0.5B n=128; positive ranks only, storage differences explicit
+- 2026-11-09T23:06:54+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 768/1536
+- 2026-11-09T23:07:18+00:00 | SECONDARY RANK COMPARISON DONE Qwen/Qwen2.5-0.5B n=128; 1536 instances; seconds=33.1
+- 2026-11-09T23:07:18+00:00 | SECONDARY RANK COMPARISON START Qwen/Qwen2.5-3B n=128; positive ranks only, storage differences explicit
+- 2026-11-09T23:07:24+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 896/1536
+- 2026-11-09T23:07:50+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 1024/1536
+- 2026-11-09T23:08:01+00:00 | SECONDARY RANK COMPARISON DONE Qwen/Qwen2.5-3B n=128; 2304 instances; seconds=43.4
+- 2026-11-09T23:08:02+00:00 | SECONDARY RANK COMPARISON START gpt2 n=256; positive ranks only, storage differences explicit
+- 2026-11-09T23:08:21+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 1152/1536
+- 2026-11-09T23:08:31+00:00 | SECONDARY RANK COMPARISON DONE gpt2 n=256; 1536 instances; seconds=29.3
+- 2026-11-09T23:08:31+00:00 | SECONDARY RANK COMPARISON START gpt2-medium n=256; positive ranks only, storage differences explicit
+- 2026-11-09T23:08:40+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 1280/1536
+- 2026-11-09T23:09:01+00:00 | SECONDARY RANK COMPARISON DONE gpt2-medium n=256; 1536 instances; seconds=30.3
+- 2026-11-09T23:09:02+00:00 | SECONDARY RANK COMPARISON START EleutherAI/pythia-410m n=256; positive ranks only, storage differences explicit
+- 2026-11-09T23:09:03+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 1408/1536
+- 2026-11-09T23:09:22+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-410m n=256: 1536/1536
+- 2026-11-09T23:09:28+00:00 | BUDGET CONVENTIONS DONE EleutherAI/pythia-410m n=256; seconds=350.8
+- 2026-11-09T23:09:29+00:00 | BUDGET CONVENTIONS START EleutherAI/pythia-1.4b n=256: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T23:09:31+00:00 | SECONDARY RANK COMPARISON DONE EleutherAI/pythia-410m n=256; 1536 instances; seconds=28.9
+- 2026-11-09T23:09:31+00:00 | SECONDARY RANK COMPARISON START EleutherAI/pythia-1.4b n=256; positive ranks only, storage differences explicit
+- 2026-11-09T23:09:51+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 128/1536
+- 2026-11-09T23:10:01+00:00 | SECONDARY RANK COMPARISON DONE EleutherAI/pythia-1.4b n=256; 1536 instances; seconds=30.7
+- 2026-11-09T23:10:02+00:00 | SECONDARY RANK COMPARISON START Qwen/Qwen2.5-0.5B n=256; positive ranks only, storage differences explicit
+- 2026-11-09T23:10:18+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 256/1536
+- 2026-11-09T23:10:34+00:00 | SECONDARY RANK COMPARISON DONE Qwen/Qwen2.5-0.5B n=256; 1536 instances; seconds=32.6
+- 2026-11-09T23:10:34+00:00 | SECONDARY RANK COMPARISON START Qwen/Qwen2.5-3B n=256; positive ranks only, storage differences explicit
+- 2026-11-09T23:10:49+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 384/1536
+- 2026-11-09T23:11:20+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 512/1536
+- 2026-11-09T23:11:21+00:00 | SECONDARY RANK COMPARISON DONE Qwen/Qwen2.5-3B n=256; 2304 instances; seconds=47.0
+- 2026-11-09T23:11:49+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 640/1536
+- 2026-11-09T23:12:15+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 768/1536
+- 2026-11-09T23:12:32+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 896/1536
+- 2026-11-09T23:12:50+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 1024/1536
+- 2026-11-09T23:13:07+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 1152/1536
+- 2026-11-09T23:13:26+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 1280/1536
+- 2026-11-09T23:13:46+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 1408/1536
+- 2026-11-09T23:14:12+00:00 | BUDGET CONVENTIONS EleutherAI/pythia-1.4b n=256: 1536/1536
+- 2026-11-09T23:14:19+00:00 | BUDGET CONVENTIONS DONE EleutherAI/pythia-1.4b n=256; seconds=289.8
+- 2026-11-09T23:14:20+00:00 | BUDGET CONVENTIONS START Qwen/Qwen2.5-0.5B n=256: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T23:14:47+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 128/1536
+- 2026-11-09T23:15:10+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 256/1536
+- 2026-11-09T23:15:27+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 384/1536
+- 2026-11-09T23:15:45+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 512/1536
+- 2026-11-09T23:16:01+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 640/1536
+- 2026-11-09T23:16:19+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 768/1536
+- 2026-11-09T23:16:35+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 896/1536
+- 2026-11-09T23:16:51+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 1024/1536
+- 2026-11-09T23:17:08+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 1152/1536
+- 2026-11-09T23:17:24+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 1280/1536
+- 2026-11-09T23:17:41+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 1408/1536
+- 2026-11-09T23:17:59+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-0.5B n=256: 1536/1536
+- 2026-11-09T23:18:05+00:00 | BUDGET CONVENTIONS DONE Qwen/Qwen2.5-0.5B n=256; seconds=225.0
+- 2026-11-09T23:18:07+00:00 | BUDGET CONVENTIONS START Qwen/Qwen2.5-3B n=256: K8 q7 all three conventions; T5 fixed
+- 2026-11-09T23:18:25+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 128/2304
+- 2026-11-09T23:18:44+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 256/2304
+- 2026-11-09T23:19:02+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 384/2304
+- 2026-11-09T23:19:23+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 512/2304
+- 2026-11-09T23:19:40+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 640/2304
+- 2026-11-09T23:19:57+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 768/2304
+- 2026-11-09T23:20:12+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 896/2304
+- 2026-11-09T23:20:28+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1024/2304
+- 2026-11-09T23:20:46+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1152/2304
+- 2026-11-09T23:21:04+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1280/2304
+- 2026-11-09T23:21:24+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1408/2304
+- 2026-11-09T23:21:45+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1536/2304
+- 2026-11-09T23:22:13+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1664/2304
+- 2026-11-09T23:22:41+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1792/2304
+- 2026-11-09T23:23:00+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 1920/2304
+- 2026-11-09T23:23:18+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 2048/2304
+- 2026-11-09T23:23:37+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 2176/2304
+- 2026-11-09T23:23:52+00:00 | BUDGET CONVENTIONS Qwen/Qwen2.5-3B n=256: 2304/2304
+- 2026-11-09T23:23:58+00:00 | BUDGET CONVENTIONS DONE Qwen/Qwen2.5-3B n=256; seconds=351.1
+- 2026-11-09T23:25:19+00:00 | ASSEMBLED out\phase21_allocation_v2_matrix_review.json; review=True; 19968 matrices; Alg1 diagnostic17/9984; forward=waiting_for_required_V1
+- 2026-11-09T23:58:02+00:00 | VERIFIED ENDPOINTS PUBLISHED gpt2 n=128; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:04+00:00 | VERIFIED ENDPOINTS PUBLISHED gpt2-medium n=128; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:06+00:00 | VERIFIED ENDPOINTS PUBLISHED EleutherAI/pythia-410m n=128; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:08+00:00 | VERIFIED ENDPOINTS PUBLISHED EleutherAI/pythia-1.4b n=128; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:10+00:00 | VERIFIED ENDPOINTS PUBLISHED Qwen/Qwen2.5-0.5B n=128; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:13+00:00 | VERIFIED ENDPOINTS PUBLISHED Qwen/Qwen2.5-3B n=128; all 2304 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:16+00:00 | VERIFIED ENDPOINTS PUBLISHED gpt2 n=256; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:19+00:00 | VERIFIED ENDPOINTS PUBLISHED gpt2-medium n=256; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:21+00:00 | VERIFIED ENDPOINTS PUBLISHED EleutherAI/pythia-410m n=256; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:24+00:00 | VERIFIED ENDPOINTS PUBLISHED EleutherAI/pythia-1.4b n=256; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:27+00:00 | VERIFIED ENDPOINTS PUBLISHED Qwen/Qwen2.5-0.5B n=256; all 1536 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-09T23:58:30+00:00 | VERIFIED ENDPOINTS PUBLISHED Qwen/Qwen2.5-3B n=256; all 2304 instances; unmodified full OMP terminal problem, exact direct NNLS; no user approval inferred
+- 2026-11-10T00:12:21+00:00 | ASSEMBLED out\phase21_allocation_v2.json; review=False; 19968 matrices; Alg1 diagnostic17/9984; forward=FALTA
+- 2026-11-10T00:14:21+00:00 | FINAL: out/phase21_allocation_v2.json and all 12 canonical v2 paired ledgers published. Imported describe, instance medians/2000 document blocks, document-median signed-rank and rank-biserial; fixed q=K-1. Full line endpoint certified on all 19968 instances; original OMP full trajectories executed only on the two fixed controls. No user approval inferred for this equivalent terminal computation.
+- 2026-11-10T00:14:21+00:00 | FALTA: unmodified partial OMP trajectories at K1/K2 not computed; scope not waived. Named-vs-SVD comparisons at these budgets and every original allocation rank remain present.
+- 2026-11-10T00:14:21+00:00 | FALTA: required phase2_downstream_v2.json did not arrive between 2026-11-09T21:11:20Z and 2026-11-10T00:11:20Z. Exactly three hours waited. No LM injection or GPU lock; behavioral KL and per-mode empty-row model counts are null, never zero-imputed. Forward runner and CPU controls delivered.

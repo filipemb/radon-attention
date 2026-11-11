@@ -1,0 +1,591 @@
+{
+  "criterion": "median(mean_i A[i,i] over sampled matrices of (layer,head)) > 0.9",
+  "threshold": 0.9,
+  "n": 128,
+  "models": {
+    "gpt2": {
+      "npz": "data/attn/gpt2_n128.npz",
+      "n_layers": 12,
+      "n_heads": 12,
+      "n_matrices_total": 1536,
+      "n_distinct_heads_sampled": 144,
+      "n_possible_heads": 144,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [],
+      "median_of_medians": 0.04253061302006245,
+      "max_median": 0.8675912618637085,
+      "top10_medians": [
+        {
+          "layer": 0,
+          "head": 3,
+          "median_diag_mass": 0.8675912618637085,
+          "n": 10
+        },
+        {
+          "layer": 0,
+          "head": 1,
+          "median_diag_mass": 0.8496928215026855,
+          "n": 10
+        },
+        {
+          "layer": 1,
+          "head": 11,
+          "median_diag_mass": 0.7381658554077148,
+          "n": 11
+        },
+        {
+          "layer": 0,
+          "head": 5,
+          "median_diag_mass": 0.703736424446106,
+          "n": 11
+        },
+        {
+          "layer": 0,
+          "head": 4,
+          "median_diag_mass": 0.5720632076263428,
+          "n": 11
+        },
+        {
+          "layer": 4,
+          "head": 7,
+          "median_diag_mass": 0.49816644191741943,
+          "n": 11
+        },
+        {
+          "layer": 0,
+          "head": 10,
+          "median_diag_mass": 0.19756555557250977,
+          "n": 11
+        },
+        {
+          "layer": 0,
+          "head": 7,
+          "median_diag_mass": 0.18427367508411407,
+          "n": 11
+        },
+        {
+          "layer": 11,
+          "head": 8,
+          "median_diag_mass": 0.1739683449268341,
+          "n": 11
+        },
+        {
+          "layer": 3,
+          "head": 6,
+          "median_diag_mass": 0.16750237345695496,
+          "n": 11
+        }
+      ]
+    },
+    "gpt2-medium": {
+      "npz": "data/attn/gpt2-medium_n128.npz",
+      "n_layers": 24,
+      "n_heads": 16,
+      "n_matrices_total": 1536,
+      "n_distinct_heads_sampled": 384,
+      "n_possible_heads": 384,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [],
+      "median_of_medians": 0.0361312065506354,
+      "max_median": 0.4701511859893799,
+      "top10_medians": [
+        {
+          "layer": 5,
+          "head": 13,
+          "median_diag_mass": 0.4701511859893799,
+          "n": 4
+        },
+        {
+          "layer": 6,
+          "head": 5,
+          "median_diag_mass": 0.4001285433769226,
+          "n": 4
+        },
+        {
+          "layer": 7,
+          "head": 9,
+          "median_diag_mass": 0.30912864208221436,
+          "n": 4
+        },
+        {
+          "layer": 1,
+          "head": 4,
+          "median_diag_mass": 0.2920454889535904,
+          "n": 4
+        },
+        {
+          "layer": 4,
+          "head": 1,
+          "median_diag_mass": 0.2834877073764801,
+          "n": 4
+        },
+        {
+          "layer": 4,
+          "head": 4,
+          "median_diag_mass": 0.2682754099369049,
+          "n": 4
+        },
+        {
+          "layer": 7,
+          "head": 11,
+          "median_diag_mass": 0.26403467915952206,
+          "n": 4
+        },
+        {
+          "layer": 8,
+          "head": 3,
+          "median_diag_mass": 0.2583577632904053,
+          "n": 4
+        },
+        {
+          "layer": 8,
+          "head": 14,
+          "median_diag_mass": 0.24657952785491943,
+          "n": 4
+        },
+        {
+          "layer": 11,
+          "head": 13,
+          "median_diag_mass": 0.2323945164680481,
+          "n": 4
+        }
+      ]
+    },
+    "EleutherAI/pythia-410m": {
+      "npz": "data/attn/EleutherAI__pythia-410m_n128.npz",
+      "n_layers": 24,
+      "n_heads": 16,
+      "n_matrices_total": 1536,
+      "n_distinct_heads_sampled": 384,
+      "n_possible_heads": 384,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [],
+      "median_of_medians": 0.06064428808167577,
+      "max_median": 0.8400459289550781,
+      "top10_medians": [
+        {
+          "layer": 7,
+          "head": 0,
+          "median_diag_mass": 0.8400459289550781,
+          "n": 4
+        },
+        {
+          "layer": 14,
+          "head": 3,
+          "median_diag_mass": 0.6581357568502426,
+          "n": 4
+        },
+        {
+          "layer": 23,
+          "head": 12,
+          "median_diag_mass": 0.45602711918763816,
+          "n": 4
+        },
+        {
+          "layer": 4,
+          "head": 15,
+          "median_diag_mass": 0.378878116607666,
+          "n": 4
+        },
+        {
+          "layer": 5,
+          "head": 5,
+          "median_diag_mass": 0.367700953502208,
+          "n": 4
+        },
+        {
+          "layer": 4,
+          "head": 6,
+          "median_diag_mass": 0.3502176105976105,
+          "n": 4
+        },
+        {
+          "layer": 22,
+          "head": 6,
+          "median_diag_mass": 0.33603414450772107,
+          "n": 4
+        },
+        {
+          "layer": 5,
+          "head": 8,
+          "median_diag_mass": 0.3158004805445671,
+          "n": 4
+        },
+        {
+          "layer": 1,
+          "head": 10,
+          "median_diag_mass": 0.30139268934726715,
+          "n": 4
+        },
+        {
+          "layer": 14,
+          "head": 11,
+          "median_diag_mass": 0.2826847732067108,
+          "n": 4
+        }
+      ]
+    },
+    "EleutherAI/pythia-1.4b": {
+      "npz": "data/attn/EleutherAI__pythia-1.4b_n128.npz",
+      "n_layers": 24,
+      "n_heads": 16,
+      "n_matrices_total": 1536,
+      "n_distinct_heads_sampled": 384,
+      "n_possible_heads": 384,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [],
+      "median_of_medians": 0.05191313766408712,
+      "max_median": 0.6685423851013184,
+      "top10_medians": [
+        {
+          "layer": 11,
+          "head": 2,
+          "median_diag_mass": 0.6685423851013184,
+          "n": 4
+        },
+        {
+          "layer": 13,
+          "head": 9,
+          "median_diag_mass": 0.6058046221733093,
+          "n": 4
+        },
+        {
+          "layer": 12,
+          "head": 3,
+          "median_diag_mass": 0.5468636751174927,
+          "n": 4
+        },
+        {
+          "layer": 13,
+          "head": 3,
+          "median_diag_mass": 0.4795942895580083,
+          "n": 4
+        },
+        {
+          "layer": 23,
+          "head": 9,
+          "median_diag_mass": 0.4794891925994307,
+          "n": 4
+        },
+        {
+          "layer": 19,
+          "head": 13,
+          "median_diag_mass": 0.46373462677001953,
+          "n": 4
+        },
+        {
+          "layer": 14,
+          "head": 1,
+          "median_diag_mass": 0.4467176201287657,
+          "n": 4
+        },
+        {
+          "layer": 15,
+          "head": 10,
+          "median_diag_mass": 0.4114866554737091,
+          "n": 4
+        },
+        {
+          "layer": 21,
+          "head": 15,
+          "median_diag_mass": 0.4083555042743683,
+          "n": 4
+        },
+        {
+          "layer": 17,
+          "head": 11,
+          "median_diag_mass": 0.396240234375,
+          "n": 4
+        }
+      ]
+    },
+    "Qwen/Qwen2.5-0.5B": {
+      "npz": "data/attn/Qwen__Qwen2.5-0.5B_n128.npz",
+      "n_layers": 24,
+      "n_heads": 14,
+      "n_matrices_total": 1536,
+      "n_distinct_heads_sampled": 336,
+      "n_possible_heads": 336,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [
+        {
+          "layer": 0,
+          "head": 1,
+          "median_diag_mass": 0.985753059387207,
+          "n_matrices": 5,
+          "min": 0.9799690246582031,
+          "max": 0.9902153015136719
+        },
+        {
+          "layer": 8,
+          "head": 3,
+          "median_diag_mass": 0.9959754943847656,
+          "n_matrices": 4,
+          "min": 0.9921067953109741,
+          "max": 0.996063232421875
+        },
+        {
+          "layer": 23,
+          "head": 1,
+          "median_diag_mass": 0.9951438903808594,
+          "n_matrices": 5,
+          "min": 0.9811515808105469,
+          "max": 0.9971656799316406
+        }
+      ],
+      "median_of_medians": 0.05438256682828069,
+      "max_median": 0.9959754943847656,
+      "top10_medians": [
+        {
+          "layer": 8,
+          "head": 3,
+          "median_diag_mass": 0.9959754943847656,
+          "n": 4
+        },
+        {
+          "layer": 23,
+          "head": 1,
+          "median_diag_mass": 0.9951438903808594,
+          "n": 5
+        },
+        {
+          "layer": 0,
+          "head": 1,
+          "median_diag_mass": 0.985753059387207,
+          "n": 5
+        },
+        {
+          "layer": 12,
+          "head": 0,
+          "median_diag_mass": 0.8753108978271484,
+          "n": 4
+        },
+        {
+          "layer": 10,
+          "head": 6,
+          "median_diag_mass": 0.8699970245361328,
+          "n": 4
+        },
+        {
+          "layer": 14,
+          "head": 1,
+          "median_diag_mass": 0.8525314331054688,
+          "n": 5
+        },
+        {
+          "layer": 21,
+          "head": 9,
+          "median_diag_mass": 0.8271941244602203,
+          "n": 4
+        },
+        {
+          "layer": 4,
+          "head": 12,
+          "median_diag_mass": 0.8080768585205078,
+          "n": 4
+        },
+        {
+          "layer": 14,
+          "head": 10,
+          "median_diag_mass": 0.7870368957519531,
+          "n": 4
+        },
+        {
+          "layer": 13,
+          "head": 3,
+          "median_diag_mass": 0.7637672424316406,
+          "n": 5
+        }
+      ]
+    },
+    "Qwen/Qwen2.5-3B": {
+      "npz": "data/attn/Qwen__Qwen2.5-3B_n128.npz",
+      "n_layers": 36,
+      "n_heads": 16,
+      "n_matrices_total": 2304,
+      "n_distinct_heads_sampled": 576,
+      "n_possible_heads": 576,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [
+        {
+          "layer": 0,
+          "head": 12,
+          "median_diag_mass": 0.9972705841064453,
+          "n_matrices": 4,
+          "min": 0.9962501525878906,
+          "max": 0.9981613159179688
+        },
+        {
+          "layer": 27,
+          "head": 8,
+          "median_diag_mass": 0.9999980926513672,
+          "n_matrices": 4,
+          "min": 0.9999923706054688,
+          "max": 1.0
+        }
+      ],
+      "median_of_medians": 0.04711586656048894,
+      "max_median": 0.9999980926513672,
+      "top10_medians": [
+        {
+          "layer": 27,
+          "head": 8,
+          "median_diag_mass": 0.9999980926513672,
+          "n": 4
+        },
+        {
+          "layer": 0,
+          "head": 12,
+          "median_diag_mass": 0.9972705841064453,
+          "n": 4
+        },
+        {
+          "layer": 23,
+          "head": 10,
+          "median_diag_mass": 0.8992481231689453,
+          "n": 4
+        },
+        {
+          "layer": 15,
+          "head": 0,
+          "median_diag_mass": 0.8882427215576172,
+          "n": 4
+        },
+        {
+          "layer": 26,
+          "head": 3,
+          "median_diag_mass": 0.8475418090820312,
+          "n": 4
+        },
+        {
+          "layer": 20,
+          "head": 8,
+          "median_diag_mass": 0.8237981796264648,
+          "n": 4
+        },
+        {
+          "layer": 0,
+          "head": 2,
+          "median_diag_mass": 0.8162407353520393,
+          "n": 4
+        },
+        {
+          "layer": 19,
+          "head": 2,
+          "median_diag_mass": 0.8149700164794922,
+          "n": 4
+        },
+        {
+          "layer": 12,
+          "head": 13,
+          "median_diag_mass": 0.7510342597961426,
+          "n": 4
+        },
+        {
+          "layer": 0,
+          "head": 13,
+          "median_diag_mass": 0.7365038841962814,
+          "n": 4
+        }
+      ]
+    },
+    "Qwen/Qwen2.5-7B": {
+      "npz": "data/attn_7b/Qwen__Qwen2.5-7B_n128.npz",
+      "n_layers": 28,
+      "n_heads": 28,
+      "n_matrices_total": 1792,
+      "n_distinct_heads_sampled": 784,
+      "n_possible_heads": 784,
+      "missing_heads": [],
+      "n_missing_heads": 0,
+      "diagonal_heads_threshold_0_9": [
+        {
+          "layer": 18,
+          "head": 7,
+          "median_diag_mass": 0.9999580383300781,
+          "n_matrices": 3,
+          "min": 0.9998321533203125,
+          "max": 0.9999580383300781
+        },
+        {
+          "layer": 19,
+          "head": 0,
+          "median_diag_mass": 0.9999275207519531,
+          "n_matrices": 3,
+          "min": 0.99932861328125,
+          "max": 0.9999885559082031
+        }
+      ],
+      "median_of_medians": 0.04448250401765108,
+      "max_median": 0.9999580383300781,
+      "top10_medians": [
+        {
+          "layer": 18,
+          "head": 7,
+          "median_diag_mass": 0.9999580383300781,
+          "n": 3
+        },
+        {
+          "layer": 19,
+          "head": 0,
+          "median_diag_mass": 0.9999275207519531,
+          "n": 3
+        },
+        {
+          "layer": 12,
+          "head": 0,
+          "median_diag_mass": 0.8316507339477539,
+          "n": 2
+        },
+        {
+          "layer": 0,
+          "head": 3,
+          "median_diag_mass": 0.768627256155014,
+          "n": 2
+        },
+        {
+          "layer": 9,
+          "head": 16,
+          "median_diag_mass": 0.7525033950805664,
+          "n": 2
+        },
+        {
+          "layer": 27,
+          "head": 11,
+          "median_diag_mass": 0.7282603681087494,
+          "n": 2
+        },
+        {
+          "layer": 27,
+          "head": 10,
+          "median_diag_mass": 0.712305337190628,
+          "n": 2
+        },
+        {
+          "layer": 0,
+          "head": 15,
+          "median_diag_mass": 0.7113927016034722,
+          "n": 2
+        },
+        {
+          "layer": 25,
+          "head": 4,
+          "median_diag_mass": 0.6908712387084961,
+          "n": 3
+        },
+        {
+          "layer": 18,
+          "head": 17,
+          "median_diag_mass": 0.6851139068603516,
+          "n": 2
+        }
+      ]
+    }
+  }
+}

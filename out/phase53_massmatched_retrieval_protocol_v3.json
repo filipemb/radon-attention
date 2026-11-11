@@ -1,0 +1,528 @@
+{
+  "schema_version": 3,
+  "beta": 0.25,
+  "jobs": [
+    {
+      "task": "phase8",
+      "model": "gpt2",
+      "seed": 0,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_gpt2_s0_v3.manifest.json",
+      "manifest_sha256": "40dc4dc4fa27e987b565514c6bab271f5ae30c7a1a1fde765e40d17a7ccb64d7",
+      "payload_sha256": "f5e88d697d2ea96df2455a3d99ecb3c76f7fbd7d8b776190c5400572acb1f964",
+      "historical": {
+        "job_path": "out/phase8_items_gpt2_s0_historical_v3.json",
+        "job_sha256": "cd58bcbdcf298efe1472ad09afce1dc1b5c35ddeb6f6214a5c663d9681937d53",
+        "pairs_path": "out/pairs/phase8_items_gpt2_s0_historical_v3.jsonl",
+        "pairs_sha256": "782632809b3b240533c8c8c9b7ec763757152c957c3cf7fd28351dff0e30df72"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "gpt2",
+      "seed": 1,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_gpt2_s1_v3.manifest.json",
+      "manifest_sha256": "ae83206dc8b5620c07bb3af42ebcf2aa144fb0bc34a834c0dd915862fb09e60e",
+      "payload_sha256": "e1fba9bbe580fee2818b36aabb66f7e225f0f46040c2218787e62276d2047428",
+      "historical": {
+        "job_path": "out/phase8_items_gpt2_s1_historical_v3.json",
+        "job_sha256": "ae933f8446e25d4b98947efcb59232497742466286aca1d963e58b5c0b66c029",
+        "pairs_path": "out/pairs/phase8_items_gpt2_s1_historical_v3.jsonl",
+        "pairs_sha256": "3c9eebe8c54be7d88a3247b1a8d60b0e02e077a5d477493a755ee645b01b9374"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "gpt2",
+      "seed": 2,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_gpt2_s2_v3.manifest.json",
+      "manifest_sha256": "2a16bafa9f2c6f66f2cabe9b77638f047eda3fbbf4e2bc9f7c7f8ffd9156fe69",
+      "payload_sha256": "c299be405fbe91ad81f12b03a42a6e4937f8db98a2620ca532a1940509bf2fcb",
+      "historical": {
+        "job_path": "out/phase8_items_gpt2_s2_historical_v3.json",
+        "job_sha256": "f804c26dc57c9056a43687715404ac63ee09f9e0fe95ef4ab8de3a9283c7053d",
+        "pairs_path": "out/pairs/phase8_items_gpt2_s2_historical_v3.jsonl",
+        "pairs_sha256": "f9141282b764fe12a6a4e79158dde0d8de41aa14a51fddb57ece015089db77ca"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "gpt2-medium",
+      "seed": 0,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_gpt2-medium_s0_v3.manifest.json",
+      "manifest_sha256": "ee33c023a023f8e11d8414978cc7aa666aad8bc5627e1296fa76a86ab12605ad",
+      "payload_sha256": "6644d12b578616548ea778ab378ae5545a6204342da707c2a29706695aa6ed68",
+      "historical": {
+        "job_path": "out/phase8_items_gpt2-medium_s0_historical_v3.json",
+        "job_sha256": "adf42ffa368c42a3030b340df54568b75396c455c050b5f490acc294f5c88420",
+        "pairs_path": "out/pairs/phase8_items_gpt2-medium_s0_historical_v3.jsonl",
+        "pairs_sha256": "8edb8164a8e680d811d1d4f4c39c33671527ba97001d669606f774ad39e11769"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "gpt2-medium",
+      "seed": 1,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_gpt2-medium_s1_v3.manifest.json",
+      "manifest_sha256": "c63c281c0185a606312a259077a65b259e0a94ea695fd36aad731821c20ea3f9",
+      "payload_sha256": "3d73448af88837f6300a6c8d1ccac4067b84b9ae640899bdc50fd3e78c8c7391",
+      "historical": {
+        "job_path": "out/phase8_items_gpt2-medium_s1_historical_v3.json",
+        "job_sha256": "4ef023437232c6003c359a709eac56aca551ae9dc468c706b1e3472731df51d8",
+        "pairs_path": "out/pairs/phase8_items_gpt2-medium_s1_historical_v3.jsonl",
+        "pairs_sha256": "fcd2e83016fe3528f767d956318af9e1c67acdb25fb646f853df9cc610f34fd5"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "gpt2-medium",
+      "seed": 2,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_gpt2-medium_s2_v3.manifest.json",
+      "manifest_sha256": "03a2b845f9f84d456c46ad2768f209ffb72e2943aeac1d088a5731fe295ba19a",
+      "payload_sha256": "599ca1db86ae98fc9c84c22ea6ef0d5558dcd14c23f3d7b90886d5b49d963a82",
+      "historical": {
+        "job_path": "out/phase8_items_gpt2-medium_s2_historical_v3.json",
+        "job_sha256": "ead7435b6a5b2bc332baf6eee8bec93b99dfb92657f86aa7e3f64a544a46e4a1",
+        "pairs_path": "out/pairs/phase8_items_gpt2-medium_s2_historical_v3.jsonl",
+        "pairs_sha256": "0914fb3f4799b6d670d3c3affc177610f43c5e047be9ed095ff32dda4e65b312"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-410m",
+      "seed": 0,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_EleutherAI__pythia-410m_s0_v3.manifest.json",
+      "manifest_sha256": "964d099541eb7a355d18cb062f35737f5216d6ebe8394989aa687851383d9028",
+      "payload_sha256": "4ed8ab9c885ea42bba7ee2e50ed0e591709467b154078abbdea3d9ee53aa2e73",
+      "historical": {
+        "job_path": "out/phase8_items_EleutherAI__pythia-410m_s0_historical_v3.json",
+        "job_sha256": "3577e9485a9bf359070d6680a7bd76c52c2e6be9a781ee857028dbd6c127c70a",
+        "pairs_path": "out/pairs/phase8_items_EleutherAI__pythia-410m_s0_historical_v3.jsonl",
+        "pairs_sha256": "f9b341f1321be09700dd703f05d6dd89a46524542be3b841ff9af5c937b8adc0"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-410m",
+      "seed": 1,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_EleutherAI__pythia-410m_s1_v3.manifest.json",
+      "manifest_sha256": "f74ae491dda372293129bcd3f0e29ae248a7f29e9bdb408df1020b0a1d67c1a4",
+      "payload_sha256": "6a452ccb5a7f366e2862722e273e0d16ab62a86d779f41635c0ad9ce713c5c9f",
+      "historical": {
+        "job_path": "out/phase8_items_EleutherAI__pythia-410m_s1_historical_v3.json",
+        "job_sha256": "adb8d77061f7119f3d75d7f730ea686115ecff7a6ee4223e6d97cb6e4ef18676",
+        "pairs_path": "out/pairs/phase8_items_EleutherAI__pythia-410m_s1_historical_v3.jsonl",
+        "pairs_sha256": "4ce9d466fc2b496a90e7b655208d6604600f4af8f2d5230d7d1cbfd6d826b4a9"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-410m",
+      "seed": 2,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_EleutherAI__pythia-410m_s2_v3.manifest.json",
+      "manifest_sha256": "dc90bc722a7f147464d25f40741bd08a8b39a1c33986712ba000c466e1c8b56b",
+      "payload_sha256": "ca14a8953b24a8b75448c330432e426938b2fa566f81e7c2e8f44414a9a95525",
+      "historical": {
+        "job_path": "out/phase8_items_EleutherAI__pythia-410m_s2_historical_v3.json",
+        "job_sha256": "403881db42588f9239a37223326f7642997dc36464c2c3d701262a523d32c768",
+        "pairs_path": "out/pairs/phase8_items_EleutherAI__pythia-410m_s2_historical_v3.jsonl",
+        "pairs_sha256": "6a347d37e101bab108a8c37eb1ed15d2d50449a2142d3190e3287c057efcd496"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-1.4b",
+      "seed": 0,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_EleutherAI__pythia-1.4b_s0_v3.manifest.json",
+      "manifest_sha256": "4f5e370448dcaf12f69e849d4fe957b0789f63580576ca84c7deddd466862c51",
+      "payload_sha256": "b2e14ad46635ee7433b0b26b4cd7a7797b5f22d86b98532a3ad1e341fe4b6ada",
+      "historical": {
+        "job_path": "out/phase8_items_EleutherAI__pythia-1.4b_s0_historical_v3.json",
+        "job_sha256": "e890899dee31187ba995119a14987b81d78e86bfd4d620e54de0b6bc3e858d9b",
+        "pairs_path": "out/pairs/phase8_items_EleutherAI__pythia-1.4b_s0_historical_v3.jsonl",
+        "pairs_sha256": "8a80f8fa876cca831da6845eae13a2f9a5819426d91a79de15f6e93f23cc89db"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-1.4b",
+      "seed": 1,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_EleutherAI__pythia-1.4b_s1_v3.manifest.json",
+      "manifest_sha256": "5a6b531d51f38adaeb2b1fadc4a28b9cd54db4802dd56635e37b01fdc11078e1",
+      "payload_sha256": "61d9cdc2710be662875e30211712e1a590a3e05565ecd8d7da3acf5fd00d1fe0",
+      "historical": {
+        "job_path": "out/phase8_items_EleutherAI__pythia-1.4b_s1_historical_v3.json",
+        "job_sha256": "4efe0f0c058c9040a18ca3167db437993dca9017813afb23d9f5876cefc3928b",
+        "pairs_path": "out/pairs/phase8_items_EleutherAI__pythia-1.4b_s1_historical_v3.jsonl",
+        "pairs_sha256": "a28d1cdc75e1ee2a18678febed1683acf96080d6c29c414a008dd15aa95db9d5"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "EleutherAI/pythia-1.4b",
+      "seed": 2,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_EleutherAI__pythia-1.4b_s2_v3.manifest.json",
+      "manifest_sha256": "a825b686f4f3ac97e0ffea40cf0568f1cfe406ec641f9b62fb7b4623356ddbbe",
+      "payload_sha256": "6115cc3df19de9c94cddc3df7c71827d1c6df041a8c46a7bac6958c6b6e20b6c",
+      "historical": {
+        "job_path": "out/phase8_items_EleutherAI__pythia-1.4b_s2_historical_v3.json",
+        "job_sha256": "45862cbd8f4e797ebbf94de32a9de92beca3ecc9c97c759af817f734c7b20fe9",
+        "pairs_path": "out/pairs/phase8_items_EleutherAI__pythia-1.4b_s2_historical_v3.jsonl",
+        "pairs_sha256": "ccd7ec638988311d1bdc9f28007536d5c23e5c06b3c64d13d030628f853a20ce"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "seed": 0,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_Qwen__Qwen2.5-0.5B_s0_v3.manifest.json",
+      "manifest_sha256": "6afbd2aced89351e7cc798c7bdb56e470939a3f45481da26347cc3deb467905b",
+      "payload_sha256": "fe29d235e767769209d67ef948ba06dd531c069a9f5e00a972ba13e7ce0ed1fa",
+      "historical": {
+        "job_path": "out/phase8_items_Qwen__Qwen2.5-0.5B_s0_historical_v3.json",
+        "job_sha256": "2f59d1c45d251ceb64fc30cb531acee557b140cca19ff9e63748198992d8c35b",
+        "pairs_path": "out/pairs/phase8_items_Qwen__Qwen2.5-0.5B_s0_historical_v3.jsonl",
+        "pairs_sha256": "263fd5054d33979e40467b5ccfed49c52b548fe7fcc320d763ca9602105a4ffb"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "seed": 1,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_Qwen__Qwen2.5-0.5B_s1_v3.manifest.json",
+      "manifest_sha256": "06bdb77fbd2fc6388eea9e7d40e1abfebc652ecda5d6c0307bad90a8893402cd",
+      "payload_sha256": "437a5340306a4217a4dd8b621616aca4a90c44231b810ab68570a404000f1942",
+      "historical": {
+        "job_path": "out/phase8_items_Qwen__Qwen2.5-0.5B_s1_historical_v3.json",
+        "job_sha256": "4144de5b58c27bff8715a8ed9389ae2e4f723d24c99ab0a06e43dfdfc9f31053",
+        "pairs_path": "out/pairs/phase8_items_Qwen__Qwen2.5-0.5B_s1_historical_v3.jsonl",
+        "pairs_sha256": "f1a4a4653c68705b58a0001a233cd69dea50d7860b3569152deb5a5b81084b17"
+      }
+    },
+    {
+      "task": "phase8",
+      "model": "Qwen/Qwen2.5-0.5B",
+      "seed": 2,
+      "n_independent_items": 2000,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        32,
+        48,
+        64,
+        80,
+        96
+      ],
+      "manifest_path": "data/attn/phase8_items_Qwen__Qwen2.5-0.5B_s2_v3.manifest.json",
+      "manifest_sha256": "bb81e5da67e8501df69bc37724da06d14e5d052bad6eaed3637e8d56bc2820dd",
+      "payload_sha256": "4a2705ab325aebb5101022f1464578b187446714f8309ba5bc2e547bcc9283bd",
+      "historical": {
+        "job_path": "out/phase8_items_Qwen__Qwen2.5-0.5B_s2_historical_v3.json",
+        "job_sha256": "5d7cd57b2cc7268a7133fcce10353871445147bc97137e04d3ae51c08a73a134",
+        "pairs_path": "out/pairs/phase8_items_Qwen__Qwen2.5-0.5B_s2_historical_v3.jsonl",
+        "pairs_sha256": "9f415a3dadc5b97bfd8b95ba1b8340bb35c53a5d36ede2f9feb0a726e314371c"
+      }
+    },
+    {
+      "task": "phase11",
+      "model": "gpt2-medium",
+      "seed": 0,
+      "n_independent_items": 600,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        96,
+        144,
+        192
+      ],
+      "manifest_path": "data/attn/phase11_items_gpt2-medium_s0_v3.manifest.json",
+      "manifest_sha256": "191fee545fa5a1a439134f5fcfa1b665d6c467919db30bf043e63f5d40154cc9",
+      "payload_sha256": "0d0d7868a2c27cd11a7606f0cee5fccfa6b403140cd54926306afa32cc727c25",
+      "historical": {
+        "job_path": "out/phase11_items_gpt2-medium_s0_historical_v3.json",
+        "job_sha256": "834580563628abe976e29146e96bb0700ed54acd1fed5aca4f92c8f46f6c741d",
+        "pairs_path": "out/pairs/phase11_items_gpt2-medium_s0_historical_v3.jsonl",
+        "pairs_sha256": "0b16363ddb306a3520f743537aceb1dc207d9152b4fa2634dbad0bbe62328947"
+      }
+    },
+    {
+      "task": "phase11",
+      "model": "gpt2-medium",
+      "seed": 1,
+      "n_independent_items": 600,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        96,
+        144,
+        192
+      ],
+      "manifest_path": "data/attn/phase11_items_gpt2-medium_s1_v3.manifest.json",
+      "manifest_sha256": "d213fd18dfc6514c8fc28c1c964cc3a2ea72b212370bfed93f595a4244b010d0",
+      "payload_sha256": "3ea21e1029ec5beb8f52890ee57263ef53c433253af50230acd1e8680e58c58b",
+      "historical": {
+        "job_path": "out/phase11_items_gpt2-medium_s1_historical_v3.json",
+        "job_sha256": "371b38cefad2eb86bdd34f48053b01ecbaa53a10a9d05a6942c9182b4089e95e",
+        "pairs_path": "out/pairs/phase11_items_gpt2-medium_s1_historical_v3.jsonl",
+        "pairs_sha256": "80e2acfce6c2fe61dcba3d310448492907f19267aac2af14549e73599166e77f"
+      }
+    },
+    {
+      "task": "phase11",
+      "model": "gpt2-medium",
+      "seed": 2,
+      "n_independent_items": 600,
+      "dtype": "torch.float32",
+      "middle_positions": [
+        96,
+        144,
+        192
+      ],
+      "manifest_path": "data/attn/phase11_items_gpt2-medium_s2_v3.manifest.json",
+      "manifest_sha256": "17f3a1471ead11b3576a9e7858a78debc5686ea178a2f656d20f8f37ec03ad9e",
+      "payload_sha256": "9afd1b6208c1783f76b1b465e99672e86f68c585f8493f874a910faeb8ac2947",
+      "historical": {
+        "job_path": "out/phase11_items_gpt2-medium_s2_historical_v3.json",
+        "job_sha256": "b10d95689215b200183729000959498b238dd8db45539a7d3916e75bfc973546",
+        "pairs_path": "out/pairs/phase11_items_gpt2-medium_s2_historical_v3.jsonl",
+        "pairs_sha256": "c33c9c49c76374a779c33104566c3b28d6193fe477b6468ae01e8f78ae46714b"
+      }
+    },
+    {
+      "task": "phase11",
+      "model": "Qwen/Qwen2.5-3B",
+      "seed": 0,
+      "n_independent_items": 600,
+      "dtype": "torch.bfloat16",
+      "middle_positions": [
+        96,
+        144,
+        192
+      ],
+      "manifest_path": "data/attn/phase11_items_Qwen__Qwen2.5-3B_s0_v3.manifest.json",
+      "manifest_sha256": "8cf059a252e3935909da19d535b3ca766a430f7121bcc35c8ac54b4993107335",
+      "payload_sha256": "750ef561c220e6292507d8cd210895b1c3e2a4654a96da599f579c08d6b603a5",
+      "historical": {
+        "job_path": "out/phase11_items_Qwen__Qwen2.5-3B_s0_historical_v3.json",
+        "job_sha256": "e5c716b0fabc29b7557adb27c5cc10cf1396666514979b4f4709afeaca80da55",
+        "pairs_path": "out/pairs/phase11_items_Qwen__Qwen2.5-3B_s0_historical_v3.jsonl",
+        "pairs_sha256": "db05c9a80d694e4108e54f30ab9e8642d7ced80edb216d44ba0312ffc531754a"
+      }
+    },
+    {
+      "task": "phase11",
+      "model": "Qwen/Qwen2.5-3B",
+      "seed": 1,
+      "n_independent_items": 600,
+      "dtype": "torch.bfloat16",
+      "middle_positions": [
+        96,
+        144,
+        192
+      ],
+      "manifest_path": "data/attn/phase11_items_Qwen__Qwen2.5-3B_s1_v3.manifest.json",
+      "manifest_sha256": "ce562e034ae11e7a1e52884079a3dc1595df842b11e3017b981ac9f16fff32c6",
+      "payload_sha256": "db7b6d795ae5c4e3cf1e22fe7a73c50120d99f024ec52a4179799da98d34ee1b",
+      "historical": {
+        "job_path": "out/phase11_items_Qwen__Qwen2.5-3B_s1_historical_v3.json",
+        "job_sha256": "9d4de1a6f9594665c4ee65f4d60921092d325b422d156e97fe8e5125d6a253d0",
+        "pairs_path": "out/pairs/phase11_items_Qwen__Qwen2.5-3B_s1_historical_v3.jsonl",
+        "pairs_sha256": "7a9916e97a3c8a7516f79a9657e255db496bb673807a659163678de4db543c0e"
+      }
+    },
+    {
+      "task": "phase11",
+      "model": "Qwen/Qwen2.5-3B",
+      "seed": 2,
+      "n_independent_items": 600,
+      "dtype": "torch.bfloat16",
+      "middle_positions": [
+        96,
+        144,
+        192
+      ],
+      "manifest_path": "data/attn/phase11_items_Qwen__Qwen2.5-3B_s2_v3.manifest.json",
+      "manifest_sha256": "f766852eecc875532730fc9a2e486552df32b564a1272c0dc21576ff09c0a6eb",
+      "payload_sha256": "7ef82d8013838af3786b88ca3224dd0684bc51c06ffcd81551571acd97c73acd",
+      "historical": {
+        "job_path": "out/phase11_items_Qwen__Qwen2.5-3B_s2_historical_v3.json",
+        "job_sha256": "fc2387ed9465f638749765d66ca4e12d5b6c9d44518ce0ad590fb55f6e38d3c0",
+        "pairs_path": "out/pairs/phase11_items_Qwen__Qwen2.5-3B_s2_historical_v3.jsonl",
+        "pairs_sha256": "3e1f5dd39f5e31e40e96ad5a1a9af0d042c66bb2081f7a94c74a6ce6a18946f5"
+      }
+    }
+  ],
+  "source_hashes": {
+    "phase53_massmatched_retrieval.py": "487733d69775faaba9db657d070e11c5cd5e9d8956a59aa2ce10a5cde211e7c1",
+    "phase54_massmatched_retrieval_run.py": "8405471d8d3c5e1e210968ecd5eb50600a4b9666335ade0d15744391a91f8209",
+    "phase37_mass_matched.py": "d4e0f302bc3dc0d21a446cf1eb581f679375972ede67a606555c084b1920dee5",
+    "revision_v3_stats.py": "fa53651d82018d93faaffa755d00c2d8b05a1166f6ef63cb5c3dfcc04e19f979",
+    "revision_v3_probes.py": "8aab9a6b020a70af460a6d5170a14d706d3f991a844d77b1117448df814f2ec5",
+    "phase2_downstream.py": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+    "phase8_lostmiddle.py": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+    "sampling.py": "fbe06260b4b1811e6287052a45d120817f2f259bed55e0189ad95015f13a6ce6"
+  },
+  "primary_family_7": [
+    [
+      "phase8",
+      "gpt2"
+    ],
+    [
+      "phase8",
+      "gpt2-medium"
+    ],
+    [
+      "phase8",
+      "EleutherAI/pythia-410m"
+    ],
+    [
+      "phase8",
+      "EleutherAI/pythia-1.4b"
+    ],
+    [
+      "phase8",
+      "Qwen/Qwen2.5-0.5B"
+    ],
+    [
+      "phase11",
+      "gpt2-medium"
+    ],
+    [
+      "phase11",
+      "Qwen/Qwen2.5-3B"
+    ]
+  ],
+  "scope": "historical middle window only: phase8 6000/model, phase11 1800/model",
+  "budget_rule": "q=min(.75*sink_sinkarm,nonsink_sinkarm,nonsink_controlarm); absolute row0 q=0",
+  "randomization": "phase37.random_order; seed0 plus item(task/model/seed/position/item), layer, head and query; no targets",
+  "normalization": "phase37 float64 removal and shared causal normalization; q0 rows preserved exactly",
+  "coupling": "sink and control trajectories evaluated together at each layer/head/query; same feasible q after feedback",
+  "precision": "historical: probe all five FP32; KV GPT2-medium FP32, Qwen3B BF16",
+  "statistics": "2000 bootstrap draws seed0, paired items within seed x position; raw item median and median seed accuracy gain; pooled mean secondary",
+  "primary_test": "exact paired label permutation within seed; statistic median three seed gains, sink minus control; Holm7",
+  "per_seed_test": "exact McNemar on discordant items, sink minus control",
+  "historical_uncapped_sink": "stored separately as a secondary reference; not substituted for the capped sink arm",
+  "created_utc": "2026-11-11T04:37:42.813853+00:00"
+}

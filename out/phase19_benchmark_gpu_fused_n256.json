@@ -1,0 +1,965 @@
+{
+  "n": 256,
+  "data": "synthetic lognormal; no archived attention used",
+  "gradcheck": {
+    "gradcheck": true,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "n": 7
+  },
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "parametric": {
+    "seconds": 10.340857800096273,
+    "optimizer": "Adam with projected box constraints",
+    "iterations": 100,
+    "starts": [
+      "uniform_omp",
+      "profiled_omp",
+      "random_importance"
+    ],
+    "seed": 19027,
+    "device": "cuda",
+    "dtype": "float32",
+    "n_parameters_per_line": 5,
+    "learning_rates": {
+      "angle": 0.0013671875,
+      "offset": 0.35,
+      "log_width": 0.04,
+      "decay": 0.06,
+      "amplitude": 0.025
+    },
+    "refinement": {
+      "enabled": true,
+      "max_iterations": 150,
+      "success": false,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "iterations": 150,
+      "function_evaluations": 153,
+      "objective": 16.608640670776367,
+      "gradient_max_absolute": 0.019134540110826492,
+      "coordinate_scale_angle": 128.0,
+      "gtol": 1e-07,
+      "ftol": 1e-12,
+      "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+    }
+  },
+  "cuda_renderer_check": {
+    "forward_max_absolute": 2.2351741790771484e-07,
+    "gradient_max_scaled_absolute": [
+      1.0045944236480864e-06,
+      2.450341867188399e-07,
+      7.966221460264933e-07,
+      1.1234978813945418e-07,
+      3.5888891147806135e-07
+    ],
+    "forward_tolerance": 2e-05,
+    "gradient_tolerance": 0.0002,
+    "n": 31,
+    "passed": true
+  },
+  "omp_uniform": {
+    "seconds": 7.005035999929532,
+    "refit_iterations": 410,
+    "cone_stationary": false,
+    "nnls_tolerance": 1e-10
+  },
+  "omp_profiled": {
+    "seconds": 32.637077199993655,
+    "refit_iterations": 410,
+    "cone_stationary": false,
+    "nnls_tolerance": 1e-10
+  },
+  "errors": {
+    "1": {
+      "relative": 0.7948921322822571,
+      "absolute": 389.865486004748,
+      "best_start": "random_importance",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7949954271316528,
+        0.7949954271316528,
+        0.7948921322822571
+      ],
+      "start_absolute_errors": [
+        389.9161376953125,
+        389.9161376953125,
+        389.865478515625
+      ],
+      "start_error_std": 4.8693662392906845e-05,
+      "start_error_range": [
+        0.7948921322822571,
+        0.7949954271316528
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        251,
+        251,
+        229
+      ],
+      "gradient_l2_at_best": [
+        0.0018731048330664635,
+        0.0018731048330664635,
+        0.0012309722369536757
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9967936277389526,
+            0.9967936277389526,
+            1.1807054281234741
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9916409254074097,
+            0.9916409254074097,
+            0.862348735332489
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.9753183722496033,
+            0.9753183722496033,
+            0.8111196756362915
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.9067586660385132,
+            0.9067586660385132,
+            0.7988037467002869
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.799979567527771,
+            0.799979567527771,
+            0.7968148589134216
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "2": {
+      "relative": 0.794861912727356,
+      "absolute": 389.85066441955433,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7948702573776245,
+        0.794861912727356,
+        0.7949174046516418
+      ],
+      "start_absolute_errors": [
+        389.8547668457031,
+        389.85064697265625,
+        389.87786865234375
+      ],
+      "start_error_std": 2.4430974008282647e-05,
+      "start_error_range": [
+        0.794861912727356,
+        0.7949174046516418
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        243,
+        243,
+        209
+      ],
+      "gradient_l2_at_best": [
+        0.003707528579980135,
+        0.0031473771668970585,
+        0.003127960953861475
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9928433895111084,
+            0.9933362007141113,
+            1.194715976715088
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9829763770103455,
+            0.9828202128410339,
+            0.8850390315055847
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.9525462985038757,
+            0.9486472010612488,
+            0.8170610666275024
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.890267014503479,
+            0.8881362676620483,
+            0.7998542785644531
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7994644641876221,
+            0.7993319034576416,
+            0.7966914772987366
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "4": {
+      "relative": 0.7946900725364685,
+      "absolute": 389.7663830978319,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7948045134544373,
+        0.7946900725364685,
+        0.7948407530784607
+      ],
+      "start_absolute_errors": [
+        389.822509765625,
+        389.7663879394531,
+        389.84027099609375
+      ],
+      "start_error_std": 6.42172308289446e-05,
+      "start_error_range": [
+        0.7946900725364685,
+        0.7948407530784607
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        253,
+        248,
+        237
+      ],
+      "gradient_l2_at_best": [
+        0.003589716972783208,
+        0.0031214868649840355,
+        0.004933255724608898
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9862028956413269,
+            0.9872690439224243,
+            1.3097069263458252
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9702033996582031,
+            0.9692134857177734,
+            0.9151394963264465
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.923352837562561,
+            0.9272519946098328,
+            0.8036847114562988
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8304862976074219,
+            0.8463870286941528,
+            0.7955796718597412
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7957674264907837,
+            0.7954536080360413,
+            0.7952184677124023
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "8": {
+      "relative": 0.7944933176040649,
+      "absolute": 389.66988200764615,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7945292592048645,
+        0.7944933176040649,
+        0.7946673631668091
+      ],
+      "start_absolute_errors": [
+        389.6875,
+        389.6698913574219,
+        389.7552490234375
+      ],
+      "start_error_std": 7.502322841901332e-05,
+      "start_error_range": [
+        0.7944933176040649,
+        0.7946673631668091
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        249,
+        253,
+        171
+      ],
+      "gradient_l2_at_best": [
+        0.004694298841059208,
+        0.006348072085529566,
+        0.007825608365237713
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.974784255027771,
+            0.9752192497253418,
+            1.2715823650360107
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9449127316474915,
+            0.9456650018692017,
+            0.9279522895812988
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.8928031921386719,
+            0.9056991934776306,
+            0.8393136858940125
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8187677264213562,
+            0.8242138028144836,
+            0.8009025454521179
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7952730059623718,
+            0.7953754663467407,
+            0.796421468257904
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "16": {
+      "relative": 0.7939849495887756,
+      "absolute": 389.4205461099804,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7941714525222778,
+        0.7939849495887756,
+        0.7943819165229797
+      ],
+      "start_absolute_errors": [
+        389.51202392578125,
+        389.4205322265625,
+        389.615234375
+      ],
+      "start_error_std": 0.00016215945652220398,
+      "start_error_range": [
+        0.7939849495887756,
+        0.7943819165229797
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        175,
+        208,
+        234
+      ],
+      "gradient_l2_at_best": [
+        0.01678948849439621,
+        0.02334027737379074,
+        0.01693081110715866
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.954982340335846,
+            0.9541747570037842,
+            1.2622129917144775
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.9109024405479431,
+            0.9085818529129028,
+            0.8326219916343689
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.8574881553649902,
+            0.8640438318252563,
+            0.7992126941680908
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.8077461123466492,
+            0.8075585961341858,
+            0.7954806089401245
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7948454022407532,
+            0.7947900295257568,
+            0.7948545217514038
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "32": {
+      "relative": 0.7928944826126099,
+      "absolute": 388.8857119854881,
+      "best_start": "uniform_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7928944826126099,
+        0.7931399345397949,
+        0.7941923141479492
+      ],
+      "start_absolute_errors": [
+        388.8857116699219,
+        389.006103515625,
+        389.5222473144531
+      ],
+      "start_error_std": 0.0005629403167404234,
+      "start_error_range": [
+        0.7928944826126099,
+        0.7941923141479492
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        253,
+        249,
+        237
+      ],
+      "gradient_l2_at_best": [
+        0.016420578584074974,
+        0.01709592156112194,
+        0.016418132930994034
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.9213902354240417,
+            0.9199010729789734,
+            1.3984744548797607
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.8637253642082214,
+            0.8580546379089355,
+            0.8374043703079224
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.8264216780662537,
+            0.8241541981697083,
+            0.7962509989738464
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7998090386390686,
+            0.7996891736984253,
+            0.7945115566253662
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7931451797485352,
+            0.7933533191680908,
+            0.7942987680435181
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "102": {
+      "relative": 0.784644365310669,
+      "absolute": 384.8393315259376,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7850466370582581,
+        0.784644365310669,
+        0.7889770865440369
+      ],
+      "start_absolute_errors": [
+        385.03662109375,
+        384.8393249511719,
+        386.96435546875
+      ],
+      "start_error_std": 0.001954559702426195,
+      "start_error_range": [
+        0.784644365310669,
+        0.7889770865440369
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        253,
+        253,
+        253
+      ],
+      "gradient_l2_at_best": [
+        0.18457375466823578,
+        0.2846837639808655,
+        0.05525756627321243
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.838433563709259,
+            0.833134651184082,
+            2.0780937671661377
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.802308976650238,
+            0.8024737238883972,
+            0.8110142350196838
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.7908551692962646,
+            0.7912522554397583,
+            0.8011240363121033
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7873638272285461,
+            0.7867470979690552,
+            0.7932180166244507
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.785662829875946,
+            0.7853233218193054,
+            0.7907267808914185
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "205": {
+      "relative": 0.7569712400436401,
+      "absolute": 371.2666768306091,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7609801888465881,
+        0.7569712400436401,
+        0.7844821214675903
+      ],
+      "start_absolute_errors": [
+        373.23291015625,
+        371.26666259765625,
+        384.759765625
+      ],
+      "start_error_std": 0.012134711258113384,
+      "start_error_range": [
+        0.7569712400436401,
+        0.7844821214675903
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        253,
+        247,
+        253
+      ],
+      "gradient_l2_at_best": [
+        0.10121528059244156,
+        0.1359231024980545,
+        0.16441822052001953
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.7953922152519226,
+            0.7893776297569275,
+            2.645686149597168
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.7753851413726807,
+            0.772440493106842,
+            0.8188157081604004
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.766572892665863,
+            0.7637526392936707,
+            0.79274982213974
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7632779479026794,
+            0.7597800493240356,
+            0.7887585759162903
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7612277269363403,
+            0.7576326727867126,
+            0.7873380184173584
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    },
+    "410": {
+      "relative": 0.7122377753257751,
+      "absolute": 349.32655029691995,
+      "best_start": "profiled_omp",
+      "start_names": [
+        "uniform_omp",
+        "profiled_omp",
+        "random_importance"
+      ],
+      "start_relative_errors": [
+        0.7165330052375793,
+        0.7122377753257751,
+        0.7774611115455627
+      ],
+      "start_absolute_errors": [
+        351.4331970214844,
+        349.3265380859375,
+        381.3161926269531
+      ],
+      "start_error_std": 0.029785839840769768,
+      "start_error_range": [
+        0.7122377753257751,
+        0.7774611115455627
+      ],
+      "iterations": 100,
+      "best_iterations": [
+        253,
+        253,
+        253
+      ],
+      "gradient_l2_at_best": [
+        0.15303441882133484,
+        0.13443587720394135,
+        0.1675817221403122
+      ],
+      "plateau_last_25": [
+        false,
+        false,
+        false
+      ],
+      "converged": false,
+      "convergence_definition": "gradient L2 < 1e-4 or relative error change < 1e-4 over last 25 updates",
+      "history_every_25": [
+        {
+          "iteration": 0,
+          "relative_errors": [
+            0.7684231996536255,
+            0.7602461576461792,
+            3.7750508785247803
+          ]
+        },
+        {
+          "iteration": 25,
+          "relative_errors": [
+            0.7487255334854126,
+            0.7441184520721436,
+            0.7931636571884155
+          ]
+        },
+        {
+          "iteration": 50,
+          "relative_errors": [
+            0.7267574071884155,
+            0.7229132652282715,
+            0.7867757081985474
+          ]
+        },
+        {
+          "iteration": 75,
+          "relative_errors": [
+            0.7195117473602295,
+            0.7156224846839905,
+            0.7832499742507935
+          ]
+        },
+        {
+          "iteration": 100,
+          "relative_errors": [
+            0.7169543504714966,
+            0.7125194072723389,
+            0.7808306813240051
+          ]
+        }
+      ],
+      "refinement": {
+        "enabled": true,
+        "max_iterations": 150,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 150,
+        "function_evaluations": 153,
+        "objective": 16.608640670776367,
+        "gradient_max_absolute": 0.019134540110826492,
+        "coordinate_scale_angle": 128.0,
+        "gtol": 1e-07,
+        "ftol": 1e-12,
+        "best_snapshot_rule": "retain each start's best error over Adam and all L-BFGS-B evaluations"
+      }
+    }
+  }
+}

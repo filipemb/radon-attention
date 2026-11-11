@@ -1,0 +1,43 @@
+{
+  "all_passed": true,
+  "fixed_shape_mask_cases": [
+    {
+      "q": 16,
+      "k": 16,
+      "dtype": "torch.float32",
+      "noncausal_counts_equal": true
+    },
+    {
+      "q": 16,
+      "k": 16,
+      "dtype": "torch.bfloat16",
+      "noncausal_counts_equal": true
+    },
+    {
+      "q": 4,
+      "k": 16,
+      "dtype": "torch.float32",
+      "noncausal_counts_equal": true
+    },
+    {
+      "q": 4,
+      "k": 16,
+      "dtype": "torch.bfloat16",
+      "noncausal_counts_equal": true
+    },
+    {
+      "q": 1,
+      "k": 16,
+      "dtype": "torch.float32",
+      "noncausal_counts_equal": true
+    },
+    {
+      "q": 1,
+      "k": 16,
+      "dtype": "torch.bfloat16",
+      "noncausal_counts_equal": true
+    }
+  ],
+  "batched_flags_match_per_document_including_argmax_ties": true,
+  "elapsed_seconds": 0.004966599866747856
+}

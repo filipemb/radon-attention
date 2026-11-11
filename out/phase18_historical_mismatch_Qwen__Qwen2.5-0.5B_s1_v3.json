@@ -1,0 +1,70 @@
+{
+  "source_jobs": [
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b1.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.75_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.5_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.35_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.25_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.15_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.1_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.05_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_b0.0_v3.jsonl",
+    "out\\pairs\\phase18_posbatch_items_Qwen__Qwen2.5-0.5B_s1_historical_blegacy_beta0_v3.jsonl"
+  ],
+  "differences": [
+    {
+      "family": "B",
+      "arm": "1.0",
+      "old_n_correct": 76,
+      "replayed_n_correct": 310
+    },
+    {
+      "family": "B",
+      "arm": "0.75",
+      "old_n_correct": 87,
+      "replayed_n_correct": 313
+    },
+    {
+      "family": "B",
+      "arm": "0.5",
+      "old_n_correct": 91,
+      "replayed_n_correct": 316
+    },
+    {
+      "family": "B",
+      "arm": "0.35",
+      "old_n_correct": 94,
+      "replayed_n_correct": 310
+    },
+    {
+      "family": "B",
+      "arm": "0.25",
+      "old_n_correct": 98,
+      "replayed_n_correct": 310
+    },
+    {
+      "family": "B",
+      "arm": "0.15",
+      "old_n_correct": 98,
+      "replayed_n_correct": 313
+    },
+    {
+      "family": "B",
+      "arm": "0.1",
+      "old_n_correct": 94,
+      "replayed_n_correct": 315
+    },
+    {
+      "family": "B",
+      "arm": "0.05",
+      "old_n_correct": 92,
+      "replayed_n_correct": 318
+    },
+    {
+      "family": "B",
+      "arm": "legacy_beta0",
+      "old_n_correct": 80,
+      "replayed_n_correct": 315
+    }
+  ]
+}

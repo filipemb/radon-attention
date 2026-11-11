@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "cohort_instance_counts": {
+    "768": 768,
+    "192": 192
+  },
+  "paired_statistics_reproduced": 1152,
+  "all_four_arms_same_instances_and_budgets": true,
+  "parent_artifacts_byte_identical": true,
+  "frozen_numeric_sources_unchanged": true,
+  "initial_numerical_failure_logs_retained": true,
+  "all30_pair_files_complete": true,
+  "strict_thin_maximum": 1.9999998846000224,
+  "ordinary_svd_max_delta_from_phase19": 1.185317148450787e-15,
+  "absolute_relative_max_discrepancy": 0.0,
+  "binary16_failures_explicit_no_conditional_primary_medians": true,
+  "all_masked_positive_gates_pass": false,
+  "all_planted_segment_gates_pass": false,
+  "maximum_active_calculation_processes": 3,
+  "report_sha256": "0568d3dda10b93ad950a3ff598453506e23939bbeecfee1b1463b8c9fea7f89c"
+}

@@ -1,0 +1,1257 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a",
+  "n_unique_matrices": 32,
+  "n_fits": 128,
+  "same_indices_as_original_GPU_validation": [
+    0,
+    24,
+    48,
+    72,
+    96,
+    120,
+    145,
+    169,
+    193,
+    217,
+    241,
+    265,
+    290,
+    314,
+    338,
+    362,
+    386,
+    410,
+    435,
+    459,
+    483,
+    507,
+    531,
+    555,
+    576,
+    600,
+    624,
+    648,
+    672,
+    696,
+    721,
+    745
+  ],
+  "same_initial_factors_rounded_to_float32": true,
+  "GPU_dtype": "float32",
+  "CPU_reference_dtype": "float64",
+  "CPU_recomputations": 0,
+  "ridge_relative_to_trace": 1e-06,
+  "sweeps": 200,
+  "max_absolute_relative_error_difference": 0.6093185341643993,
+  "max_normalized_frobenius_difference": 0.7957081942060998,
+  "max_TV_difference": 0.5138970947529176,
+  "threshold_fixed_before_results": 0.002,
+  "passed": false,
+  "n_failed_fits": 112,
+  "worst": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "archive_index": 120,
+    "instance_id": "Qwen__Qwen2.5-0.5B_n128_wikitext-train-article-19783_l0_h5",
+    "document_index": 5,
+    "layer": 0,
+    "head": 5,
+    "K": 16,
+    "arm": "masked_K",
+    "CPU": {
+      "frobenius": 0.993242354657116,
+      "TV": 0.6367894713588157,
+      "raw_causal_frobenius": 0.7744361227421951,
+      "raw_unmasked_frobenius": 0.776238457104854,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "GPU": {
+      "frobenius": 0.1975341604510161,
+      "TV": 0.12289237660589818,
+      "raw_causal_frobenius": 0.16511758857779582,
+      "raw_unmasked_frobenius": 12457.575913695031,
+      "normalization_validation": {
+        "reconstruction_rows_total": 128,
+        "last_query_rows_total": 1,
+        "reconstruction_layer_calls": 1,
+        "empty_rows_completed": 0,
+        "empty_rows_completed_at_last_query": 0,
+        "max_row_error_before_cast": 1.1920928955078125e-07,
+        "rows_checked": 128,
+        "negative_nan_inf_upper_nonzero": 0
+      }
+    },
+    "absolute_relative_error_difference": 0.6093185341643993,
+    "normalized_frobenius_difference": 0.7957081942060998,
+    "TV_difference": 0.5138970947529176,
+    "CPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float64",
+      "initial_relative": 0.7744361227421951,
+      "final_relative": 0.7744361227421951,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 1,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 10,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 25,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 50,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 100,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 150,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 180,
+          "relative": 0.7744361227421951
+        },
+        {
+          "sweep": 200,
+          "relative": 0.7744361227421951
+        }
+      ],
+      "last20_relative_objective_change": 0.0,
+      "gradient_normalized_target": 0.03240754559435239,
+      "converged": false,
+      "direct_LS_blocks": 93800,
+      "direct_sweep_retries": 200,
+      "rejected_sweeps": [
+        {
+          "sweep": 1,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 2,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 3,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 4,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 5,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 6,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 7,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 8,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 9,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 10,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 11,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 12,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 13,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 14,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 15,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 16,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 17,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 18,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 19,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 20,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 21,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 22,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 23,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 24,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 25,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 26,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 27,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 28,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 29,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 30,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 31,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 32,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 33,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 34,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 35,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 36,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 37,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 38,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 39,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 40,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 41,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 42,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 43,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 44,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 45,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 46,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 47,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 48,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 49,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 50,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 51,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 52,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 53,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 54,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 55,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 56,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 57,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 58,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 59,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 60,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 61,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 62,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 63,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 64,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 65,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 66,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 67,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 68,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 69,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 70,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 71,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 72,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 73,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 74,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 75,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 76,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 77,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 78,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 79,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 80,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 81,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 82,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 83,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 84,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 85,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 86,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 87,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 88,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 89,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 90,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 91,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 92,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 93,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 94,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 95,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 96,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 97,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 98,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 99,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 100,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 101,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 102,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 103,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 104,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 105,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 106,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 107,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 108,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 109,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 110,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 111,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 112,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 113,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 114,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 115,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 116,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 117,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 118,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 119,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 120,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 121,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 122,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 123,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 124,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 125,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 126,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 127,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 128,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 129,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 130,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 131,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 132,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 133,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 134,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 135,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 136,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 137,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 138,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 139,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 140,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 141,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 142,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 143,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 144,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 145,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 146,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 147,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 148,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 149,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 150,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 151,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 152,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 153,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 154,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 155,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 156,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 157,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 158,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 159,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 160,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 161,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 162,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 163,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 164,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 165,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 166,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 167,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 168,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 169,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 170,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 171,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 172,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 173,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 174,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 175,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 176,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 177,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 178,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 179,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 180,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 181,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 182,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 183,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 184,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 185,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 186,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 187,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 188,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 189,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 190,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 191,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 192,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 193,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 194,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 195,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 196,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 197,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 198,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 199,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        },
+        {
+          "sweep": 200,
+          "previous_loss": 0.5997513082079643,
+          "proposed_loss": 73366556.20372942
+        }
+      ],
+      "maximum_absolute_factor": 1.4766028242022187,
+      "minimum_nonzero_absolute_factor": 4.369146700409396e-31,
+      "factor_dynamic_range": 3.379613744862031e+30,
+      "unmasked_product_norm_over_target": 0.6304394163688339,
+      "maximum_QR_observed_product_error": 32004.809690715814,
+      "seconds": 3.926625399850309
+    },
+    "GPU_ALS": {
+      "sweeps": 200,
+      "dtype": "float32",
+      "GPU_solver": "cumulative_gram_graph",
+      "ridge_relative_to_trace": 1e-06,
+      "ridge_absolute_floor": 1e-30,
+      "CPU_recomputations": 0,
+      "initial_relative": 0.7744361162185669,
+      "final_relative": 0.16511757671833038,
+      "history": [
+        {
+          "sweep": 0,
+          "relative": 0.7744361162185669
+        },
+        {
+          "sweep": 1,
+          "relative": 0.7248656153678894
+        },
+        {
+          "sweep": 10,
+          "relative": 0.3144734501838684
+        },
+        {
+          "sweep": 25,
+          "relative": 0.23211844265460968
+        },
+        {
+          "sweep": 50,
+          "relative": 0.20359809696674347
+        },
+        {
+          "sweep": 100,
+          "relative": 0.18568731844425201
+        },
+        {
+          "sweep": 150,
+          "relative": 0.1740531176328659
+        },
+        {
+          "sweep": 180,
+          "relative": 0.16778947412967682
+        },
+        {
+          "sweep": 200,
+          "relative": 0.16511757671833038
+        }
+      ],
+      "last20_relative_objective_change": 0.03159455582499504,
+      "gradient_normalized_target": 0.28257161378860474,
+      "converged": false,
+      "objective_increase_sweeps": 0,
+      "maximum_absolute_factor": 192.23602294921875,
+      "minimum_nonzero_absolute_factor": 2.521673714284134e-08,
+      "factor_dynamic_range": 7623350390.66669,
+      "unmasked_product_norm_over_target": 12457.5751953125,
+      "maximum_QR_observed_product_error": 1.9365970729268156e-05,
+      "seconds": 0.38490289985202253
+    },
+    "passed": false,
+    "protocol_sha256": "99dc6df9f03a47cb64d48f0cb947940a49b32c6cec391eac2b4895d1238db73a"
+  },
+  "timings": [
+    {
+      "K": 8,
+      "arm": "masked_K",
+      "rank": 8,
+      "n_matrices": 32,
+      "cold_seconds": 0.7998534999787807,
+      "steady_seconds": 0.13507309998385608
+    },
+    {
+      "K": 8,
+      "arm": "named_plus_masked",
+      "rank": 7,
+      "n_matrices": 32,
+      "cold_seconds": 0.3067578000482172,
+      "steady_seconds": 0.12351459986530244
+    },
+    {
+      "K": 16,
+      "arm": "masked_K",
+      "rank": 16,
+      "n_matrices": 32,
+      "cold_seconds": 0.38559540011920035,
+      "steady_seconds": 0.21264180005528033
+    },
+    {
+      "K": 16,
+      "arm": "named_plus_masked",
+      "rank": 15,
+      "n_matrices": 32,
+      "cold_seconds": 0.36990319984033704,
+      "steady_seconds": 0.20484440005384386
+    }
+  ],
+  "elapsed_seconds": 2.99654270010069,
+  "pairs_path": "out/pairs/phase50_fp32_validation_Qwen__Qwen2.5-0.5B.jsonl",
+  "pairs_sha256": "bb2eb828461fc2f17611c117626f7a5de6aa09050fc4fc714824281a5f6e652f",
+  "sources": {
+    "phase50_fp32_als.py": "12db461d06ccab82c40bb4d3befbb8f7dc5b85c47a998609da457db861ea39b1",
+    "phase50_fp32_graph.py": "bddc95e7fad7ff8c73132e47f09a19eae421494b1ce43a5190e40c6d4eb20d33"
+  },
+  "CPU_reference_metadata": "out/phase50_GPU_CPU_reference_Qwen__Qwen2.5-0.5B.json",
+  "failure_interpretation": "Uniform trace-relative ridge changes the unregularized finite-200-sweep estimator; FP32 normal equations lose small singular directions (conditioning squared). Worst CPU diagnostics and all raw per-fit errors retained. No threshold relaxation or CPU fallback."
+}

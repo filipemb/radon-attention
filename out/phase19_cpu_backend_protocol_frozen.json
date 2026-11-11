@@ -1,0 +1,27 @@
+{
+  "fixed_before_any_cpu_real_fit": true,
+  "reason": "Shared GPU unavailable for more than 35 minutes after previous E2 batch; three CPU workers are free. Use CPU in parallel until explicit GPU handoff. Backend chosen by availability, not errors.",
+  "n": 256,
+  "cpu_initial_model_assignments": [
+    "gpt2-medium",
+    "EleutherAI__pythia-410m",
+    "Qwen__Qwen2.5-0.5B"
+  ],
+  "gpu_only_initial_assignment": "Qwen__Qwen2.5-3B",
+  "same_frozen_optimizer": "out/phase19_optimizer_stable_frozen.json",
+  "same_selection_sha256": "116063d760ac7619b8d5909613ad75e72fd93f61c0512f5cfd8ec618704ea54e",
+  "same_seeds_starts_and_budgets": true,
+  "adam_steps": 450,
+  "lbfgsb_max_iterations": 150,
+  "renderer_parameters_and_loss": "float32",
+  "renderer_accumulation": "float64",
+  "max_cpu_workers": 3,
+  "cpu_threads_each": 4,
+  "validation_required": "Identical 64 n256 synthetic cases with unchanged thresholds, separately reported before real CPU fits",
+  "handoff": "Explicit cancellation at next renderer evaluation, complete JSONL prefix retained, native Windows per-dataset FileLock; GPU remains under global Linux flock",
+  "source_sha256": {
+    "richlines_numba.py": "02e53a50dc370f4e81b0345c4174301462a51c33fd6ed502b1d156280a827d9e",
+    "richlines_cpu_parametric.py": "d872a46843f5a4c37a95b29ccd664d93b9bf04c589ff5e86a5a5ea2c52ed76a7",
+    "richlines_gpu_runner.py": "6f0063fa6340dd0029f961cc1f23e5370b7676c4972fa7eaa09760ba013f3dc5"
+  }
+}

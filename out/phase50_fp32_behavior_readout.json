@@ -1,0 +1,168 @@
+{
+  "report_path": "out/phase50_report.json",
+  "report_sha256": "b016ffe3548963643fbea72a3d11660c8ce38098f98b8f35573cc629ec2e4f71",
+  "n_articles": 64,
+  "rows": [
+    {
+      "model": "gpt2",
+      "K": 8,
+      "median_KL_a_d_e": {
+        "svd_K": 1.9013205131161959,
+        "named_plus_svd": 0.307927912982092,
+        "svd_K_diag_exact": 1.712170987032074
+      },
+      "e_minus_a_p_Holm": 4.3087430722548467e-07,
+      "e_minus_a_rank_biserial": -0.8307692307692308,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "gpt2",
+      "K": 16,
+      "median_KL_a_d_e": {
+        "svd_K": 1.3991284528476722,
+        "named_plus_svd": 0.11077882332703737,
+        "svd_K_diag_exact": 1.1456495357648842
+      },
+      "e_minus_a_p_Holm": 1.6873105758662298e-05,
+      "e_minus_a_rank_biserial": -0.7365384615384616,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "gpt2-medium",
+      "K": 8,
+      "median_KL_a_d_e": {
+        "svd_K": 1.4458305282693222,
+        "named_plus_svd": 0.25515757549667295,
+        "svd_K_diag_exact": 0.7429276876246798
+      },
+      "e_minus_a_p_Holm": 6.190410005758548e-08,
+      "e_minus_a_rank_biserial": -0.8769230769230769,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "gpt2-medium",
+      "K": 16,
+      "median_KL_a_d_e": {
+        "svd_K": 0.5061901489433807,
+        "named_plus_svd": 0.0638671213110732,
+        "svd_K_diag_exact": 0.1288960644672248
+      },
+      "e_minus_a_p_Holm": 2.349073708934314e-09,
+      "e_minus_a_rank_biserial": -0.95,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "K": 8,
+      "median_KL_a_d_e": {
+        "svd_K": 1.8798370853303807,
+        "named_plus_svd": 1.0106002078406693,
+        "svd_K_diag_exact": 1.8798370853303807
+      },
+      "e_minus_a_p_Holm": 1.0,
+      "e_minus_a_rank_biserial": 0.0,
+      "e_is_exact_alias_of_a": true,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "K": 16,
+      "median_KL_a_d_e": {
+        "svd_K": 1.0102885685409548,
+        "named_plus_svd": 0.26114226921685213,
+        "svd_K_diag_exact": 1.0102885685409548
+      },
+      "e_minus_a_p_Holm": 1.0,
+      "e_minus_a_rank_biserial": 0.0,
+      "e_is_exact_alias_of_a": true,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "K": 8,
+      "median_KL_a_d_e": {
+        "svd_K": 2.0373041022129055,
+        "named_plus_svd": 0.9583278195723615,
+        "svd_K_diag_exact": 2.0373041022129055
+      },
+      "e_minus_a_p_Holm": 1.0,
+      "e_minus_a_rank_biserial": 0.0,
+      "e_is_exact_alias_of_a": true,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "K": 16,
+      "median_KL_a_d_e": {
+        "svd_K": 0.9047019106057427,
+        "named_plus_svd": 0.26953224212841953,
+        "svd_K_diag_exact": 0.9047019106057427
+      },
+      "e_minus_a_p_Holm": 1.0,
+      "e_minus_a_rank_biserial": 0.0,
+      "e_is_exact_alias_of_a": true,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "K": 8,
+      "median_KL_a_d_e": {
+        "svd_K": 2.3659928513022552,
+        "named_plus_svd": 0.4665596769773954,
+        "svd_K_diag_exact": 2.1743316222373847
+      },
+      "e_minus_a_p_Holm": 1.0,
+      "e_minus_a_rank_biserial": -0.25384615384615383,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "K": 16,
+      "median_KL_a_d_e": {
+        "svd_K": 1.25433133096935,
+        "named_plus_svd": 0.14521447836644213,
+        "svd_K_diag_exact": 0.9722500615730026
+      },
+      "e_minus_a_p_Holm": 0.0036323918145876174,
+      "e_minus_a_rank_biserial": -0.573076923076923,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "K": 8,
+      "median_KL_a_d_e": {
+        "svd_K": 8.812511038252996,
+        "named_plus_svd": 0.5840361586916893,
+        "svd_K_diag_exact": 6.683278165102424
+      },
+      "e_minus_a_p_Holm": 0.00027138155968731164,
+      "e_minus_a_rank_biserial": -0.6567307692307692,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "K": 16,
+      "median_KL_a_d_e": {
+        "svd_K": 7.661046531497746,
+        "named_plus_svd": 0.1912612404131125,
+        "svd_K_diag_exact": 4.217103388534381
+      },
+      "e_minus_a_p_Holm": 2.766240023750074e-09,
+      "e_minus_a_rank_biserial": -0.9461538461538461,
+      "e_is_exact_alias_of_a": false,
+      "d_median_lower_than_e": true
+    }
+  ],
+  "significant_e_vs_a_excluding_exact_aliases": 7,
+  "non_alias_e_vs_a_comparisons": 8,
+  "d_median_lower_than_e_cells": 12,
+  "no_d_vs_e_significance_claim": "descriptive medians only; this contrast was not in the planned forward Wilcoxon family",
+  "honest_reading": "The fixed head exemptions explain part of the SVD loss, with seven of eight non-alias e-a comparisons significant, but do not eliminate the observed median advantage of named_plus_svd. Causal masked-low-rank behavioral superiority/inferiority remains unresolved because all24 masked model/rank/arm numerical equivalence checks failed and no new b/c/f behavioral KL was scored."
+}

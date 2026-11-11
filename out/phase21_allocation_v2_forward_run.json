@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "started_UTC": "2026-11-10T08:26:56.579211+00:00",
+  "authorization": "User explicitly resumed the deferred injection after completed V1; historical three-hour timeout remains untouched",
+  "source_V1_sha256": "610728b6dbebb3c3e5a11d6e194cfa7a723ea09aef8cc45c9b835d7130826806",
+  "corpus_manifest_sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+  "imported_harness_sha256": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+  "primary_statistics_sha256": "dbfe79311a132dba1910c993dddb80db5a23edec0609ba8ee396dd19cd59806f",
+  "allocation_estimator_source_sha256": "da02cd054f88dcbad5c02345d8af3be262961a2667eb27a7a958f476780a658f",
+  "continuation_source_sha256": "b5b1d530a4a6fa66bc8b13ab639300980ac8363828bca9938c20088b31c6138b",
+  "protected_matrix_aggregate_sha256": "490e8d07b89662582b0cb2d0b7d27f4275f180bd7e4005044e98816595a4af40",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "EleutherAI/pythia-410m",
+    "EleutherAI/pythia-1.4b",
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-3B"
+  ],
+  "prefix_length": 128,
+  "batch_by_model": {
+    "gpt2": 2,
+    "gpt2-medium": 2,
+    "EleutherAI/pythia-410m": 2,
+    "EleutherAI/pythia-1.4b": 2,
+    "Qwen/Qwen2.5-0.5B": 2,
+    "Qwen/Qwen2.5-3B": 2
+  },
+  "n_articles": 256,
+  "K": [
+    8,
+    16
+  ],
+  "rank_rule": "q=K-1; cost=2*count(c>0)+q*(2n+1)<=K*(2n+1)",
+  "GPU_lock": "/tmp/radon-gpu.lock",
+  "lock_scope": "one child process per model, released before CPU summary and the next model",
+  "SVD_and_scale_references": "Reused immutable V1 per-article observations on identical corpus/targets/dtype/batch",
+  "S_plus_L_SVD": "Imported factor_svd; fixed torch default exact float32 SVD, sequential schedule",
+  "matrix_aggregate_modified": false,
+  "n_bootstrap": 2000,
+  "seed": 0,
+  "source_pairs_sha256": {
+    "gpt2": "4b2ff25e4f6d4e9e784f3c6a3d3e5ee70a31f860d3bebdd687c80ed70e1d9e8f",
+    "gpt2-medium": "08832cea90072696ed6954a75ed6cf7adb1330c03f785eecb90b34bb10af2a2d",
+    "EleutherAI/pythia-410m": "039632c21ba89238995e86d75dcbff7e9f674d75983a4adaacd2d8dd29ead5a9",
+    "EleutherAI/pythia-1.4b": "9ea16db88af58a86a226753a8f3fe11db240c48822f13618a47e2b943164bd8e",
+    "Qwen/Qwen2.5-0.5B": "ce568ad94494d8b603f9c9ef85b45b84239e372ce5d5e1eedf94ef38097c362c",
+    "Qwen/Qwen2.5-3B": "4f798466699599ca0e79879d32f7b4e3097eadff9f79803c4336bd1b8ab95bdf"
+  },
+  "estimator_checks_path": "out/phase21_allocation_v2_forward_controls_9c06be6df205.json",
+  "estimator_checks_sha256": "266e9a44da6adbb56480d87bd276f60ad519740fe3a96aaa3553a0529167fc76",
+  "signed_rank_controls": {
+    "positive": {
+      "n_articles": 256,
+      "n_zero_differences": 0,
+      "statistic": 0.0,
+      "p_two_sided": 9.640418513895798e-44,
+      "W_positive": 32896.0,
+      "W_negative": 0.0,
+      "rank_biserial": 1.0,
+      "positive_difference_favors": "SVD",
+      "method": "scipy.stats.wilcoxon; two-sided; zero_method=wilcox; method=asymptotic; p unadjusted",
+      "fraction_articles_SVD_has_lower_KL": 1.0
+    },
+    "all_zero": {
+      "n_articles": 256,
+      "n_zero_differences": 256,
+      "statistic": 0.0,
+      "p_two_sided": 1.0,
+      "W_positive": 0.0,
+      "W_negative": 0.0,
+      "rank_biserial": 0.0,
+      "positive_difference_favors": "SVD",
+      "method": "All article differences exactly zero: explicit degenerate null",
+      "fraction_articles_SVD_has_lower_KL": 0.0
+    }
+  },
+  "references_path": "out/phase21_allocation_v2_forward_V1_references.json",
+  "references_sha256": "e3b876d513a05520d0b8afcf55f51ae6181110bf3435028fcb12083dbcae33fd"
+}

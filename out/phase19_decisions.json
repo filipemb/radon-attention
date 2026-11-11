@@ -1,0 +1,34 @@
+{
+  "decisions": [
+    {
+      "question": "Full archive versus stratified subset?",
+      "suggestion": "64 matrices/dataset, one per document with layer quotas and head balancing",
+      "certainty": "high",
+      "executed": true
+    },
+    {
+      "question": "Which common storage budgets?",
+      "suggestion": "(2n+1)*[1,2,4], independent of observed errors; same-k reported separately",
+      "certainty": "medium",
+      "executed": true
+    },
+    {
+      "question": "How to interpret failed positive controls?",
+      "suggestion": "Keep error gates unchanged and retain all cases; restrict negative claims",
+      "certainty": "high",
+      "executed": true
+    },
+    {
+      "question": "How to estimate the Radon inverse conditioning?",
+      "suggestion": "Extremal eigenvalues of R transpose R on causal pixels; 180/360 angles",
+      "certainty": "high",
+      "executed": true
+    },
+    {
+      "question": "How to make gradient fitting affordable?",
+      "suggestion": "Fused CUDA kernels for exact sparse compact-support rendering; validate against dense values and gradients",
+      "certainty": "high",
+      "executed": true
+    }
+  ]
+}

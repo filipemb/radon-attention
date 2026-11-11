@@ -1,0 +1,20 @@
+{
+  "n": 128,
+  "model": "gpt2",
+  "fixed_instance_index": 0,
+  "passed": true,
+  "unmodified_full_OMP_error": 0.24634081066657781,
+  "direct_endpoint_error": 0.24634081066657781,
+  "absolute_difference": 0.0,
+  "predeclared_tolerance": 1e-11,
+  "literal_OMP_seconds": 230.141,
+  "endpoint_setup_seconds": 0.7418070000130683,
+  "endpoint_projection_seconds": 0.024975300068035722,
+  "n_atoms": 263,
+  "KKT": 1.7014597736663845e-17,
+  "benchmark_sha256": "bc9c929910e3b99d29046245401de34073d508367fff944bcbf900d8e58e4c5f",
+  "source_OMP_sha256": "88c46a9dd9941e9e9c35b3bef9154c9aed74711b544dc7f072888556c820e7c4",
+  "normalization": "Inherited unmodified OMP denominator ||A||+1e-12, applied identically to its exact endpoint",
+  "equivalence": "After all 2n+7 candidates have been selected, imported OMP solves NNLS on a permutation of the same full dictionary. A finitely generated cone has a unique matrix projection; coefficient nonuniqueness does not change the error.",
+  "production_substitution_authorized": false
+}

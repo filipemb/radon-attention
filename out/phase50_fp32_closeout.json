@@ -1,0 +1,13 @@
+{
+  "UTC": "2026-11-10T19:17:54.725581+00:00",
+  "coordinator_PID": 62246,
+  "coordinator_exit_code": 0,
+  "owned_pipeline_processes_still_active": [],
+  "owned_GPU_lock_holders": [],
+  "GPU_available_to_other_experiments": true,
+  "report_sha256": "b016ffe3548963643fbea72a3d11660c8ce38098f98b8f35573cc629ec2e4f71",
+  "behavior_readout_sha256": "0c621853d1cc492af2efa5c4372696a60d91a36872e80297fd8b2538de65b3a4",
+  "complete_scientific_E9_forward_comparison": false,
+  "reason": "all24 masked model/rank/arm cells failed the fixed numerical acceptance test",
+  "no_paper_or_git_changes_by_this_task": true
+}

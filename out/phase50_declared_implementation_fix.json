@@ -1,0 +1,61 @@
+{
+  "UTC": "2026-11-10T21:00:25.022322+00:00",
+  "role": "Numerical implementation correction of QR+SVD rebalance, not a new optimization estimator or tuning of its parameters",
+  "authority": "Necessary reversible numerical bug fix within the user-authorized forward run",
+  "original_failure": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "arm": "masked_K_diag_exact",
+    "K": 16,
+    "documents": [
+      4,
+      5
+    ],
+    "layer_zero_based": 11,
+    "head_zero_based": 13,
+    "batch_matrix_index": 27,
+    "first_failed_sweep": 71,
+    "native_SVD_info": 0,
+    "cause": "cuSOLVER SgesvdjBatched returned an infinite singular value for a finite core with Frobenius norm about 1; finite singular vectors reconstruct that core when the invalid value is recomputed",
+    "exception_preserved": true,
+    "invalid_KL_NLL_written": false,
+    "failed_attempt_log": "out/phase50_declared_Qwen__Qwen2.5-0.5B_000_016_execution.log"
+  },
+  "correction": {
+    "formula": "For invalid native s_i only: s_i = u_i^T C v_i, evaluated on the original finite core C and returned finite singular vectors, all in GPU float32",
+    "finite_nonnegative_native_values": "retained unchanged",
+    "negative_recomputed_value": "canonicalize sign into the corresponding right singular vector",
+    "no_NaN_or_Infinity_imputation_to_zero": true,
+    "no_CPU_ALS_fallback": true,
+    "no_additional_ALS_sweeps": true,
+    "ridge_relative_to_trace": 1e-06,
+    "sweeps": 200,
+    "initialization": "unchanged truncated SVD",
+    "rank_and_storage": "unchanged",
+    "invalid_native_values_and_fits_counted": true
+  },
+  "control": {
+    "path": "out/phase50_declared_core_recompute_control.json",
+    "sha256": "1f6102908eeee59e640df1143accbf2d8760cd4f100987437108592da845f219",
+    "actual_core_max_relative_reconstruction_error": 1.94464099287717e-06,
+    "original_failed_input200_sweeps_finite": true,
+    "ordinary_path_bit_equal_component_controls": 20,
+    "planted_trajectories_match_original_exactly": true,
+    "no_behavioral_KL_NLL_scored": true
+  },
+  "source": "phase50_declared_core_value_recompute.py",
+  "source_sha256": "6045433e6602dd4b0cf57ada870eee7dc1be00b062874d76afe953b22a99df7d",
+  "evidence_sha256": {
+    "out/phase50_declared_native_core_SVD_failure.json": "499ada90f6c6b255d140f3c76fe39aca933e7a7094506ddcd90859d979459049",
+    "out/phase50_declared_first_failure_trace.json": "484466e767bbe7531f85f4522c45fb1dac161aaacf75d61f731c40be7412b15c",
+    "out/phase50_declared_failed_ALS_input_Qwen05_docs4_6.json": "4fa51ee4e5a9e00760f4c2283ac6ffe2f848459cd11d05e33e92eec656a586fc",
+    "out/phase50_declared_core_rayleigh_diagnostic.json": "ce57948464a4b508f05032e21e7bba7946369c5d0c1654590bdd81f2a928f32f"
+  },
+  "compatibility_with_already_successful_matrix_and_forward_results": "An invalid native singular value made the original estimator nonfinite and fail. All successful old matrix/forward fits used the unchanged ordinary nonnegative finite path; component tests confirm bit equality.",
+  "prior_finite_results_retained_unchanged": true,
+  "CPU_float64_equivalence_status": "still failed; no acceptance criterion relaxed",
+  "unselected_prototypes": [
+    "QR overflow scaling (QR had finite moderate entries)",
+    "signed-negative-only SVD correction (actual native singular value was infinite)"
+  ],
+  "recorded_before_patched_behavioral_forward": true
+}

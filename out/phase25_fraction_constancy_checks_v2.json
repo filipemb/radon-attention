@@ -1,0 +1,9 @@
+{
+  "norm_energy_cross_term_identity": "passed",
+  "scaling_invariance": "passed",
+  "constancy_individual": 0.3683940397350475,
+  "constancy_after_averaging": 0.04934210526314751,
+  "dense_qr_nnls_relative_named_error": 7.184583286626902e-15,
+  "qr_atol": 1e-09,
+  "elapsed_seconds": 3.4678640000056475
+}

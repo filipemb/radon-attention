@@ -1,0 +1,210 @@
+{
+  "all_passed": true,
+  "positive_beta_cases": [
+    {
+      "dtype": "torch.float32",
+      "beta": 0.05,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 1.7881393432617188e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "beta": 0.1,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 1.7881393432617188e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "beta": 0.15,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "beta": 0.25,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "beta": 0.5,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 1.7881393432617188e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "beta": 0.75,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "beta": 1.0,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 2.384185791015625e-07,
+      "fixed_dtype_arithmetic_bound": 2.119209296656209e-06
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 0.05,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.00421142578125,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 0.1,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.004150390625,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 0.15,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.00390625,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 0.25,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.00439453125,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 0.5,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.0039825439453125,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 0.75,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.00421142578125,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "beta": 1.0,
+      "phase8_10_14_bit_equal_to_legacy": true,
+      "max_absolute_difference": 0.0,
+      "max_row_sum_error": 0.001953125,
+      "fixed_dtype_arithmetic_bound": 0.007845137254901961
+    }
+  ],
+  "zero_beta_cases": [
+    {
+      "dtype": "torch.float32",
+      "first_and_other_no_alternative_rows_unchanged": true,
+      "tiny_positive_mass_normalized_without_preserving_sink": true,
+      "stats": {
+        "sink_edit_rows_total": 10,
+        "sink_edit_rows_preserved_no_alternative": 6,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 2,
+        "max_sink_edit_row_error": 0,
+        "max_sink_edit_row_error_bound": 2.119209296656209e-06
+      }
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "first_and_other_no_alternative_rows_unchanged": true,
+      "tiny_positive_mass_normalized_without_preserving_sink": true,
+      "stats": {
+        "sink_edit_rows_total": 10,
+        "sink_edit_rows_preserved_no_alternative": 6,
+        "sink_edit_last_query_rows_preserved": 0,
+        "sink_edit_positive_mass_below_legacy_clamp": 2,
+        "max_sink_edit_row_error": 0.001953125,
+        "max_sink_edit_row_error_bound": 0.007845137254901961
+      }
+    }
+  ],
+  "reconstruction_completion": [
+    {
+      "q": 5,
+      "k": 5,
+      "uniform_even_with_poisoned_original": true,
+      "counts": {
+        "policy": "uniform_causal",
+        "rows_total": 30,
+        "rows_completed": 30,
+        "fraction_rows_completed": 1.0,
+        "last_query_rows_total": 6,
+        "last_query_rows_completed": 6,
+        "fraction_last_query_rows_completed": 1.0
+      }
+    },
+    {
+      "q": 3,
+      "k": 7,
+      "uniform_even_with_poisoned_original": true,
+      "counts": {
+        "policy": "uniform_causal",
+        "rows_total": 18,
+        "rows_completed": 18,
+        "fraction_rows_completed": 1.0,
+        "last_query_rows_total": 6,
+        "last_query_rows_completed": 6,
+        "fraction_last_query_rows_completed": 1.0
+      }
+    },
+    {
+      "q": 1,
+      "k": 7,
+      "uniform_even_with_poisoned_original": true,
+      "counts": {
+        "policy": "uniform_causal",
+        "rows_total": 6,
+        "rows_completed": 6,
+        "fraction_rows_completed": 1.0,
+        "last_query_rows_total": 6,
+        "last_query_rows_completed": 6,
+        "fraction_last_query_rows_completed": 1.0
+      }
+    }
+  ],
+  "inheritance": {
+    "phase11_kv": "same repaired callback and state object",
+    "phase16_longcontext": "same repaired callback and state object",
+    "phase18_betacv": "same repaired callback and state object"
+  },
+  "cached_sink_edit": {
+    "q": 3,
+    "k": 7,
+    "offset": 4,
+    "passed": true,
+    "stats": {
+      "sink_edit_rows_total": 18,
+      "sink_edit_rows_preserved_no_alternative": 6,
+      "sink_edit_last_query_rows_preserved": 0,
+      "sink_edit_positive_mass_below_legacy_clamp": 0,
+      "max_sink_edit_row_error": 0,
+      "max_sink_edit_row_error_bound": 2.119209296656209e-06
+    }
+  },
+  "nonfinite_reconstruction_rejected": true,
+  "elapsed_seconds": 0.3370541001204401
+}

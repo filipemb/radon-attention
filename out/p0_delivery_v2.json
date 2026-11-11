@@ -1,0 +1,1730 @@
+{
+  "all_required_experiments_complete": true,
+  "pending_required_outputs": [],
+  "checked_raw_pair_groups": [
+    {
+      "model": "gpt2",
+      "n": 128,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2",
+      "n": 128,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2",
+      "n": 128,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2",
+      "n": 256,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2",
+      "n": 256,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2",
+      "n": 256,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 128,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 128,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 128,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 256,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 256,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "gpt2-medium",
+      "n": 256,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 128,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 128,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 128,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 256,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 256,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-410m",
+      "n": 256,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 128,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 128,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 128,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 256,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 256,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "EleutherAI/pythia-1.4b",
+      "n": 256,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 128,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 128,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 128,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 256,
+      "group": "core",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 256,
+      "group": "named",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-0.5B",
+      "n": 256,
+      "group": "constancy",
+      "n_pairs": 1536,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 128,
+      "group": "core",
+      "n_pairs": 2304,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 128,
+      "group": "named",
+      "n_pairs": 2304,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 128,
+      "group": "constancy",
+      "n_pairs": 2304,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 256,
+      "group": "core",
+      "n_pairs": 2304,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 256,
+      "group": "named",
+      "n_pairs": 2304,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B",
+      "n": 256,
+      "group": "constancy",
+      "n_pairs": 2304,
+      "passed": true
+    }
+  ],
+  "all_available_numerical_audits_passed": true,
+  "identity_models": 6,
+  "identity_documents_per_model": 256,
+  "v2_total_primary_matrices": 19968,
+  "cost_benchmark_matrices_per_length": 64,
+  "independent_other_model_family_review": "not performed by this script",
+  "inventory": [
+    {
+      "path": "sampling.py",
+      "bytes": 12076,
+      "sha256": "fbe06260b4b1811e6287052a45d120817f2f259bed55e0189ad95015f13a6ce6",
+      "kind": "source"
+    },
+    {
+      "path": "extract_attn.py",
+      "bytes": 9849,
+      "sha256": "b670a02895b130e4f64bb8cadd7d005416fcd81d4820aea231532c8dc93f9f45",
+      "kind": "source"
+    },
+    {
+      "path": "phase1_multimodel.py",
+      "bytes": 497,
+      "sha256": "d869c21f86a6e61fd053034edf2ecfad19538f0788cd12bc8a05e3da2e873787",
+      "kind": "source"
+    },
+    {
+      "path": "phase2_downstream.py",
+      "bytes": 32726,
+      "sha256": "9c06be6df2053bb94fa2fa31d66ec0174fa3036ddbac081511f683b19ff11de9",
+      "kind": "source"
+    },
+    {
+      "path": "phase3_robustness.py",
+      "bytes": 660,
+      "sha256": "d5d9dd7535e852134dc01beadd350ca10bad4a09aaedcc346156da2d3fd6cebc",
+      "kind": "source"
+    },
+    {
+      "path": "phase5_msclean.py",
+      "bytes": 3308,
+      "sha256": "876a21b7f0515c298253aaf51d49625c3f28a00e2df712bb1a0377d622b3fb68",
+      "kind": "source"
+    },
+    {
+      "path": "phase6_srpca.py",
+      "bytes": 2400,
+      "sha256": "346c215ef794c7a2e55206a63eb469a1d15f74eab65fca33b21559ad06c1fdbd",
+      "kind": "source"
+    },
+    {
+      "path": "phase7_editability.py",
+      "bytes": 2821,
+      "sha256": "e9b800d7628556f69dcbc0bf6ad08f847ebf630e7084ed91f09957648660a44f",
+      "kind": "source"
+    },
+    {
+      "path": "phase9_bigmodel.py",
+      "bytes": 653,
+      "sha256": "4df27d44908f088f48258119164d01a010141d62b88568a2d9dbe1799a98db77",
+      "kind": "source"
+    },
+    {
+      "path": "phase15_interaction.py",
+      "bytes": 4361,
+      "sha256": "a1dddc0937c8d469b4cd145de1b1eaff20ef6f2b8f2dbb2c9eecaf974b88c186",
+      "kind": "source"
+    },
+    {
+      "path": "phase17_efficiency.py",
+      "bytes": 6047,
+      "sha256": "9508fde2d45f8a539a922c456391f645d7df0b1f3e23142f8bcf5ba09438811a",
+      "kind": "source"
+    },
+    {
+      "path": "phase24_p0_metrics.py",
+      "bytes": 12141,
+      "sha256": "dbfe79311a132dba1910c993dddb80db5a23edec0609ba8ee396dd19cd59806f",
+      "kind": "source"
+    },
+    {
+      "path": "phase25_p0_checks.py",
+      "bytes": 28181,
+      "sha256": "67be85a8f980820fd6295ed7e0963cd5970dedb7587ed5eb04d6388a17068904",
+      "kind": "source"
+    },
+    {
+      "path": "phase26_p0_named.py",
+      "bytes": 8094,
+      "sha256": "f29bc4b4d77bfbe80ef5667ea8837d7f588c6822bc40b9251c43052e4368638e",
+      "kind": "source"
+    },
+    {
+      "path": "phase8_lostmiddle.py",
+      "bytes": 11618,
+      "sha256": "d03f8a177c707d02eeffa7d655e3bc2c428d24f7b18037bffa5e63b59832a96e",
+      "kind": "source"
+    },
+    {
+      "path": "phase10_baselines.py",
+      "bytes": 4995,
+      "sha256": "da8d420daa96dc88ab18bf0765ce6977ac3de1e7d42fced62c0a9ae53a014c01",
+      "kind": "source"
+    },
+    {
+      "path": "phase14_adaptive.py",
+      "bytes": 5496,
+      "sha256": "46333449d15b3cff16cecd8fe939a869cbce956af663ddd5482c32324c192b90",
+      "kind": "source"
+    },
+    {
+      "path": "phase27_finish_v1.py",
+      "bytes": 1813,
+      "sha256": "3142689077785ff20d54ef02db97ab89bff417701a82d3f36685946872305c4e",
+      "kind": "source"
+    },
+    {
+      "path": "phase28_beta0_retest.py",
+      "bytes": 19628,
+      "sha256": "b506f44df8759763b9a2543833cfbff9b27f349db56139e3df5e42505587628d",
+      "kind": "source"
+    },
+    {
+      "path": "phase29_sink_checks.py",
+      "bytes": 6414,
+      "sha256": "6e89ddc73d9cc312a21357f8424cc10a7d4fe1faabc59a314ec519230eb5b3d8",
+      "kind": "source"
+    },
+    {
+      "path": "phase30_validity_audit.py",
+      "bytes": 10208,
+      "sha256": "578046f112ec0eac8a233f8a84144ca7638b055e650ddd379fcbeeacce94c794",
+      "kind": "source"
+    },
+    {
+      "path": "phase31_finish_beta0.py",
+      "bytes": 2725,
+      "sha256": "e3be01ed7508ac6a8f2a72ba07f774ec3b12cd2aa3123de9e3f097f81e98e5d6",
+      "kind": "source"
+    },
+    {
+      "path": "phase32_queue_remaining_v1.py",
+      "bytes": 2257,
+      "sha256": "7d8423ebbb5f991c7d0774211c66a0875a142c18e83815669703bb6d84d4552a",
+      "kind": "source"
+    },
+    {
+      "path": "phase33_validation_schedule.py",
+      "bytes": 8159,
+      "sha256": "b18cf9d7f57bbc33add4f5bcd15680198e4e2bcd82804c59a1d5564c068a64f9",
+      "kind": "source"
+    },
+    {
+      "path": "phase34_parallel_svd.py",
+      "bytes": 3092,
+      "sha256": "46cbf1fb1876265c9682192a3e0739a85fd8a8183efc4be84045477dd96ed27e",
+      "kind": "source"
+    },
+    {
+      "path": "phase35_downstream_intervals.py",
+      "bytes": 3915,
+      "sha256": "30869aacce6635fb46205e747d491bb7e56a2db9d5d6686cd40a1bcc19886e98",
+      "kind": "source"
+    },
+    {
+      "path": "data/attn/beta0_probe_EleutherAI__pythia-1.4b_s0_v2.manifest.json",
+      "bytes": 1531,
+      "sha256": "5dd6978cdb8e77d2f3abe57bee892e141b075f4920e233550a0d5145d1749805",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_EleutherAI__pythia-1.4b_s0_v2.npz",
+      "bytes": 781458,
+      "sha256": "1425fff6b62dda8405ce27f29445f7d2fbb7822e5cb8759a6489e58e8c7cb5c8",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_EleutherAI__pythia-410m_s0_v2.manifest.json",
+      "bytes": 1531,
+      "sha256": "9e4f272d394a704db2be1e0648a6e731bed1a6cb01218555c3faea7ae2561f24",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_EleutherAI__pythia-410m_s0_v2.npz",
+      "bytes": 784601,
+      "sha256": "0a288b2a23a5c4464f95fc52260232615447e4e0dc6b00faa6ae8f6a2774bcdd",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_gpt2-medium_s0_v2.manifest.json",
+      "bytes": 1520,
+      "sha256": "9f1b7ec4d46658d7b1deeff4d534a7e93933089feb604c56aa89312e42c719de",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_gpt2-medium_s0_v2.npz",
+      "bytes": 775571,
+      "sha256": "312e2bdf2ea4f4d3c68f68a0f13f46952e89277d0a79b0bce677e4b89c8358b9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_gpt2_s0_v2.manifest.json",
+      "bytes": 1513,
+      "sha256": "21da15d7bddba9a1a286ce9ff8a08d69305d14bf71f629fde1c75b2f9c0a2892",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_gpt2_s0_v2.npz",
+      "bytes": 777741,
+      "sha256": "6102a54ac170f6dd69728f73ddb40acc096a36ac8caf0dacf4dda96bdbe408c0",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_Qwen__Qwen2.5-0.5B_s0_v2.manifest.json",
+      "bytes": 1526,
+      "sha256": "a96b8c9a9768aa45acc4dfafd670d66225edfbe452906f506513e59723206ff6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/beta0_probe_Qwen__Qwen2.5-0.5B_s0_v2.npz",
+      "bytes": 762208,
+      "sha256": "f6f6251c08d6d7cf554056e9875521be0091e5612bcb301435f5f7fb501977e3",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/corpus_v2.manifest.json",
+      "bytes": 14941080,
+      "sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-1.4b_n128.manifest.json",
+      "bytes": 416329,
+      "sha256": "b401e3d1ab6ee2a31a309670d23de92d714963395fad0402bef8801e14bac41d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-1.4b_n128.npz",
+      "bytes": 22841639,
+      "sha256": "618bc8efb15d5b8e29d4c9c2e48b323755515de5f604298e49e838d15512d078",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-1.4b_n256.manifest.json",
+      "bytes": 416331,
+      "sha256": "d39c51b066c83438fd730326a94df59d4416229c9f3cbdf32b41793303fd47fa",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-1.4b_n256.npz",
+      "bytes": 86608107,
+      "sha256": "b39fbb83495ad6576675d71dfb6d5edd10fdd7f32d78686fdd36adae8da33a79",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-410m_n128.manifest.json",
+      "bytes": 416235,
+      "sha256": "5b3cb45134aa3ab44af9a09195740e27497371ad31b8efb6d04650e8eae4bdf7",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-410m_n128.npz",
+      "bytes": 22258396,
+      "sha256": "48a00470b91b5ccc9d2a7d881a88216d29ebf32c4e2e7d25163470732229e193",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-410m_n256.manifest.json",
+      "bytes": 416236,
+      "sha256": "02ec74bcaeae2fee55b148bd29c01cab26de1bb42450b85b91ae4a322a6c6710",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/EleutherAI__pythia-410m_n256.npz",
+      "bytes": 84197366,
+      "sha256": "f5a42fc2e43bffa704b36ed78659d36067467181da1953ab44460f5542d8a7ba",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2-medium_n128.manifest.json",
+      "bytes": 397824,
+      "sha256": "100c102af14dac3b695d7298884f2bf509b754a24c709945a10010673d6d251f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2-medium_n128.npz",
+      "bytes": 23025306,
+      "sha256": "583225b5395e45ed5d533895d07a0893560326899f065987539f13b5b9502f22",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2-medium_n256.manifest.json",
+      "bytes": 397828,
+      "sha256": "7ccc36878981b25c9f7e1038bb78b689a862f7af2d2465e7029b563eeb692644",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2-medium_n256.npz",
+      "bytes": 84274169,
+      "sha256": "a667b8dacd1e596d95c0bdff30566ba883f57414886a7bf5500c6bd910c2346a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2_n128.manifest.json",
+      "bytes": 385153,
+      "sha256": "260a3c319614e2bc8a4776cc02f1dfe9025eda7e02f9b6ffc271fdcc6580ef22",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2_n128.npz",
+      "bytes": 21794031,
+      "sha256": "edf724c93f141e280d56be453668354136f53084fce7b25b1706c9728b9a00c7",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2_n256.manifest.json",
+      "bytes": 385153,
+      "sha256": "c8266dcb7b36cdf2210fd0dfbdfd009673e4a9979d01bf450727eace73e22807",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2_n256.npz",
+      "bytes": 77997289,
+      "sha256": "eb7f9a227da0dd468a734de5ce988ffe56266e21fd336359bcdbfc71acf3f4a2",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2_n512.manifest.json",
+      "bytes": 385153,
+      "sha256": "5492c60639ae41b9c4705000080ac14fb918c3314eef8974b44ab8ba6790f238",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/gpt2_n512.npz",
+      "bytes": 285054936,
+      "sha256": "7d744a313765023f9e8e6dae21da8f5b994831e72d37cdcb125e2550e786a59a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-0.5B_n128.manifest.json",
+      "bytes": 408224,
+      "sha256": "cf74f43482d460befb25920dbe51012b162f368796e36100d8b09c7cc0ef6286",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-0.5B_n128.npz",
+      "bytes": 22094625,
+      "sha256": "dd3bdd404c3d385debd913dd7d81a915b353b1bf271e0678664887a28eacf939",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-0.5B_n256.manifest.json",
+      "bytes": 408224,
+      "sha256": "19674cef4dd357df72ac5b05c35f0dba8c711fe50740ee50667acedddf5be7af",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-0.5B_n256.npz",
+      "bytes": 82781558,
+      "sha256": "5ae6ed32ca5b855488ea8520cd86e64f18cdc1f1034c62649c5e17a5e5229afc",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-3B_n128.manifest.json",
+      "bytes": 599403,
+      "sha256": "07e72863029e320d00e5b1e0e8213148ccb669faea05d9a6a0421f7ef769a06b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-3B_n128.npz",
+      "bytes": 34916690,
+      "sha256": "110ae9ef4f6bf5c4d188bbbac8866b7ac9b93df208ef27a0cc215f535241d00a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-3B_n256.manifest.json",
+      "bytes": 599403,
+      "sha256": "5c1a4fc9fcc7b48b0adb7cbba4d6681c82872a443bb2feaa90a12afda8d74105",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/Qwen__Qwen2.5-3B_n256.npz",
+      "bytes": 132822010,
+      "sha256": "1ba8ff7702a45ed87684debcd565313c7d060d8daaf390748269717eedbb690d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "data/attn/READY",
+      "bytes": 2788,
+      "sha256": "20968c5ecf371ef2424a6815e5659aeb40a7fd870d300149ba8a660571eb8e64",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/p0_comparison_v2.json",
+      "bytes": 4958,
+      "sha256": "9b81ce6a22f237951f8638390b34ca3841af4f13fe005e8b919b3a419f5fe8cf",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/p0_environment_v2.json",
+      "bytes": 727,
+      "sha256": "054196b4eb403e7808d5e0083bb7994926a50d643a582d2092ff83a817301cd4",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/analysis_cost_v2.jsonl",
+      "bytes": 344043,
+      "sha256": "ae90e16a264a48f1f6f75e8ce962141b29dffd72475a0477651ff2a32103e8ad",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/beta0_EleutherAI__pythia-1.4b_v2.jsonl",
+      "bytes": 5520358,
+      "sha256": "d6d6c7f519cd82a4f94a496db4032fa4e5f7a477d4b31daded97f5e6a3156559",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/beta0_EleutherAI__pythia-410m_v2.jsonl",
+      "bytes": 5508056,
+      "sha256": "8d2403daeb4230fac9c73f952bad98a3eb2cb75b70dd6ff70d9319c45cfb2245",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/beta0_gpt2-medium_v2.jsonl",
+      "bytes": 5414233,
+      "sha256": "7e94c99daee39f748fc20fb43a05fa300e459c67c4aecfcf71d78b3cfb3c4e19",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/beta0_gpt2_v2.jsonl",
+      "bytes": 5334695,
+      "sha256": "f7515e5fbd24b35cb9f82df3e9cffaec4e37af61e9e42fd2a4f55088c97ff39c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/beta0_Qwen__Qwen2.5-0.5B_v2.jsonl",
+      "bytes": 5442614,
+      "sha256": "18cdff3f50dcada810ad1c6fa9351a731557114e215717896546ac4255574f20",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 830629,
+      "sha256": "44a163879c887d82b7f1b8973bab761007b9e368a1c267aab14ea65df15a31cd",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 830745,
+      "sha256": "19e705dee13c439f76e122f2bfd5c8391d5711ed57c6da08b491b4777b3659f9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 830337,
+      "sha256": "562be21c594e1772376684e0923587418087eead854d5c26d2f8f39fd61c532f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 830355,
+      "sha256": "85ce9aa72861c8f3bb48ac7e2b6d280d674a99189337e435cf18715b13827fdc",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_gpt2-medium_n128_v2.jsonl",
+      "bytes": 812914,
+      "sha256": "146dfb5476ecd8ec92fa11b9dbe92517c4af1125be406b2706ad13a3967a144d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_gpt2-medium_n256_v2.jsonl",
+      "bytes": 813557,
+      "sha256": "3875fcfcee20286616525071fa98c8a84aff22b54c049936d476b7b4592ff61a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_gpt2_n128_v2.jsonl",
+      "bytes": 799917,
+      "sha256": "01f9bd3e80cbf0d063a2a05dd159660e15f57e8274203bdccb14100c89e63abc",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_gpt2_n256_v2.jsonl",
+      "bytes": 800589,
+      "sha256": "aabe1fd562756edb3d31e5d02263f4a2605094de124e581fe3b38880c59c26c0",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 822975,
+      "sha256": "97a0127867d280d1361a4e5e99d8f479653cebb3bc4d2df907f52c03f357f549",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 823381,
+      "sha256": "c028bdb905620e32a908e13f566a292e987e1260cca0791f0dd6bacbbfff059e",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 1231434,
+      "sha256": "405e8a966d5f1e34b3bdb9f1e115176dbabeab839526d869490c72c05e343e6f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/constancy_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 1232276,
+      "sha256": "0b632d848487c257cc2ce9fb7b28b4cac3bbd089fc588cf67231be389e583aaa",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_EleutherAI__pythia-1.4b_n128_v2.jsonl",
+      "bytes": 1285990,
+      "sha256": "3200cd083a6945e5ba7f17cfbb9d7b8eb75594866c7ca20fd20870e28b7b3d9b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_EleutherAI__pythia-1.4b_n256_v2.jsonl",
+      "bytes": 1287409,
+      "sha256": "c9590785f6db620563d29d4b5bccbb6248772bf09d94df86d0123ab8f62a2dda",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_EleutherAI__pythia-410m_n128_v2.jsonl",
+      "bytes": 1285743,
+      "sha256": "146e97647b957a19a5a2d5a78cee6264000360593c86c09d81a1d76148caa22d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_EleutherAI__pythia-410m_n256_v2.jsonl",
+      "bytes": 1287398,
+      "sha256": "cb61288046421c02d4b276f0dc1eff9352dddedd066fde13e483d7edf83028ce",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_gpt2-medium_n128_v2.jsonl",
+      "bytes": 1269002,
+      "sha256": "1a45bb74177702ab77990cbe98623414e70e52786bd6254f5e1a3dc898e1c890",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_gpt2-medium_n256_v2.jsonl",
+      "bytes": 1270935,
+      "sha256": "b9f18551039e4593bacc24a89d0f945f6ac8fe8160ff9e601016914561fb5626",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_gpt2_n128_v2.jsonl",
+      "bytes": 1255344,
+      "sha256": "45ea74c08a09628b45de856bd53e3f78d3373c4b55612dcf898e3b97c7d988bf",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_gpt2_n256_v2.jsonl",
+      "bytes": 1256827,
+      "sha256": "eac2b03b599d3c826533423eb91a50df2da5e95513e933b8eb12d44b4a6ee124",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_Qwen__Qwen2.5-0.5B_n128_v2.jsonl",
+      "bytes": 1278120,
+      "sha256": "75bdef154bcff852611304b20428ad09aa57e422a2fe9ea8f0be3afa229fe009",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_Qwen__Qwen2.5-0.5B_n256_v2.jsonl",
+      "bytes": 1280107,
+      "sha256": "c3f3c55fd590255902b44de582afa0d0851dcd38736850cf7c0f251ef46590c4",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_Qwen__Qwen2.5-3B_n128_v2.jsonl",
+      "bytes": 2268276,
+      "sha256": "41dd50d7179680e15d7aba8998947c50611f8337229171e8f7ec223bb0d138f9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/core_Qwen__Qwen2.5-3B_n256_v2.jsonl",
+      "bytes": 2270906,
+      "sha256": "5224112e25bfa90addf6ad453c6fd9656a8c1a1661d38e49ce7f0010db5db393",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_EleutherAI__pythia-1.4b_uniform_v2.jsonl",
+      "bytes": 4208267,
+      "sha256": "9ea16db88af58a86a226753a8f3fe11db240c48822f13618a47e2b943164bd8e",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_EleutherAI__pythia-410m_uniform_v2.jsonl",
+      "bytes": 4213024,
+      "sha256": "039632c21ba89238995e86d75dcbff7e9f674d75983a4adaacd2d8dd29ead5a9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_gpt2-medium_uniform_v2.jsonl",
+      "bytes": 4046487,
+      "sha256": "08832cea90072696ed6954a75ed6cf7adb1330c03f785eecb90b34bb10af2a2d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_gpt2_uniform_v2.jsonl",
+      "bytes": 3503774,
+      "sha256": "4b2ff25e4f6d4e9e784f3c6a3d3e5ee70a31f860d3bebdd687c80ed70e1d9e8f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_gpt2_v2.jsonl",
+      "bytes": 2577,
+      "sha256": "45ece38eaaa59a9289cfc7a8f7d0bf3157b171ba48ed63407fd40d3298aedf7f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_Qwen__Qwen2.5-0.5B_uniform_v2.jsonl",
+      "bytes": 4169341,
+      "sha256": "ce568ad94494d8b603f9c9ef85b45b84239e372ce5d5e1eedf94ef38097c362c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/downstream_Qwen__Qwen2.5-3B_uniform_v2.jsonl",
+      "bytes": 4174050,
+      "sha256": "4f798466699599ca0e79879d32f7b4e3097eadff9f79803c4336bd1b8ab95bdf",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/empty_rows_EleutherAI__pythia-1.4b_v2.jsonl",
+      "bytes": 2682700,
+      "sha256": "9918bb2f690750d77b9d092040040d7847737a13452e51b9ce82eb127017d825",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/empty_rows_EleutherAI__pythia-410m_v2.jsonl",
+      "bytes": 2682023,
+      "sha256": "4b7b1bce887b2d716db4366e527f24b6322987410fd2de49005c15bff2fff36b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/empty_rows_gpt2-medium_v2.jsonl",
+      "bytes": 2663048,
+      "sha256": "b010ae540f44859efdb9f851117b6fa7f1073e1eb3e163f8ef5c0a75f1ea5181",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/empty_rows_gpt2_v2.jsonl",
+      "bytes": 2649023,
+      "sha256": "ea2d4c97a468b94c6f4e4c58e2d21f52666dfd87b6f2fffe309e80ecce3695dc",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/empty_rows_Qwen__Qwen2.5-0.5B_v2.jsonl",
+      "bytes": 2673498,
+      "sha256": "7a934d2acc88c33dc599308547117fd68bebef8380815bcb5a4b7f1a908ce100",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/empty_rows_Qwen__Qwen2.5-3B_v2.jsonl",
+      "bytes": 4015351,
+      "sha256": "91307ce7e727e99f52dd0b00e4257b5f8a5eb4ffba00b287c2956303f8f3328b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/legacy_mass_EleutherAI__pythia-1.4b_v2.jsonl",
+      "bytes": 1687362,
+      "sha256": "5ef758ad5db932ddeef155005565bf90ff96983d75fef3e58759b68fab3e4409",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/legacy_mass_EleutherAI__pythia-410m_v2.jsonl",
+      "bytes": 1686695,
+      "sha256": "16013c38b60007669f2576437f5136abd6e6da95bf467e8d2fedd482711628bb",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/legacy_mass_gpt2-medium_v2.jsonl",
+      "bytes": 1667720,
+      "sha256": "7f4c4c10f95a8b63751d00fa0344c257450e4e07edc1b539d2dc6548435f9bbb",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/legacy_mass_gpt2_v2.jsonl",
+      "bytes": 1653340,
+      "sha256": "f4b6a046df1393a52d7ab8db18a4eaba60abbb80abb7a39b4897c73ecd11c77a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/legacy_mass_Qwen__Qwen2.5-0.5B_v2.jsonl",
+      "bytes": 1677307,
+      "sha256": "6d000f04ab4b15dffa377df22c58a0454c4682f0aac6646dd4e0c20108153350",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/legacy_mass_Qwen__Qwen2.5-3B_v2.jsonl",
+      "bytes": 2511754,
+      "sha256": "03968cd6f401924ff32426ef9828df7e1c30dd1c90c45831561b546d649656e8",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_EleutherAI__pythia-1.4b_n128_msclean_srpca_v2.jsonl",
+      "bytes": 14094761,
+      "sha256": "3d7170f93fe5246843371f52bacf223cd865a2546db3ea8c1fcba053b5230d59",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_EleutherAI__pythia-1.4b_n256_msclean_srpca_v2.jsonl",
+      "bytes": 14087084,
+      "sha256": "933dcad38963946e3d5e847435baa25b368e515e0796dae09293f8c63e3ad522",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_EleutherAI__pythia-410m_n128_msclean_srpca_v2.jsonl",
+      "bytes": 14096653,
+      "sha256": "a46db014149ca9b4cd33ec0e5f92eb3a064856488c0daa57eff812ff7dab8b3b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_EleutherAI__pythia-410m_n256_msclean_srpca_v2.jsonl",
+      "bytes": 14082580,
+      "sha256": "d8e3af7c54e87663ebcd1c2e9312d0d3482cb1f9ea7f307a24f6cd186b84ac34",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_gpt2-medium_n128_msclean_srpca_v2.jsonl",
+      "bytes": 14088729,
+      "sha256": "f7a9c2fd239d03ead0fc7fdabd511abd8710df8eba21d4733325314437cc04a9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_gpt2-medium_n256_msclean_srpca_v2.jsonl",
+      "bytes": 14081271,
+      "sha256": "973fd5ba007531a176b9037cd0a12a1a8f605c8183b3678411714b5cea094e56",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_gpt2_n128_msclean_srpca_v2.jsonl",
+      "bytes": 14065383,
+      "sha256": "b0f3224d8d4e3770b3e7227de59e84f6f69631dc50cd6041d5f20662bc4de045",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_gpt2_n256_msclean_srpca_v2.jsonl",
+      "bytes": 14056530,
+      "sha256": "c3043d8a4baf918962d698e97f0c089ff9102bbfa2d7f1cfe5c44c4c58ee51ae",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_Qwen__Qwen2.5-0.5B_n128_msclean_srpca_v2.jsonl",
+      "bytes": 14093732,
+      "sha256": "f97dc4c4005ccabcf8bf1528c39d46f936ba879192aacb87025e206747462af4",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_Qwen__Qwen2.5-0.5B_n256_msclean_srpca_v2.jsonl",
+      "bytes": 14088147,
+      "sha256": "40b88d9caa2fd20a95c4ab09a578c49a5def69f88b8dd421d74e8a397834dd6d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_Qwen__Qwen2.5-3B_n128_msclean_srpca_v2.jsonl",
+      "bytes": 21133126,
+      "sha256": "80e421f0c88fbe1f1d44ff525fceb567ccab898792fd2c15be854497bcedce2c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/pairs/named_Qwen__Qwen2.5-3B_n256_msclean_srpca_v2.jsonl",
+      "bytes": 21132234,
+      "sha256": "a143f7cf032f80c6a22e6270823734aa8c8715d607db1d03b2ca721aa59a3099",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_EleutherAI__pythia-1.4b_n128_v2.json",
+      "bytes": 20567,
+      "sha256": "708dfbaa59e976d2373d370fb0f766be01094bdc9a6a4fbd1bc1cb8075f1ddd3",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_EleutherAI__pythia-1.4b_n256_v2.json",
+      "bytes": 20564,
+      "sha256": "87210131bce84cb50211d3c6f837f4c542cd617c82c3fcd48a16ac0a2d3932c6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_EleutherAI__pythia-410m_n128_v2.json",
+      "bytes": 20575,
+      "sha256": "dc3eb26489d1165e28a215fb8057c3ee212b07e56b28b6137e32b2bdb9e0911f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_EleutherAI__pythia-410m_n256_v2.json",
+      "bytes": 20601,
+      "sha256": "f40145846db4eb351fec0b246b85cfa46c30968227f587dc3695c57842b24ff7",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_gpt2-medium_n128_v2.json",
+      "bytes": 20541,
+      "sha256": "71f5d8372f6c8a8d969025d24aed39cc912c651666bab0a48eb6ac8680382d31",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_gpt2-medium_n256_v2.json",
+      "bytes": 20540,
+      "sha256": "c97d486dd2929949d1d80c518a381f94dc7f03c155489b84d67b008720ef0d50",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_gpt2_n128_v2.json",
+      "bytes": 10927,
+      "sha256": "0c0916b705dcc1dffbe0f11cea1ffbd7645aa14c298c5b4a019e135b2dc98bec",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_gpt2_n256_v2.json",
+      "bytes": 10925,
+      "sha256": "98c1f30042ccaaa380bb0024cb69823d488e3dc09b26a85e67ec892c9a776fc2",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_interaction_v2.json",
+      "bytes": 278766,
+      "sha256": "d3a99fa8792af7c46b534256d7894dfbbbd3a82672eeb0a917bfb5da21c6b456",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_Qwen__Qwen2.5-0.5B_n128_v2.json",
+      "bytes": 20559,
+      "sha256": "8e662f808044eb94dec2260d1488ebd04dbc37ead62f8ce764d40d7c1875c1c9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_Qwen__Qwen2.5-0.5B_n256_v2.json",
+      "bytes": 20568,
+      "sha256": "2395e01d8d213f77eb60d220cc2b3a023be54c338f2862d99a29e7542075b1d6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_Qwen__Qwen2.5-3B_n128_v2.json",
+      "bytes": 30193,
+      "sha256": "1c9e7d7a167236fa3f241bee2dc74c00dcfdd1f8d4d6de8e4c538104cbd2e80a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase15_Qwen__Qwen2.5-3B_n256_v2.json",
+      "bytes": 30199,
+      "sha256": "19312da7dd154707de68f79345543aa901df2de3d98bcadd5948ad33bb245e9d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase17_efficiency_v2.json",
+      "bytes": 11649,
+      "sha256": "2c05b328a37c2d078a935ad8abb2ea921ac366bd349e92950dc08d124692fd97",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase18_beta0_dependency_audit_v2.json",
+      "bytes": 4812,
+      "sha256": "5f6fce3232203096ea7d7b6837adc75adad2409776cd9cc01d3a9960a7875d34",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase1_multimodel_v2.json",
+      "bytes": 29999,
+      "sha256": "1460a5c2ccf65126ffce33b11ae24a0244cef997d30bb4fa365290c7a387d08c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_EleutherAI__pythia-1.4b_n128_v2.json",
+      "bytes": 4344,
+      "sha256": "85884cbdd76c76586eea04a34db6e14e8c966218a1310ae8969b64e1bce08a2f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_EleutherAI__pythia-1.4b_n256_v2.json",
+      "bytes": 4346,
+      "sha256": "aab20874b9c357f6693f4f8f3d7fa8efbb526fcd1da29cbbdcd4d2c021e35f95",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_EleutherAI__pythia-410m_n128_v2.json",
+      "bytes": 4341,
+      "sha256": "c149d75c9fff04ced06b1ae367b8c203fba063a966f158cb7dbc6f279053867f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_EleutherAI__pythia-410m_n256_v2.json",
+      "bytes": 4344,
+      "sha256": "e32d1359af0a64854665f6410d8254e1c75fe7ce2e25537be5319bb6dfd68b34",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_gpt2-medium_n128_v2.json",
+      "bytes": 4324,
+      "sha256": "25bdac9a523dd00308abf3355d4ec240932de94eca7bca2fea9c71150e77a0df",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_gpt2-medium_n256_v2.json",
+      "bytes": 4324,
+      "sha256": "f4f9348ecf2433fc6e51f1f71fedaf0d78e04eb9acdc2177eeb574b8cfaca9c6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_gpt2_n128_v2.json",
+      "bytes": 4309,
+      "sha256": "72084439ec9d0064774b65f0170a360060b909d4e78bf1bf08aef1d906161133",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_gpt2_n256_v2.json",
+      "bytes": 4317,
+      "sha256": "c92f21a7e50ccc97d27f556c7373ba3b25b95e58bb9ed86be9b241b32f0eda3f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_Qwen__Qwen2.5-0.5B_n128_v2.json",
+      "bytes": 4332,
+      "sha256": "64ddbb3aae7f54081280b1839455425df226495be65cf24c69bba017a0a7ab43",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_Qwen__Qwen2.5-0.5B_n256_v2.json",
+      "bytes": 4331,
+      "sha256": "127e333b7ff0d3d982f19019fa71bc13f9ca97f76b25886d5c21282de6fe4322",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_Qwen__Qwen2.5-3B_n128_v2.json",
+      "bytes": 5648,
+      "sha256": "c8ceeb140806831b857f1ee64f88cea8edffd5af27d5d6490f94a65864055ab0",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase24_core_Qwen__Qwen2.5-3B_n256_v2.json",
+      "bytes": 5649,
+      "sha256": "a9be991ceb7f1cd77e08f95d6e24f0733c1fa9250be164905c27ac1af8ed150d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_completion_options_checks_v2.json",
+      "bytes": 793,
+      "sha256": "1880ae93a8f0950b2af8c11ce37348496093bfd64ef0fdea0e67bdd6755ad615",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_exact_driver_api_checks_v2.json",
+      "bytes": 786,
+      "sha256": "55bb85616a146dcac2314f6828ecdf908a0125e184e00bfc3b5b624222c31a91",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_final_reconstruction_checks_v2.json",
+      "bytes": 793,
+      "sha256": "57095fea9cbc86d43c71de6b026e4543367e80f39393a47ee7bf92119a5df262",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_fraction_constancy_checks_v2.json",
+      "bytes": 315,
+      "sha256": "646483c5f2bd6c73bb6e38db3fb8441039aeb99a8850f9a84c68d63f08585e6f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_geometry_checks_v2.json",
+      "bytes": 422,
+      "sha256": "0d4d7a28c0806e8a92acfa2bd9841926046c4fc2086b1006d70ac8a531f062b5",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_checks_v2.json",
+      "bytes": 4125,
+      "sha256": "6003677e2360bc4d0c25a542a2a96f7a911d59c97d89a2f3093d09c267681c8f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 628,
+      "sha256": "a96d773228b8a5cd7a5c7db1af92b6c76c1c69aa6731e2cdce70c7e4e0e44f1a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_EleutherAI__pythia-410m_v2.json",
+      "bytes": 629,
+      "sha256": "22efd371d3d2b9f88cd30dfcb71bd9259f33ceea7d51a465f11e35808756b0fe",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_gpt2-medium_v2.json",
+      "bytes": 617,
+      "sha256": "2ebdc7c26435cdc76819ea4be602a5a4c372709b5dda9be77337bdee80d24877",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_gpt2_v2.json",
+      "bytes": 609,
+      "sha256": "6ff738dceed274bfb4a44309b9d4d8c634bb2a6cef5340d3a5eda729b485d1c4",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 621,
+      "sha256": "65dd80c6f786f04e64a5af71728ddc5492e9c9d4204564b6cb5ced05bdd09064",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_identity_Qwen__Qwen2.5-3B_v2.json",
+      "bytes": 613,
+      "sha256": "a11e2a5f6d33de5cf9b5b3c9c5c56bcfee43af02b5b8951899eeb3332805fc17",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_native_source_checks_v2.json",
+      "bytes": 3005,
+      "sha256": "61ad1c4378f7ee3c624095df3139f35a722941123025001def7532f61cdec06c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_reconstruction_checks_v2.json",
+      "bytes": 676,
+      "sha256": "fc4c6b57d4a257ab34df573e2092a8289492723ffcfdac36b4c1ee55a2790ae6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_retrieval_audit_v2.json",
+      "bytes": 1512,
+      "sha256": "8be47e51a153819fce472496a1d532c992ac2878aa005ead888956288cd256cf",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_retrieval_completion_v2.json",
+      "bytes": 1629,
+      "sha256": "5d33eefd716e28f50d8aad7b79c2fa403a075de573858f29194e4893b476640c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_retrieval_final_v2.json",
+      "bytes": 1629,
+      "sha256": "06c9627bbb1713333f7c613f6dcf579286a896ff3a5618c88994261e9048ed0c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_retrieval_fixed_v2.json",
+      "bytes": 1629,
+      "sha256": "579ab905b9c72a19125b5526fca63bbe96a6657482bd64a0c0fcf851b5a269a5",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_sampling_checks_v2.json",
+      "bytes": 221,
+      "sha256": "2882883f74336627a8c4dff426794d3d06a5e6dd8aeebc18d201226e40281b6e",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_sampling_regressions_v2.json",
+      "bytes": 220,
+      "sha256": "67cb5e002032c58d12a9f4864a1b892466e3f1b4acb9fd607741f48952781fb3",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase25_uniform_reconstruction_checks_v2.json",
+      "bytes": 785,
+      "sha256": "21817faaa8d5ef2a7b969f5510eca2223bad9929fa604c6b3f211ce2a8328312",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_EleutherAI__pythia-1.4b_n128_msclean_srpca_v2.json",
+      "bytes": 44483,
+      "sha256": "161519dc517dbca7b1bffb17f353b5cbb3f9e5f935813e71d3fc8c3bc6d744c9",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_EleutherAI__pythia-1.4b_n256_msclean_srpca_v2.json",
+      "bytes": 44510,
+      "sha256": "1f1500aa2985585e7c2a15f83795b71d69b27e206e00b66979b8c03a6014d07c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_EleutherAI__pythia-410m_n128_msclean_srpca_v2.json",
+      "bytes": 44460,
+      "sha256": "43e0ca71a74b93f0975e3170cbc5bbbf9f27c997dc51f44bf6a0c86a9d39c65a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_EleutherAI__pythia-410m_n256_msclean_srpca_v2.json",
+      "bytes": 44493,
+      "sha256": "b0086471741eab52c68278f912310d44f589acf8acab2678e61fabf4cdca4f49",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_gpt2-medium_n128_msclean_srpca_v2.json",
+      "bytes": 44384,
+      "sha256": "0182ddec2290fb393c12bac19a7237057dd3544214c209a6d582c4b6ff513b14",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_gpt2-medium_n256_msclean_srpca_v2.json",
+      "bytes": 44357,
+      "sha256": "ccab60020631f8ff3897f9a0ef7a31459126b5c1b9569a29abfb0942f04d3c42",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_gpt2_n128_msclean_srpca_v2.json",
+      "bytes": 44337,
+      "sha256": "29e1ef8997ff7858a0e574b7e2785f9ed5f8a98bbe67a69884224d70eb033e75",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_gpt2_n256_msclean_srpca_v2.json",
+      "bytes": 44298,
+      "sha256": "a76a5f5764af517e714bab498f3c3a0791b8691774ea1a2ce9be4f0a2737d527",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_Qwen__Qwen2.5-0.5B_n128_msclean_srpca_v2.json",
+      "bytes": 44492,
+      "sha256": "52c5579585454e46999178be91cf763496c69e9312d7a058d369f237aad46499",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_Qwen__Qwen2.5-0.5B_n256_msclean_srpca_v2.json",
+      "bytes": 44480,
+      "sha256": "795dc9f1025ee5a18f018c9a6888cd520b02a531ba76c7fbc6fbfb5c5db4d08d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_Qwen__Qwen2.5-3B_n128_msclean_srpca_v2.json",
+      "bytes": 44468,
+      "sha256": "3855011540d205a3bdce456c1892a2838f21a8b19daa3626c990a811bf0965bc",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase26_named_Qwen__Qwen2.5-3B_n256_msclean_srpca_v2.json",
+      "bytes": 44472,
+      "sha256": "c6f3cd29f08e0e4e0b0b1e181de52049c3390a57f8984e50f38530099399b27f",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase28_positive_beta_cpu_v2.json",
+      "bytes": 711,
+      "sha256": "a4ce9eb79abb5879ab1c77bb1f8a472c7a9c4082331b989202610c473339bb0b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase29_publication_checks_v2.json",
+      "bytes": 222,
+      "sha256": "03f3709da923ffe396fda2bf0ba2547ab087a915b069d3fc0efb102d34a50f7a",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase29_sink_checks_v2.json",
+      "bytes": 6766,
+      "sha256": "791b838c87fc4806ddc51ac8871d047288aa6b1214144ea1bd930ff99b0e725b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_document_statistics_v2.json",
+      "bytes": 42561,
+      "sha256": "c3ae4150f47f78a8b601cca4f0fae157f270650e70efb5b9dd5d2c2a3e918479",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_downstream_v2.json",
+      "bytes": 183341,
+      "sha256": "610728b6dbebb3c3e5a11d6e194cfa7a723ea09aef8cc45c9b835d7130826806",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_driver_decision_v2.json",
+      "bytes": 601,
+      "sha256": "01924c11885386b1a76964d97880bfbcf7f018290fb5c523f3cca2338e3abbf8",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 31283,
+      "sha256": "918326f5c84b97a2b90d0799d4e76cd681c7c64fd11482666fb51c3c60893980",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_EleutherAI__pythia-410m_v2.json",
+      "bytes": 31321,
+      "sha256": "249215f5eceeff1a1aec017587f9055dc9b1f557e726b02b82ff8fbe793dbb3b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 4069,
+      "sha256": "bdb820a6052a4e92b957c7759f6b8ced40d7756fe8aebb930677e3cebeb5f436",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_EleutherAI__pythia-410m_v2.json",
+      "bytes": 4077,
+      "sha256": "e5ba18e5c0fd5d676ce096d9f1c5b997491d05c130b1778bbc0531b9d6f243f4",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_gpt2-medium_v2.json",
+      "bytes": 4052,
+      "sha256": "9e6eb63c23c77b21595dc8aaa2f4117d224a8664f8ebb34d9e4994a47d50ebd6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_gpt2_v2.json",
+      "bytes": 4037,
+      "sha256": "2e6b88bc9823cc310623b24102260a117aff3c7a0f2171cd0373b68bbba974dd",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 4072,
+      "sha256": "8e3bb72a7c8d61c28d21d02998125143bb49cf8baba74e0450d912f1f2e20cf1",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_Qwen__Qwen2.5-3B_v2.json",
+      "bytes": 4082,
+      "sha256": "37dc4141de65d667e295c1922f5e503fd3201766bc4346d953125b10cf403db3",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_empty_rows_v2.json",
+      "bytes": 26351,
+      "sha256": "af913b4e67b21efbc9a65c1846af67b4cb7ff3f42e15ac90008d6e0de93d6536",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_execution_gpt2-medium_v2.json",
+      "bytes": 45830,
+      "sha256": "890cb02a1bad950bd07d307ff5655bdce4d2fe14e65416d3723568f45fb8fda6",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_execution_gpt2_v2.json",
+      "bytes": 26445,
+      "sha256": "1622b48137a7abe8a20b7122c8603e9ee533770382894dd9cc974393b2ff4aa8",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_gpt2-medium_v2.json",
+      "bytes": 26352,
+      "sha256": "abdbbead4ff0ec7104f2d2d3879fc1b6fd1e83e5d954b5354d66cdb2f6f8dd73",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_gpt2_v2.json",
+      "bytes": 21540,
+      "sha256": "d6f07e9eb1ff3a2c6846c30a7019dc8dbaa419b89866d389901aeeedd59ccc31",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 2998,
+      "sha256": "c16192c9f5e10d8a84dc22a0409aca961baa60e5e64af1d1b32cbed7b6f139a5",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_EleutherAI__pythia-410m_v2.json",
+      "bytes": 3006,
+      "sha256": "14fe033e5814ca59c7877a717d49f4e99a6a735f60d55f3e02c593b03ade2ee5",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_gpt2-medium_v2.json",
+      "bytes": 2981,
+      "sha256": "9a75e57827fbeb2ce06644b9661a609d13fabf4788013a2e7f5bdd541697f888",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_gpt2_v2.json",
+      "bytes": 2962,
+      "sha256": "16f27ff1542a120485a61084f3071b391d158ac4f99ee94d26b0eb7527050057",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 2994,
+      "sha256": "766881d86e3649dda203e9c3fae9a4346805e2952bc1a8263d9cb2143ecd703b",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_Qwen__Qwen2.5-3B_v2.json",
+      "bytes": 2999,
+      "sha256": "a3ae1ecfab918c05ae440ef2267c3c761ec38d24cd586646bb4a23a4a2813d72",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_legacy_mass_v2.json",
+      "bytes": 19374,
+      "sha256": "6e64f24fdf8800d17c880d2f41717ec55a0498873ad2fadf3cbb8fd8ac28ca7c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_parallel_schedule_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 4333,
+      "sha256": "c44d211e9c17ac237f02d8ad5d166a45a45bb3e863bca2e32d9591751cd01857",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_parallel_schedule_EleutherAI__pythia-410m_v2.json",
+      "bytes": 4339,
+      "sha256": "ea5acac2ae7321c443bd41f253ed8ea7f694a0c83b36b72f9e99d8127afd2f25",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_parallel_schedule_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 4328,
+      "sha256": "4d13297f1e5e1a3157f1810c062cefdb41f4dc800988fd3454cd7e6650a4a626",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_parallel_schedule_Qwen__Qwen2.5-3B_v2.json",
+      "bytes": 4328,
+      "sha256": "a756df8da79488688474a3cba52abdc7acce874b45e94a5ea575e5ec86514694",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 31329,
+      "sha256": "b56b47a91de7ff0ecdc1f59469308adc0973542bf2d07bad55e570e99f2ac1bb",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase2_Qwen__Qwen2.5-3B_v2.json",
+      "bytes": 31349,
+      "sha256": "7f124734edf3632153927746057fa1cc4a721aa6ce1cad984b10ce1b7516faab",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase30_validity_audit_v2.json",
+      "bytes": 73552,
+      "sha256": "20b27d128bfe30602b8ec3ee682fc0d08a9f6bd664dc1ebe2d5775d3b3929ed7",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase30_validity_v1_checks_v2.json",
+      "bytes": 58958,
+      "sha256": "daa0b898b049e15c9dd9c6da139630e04e856519682a45e75c1fb83915fc2d9e",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase33_fixedshape_checks_v2.json",
+      "bytes": 882,
+      "sha256": "a5df12aa09974e2b8593628cf55c37acd5b12425abd35cb4d00c330f5ce93d82",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase33_legacy_counter_checks_v2.json",
+      "bytes": 2295,
+      "sha256": "8f053099e21ad04726d60bcdf27e9813713e3088a5a93f81c4775a9fb2f7c620",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase33_validation_schedule_checks_v2.json",
+      "bytes": 5611,
+      "sha256": "dd5c35fbac61fc1cb432e99ac2efaa33735f53a50a8e845676aa40a0cbf50c08",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase3_robustness_v2.json",
+      "bytes": 64724,
+      "sha256": "19c802bb64149641111c1e95c965cab00a226892ea32df6fd10c25f4ac9a5c69",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase5_msclean_v2.json",
+      "bytes": 601217,
+      "sha256": "7c3eb74348c7269fc0541e9c4c5e6ff6c6c3492779afc2cae077f6e890452dfd",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase6_srpca_v2.json",
+      "bytes": 601215,
+      "sha256": "e2a4640ccbacdb752ebe6e81bd747fa1364ed0d4337a5a338c495ce0c457ca05",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_editability_v2.json",
+      "bytes": 147909,
+      "sha256": "c2ee8e24bc94af5b13961371de6f42b5e77fe8ee19eb7866e3462ab29c39295e",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 25742,
+      "sha256": "113c43cd2b71f659d279d94fae0bff1273e9ee7d440b424acd7e8cd5feedcbe0",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_EleutherAI__pythia-410m_v2.json",
+      "bytes": 25759,
+      "sha256": "e75bd60c9106dbb05184f1d55fb8be5f193dde713e9131595b89397befa6219c",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_gpt2-medium_v2.json",
+      "bytes": 20856,
+      "sha256": "feb18ab782325d591daf797c94b466fa1f68f364371ffd0b37bb425810442cea",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_gpt2_v2.json",
+      "bytes": 16018,
+      "sha256": "b351938e46eae6e8898321990ca563699a6aeb99de9f240ae75b2e662f0ebb55",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 25634,
+      "sha256": "2402da449b77ee73a2ea47ce3a1e5da614c0462e83869de081ec9009f42f6efa",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase7_Qwen__Qwen2.5-3B_v2.json",
+      "bytes": 25665,
+      "sha256": "9e66635761148e9317333f31b93c2be5cf484b4956427eb93c65e4558bc77908",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase8_beta0_EleutherAI__pythia-1.4b_v2.json",
+      "bytes": 4510,
+      "sha256": "5833acb0e7c65826f0852daea9c5657ecca9ff6e65aeef0174bf2bcfeb659e7d",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase8_beta0_EleutherAI__pythia-410m_v2.json",
+      "bytes": 4472,
+      "sha256": "2a33df5b724fc843572cbb65c5bd7dbd186ce74776a9f3dd95632807d3e230ec",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase8_beta0_gpt2-medium_v2.json",
+      "bytes": 4436,
+      "sha256": "7e4ea242e8fdbb13c093701186256359a9b68af4b605ffdcdd90797fe1afcd28",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase8_beta0_gpt2_v2.json",
+      "bytes": 5086,
+      "sha256": "93279d5cdc2c2ebe3f7428e70f0d832a6c887375fff0022feca29a719abab8fc",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase8_beta0_Qwen__Qwen2.5-0.5B_v2.json",
+      "bytes": 4478,
+      "sha256": "57d62210987f70ed9039abd222f166dc145b95339905942746b4554b047925c5",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase8_beta0_v2.json",
+      "bytes": 26217,
+      "sha256": "2c93ffd03610bfd9dea834159b5f994a257a7f4936dea00a1af941bae86abdae",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase9_bigmodel_named_v2.json",
+      "bytes": 100289,
+      "sha256": "0cda3607bf8b0cad25d0959b5f2caa9ebdebed4d3b2e5ddb10fba956ef5d2ed1",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/phase9_bigmodel_v2.json",
+      "bytes": 13340,
+      "sha256": "4fb0e2748ae8f9a7564d000d8dcd41d2df146babaa2d6e7c8da4efb30b269489",
+      "kind": "data_or_result"
+    },
+    {
+      "path": "out/_rerun_logs/p0_progress.md",
+      "kind": "mutable_progress_log",
+      "sha256": null
+    }
+  ],
+  "elapsed_seconds": 22.987806499935687
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "parent_artifacts_byte_identical": true,
+  "numeric_sources_frozen": true,
+  "original_parameter_diagnostics": 768,
+  "paired_comparison_instances": 192,
+  "datasets": 12,
+  "same_instances_all_methods_and_budgets": true,
+  "storage_budgets_verified": true,
+  "strict_thin_width_maximum": 1.9999998846000224,
+  "thin_broad_energy_zero": true,
+  "absolute_relative_max_discrepancy": 5.551115123125783e-16,
+  "median_max_discrepancy": 0.0,
+  "document_bootstrap_and_wilcoxon_reproduced": true,
+  "selection_sha256_verified": true,
+  "parameter_provenance_counts": {
+    "phase19_settings_replayed_parameters_not_original_snapshot": 527,
+    "original_phase19_export": 241
+  },
+  "maximum_active_calculation_processes": 3,
+  "gpu_resource_handoff": {
+    "gpu_used": true,
+    "maximum_active_calculation_processes": 3,
+    "start": {
+      "cpu_pid": 18084,
+      "cpu_created": 1794286705.6360457,
+      "cpu_arguments": [
+        "python.exe",
+        "-B",
+        "-u",
+        "phase19b_runner.py",
+        "cpu",
+        "--slot",
+        "2"
+      ],
+      "pause_time_unix": 1794291205.7918124,
+      "cpu_worker_slot": 2,
+      "gpu_worker_slot": 3,
+      "maximum_active_calculation_processes": 3,
+      "threads_each": 4,
+      "policy": "Two CPU workers plus GPU while lock is held; otherwise three CPU workers"
+    },
+    "finish": {
+      "cpu_pid": 18084,
+      "resumed": true,
+      "elapsed_seconds": 6345.993475198746,
+      "maximum_active_calculation_processes": 3
+    }
+  },
+  "all_positive_control_gates_pass": false,
+  "report_sha256": "064a66cd27bc9539b5cbe127634ea8793bad3a5651e09daa7c510a53864531ce"
+}

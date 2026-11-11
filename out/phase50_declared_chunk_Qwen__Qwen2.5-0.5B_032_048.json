@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "start_document": 32,
+  "stop_document": 48,
+  "decision_sha256": "9364080a4f4501a45970b961cbd210f369582442462df2459fc48b00fdfcf251",
+  "pairs_byte_length": 1006462,
+  "pairs_prefix_sha256": "9b15a60f9dc4a81154198ebe689aaa3f7500bb67aa000790983dae2d3520af1a",
+  "elapsed_seconds": 357.2838808000088,
+  "load_and_native_control_seconds": 12.195082100108266,
+  "n_records_completed_so_far": 384,
+  "e_replay_KL_NLL_verified": true
+}

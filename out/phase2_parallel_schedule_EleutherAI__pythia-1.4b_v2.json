@@ -1,0 +1,125 @@
+{
+  "model": "EleutherAI/pythia-1.4b",
+  "n_documents": 2,
+  "n_arms": 15,
+  "selected": true,
+  "all_candidate_logits_bit_equal": true,
+  "same_svd_driver_dtype_and_rank": true,
+  "driver": null,
+  "workers_plus_main_thread": 4,
+  "cuda_streams": 3,
+  "checks": {
+    "phase2:identity": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 0.15257260017096996,
+      "parallel_seconds": 0.13157460000365973
+    },
+    "phase2:svd:1": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 3.956504200119525,
+      "parallel_seconds": 3.8355082999914885
+    },
+    "phase2:svd:2": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 4.442631799960509,
+      "parallel_seconds": 3.596379700116813
+    },
+    "phase2:svd:4": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 4.725823699962348,
+      "parallel_seconds": 3.2873096000403166
+    },
+    "phase2:svd:8": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 3.7685978000517935,
+      "parallel_seconds": 3.325328800128773
+    },
+    "phase2:svd:16": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 3.841810399899259,
+      "parallel_seconds": 3.2839196999557316
+    },
+    "phase2:svd:32": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 3.6425339998677373,
+      "parallel_seconds": 3.3312877998687327
+    },
+    "phase2:geom": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 0.2227919001597911,
+      "parallel_seconds": 0.21510690008290112
+    },
+    "phase2:uniform": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 0.1966480000410229,
+      "parallel_seconds": 0.19009539997205138
+    },
+    "phase2:diagonal": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 0.24958440009504557,
+      "parallel_seconds": 0.22330310009419918
+    },
+    "phase2:sink": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 0.18692769994959235,
+      "parallel_seconds": 0.18871850008144975
+    },
+    "phase7:identity:8": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 0.1193401999771595,
+      "parallel_seconds": 0.11713499994948506
+    },
+    "phase7:anova:8": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 3.8992796998936683,
+      "parallel_seconds": 3.570959100034088
+    },
+    "phase7:nosink:8": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 4.269241499947384,
+      "parallel_seconds": 4.239657400175929
+    },
+    "phase7:zerocol_mid:8": {
+      "logits_bit_equal": true,
+      "all_counters_exact": true,
+      "max_logit_difference": 0.0,
+      "sequential_seconds": 5.706130699953064,
+      "parallel_seconds": 4.212684199912474
+    }
+  },
+  "sequential_seconds_total": 39.38041860004887,
+  "parallel_seconds_total": 33.74896810040809,
+  "selection_rule": "Use parallel streams only if every logit and every counter is exact and total test time improves >=10%; otherwise original sequential execution for all 256 documents",
+  "selection_uses_accuracy_or_KL": false,
+  "scientific_samples_or_budgets_changed": false,
+  "corpus_manifest_sha256": "fbdd1cdbbc1573c99497f6d50122db53cfbfecce76f143f18ad1cd593185d7f5",
+  "parallel_module_sha256": "46cbf1fb1876265c9682192a3e0739a85fd8a8183efc4be84045477dd96ed27e"
+}
